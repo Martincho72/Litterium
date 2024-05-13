@@ -1,4 +1,4 @@
-﻿namespace Login
+﻿namespace Litterium
 {
     partial class FrmLogIn
     {
