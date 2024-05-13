@@ -1,0 +1,11 @@
+C:\Users\gacapa\OneDrive - Florida Centre de Formació Coop.V\DAW1\Programacion\Data Access\AEV7\Login\bin\Debug\Login.exe.config
+C:\Users\gacapa\OneDrive - Florida Centre de Formació Coop.V\DAW1\Programacion\Data Access\AEV7\Login\bin\Debug\Login.exe
+C:\Users\gacapa\OneDrive - Florida Centre de Formació Coop.V\DAW1\Programacion\Data Access\AEV7\Login\bin\Debug\Login.pdb
+C:\Users\gacapa\OneDrive - Florida Centre de Formació Coop.V\DAW1\Programacion\Data Access\AEV7\Login\obj\Debug\Login.csproj.AssemblyReference.cache
+C:\Users\gacapa\OneDrive - Florida Centre de Formació Coop.V\DAW1\Programacion\Data Access\AEV7\Login\obj\Debug\Login.csproj.SuggestedBindingRedirects.cache
+C:\Users\gacapa\OneDrive - Florida Centre de Formació Coop.V\DAW1\Programacion\Data Access\AEV7\Login\obj\Debug\Login.FrmPrincipal.resources
+C:\Users\gacapa\OneDrive - Florida Centre de Formació Coop.V\DAW1\Programacion\Data Access\AEV7\Login\obj\Debug\Login.Properties.Resources.resources
+C:\Users\gacapa\OneDrive - Florida Centre de Formació Coop.V\DAW1\Programacion\Data Access\AEV7\Login\obj\Debug\Login.csproj.GenerateResource.cache
+C:\Users\gacapa\OneDrive - Florida Centre de Formació Coop.V\DAW1\Programacion\Data Access\AEV7\Login\obj\Debug\Login.csproj.CoreCompileInputs.cache
+C:\Users\gacapa\OneDrive - Florida Centre de Formació Coop.V\DAW1\Programacion\Data Access\AEV7\Login\obj\Debug\Login.exe
+C:\Users\gacapa\OneDrive - Florida Centre de Formació Coop.V\DAW1\Programacion\Data Access\AEV7\Login\obj\Debug\Login.pdb
