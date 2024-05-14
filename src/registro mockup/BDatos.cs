@@ -19,9 +19,9 @@ namespace registro_mockup
                 // Conexión Local
                 string server = "server=sql11.freesqldatabase.com;";
                 string port = "port=3306;";
-                string database = "database=sql11702602;";
-                string usuario = "uid=sql11702602;";
-                string password = "pwd=kyY7QPe339;";
+                string database = "database=sql11706394;";
+                string usuario = "uid=sql11706394;";
+                string password = "pwd=6KmvR2qIzk;";
                 string convert = "Convert Zero Datetime=true;";
                 string connectionstring = server + port + database + usuario + password + convert;
 
