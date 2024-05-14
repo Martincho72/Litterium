@@ -63,6 +63,16 @@ namespace registro_mockup.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _402720 {
+            get {
+                object obj = ResourceManager.GetObject("402720", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap atras {
             get {
                 object obj = ResourceManager.GetObject("atras", resourceCulture);
@@ -93,6 +103,16 @@ namespace registro_mockup.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap litteriumSinFondo3 {
+            get {
+                object obj = ResourceManager.GetObject("litteriumSinFondo3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
@@ -116,6 +136,16 @@ namespace registro_mockup.Properties {
         internal static System.Drawing.Bitmap madera {
             get {
                 object obj = ResourceManager.GetObject("madera", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_transparent_gold_paper_paper_paper_sheet_miscellaneous_ink_sunrise {
+            get {
+                object obj = ResourceManager.GetObject("png-transparent-gold-paper-paper-paper-sheet-miscellaneous-ink-sunrise", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
