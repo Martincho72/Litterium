@@ -28,19 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblContrasenaOlvidada = new System.Windows.Forms.Label();
-            this.btnImagen = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnIogin = new System.Windows.Forms.Button();
+            this.txtClave = new System.Windows.Forms.TextBox();
             this.lblContrasena = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
             this.lblMensajesError = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pcbSalir = new System.Windows.Forms.PictureBox();
             this.pcbLogo = new System.Windows.Forms.PictureBox();
             this.lblRegistrase = new System.Windows.Forms.Label();
             this.lblTextoRegistrase = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.pcbSalir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblContrasenaOlvidada
@@ -55,25 +58,26 @@
             this.lblContrasenaOlvidada.TabIndex = 18;
             this.lblContrasenaOlvidada.Text = "Has olvidado tu contraseña?";
             // 
-            // btnImagen
+            // btnIogin
             // 
-            this.btnImagen.BackColor = System.Drawing.Color.Gold;
-            this.btnImagen.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImagen.Location = new System.Drawing.Point(240, 480);
-            this.btnImagen.Name = "btnImagen";
-            this.btnImagen.Size = new System.Drawing.Size(119, 60);
-            this.btnImagen.TabIndex = 17;
-            this.btnImagen.Text = "Log In";
-            this.btnImagen.UseVisualStyleBackColor = false;
+            this.btnIogin.BackColor = System.Drawing.Color.Gold;
+            this.btnIogin.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIogin.Location = new System.Drawing.Point(240, 480);
+            this.btnIogin.Name = "btnIogin";
+            this.btnIogin.Size = new System.Drawing.Size(119, 60);
+            this.btnIogin.TabIndex = 17;
+            this.btnIogin.Text = "Log In";
+            this.btnIogin.UseVisualStyleBackColor = false;
+            this.btnIogin.Click += new System.EventHandler(this.btnIogin_Click);
             // 
-            // textBox2
+            // txtClave
             // 
-            this.textBox2.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(316, 381);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(176, 35);
-            this.textBox2.TabIndex = 16;
+            this.txtClave.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtClave.Location = new System.Drawing.Point(316, 381);
+            this.txtClave.Name = "txtClave";
+            this.txtClave.PasswordChar = '*';
+            this.txtClave.Size = new System.Drawing.Size(176, 35);
+            this.txtClave.TabIndex = 16;
             // 
             // lblContrasena
             // 
@@ -86,13 +90,13 @@
             this.lblContrasena.TabIndex = 15;
             this.lblContrasena.Text = "Contraseña:";
             // 
-            // textBox1
+            // txtUsuario
             // 
-            this.textBox1.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(316, 312);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(176, 35);
-            this.textBox1.TabIndex = 14;
+            this.txtUsuario.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.Location = new System.Drawing.Point(316, 312);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(176, 35);
+            this.txtUsuario.TabIndex = 14;
             // 
             // lblMensajesError
             // 
@@ -117,17 +121,18 @@
             this.lblUsuario.TabIndex = 12;
             this.lblUsuario.Text = "Usuario:";
             // 
-            // pictureBox1
+            // pcbSalir
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::registro_mockup.Properties.Resources._402720;
-            this.pictureBox1.Location = new System.Drawing.Point(431, 56);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(52, 48);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 19;
-            this.pictureBox1.TabStop = false;
+            this.pcbSalir.BackColor = System.Drawing.Color.Transparent;
+            this.pcbSalir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pcbSalir.Image = global::registro_mockup.Properties.Resources._402720;
+            this.pcbSalir.Location = new System.Drawing.Point(431, 56);
+            this.pcbSalir.Name = "pcbSalir";
+            this.pcbSalir.Size = new System.Drawing.Size(52, 48);
+            this.pcbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbSalir.TabIndex = 19;
+            this.pcbSalir.TabStop = false;
+            this.pcbSalir.Click += new System.EventHandler(this.pcbSalir_Click);
             // 
             // pcbLogo
             // 
@@ -154,6 +159,7 @@
             this.lblRegistrase.Size = new System.Drawing.Size(98, 22);
             this.lblRegistrase.TabIndex = 21;
             this.lblRegistrase.Text = "Registrate";
+            this.lblRegistrase.Click += new System.EventHandler(this.lblRegistrase_Click);
             // 
             // lblTextoRegistrase
             // 
@@ -166,6 +172,10 @@
             this.lblTextoRegistrase.TabIndex = 20;
             this.lblTextoRegistrase.Text = "No te has registrado aun?";
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // FrmLogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -175,12 +185,12 @@
             this.ClientSize = new System.Drawing.Size(563, 606);
             this.Controls.Add(this.lblRegistrase);
             this.Controls.Add(this.lblTextoRegistrase);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pcbSalir);
             this.Controls.Add(this.lblContrasenaOlvidada);
-            this.Controls.Add(this.btnImagen);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.btnIogin);
+            this.Controls.Add(this.txtClave);
             this.Controls.Add(this.lblContrasena);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.lblMensajesError);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.pcbLogo);
@@ -188,8 +198,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LogIn";
             this.Load += new System.EventHandler(this.FrmLogIn_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbSalir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,16 +208,17 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pcbSalir;
         private System.Windows.Forms.Label lblContrasenaOlvidada;
-        private System.Windows.Forms.Button btnImagen;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btnIogin;
+        private System.Windows.Forms.TextBox txtClave;
         private System.Windows.Forms.Label lblContrasena;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label lblMensajesError;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.PictureBox pcbLogo;
         private System.Windows.Forms.Label lblRegistrase;
         private System.Windows.Forms.Label lblTextoRegistrase;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

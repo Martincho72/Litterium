@@ -19,10 +19,6 @@ namespace Litterium
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
         private bool ValidarDatos()
         {
             bool ok = true;
@@ -74,12 +70,14 @@ namespace Litterium
 
         private void pcbAtras_Click(object sender, EventArgs e)
         {
-            this.Close();
+            FrmLogIn login = new FrmLogIn();
+            login.Show();
+            this.Hide();
         }
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
-            int resultaado = 0;
+            int resultado = 0;
             if (ValidarDatos())
             {
                 if (basedatos.AbrirConexion())
@@ -88,14 +86,14 @@ namespace Litterium
                     {
                         int telefono = Convert.ToInt32(txtTelefono.Text);
                         Usuario us1 = new Usuario(txtUsuario.Text, txtContraseña.Text, txtNombre.Text, txtCorreo.Text, txtDireccion.Text, telefono);
-                        resultaado = us1.AgregarUsuario(basedatos.Conexion, us1);
-                        FrmLogIn login = new FrmLogIn();
-                        login.ShowDialog();
+                        resultado = us1.AgregarUsuario(basedatos.Conexion, us1);
+
                     }
                     else
                     {
                         MessageBox.Show("El usuario ya existe");
                     }
+                        basedatos.CerrarConexion();
                 }
                 else
                 {
@@ -106,6 +104,11 @@ namespace Litterium
             {
                 MessageBox.Show("Faltan datos por introducir","Error",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
             }
+        }
+
+        private void Registro_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
