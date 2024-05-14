@@ -49,9 +49,9 @@
             this.lblContrasenaOlvidada.BackColor = System.Drawing.Color.Transparent;
             this.lblContrasenaOlvidada.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblContrasenaOlvidada.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContrasenaOlvidada.Location = new System.Drawing.Point(172, 440);
+            this.lblContrasenaOlvidada.Location = new System.Drawing.Point(194, 550);
             this.lblContrasenaOlvidada.Name = "lblContrasenaOlvidada";
-            this.lblContrasenaOlvidada.Size = new System.Drawing.Size(253, 22);
+            this.lblContrasenaOlvidada.Size = new System.Drawing.Size(311, 26);
             this.lblContrasenaOlvidada.TabIndex = 18;
             this.lblContrasenaOlvidada.Text = "Has olvidado tu contraseña?";
             // 
@@ -59,9 +59,10 @@
             // 
             this.btnImagen.BackColor = System.Drawing.Color.Gold;
             this.btnImagen.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImagen.Location = new System.Drawing.Point(240, 480);
+            this.btnImagen.Location = new System.Drawing.Point(270, 600);
+            this.btnImagen.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnImagen.Name = "btnImagen";
-            this.btnImagen.Size = new System.Drawing.Size(119, 60);
+            this.btnImagen.Size = new System.Drawing.Size(134, 75);
             this.btnImagen.TabIndex = 17;
             this.btnImagen.Text = "Log In";
             this.btnImagen.UseVisualStyleBackColor = false;
@@ -69,10 +70,11 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(316, 381);
+            this.textBox2.Location = new System.Drawing.Point(356, 476);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(176, 35);
+            this.textBox2.Size = new System.Drawing.Size(198, 41);
             this.textBox2.TabIndex = 16;
             // 
             // lblContrasena
@@ -80,18 +82,19 @@
             this.lblContrasena.AutoSize = true;
             this.lblContrasena.BackColor = System.Drawing.Color.Transparent;
             this.lblContrasena.Font = new System.Drawing.Font("MS Reference Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContrasena.Location = new System.Drawing.Point(85, 381);
+            this.lblContrasena.Location = new System.Drawing.Point(96, 476);
             this.lblContrasena.Name = "lblContrasena";
-            this.lblContrasena.Size = new System.Drawing.Size(201, 35);
+            this.lblContrasena.Size = new System.Drawing.Size(232, 40);
             this.lblContrasena.TabIndex = 15;
             this.lblContrasena.Text = "Contraseña:";
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(316, 312);
+            this.textBox1.Location = new System.Drawing.Point(356, 390);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(176, 35);
+            this.textBox1.Size = new System.Drawing.Size(198, 41);
             this.textBox1.TabIndex = 14;
             // 
             // lblMensajesError
@@ -100,9 +103,9 @@
             this.lblMensajesError.BackColor = System.Drawing.Color.Transparent;
             this.lblMensajesError.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMensajesError.ForeColor = System.Drawing.Color.Red;
-            this.lblMensajesError.Location = new System.Drawing.Point(217, 266);
+            this.lblMensajesError.Location = new System.Drawing.Point(244, 332);
             this.lblMensajesError.Name = "lblMensajesError";
-            this.lblMensajesError.Size = new System.Drawing.Size(142, 16);
+            this.lblMensajesError.Size = new System.Drawing.Size(173, 20);
             this.lblMensajesError.TabIndex = 13;
             this.lblMensajesError.Text = "Mensajes de Error";
             // 
@@ -111,9 +114,9 @@
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.BackColor = System.Drawing.Color.Transparent;
             this.lblUsuario.Font = new System.Drawing.Font("MS Reference Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(141, 312);
+            this.lblUsuario.Location = new System.Drawing.Point(159, 390);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(145, 35);
+            this.lblUsuario.Size = new System.Drawing.Size(165, 40);
             this.lblUsuario.TabIndex = 12;
             this.lblUsuario.Text = "Usuario:";
             // 
@@ -122,9 +125,10 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::registro_mockup.Properties.Resources._402720;
-            this.pictureBox1.Location = new System.Drawing.Point(431, 56);
+            this.pictureBox1.Location = new System.Drawing.Point(485, 70);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(52, 48);
+            this.pictureBox1.Size = new System.Drawing.Size(58, 60);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
@@ -134,9 +138,11 @@
             this.pcbLogo.BackColor = System.Drawing.Color.Transparent;
             this.pcbLogo.BackgroundImage = global::registro_mockup.Properties.Resources.litteriumSinFondo3;
             this.pcbLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pcbLogo.Location = new System.Drawing.Point(165, 37);
+            this.pcbLogo.ErrorImage = global::registro_mockup.Properties.Resources.logo;
+            this.pcbLogo.Location = new System.Drawing.Point(186, 46);
+            this.pcbLogo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pcbLogo.Name = "pcbLogo";
-            this.pcbLogo.Size = new System.Drawing.Size(248, 226);
+            this.pcbLogo.Size = new System.Drawing.Size(279, 282);
             this.pcbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbLogo.TabIndex = 11;
             this.pcbLogo.TabStop = false;
@@ -147,9 +153,9 @@
             this.lblRegistrase.BackColor = System.Drawing.Color.Transparent;
             this.lblRegistrase.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblRegistrase.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRegistrase.Location = new System.Drawing.Point(374, 554);
+            this.lblRegistrase.Location = new System.Drawing.Point(421, 692);
             this.lblRegistrase.Name = "lblRegistrase";
-            this.lblRegistrase.Size = new System.Drawing.Size(98, 22);
+            this.lblRegistrase.Size = new System.Drawing.Size(121, 26);
             this.lblRegistrase.TabIndex = 21;
             this.lblRegistrase.Text = "Registrate";
             // 
@@ -158,19 +164,19 @@
             this.lblTextoRegistrase.AutoSize = true;
             this.lblTextoRegistrase.BackColor = System.Drawing.Color.Transparent;
             this.lblTextoRegistrase.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTextoRegistrase.Location = new System.Drawing.Point(100, 554);
+            this.lblTextoRegistrase.Location = new System.Drawing.Point(112, 692);
             this.lblTextoRegistrase.Name = "lblTextoRegistrase";
-            this.lblTextoRegistrase.Size = new System.Drawing.Size(232, 22);
+            this.lblTextoRegistrase.Size = new System.Drawing.Size(285, 26);
             this.lblTextoRegistrase.TabIndex = 20;
             this.lblTextoRegistrase.Text = "No te has registrado aun?";
             // 
             // FrmLogIn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::registro_mockup.Properties.Resources.png_transparent_gold_paper_paper_paper_sheet_miscellaneous_ink_sunrise;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(563, 606);
+            this.ClientSize = new System.Drawing.Size(633, 758);
             this.Controls.Add(this.lblRegistrase);
             this.Controls.Add(this.lblTextoRegistrase);
             this.Controls.Add(this.pictureBox1);
@@ -182,6 +188,7 @@
             this.Controls.Add(this.lblMensajesError);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.pcbLogo);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FrmLogIn";
             this.Text = "LogIn";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
