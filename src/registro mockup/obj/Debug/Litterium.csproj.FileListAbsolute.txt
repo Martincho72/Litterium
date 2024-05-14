@@ -1,0 +1,11 @@
+C:\Users\jaarlo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Mackup\registro mockup\registro mockup\obj\Debug\Litterium.csproj.AssemblyReference.cache
+C:\Users\jaarlo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Mackup\registro mockup\registro mockup\obj\Debug\Litterium.csproj.SuggestedBindingRedirects.cache
+C:\Users\jaarlo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Mackup\registro mockup\registro mockup\obj\Debug\Litterium.Registro.resources
+C:\Users\jaarlo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Mackup\registro mockup\registro mockup\obj\Debug\registro_mockup.Properties.Resources.resources
+C:\Users\jaarlo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Mackup\registro mockup\registro mockup\obj\Debug\Litterium.csproj.GenerateResource.cache
+C:\Users\jaarlo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Mackup\registro mockup\registro mockup\obj\Debug\Litterium.csproj.CoreCompileInputs.cache
+C:\Users\jaarlo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Mackup\registro mockup\registro mockup\obj\Debug\registro mockup.exe
+C:\Users\jaarlo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Mackup\registro mockup\registro mockup\obj\Debug\registro mockup.pdb
+C:\Users\jaarlo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Mackup\registro mockup\registro mockup\bin\Debug\registro mockup.exe.config
+C:\Users\jaarlo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Mackup\registro mockup\registro mockup\bin\Debug\registro mockup.exe
+C:\Users\jaarlo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Mackup\registro mockup\registro mockup\bin\Debug\registro mockup.pdb
