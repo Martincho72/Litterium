@@ -1,4 +1,5 @@
-﻿using System;
+﻿using registro_mockup;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace Litterium
 {
     public partial class Registro : Form
     {
+        BDatos basedatos = new BDatos();
         public Registro()
         {
             InitializeComponent();
@@ -77,10 +79,16 @@ namespace Litterium
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
+            int resultaado = 0;
             if (ValidarDatos())
             {
-                FrmLogIn login = new FrmLogIn();
-                login.ShowDialog();
+                if (Usuario.EncontrarUsuario(basedatos.Conexion, txtUsuario.Text))
+                {
+                    Usuario us1 = new Usuario();
+                    resultaado = us1.AgregarUsuario(basedatos.Conexion, us1);
+                    FrmLogIn login = new FrmLogIn();
+                    login.ShowDialog();
+                }
             }
             else
             {
