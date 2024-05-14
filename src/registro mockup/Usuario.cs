@@ -92,11 +92,11 @@ namespace registro_mockup
             return validador;
         }
 
-        public static bool esAdmintrador(MySqlConnection conexion)
+        public static bool esAdmintrador(MySqlConnection conexion,string usuario)
         {
             bool esAdmin = false;
 
-            string consulta = string.Format("SELECT esAdmin FROM usuarios");
+            string consulta = string.Format("SELECT esAdmin FROM usuarios where usuario='{0}' and esAdmin=1",usuario);
 
             MySqlCommand comando = new MySqlCommand(consulta, conexion);
             MySqlDataReader reader = comando.ExecuteReader();

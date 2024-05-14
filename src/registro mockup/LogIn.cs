@@ -94,7 +94,7 @@ namespace Litterium
                     {
                         if (Usuario.validarContrasenya(bDatos.Conexion,txtUsuario.Text, txtClave.Text))
                         {
-                            if(Usuario.esAdmintrador(bDatos.Conexion)) 
+                            if(Usuario.esAdmintrador(bDatos.Conexion,txtUsuario.Text)) 
                             {
                                 MessageBox.Show("Administrador");
                             }
