@@ -134,12 +134,14 @@
             this.pcbLogo.BackColor = System.Drawing.Color.Transparent;
             this.pcbLogo.BackgroundImage = global::registro_mockup.Properties.Resources.litteriumSinFondo3;
             this.pcbLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pcbLogo.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
             this.pcbLogo.Location = new System.Drawing.Point(165, 37);
             this.pcbLogo.Name = "pcbLogo";
             this.pcbLogo.Size = new System.Drawing.Size(248, 226);
             this.pcbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbLogo.TabIndex = 11;
             this.pcbLogo.TabStop = false;
+            this.pcbLogo.Click += new System.EventHandler(this.pcbLogo_Click);
             // 
             // lblRegistrase
             // 
@@ -183,7 +185,9 @@
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.pcbLogo);
             this.Name = "FrmLogIn";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LogIn";
+            this.Load += new System.EventHandler(this.FrmLogIn_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).EndInit();
             this.ResumeLayout(false);

@@ -79,7 +79,8 @@ namespace Litterium
         {
             if (ValidarDatos())
             {
-
+                FrmLogIn login = new FrmLogIn();
+                login.ShowDialog();
             }
             else
             {

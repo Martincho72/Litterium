@@ -19,12 +19,22 @@ namespace Litterium
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
-            
+            pcbLogo.Visible = true;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FrmLogIn_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pcbLogo_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
