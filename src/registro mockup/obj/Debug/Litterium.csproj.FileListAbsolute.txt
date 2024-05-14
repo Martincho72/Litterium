@@ -21,3 +21,10 @@ C:\Users\jaarlo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Mackup\
 C:\Users\jaarlo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Mackup\proyecto\src\registro mockup\obj\Debug\Litterium.csproj.CoreCompileInputs.cache
 C:\Users\jaarlo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Mackup\proyecto\src\registro mockup\obj\Debug\registro mockup.exe
 C:\Users\jaarlo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Mackup\proyecto\src\registro mockup\obj\Debug\registro mockup.pdb
+C:\Users\jaarlo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Mackup\proyecto\src\registro mockup\bin\Debug\MySql.Data.dll
+C:\Users\jaarlo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Mackup\proyecto\src\registro mockup\bin\Debug\System.Memory.dll
+C:\Users\jaarlo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Mackup\proyecto\src\registro mockup\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\jaarlo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Mackup\proyecto\src\registro mockup\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\jaarlo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Mackup\proyecto\src\registro mockup\bin\Debug\System.Buffers.dll
+C:\Users\jaarlo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Mackup\proyecto\src\registro mockup\bin\Debug\MySql.Data.xml
+C:\Users\jaarlo\OneDrive - Florida Centre de Formació Coop.V\Escritorio\Mackup\proyecto\src\registro mockup\obj\Debug\Litterium.csproj.CopyComplete

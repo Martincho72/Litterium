@@ -12,33 +12,29 @@ namespace registro_mockup
         int id=0;
         string usuario;
         string clave;
-        bool esAdmin;
+        bool esAdmin=false;
         string nombre;
         string correoElectronico;
         string direccion;
         int telefono;
-        bool vetado;
-        bool baja;
+        bool vetado=false;
+        bool baja = false;
 
 
 
-        public Usuario(string usuario,string clave,bool esAdmin,string nombre,string correoElectronico,string direccion,int telefono,
-            bool vetado,bool baja)
+        public Usuario(string usuario,string clave,string nombre,string correoElectronico,string direccion,int telefono)
         {
             this.usuario = usuario;
             this.clave = clave;
-            this.esAdmin = esAdmin;
             this.nombre = nombre;
             this.correoElectronico = correoElectronico;
             this.direccion = direccion;
             this.telefono = telefono;
-            this.vetado = vetado;
-            this.baja = baja;
         }
 
         public static bool EncontrarUsuario(MySqlConnection conexion, string usuario)
         {
-            string consulta = string.Format("SELECT usuario FROM empleados WHERE usuario = '{0}'", usuario);
+            string consulta = string.Format("SELECT usuario FROM usuarios WHERE usuario = '{0}'", usuario);
 
             MySqlCommand comando = new MySqlCommand(consulta, conexion);
             MySqlDataReader reader = comando.ExecuteReader();
@@ -68,7 +64,7 @@ namespace registro_mockup
 
             int retorno;
             string consulta = String.Format("INSERT INTO usuarios (usuario,contrasenya,esAdmin,nombre,correo,direccion,telefono,vetado,baja) " +
-                "VALUES " + "('{0}','{1}','{2}','{3}','{4}''{5}','{6}','{7}','{8}','{9}')", us1.usuario, us1.clave, adminsitrador, us1.nombre,
+                "VALUES " + "('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}')", us1.usuario, us1.clave, adminsitrador, us1.nombre,
                 us1.correoElectronico, us1.direccion, us1.telefono,vetado,baja);
 
             MySqlCommand comando = new MySqlCommand(consulta, conexion);

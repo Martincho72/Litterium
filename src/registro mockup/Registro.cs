@@ -82,12 +82,24 @@ namespace Litterium
             int resultaado = 0;
             if (ValidarDatos())
             {
-                if (Usuario.EncontrarUsuario(basedatos.Conexion, txtUsuario.Text))
+                if (basedatos.AbrirConexion())
                 {
-                    Usuario us1 = new Usuario();
-                    resultaado = us1.AgregarUsuario(basedatos.Conexion, us1);
-                    FrmLogIn login = new FrmLogIn();
-                    login.ShowDialog();
+                    if (!Usuario.EncontrarUsuario(basedatos.Conexion, txtUsuario.Text))
+                    {
+                        int telefono = Convert.ToInt32(txtTelefono.Text);
+                        Usuario us1 = new Usuario(txtUsuario.Text, txtContraseña.Text, txtNombre.Text, txtCorreo.Text, txtDireccion.Text, telefono);
+                        resultaado = us1.AgregarUsuario(basedatos.Conexion, us1);
+                        FrmLogIn login = new FrmLogIn();
+                        login.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("El usuario ya existe");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No se ha podido abrir la conexion");
                 }
             }
             else
