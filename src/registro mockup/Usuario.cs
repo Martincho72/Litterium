@@ -73,5 +73,23 @@ namespace registro_mockup
 
             return retorno;
         }
+        public static bool validarContrasenya(MySqlConnection conexion,string usuario, string contra)
+        {
+            bool validador = false;
+            string consulta = string.Format("SELECT contrasenya FROM usuarios where contrasenya='{0}' and usuario='{1}'",contra,usuario);
+
+            MySqlCommand comando = new MySqlCommand(consulta, conexion);
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    if (contra == reader.GetString(0)) { validador = true; }
+                }
+            }
+            reader.Close();
+            return validador;
+        }
     }
 }
