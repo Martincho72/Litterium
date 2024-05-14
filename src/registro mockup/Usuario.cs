@@ -91,5 +91,25 @@ namespace registro_mockup
             reader.Close();
             return validador;
         }
+
+        public static bool esAdmintrador(MySqlConnection conexion)
+        {
+            bool esAdmin = false;
+
+            string consulta = string.Format("SELECT esAdmin FROM usuarios");
+
+            MySqlCommand comando = new MySqlCommand(consulta, conexion);
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    if (reader.GetBoolean(0)) { esAdmin = true; }
+                }
+            }
+            reader.Close();
+            return esAdmin;
+        }
     }
 }

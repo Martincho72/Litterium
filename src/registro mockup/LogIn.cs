@@ -94,8 +94,15 @@ namespace Litterium
                     {
                         if (Usuario.validarContrasenya(bDatos.Conexion,txtUsuario.Text, txtClave.Text))
                         {
-                            Principal principal = new Principal();
-                            principal.ShowDialog();
+                            if(Usuario.esAdmintrador(bDatos.Conexion)) 
+                            {
+                                MessageBox.Show("Administrador");
+                            }
+                            else
+                            {
+                                Principal principal = new Principal();
+                                principal.ShowDialog();
+                            }
                         }
                         else
                         {
