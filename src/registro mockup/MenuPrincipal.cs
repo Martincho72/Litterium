@@ -26,7 +26,6 @@ namespace registro_mockup
             panelMenu.Controls.Add(bordeizqBTN);
             this.Text = string.Empty;
             this.ControlBox = false;
-            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             this.DoubleBuffered = true;
         }
 
