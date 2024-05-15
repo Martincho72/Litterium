@@ -100,8 +100,9 @@ namespace Litterium
                             }
                             else
                             {
-                                Principal principal = new Principal();
-                                principal.ShowDialog();
+                                MenuPrincipal menu = new MenuPrincipal();
+                                menu.Show();
+                                this.Hide();
                             }
                         }
                         else
