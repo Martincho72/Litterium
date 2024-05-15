@@ -123,6 +123,36 @@ namespace registro_mockup.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap litteriumSinFondo311 {
+            get {
+                object obj = ResourceManager.GetObject("litteriumSinFondo311", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap litteriumSinFondo32 {
+            get {
+                object obj = ResourceManager.GetObject("litteriumSinFondo32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap litteriumSinFondo33 {
+            get {
+                object obj = ResourceManager.GetObject("litteriumSinFondo33", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
@@ -136,6 +166,26 @@ namespace registro_mockup.Properties {
         internal static System.Drawing.Bitmap logo_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("logo-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_removebg_preview1 {
+            get {
+                object obj = ResourceManager.GetObject("logo-removebg-preview1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_removebg_preview2 {
+            get {
+                object obj = ResourceManager.GetObject("logo-removebg-preview2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

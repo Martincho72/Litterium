@@ -96,7 +96,9 @@ namespace Litterium
                         {
                             if(Usuario.esAdmintrador(bDatos.Conexion,txtUsuario.Text)) 
                             {
-                                MessageBox.Show("Administrador");
+                                MenuAdministrador admin = new MenuAdministrador();
+                                admin.Show();
+                                this.Hide();
                             }
                             else
                             {
