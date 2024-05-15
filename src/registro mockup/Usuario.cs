@@ -20,9 +20,7 @@ namespace registro_mockup
         bool vetado=false;
         bool baja = false;
 
-
-
-        public Usuario(string usuario,string clave,string nombre,string correoElectronico,string direccion,int telefono)
+        public Usuario(string usuario, string clave, string nombre, string correoElectronico, string direccion, int telefono)
         {
             this.usuario = usuario;
             this.clave = clave;
@@ -30,6 +28,20 @@ namespace registro_mockup
             this.correoElectronico = correoElectronico;
             this.direccion = direccion;
             this.telefono = telefono;
+        }
+        //Constructor para el CargaUsuarios
+        public Usuario(int id,string usuario,string clave,bool esAdmin,string nombre,string correoElectronico,string direccion,int telefono,bool vetado, bool baja)
+        {
+            this.id = id;
+            this.usuario = usuario;
+            this.clave = clave;
+            this.esAdmin = esAdmin;
+            this.nombre = nombre;
+            this.correoElectronico = correoElectronico;
+            this.direccion = direccion;
+            this.telefono = telefono;
+            this.vetado = vetado;
+            this.baja = baja;
         }
 
         public static bool EncontrarUsuario(MySqlConnection conexion, string usuario)
@@ -110,6 +122,26 @@ namespace registro_mockup
             }
             reader.Close();
             return esAdmin;
+        }
+
+        public static List<Usuario> CargarUsuarios(MySqlConnection conexion)
+        {
+            List<Usuario> lista = new List<Usuario>();
+            string consulta = string.Format("select * from usuarios");
+            MySqlCommand comando = new MySqlCommand(consulta, conexion);
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            if (reader.HasRows)   
+            {
+                while (reader.Read())
+                {
+                    Usuario user = new Usuario(reader.GetInt32(0), reader.GetString(1), reader.GetString(2), reader.GetBoolean(3),
+                        reader.GetString(4), reader.GetString(5), reader.GetString(6), reader.GetInt32(7) ,reader.GetBoolean(8), reader.GetBoolean(9));
+                    lista.Add(user);
+                }
+            }
+            reader.Close();
+            return lista;
         }
     }
 }

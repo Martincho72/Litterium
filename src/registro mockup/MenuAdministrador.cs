@@ -44,7 +44,13 @@ namespace registro_mockup
 
         private void btnAU_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new AministracionUsuario());
+            
+             OpenChildForm(new AministracionUsuario());
+        }
+
+        private void btnAL_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new AdministracionLibro());
         }
     }
 }

@@ -71,3 +71,4 @@ C:\Users\jaarlo\Source\Repos\Litterium\src\registro mockup\obj\Debug\registro mo
 C:\Users\jaarlo\Source\Repos\Litterium\src\registro mockup\obj\Debug\registro mockup.pdb
 C:\Users\jaarlo\Source\Repos\Litterium\src\registro mockup\obj\Debug\registro_mockup.AministracionUsuario.resources
 C:\Users\jaarlo\Source\Repos\Litterium\src\registro mockup\obj\Debug\registro_mockup.MenuAdministrador.resources
+C:\Users\jaarlo\source\repos\Litterium\src\registro mockup\obj\Debug\registro_mockup.AdministracionLibro.resources

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.tlpBotones = new System.Windows.Forms.TableLayoutPanel();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.iconButton7 = new FontAwesome.Sharp.IconButton();
+            this.btnEditarUsuario = new FontAwesome.Sharp.IconButton();
+            this.btnEliminarUsuario = new FontAwesome.Sharp.IconButton();
+            this.btnAgregarUsuario = new FontAwesome.Sharp.IconButton();
             this.dgvUsuarios = new System.Windows.Forms.DataGridView();
             this.tlpBotones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
@@ -44,104 +44,102 @@
             this.tlpBotones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tlpBotones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tlpBotones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tlpBotones.Controls.Add(this.iconButton2, 0, 0);
-            this.tlpBotones.Controls.Add(this.iconButton1, 0, 0);
-            this.tlpBotones.Controls.Add(this.iconButton7, 0, 0);
+            this.tlpBotones.Controls.Add(this.btnEditarUsuario, 0, 0);
+            this.tlpBotones.Controls.Add(this.btnEliminarUsuario, 0, 0);
+            this.tlpBotones.Controls.Add(this.btnAgregarUsuario, 0, 0);
             this.tlpBotones.Dock = System.Windows.Forms.DockStyle.Top;
             this.tlpBotones.Location = new System.Drawing.Point(0, 0);
             this.tlpBotones.Name = "tlpBotones";
             this.tlpBotones.RowCount = 1;
             this.tlpBotones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpBotones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tlpBotones.Size = new System.Drawing.Size(800, 100);
+            this.tlpBotones.Size = new System.Drawing.Size(877, 100);
             this.tlpBotones.TabIndex = 0;
             // 
-            // iconButton2
+            // btnEditarUsuario
             // 
-            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.iconButton2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.ShoppingCart;
-            this.iconButton2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(535, 2);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Padding = new System.Windows.Forms.Padding(9, 0, 18, 0);
-            this.iconButton2.Size = new System.Drawing.Size(262, 96);
-            this.iconButton2.TabIndex = 6;
-            this.iconButton2.Text = "Editar Usuario";
-            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton2.UseVisualStyleBackColor = false;
-            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
+            this.btnEditarUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnEditarUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnEditarUsuario.FlatAppearance.BorderSize = 0;
+            this.btnEditarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnEditarUsuario.IconChar = FontAwesome.Sharp.IconChar.UserEdit;
+            this.btnEditarUsuario.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnEditarUsuario.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnEditarUsuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditarUsuario.Location = new System.Drawing.Point(587, 2);
+            this.btnEditarUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEditarUsuario.Name = "btnEditarUsuario";
+            this.btnEditarUsuario.Padding = new System.Windows.Forms.Padding(9, 0, 18, 0);
+            this.btnEditarUsuario.Size = new System.Drawing.Size(287, 96);
+            this.btnEditarUsuario.TabIndex = 6;
+            this.btnEditarUsuario.Text = "Editar Usuario";
+            this.btnEditarUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditarUsuario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEditarUsuario.UseVisualStyleBackColor = false;
+            this.btnEditarUsuario.Click += new System.EventHandler(this.iconButton2_Click);
             // 
-            // iconButton1
+            // btnEliminarUsuario
             // 
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.ShoppingCart;
-            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(269, 2);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Padding = new System.Windows.Forms.Padding(9, 0, 18, 0);
-            this.iconButton1.Size = new System.Drawing.Size(260, 96);
-            this.iconButton1.TabIndex = 5;
-            this.iconButton1.Text = "Eliminar Usuario";
-            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton1.UseVisualStyleBackColor = false;
+            this.btnEliminarUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnEliminarUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnEliminarUsuario.FlatAppearance.BorderSize = 0;
+            this.btnEliminarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnEliminarUsuario.IconChar = FontAwesome.Sharp.IconChar.UserMinus;
+            this.btnEliminarUsuario.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnEliminarUsuario.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnEliminarUsuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEliminarUsuario.Location = new System.Drawing.Point(295, 2);
+            this.btnEliminarUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEliminarUsuario.Name = "btnEliminarUsuario";
+            this.btnEliminarUsuario.Padding = new System.Windows.Forms.Padding(9, 0, 18, 0);
+            this.btnEliminarUsuario.Size = new System.Drawing.Size(286, 96);
+            this.btnEliminarUsuario.TabIndex = 5;
+            this.btnEliminarUsuario.Text = "Eliminar Usuario";
+            this.btnEliminarUsuario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEliminarUsuario.UseVisualStyleBackColor = false;
             // 
-            // iconButton7
+            // btnAgregarUsuario
             // 
-            this.iconButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.iconButton7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconButton7.FlatAppearance.BorderSize = 0;
-            this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.ShoppingCart;
-            this.iconButton7.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton7.Location = new System.Drawing.Point(3, 2);
-            this.iconButton7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconButton7.Name = "iconButton7";
-            this.iconButton7.Padding = new System.Windows.Forms.Padding(9, 0, 18, 0);
-            this.iconButton7.Size = new System.Drawing.Size(260, 96);
-            this.iconButton7.TabIndex = 4;
-            this.iconButton7.Text = "Agregar Usuario";
-            this.iconButton7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton7.UseVisualStyleBackColor = false;
+            this.btnAgregarUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnAgregarUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAgregarUsuario.FlatAppearance.BorderSize = 0;
+            this.btnAgregarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnAgregarUsuario.IconChar = FontAwesome.Sharp.IconChar.UserPlus;
+            this.btnAgregarUsuario.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnAgregarUsuario.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAgregarUsuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarUsuario.Location = new System.Drawing.Point(3, 2);
+            this.btnAgregarUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAgregarUsuario.Name = "btnAgregarUsuario";
+            this.btnAgregarUsuario.Padding = new System.Windows.Forms.Padding(9, 0, 18, 0);
+            this.btnAgregarUsuario.Size = new System.Drawing.Size(286, 96);
+            this.btnAgregarUsuario.TabIndex = 4;
+            this.btnAgregarUsuario.Text = "Agregar Usuario";
+            this.btnAgregarUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarUsuario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAgregarUsuario.UseVisualStyleBackColor = false;
             // 
             // dgvUsuarios
             // 
-            this.dgvUsuarios.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUsuarios.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvUsuarios.Location = new System.Drawing.Point(0, 100);
+            this.dgvUsuarios.Location = new System.Drawing.Point(52, 106);
             this.dgvUsuarios.Name = "dgvUsuarios";
             this.dgvUsuarios.RowHeadersWidth = 51;
             this.dgvUsuarios.RowTemplate.Height = 24;
-            this.dgvUsuarios.Size = new System.Drawing.Size(800, 350);
+            this.dgvUsuarios.Size = new System.Drawing.Size(690, 332);
             this.dgvUsuarios.TabIndex = 1;
             // 
             // AministracionUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(877, 450);
             this.Controls.Add(this.dgvUsuarios);
             this.Controls.Add(this.tlpBotones);
             this.Name = "AministracionUsuario";
@@ -156,9 +154,9 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tlpBotones;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private FontAwesome.Sharp.IconButton iconButton7;
+        private FontAwesome.Sharp.IconButton btnEditarUsuario;
+        private FontAwesome.Sharp.IconButton btnEliminarUsuario;
+        private FontAwesome.Sharp.IconButton btnAgregarUsuario;
         private System.Windows.Forms.DataGridView dgvUsuarios;
     }
 }
