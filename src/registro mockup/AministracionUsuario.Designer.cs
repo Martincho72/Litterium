@@ -33,6 +33,16 @@
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.iconButton7 = new FontAwesome.Sharp.IconButton();
             this.dgvUsuarios = new System.Windows.Forms.DataGridView();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clave = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.admin = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vetado = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.baja = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.tlpBotones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
             this.SuspendLayout();
@@ -49,11 +59,12 @@
             this.tlpBotones.Controls.Add(this.iconButton7, 0, 0);
             this.tlpBotones.Dock = System.Windows.Forms.DockStyle.Top;
             this.tlpBotones.Location = new System.Drawing.Point(0, 0);
+            this.tlpBotones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tlpBotones.Name = "tlpBotones";
             this.tlpBotones.RowCount = 1;
             this.tlpBotones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpBotones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tlpBotones.Size = new System.Drawing.Size(800, 100);
+            this.tlpBotones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 81F));
+            this.tlpBotones.Size = new System.Drawing.Size(600, 81);
             this.tlpBotones.TabIndex = 0;
             // 
             // iconButton2
@@ -68,11 +79,11 @@
             this.iconButton2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(535, 2);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton2.Location = new System.Drawing.Point(400, 2);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Padding = new System.Windows.Forms.Padding(9, 0, 18, 0);
-            this.iconButton2.Size = new System.Drawing.Size(262, 96);
+            this.iconButton2.Padding = new System.Windows.Forms.Padding(7, 0, 14, 0);
+            this.iconButton2.Size = new System.Drawing.Size(198, 77);
             this.iconButton2.TabIndex = 6;
             this.iconButton2.Text = "Editar Usuario";
             this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -92,11 +103,11 @@
             this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(269, 2);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton1.Location = new System.Drawing.Point(201, 2);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Padding = new System.Windows.Forms.Padding(9, 0, 18, 0);
-            this.iconButton1.Size = new System.Drawing.Size(260, 96);
+            this.iconButton1.Padding = new System.Windows.Forms.Padding(7, 0, 14, 0);
+            this.iconButton1.Size = new System.Drawing.Size(195, 77);
             this.iconButton1.TabIndex = 5;
             this.iconButton1.Text = "Eliminar Usuario";
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -114,11 +125,11 @@
             this.iconButton7.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton7.Location = new System.Drawing.Point(3, 2);
-            this.iconButton7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton7.Location = new System.Drawing.Point(2, 2);
+            this.iconButton7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.iconButton7.Name = "iconButton7";
-            this.iconButton7.Padding = new System.Windows.Forms.Padding(9, 0, 18, 0);
-            this.iconButton7.Size = new System.Drawing.Size(260, 96);
+            this.iconButton7.Padding = new System.Windows.Forms.Padding(7, 0, 14, 0);
+            this.iconButton7.Size = new System.Drawing.Size(195, 77);
             this.iconButton7.TabIndex = 4;
             this.iconButton7.Text = "Agregar Usuario";
             this.iconButton7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -127,23 +138,101 @@
             // 
             // dgvUsuarios
             // 
-            this.dgvUsuarios.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvUsuarios.AllowUserToAddRows = false;
+            this.dgvUsuarios.AllowUserToDeleteRows = false;
+            this.dgvUsuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUsuarios.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvUsuarios.Location = new System.Drawing.Point(0, 100);
+            this.dgvUsuarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id,
+            this.usuario,
+            this.clave,
+            this.admin,
+            this.nombre,
+            this.correo,
+            this.direccion,
+            this.telefono,
+            this.vetado,
+            this.baja});
+            this.dgvUsuarios.Location = new System.Drawing.Point(0, 141);
             this.dgvUsuarios.Name = "dgvUsuarios";
-            this.dgvUsuarios.RowHeadersWidth = 51;
-            this.dgvUsuarios.RowTemplate.Height = 24;
-            this.dgvUsuarios.Size = new System.Drawing.Size(800, 350);
+            this.dgvUsuarios.ReadOnly = true;
+            this.dgvUsuarios.Size = new System.Drawing.Size(600, 150);
             this.dgvUsuarios.TabIndex = 1;
+            // 
+            // id
+            // 
+            this.id.HeaderText = "id";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            // 
+            // usuario
+            // 
+            this.usuario.HeaderText = "usuario";
+            this.usuario.Name = "usuario";
+            this.usuario.ReadOnly = true;
+            // 
+            // clave
+            // 
+            this.clave.HeaderText = "clave";
+            this.clave.Name = "clave";
+            this.clave.ReadOnly = true;
+            // 
+            // admin
+            // 
+            this.admin.HeaderText = "admin";
+            this.admin.Name = "admin";
+            this.admin.ReadOnly = true;
+            this.admin.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.admin.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // nombre
+            // 
+            this.nombre.HeaderText = "nombre";
+            this.nombre.Name = "nombre";
+            this.nombre.ReadOnly = true;
+            // 
+            // correo
+            // 
+            this.correo.HeaderText = "correo";
+            this.correo.Name = "correo";
+            this.correo.ReadOnly = true;
+            // 
+            // direccion
+            // 
+            this.direccion.HeaderText = "direccion";
+            this.direccion.Name = "direccion";
+            this.direccion.ReadOnly = true;
+            // 
+            // telefono
+            // 
+            this.telefono.HeaderText = "telefono";
+            this.telefono.Name = "telefono";
+            this.telefono.ReadOnly = true;
+            // 
+            // vetado
+            // 
+            this.vetado.HeaderText = "vetado";
+            this.vetado.Name = "vetado";
+            this.vetado.ReadOnly = true;
+            this.vetado.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.vetado.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // baja
+            // 
+            this.baja.HeaderText = "baja";
+            this.baja.Name = "baja";
+            this.baja.ReadOnly = true;
+            this.baja.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.baja.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // AministracionUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.dgvUsuarios);
             this.Controls.Add(this.tlpBotones);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AministracionUsuario";
             this.Text = "AministracionUsuario";
             this.Load += new System.EventHandler(this.AministracionUsuario_Load);
@@ -160,5 +249,15 @@
         private FontAwesome.Sharp.IconButton iconButton1;
         private FontAwesome.Sharp.IconButton iconButton7;
         private System.Windows.Forms.DataGridView dgvUsuarios;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn usuario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clave;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn admin;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn correo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn direccion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefono;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn vetado;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn baja;
     }
 }

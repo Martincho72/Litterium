@@ -71,3 +71,27 @@ C:\Users\jaarlo\Source\Repos\Litterium\src\registro mockup\obj\Debug\registro mo
 C:\Users\jaarlo\Source\Repos\Litterium\src\registro mockup\obj\Debug\registro mockup.pdb
 C:\Users\jaarlo\Source\Repos\Litterium\src\registro mockup\obj\Debug\registro_mockup.AministracionUsuario.resources
 C:\Users\jaarlo\Source\Repos\Litterium\src\registro mockup\obj\Debug\registro_mockup.MenuAdministrador.resources
+C:\Users\Martin\Source\Repos\Martincho72\Litterium\src\registro mockup\bin\Debug\registro mockup.exe.config
+C:\Users\Martin\Source\Repos\Martincho72\Litterium\src\registro mockup\bin\Debug\registro mockup.exe
+C:\Users\Martin\Source\Repos\Martincho72\Litterium\src\registro mockup\bin\Debug\registro mockup.pdb
+C:\Users\Martin\Source\Repos\Martincho72\Litterium\src\registro mockup\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Martin\Source\Repos\Martincho72\Litterium\src\registro mockup\bin\Debug\MySql.Data.dll
+C:\Users\Martin\Source\Repos\Martincho72\Litterium\src\registro mockup\bin\Debug\System.Memory.dll
+C:\Users\Martin\Source\Repos\Martincho72\Litterium\src\registro mockup\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Martin\Source\Repos\Martincho72\Litterium\src\registro mockup\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Martin\Source\Repos\Martincho72\Litterium\src\registro mockup\bin\Debug\System.Buffers.dll
+C:\Users\Martin\Source\Repos\Martincho72\Litterium\src\registro mockup\bin\Debug\MySql.Data.xml
+C:\Users\Martin\Source\Repos\Martincho72\Litterium\src\registro mockup\obj\Debug\Litterium.csproj.AssemblyReference.cache
+C:\Users\Martin\Source\Repos\Martincho72\Litterium\src\registro mockup\obj\Debug\registro_mockup.AministracionUsuario.resources
+C:\Users\Martin\Source\Repos\Martincho72\Litterium\src\registro mockup\obj\Debug\Litterium.FrmLogIn.resources
+C:\Users\Martin\Source\Repos\Martincho72\Litterium\src\registro mockup\obj\Debug\registro_mockup.MenuAdministrador.resources
+C:\Users\Martin\Source\Repos\Martincho72\Litterium\src\registro mockup\obj\Debug\registro_mockup.MenuPrincipal.resources
+C:\Users\Martin\Source\Repos\Martincho72\Litterium\src\registro mockup\obj\Debug\registro_mockup.Misborradores.resources
+C:\Users\Martin\Source\Repos\Martincho72\Litterium\src\registro mockup\obj\Debug\Litterium.Registro.resources
+C:\Users\Martin\Source\Repos\Martincho72\Litterium\src\registro mockup\obj\Debug\registro_mockup.Properties.Resources.resources
+C:\Users\Martin\Source\Repos\Martincho72\Litterium\src\registro mockup\obj\Debug\Litterium.csproj.GenerateResource.cache
+C:\Users\Martin\Source\Repos\Martincho72\Litterium\src\registro mockup\obj\Debug\Litterium.csproj.CoreCompileInputs.cache
+C:\Users\Martin\Source\Repos\Martincho72\Litterium\src\registro mockup\obj\Debug\Litterium.csproj.CopyComplete
+C:\Users\Martin\Source\Repos\Martincho72\Litterium\src\registro mockup\obj\Debug\registro mockup.exe
+C:\Users\Martin\Source\Repos\Martincho72\Litterium\src\registro mockup\obj\Debug\registro mockup.pdb
+C:\Users\Martin\Source\Repos\Martincho72\Litterium\src\registro mockup\obj\Debug\registro_mockup.Principal.resources
