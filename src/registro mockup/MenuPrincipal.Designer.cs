@@ -102,7 +102,6 @@
             this.tableLayoutPanel1.Controls.Add(this.iconButton9, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.iconButton8, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.iconButton7, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
@@ -206,6 +205,7 @@
             this.panelescritorio.Controls.Add(this.PCBlogo);
             this.panelescritorio.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelescritorio.Location = new System.Drawing.Point(0, 137);
+            this.panelescritorio.MinimumSize = new System.Drawing.Size(1750, 785);
             this.panelescritorio.Name = "panelescritorio";
             this.panelescritorio.Size = new System.Drawing.Size(1750, 785);
             this.panelescritorio.TabIndex = 8;
@@ -240,6 +240,7 @@
             this.ClientSize = new System.Drawing.Size(1750, 922);
             this.Controls.Add(this.panelescritorio);
             this.Controls.Add(this.panelMenu);
+            this.MinimumSize = new System.Drawing.Size(1772, 978);
             this.Name = "MenuPrincipal";
             this.Text = "MenuPrincipal";
             this.panelLogo.ResumeLayout(false);
