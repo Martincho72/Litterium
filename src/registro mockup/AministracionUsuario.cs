@@ -22,26 +22,7 @@ namespace registro_mockup
         {
             if (bDatos.AbrirConexion())
             {
-                List<Usuario> usuarios = Usuario.BuscarUsuarios(bDatos.Conexion);
-
-                // Iteramos sobre la lista y agregamos cada usuario al DataGridView
-                foreach (Usuario usuario in usuarios)
-                {
-                    // Agregamos una nueva fila al DataGridView
-                    int rowIndex = dgvUsuarios.Rows.Add();
-
-                    // Asignamos los valores del usuario a las celdas de la fila
-                    dgvUsuarios.Rows[rowIndex].Cells["ID"].Value = usuario.Id;
-                    dgvUsuarios.Rows[rowIndex].Cells["Usuario"].Value = usuario.Usu;
-                    dgvUsuarios.Rows[rowIndex].Cells["Clave"].Value = usuario.Clave;
-                    dgvUsuarios.Rows[rowIndex].Cells["admin"].Value = usuario.EsAdmin;
-                    dgvUsuarios.Rows[rowIndex].Cells["Nombre"].Value = usuario.Nombre;
-                    dgvUsuarios.Rows[rowIndex].Cells["Correo"].Value = usuario.Correo;
-                    dgvUsuarios.Rows[rowIndex].Cells["Direccion"].Value = usuario.Direccion;
-                    dgvUsuarios.Rows[rowIndex].Cells["Telefono"].Value = usuario.Telefono;
-                    dgvUsuarios.Rows[rowIndex].Cells["Vetado"].Value = usuario.Vetado;
-                    dgvUsuarios.Rows[rowIndex].Cells["Baja"].Value = usuario.Baja;
-                }
+                dgvUsuarios.DataSource = Usuario.BuscarUsuarios(bDatos.Conexion);
             }
             else { }
             bDatos.CerrarConexion();
