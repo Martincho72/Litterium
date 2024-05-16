@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Nueva Contraseña</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  body {
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    background-color: whitesmoke;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    border: 3px solid black;
+  }
+
+  h2 {
+    color: black;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+  }
+
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  .atras {
+            position: absolute;
+            top: 1%;
+            left: 1%;
+    }
+
+   .atras img{
+            height:64px;
+            width: 64px;
+        }
+</style>
+</head>
+<body>
+<a href="./index.html"><div class="atras"><img src="./img/atras.png" alt="atrás"></div></a>
+<div class="container">
+  <h2>Cambiar contraseña Litterium</h2>
+  <form id="form1" name="form1" method="post" action="./nuevaContrasena.php">
+    <div class="form-group">
+      <label for="usuario">Usuario:</label>
+      <input type="text" name="usuario" id="usuario" required />
+    </div>
+    <div class="form-group">
+      <label for="clave">Contraseña actual:</label>
+      <input type="password" name="clave" id="clave" required />
+    </div>
+    <div class="form-group">
+      <label for="nuevaClave">Contraseña nueva:</label>
+      <input type="password" name="nuevaClave" id="nuevaClave" required />
+    </div>
+    <input type="submit" name="enviar" id="enviar" value="Enviar" />
+  </form>
+</div>
+</body>
+</html>

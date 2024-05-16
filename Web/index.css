@@ -24,9 +24,9 @@ nav {
 nav h2 {
     position: relative;
     float: left;
-    font-size: 1.5rem;
-    margin-top: 1.9rem;
-    margin-left: 8%;
+    font-size: 1.3rem;
+    margin-top: 2.2rem;
+    margin-left: 4%;
     color: black;
 }
 
@@ -47,7 +47,7 @@ a:visited {
 }
 
 .idioma {
-    margin-right: 2rem;
+    margin-right: 0.3rem;
     float: right;
     position: relative;
     height: 40%;
