@@ -99,4 +99,34 @@ C:\Users\jaarlo\Source\Repos\Litterium\src\registro mockup\obj\Debug\registro_mo
 C:\Users\jaarlo\Source\Repos\Litterium\src\registro mockup\obj\Debug\registro_mockup.formularios_administrador.AdministracionLibro.resources
 C:\Users\jaarlo\Source\Repos\Litterium\src\registro mockup\obj\Debug\registro_mockup.Misborradores.resources
 C:\Users\jaarlo\Source\Repos\Litterium\src\registro mockup\obj\Debug\registro_mockup.formularios_administrador.AgregarUsuario.resources
+<<<<<<< HEAD
+C:\Users\vibede\Source\Repos\bermellVL\Litterium\src\registro mockup\obj\Debug\Litterium.csproj.AssemblyReference.cache
+C:\Users\vibede\Source\Repos\bermellVL\Litterium\src\registro mockup\obj\Debug\Litterium.csproj.SuggestedBindingRedirects.cache
+C:\Users\vibede\Source\Repos\bermellVL\Litterium\src\registro mockup\obj\Debug\registro_mockup.formularios_administrador.AdministracionCortoHistoria.resources
+C:\Users\vibede\Source\Repos\bermellVL\Litterium\src\registro mockup\obj\Debug\registro_mockup.formularios_administrador.AdministracionLibro.resources
+C:\Users\vibede\Source\Repos\bermellVL\Litterium\src\registro mockup\obj\Debug\registro_mockup.formularios_administrador.AgregarUsuario.resources
+C:\Users\vibede\Source\Repos\bermellVL\Litterium\src\registro mockup\obj\Debug\registro_mockup.AministracionUsuario.resources
+C:\Users\vibede\Source\Repos\bermellVL\Litterium\src\registro mockup\obj\Debug\Litterium.FrmLogIn.resources
+C:\Users\vibede\Source\Repos\bermellVL\Litterium\src\registro mockup\obj\Debug\registro_mockup.MenuAdministrador.resources
+C:\Users\vibede\Source\Repos\bermellVL\Litterium\src\registro mockup\obj\Debug\registro_mockup.MenuPrincipal.resources
+C:\Users\vibede\Source\Repos\bermellVL\Litterium\src\registro mockup\obj\Debug\registro_mockup.Misborradores.resources
+C:\Users\vibede\Source\Repos\bermellVL\Litterium\src\registro mockup\obj\Debug\Litterium.Registro.resources
+C:\Users\vibede\Source\Repos\bermellVL\Litterium\src\registro mockup\obj\Debug\registro_mockup.Properties.Resources.resources
+C:\Users\vibede\Source\Repos\bermellVL\Litterium\src\registro mockup\obj\Debug\Litterium.csproj.GenerateResource.cache
+C:\Users\vibede\Source\Repos\bermellVL\Litterium\src\registro mockup\obj\Debug\Litterium.csproj.CoreCompileInputs.cache
+C:\Users\vibede\Source\Repos\bermellVL\Litterium\src\registro mockup\obj\Debug\registro mockup.exe
+C:\Users\vibede\Source\Repos\bermellVL\Litterium\src\registro mockup\obj\Debug\registro mockup.pdb
+C:\Users\vibede\Source\Repos\bermellVL\Litterium\src\registro mockup\bin\Debug\registro mockup.exe.config
+C:\Users\vibede\Source\Repos\bermellVL\Litterium\src\registro mockup\bin\Debug\registro mockup.exe
+C:\Users\vibede\Source\Repos\bermellVL\Litterium\src\registro mockup\bin\Debug\registro mockup.pdb
+C:\Users\vibede\Source\Repos\bermellVL\Litterium\src\registro mockup\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\vibede\Source\Repos\bermellVL\Litterium\src\registro mockup\bin\Debug\System.Memory.dll
+C:\Users\vibede\Source\Repos\bermellVL\Litterium\src\registro mockup\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\vibede\Source\Repos\bermellVL\Litterium\src\registro mockup\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\vibede\Source\Repos\bermellVL\Litterium\src\registro mockup\bin\Debug\System.Buffers.dll
+C:\Users\vibede\Source\Repos\bermellVL\Litterium\src\registro mockup\obj\Debug\Litterium.csproj.CopyComplete
+C:\Users\vibede\Source\Repos\bermellVL\Litterium\src\registro mockup\obj\Debug\registro_mockup.Principal.MiCarrito.resources
+C:\Users\vibede\Source\Repos\bermellVL\Litterium\src\registro mockup\obj\Debug\registro_mockup.Principal.LibroPrincipal.resources
+=======
 C:\Users\jaarlo\Source\Repos\Litterium\src\registro mockup\obj\Debug\registro_mockup.formularios_administrador.EliminarUsuario.resources
+>>>>>>> 1137f1853adbd7536d1e92d954b77d03e56512db
