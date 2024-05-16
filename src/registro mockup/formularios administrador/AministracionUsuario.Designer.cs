@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.tlpBotones = new System.Windows.Forms.TableLayoutPanel();
-            this.dgvUsuarios = new System.Windows.Forms.DataGridView();
             this.btnEditarUsuario = new FontAwesome.Sharp.IconButton();
             this.btnEliminarUsuario = new FontAwesome.Sharp.IconButton();
             this.btnAgregarUsuario = new FontAwesome.Sharp.IconButton();
+            this.dgvUsuarios = new System.Windows.Forms.DataGridView();
             this.tlpBotones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
             this.SuspendLayout();
@@ -56,22 +56,6 @@
             this.tlpBotones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tlpBotones.Size = new System.Drawing.Size(800, 100);
             this.tlpBotones.TabIndex = 0;
-            // 
-            // dgvUsuarios
-            // 
-            this.dgvUsuarios.AllowUserToAddRows = false;
-            this.dgvUsuarios.AllowUserToDeleteRows = false;
-            this.dgvUsuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUsuarios.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvUsuarios.Location = new System.Drawing.Point(0, 100);
-            this.dgvUsuarios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dgvUsuarios.Name = "dgvUsuarios";
-            this.dgvUsuarios.ReadOnly = true;
-            this.dgvUsuarios.RowHeadersWidth = 51;
-            this.dgvUsuarios.Size = new System.Drawing.Size(800, 350);
-            this.dgvUsuarios.TabIndex = 1;
-            this.dgvUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsuarios_CellContentClick_1);
             // 
             // btnEditarUsuario
             // 
@@ -142,6 +126,22 @@
             this.btnAgregarUsuario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAgregarUsuario.UseVisualStyleBackColor = false;
             this.btnAgregarUsuario.Click += new System.EventHandler(this.btnAgregarUsuario_Click);
+            // 
+            // dgvUsuarios
+            // 
+            this.dgvUsuarios.AllowUserToAddRows = false;
+            this.dgvUsuarios.AllowUserToDeleteRows = false;
+            this.dgvUsuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUsuarios.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvUsuarios.Location = new System.Drawing.Point(0, 100);
+            this.dgvUsuarios.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvUsuarios.Name = "dgvUsuarios";
+            this.dgvUsuarios.ReadOnly = true;
+            this.dgvUsuarios.RowHeadersWidth = 51;
+            this.dgvUsuarios.Size = new System.Drawing.Size(800, 350);
+            this.dgvUsuarios.TabIndex = 1;
+            this.dgvUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsuarios_CellContentClick_1);
             // 
             // AministracionUsuario
             // 

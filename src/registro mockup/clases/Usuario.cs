@@ -42,6 +42,17 @@ namespace registro_mockup
             this.telefono = telefono;
         }
 
+        public Usuario(string usuario, string clave, bool admin,string nombre, string correoElectronico, string direccion, int telefono)
+        {
+            this.usuario = usuario;
+            this.clave = clave;
+            this.esAdmin= admin;
+            this.nombre = nombre;
+            this.correoElectronico = correoElectronico;
+            this.direccion = direccion;
+            this.telefono = telefono;
+        }
+
         public Usuario(int id, string usuario, string clave, bool esAdmin, string nombre, string correoElectronico, string direccion, int telefono, bool vetdado, bool baja)
         {
             this.id = id;

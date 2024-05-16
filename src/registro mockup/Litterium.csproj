@@ -84,6 +84,18 @@
       <DependentUpon>AministracionUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="clases\BDatos.cs" />
+    <Compile Include="Principal\CortoHistoriaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\CortoHistoriaPrincipal.Designer.cs">
+      <DependentUpon>CortoHistoriaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\LibroPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\LibroPrincipal.Designer.cs">
+      <DependentUpon>LibroPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Principal\LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +119,12 @@
     </Compile>
     <Compile Include="formularios Usuario\Misborradores.Designer.cs">
       <DependentUpon>Misborradores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\MiCarrito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\MiCarrito.Designer.cs">
+      <DependentUpon>MiCarrito.cs</DependentUpon>
     </Compile>
     <Compile Include="Principal\Principal.cs">
       <SubType>Form</SubType>
