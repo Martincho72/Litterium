@@ -84,6 +84,12 @@
       <DependentUpon>AministracionUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="clases\BDatos.cs" />
+    <Compile Include="formularios administrador\EliminarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios administrador\EliminarUsuario.Designer.cs">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Principal\CortoHistoriaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,12 +132,6 @@
     <Compile Include="Principal\MiCarrito.Designer.cs">
       <DependentUpon>MiCarrito.cs</DependentUpon>
     </Compile>
-    <Compile Include="Principal\Principal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Principal\Principal.Designer.cs">
-      <DependentUpon>Principal.cs</DependentUpon>
-    </Compile>
     <Compile Include="Principal\Registro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +153,9 @@
     <EmbeddedResource Include="formularios administrador\AministracionUsuario.resx">
       <DependentUpon>AministracionUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formularios administrador\EliminarUsuario.resx">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Principal\LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,9 +167,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formularios Usuario\Misborradores.resx">
       <DependentUpon>Misborradores.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Principal\Principal.resx">
-      <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal\Registro.resx">
       <DependentUpon>Registro.cs</DependentUpon>
@@ -230,6 +230,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\litteriumSinFondo31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lecha.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -103,6 +103,16 @@ namespace registro_mockup.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lecha {
+            get {
+                object obj = ResourceManager.GetObject("lecha", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap litteriumSinFondo3 {
             get {
                 object obj = ResourceManager.GetObject("litteriumSinFondo3", resourceCulture);
