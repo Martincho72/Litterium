@@ -1,4 +1,5 @@
-﻿using System;
+﻿using registro_mockup.clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,14 +26,15 @@ namespace registro_mockup.formularios_administrador
 
         private void AdministracionLibro_Load(object sender, EventArgs e)
         {
-
+            CargaLibros();
         }
 
         private void CargaLibros()
         {
             if (bDatos.AbrirConexion())
             {
-                dgvLibro.DataSource = Usuario.BuscarUsuarios(bDatos.Conexion);
+                
+                dgvLibro.DataSource = Libro.BuscarLibros(bDatos.Conexion);
             }
             else { }
             bDatos.CerrarConexion();
