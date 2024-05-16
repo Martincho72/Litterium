@@ -20,9 +20,9 @@ namespace registro_mockup
         bool vetado;
         bool baja;
 
-        public int Id { get { return id; } }
-        public string Usu { get { return usuario; } }
-        public string Clave { get { return clave; } }
+        public int Id { get { return id; } set { id = value; } }
+        public string Usu { get { return usuario; } set { usuario = value; } }
+        public string Clave { get { return clave; } set { clave = value; } }
         public bool EsAdmin { get { return esAdmin; } }
         public string Nombre { get { return nombre; } }
         public string Correo { get { return correoElectronico; } }
@@ -31,6 +31,7 @@ namespace registro_mockup
         public bool Vetado { get { return vetado; } }
         public bool Baja { get { return baja; } }
 
+        public Usuario() { }
 
         public Usuario(string usuario, string clave, string nombre, string correoElectronico, string direccion, int telefono)
         {
@@ -41,8 +42,7 @@ namespace registro_mockup
             this.direccion = direccion;
             this.telefono = telefono;
         }
-
-        public Usuario(string usuario, string clave, bool admin, string nombre, string correoElectronico, string direccion, int telefono)
+        public Usuario(string usuario, string clave,bool admin, string nombre, string correoElectronico, string direccion, int telefono)
         {
             this.usuario = usuario;
             this.clave = clave;
@@ -52,7 +52,6 @@ namespace registro_mockup
             this.direccion = direccion;
             this.telefono = telefono;
         }
-
         public Usuario(int id, string usuario, string clave, bool esAdmin, string nombre, string correoElectronico, string direccion, int telefono, bool vetdado, bool baja)
         {
             this.id = id;
@@ -85,6 +84,42 @@ namespace registro_mockup
                 return false;
             }
         }
+
+        public static Usuario EncontrarDatosUsuario(MySqlConnection conexion, string usuario)
+        {
+            string consulta = string.Format("SELECT * FROM usuarios WHERE usuario = '{0}'", usuario);
+
+            MySqlCommand comando = new MySqlCommand(consulta, conexion);
+            MySqlDataReader reader = comando.ExecuteReader();
+            Usuario usua = new Usuario();
+            if (reader.HasRows)   // En caso que se hayan registros en el objeto reader
+            {
+                // Recorremos el reader (registro por registro) y cargamos la lista de empleados.
+                while (reader.Read())
+                {
+                    int id = reader.GetInt32(0);
+                    string usu = reader.GetString(1);
+                    string clave = reader.GetString(2);
+                    bool esAdmin = reader.GetBoolean(3);
+                    string nombre = reader.GetString(4);
+                    string correo = reader.GetString(5);
+                    string direccion = reader.GetString(6);
+                    int telefono = reader.GetInt32(7);
+                    bool vetado = reader.GetBoolean(8);
+                    bool baja = reader.GetBoolean(9);
+
+                    // Crear el objeto Usuario y agregarlo a la lista
+                    usua = new Usuario(id, usu, clave, esAdmin, nombre, correo,
+                        direccion, telefono, vetado, baja);
+                }
+
+
+            }
+            // devolvemos la lista cargada con los usuarios.
+            reader.Close();
+            return usua;
+        }
+
         public int AgregarUsuario(MySqlConnection conexion, Usuario us1)
         {
             int vetado;
@@ -152,11 +187,15 @@ namespace registro_mockup
             List<Usuario> lista = new List<Usuario>();
             string consulta = string.Format("SELECT * from usuarios");
 
+            // Creamos el objeto command al cual le pasamos la consulta y la conexión
             MySqlCommand comando = new MySqlCommand(consulta, conexion);
+            // Ejecutamos el comando y recibimos en un objeto DataReader la lista de registros seleccionados.
+            // Recordemos que un objeto DataReader es una especie de tabla de datos virtual.
             MySqlDataReader reader = comando.ExecuteReader();
 
-            if (reader.HasRows)
+            if (reader.HasRows)   // En caso que se hayan registros en el objeto reader
             {
+                // Recorremos el reader (registro por registro) y cargamos la lista de empleados.
                 while (reader.Read())
                 {
                     int id = reader.GetInt32(0);
@@ -170,16 +209,17 @@ namespace registro_mockup
                     bool vetado = reader.GetBoolean(8);
                     bool baja = reader.GetBoolean(9);
 
+                    // Crear el objeto Usuario y agregarlo a la lista
                     Usuario usuario = new Usuario(id, usu, clave, esAdmin, nombre, correo,
                         direccion, telefono, vetado, baja);
                     lista.Add(usuario);
                 }
 
             }
+            // devolvemos la lista cargada con los usuarios.
             reader.Close();
             return lista;
         }
-
         public static int eliminarUsuario(MySqlConnection conexion, string usuario)
         {
             int retorno;
@@ -188,8 +228,8 @@ namespace registro_mockup
             MySqlCommand comando = new MySqlCommand(consulta, conexion);
 
             retorno = comando.ExecuteNonQuery();
-            return retorno;
 
+            return retorno;
         }
     }
-    }
+}

@@ -109,6 +109,7 @@
             this.lblMensajesError.Size = new System.Drawing.Size(142, 16);
             this.lblMensajesError.TabIndex = 13;
             this.lblMensajesError.Text = "Mensajes de Error";
+            this.lblMensajesError.Click += new System.EventHandler(this.lblMensajesError_Click);
             // 
             // lblUsuario
             // 

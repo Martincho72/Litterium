@@ -54,7 +54,10 @@ namespace registro_mockup
 
         private void btnEditarUsuario_Click(object sender, EventArgs e)
         {
+            BuscarUsuario form = new BuscarUsuario();
+            form.ShowDialog();
 
+            CargaUsuarios();
         }
     }
 }

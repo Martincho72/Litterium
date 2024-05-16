@@ -100,3 +100,5 @@ C:\Users\jaarlo\Source\Repos\Litterium\src\registro mockup\obj\Debug\registro_mo
 C:\Users\jaarlo\Source\Repos\Litterium\src\registro mockup\obj\Debug\registro_mockup.Misborradores.resources
 C:\Users\jaarlo\Source\Repos\Litterium\src\registro mockup\obj\Debug\registro_mockup.formularios_administrador.AgregarUsuario.resources
 C:\Users\jaarlo\Source\Repos\Litterium\src\registro mockup\obj\Debug\registro_mockup.formularios_administrador.EliminarUsuario.resources
+C:\Users\jaarlo\Source\Repos\Litterium\src\registro mockup\obj\Debug\registro_mockup.formularios_administrador.EditarUsuario.resources
+C:\Users\jaarlo\Source\Repos\Litterium\src\registro mockup\obj\Debug\registro_mockup.formularios_administrador.BuscarUsuario.resources
