@@ -65,10 +65,6 @@ namespace registro_mockup.formularios_administrador
             }
             return ok;
         }
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
@@ -93,7 +89,7 @@ namespace registro_mockup.formularios_administrador
                     }
                     else
                     {
-                        MessageBox.Show("El usuario ya existe");
+                        lblErrores.Text = "El usuario ya existe";
                     }
                     basedatos.CerrarConexion();
                 }
@@ -108,14 +104,18 @@ namespace registro_mockup.formularios_administrador
             }
         }
 
-        //private void AgregarUsuario_FormClosed(object sender, FormClosedEventArgs e)
-        //{
-        //    AministracionUsuario parentForm = this.Owner as AministracionUsuario;
-        //    if (parentForm != null)
-        //    {
-        //        Usuario.BuscarUsuarios();
-        //    }
-        //}
-        
+        private void pcbLogo_Click(object sender, EventArgs e)
+        {
+            MenuPrincipal form = new MenuPrincipal();
+            form.Hide();
+            form.Show();
+        }
+
+        private void AgregarUsuario_Load(object sender, EventArgs e)
+        {
+            lblErrores.Text = "";
+        }
+
+
     }
 }

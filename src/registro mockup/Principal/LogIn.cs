@@ -120,5 +120,10 @@ namespace Litterium
                 }
             }
         }
+
+        private void lblMensajesError_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
