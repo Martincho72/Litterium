@@ -98,5 +98,5 @@ C:\Users\Martin\Source\Repos\Martincho72\Litterium\src\registro mockup\obj\Debug
 C:\Users\jaarlo\Source\Repos\Litterium\src\registro mockup\obj\Debug\registro_mockup.formularios_administrador.AdministracionCortoHistoria.resources
 C:\Users\jaarlo\Source\Repos\Litterium\src\registro mockup\obj\Debug\registro_mockup.formularios_administrador.AdministracionLibro.resources
 C:\Users\jaarlo\Source\Repos\Litterium\src\registro mockup\obj\Debug\registro_mockup.Misborradores.resources
-C:\Users\jaarlo\Source\Repos\Litterium\src\registro mockup\obj\Debug\registro_mockup.Principal.resources
 C:\Users\jaarlo\Source\Repos\Litterium\src\registro mockup\obj\Debug\registro_mockup.formularios_administrador.AgregarUsuario.resources
+C:\Users\jaarlo\Source\Repos\Litterium\src\registro mockup\obj\Debug\registro_mockup.formularios_administrador.EliminarUsuario.resources

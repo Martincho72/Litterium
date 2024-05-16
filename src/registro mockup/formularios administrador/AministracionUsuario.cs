@@ -34,32 +34,27 @@ namespace registro_mockup
             CargaUsuarios();
         }
 
-        private void iconButton2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgvUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dgvUsuarios_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void btnAgregarUsuario_Click(object sender, EventArgs e)
         {
             AgregarUsuario form = new AgregarUsuario();
             
             form.ShowDialog();
+            
+            CargaUsuarios();
         }
 
-  
-        private void AgregarUsuario_FormClosed(object sender, FormClosedEventArgs e)
+        private void btnEliminarUsuario_Click(object sender, EventArgs e)
         {
-            AministracionUsuario_Load(sender, e);
+            EliminarUsuario form = new EliminarUsuario();
+            form.ShowDialog();
+
+            CargaUsuarios();
+        }
+
+        private void btnEditarUsuario_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
