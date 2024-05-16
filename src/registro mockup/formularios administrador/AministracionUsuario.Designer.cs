@@ -79,7 +79,7 @@
             this.btnEditarUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEditarUsuario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEditarUsuario.UseVisualStyleBackColor = false;
-            this.btnEditarUsuario.Click += new System.EventHandler(this.iconButton2_Click);
+            this.btnEditarUsuario.Click += new System.EventHandler(this.btnEditarUsuario_Click);
             // 
             // btnEliminarUsuario
             // 
@@ -102,6 +102,7 @@
             this.btnEliminarUsuario.Text = "Eliminar Usuario";
             this.btnEliminarUsuario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEliminarUsuario.UseVisualStyleBackColor = false;
+            this.btnEliminarUsuario.Click += new System.EventHandler(this.btnEliminarUsuario_Click);
             // 
             // btnAgregarUsuario
             // 
@@ -141,7 +142,6 @@
             this.dgvUsuarios.RowHeadersWidth = 51;
             this.dgvUsuarios.Size = new System.Drawing.Size(800, 350);
             this.dgvUsuarios.TabIndex = 1;
-            this.dgvUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsuarios_CellContentClick_1);
             // 
             // AministracionUsuario
             // 

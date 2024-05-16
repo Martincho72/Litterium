@@ -84,6 +84,12 @@
       <DependentUpon>AministracionUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="clases\BDatos.cs" />
+    <Compile Include="formularios administrador\EliminarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios administrador\EliminarUsuario.Designer.cs">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Principal\CortoHistoriaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,11 +153,16 @@
     <EmbeddedResource Include="formularios administrador\AministracionUsuario.resx">
       <DependentUpon>AministracionUsuario.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Principal\CortoHistoriaPrincipal.resx">
       <DependentUpon>CortoHistoriaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal\LibroPrincipal.resx">
       <DependentUpon>LibroPrincipal.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="formularios administrador\EliminarUsuario.resx">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+>>>>>>> 1137f1853adbd7536d1e92d954b77d03e56512db
     </EmbeddedResource>
     <EmbeddedResource Include="Principal\LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
@@ -165,9 +176,12 @@
     <EmbeddedResource Include="formularios Usuario\Misborradores.resx">
       <DependentUpon>Misborradores.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Principal\MiCarrito.resx">
       <DependentUpon>MiCarrito.cs</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> 1137f1853adbd7536d1e92d954b77d03e56512db
     <EmbeddedResource Include="Principal\Registro.resx">
       <DependentUpon>Registro.cs</DependentUpon>
     </EmbeddedResource>
@@ -232,6 +246,7 @@
     <None Include="Resources\litteriumSinFondo31.png" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <None Include="Resources\cerrar.png" />
   </ItemGroup>
   <ItemGroup>
@@ -242,6 +257,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\x.png" />
+=======
+    <None Include="Resources\lecha.png" />
+>>>>>>> 1137f1853adbd7536d1e92d954b77d03e56512db
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
