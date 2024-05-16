@@ -27,7 +27,14 @@ namespace registro_mockup.formularios_administrador
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-
+            if (basedatos.AbrirConexion())
+            {
+            Usuario usuario = new Usuario(txtUsuario.Text, txtContraseña.Text, chbAdmin.Checked, txtNombre.Text, txtCorreo.Text, txtDireccion.Text, int.Parse(txtTelefono.Text), chbVetado.Checked, chbBaja.Checked);
+            Usuario.EditarUsuario(basedatos.Conexion, usuario);
+            this.Close();
+            }
+            else { }
+            basedatos.CerrarConexion();
         }
 
         private void EditarUsuario_Load(object sender, EventArgs e)

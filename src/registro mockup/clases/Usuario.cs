@@ -52,6 +52,20 @@ namespace registro_mockup
             this.direccion = direccion;
             this.telefono = telefono;
         }
+
+        public Usuario(string usuario, string clave, bool esAdmin, string nombre, string correoElectronico, string direccion, int telefono, bool vetdado, bool baja)
+        {
+            this.usuario = usuario;
+            this.clave = clave;
+            this.esAdmin = esAdmin;
+            this.nombre = nombre;
+            this.correoElectronico = correoElectronico;
+            this.direccion = direccion;
+            this.telefono = telefono;
+            this.vetado = vetdado;
+            this.baja = baja;
+        }
+
         public Usuario(int id, string usuario, string clave, bool esAdmin, string nombre, string correoElectronico, string direccion, int telefono, bool vetdado, bool baja)
         {
             this.id = id;
@@ -224,6 +238,20 @@ namespace registro_mockup
         {
             int retorno;
             string consulta = String.Format("delete from usuarios where usuario='{0}'", usuario);
+
+            MySqlCommand comando = new MySqlCommand(consulta, conexion);
+
+            retorno = comando.ExecuteNonQuery();
+
+            return retorno;
+        }
+
+        public static int EditarUsuario(MySqlConnection conexion, Usuario us1)
+        {
+            int retorno;
+            string consulta = String.Format("UPDATE usuarios SET usuario = '{0}', contrasenya = '{1}', esAdmin = '{2}', nombre = '{3}', correo = '{4}'," +
+                                            "direccion = '{5}', telefono = '{6}', vetado = '{7}', baja = '{8}' WHERE usuario = '{0}'",
+                                         us1.usuario, us1.clave, us1.esAdmin, us1.nombre, us1.correoElectronico, us1.direccion, us1.telefono, us1.vetado, us1.baja);
 
             MySqlCommand comando = new MySqlCommand(consulta, conexion);
 

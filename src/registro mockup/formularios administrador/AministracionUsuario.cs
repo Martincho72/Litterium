@@ -34,7 +34,6 @@ namespace registro_mockup
             CargaUsuarios();
         }
 
-
         private void btnAgregarUsuario_Click(object sender, EventArgs e)
         {
             AgregarUsuario form = new AgregarUsuario();

@@ -32,5 +32,10 @@ namespace registro_mockup.formularios_administrador
             else { }
             basedatos.CerrarConexion();
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -115,7 +115,5 @@ namespace registro_mockup.formularios_administrador
         {
             lblErrores.Text = "";
         }
-
-
     }
 }
