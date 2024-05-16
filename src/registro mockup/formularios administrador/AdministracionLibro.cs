@@ -12,6 +12,7 @@ namespace registro_mockup.formularios_administrador
 {
     public partial class AdministracionLibro : Form
     {
+        BDatos bDatos = new BDatos();
         public AdministracionLibro()
         {
             InitializeComponent();
@@ -25,6 +26,16 @@ namespace registro_mockup.formularios_administrador
         private void AdministracionLibro_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void CargaLibros()
+        {
+            if (bDatos.AbrirConexion())
+            {
+                dgvLibro.DataSource = Usuario.BuscarUsuarios(bDatos.Conexion);
+            }
+            else { }
+            bDatos.CerrarConexion();
         }
     }
 }
