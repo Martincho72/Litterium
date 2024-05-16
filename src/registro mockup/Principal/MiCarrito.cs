@@ -16,5 +16,15 @@ namespace registro_mockup.Principal
         {
             InitializeComponent();
         }
+
+        private void btnComprarMiCesta_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MiCarrito_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
