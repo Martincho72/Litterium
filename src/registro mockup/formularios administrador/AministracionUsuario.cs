@@ -1,4 +1,5 @@
-﻿using System;
+﻿using registro_mockup.formularios_administrador;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -46,6 +47,12 @@ namespace registro_mockup
         private void dgvUsuarios_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
                 
+        }
+
+        private void btnAgregarUsuario_Click(object sender, EventArgs e)
+        {
+            AgregarUsuario form = new AgregarUsuario();
+            form.ShowDialog();
         }
     }
 }
