@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtTelefono = new System.Windows.Forms.TextBox();
@@ -45,13 +46,15 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnIogin = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.btnCrear = new System.Windows.Forms.Button();
+            this.chbAdmin = new System.Windows.Forms.CheckBox();
             this.btnSalir = new System.Windows.Forms.PictureBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtContraseña
@@ -71,6 +74,7 @@
             // txtTelefono
             // 
             this.txtTelefono.Location = new System.Drawing.Point(183, 288);
+            this.txtTelefono.MaxLength = 9;
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(157, 22);
             this.txtTelefono.TabIndex = 23;
@@ -216,27 +220,28 @@
             this.label2.TabIndex = 27;
             this.label2.Text = "Mensaje Error";
             // 
-            // btnIogin
+            // btnCrear
             // 
-            this.btnIogin.BackColor = System.Drawing.Color.Gold;
-            this.btnIogin.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIogin.Location = new System.Drawing.Point(137, 467);
-            this.btnIogin.Name = "btnIogin";
-            this.btnIogin.Size = new System.Drawing.Size(119, 60);
-            this.btnIogin.TabIndex = 28;
-            this.btnIogin.Text = "Log In";
-            this.btnIogin.UseVisualStyleBackColor = false;
+            this.btnCrear.BackColor = System.Drawing.Color.Gold;
+            this.btnCrear.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrear.Location = new System.Drawing.Point(148, 467);
+            this.btnCrear.Name = "btnCrear";
+            this.btnCrear.Size = new System.Drawing.Size(119, 60);
+            this.btnCrear.TabIndex = 28;
+            this.btnCrear.Text = "Crear";
+            this.btnCrear.UseVisualStyleBackColor = false;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
-            // checkBox1
+            // chbAdmin
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(157, 422);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(89, 27);
-            this.checkBox1.TabIndex = 29;
-            this.checkBox1.Text = "Admin";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chbAdmin.AutoSize = true;
+            this.chbAdmin.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chbAdmin.Location = new System.Drawing.Point(157, 422);
+            this.chbAdmin.Name = "chbAdmin";
+            this.chbAdmin.Size = new System.Drawing.Size(89, 27);
+            this.chbAdmin.TabIndex = 29;
+            this.chbAdmin.Text = "Admin";
+            this.chbAdmin.UseVisualStyleBackColor = true;
             // 
             // btnSalir
             // 
@@ -252,6 +257,10 @@
             this.btnSalir.TabStop = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // AgregarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -259,8 +268,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(414, 549);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.btnIogin);
+            this.Controls.Add(this.chbAdmin);
+            this.Controls.Add(this.btnCrear);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtContraseña);
@@ -283,6 +292,7 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -307,8 +317,9 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnIogin;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button btnCrear;
+        private System.Windows.Forms.CheckBox chbAdmin;
         private System.Windows.Forms.PictureBox btnSalir;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
