@@ -151,12 +151,6 @@
   <data name="litteriumSinFondo312" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\litteriumSinFondo31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-<<<<<<< HEAD
-  <data name="menos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-=======
->>>>>>> 1137f1853adbd7536d1e92d954b77d03e56512db
   <data name="fondoPanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondoPanel.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -166,24 +160,13 @@
   <data name="litteriumSinFondo311" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\litteriumSinFondo31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cerrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cerrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="litteriumSinFondo31" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\litteriumSinFondo3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="litteriumSinFondo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\litteriumSinFondo3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-<<<<<<< HEAD
-  <data name="maximizar-tamano" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maximizar-tamano.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="x" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-=======
   <data name="lecha" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lecha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
->>>>>>> 1137f1853adbd7536d1e92d954b77d03e56512db
   </data>
 </root>
