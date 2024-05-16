@@ -42,5 +42,10 @@ namespace registro_mockup
         {
 
         }
+
+        private void dgvUsuarios_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+                
+        }
     }
 }

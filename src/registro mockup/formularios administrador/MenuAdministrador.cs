@@ -1,4 +1,4 @@
-﻿using FontAwesome.Sharp;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FontAwesome.Sharp;
+using registro_mockup.formularios_administrador;
 
 namespace registro_mockup
 {
@@ -45,6 +47,17 @@ namespace registro_mockup
         private void btnAU_Click(object sender, EventArgs e)
         {
             OpenChildForm(new AministracionUsuario());
+        }
+
+        private void btnAL_Click(object sender, EventArgs e)
+        {
+
+            OpenChildForm(new AdministracionLibro());
+        }
+
+        private void btnAC_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new AdministracionCortoHistoria());
         }
     }
 }
