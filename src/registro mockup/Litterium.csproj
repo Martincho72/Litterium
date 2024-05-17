@@ -90,11 +90,23 @@
       <DependentUpon>AministracionUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="clases\BDatos.cs" />
+    <Compile Include="formularios administrador\BuscarLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios administrador\BuscarLibro.Designer.cs">
+      <DependentUpon>BuscarLibro.cs</DependentUpon>
+    </Compile>
     <Compile Include="formularios administrador\BuscarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formularios administrador\BuscarUsuario.Designer.cs">
       <DependentUpon>BuscarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios administrador\EditarLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios administrador\EditarLibro.Designer.cs">
+      <DependentUpon>EditarLibro.cs</DependentUpon>
     </Compile>
     <Compile Include="formularios administrador\EditarUsuario.cs">
       <SubType>Form</SubType>
@@ -180,8 +192,14 @@
     <EmbeddedResource Include="formularios administrador\AministracionUsuario.resx">
       <DependentUpon>AministracionUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formularios administrador\BuscarLibro.resx">
+      <DependentUpon>BuscarLibro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formularios administrador\BuscarUsuario.resx">
       <DependentUpon>BuscarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios administrador\EditarLibro.resx">
+      <DependentUpon>EditarLibro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formularios administrador\EditarUsuario.resx">
       <DependentUpon>EditarUsuario.cs</DependentUpon>

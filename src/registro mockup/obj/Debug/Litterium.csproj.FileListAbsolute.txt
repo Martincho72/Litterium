@@ -109,3 +109,5 @@ C:\Users\Martin\Source\Repos\Martincho72\Litterium\src\registro mockup\obj\Debug
 C:\Users\Martin\Source\Repos\Martincho72\Litterium\src\registro mockup\obj\Debug\registro_mockup.formularios_administrador.EliminarUsuario.resources
 C:\Users\jaarlo\Source\Repos\Litterium\src\registro mockup\obj\Debug\registro_mockup.formularios_administrador.AgregarLibro.resources
 C:\Users\jaarlo\Source\Repos\Litterium\src\registro mockup\obj\Debug\registro_mockup.formularios_administrador.EliminarLibro.resources
+C:\Users\jaarlo\Source\Repos\Litterium\src\registro mockup\obj\Debug\registro_mockup.formularios_administrador.BuscarLibro.resources
+C:\Users\jaarlo\Source\Repos\Litterium\src\registro mockup\obj\Debug\registro_mockup.formularios_administrador.EditarLibro.resources
