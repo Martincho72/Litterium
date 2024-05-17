@@ -133,6 +133,7 @@ namespace registro_mockup.clases
             retorno = comando.ExecuteNonQuery();
 
             return retorno;
+
         }
 
     }
