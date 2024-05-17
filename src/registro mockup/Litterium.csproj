@@ -259,6 +259,9 @@
     <EmbeddedResource Include="formularios administrador\EliminarUsuario.resx">
       <DependentUpon>EliminarUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Principal\ContrasenyaOlvidada.resx">
+      <DependentUpon>ContrasenyaOlvidada.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Principal\LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
