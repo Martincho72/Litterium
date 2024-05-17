@@ -35,6 +35,7 @@ namespace registro_mockup.formularios_administrador
             basedatos.CerrarConexion();
 
         }
+        
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
