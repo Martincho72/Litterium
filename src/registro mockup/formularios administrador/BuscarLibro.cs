@@ -1,4 +1,5 @@
-﻿using System;
+﻿using registro_mockup.clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,10 +11,10 @@ using System.Windows.Forms;
 
 namespace registro_mockup.formularios_administrador
 {
-    public partial class BuscarUsuario : Form
+    public partial class BuscarLibro : Form
     {
-        BDatos basedatos = new BDatos();
-        public BuscarUsuario()
+        BDatos basedatos=new BDatos();
+        public BuscarLibro()
         {
             InitializeComponent();
         }
@@ -22,25 +23,15 @@ namespace registro_mockup.formularios_administrador
         {
             if (basedatos.AbrirConexion())
             {
-                if (Usuario.EncontrarUsuario(basedatos.Conexion, txtUsuario.Text))
+                if (Libro.EncontrarLibro(basedatos.Conexion, txtIsbn.Text))
                 {
-                    EditarUsuario editarUsuario = new EditarUsuario(txtUsuario.Text);
-                    editarUsuario.ShowDialog();
+                    EditarLibro form = new EditarLibro(txtIsbn.Text);
+                    form.ShowDialog();
                 }
             }
 
             else { }
             basedatos.CerrarConexion();
-        }
-
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void BuscarUsuario_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -95,6 +95,7 @@
             this.btnEditarLibro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEditarLibro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEditarLibro.UseVisualStyleBackColor = false;
+            this.btnEditarLibro.Click += new System.EventHandler(this.btnEditarLibro_Click);
             // 
             // btnEliminarLibro
             // 

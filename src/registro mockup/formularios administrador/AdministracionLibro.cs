@@ -55,5 +55,13 @@ namespace registro_mockup.formularios_administrador
 
             CargaLibros();
         }
+
+        private void btnEditarLibro_Click(object sender, EventArgs e)
+        {
+            BuscarLibro form = new BuscarLibro();
+            form.ShowDialog();
+
+            CargaLibros();
+        }
     }
 }
