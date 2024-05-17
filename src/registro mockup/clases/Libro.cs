@@ -75,5 +75,35 @@ namespace registro_mockup.clases
 
             return retorno;
         }
+        public static int eliminarLibro(MySqlConnection conexion, string isbn)
+        {
+            int retorno;
+            string consulta = String.Format("delete from libro where isbn='{0}'", isbn);
+
+            MySqlCommand comando = new MySqlCommand(consulta, conexion);
+
+            retorno = comando.ExecuteNonQuery();
+
+            return retorno;
+        }
+
+        public static bool EncontrarLibro(MySqlConnection conexion, string isbn)
+        {
+            string consulta = string.Format("SELECT isbn FROM libro WHERE isbn = '{0}'", isbn);
+
+            MySqlCommand comando = new MySqlCommand(consulta, conexion);
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                reader.Close();
+                return true;
+            }
+            else
+            {
+                reader.Close();
+                return false;
+            }
+        }
     }
 }
