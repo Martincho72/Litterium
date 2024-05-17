@@ -103,11 +103,29 @@
     <Compile Include="formularios administrador\BuscarUsuario.Designer.cs">
       <DependentUpon>BuscarUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="formularios administrador\EditarCortoHistoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios administrador\EditarCortoHistoria.Designer.cs">
+      <DependentUpon>EditarCortoHistoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios administrador\EliminarCortoHistoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios administrador\EliminarCortoHistoria.Designer.cs">
+      <DependentUpon>EliminarCortoHistoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="formularios Usuario\HistorialCompras.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formularios Usuario\HistorialCompras.Designer.cs">
       <DependentUpon>HistorialCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios Usuario\MenuUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios Usuario\MenuUsuario.Designer.cs">
+      <DependentUpon>MenuUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="formularios Usuario\MiCuenta.cs">
       <SubType>Form</SubType>
