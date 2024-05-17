@@ -47,5 +47,13 @@ namespace registro_mockup.formularios_administrador
 
             CargaLibros();
         }
+
+        private void btnEliminarLibro_Click(object sender, EventArgs e)
+        {
+            EliminarLibro form = new EliminarLibro();
+            form.ShowDialog();
+
+            CargaLibros();
+        }
     }
 }
