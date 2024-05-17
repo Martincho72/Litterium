@@ -28,12 +28,323 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.chbContinuable = new System.Windows.Forms.CheckBox();
+            this.btnSalir = new System.Windows.Forms.PictureBox();
+            this.chbFinalizada = new System.Windows.Forms.CheckBox();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.lblError = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtValoracion = new System.Windows.Forms.TextBox();
+            this.txtEditorial = new System.Windows.Forms.TextBox();
+            this.txtFechaPublicacion = new System.Windows.Forms.TextBox();
+            this.txtAutor = new System.Windows.Forms.TextBox();
+            this.txtTitulo = new System.Windows.Forms.TextBox();
+            this.lblFechaPublicacion = new System.Windows.Forms.Label();
+            this.lblValoracion = new System.Windows.Forms.Label();
+            this.lblEditorial = new System.Windows.Forms.Label();
+            this.lblAutor = new System.Windows.Forms.Label();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.txtIdUsuario = new System.Windows.Forms.TextBox();
+            this.lblIdUsuario = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // chbContinuable
+            // 
+            this.chbContinuable.AutoSize = true;
+            this.chbContinuable.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chbContinuable.Location = new System.Drawing.Point(199, 421);
+            this.chbContinuable.Name = "chbContinuable";
+            this.chbContinuable.Size = new System.Drawing.Size(139, 27);
+            this.chbContinuable.TabIndex = 71;
+            this.chbContinuable.Text = "Continuable";
+            this.chbContinuable.UseVisualStyleBackColor = true;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.Color.Transparent;
+            this.btnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalir.Image = global::registro_mockup.Properties.Resources.lecha;
+            this.btnSalir.Location = new System.Drawing.Point(13, 496);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(82, 41);
+            this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnSalir.TabIndex = 69;
+            this.btnSalir.TabStop = false;
+            // 
+            // chbFinalizada
+            // 
+            this.chbFinalizada.AutoSize = true;
+            this.chbFinalizada.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chbFinalizada.Location = new System.Drawing.Point(78, 421);
+            this.chbFinalizada.Name = "chbFinalizada";
+            this.chbFinalizada.Size = new System.Drawing.Size(121, 27);
+            this.chbFinalizada.TabIndex = 68;
+            this.chbFinalizada.Text = "Finalizada";
+            this.chbFinalizada.UseVisualStyleBackColor = true;
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.BackColor = System.Drawing.Color.Gold;
+            this.btnEditar.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.Location = new System.Drawing.Point(179, 477);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(119, 60);
+            this.btnEditar.TabIndex = 67;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = false;
+            // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblError.ForeColor = System.Drawing.Color.Red;
+            this.lblError.Location = new System.Drawing.Point(129, 91);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(136, 23);
+            this.lblError.TabIndex = 66;
+            this.lblError.Text = "Mensaje Error";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(430, 88);
+            this.panel1.TabIndex = 65;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(112, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(318, 88);
+            this.panel2.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(31, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(190, 28);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Editar Usuario";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo312;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(112, 88);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // txtValoracion
+            // 
+            this.txtValoracion.Location = new System.Drawing.Point(199, 349);
+            this.txtValoracion.Name = "txtValoracion";
+            this.txtValoracion.Size = new System.Drawing.Size(157, 22);
+            this.txtValoracion.TabIndex = 64;
+            // 
+            // txtEditorial
+            // 
+            this.txtEditorial.Location = new System.Drawing.Point(199, 305);
+            this.txtEditorial.Name = "txtEditorial";
+            this.txtEditorial.Size = new System.Drawing.Size(157, 22);
+            this.txtEditorial.TabIndex = 63;
+            // 
+            // txtFechaPublicacion
+            // 
+            this.txtFechaPublicacion.Location = new System.Drawing.Point(199, 260);
+            this.txtFechaPublicacion.MaxLength = 9;
+            this.txtFechaPublicacion.Name = "txtFechaPublicacion";
+            this.txtFechaPublicacion.Size = new System.Drawing.Size(157, 22);
+            this.txtFechaPublicacion.TabIndex = 62;
+            // 
+            // txtAutor
+            // 
+            this.txtAutor.Location = new System.Drawing.Point(199, 213);
+            this.txtAutor.Name = "txtAutor";
+            this.txtAutor.Size = new System.Drawing.Size(157, 22);
+            this.txtAutor.TabIndex = 61;
+            // 
+            // txtTitulo
+            // 
+            this.txtTitulo.Location = new System.Drawing.Point(199, 172);
+            this.txtTitulo.Name = "txtTitulo";
+            this.txtTitulo.Size = new System.Drawing.Size(157, 22);
+            this.txtTitulo.TabIndex = 60;
+            // 
+            // lblFechaPublicacion
+            // 
+            this.lblFechaPublicacion.AutoSize = true;
+            this.lblFechaPublicacion.BackColor = System.Drawing.Color.Transparent;
+            this.lblFechaPublicacion.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaPublicacion.Location = new System.Drawing.Point(27, 260);
+            this.lblFechaPublicacion.Name = "lblFechaPublicacion";
+            this.lblFechaPublicacion.Size = new System.Drawing.Size(140, 19);
+            this.lblFechaPublicacion.TabIndex = 59;
+            this.lblFechaPublicacion.Text = "FechaPublicacion:";
+            // 
+            // lblValoracion
+            // 
+            this.lblValoracion.AutoSize = true;
+            this.lblValoracion.BackColor = System.Drawing.Color.Transparent;
+            this.lblValoracion.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValoracion.Location = new System.Drawing.Point(72, 349);
+            this.lblValoracion.Name = "lblValoracion";
+            this.lblValoracion.Size = new System.Drawing.Size(93, 19);
+            this.lblValoracion.TabIndex = 58;
+            this.lblValoracion.Text = "Valoracion:";
+            // 
+            // lblEditorial
+            // 
+            this.lblEditorial.AutoSize = true;
+            this.lblEditorial.BackColor = System.Drawing.Color.Transparent;
+            this.lblEditorial.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEditorial.Location = new System.Drawing.Point(72, 305);
+            this.lblEditorial.Name = "lblEditorial";
+            this.lblEditorial.Size = new System.Drawing.Size(74, 19);
+            this.lblEditorial.TabIndex = 57;
+            this.lblEditorial.Text = "Editorial:";
+            // 
+            // lblAutor
+            // 
+            this.lblAutor.AutoSize = true;
+            this.lblAutor.BackColor = System.Drawing.Color.Transparent;
+            this.lblAutor.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAutor.Location = new System.Drawing.Point(72, 217);
+            this.lblAutor.Name = "lblAutor";
+            this.lblAutor.Size = new System.Drawing.Size(57, 19);
+            this.lblAutor.TabIndex = 56;
+            this.lblAutor.Text = "Autor:";
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitulo.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(72, 173);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(56, 19);
+            this.lblTitulo.TabIndex = 55;
+            this.lblTitulo.Text = "Titulo:";
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(199, 129);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(157, 22);
+            this.txtId.TabIndex = 54;
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.BackColor = System.Drawing.Color.Transparent;
+            this.lblNombre.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(72, 129);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(23, 19);
+            this.lblNombre.TabIndex = 53;
+            this.lblNombre.Text = "Id";
+            // 
+            // txtIdUsuario
+            // 
+            this.txtIdUsuario.Location = new System.Drawing.Point(199, 393);
+            this.txtIdUsuario.Name = "txtIdUsuario";
+            this.txtIdUsuario.Size = new System.Drawing.Size(157, 22);
+            this.txtIdUsuario.TabIndex = 73;
+            // 
+            // lblIdUsuario
+            // 
+            this.lblIdUsuario.AutoSize = true;
+            this.lblIdUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.lblIdUsuario.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIdUsuario.Location = new System.Drawing.Point(72, 393);
+            this.lblIdUsuario.Name = "lblIdUsuario";
+            this.lblIdUsuario.Size = new System.Drawing.Size(86, 19);
+            this.lblIdUsuario.TabIndex = 72;
+            this.lblIdUsuario.Text = "IdUsuario:";
+            // 
+            // EditarCortoHistoria
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.ClientSize = new System.Drawing.Size(430, 593);
+            this.Controls.Add(this.txtIdUsuario);
+            this.Controls.Add(this.lblIdUsuario);
+            this.Controls.Add(this.chbContinuable);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.chbFinalizada);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.lblError);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.txtValoracion);
+            this.Controls.Add(this.txtEditorial);
+            this.Controls.Add(this.txtFechaPublicacion);
+            this.Controls.Add(this.txtAutor);
+            this.Controls.Add(this.txtTitulo);
+            this.Controls.Add(this.lblFechaPublicacion);
+            this.Controls.Add(this.lblValoracion);
+            this.Controls.Add(this.lblEditorial);
+            this.Controls.Add(this.lblAutor);
+            this.Controls.Add(this.lblTitulo);
+            this.Controls.Add(this.txtId);
+            this.Controls.Add(this.lblNombre);
+            this.Name = "EditarCortoHistoria";
             this.Text = "EditarCortoHistoria";
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.CheckBox chbContinuable;
+        private System.Windows.Forms.PictureBox btnSalir;
+        private System.Windows.Forms.CheckBox chbFinalizada;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox txtValoracion;
+        private System.Windows.Forms.TextBox txtEditorial;
+        private System.Windows.Forms.TextBox txtFechaPublicacion;
+        private System.Windows.Forms.TextBox txtAutor;
+        private System.Windows.Forms.TextBox txtTitulo;
+        private System.Windows.Forms.Label lblFechaPublicacion;
+        private System.Windows.Forms.Label lblValoracion;
+        private System.Windows.Forms.Label lblEditorial;
+        private System.Windows.Forms.Label lblAutor;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.TextBox txtIdUsuario;
+        private System.Windows.Forms.Label lblIdUsuario;
     }
 }

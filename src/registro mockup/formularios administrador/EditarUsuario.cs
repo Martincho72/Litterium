@@ -56,5 +56,10 @@ namespace registro_mockup.formularios_administrador
 
 
         }
+
+        private void lblNombre_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
