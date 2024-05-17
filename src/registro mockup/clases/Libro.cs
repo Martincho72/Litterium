@@ -63,5 +63,17 @@ namespace registro_mockup.clases
             reader.Close();
             return lista;
         }
+        public int AgregarLibro(MySqlConnection conexion, Libro l1)
+        {
+            int retorno;
+            string consulta = String.Format("INSERT INTO libro (isbn,titulo,autor,categoria,valoracion) " +
+                "VALUES " + "('{0}','{1}','{2}','{3}','{4}')", l1.Isbn, l1.Titulo,l1.Autor,l1.Categoria,l1.Valoracion);
+
+            MySqlCommand comando = new MySqlCommand(consulta, conexion);
+
+            retorno = comando.ExecuteNonQuery();
+
+            return retorno;
+        }
     }
 }

@@ -71,6 +71,12 @@
     <Compile Include="formularios administrador\AdministracionLibro.Designer.cs">
       <DependentUpon>AdministracionLibro.cs</DependentUpon>
     </Compile>
+    <Compile Include="formularios administrador\AgregarLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios administrador\AgregarLibro.Designer.cs">
+      <DependentUpon>AgregarLibro.cs</DependentUpon>
+    </Compile>
     <Compile Include="formularios administrador\AgregarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formularios administrador\AdministracionLibro.resx">
       <DependentUpon>AdministracionLibro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios administrador\AgregarLibro.resx">
+      <DependentUpon>AgregarLibro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formularios administrador\AgregarUsuario.resx">
       <DependentUpon>AgregarUsuario.cs</DependentUpon>
