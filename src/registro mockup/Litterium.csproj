@@ -247,11 +247,17 @@
     <EmbeddedResource Include="formularios administrador\BuscarUsuario.resx">
       <DependentUpon>BuscarUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formularios administrador\EditarCortoHistoria.resx">
+      <DependentUpon>EditarCortoHistoria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formularios administrador\EditarLibro.resx">
       <DependentUpon>EditarLibro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formularios administrador\EditarUsuario.resx">
       <DependentUpon>EditarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios administrador\EliminarCortoHistoria.resx">
+      <DependentUpon>EliminarCortoHistoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formularios administrador\EliminarLibro.resx">
       <DependentUpon>EliminarLibro.cs</DependentUpon>

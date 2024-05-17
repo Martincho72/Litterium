@@ -16,5 +16,13 @@ namespace registro_mockup.formularios_administrador
         {
             InitializeComponent();
         }
+
+        private void btnEliminarCH_Click(object sender, EventArgs e)
+        {
+            EliminarCortoHistoria form = new EliminarCortoHistoria();
+            form .ShowDialog();
+
+
+        }
     }
 }
