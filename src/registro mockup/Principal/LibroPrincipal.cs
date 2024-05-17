@@ -16,5 +16,15 @@ namespace registro_mockup.Principal
         {
             InitializeComponent();
         }
+
+        private void groupBox4_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox12_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
