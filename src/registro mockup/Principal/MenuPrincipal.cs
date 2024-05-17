@@ -51,9 +51,7 @@ namespace registro_mockup
                 bordeizqBTN.BackColor = color;
                 bordeizqBTN.Location = new Point(0, actualBTN.Location.Y);
                 bordeizqBTN.BringToFront();
-                IconActual.IconChar = actualBTN.IconChar;
-                IconActual.IconColor = color;
-                lblinicio.Text = actualBTN.Text;
+
             }
         }
         private void desactivarBTN()
@@ -83,7 +81,6 @@ namespace registro_mockup
             panelescritorio.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-            lblinicio.Text = childForm.Text;
         }
 
 
@@ -97,9 +94,7 @@ namespace registro_mockup
         {
             desactivarBTN();
             bordeizqBTN.Visible = false;
-            IconActual.IconChar = IconChar.Home;
-            IconActual.IconColor = Color.OrangeRed;
-            lblinicio.Text = "Litterium";
+
 
         }
 
@@ -180,6 +175,11 @@ namespace registro_mockup
         {
             ActivaBTN(sender, RGBColors.color1);
             OpenChildForm(new CortoHistoriaPrincipal());
+        }
+
+        private void MenuPrincipal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

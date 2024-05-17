@@ -29,33 +29,30 @@
         private void InitializeComponent()
         {
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.panelMenu = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panelescritorio = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.iconButton10 = new FontAwesome.Sharp.IconButton();
-            this.btnCortohistorias = new FontAwesome.Sharp.IconButton();
-            this.btnLibros = new FontAwesome.Sharp.IconButton();
-            this.btnMiCarrito = new FontAwesome.Sharp.IconButton();
-            this.PCBlogo = new System.Windows.Forms.PictureBox();
             this.btnBuscar = new FontAwesome.Sharp.IconButton();
             this.btnUser = new FontAwesome.Sharp.IconButton();
             this.btnPictureMaximizar = new System.Windows.Forms.PictureBox();
             this.btnPictureMinimizar = new System.Windows.Forms.PictureBox();
             this.btnPictureCerrar = new System.Windows.Forms.PictureBox();
             this.BTNinicio = new System.Windows.Forms.PictureBox();
-            this.lblinicio = new System.Windows.Forms.Label();
-            this.IconActual = new FontAwesome.Sharp.IconPictureBox();
+            this.panelMenu = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.iconButton10 = new FontAwesome.Sharp.IconButton();
+            this.btnCortohistorias = new FontAwesome.Sharp.IconButton();
+            this.btnLibros = new FontAwesome.Sharp.IconButton();
+            this.btnMiCarrito = new FontAwesome.Sharp.IconButton();
+            this.panelescritorio = new System.Windows.Forms.Panel();
+            this.PCBlogo = new System.Windows.Forms.PictureBox();
             this.panelLogo.SuspendLayout();
-            this.panelMenu.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.panelescritorio.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PCBlogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPictureMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPictureMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPictureCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BTNinicio)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.IconActual)).BeginInit();
+            this.panelMenu.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.panelescritorio.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PCBlogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panelLogo
@@ -67,8 +64,6 @@
             this.panelLogo.Controls.Add(this.btnPictureMaximizar);
             this.panelLogo.Controls.Add(this.btnPictureMinimizar);
             this.panelLogo.Controls.Add(this.btnPictureCerrar);
-            this.panelLogo.Controls.Add(this.lblinicio);
-            this.panelLogo.Controls.Add(this.IconActual);
             this.panelLogo.Controls.Add(this.BTNinicio);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
@@ -77,6 +72,95 @@
             this.panelLogo.Size = new System.Drawing.Size(1559, 110);
             this.panelLogo.TabIndex = 1;
             this.panelLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLogo_Paint);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(436, 43);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(735, 41);
+            this.textBox1.TabIndex = 11;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBuscar.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.btnBuscar.IconColor = System.Drawing.Color.Black;
+            this.btnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBuscar.Location = new System.Drawing.Point(1222, 34);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(54, 54);
+            this.btnBuscar.TabIndex = 10;
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            // 
+            // btnUser
+            // 
+            this.btnUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnUser.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.btnUser.IconColor = System.Drawing.Color.Black;
+            this.btnUser.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnUser.Location = new System.Drawing.Point(1321, 34);
+            this.btnUser.Name = "btnUser";
+            this.btnUser.Size = new System.Drawing.Size(82, 57);
+            this.btnUser.TabIndex = 9;
+            this.btnUser.UseVisualStyleBackColor = false;
+            // 
+            // btnPictureMaximizar
+            // 
+            this.btnPictureMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPictureMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPictureMaximizar.Image = global::registro_mockup.Properties.Resources.maximizar_tamano;
+            this.btnPictureMaximizar.Location = new System.Drawing.Point(1478, 12);
+            this.btnPictureMaximizar.Name = "btnPictureMaximizar";
+            this.btnPictureMaximizar.Size = new System.Drawing.Size(26, 25);
+            this.btnPictureMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnPictureMaximizar.TabIndex = 8;
+            this.btnPictureMaximizar.TabStop = false;
+            this.btnPictureMaximizar.Click += new System.EventHandler(this.btnPictureMaximizar_Click);
+            // 
+            // btnPictureMinimizar
+            // 
+            this.btnPictureMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPictureMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPictureMinimizar.Image = global::registro_mockup.Properties.Resources.menos;
+            this.btnPictureMinimizar.Location = new System.Drawing.Point(1433, 12);
+            this.btnPictureMinimizar.Name = "btnPictureMinimizar";
+            this.btnPictureMinimizar.Size = new System.Drawing.Size(26, 25);
+            this.btnPictureMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnPictureMinimizar.TabIndex = 7;
+            this.btnPictureMinimizar.TabStop = false;
+            this.btnPictureMinimizar.Click += new System.EventHandler(this.btnPictureMinimizar_Click);
+            // 
+            // btnPictureCerrar
+            // 
+            this.btnPictureCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPictureCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPictureCerrar.Image = global::registro_mockup.Properties.Resources.x;
+            this.btnPictureCerrar.Location = new System.Drawing.Point(1521, 12);
+            this.btnPictureCerrar.Name = "btnPictureCerrar";
+            this.btnPictureCerrar.Size = new System.Drawing.Size(26, 25);
+            this.btnPictureCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnPictureCerrar.TabIndex = 4;
+            this.btnPictureCerrar.TabStop = false;
+            this.btnPictureCerrar.Click += new System.EventHandler(this.btnPictureCerrar_Click);
+            // 
+            // BTNinicio
+            // 
+            this.BTNinicio.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo3;
+            this.BTNinicio.Location = new System.Drawing.Point(32, 10);
+            this.BTNinicio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BTNinicio.Name = "BTNinicio";
+            this.BTNinicio.Size = new System.Drawing.Size(133, 90);
+            this.BTNinicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BTNinicio.TabIndex = 1;
+            this.BTNinicio.TabStop = false;
+            this.BTNinicio.Click += new System.EventHandler(this.BTNinicio_Click);
             // 
             // panelMenu
             // 
@@ -108,29 +192,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(222, 635);
             this.tableLayoutPanel1.TabIndex = 1;
-            // 
-            // panelescritorio
-            // 
-            this.panelescritorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.panelescritorio.Controls.Add(this.tableLayoutPanel1);
-            this.panelescritorio.Controls.Add(this.PCBlogo);
-            this.panelescritorio.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelescritorio.Location = new System.Drawing.Point(0, 110);
-            this.panelescritorio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelescritorio.MinimumSize = new System.Drawing.Size(1556, 628);
-            this.panelescritorio.Name = "panelescritorio";
-            this.panelescritorio.Size = new System.Drawing.Size(1559, 635);
-            this.panelescritorio.TabIndex = 8;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(436, 43);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(735, 41);
-            this.textBox1.TabIndex = 11;
             // 
             // iconButton10
             // 
@@ -223,6 +284,19 @@
             this.btnMiCarrito.UseVisualStyleBackColor = false;
             this.btnMiCarrito.Click += new System.EventHandler(this.iconButton7_Click);
             // 
+            // panelescritorio
+            // 
+            this.panelescritorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.panelescritorio.Controls.Add(this.tableLayoutPanel1);
+            this.panelescritorio.Controls.Add(this.PCBlogo);
+            this.panelescritorio.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelescritorio.Location = new System.Drawing.Point(0, 110);
+            this.panelescritorio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelescritorio.MinimumSize = new System.Drawing.Size(1556, 628);
+            this.panelescritorio.Name = "panelescritorio";
+            this.panelescritorio.Size = new System.Drawing.Size(1559, 635);
+            this.panelescritorio.TabIndex = 8;
+            // 
             // PCBlogo
             // 
             this.PCBlogo.Image = global::registro_mockup.Properties.Resources.logo_removebg_preview;
@@ -235,110 +309,6 @@
             this.PCBlogo.TabIndex = 0;
             this.PCBlogo.TabStop = false;
             // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBuscar.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.btnBuscar.IconColor = System.Drawing.Color.Black;
-            this.btnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBuscar.Location = new System.Drawing.Point(1222, 34);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(54, 54);
-            this.btnBuscar.TabIndex = 10;
-            this.btnBuscar.UseVisualStyleBackColor = false;
-            // 
-            // btnUser
-            // 
-            this.btnUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnUser.IconChar = FontAwesome.Sharp.IconChar.User;
-            this.btnUser.IconColor = System.Drawing.Color.Black;
-            this.btnUser.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnUser.Location = new System.Drawing.Point(1321, 34);
-            this.btnUser.Name = "btnUser";
-            this.btnUser.Size = new System.Drawing.Size(82, 57);
-            this.btnUser.TabIndex = 9;
-            this.btnUser.UseVisualStyleBackColor = false;
-            // 
-            // btnPictureMaximizar
-            // 
-            this.btnPictureMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPictureMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPictureMaximizar.Image = global::registro_mockup.Properties.Resources.maximizar_tamano;
-            this.btnPictureMaximizar.Location = new System.Drawing.Point(1478, 12);
-            this.btnPictureMaximizar.Name = "btnPictureMaximizar";
-            this.btnPictureMaximizar.Size = new System.Drawing.Size(26, 25);
-            this.btnPictureMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnPictureMaximizar.TabIndex = 8;
-            this.btnPictureMaximizar.TabStop = false;
-            this.btnPictureMaximizar.Click += new System.EventHandler(this.btnPictureMaximizar_Click);
-            // 
-            // btnPictureMinimizar
-            // 
-            this.btnPictureMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPictureMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPictureMinimizar.Image = global::registro_mockup.Properties.Resources.menos;
-            this.btnPictureMinimizar.Location = new System.Drawing.Point(1433, 12);
-            this.btnPictureMinimizar.Name = "btnPictureMinimizar";
-            this.btnPictureMinimizar.Size = new System.Drawing.Size(26, 25);
-            this.btnPictureMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnPictureMinimizar.TabIndex = 7;
-            this.btnPictureMinimizar.TabStop = false;
-            this.btnPictureMinimizar.Click += new System.EventHandler(this.btnPictureMinimizar_Click);
-            // 
-            // btnPictureCerrar
-            // 
-            this.btnPictureCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPictureCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPictureCerrar.Image = global::registro_mockup.Properties.Resources.x;
-            this.btnPictureCerrar.Location = new System.Drawing.Point(1521, 12);
-            this.btnPictureCerrar.Name = "btnPictureCerrar";
-            this.btnPictureCerrar.Size = new System.Drawing.Size(26, 25);
-            this.btnPictureCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnPictureCerrar.TabIndex = 4;
-            this.btnPictureCerrar.TabStop = false;
-            this.btnPictureCerrar.Click += new System.EventHandler(this.btnPictureCerrar_Click);
-            // 
-            // BTNinicio
-            // 
-            this.BTNinicio.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo3;
-            this.BTNinicio.Location = new System.Drawing.Point(32, 10);
-            this.BTNinicio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.BTNinicio.Name = "BTNinicio";
-            this.BTNinicio.Size = new System.Drawing.Size(133, 90);
-            this.BTNinicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BTNinicio.TabIndex = 1;
-            this.BTNinicio.TabStop = false;
-            this.BTNinicio.Click += new System.EventHandler(this.BTNinicio_Click);
-            // 
-            // lblinicio
-            // 
-            this.lblinicio.AutoSize = true;
-            this.lblinicio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lblinicio.Location = new System.Drawing.Point(308, 43);
-            this.lblinicio.Name = "lblinicio";
-            this.lblinicio.Size = new System.Drawing.Size(56, 16);
-            this.lblinicio.TabIndex = 3;
-            this.lblinicio.Text = "Litterium";
-            // 
-            // IconActual
-            // 
-            this.IconActual.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(180)))), ((int)(((byte)(110)))));
-            this.IconActual.ForeColor = System.Drawing.Color.OrangeRed;
-            this.IconActual.IconChar = FontAwesome.Sharp.IconChar.House;
-            this.IconActual.IconColor = System.Drawing.Color.OrangeRed;
-            this.IconActual.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.IconActual.IconSize = 26;
-            this.IconActual.Location = new System.Drawing.Point(274, 43);
-            this.IconActual.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.IconActual.Name = "IconActual";
-            this.IconActual.Size = new System.Drawing.Size(28, 26);
-            this.IconActual.TabIndex = 2;
-            this.IconActual.TabStop = false;
-            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -350,17 +320,17 @@
             this.MinimumSize = new System.Drawing.Size(1577, 792);
             this.Name = "MenuPrincipal";
             this.Text = "MenuPrincipal";
+            this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
-            this.panelMenu.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.panelescritorio.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PCBlogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPictureMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPictureMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPictureCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BTNinicio)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.IconActual)).EndInit();
+            this.panelMenu.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.panelescritorio.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PCBlogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -383,7 +353,5 @@
         private FontAwesome.Sharp.IconButton btnBuscar;
         private FontAwesome.Sharp.IconButton btnUser;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label lblinicio;
-        private FontAwesome.Sharp.IconPictureBox IconActual;
     }
 }
