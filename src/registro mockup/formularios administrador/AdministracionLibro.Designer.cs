@@ -117,6 +117,7 @@
             this.btnEliminarLibro.Text = "Eliminar Libro";
             this.btnEliminarLibro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEliminarLibro.UseVisualStyleBackColor = false;
+            this.btnEliminarLibro.Click += new System.EventHandler(this.btnEliminarLibro_Click);
             // 
             // btnAgregarLibro
             // 
@@ -140,6 +141,7 @@
             this.btnAgregarLibro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAgregarLibro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAgregarLibro.UseVisualStyleBackColor = false;
+            this.btnAgregarLibro.Click += new System.EventHandler(this.btnAgregarLibro_Click);
             // 
             // AdministracionLibro
             // 

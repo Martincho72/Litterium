@@ -63,5 +63,47 @@ namespace registro_mockup.clases
             reader.Close();
             return lista;
         }
+        public int AgregarLibro(MySqlConnection conexion, Libro l1)
+        {
+            int retorno;
+            string consulta = String.Format("INSERT INTO libro (isbn,titulo,autor,categoria,valoracion) " +
+                "VALUES " + "('{0}','{1}','{2}','{3}','{4}')", l1.Isbn, l1.Titulo,l1.Autor,l1.Categoria,l1.Valoracion);
+
+            MySqlCommand comando = new MySqlCommand(consulta, conexion);
+
+            retorno = comando.ExecuteNonQuery();
+
+            return retorno;
+        }
+        public static int eliminarLibro(MySqlConnection conexion, string isbn)
+        {
+            int retorno;
+            string consulta = String.Format("delete from libro where isbn='{0}'", isbn);
+
+            MySqlCommand comando = new MySqlCommand(consulta, conexion);
+
+            retorno = comando.ExecuteNonQuery();
+
+            return retorno;
+        }
+
+        public static bool EncontrarLibro(MySqlConnection conexion, string isbn)
+        {
+            string consulta = string.Format("SELECT isbn FROM libro WHERE isbn = '{0}'", isbn);
+
+            MySqlCommand comando = new MySqlCommand(consulta, conexion);
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                reader.Close();
+                return true;
+            }
+            else
+            {
+                reader.Close();
+                return false;
+            }
+        }
     }
 }

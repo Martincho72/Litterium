@@ -71,6 +71,12 @@
     <Compile Include="formularios administrador\AdministracionLibro.Designer.cs">
       <DependentUpon>AdministracionLibro.cs</DependentUpon>
     </Compile>
+    <Compile Include="formularios administrador\AgregarLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios administrador\AgregarLibro.Designer.cs">
+      <DependentUpon>AgregarLibro.cs</DependentUpon>
+    </Compile>
     <Compile Include="formularios administrador\AgregarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,12 @@
     </Compile>
     <Compile Include="formularios administrador\EditarUsuario.Designer.cs">
       <DependentUpon>EditarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios administrador\EliminarLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios administrador\EliminarLibro.Designer.cs">
+      <DependentUpon>EliminarLibro.cs</DependentUpon>
     </Compile>
     <Compile Include="formularios administrador\EliminarUsuario.cs">
       <SubType>Form</SubType>
@@ -159,6 +171,9 @@
     <EmbeddedResource Include="formularios administrador\AdministracionLibro.resx">
       <DependentUpon>AdministracionLibro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formularios administrador\AgregarLibro.resx">
+      <DependentUpon>AgregarLibro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formularios administrador\AgregarUsuario.resx">
       <DependentUpon>AgregarUsuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,8 +186,17 @@
     <EmbeddedResource Include="formularios administrador\EditarUsuario.resx">
       <DependentUpon>EditarUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formularios administrador\EliminarLibro.resx">
+      <DependentUpon>EliminarLibro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formularios administrador\EliminarUsuario.resx">
       <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\CortoHistoriaPrincipal.resx">
+      <DependentUpon>CortoHistoriaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\LibroPrincipal.resx">
+      <DependentUpon>LibroPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal\LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
@@ -185,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formularios Usuario\Misborradores.resx">
       <DependentUpon>Misborradores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\MiCarrito.resx">
+      <DependentUpon>MiCarrito.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal\Registro.resx">
       <DependentUpon>Registro.cs</DependentUpon>
@@ -251,6 +278,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\lecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizar-tamano.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menos.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -39,5 +39,21 @@ namespace registro_mockup.formularios_administrador
             else { }
             bDatos.CerrarConexion();
         }
+
+        private void btnAgregarLibro_Click(object sender, EventArgs e)
+        {
+            AgregarLibro form = new AgregarLibro();
+            form.ShowDialog();
+
+            CargaLibros();
+        }
+
+        private void btnEliminarLibro_Click(object sender, EventArgs e)
+        {
+            EliminarLibro form = new EliminarLibro();
+            form.ShowDialog();
+
+            CargaLibros();
+        }
     }
 }
