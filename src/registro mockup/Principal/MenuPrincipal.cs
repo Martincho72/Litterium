@@ -1,4 +1,5 @@
 ﻿using FontAwesome.Sharp;
+using registro_mockup.Principal;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -136,6 +137,7 @@ namespace registro_mockup
         private void iconButton7_Click(object sender, EventArgs e)
         {
             ActivaBTN(sender, RGBColors.color1);
+            OpenChildForm(new MiCarrito());
 
         }
 
@@ -147,7 +149,37 @@ namespace registro_mockup
         private void iconButton8_Click(object sender, EventArgs e)
         {
             ActivaBTN(sender, RGBColors.color1);
+            OpenChildForm(new LibroPrincipal());
+        }
 
+        private void btnPictureCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnPictureMaximizar_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                // Si el formulario está en estado normal, lo maximiza
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                // Si el formulario está maximizado, lo restaura al estado normal
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void btnPictureMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnCortohistorias_Click(object sender, EventArgs e)
+        {
+            ActivaBTN(sender, RGBColors.color1);
+            OpenChildForm(new CortoHistoriaPrincipal());
         }
     }
 }
