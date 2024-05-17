@@ -57,6 +57,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clases\Correo.cs" />
     <Compile Include="clases\CortoHistoria.cs" />
     <Compile Include="clases\Libro.cs" />
     <Compile Include="formularios administrador\AdministracionCortoHistoria.cs">
@@ -101,6 +102,36 @@
     </Compile>
     <Compile Include="formularios administrador\BuscarUsuario.Designer.cs">
       <DependentUpon>BuscarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios Usuario\HistorialCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios Usuario\HistorialCompras.Designer.cs">
+      <DependentUpon>HistorialCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios Usuario\MiCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios Usuario\MiCuenta.Designer.cs">
+      <DependentUpon>MiCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios Usuario\MisCortoHistorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios Usuario\MisCortoHistorias.Designer.cs">
+      <DependentUpon>MisCortoHistorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios Usuario\MisLibros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios Usuario\MisLibros.Designer.cs">
+      <DependentUpon>MisLibros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\ContrasenyaOlvidada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\ContrasenyaOlvidada.Designer.cs">
+      <DependentUpon>ContrasenyaOlvidada.cs</DependentUpon>
     </Compile>
     <Compile Include="formularios administrador\EditarLibro.cs">
       <SubType>Form</SubType>
