@@ -140,6 +140,7 @@
             this.btnAgregarLibro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAgregarLibro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAgregarLibro.UseVisualStyleBackColor = false;
+            this.btnAgregarLibro.Click += new System.EventHandler(this.btnAgregarLibro_Click);
             // 
             // AdministracionLibro
             // 
