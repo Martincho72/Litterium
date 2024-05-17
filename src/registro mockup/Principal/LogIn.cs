@@ -1,4 +1,5 @@
 ﻿using registro_mockup;
+using registro_mockup.formularios_administrador;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -124,6 +125,13 @@ namespace Litterium
         private void lblMensajesError_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void lblContrasenaOlvidada_Click(object sender, EventArgs e)
+        {
+            ContrasenyaOlvidada contra = new ContrasenyaOlvidada();
+            contra.Show();
+            this.Hide();
         }
     }
 }
