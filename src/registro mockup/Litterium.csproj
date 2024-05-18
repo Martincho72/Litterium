@@ -265,8 +265,20 @@
     <EmbeddedResource Include="formularios administrador\EliminarUsuario.resx">
       <DependentUpon>EliminarUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formularios Usuario\HistorialCompras.resx">
+      <DependentUpon>HistorialCompras.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formularios Usuario\MenuUsuario.resx">
       <DependentUpon>MenuUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios Usuario\MiCuenta.resx">
+      <DependentUpon>MiCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios Usuario\MisCortoHistorias.resx">
+      <DependentUpon>MisCortoHistorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios Usuario\MisLibros.resx">
+      <DependentUpon>MisLibros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal\ContrasenyaOlvidada.resx">
       <DependentUpon>ContrasenyaOlvidada.cs</DependentUpon>
