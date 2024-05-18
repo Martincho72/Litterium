@@ -91,6 +91,12 @@
       <DependentUpon>AministracionUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="clases\BDatos.cs" />
+    <Compile Include="formularios administrador\BuscarCortoHistoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios administrador\BuscarCortoHistoria.Designer.cs">
+      <DependentUpon>BuscarCortoHistoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="formularios administrador\BuscarLibro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -240,6 +246,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formularios administrador\AministracionUsuario.resx">
       <DependentUpon>AministracionUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios administrador\BuscarCortoHistoria.resx">
+      <DependentUpon>BuscarCortoHistoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formularios administrador\BuscarLibro.resx">
       <DependentUpon>BuscarLibro.cs</DependentUpon>

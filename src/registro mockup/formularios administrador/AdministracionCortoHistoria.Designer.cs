@@ -43,12 +43,11 @@
             this.dgvCortoHistoria.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCortoHistoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCortoHistoria.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvCortoHistoria.Location = new System.Drawing.Point(0, 100);
-            this.dgvCortoHistoria.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvCortoHistoria.Location = new System.Drawing.Point(0, 81);
             this.dgvCortoHistoria.Name = "dgvCortoHistoria";
             this.dgvCortoHistoria.ReadOnly = true;
             this.dgvCortoHistoria.RowHeadersWidth = 51;
-            this.dgvCortoHistoria.Size = new System.Drawing.Size(800, 350);
+            this.dgvCortoHistoria.Size = new System.Drawing.Size(600, 285);
             this.dgvCortoHistoria.TabIndex = 5;
             // 
             // tlpBotones
@@ -57,16 +56,16 @@
             this.tlpBotones.ColumnCount = 2;
             this.tlpBotones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpBotones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpBotones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpBotones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15F));
             this.tlpBotones.Controls.Add(this.btnEditarCH, 0, 0);
             this.tlpBotones.Controls.Add(this.btnEliminarCH, 0, 0);
             this.tlpBotones.Dock = System.Windows.Forms.DockStyle.Top;
             this.tlpBotones.Location = new System.Drawing.Point(0, 0);
-            this.tlpBotones.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tlpBotones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tlpBotones.Name = "tlpBotones";
             this.tlpBotones.RowCount = 1;
             this.tlpBotones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpBotones.Size = new System.Drawing.Size(800, 100);
+            this.tlpBotones.Size = new System.Drawing.Size(600, 81);
             this.tlpBotones.TabIndex = 4;
             // 
             // btnEditarCH
@@ -81,16 +80,17 @@
             this.btnEditarCH.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnEditarCH.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEditarCH.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditarCH.Location = new System.Drawing.Point(403, 2);
-            this.btnEditarCH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEditarCH.Location = new System.Drawing.Point(302, 2);
+            this.btnEditarCH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEditarCH.Name = "btnEditarCH";
-            this.btnEditarCH.Padding = new System.Windows.Forms.Padding(9, 0, 19, 0);
-            this.btnEditarCH.Size = new System.Drawing.Size(394, 96);
+            this.btnEditarCH.Padding = new System.Windows.Forms.Padding(7, 0, 14, 0);
+            this.btnEditarCH.Size = new System.Drawing.Size(296, 77);
             this.btnEditarCH.TabIndex = 6;
             this.btnEditarCH.Text = "Editar CortoHistoria";
             this.btnEditarCH.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEditarCH.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEditarCH.UseVisualStyleBackColor = false;
+            this.btnEditarCH.Click += new System.EventHandler(this.btnEditarCH_Click);
             // 
             // btnEliminarCH
             // 
@@ -104,11 +104,11 @@
             this.btnEliminarCH.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnEliminarCH.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEliminarCH.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminarCH.Location = new System.Drawing.Point(3, 2);
-            this.btnEliminarCH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEliminarCH.Location = new System.Drawing.Point(2, 2);
+            this.btnEliminarCH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEliminarCH.Name = "btnEliminarCH";
-            this.btnEliminarCH.Padding = new System.Windows.Forms.Padding(9, 0, 19, 0);
-            this.btnEliminarCH.Size = new System.Drawing.Size(394, 96);
+            this.btnEliminarCH.Padding = new System.Windows.Forms.Padding(7, 0, 14, 0);
+            this.btnEliminarCH.Size = new System.Drawing.Size(296, 77);
             this.btnEliminarCH.TabIndex = 5;
             this.btnEliminarCH.Text = "Eliminar CortoHistoria";
             this.btnEliminarCH.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -117,11 +117,12 @@
             // 
             // AdministracionCortoHistoria
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.dgvCortoHistoria);
             this.Controls.Add(this.tlpBotones);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AdministracionCortoHistoria";
             this.Text = "AdministracionCortoHistoria";
             ((System.ComponentModel.ISupportInitialize)(this.dgvCortoHistoria)).EndInit();
