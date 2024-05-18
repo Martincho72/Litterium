@@ -1,4 +1,5 @@
 ﻿using FontAwesome.Sharp;
+using registro_mockup.Principal;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -43,27 +44,27 @@ namespace registro_mockup.formularios_Usuario
 
         private void btnMiCuenta_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new MiCuenta());
         }
 
         private void btnMisLibros_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new MisLibros());
         }
 
         private void btnMisCortohistorias_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new MisCortoHistorias());
         }
 
         private void btnMisBorradores_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new Misborradores());
         }
 
         private void btnMiHistorial_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new HistorialCompras());
         }
     }
 }

@@ -34,16 +34,12 @@
             this.dtgvBorradores = new System.Windows.Forms.DataGridView();
             this.Titulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ultimoacceso = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lblborrador = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvBorradores)).BeginInit();
             this.SuspendLayout();
             // 
             // dtgvBorradores
             // 
             this.dtgvBorradores.AllowUserToAddRows = false;
-            this.dtgvBorradores.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dtgvBorradores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dtgvBorradores.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dtgvBorradores.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(199)))), ((int)(((byte)(168)))));
@@ -62,8 +58,9 @@
             this.dtgvBorradores.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Titulo,
             this.ultimoacceso});
+            this.dtgvBorradores.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgvBorradores.EnableHeadersVisualStyles = false;
-            this.dtgvBorradores.Location = new System.Drawing.Point(39, 209);
+            this.dtgvBorradores.Location = new System.Drawing.Point(0, 0);
             this.dtgvBorradores.Margin = new System.Windows.Forms.Padding(30, 200, 30, 30);
             this.dtgvBorradores.Name = "dtgvBorradores";
             this.dtgvBorradores.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -83,7 +80,7 @@
             this.dtgvBorradores.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvBorradores.RowTemplate.Height = 48;
             this.dtgvBorradores.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dtgvBorradores.Size = new System.Drawing.Size(1490, 642);
+            this.dtgvBorradores.Size = new System.Drawing.Size(1507, 847);
             this.dtgvBorradores.TabIndex = 1;
             // 
             // Titulo
@@ -100,31 +97,17 @@
             this.ultimoacceso.MinimumWidth = 8;
             this.ultimoacceso.Name = "ultimoacceso";
             // 
-            // lblborrador
-            // 
-            this.lblborrador.AutoSize = true;
-            this.lblborrador.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.lblborrador.Font = new System.Drawing.Font("Algerian", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblborrador.Location = new System.Drawing.Point(558, 48);
-            this.lblborrador.Name = "lblborrador";
-            this.lblborrador.Size = new System.Drawing.Size(449, 58);
-            this.lblborrador.TabIndex = 2;
-            this.lblborrador.Text = "MIS BORRADORES";
-            this.lblborrador.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // Misborradores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1568, 890);
-            this.Controls.Add(this.lblborrador);
+            this.ClientSize = new System.Drawing.Size(1507, 847);
             this.Controls.Add(this.dtgvBorradores);
             this.Name = "Misborradores";
             this.Text = "Misborradores";
             ((System.ComponentModel.ISupportInitialize)(this.dtgvBorradores)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -133,6 +116,5 @@
         private System.Windows.Forms.DataGridView dtgvBorradores;
         private System.Windows.Forms.DataGridViewTextBoxColumn Titulo;
         private System.Windows.Forms.DataGridViewTextBoxColumn ultimoacceso;
-        private System.Windows.Forms.Label lblborrador;
     }
 }

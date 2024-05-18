@@ -16,5 +16,7 @@ namespace registro_mockup.formularios_Usuario
         {
             InitializeComponent();
         }
+
+
     }
 }
