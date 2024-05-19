@@ -111,7 +111,7 @@
             this.lblMensaje.AutoSize = true;
             this.lblMensaje.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMensaje.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblMensaje.Location = new System.Drawing.Point(23, 24);
+            this.lblMensaje.Location = new System.Drawing.Point(45, 25);
             this.lblMensaje.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMensaje.Name = "lblMensaje";
             this.lblMensaje.Size = new System.Drawing.Size(140, 24);
@@ -322,6 +322,7 @@
             this.Controls.Add(this.lblIsbn);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AgregarLibro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AgregarLibro";
             this.Load += new System.EventHandler(this.AgregarLibro_Load);
             this.panel1.ResumeLayout(false);

@@ -67,7 +67,12 @@ namespace registro_mockup.formularios_administrador
 
         private void EliminarCortoHistoria_Load(object sender, EventArgs e)
         {
+            lblErrores.Text = "";
+        }
 
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

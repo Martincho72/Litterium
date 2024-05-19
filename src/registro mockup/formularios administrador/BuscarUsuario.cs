@@ -27,6 +27,10 @@ namespace registro_mockup.formularios_administrador
                     EditarUsuario editarUsuario = new EditarUsuario(txtUsuario.Text);
                     editarUsuario.ShowDialog();
                 }
+                else
+                {
+                    lblErrores.Text = "El usuario no existe";
+                }
             }
 
             else { }
@@ -39,6 +43,11 @@ namespace registro_mockup.formularios_administrador
         }
 
         private void BuscarUsuario_Load(object sender, EventArgs e)
+        {
+            lblErrores.Text = "";
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }

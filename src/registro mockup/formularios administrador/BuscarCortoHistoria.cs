@@ -28,10 +28,24 @@ namespace registro_mockup.formularios_administrador
                     EditarCortoHistoria form = new EditarCortoHistoria(int.Parse(txtId.Text));
                     form.ShowDialog();
                 }
+                else
+                {
+                    lblErrores.Text = "No existe el ID";
+                }
             }
 
             else { }
             basedatos.CerrarConexion();
+        }
+
+        private void BuscarCortoHistoria_Load(object sender, EventArgs e)
+        {
+            lblErrores.Text = "";
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

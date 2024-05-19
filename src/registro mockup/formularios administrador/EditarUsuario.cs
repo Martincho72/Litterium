@@ -39,6 +39,8 @@ namespace registro_mockup.formularios_administrador
 
         private void EditarUsuario_Load(object sender, EventArgs e)
         {
+            lblError.Text = "";
+
             if (basedatos.AbrirConexion())
             {
                 Usuario usuario = Usuario.EncontrarDatosUsuario(basedatos.Conexion, txtUsuario.Text);

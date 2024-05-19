@@ -56,6 +56,7 @@
             this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnSalir.TabIndex = 68;
             this.btnSalir.TabStop = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnBuscar
             // 
@@ -152,6 +153,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(319, 239);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnBuscar);
@@ -160,7 +162,9 @@
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.lblId);
             this.Name = "BuscarCortoHistoria";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BuscarCortoHistoria";
+            this.Load += new System.EventHandler(this.BuscarCortoHistoria_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

@@ -28,10 +28,29 @@ namespace registro_mockup.formularios_administrador
                     EditarLibro form = new EditarLibro(txtIsbn.Text);
                     form.ShowDialog();
                 }
+                else
+                {
+                    lblErrores.Text = "El ISBN no existe";
+                }
             }
 
             else { }
             basedatos.CerrarConexion();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BuscarLibro_Load(object sender, EventArgs e)
+        {
+            lblErrores.Text = "";
+        }
+
+        private void btnSalir_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

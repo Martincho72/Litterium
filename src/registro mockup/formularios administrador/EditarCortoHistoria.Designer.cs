@@ -245,6 +245,7 @@
             // 
             // txtId
             // 
+            this.txtId.Enabled = false;
             this.txtId.Location = new System.Drawing.Point(149, 105);
             this.txtId.Margin = new System.Windows.Forms.Padding(2);
             this.txtId.Name = "txtId";
@@ -305,6 +306,7 @@
             this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnSalir.TabIndex = 69;
             this.btnSalir.TabStop = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // EditarCortoHistoria
             // 
@@ -334,6 +336,7 @@
             this.Controls.Add(this.lblNombre);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "EditarCortoHistoria";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditarCortoHistoria";
             this.Load += new System.EventHandler(this.EditarCortoHistoria_Load);
             this.panel1.ResumeLayout(false);

@@ -22,6 +22,7 @@ namespace registro_mockup.formularios_administrador
 
         private void EditarCortoHistoria_Load(object sender, EventArgs e)
         {
+            lblError.Text = "";
             if (basedatos.AbrirConexion())
             {
                 CortoHistoria ch = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, int.Parse(txtId.Text));
@@ -37,6 +38,11 @@ namespace registro_mockup.formularios_administrador
             }
             else { }
             basedatos.CerrarConexion();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
