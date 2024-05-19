@@ -10,24 +10,19 @@ using System.Windows.Forms;
 
 namespace registro_mockup.Principal
 {
-    public partial class InformacionLibro : Form
+    public partial class CrearCortohistoria : Form
     {
-        public InformacionLibro()
+        public CrearCortohistoria()
         {
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void domainUpDown1_SelectedItemChanged(object sender, EventArgs e)
+        private void chbContinuarCortohistoria_CheckedChanged(object sender, EventArgs e)
         {
 
         }

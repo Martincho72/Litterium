@@ -188,5 +188,10 @@ namespace registro_mockup
             ActivaBTN(sender, RGBColors.color1);
             OpenChildForm(new MenuUsuario());
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -167,6 +167,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LogIn.resx</DependentUpon>
     </Compile>
+    <Compile Include="Principal\Busqueda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\Busqueda.Designer.cs">
+      <DependentUpon>Busqueda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Principal\ContrasenyaOlvidada.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,6 +208,12 @@
     </Compile>
     <Compile Include="Principal\CortoHistoriaPrincipal.Designer.cs">
       <DependentUpon>CortoHistoriaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\CrearCortohistoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\CrearCortohistoria.Designer.cs">
+      <DependentUpon>CrearCortohistoria.cs</DependentUpon>
     </Compile>
     <Compile Include="Principal\InformacionLibro.cs">
       <SubType>Form</SubType>
@@ -329,6 +341,12 @@
     <EmbeddedResource Include="Principal\CortoHistoriaPrincipal.resx">
       <DependentUpon>CortoHistoriaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Principal\CrearCortohistoria.resx">
+      <DependentUpon>CrearCortohistoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\InformacionLibro.resx">
+      <DependentUpon>InformacionLibro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Principal\LibroPrincipal.resx">
       <DependentUpon>LibroPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -343,6 +361,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formularios Usuario\Misborradores.resx">
       <DependentUpon>Misborradores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\MiCarrito.resx">
+      <DependentUpon>MiCarrito.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal\Registro.resx">
       <DependentUpon>Registro.cs</DependentUpon>
@@ -418,6 +439,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\english.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pregunta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pregunta-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagen_2024-05-19_205006577-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
