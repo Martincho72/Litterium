@@ -97,18 +97,21 @@
             // 
             this.lblRecomendadosLibros.AutoSize = true;
             this.lblRecomendadosLibros.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRecomendadosLibros.Location = new System.Drawing.Point(12, 4);
+            this.lblRecomendadosLibros.Location = new System.Drawing.Point(9, 3);
+            this.lblRecomendadosLibros.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRecomendadosLibros.Name = "lblRecomendadosLibros";
-            this.lblRecomendadosLibros.Size = new System.Drawing.Size(316, 22);
+            this.lblRecomendadosLibros.Size = new System.Drawing.Size(254, 18);
             this.lblRecomendadosLibros.TabIndex = 0;
             this.lblRecomendadosLibros.Text = "Recomendados por Litterium :";
             // 
             // grbLibroRecomendado1
             // 
             this.grbLibroRecomendado1.Controls.Add(this.pictureBox1);
-            this.grbLibroRecomendado1.Location = new System.Drawing.Point(15, 29);
+            this.grbLibroRecomendado1.Location = new System.Drawing.Point(11, 24);
+            this.grbLibroRecomendado1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grbLibroRecomendado1.Name = "grbLibroRecomendado1";
-            this.grbLibroRecomendado1.Size = new System.Drawing.Size(112, 100);
+            this.grbLibroRecomendado1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbLibroRecomendado1.Size = new System.Drawing.Size(84, 81);
             this.grbLibroRecomendado1.TabIndex = 3;
             this.grbLibroRecomendado1.TabStop = false;
             this.grbLibroRecomendado1.Text = "groupBox1";
@@ -116,9 +119,11 @@
             // grbLibroRecomendado4
             // 
             this.grbLibroRecomendado4.Controls.Add(this.pictureBox2);
-            this.grbLibroRecomendado4.Location = new System.Drawing.Point(501, 29);
+            this.grbLibroRecomendado4.Location = new System.Drawing.Point(376, 24);
+            this.grbLibroRecomendado4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grbLibroRecomendado4.Name = "grbLibroRecomendado4";
-            this.grbLibroRecomendado4.Size = new System.Drawing.Size(112, 100);
+            this.grbLibroRecomendado4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbLibroRecomendado4.Size = new System.Drawing.Size(84, 81);
             this.grbLibroRecomendado4.TabIndex = 4;
             this.grbLibroRecomendado4.TabStop = false;
             this.grbLibroRecomendado4.Text = "groupBox2";
@@ -126,9 +131,11 @@
             // grbLibroRecomendado2
             // 
             this.grbLibroRecomendado2.Controls.Add(this.pictureBox3);
-            this.grbLibroRecomendado2.Location = new System.Drawing.Point(174, 29);
+            this.grbLibroRecomendado2.Location = new System.Drawing.Point(130, 24);
+            this.grbLibroRecomendado2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grbLibroRecomendado2.Name = "grbLibroRecomendado2";
-            this.grbLibroRecomendado2.Size = new System.Drawing.Size(112, 100);
+            this.grbLibroRecomendado2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbLibroRecomendado2.Size = new System.Drawing.Size(84, 81);
             this.grbLibroRecomendado2.TabIndex = 4;
             this.grbLibroRecomendado2.TabStop = false;
             this.grbLibroRecomendado2.Text = "groupBox3";
@@ -136,9 +143,11 @@
             // grbLibroRecomendado3
             // 
             this.grbLibroRecomendado3.Controls.Add(this.pictureBox4);
-            this.grbLibroRecomendado3.Location = new System.Drawing.Point(338, 29);
+            this.grbLibroRecomendado3.Location = new System.Drawing.Point(254, 24);
+            this.grbLibroRecomendado3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grbLibroRecomendado3.Name = "grbLibroRecomendado3";
-            this.grbLibroRecomendado3.Size = new System.Drawing.Size(112, 100);
+            this.grbLibroRecomendado3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbLibroRecomendado3.Size = new System.Drawing.Size(84, 81);
             this.grbLibroRecomendado3.TabIndex = 4;
             this.grbLibroRecomendado3.TabStop = false;
             this.grbLibroRecomendado3.Text = "groupBox4";
@@ -147,9 +156,11 @@
             // grbLibroRecomendado5
             // 
             this.grbLibroRecomendado5.Controls.Add(this.pictureBox5);
-            this.grbLibroRecomendado5.Location = new System.Drawing.Point(664, 29);
+            this.grbLibroRecomendado5.Location = new System.Drawing.Point(498, 24);
+            this.grbLibroRecomendado5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grbLibroRecomendado5.Name = "grbLibroRecomendado5";
-            this.grbLibroRecomendado5.Size = new System.Drawing.Size(112, 100);
+            this.grbLibroRecomendado5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbLibroRecomendado5.Size = new System.Drawing.Size(84, 81);
             this.grbLibroRecomendado5.TabIndex = 5;
             this.grbLibroRecomendado5.TabStop = false;
             this.grbLibroRecomendado5.Text = "groupBox5";
@@ -157,9 +168,11 @@
             // grbLibroValorados3
             // 
             this.grbLibroValorados3.Controls.Add(this.pictureBox6);
-            this.grbLibroValorados3.Location = new System.Drawing.Point(344, 183);
+            this.grbLibroValorados3.Location = new System.Drawing.Point(258, 149);
+            this.grbLibroValorados3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grbLibroValorados3.Name = "grbLibroValorados3";
-            this.grbLibroValorados3.Size = new System.Drawing.Size(112, 100);
+            this.grbLibroValorados3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbLibroValorados3.Size = new System.Drawing.Size(84, 81);
             this.grbLibroValorados3.TabIndex = 6;
             this.grbLibroValorados3.TabStop = false;
             this.grbLibroValorados3.Text = "groupBox6";
@@ -167,9 +180,11 @@
             // grbLibroValorados5
             // 
             this.grbLibroValorados5.Controls.Add(this.pictureBox7);
-            this.grbLibroValorados5.Location = new System.Drawing.Point(664, 183);
+            this.grbLibroValorados5.Location = new System.Drawing.Point(498, 149);
+            this.grbLibroValorados5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grbLibroValorados5.Name = "grbLibroValorados5";
-            this.grbLibroValorados5.Size = new System.Drawing.Size(112, 100);
+            this.grbLibroValorados5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbLibroValorados5.Size = new System.Drawing.Size(84, 81);
             this.grbLibroValorados5.TabIndex = 4;
             this.grbLibroValorados5.TabStop = false;
             this.grbLibroValorados5.Text = "groupBox7";
@@ -177,9 +192,11 @@
             // grbLibroValorados4
             // 
             this.grbLibroValorados4.Controls.Add(this.pictureBox8);
-            this.grbLibroValorados4.Location = new System.Drawing.Point(501, 183);
+            this.grbLibroValorados4.Location = new System.Drawing.Point(376, 149);
+            this.grbLibroValorados4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grbLibroValorados4.Name = "grbLibroValorados4";
-            this.grbLibroValorados4.Size = new System.Drawing.Size(112, 100);
+            this.grbLibroValorados4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbLibroValorados4.Size = new System.Drawing.Size(84, 81);
             this.grbLibroValorados4.TabIndex = 4;
             this.grbLibroValorados4.TabStop = false;
             this.grbLibroValorados4.Text = "groupBox8";
@@ -187,9 +204,11 @@
             // grbLibroValorados2
             // 
             this.grbLibroValorados2.Controls.Add(this.pictureBox9);
-            this.grbLibroValorados2.Location = new System.Drawing.Point(174, 183);
+            this.grbLibroValorados2.Location = new System.Drawing.Point(130, 149);
+            this.grbLibroValorados2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grbLibroValorados2.Name = "grbLibroValorados2";
-            this.grbLibroValorados2.Size = new System.Drawing.Size(112, 100);
+            this.grbLibroValorados2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbLibroValorados2.Size = new System.Drawing.Size(84, 81);
             this.grbLibroValorados2.TabIndex = 4;
             this.grbLibroValorados2.TabStop = false;
             this.grbLibroValorados2.Text = "groupBox9";
@@ -197,9 +216,11 @@
             // grbLibroValorados1
             // 
             this.grbLibroValorados1.Controls.Add(this.pictureBox10);
-            this.grbLibroValorados1.Location = new System.Drawing.Point(15, 183);
+            this.grbLibroValorados1.Location = new System.Drawing.Point(11, 149);
+            this.grbLibroValorados1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grbLibroValorados1.Name = "grbLibroValorados1";
-            this.grbLibroValorados1.Size = new System.Drawing.Size(112, 100);
+            this.grbLibroValorados1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbLibroValorados1.Size = new System.Drawing.Size(84, 81);
             this.grbLibroValorados1.TabIndex = 4;
             this.grbLibroValorados1.TabStop = false;
             this.grbLibroValorados1.Text = "groupBox10";
@@ -207,9 +228,11 @@
             // grbLibroAlgunas5
             // 
             this.grbLibroAlgunas5.Controls.Add(this.pictureBox11);
-            this.grbLibroAlgunas5.Location = new System.Drawing.Point(664, 338);
+            this.grbLibroAlgunas5.Location = new System.Drawing.Point(498, 275);
+            this.grbLibroAlgunas5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grbLibroAlgunas5.Name = "grbLibroAlgunas5";
-            this.grbLibroAlgunas5.Size = new System.Drawing.Size(112, 100);
+            this.grbLibroAlgunas5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbLibroAlgunas5.Size = new System.Drawing.Size(84, 81);
             this.grbLibroAlgunas5.TabIndex = 7;
             this.grbLibroAlgunas5.TabStop = false;
             this.grbLibroAlgunas5.Text = "groupBox11";
@@ -217,9 +240,11 @@
             // grbLibroAlgunas4
             // 
             this.grbLibroAlgunas4.Controls.Add(this.pictureBox12);
-            this.grbLibroAlgunas4.Location = new System.Drawing.Point(501, 338);
+            this.grbLibroAlgunas4.Location = new System.Drawing.Point(376, 275);
+            this.grbLibroAlgunas4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grbLibroAlgunas4.Name = "grbLibroAlgunas4";
-            this.grbLibroAlgunas4.Size = new System.Drawing.Size(112, 100);
+            this.grbLibroAlgunas4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbLibroAlgunas4.Size = new System.Drawing.Size(84, 81);
             this.grbLibroAlgunas4.TabIndex = 4;
             this.grbLibroAlgunas4.TabStop = false;
             this.grbLibroAlgunas4.Text = "groupBox12";
@@ -228,9 +253,11 @@
             // grbLibroAlgunas3
             // 
             this.grbLibroAlgunas3.Controls.Add(this.pictureBox13);
-            this.grbLibroAlgunas3.Location = new System.Drawing.Point(344, 338);
+            this.grbLibroAlgunas3.Location = new System.Drawing.Point(258, 275);
+            this.grbLibroAlgunas3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grbLibroAlgunas3.Name = "grbLibroAlgunas3";
-            this.grbLibroAlgunas3.Size = new System.Drawing.Size(112, 100);
+            this.grbLibroAlgunas3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbLibroAlgunas3.Size = new System.Drawing.Size(84, 81);
             this.grbLibroAlgunas3.TabIndex = 4;
             this.grbLibroAlgunas3.TabStop = false;
             this.grbLibroAlgunas3.Text = "groupBox13";
@@ -238,9 +265,11 @@
             // grbLibroAlgunas2
             // 
             this.grbLibroAlgunas2.Controls.Add(this.pictureBox14);
-            this.grbLibroAlgunas2.Location = new System.Drawing.Point(174, 338);
+            this.grbLibroAlgunas2.Location = new System.Drawing.Point(130, 275);
+            this.grbLibroAlgunas2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grbLibroAlgunas2.Name = "grbLibroAlgunas2";
-            this.grbLibroAlgunas2.Size = new System.Drawing.Size(112, 100);
+            this.grbLibroAlgunas2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbLibroAlgunas2.Size = new System.Drawing.Size(84, 81);
             this.grbLibroAlgunas2.TabIndex = 4;
             this.grbLibroAlgunas2.TabStop = false;
             this.grbLibroAlgunas2.Text = "groupBox14";
@@ -248,9 +277,11 @@
             // grbLibroAlgunas1
             // 
             this.grbLibroAlgunas1.Controls.Add(this.pictureBox15);
-            this.grbLibroAlgunas1.Location = new System.Drawing.Point(15, 338);
+            this.grbLibroAlgunas1.Location = new System.Drawing.Point(11, 275);
+            this.grbLibroAlgunas1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grbLibroAlgunas1.Name = "grbLibroAlgunas1";
-            this.grbLibroAlgunas1.Size = new System.Drawing.Size(112, 100);
+            this.grbLibroAlgunas1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbLibroAlgunas1.Size = new System.Drawing.Size(84, 81);
             this.grbLibroAlgunas1.TabIndex = 4;
             this.grbLibroAlgunas1.TabStop = false;
             this.grbLibroAlgunas1.Text = "groupBox15";
@@ -259,9 +290,10 @@
             // 
             this.lblMejorvaloradosLibros.AutoSize = true;
             this.lblMejorvaloradosLibros.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMejorvaloradosLibros.Location = new System.Drawing.Point(11, 142);
+            this.lblMejorvaloradosLibros.Location = new System.Drawing.Point(8, 115);
+            this.lblMejorvaloradosLibros.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMejorvaloradosLibros.Name = "lblMejorvaloradosLibros";
-            this.lblMejorvaloradosLibros.Size = new System.Drawing.Size(378, 22);
+            this.lblMejorvaloradosLibros.Size = new System.Drawing.Size(306, 18);
             this.lblMejorvaloradosLibros.TabIndex = 8;
             this.lblMejorvaloradosLibros.Text = "Mejor valorados por los usuarios :";
             // 
@@ -269,138 +301,154 @@
             // 
             this.lblCortohistoriasEnLibros.AutoSize = true;
             this.lblCortohistoriasEnLibros.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCortohistoriasEnLibros.Location = new System.Drawing.Point(12, 300);
+            this.lblCortohistoriasEnLibros.Location = new System.Drawing.Point(9, 244);
+            this.lblCortohistoriasEnLibros.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCortohistoriasEnLibros.Name = "lblCortohistoriasEnLibros";
-            this.lblCortohistoriasEnLibros.Size = new System.Drawing.Size(275, 22);
+            this.lblCortohistoriasEnLibros.Size = new System.Drawing.Size(220, 18);
             this.lblCortohistoriasEnLibros.TabIndex = 9;
             this.lblCortohistoriasEnLibros.Text = "Algunas Cortohistorias :";
             // 
             // pictureBox12
             // 
-            this.pictureBox12.Location = new System.Drawing.Point(6, 21);
+            this.pictureBox12.Location = new System.Drawing.Point(4, 17);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(100, 73);
+            this.pictureBox12.Size = new System.Drawing.Size(75, 59);
             this.pictureBox12.TabIndex = 0;
             this.pictureBox12.TabStop = false;
             // 
             // pictureBox13
             // 
-            this.pictureBox13.Location = new System.Drawing.Point(6, 21);
+            this.pictureBox13.Location = new System.Drawing.Point(4, 17);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(100, 73);
+            this.pictureBox13.Size = new System.Drawing.Size(75, 59);
             this.pictureBox13.TabIndex = 0;
             this.pictureBox13.TabStop = false;
             // 
             // pictureBox14
             // 
-            this.pictureBox14.Location = new System.Drawing.Point(6, 21);
+            this.pictureBox14.Location = new System.Drawing.Point(4, 17);
+            this.pictureBox14.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(100, 73);
+            this.pictureBox14.Size = new System.Drawing.Size(75, 59);
             this.pictureBox14.TabIndex = 0;
             this.pictureBox14.TabStop = false;
             // 
             // pictureBox15
             // 
-            this.pictureBox15.Location = new System.Drawing.Point(6, 21);
+            this.pictureBox15.Location = new System.Drawing.Point(4, 17);
+            this.pictureBox15.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(100, 73);
+            this.pictureBox15.Size = new System.Drawing.Size(75, 59);
             this.pictureBox15.TabIndex = 0;
             this.pictureBox15.TabStop = false;
             // 
             // pictureBox11
             // 
-            this.pictureBox11.Location = new System.Drawing.Point(6, 21);
+            this.pictureBox11.Location = new System.Drawing.Point(4, 17);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(100, 73);
+            this.pictureBox11.Size = new System.Drawing.Size(75, 59);
             this.pictureBox11.TabIndex = 0;
             this.pictureBox11.TabStop = false;
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Location = new System.Drawing.Point(6, 21);
+            this.pictureBox7.Location = new System.Drawing.Point(4, 17);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(100, 73);
+            this.pictureBox7.Size = new System.Drawing.Size(75, 59);
             this.pictureBox7.TabIndex = 0;
             this.pictureBox7.TabStop = false;
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Location = new System.Drawing.Point(6, 21);
+            this.pictureBox8.Location = new System.Drawing.Point(4, 17);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(100, 73);
+            this.pictureBox8.Size = new System.Drawing.Size(75, 59);
             this.pictureBox8.TabIndex = 0;
             this.pictureBox8.TabStop = false;
             // 
             // pictureBox9
             // 
-            this.pictureBox9.Location = new System.Drawing.Point(6, 21);
+            this.pictureBox9.Location = new System.Drawing.Point(4, 17);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(100, 73);
+            this.pictureBox9.Size = new System.Drawing.Size(75, 59);
             this.pictureBox9.TabIndex = 0;
             this.pictureBox9.TabStop = false;
             // 
             // pictureBox10
             // 
-            this.pictureBox10.Location = new System.Drawing.Point(6, 21);
+            this.pictureBox10.Location = new System.Drawing.Point(4, 17);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(100, 73);
+            this.pictureBox10.Size = new System.Drawing.Size(75, 59);
             this.pictureBox10.TabIndex = 0;
             this.pictureBox10.TabStop = false;
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Location = new System.Drawing.Point(6, 21);
+            this.pictureBox6.Location = new System.Drawing.Point(4, 17);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(100, 73);
+            this.pictureBox6.Size = new System.Drawing.Size(75, 59);
             this.pictureBox6.TabIndex = 0;
             this.pictureBox6.TabStop = false;
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(6, 21);
+            this.pictureBox5.Location = new System.Drawing.Point(4, 17);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(100, 73);
+            this.pictureBox5.Size = new System.Drawing.Size(75, 59);
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(6, 21);
+            this.pictureBox3.Location = new System.Drawing.Point(4, 17);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 73);
+            this.pictureBox3.Size = new System.Drawing.Size(75, 59);
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(6, 21);
+            this.pictureBox4.Location = new System.Drawing.Point(4, 17);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(100, 73);
+            this.pictureBox4.Size = new System.Drawing.Size(75, 59);
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(6, 21);
+            this.pictureBox2.Location = new System.Drawing.Point(4, 17);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 73);
+            this.pictureBox2.Size = new System.Drawing.Size(75, 59);
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(6, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(4, 17);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 73);
+            this.pictureBox1.Size = new System.Drawing.Size(75, 59);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // LibroPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(612, 381);
             this.Controls.Add(this.lblCortohistoriasEnLibros);
             this.Controls.Add(this.lblMejorvaloradosLibros);
             this.Controls.Add(this.grbLibroAlgunas4);
@@ -419,6 +467,7 @@
             this.Controls.Add(this.grbLibroRecomendado4);
             this.Controls.Add(this.grbLibroRecomendado1);
             this.Controls.Add(this.lblRecomendadosLibros);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "LibroPrincipal";
             this.Text = "LibroPrincipal";
             this.grbLibroRecomendado1.ResumeLayout(false);

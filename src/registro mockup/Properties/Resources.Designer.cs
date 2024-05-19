@@ -243,6 +243,16 @@ namespace registro_mockup.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap perfilDefecto {
+            get {
+                object obj = ResourceManager.GetObject("perfilDefecto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap png_transparent_gold_paper_paper_paper_sheet_miscellaneous_ink_sunrise {
             get {
                 object obj = ResourceManager.GetObject("png-transparent-gold-paper-paper-paper-sheet-miscellaneous-ink-sunrise", resourceCulture);

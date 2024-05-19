@@ -62,17 +62,19 @@
             this.lblNombre.AutoSize = true;
             this.lblNombre.BackColor = System.Drawing.Color.Transparent;
             this.lblNombre.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(479, 190);
+            this.lblNombre.Location = new System.Drawing.Point(359, 154);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(69, 19);
+            this.lblNombre.Size = new System.Drawing.Size(56, 16);
             this.lblNombre.TabIndex = 0;
             this.lblNombre.Text = "Nombre";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(595, 190);
+            this.txtNombre.Location = new System.Drawing.Point(446, 154);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(157, 22);
+            this.txtNombre.Size = new System.Drawing.Size(119, 20);
             this.txtNombre.TabIndex = 1;
             // 
             // lblDireccion
@@ -80,9 +82,10 @@
             this.lblDireccion.AutoSize = true;
             this.lblDireccion.BackColor = System.Drawing.Color.Transparent;
             this.lblDireccion.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDireccion.Location = new System.Drawing.Point(479, 234);
+            this.lblDireccion.Location = new System.Drawing.Point(359, 190);
+            this.lblDireccion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDireccion.Name = "lblDireccion";
-            this.lblDireccion.Size = new System.Drawing.Size(74, 19);
+            this.lblDireccion.Size = new System.Drawing.Size(62, 16);
             this.lblDireccion.TabIndex = 2;
             this.lblDireccion.Text = "Dirrecion";
             // 
@@ -91,9 +94,10 @@
             this.lblCorreo.AutoSize = true;
             this.lblCorreo.BackColor = System.Drawing.Color.Transparent;
             this.lblCorreo.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCorreo.Location = new System.Drawing.Point(479, 278);
+            this.lblCorreo.Location = new System.Drawing.Point(359, 226);
+            this.lblCorreo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(61, 19);
+            this.lblCorreo.Size = new System.Drawing.Size(50, 16);
             this.lblCorreo.TabIndex = 3;
             this.lblCorreo.Text = "Correo";
             // 
@@ -102,9 +106,10 @@
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.BackColor = System.Drawing.Color.Transparent;
             this.lblUsuario.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(479, 366);
+            this.lblUsuario.Location = new System.Drawing.Point(359, 297);
+            this.lblUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(65, 19);
+            this.lblUsuario.Size = new System.Drawing.Size(55, 16);
             this.lblUsuario.TabIndex = 4;
             this.lblUsuario.Text = "Usuario";
             // 
@@ -113,9 +118,10 @@
             this.lblContraseña.AutoSize = true;
             this.lblContraseña.BackColor = System.Drawing.Color.Transparent;
             this.lblContraseña.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContraseña.Location = new System.Drawing.Point(479, 410);
+            this.lblContraseña.Location = new System.Drawing.Point(359, 333);
+            this.lblContraseña.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblContraseña.Name = "lblContraseña";
-            this.lblContraseña.Size = new System.Drawing.Size(95, 19);
+            this.lblContraseña.Size = new System.Drawing.Size(81, 16);
             this.lblContraseña.TabIndex = 5;
             this.lblContraseña.Text = "Contraseña";
             // 
@@ -124,45 +130,51 @@
             this.lblTelefono.AutoSize = true;
             this.lblTelefono.BackColor = System.Drawing.Color.Transparent;
             this.lblTelefono.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefono.Location = new System.Drawing.Point(479, 322);
+            this.lblTelefono.Location = new System.Drawing.Point(359, 262);
+            this.lblTelefono.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(73, 19);
+            this.lblTelefono.Size = new System.Drawing.Size(61, 16);
             this.lblTelefono.TabIndex = 7;
             this.lblTelefono.Text = "Telefono";
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(595, 233);
+            this.txtDireccion.Location = new System.Drawing.Point(446, 189);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(157, 22);
+            this.txtDireccion.Size = new System.Drawing.Size(119, 20);
             this.txtDireccion.TabIndex = 8;
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(595, 274);
+            this.txtCorreo.Location = new System.Drawing.Point(446, 223);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(157, 22);
+            this.txtCorreo.Size = new System.Drawing.Size(119, 20);
             this.txtCorreo.TabIndex = 9;
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(595, 321);
+            this.txtTelefono.Location = new System.Drawing.Point(446, 261);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(157, 22);
+            this.txtTelefono.Size = new System.Drawing.Size(119, 20);
             this.txtTelefono.TabIndex = 11;
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(595, 366);
+            this.txtUsuario.Location = new System.Drawing.Point(446, 297);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(157, 22);
+            this.txtUsuario.Size = new System.Drawing.Size(119, 20);
             this.txtUsuario.TabIndex = 12;
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(595, 410);
+            this.txtContraseña.Location = new System.Drawing.Point(446, 333);
+            this.txtContraseña.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(157, 22);
+            this.txtContraseña.Size = new System.Drawing.Size(119, 20);
             this.txtContraseña.TabIndex = 13;
             // 
             // btnCrear
@@ -170,9 +182,10 @@
             this.btnCrear.BackColor = System.Drawing.Color.Gold;
             this.btnCrear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCrear.Location = new System.Drawing.Point(595, 460);
+            this.btnCrear.Location = new System.Drawing.Point(446, 374);
+            this.btnCrear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCrear.Name = "btnCrear";
-            this.btnCrear.Size = new System.Drawing.Size(126, 42);
+            this.btnCrear.Size = new System.Drawing.Size(94, 34);
             this.btnCrear.TabIndex = 22;
             this.btnCrear.Text = "Crear";
             this.btnCrear.UseVisualStyleBackColor = false;
@@ -182,9 +195,10 @@
             // 
             this.pcbLogo.BackColor = System.Drawing.Color.Transparent;
             this.pcbLogo.Image = global::registro_mockup.Properties.Resources.logo_removebg_preview;
-            this.pcbLogo.Location = new System.Drawing.Point(162, 127);
+            this.pcbLogo.Location = new System.Drawing.Point(122, 103);
+            this.pcbLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pcbLogo.Name = "pcbLogo";
-            this.pcbLogo.Size = new System.Drawing.Size(285, 83);
+            this.pcbLogo.Size = new System.Drawing.Size(214, 67);
             this.pcbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbLogo.TabIndex = 25;
             this.pcbLogo.TabStop = false;
@@ -194,9 +208,10 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(222, 231);
+            this.label6.Location = new System.Drawing.Point(166, 188);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(191, 26);
+            this.label6.Size = new System.Drawing.Size(157, 20);
             this.label6.TabIndex = 26;
             this.label6.Text = "Administradores";
             // 
@@ -205,9 +220,10 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(241, 272);
+            this.label8.Location = new System.Drawing.Point(181, 221);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(112, 22);
+            this.label8.Size = new System.Drawing.Size(90, 18);
             this.label8.TabIndex = 27;
             this.label8.Text = "Javi Armero";
             // 
@@ -216,9 +232,10 @@
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(233, 366);
+            this.label16.Location = new System.Drawing.Point(175, 297);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(132, 22);
+            this.label16.Size = new System.Drawing.Size(105, 18);
             this.label16.TabIndex = 28;
             this.label16.Text = "Victor Bermell";
             // 
@@ -227,9 +244,10 @@
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(219, 413);
+            this.label17.Location = new System.Drawing.Point(164, 336);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(154, 22);
+            this.label17.Size = new System.Drawing.Size(124, 18);
             this.label17.TabIndex = 30;
             this.label17.Text = "Gabriel Carmona";
             // 
@@ -238,9 +256,10 @@
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(217, 319);
+            this.label18.Location = new System.Drawing.Point(163, 259);
+            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(162, 22);
+            this.label18.Size = new System.Drawing.Size(130, 18);
             this.label18.TabIndex = 29;
             this.label18.Text = "Martin Barrachina";
             this.label18.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -250,9 +269,10 @@
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(239, 460);
+            this.label19.Location = new System.Drawing.Point(179, 374);
+            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(116, 22);
+            this.label19.Size = new System.Drawing.Size(94, 18);
             this.label19.TabIndex = 31;
             this.label19.Text = "Adrian Soler";
             this.label19.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -263,9 +283,10 @@
             this.pcbAtras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pcbAtras.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pcbAtras.Image = global::registro_mockup.Properties.Resources.atras;
-            this.pcbAtras.Location = new System.Drawing.Point(162, 499);
+            this.pcbAtras.Location = new System.Drawing.Point(122, 405);
+            this.pcbAtras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pcbAtras.Name = "pcbAtras";
-            this.pcbAtras.Size = new System.Drawing.Size(82, 41);
+            this.pcbAtras.Size = new System.Drawing.Size(62, 33);
             this.pcbAtras.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbAtras.TabIndex = 32;
             this.pcbAtras.TabStop = false;
@@ -276,9 +297,10 @@
             this.lblDatos.AutoSize = true;
             this.lblDatos.BackColor = System.Drawing.Color.Transparent;
             this.lblDatos.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDatos.Location = new System.Drawing.Point(521, 137);
+            this.lblDatos.Location = new System.Drawing.Point(391, 111);
+            this.lblDatos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDatos.Name = "lblDatos";
-            this.lblDatos.Size = new System.Drawing.Size(200, 26);
+            this.lblDatos.Size = new System.Drawing.Size(167, 20);
             this.lblDatos.TabIndex = 33;
             this.lblDatos.Text = "Datos de Usuario";
             // 
@@ -288,12 +310,12 @@
             // 
             // Registro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BackgroundImage = global::registro_mockup.Properties.Resources.fondo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(914, 607);
+            this.ClientSize = new System.Drawing.Size(686, 493);
             this.Controls.Add(this.lblDatos);
             this.Controls.Add(this.pcbAtras);
             this.Controls.Add(this.label19);
@@ -316,11 +338,13 @@
             this.Controls.Add(this.lblDireccion);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblNombre);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Registro";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro";
             this.Load += new System.EventHandler(this.Registro_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Registro_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbAtras)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
