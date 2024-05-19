@@ -44,18 +44,17 @@
             this.dgvLibro.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvLibro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLibro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvLibro.Location = new System.Drawing.Point(0, 100);
-            this.dgvLibro.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvLibro.Location = new System.Drawing.Point(0, 81);
             this.dgvLibro.Name = "dgvLibro";
             this.dgvLibro.ReadOnly = true;
             this.dgvLibro.RowHeadersWidth = 51;
-            this.dgvLibro.Size = new System.Drawing.Size(800, 350);
+            this.dgvLibro.Size = new System.Drawing.Size(600, 285);
             this.dgvLibro.TabIndex = 3;
             this.dgvLibro.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLibro_CellContentClick);
             // 
             // tlpBotones
             // 
-            this.tlpBotones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.tlpBotones.BackColor = System.Drawing.Color.Gray;
             this.tlpBotones.ColumnCount = 3;
             this.tlpBotones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tlpBotones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -65,12 +64,12 @@
             this.tlpBotones.Controls.Add(this.btnAgregarLibro, 0, 0);
             this.tlpBotones.Dock = System.Windows.Forms.DockStyle.Top;
             this.tlpBotones.Location = new System.Drawing.Point(0, 0);
-            this.tlpBotones.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tlpBotones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tlpBotones.Name = "tlpBotones";
             this.tlpBotones.RowCount = 1;
             this.tlpBotones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpBotones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tlpBotones.Size = new System.Drawing.Size(800, 100);
+            this.tlpBotones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 81F));
+            this.tlpBotones.Size = new System.Drawing.Size(600, 81);
             this.tlpBotones.TabIndex = 2;
             // 
             // btnEditarLibro
@@ -85,11 +84,11 @@
             this.btnEditarLibro.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnEditarLibro.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEditarLibro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditarLibro.Location = new System.Drawing.Point(535, 2);
-            this.btnEditarLibro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEditarLibro.Location = new System.Drawing.Point(400, 2);
+            this.btnEditarLibro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEditarLibro.Name = "btnEditarLibro";
-            this.btnEditarLibro.Padding = new System.Windows.Forms.Padding(9, 0, 19, 0);
-            this.btnEditarLibro.Size = new System.Drawing.Size(262, 96);
+            this.btnEditarLibro.Padding = new System.Windows.Forms.Padding(7, 0, 14, 0);
+            this.btnEditarLibro.Size = new System.Drawing.Size(198, 77);
             this.btnEditarLibro.TabIndex = 6;
             this.btnEditarLibro.Text = "Editar Libro";
             this.btnEditarLibro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -109,11 +108,11 @@
             this.btnEliminarLibro.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnEliminarLibro.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEliminarLibro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminarLibro.Location = new System.Drawing.Point(269, 2);
-            this.btnEliminarLibro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEliminarLibro.Location = new System.Drawing.Point(201, 2);
+            this.btnEliminarLibro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEliminarLibro.Name = "btnEliminarLibro";
-            this.btnEliminarLibro.Padding = new System.Windows.Forms.Padding(9, 0, 19, 0);
-            this.btnEliminarLibro.Size = new System.Drawing.Size(260, 96);
+            this.btnEliminarLibro.Padding = new System.Windows.Forms.Padding(7, 0, 14, 0);
+            this.btnEliminarLibro.Size = new System.Drawing.Size(195, 77);
             this.btnEliminarLibro.TabIndex = 5;
             this.btnEliminarLibro.Text = "Eliminar Libro";
             this.btnEliminarLibro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -132,11 +131,11 @@
             this.btnAgregarLibro.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnAgregarLibro.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAgregarLibro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarLibro.Location = new System.Drawing.Point(3, 2);
-            this.btnAgregarLibro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAgregarLibro.Location = new System.Drawing.Point(2, 2);
+            this.btnAgregarLibro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAgregarLibro.Name = "btnAgregarLibro";
-            this.btnAgregarLibro.Padding = new System.Windows.Forms.Padding(9, 0, 19, 0);
-            this.btnAgregarLibro.Size = new System.Drawing.Size(260, 96);
+            this.btnAgregarLibro.Padding = new System.Windows.Forms.Padding(7, 0, 14, 0);
+            this.btnAgregarLibro.Size = new System.Drawing.Size(195, 77);
             this.btnAgregarLibro.TabIndex = 4;
             this.btnAgregarLibro.Text = "Agregar Libro";
             this.btnAgregarLibro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -146,11 +145,12 @@
             // 
             // AdministracionLibro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.dgvLibro);
             this.Controls.Add(this.tlpBotones);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AdministracionLibro";
             this.Text = "AdministracionLibro";
             this.Load += new System.EventHandler(this.AdministracionLibro_Load);

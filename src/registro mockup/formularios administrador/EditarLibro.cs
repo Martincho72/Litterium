@@ -30,6 +30,7 @@ namespace registro_mockup.formularios_administrador
                 txtAutor.Text = l1.Autor;
                 cmbCategoria.Text = l1.Categoria;
                 cmbValoracion.Text = l1.Valoracion.ToString();
+                pcbPortada.Image = l1.Portada;
             }
             else { }
             basedatos.CerrarConexion();
@@ -43,12 +44,28 @@ namespace registro_mockup.formularios_administrador
             {
                 double valoracion;
                 Double.TryParse(cmbValoracion.Text, out valoracion);
-                Libro l1 = new  Libro(txtIsbn.Text, txtTitulo.Text, txtAutor.Text, cmbCategoria.Text, valoracion);
+                Libro l1 = new  Libro(txtIsbn.Text, txtTitulo.Text, txtAutor.Text, cmbCategoria.Text, valoracion, pcbPortada.Image);
                 Libro.EditarLibro(basedatos.Conexion, l1);
                 this.Close();
             }
             else { }
             basedatos.CerrarConexion();
+        }
+
+        private void btnCargar_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog cargaImagen = new OpenFileDialog();
+            cargaImagen.InitialDirectory = "C:\\";
+            cargaImagen.Filter = "JPG (*.jpg)(*.jpeg)|*.jpg;*.jpeg|PNG (*.png)|*.png|GIF (*.gif)|*.gif";
+            if (cargaImagen.ShowDialog() == DialogResult.OK)
+            {
+                pcbPortada.ImageLocation = cargaImagen.FileName;
+                MessageBox.Show(cargaImagen.FileName);
+            }
+            else
+            {
+                MessageBox.Show("No se ha seleccionado imagen", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
     }
 }
