@@ -22,6 +22,7 @@ namespace registro_mockup.formularios_administrador
 
         private void EditarLibro_Load(object sender, EventArgs e)
         {
+            lblErrores.Text = "";
             if (basedatos.AbrirConexion())
             {
                Libro l1 = Libro.EncontrarDatosLibro(basedatos.Conexion, txtIsbn.Text);
@@ -42,11 +43,14 @@ namespace registro_mockup.formularios_administrador
         {
             if (basedatos.AbrirConexion())
             {
-                double valoracion;
-                Double.TryParse(cmbValoracion.Text, out valoracion);
-                Libro l1 = new  Libro(txtIsbn.Text, txtTitulo.Text, txtAutor.Text, cmbCategoria.Text, valoracion, pcbPortada.Image);
-                Libro.EditarLibro(basedatos.Conexion, l1);
-                this.Close();
+               
+                    double valoracion;
+                    Double.TryParse(cmbValoracion.Text, out valoracion);
+                    Libro l1 = new Libro(txtIsbn.Text, txtTitulo.Text, txtAutor.Text, cmbCategoria.Text, valoracion, pcbPortada.Image);
+                    Libro.EditarLibro(basedatos.Conexion, l1);
+                    this.Close();
+                
+                
             }
             else { }
             basedatos.CerrarConexion();
@@ -66,6 +70,11 @@ namespace registro_mockup.formularios_administrador
             {
                 MessageBox.Show("No se ha seleccionado imagen", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

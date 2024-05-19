@@ -35,7 +35,7 @@ namespace registro_mockup.formularios_administrador
         }
         private void EliminarLibro_Load(object sender, EventArgs e)
         {
-
+            lblErrores.Text = "";
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -68,6 +68,11 @@ namespace registro_mockup.formularios_administrador
             {
                 MessageBox.Show("Faltan datos por introducir", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

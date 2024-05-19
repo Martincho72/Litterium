@@ -62,7 +62,7 @@ namespace registro_mockup.formularios_administrador
 
         private void AgregarLibro_Load(object sender, EventArgs e)
         {
-            
+            lblErrores.Text = "";
         }
 
         private void btnCrear_Click(object sender, EventArgs e)
@@ -72,7 +72,7 @@ namespace registro_mockup.formularios_administrador
             {
                 if (basedatos.AbrirConexion())
                 {
-                    if (!Usuario.EncontrarUsuario(basedatos.Conexion, txtIsbn.Text))
+                    if (!Libro.EncontrarLibro(basedatos.Conexion, txtIsbn.Text))
                     {
                         double valoracion;
                         Double.TryParse(cmbValoracion.Text, out valoracion);
