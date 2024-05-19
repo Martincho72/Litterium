@@ -63,6 +63,7 @@ namespace registro_mockup.formularios_administrador
 
         }
 
+
         private void btnCargar_Click(object sender, EventArgs e)
         {
             OpenFileDialog cargaImagen = new OpenFileDialog();
