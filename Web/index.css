@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* HEADER */
@@ -11,97 +11,81 @@ header {
     top: 0;
     background-color: whitesmoke;
     width: 100%;
-    height: 6rem;
+    height: auto;
     border: 3px black solid;
     z-index: 10;
 }
 
 nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 6rem;
+    padding: 0 1rem;
     width: 100%;
+}
+
+nav .logo {
+    max-width: 20%;
+    height: 100%;
+}
+
+nav .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
 }
 
 nav h2 {
-    position: relative;
-    float: left;
     font-size: 1.3rem;
-    margin-top: 2.2rem;
-    margin-left: 4%;
     color: black;
+    margin-left: 1rem;
 }
 
-a:visited {
-    color: black;
+nav .idioma {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
 }
 
-.logo {
-    max-width: 20%;
-    height: 100%;
-    position: relative;
-    float: left;
-}
-
-.logo img {
-    width: 100%;
-    height: 100%;
-}
-
-.idioma {
-    margin-right: 0.3rem;
-    float: right;
-    position: relative;
-    height: 40%;
-    width: 15%;
-}
-
-.idioma img {
-    margin-top: 1.6rem;
-    float: left;
-    position: relative;
-    height: 100%;
-    width: 35%;
-}
-
-.idioma h2{
+nav .idioma img {
+    height: 1.6rem;
     width: auto;
-    float: left;
-    position: relative;
+}
+
+nav .idioma h2 {
+    margin-left: 0.5rem;
 }
 
 /*CONTENEDOR DEL BODY*/
 .contenido {
     padding-top: 6rem;
     width: 100%;
-    height: 130rem;
 }
 
 /* INICIO */
 .inicio {
-    width: 100%;
-    height: 34%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     background-color: white;
+    padding: 2rem;
 }
 
-.caballero {
-    position: relative;
-    float: left;
-    width: 20%;
-    height: 100%;
+.caballero, .info, .dragon {
+    flex: 1;
+    margin: 1rem;
+    min-width: 200px;
 }
 
-.info {
-    position: relative;
-    float: left;
-    width: 60%;
-    height: 100%;
-}
-
-.textos {
-    position: relative;
-    float: left;
+.caballero img, .dragon img {
     width: 100%;
-    height: 50%;
+    height: auto;
 }
 
 .textos h1 {
@@ -113,154 +97,88 @@ a:visited {
 }
 
 .descarga {
-    position: relative;
-    float: left;
-    width: 100%;
-    height: 50%;
+    margin-top: 2rem;
 }
 
 .boton-descarga {
     background-color: #daa515;
     color: white;
-    padding: 30px 60px;
-    font-size: 48px;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .boton-descarga i {
-    margin-right: 15px;
+    margin-right: 1rem;
 }
 
 .boton-descarga:hover {
     background-color: #c49413;
 }
 
-.dragon {
-    position: relative;
-    float: left;
-    height: 100%;
-    width: 20%;
-}
-
-.caballero img {
-    height: 100%;
-    width: 100%;
-}
-
-.dragon img {
-    height: 100%;
-    width: 100%;
-}
-
 /* SOBRE NOSOTROS */
 .sobreNosotros {
     background-color: whitesmoke;
-    width: 100%;
-    height: 33%;
-}
-
-.quienesSomos {
-    position: relative;
-    float: left;
-    width: 100%;
-    height: 100%;
+    padding: 2rem;
     text-align: center;
 }
 
-.quienesSomos h1 {
-    margin-top: 2rem;
+.quienesSomos {
+    margin-bottom: 2rem;
 }
 
 .quienesSomos p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .equipoFoto {
-    left: 20%;
-    position: relative;
-    float: left;
-    margin-top: 1rem;
-    width: 60%;
-    height: 60%;
+    display: flex;
+    justify-content: center;
 }
 
 .equipoFoto img {
     width: 80%;
-    height: 100%;
+    height: auto;
 }
 
 /* CONTÁCTANOS */
 .contactanos {
-    height: 33%;
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     background-color: white;
+    padding: 2rem;
 }
 
-.tutorial {
-    float: left;
-    position: relative;
-    height: 100%;
-    width: 50%;
-}
-
-.contacta {
-    float: left;
-    position: relative;
-    height: 100%;
-    width: 50%;
+.tutorial, .contacta {
+    flex: 1;
+    min-width: 300px;
+    margin: 1rem;
 }
 
 .tituloVideo {
-    height: 10%;
-    width: 100%;
-}
-
-.tituloVideo h1 {
-    position: relative;
-    float: left;
-    left: 37%;
-    margin-top: 1.5rem;
-}
-
-.videoTutorial {
-    height: 80%;
-    width: 100%;
+    text-align: center;
 }
 
 .videoTutorial iframe {
-    margin-top: 1rem;
-    margin-left: 1rem;
-    position: relative;
-    float: left;
-    height: 70%;
-    width: 95%;
+    width: 100%;
+    height: 450px;
 }
 
 .correoLitterium {
-    margin-top: 3rem;
-    position: relative;
-    float: left;
-    height: 10%;
-    width: 100%;
-}
-
-.correoLitterium img {
-    margin-left: 6rem;
-    float: left;
-    position: relative;
-    height: 100%;
-    width: auto;
-}
-
-.correoLitterium h2 {
-    float: left;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 1rem;
 }
 
-/* FORMULARIO */
+.correoLitterium img {
+    height: 2rem;
+    width: auto;
+    margin-right: 1rem;
+}
+
 .formularioAyuda {
     background-color: #f0f0f0;
     padding: 1rem;
@@ -277,10 +195,7 @@ label {
     display: block;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
+input[type="text"], input[type="email"], input[type="tel"], textarea {
     width: 100%;
     padding: 0.8rem;
     border: 0.1rem solid #ccc;
@@ -308,35 +223,57 @@ button[type="submit"]:hover {
 
 /* FOOTER */
 footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     border: 3px black solid;
-    bottom: 0;
-    position: relative;
-    float: left;
-    width: 100%;
-    height: 5rem;
+    padding: 1rem;
     background-color: whitesmoke;
-    z-index: 2;
 }
 
 .redSocial {
-    position: relative;
-    float: left;
-    height: 100%;
-    width: 33%;
+    text-align: center;
 }
 
 .redSocial img {
-    margin-top: 0.5rem;
-    margin-left: 7rem;
-    position: relative;
-    float: left;
     height: 4rem;
     width: auto;
+    margin-bottom: 0.5rem;
 }
 
-.redSocial h2 {
-    float: left;
-    position: relative;
-    margin-top: 1.8rem;
-    margin-left: 1rem;
+.ultimo + div{
+    visibility: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: auto; /* Permite que el header crezca según el contenido */
+    }
+
+    nav {
+        flex-direction:row;
+        align-items: flex-start;
+    }
+
+    nav h2 {
+        font-size: 0.9rem;
+        margin: 0.5rem ;
+        margin-top: 2rem;
+        text-align: center;
+        flex: 1 1 35%; /* Permite que h2 ocupe aproximadamente la mitad del ancho del contenedor */
+    }
+
+    nav .idioma img {
+        margin-top: 2rem;
+        height: 1.3rem;
+        width: auto;
+    }
+
+    .caballero, .dragon, .idioma h2, .logo img{
+        display: none;
+    }
+
+    .videoTutorial iframe {
+        height: 250px;
+    }
 }
