@@ -35,6 +35,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblMensaje = new System.Windows.Forms.Label();
+            this.pcbLogo = new System.Windows.Forms.PictureBox();
             this.txtAutor = new System.Windows.Forms.TextBox();
             this.txtTitulo = new System.Windows.Forms.TextBox();
             this.lblCategoria = new System.Windows.Forms.Label();
@@ -44,11 +45,13 @@
             this.txtIsbn = new System.Windows.Forms.TextBox();
             this.lblIsbn = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.PictureBox();
-            this.pcbLogo = new System.Windows.Forms.PictureBox();
+            this.pcbPortada = new System.Windows.Forms.PictureBox();
+            this.btnCargar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbPortada)).BeginInit();
             this.SuspendLayout();
             // 
             // cmbCategoria
@@ -61,9 +64,10 @@
             "Aventura",
             "Accion",
             "Infantil"});
-            this.cmbCategoria.Location = new System.Drawing.Point(177, 282);
+            this.cmbCategoria.Location = new System.Drawing.Point(133, 229);
+            this.cmbCategoria.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbCategoria.Name = "cmbCategoria";
-            this.cmbCategoria.Size = new System.Drawing.Size(157, 24);
+            this.cmbCategoria.Size = new System.Drawing.Size(119, 21);
             this.cmbCategoria.TabIndex = 67;
             // 
             // cmbValoracion
@@ -75,9 +79,10 @@
             "3",
             "4",
             "5"});
-            this.cmbValoracion.Location = new System.Drawing.Point(177, 331);
+            this.cmbValoracion.Location = new System.Drawing.Point(133, 269);
+            this.cmbValoracion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbValoracion.Name = "cmbValoracion";
-            this.cmbValoracion.Size = new System.Drawing.Size(157, 24);
+            this.cmbValoracion.Size = new System.Drawing.Size(119, 21);
             this.cmbValoracion.TabIndex = 66;
             // 
             // lblErrores
@@ -85,9 +90,10 @@
             this.lblErrores.AutoSize = true;
             this.lblErrores.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblErrores.ForeColor = System.Drawing.Color.Red;
-            this.lblErrores.Location = new System.Drawing.Point(169, 112);
+            this.lblErrores.Location = new System.Drawing.Point(127, 91);
+            this.lblErrores.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblErrores.Name = "lblErrores";
-            this.lblErrores.Size = new System.Drawing.Size(72, 20);
+            this.lblErrores.Size = new System.Drawing.Size(62, 17);
             this.lblErrores.TabIndex = 65;
             this.lblErrores.Text = "lblError";
             // 
@@ -95,9 +101,10 @@
             // 
             this.btnCrear.BackColor = System.Drawing.Color.Gold;
             this.btnCrear.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCrear.Location = new System.Drawing.Point(173, 381);
+            this.btnCrear.Location = new System.Drawing.Point(130, 310);
+            this.btnCrear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCrear.Name = "btnCrear";
-            this.btnCrear.Size = new System.Drawing.Size(119, 60);
+            this.btnCrear.Size = new System.Drawing.Size(89, 49);
             this.btnCrear.TabIndex = 63;
             this.btnCrear.Text = "Editar";
             this.btnCrear.UseVisualStyleBackColor = false;
@@ -110,17 +117,19 @@
             this.panel1.Controls.Add(this.pcbLogo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(411, 88);
+            this.panel1.Size = new System.Drawing.Size(446, 72);
             this.panel1.TabIndex = 62;
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.lblMensaje);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(112, 0);
+            this.panel2.Location = new System.Drawing.Point(84, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(299, 88);
+            this.panel2.Size = new System.Drawing.Size(362, 72);
             this.panel2.TabIndex = 2;
             // 
             // lblMensaje
@@ -128,24 +137,39 @@
             this.lblMensaje.AutoSize = true;
             this.lblMensaje.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMensaje.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblMensaje.Location = new System.Drawing.Point(31, 30);
+            this.lblMensaje.Location = new System.Drawing.Point(23, 24);
+            this.lblMensaje.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMensaje.Name = "lblMensaje";
-            this.lblMensaje.Size = new System.Drawing.Size(157, 28);
+            this.lblMensaje.Size = new System.Drawing.Size(134, 24);
             this.lblMensaje.TabIndex = 0;
             this.lblMensaje.Text = "Editar Libro";
             // 
+            // pcbLogo
+            // 
+            this.pcbLogo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pcbLogo.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo312;
+            this.pcbLogo.Location = new System.Drawing.Point(0, 0);
+            this.pcbLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pcbLogo.Name = "pcbLogo";
+            this.pcbLogo.Size = new System.Drawing.Size(84, 72);
+            this.pcbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbLogo.TabIndex = 1;
+            this.pcbLogo.TabStop = false;
+            // 
             // txtAutor
             // 
-            this.txtAutor.Location = new System.Drawing.Point(177, 239);
+            this.txtAutor.Location = new System.Drawing.Point(133, 194);
+            this.txtAutor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtAutor.Name = "txtAutor";
-            this.txtAutor.Size = new System.Drawing.Size(157, 22);
+            this.txtAutor.Size = new System.Drawing.Size(119, 20);
             this.txtAutor.TabIndex = 61;
             // 
             // txtTitulo
             // 
-            this.txtTitulo.Location = new System.Drawing.Point(177, 198);
+            this.txtTitulo.Location = new System.Drawing.Point(133, 161);
+            this.txtTitulo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTitulo.Name = "txtTitulo";
-            this.txtTitulo.Size = new System.Drawing.Size(157, 22);
+            this.txtTitulo.Size = new System.Drawing.Size(119, 20);
             this.txtTitulo.TabIndex = 60;
             // 
             // lblCategoria
@@ -153,9 +177,10 @@
             this.lblCategoria.AutoSize = true;
             this.lblCategoria.BackColor = System.Drawing.Color.Transparent;
             this.lblCategoria.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategoria.Location = new System.Drawing.Point(49, 287);
+            this.lblCategoria.Location = new System.Drawing.Point(37, 233);
+            this.lblCategoria.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(81, 19);
+            this.lblCategoria.Size = new System.Drawing.Size(69, 16);
             this.lblCategoria.TabIndex = 59;
             this.lblCategoria.Text = "Categoria";
             // 
@@ -164,9 +189,10 @@
             this.lblValoracion.AutoSize = true;
             this.lblValoracion.BackColor = System.Drawing.Color.Transparent;
             this.lblValoracion.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValoracion.Location = new System.Drawing.Point(49, 331);
+            this.lblValoracion.Location = new System.Drawing.Point(37, 269);
+            this.lblValoracion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblValoracion.Name = "lblValoracion";
-            this.lblValoracion.Size = new System.Drawing.Size(93, 19);
+            this.lblValoracion.Size = new System.Drawing.Size(77, 16);
             this.lblValoracion.TabIndex = 58;
             this.lblValoracion.Text = "Valoracion:";
             // 
@@ -175,9 +201,10 @@
             this.lblAutor.AutoSize = true;
             this.lblAutor.BackColor = System.Drawing.Color.Transparent;
             this.lblAutor.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAutor.Location = new System.Drawing.Point(49, 243);
+            this.lblAutor.Location = new System.Drawing.Point(37, 197);
+            this.lblAutor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAutor.Name = "lblAutor";
-            this.lblAutor.Size = new System.Drawing.Size(50, 19);
+            this.lblAutor.Size = new System.Drawing.Size(41, 16);
             this.lblAutor.TabIndex = 57;
             this.lblAutor.Text = "Autor";
             // 
@@ -186,17 +213,19 @@
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(49, 199);
+            this.lblTitulo.Location = new System.Drawing.Point(37, 162);
+            this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(49, 19);
+            this.lblTitulo.Size = new System.Drawing.Size(41, 16);
             this.lblTitulo.TabIndex = 56;
             this.lblTitulo.Text = "Titulo";
             // 
             // txtIsbn
             // 
-            this.txtIsbn.Location = new System.Drawing.Point(177, 155);
+            this.txtIsbn.Location = new System.Drawing.Point(133, 126);
+            this.txtIsbn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtIsbn.Name = "txtIsbn";
-            this.txtIsbn.Size = new System.Drawing.Size(157, 22);
+            this.txtIsbn.Size = new System.Drawing.Size(119, 20);
             this.txtIsbn.TabIndex = 55;
             // 
             // lblIsbn
@@ -204,9 +233,10 @@
             this.lblIsbn.AutoSize = true;
             this.lblIsbn.BackColor = System.Drawing.Color.Transparent;
             this.lblIsbn.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIsbn.Location = new System.Drawing.Point(49, 155);
+            this.lblIsbn.Location = new System.Drawing.Point(37, 126);
+            this.lblIsbn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIsbn.Name = "lblIsbn";
-            this.lblIsbn.Size = new System.Drawing.Size(45, 19);
+            this.lblIsbn.Size = new System.Drawing.Size(37, 16);
             this.lblIsbn.TabIndex = 54;
             this.lblIsbn.Text = "ISBN";
             // 
@@ -216,30 +246,45 @@
             this.btnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalir.Image = global::registro_mockup.Properties.Resources.lecha;
-            this.btnSalir.Location = new System.Drawing.Point(3, 400);
+            this.btnSalir.Location = new System.Drawing.Point(2, 325);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(82, 41);
+            this.btnSalir.Size = new System.Drawing.Size(62, 33);
             this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnSalir.TabIndex = 64;
             this.btnSalir.TabStop = false;
             // 
-            // pcbLogo
+            // pcbPortada
             // 
-            this.pcbLogo.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pcbLogo.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo312;
-            this.pcbLogo.Location = new System.Drawing.Point(0, 0);
-            this.pcbLogo.Name = "pcbLogo";
-            this.pcbLogo.Size = new System.Drawing.Size(112, 88);
-            this.pcbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbLogo.TabIndex = 1;
-            this.pcbLogo.TabStop = false;
+            this.pcbPortada.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pcbPortada.Location = new System.Drawing.Point(310, 126);
+            this.pcbPortada.Name = "pcbPortada";
+            this.pcbPortada.Size = new System.Drawing.Size(124, 123);
+            this.pcbPortada.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbPortada.TabIndex = 68;
+            this.pcbPortada.TabStop = false;
+            // 
+            // btnCargar
+            // 
+            this.btnCargar.BackColor = System.Drawing.Color.Gold;
+            this.btnCargar.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCargar.Location = new System.Drawing.Point(334, 269);
+            this.btnCargar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCargar.Name = "btnCargar";
+            this.btnCargar.Size = new System.Drawing.Size(89, 49);
+            this.btnCargar.TabIndex = 69;
+            this.btnCargar.Text = "Cargar";
+            this.btnCargar.UseVisualStyleBackColor = false;
+            this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
             // 
             // EditarLibro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(411, 474);
+            this.ClientSize = new System.Drawing.Size(446, 385);
+            this.Controls.Add(this.btnCargar);
+            this.Controls.Add(this.pcbPortada);
             this.Controls.Add(this.cmbCategoria);
             this.Controls.Add(this.cmbValoracion);
             this.Controls.Add(this.lblErrores);
@@ -254,14 +299,16 @@
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.txtIsbn);
             this.Controls.Add(this.lblIsbn);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "EditarLibro";
             this.Text = "EditarLibro";
             this.Load += new System.EventHandler(this.EditarLibro_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbPortada)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -286,5 +333,7 @@
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.TextBox txtIsbn;
         private System.Windows.Forms.Label lblIsbn;
+        private System.Windows.Forms.PictureBox pcbPortada;
+        private System.Windows.Forms.Button btnCargar;
     }
 }

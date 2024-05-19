@@ -76,7 +76,7 @@ namespace registro_mockup.formularios_administrador
                     {
                         double valoracion;
                         Double.TryParse(cmbValoracion.Text, out valoracion);
-                        Libro l1 = new Libro(txtIsbn.Text, txtTitulo.Text, txtAutor.Text, cmbCategoria.Text, valoracion);
+                        Libro l1 = new Libro(txtIsbn.Text, txtTitulo.Text, txtAutor.Text, cmbCategoria.Text, valoracion,pcbPortada.Image);
                         resultado = l1.AgregarLibro(basedatos.Conexion, l1);
                         this.Close();
 
@@ -155,7 +155,23 @@ namespace registro_mockup.formularios_administrador
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
 
+        private void btnCargar_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog cargaImagen = new OpenFileDialog();
+            cargaImagen.InitialDirectory = "C:\\";
+            cargaImagen.Filter = "JPG (*.jpg)(*.jpeg)|*.jpg;*.jpeg|PNG (*.png)|*.png|GIF (*.gif)|*.gif";
+            if (cargaImagen.ShowDialog() == DialogResult.OK)
+            {
+                pcbPortada.ImageLocation = cargaImagen.FileName;
+                MessageBox.Show(cargaImagen.FileName);
+            }
+            else
+            {
+                MessageBox.Show("No se ha seleccionado imagen", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
     }
 }
