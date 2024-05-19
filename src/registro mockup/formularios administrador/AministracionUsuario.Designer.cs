@@ -49,12 +49,12 @@
             this.tlpBotones.Controls.Add(this.btnAgregarUsuario, 0, 0);
             this.tlpBotones.Dock = System.Windows.Forms.DockStyle.Top;
             this.tlpBotones.Location = new System.Drawing.Point(0, 0);
-            this.tlpBotones.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tlpBotones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tlpBotones.Name = "tlpBotones";
             this.tlpBotones.RowCount = 1;
             this.tlpBotones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpBotones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tlpBotones.Size = new System.Drawing.Size(800, 100);
+            this.tlpBotones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 81F));
+            this.tlpBotones.Size = new System.Drawing.Size(600, 81);
             this.tlpBotones.TabIndex = 0;
             // 
             // btnEditarUsuario
@@ -69,11 +69,11 @@
             this.btnEditarUsuario.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnEditarUsuario.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEditarUsuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditarUsuario.Location = new System.Drawing.Point(535, 2);
-            this.btnEditarUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEditarUsuario.Location = new System.Drawing.Point(400, 2);
+            this.btnEditarUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEditarUsuario.Name = "btnEditarUsuario";
-            this.btnEditarUsuario.Padding = new System.Windows.Forms.Padding(9, 0, 19, 0);
-            this.btnEditarUsuario.Size = new System.Drawing.Size(262, 96);
+            this.btnEditarUsuario.Padding = new System.Windows.Forms.Padding(7, 0, 14, 0);
+            this.btnEditarUsuario.Size = new System.Drawing.Size(198, 77);
             this.btnEditarUsuario.TabIndex = 6;
             this.btnEditarUsuario.Text = "Editar Usuario";
             this.btnEditarUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -93,11 +93,11 @@
             this.btnEliminarUsuario.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnEliminarUsuario.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEliminarUsuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminarUsuario.Location = new System.Drawing.Point(269, 2);
-            this.btnEliminarUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEliminarUsuario.Location = new System.Drawing.Point(201, 2);
+            this.btnEliminarUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEliminarUsuario.Name = "btnEliminarUsuario";
-            this.btnEliminarUsuario.Padding = new System.Windows.Forms.Padding(9, 0, 19, 0);
-            this.btnEliminarUsuario.Size = new System.Drawing.Size(260, 96);
+            this.btnEliminarUsuario.Padding = new System.Windows.Forms.Padding(7, 0, 14, 0);
+            this.btnEliminarUsuario.Size = new System.Drawing.Size(195, 77);
             this.btnEliminarUsuario.TabIndex = 5;
             this.btnEliminarUsuario.Text = "Eliminar Usuario";
             this.btnEliminarUsuario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -116,11 +116,11 @@
             this.btnAgregarUsuario.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnAgregarUsuario.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAgregarUsuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarUsuario.Location = new System.Drawing.Point(3, 2);
-            this.btnAgregarUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAgregarUsuario.Location = new System.Drawing.Point(2, 2);
+            this.btnAgregarUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAgregarUsuario.Name = "btnAgregarUsuario";
-            this.btnAgregarUsuario.Padding = new System.Windows.Forms.Padding(9, 0, 19, 0);
-            this.btnAgregarUsuario.Size = new System.Drawing.Size(260, 96);
+            this.btnAgregarUsuario.Padding = new System.Windows.Forms.Padding(7, 0, 14, 0);
+            this.btnAgregarUsuario.Size = new System.Drawing.Size(195, 77);
             this.btnAgregarUsuario.TabIndex = 4;
             this.btnAgregarUsuario.Text = "Agregar Usuario";
             this.btnAgregarUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -135,22 +135,21 @@
             this.dgvUsuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUsuarios.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvUsuarios.Location = new System.Drawing.Point(0, 100);
-            this.dgvUsuarios.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvUsuarios.Location = new System.Drawing.Point(0, 81);
             this.dgvUsuarios.Name = "dgvUsuarios";
             this.dgvUsuarios.ReadOnly = true;
             this.dgvUsuarios.RowHeadersWidth = 51;
-            this.dgvUsuarios.Size = new System.Drawing.Size(800, 350);
+            this.dgvUsuarios.Size = new System.Drawing.Size(600, 285);
             this.dgvUsuarios.TabIndex = 1;
             // 
             // AministracionUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.dgvUsuarios);
             this.Controls.Add(this.tlpBotones);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AministracionUsuario";
             this.Text = "AministracionUsuario";
             this.Load += new System.EventHandler(this.AministracionUsuario_Load);

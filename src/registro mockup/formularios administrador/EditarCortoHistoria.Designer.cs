@@ -114,7 +114,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(327, 72);
+            this.panel1.Size = new System.Drawing.Size(338, 72);
             this.panel1.TabIndex = 65;
             // 
             // panel2
@@ -124,7 +124,7 @@
             this.panel2.Location = new System.Drawing.Point(84, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(243, 72);
+            this.panel2.Size = new System.Drawing.Size(254, 72);
             this.panel2.TabIndex = 2;
             // 
             // label1
@@ -311,7 +311,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(327, 482);
+            this.ClientSize = new System.Drawing.Size(338, 460);
             this.Controls.Add(this.dtpFechaPublicacion);
             this.Controls.Add(this.txtIdUsuario);
             this.Controls.Add(this.lblIdUsuario);

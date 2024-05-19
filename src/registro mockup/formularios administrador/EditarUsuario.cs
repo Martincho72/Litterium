@@ -29,7 +29,7 @@ namespace registro_mockup.formularios_administrador
         {
             if (basedatos.AbrirConexion())
             {
-            Usuario usuario = new Usuario(txtUsuario.Text, txtContraseña.Text, chbAdmin.Checked, txtNombre.Text, txtCorreo.Text, txtDireccion.Text, int.Parse(txtTelefono.Text), chbVetado.Checked, chbBaja.Checked);
+            Usuario usuario = new Usuario(txtUsuario.Text, txtContraseña.Text, chbAdmin.Checked, txtNombre.Text, txtCorreo.Text, txtDireccion.Text, int.Parse(txtTelefono.Text), chbVetado.Checked, chbBaja.Checked,pcbImagen.Image);
             Usuario.EditarUsuario(basedatos.Conexion, usuario);
             this.Close();
             }
@@ -50,6 +50,7 @@ namespace registro_mockup.formularios_administrador
                 chbAdmin.Checked = usuario.EsAdmin;
                 chbBaja.Checked = usuario.Baja;
                 chbVetado.Checked = usuario.Vetado;
+                pcbImagen.Image = usuario.Foto;
             }
             else { }
             basedatos.CerrarConexion();
@@ -60,6 +61,22 @@ namespace registro_mockup.formularios_administrador
         private void lblNombre_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCargar_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog cargaImagen = new OpenFileDialog();
+            cargaImagen.InitialDirectory = "C:\\";
+            cargaImagen.Filter = "JPG (*.jpg)(*.jpeg)|*.jpg;*.jpeg|PNG (*.png)|*.png|GIF (*.gif)|*.gif";
+            if (cargaImagen.ShowDialog() == DialogResult.OK)
+            {
+                pcbImagen.ImageLocation = cargaImagen.FileName;
+                MessageBox.Show(cargaImagen.FileName);
+            }
+            else
+            {
+                MessageBox.Show("No se ha seleccionado imagen", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
     }
 }

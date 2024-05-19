@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -84,6 +86,7 @@ namespace Litterium
                 {
                     if (!Usuario.EncontrarUsuario(basedatos.Conexion, txtUsuario.Text))
                     {
+                        
                         int telefono = Convert.ToInt32(txtTelefono.Text);
                         Usuario us1 = new Usuario(txtUsuario.Text, txtContraseña.Text, txtNombre.Text, txtCorreo.Text, txtDireccion.Text, telefono);
                         resultado = us1.AgregarUsuario(basedatos.Conexion, us1);
@@ -109,6 +112,11 @@ namespace Litterium
         private void Registro_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Registro_Paint(object sender, PaintEventArgs e)
+        {
+           
         }
     }
 }
