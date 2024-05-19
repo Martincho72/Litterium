@@ -60,7 +60,7 @@
     <Compile Include="clases\Correo.cs" />
     <Compile Include="clases\CortoHistoria.cs" />
     <Compile Include="clases\Libro.cs" />
-    <Compile Include="Ejemplar.cs" />
+    <Compile Include="clases\Ejemplar.cs" />
     <Compile Include="formularios administrador\AdministracionCortoHistoria.cs">
       <SubType>Form</SubType>
     </Compile>
