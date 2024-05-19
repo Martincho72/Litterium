@@ -28,27 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvCortoHistoria = new System.Windows.Forms.DataGridView();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tlpBotones = new System.Windows.Forms.TableLayoutPanel();
             this.btnEditarCH = new FontAwesome.Sharp.IconButton();
             this.btnEliminarCH = new FontAwesome.Sharp.IconButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCortoHistoria)).BeginInit();
+            this.dgvCortoHistoria = new System.Windows.Forms.DataGridView();
             this.tlpBotones.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCortoHistoria)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dgvCortoHistoria
-            // 
-            this.dgvCortoHistoria.AllowUserToAddRows = false;
-            this.dgvCortoHistoria.AllowUserToDeleteRows = false;
-            this.dgvCortoHistoria.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvCortoHistoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCortoHistoria.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvCortoHistoria.Location = new System.Drawing.Point(0, 81);
-            this.dgvCortoHistoria.Name = "dgvCortoHistoria";
-            this.dgvCortoHistoria.ReadOnly = true;
-            this.dgvCortoHistoria.RowHeadersWidth = 51;
-            this.dgvCortoHistoria.Size = new System.Drawing.Size(600, 285);
-            this.dgvCortoHistoria.TabIndex = 5;
             // 
             // tlpBotones
             // 
@@ -65,6 +54,7 @@
             this.tlpBotones.Name = "tlpBotones";
             this.tlpBotones.RowCount = 1;
             this.tlpBotones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpBotones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tlpBotones.Size = new System.Drawing.Size(600, 81);
             this.tlpBotones.TabIndex = 4;
             // 
@@ -115,6 +105,48 @@
             this.btnEliminarCH.UseVisualStyleBackColor = false;
             this.btnEliminarCH.Click += new System.EventHandler(this.btnEliminarCH_Click);
             // 
+            // dgvCortoHistoria
+            // 
+            this.dgvCortoHistoria.AllowUserToAddRows = false;
+            this.dgvCortoHistoria.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvCortoHistoria.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(199)))), ((int)(((byte)(168)))));
+            this.dgvCortoHistoria.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvCortoHistoria.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCortoHistoria.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvCortoHistoria.ColumnHeadersHeight = 35;
+            this.dgvCortoHistoria.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvCortoHistoria.EnableHeadersVisualStyles = false;
+            this.dgvCortoHistoria.Location = new System.Drawing.Point(0, 81);
+            this.dgvCortoHistoria.Margin = new System.Windows.Forms.Padding(20, 130, 20, 20);
+            this.dgvCortoHistoria.Name = "dgvCortoHistoria";
+            this.dgvCortoHistoria.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(139)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCortoHistoria.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvCortoHistoria.RowHeadersVisible = false;
+            this.dgvCortoHistoria.RowHeadersWidth = 50;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(139)))), ((int)(((byte)(45)))));
+            this.dgvCortoHistoria.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvCortoHistoria.RowTemplate.Height = 48;
+            this.dgvCortoHistoria.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dgvCortoHistoria.Size = new System.Drawing.Size(600, 285);
+            this.dgvCortoHistoria.TabIndex = 5;
+            // 
             // AdministracionCortoHistoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -125,17 +157,16 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AdministracionCortoHistoria";
             this.Text = "AdministracionCortoHistoria";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCortoHistoria)).EndInit();
             this.tlpBotones.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCortoHistoria)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dgvCortoHistoria;
         private System.Windows.Forms.TableLayoutPanel tlpBotones;
         private FontAwesome.Sharp.IconButton btnEditarCH;
         private FontAwesome.Sharp.IconButton btnEliminarCH;
+        private System.Windows.Forms.DataGridView dgvCortoHistoria;
     }
 }
