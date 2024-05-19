@@ -60,6 +60,7 @@
     <Compile Include="clases\Correo.cs" />
     <Compile Include="clases\CortoHistoria.cs" />
     <Compile Include="clases\Libro.cs" />
+    <Compile Include="Ejemplar.cs" />
     <Compile Include="formularios administrador\AdministracionCortoHistoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +187,12 @@
     </Compile>
     <Compile Include="Principal\CortoHistoriaPrincipal.Designer.cs">
       <DependentUpon>CortoHistoriaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\InformacionLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\InformacionLibro.Designer.cs">
+      <DependentUpon>InformacionLibro.cs</DependentUpon>
     </Compile>
     <Compile Include="Principal\LibroPrincipal.cs">
       <SubType>Form</SubType>
