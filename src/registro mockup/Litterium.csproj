@@ -152,6 +152,21 @@
     <Compile Include="formularios Usuario\MisLibros.Designer.cs">
       <DependentUpon>MisLibros.cs</DependentUpon>
     </Compile>
+    <Compile Include="Idiomas\Registro.Designer.cs">
+      <DependentUpon>Registro.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Idiomas\LogIn.EN-GB.Designer.cs">
+      <DependentUpon>LogIn.EN-GB.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Idiomas\LogIn.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogIn.resx</DependentUpon>
+    </Compile>
     <Compile Include="Principal\ContrasenyaOlvidada.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -296,6 +311,18 @@
     <EmbeddedResource Include="formularios Usuario\MisLibros.resx">
       <DependentUpon>MisLibros.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Idiomas\Registro.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Registro.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Idiomas\LogIn.EN-GB.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LogIn.EN-GB.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Idiomas\LogIn.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LogIn.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Principal\ContrasenyaOlvidada.resx">
       <DependentUpon>ContrasenyaOlvidada.cs</DependentUpon>
     </EmbeddedResource>
@@ -385,6 +412,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\perfilDefecto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\espanol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\english.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

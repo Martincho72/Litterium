@@ -163,6 +163,9 @@
   <data name="fondoPanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondoPanel.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="espanol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\espanol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="madera" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\madera.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -171,6 +174,9 @@
   </data>
   <data name="perfilDefecto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\perfilDefecto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="litteriumSinFondo34" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\litteriumSinFondo3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="litteriumSinFondo31" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\litteriumSinFondo3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,7 +187,7 @@
   <data name="maximizar-tamano" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\maximizar-tamano.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="litteriumSinFondo34" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\litteriumSinFondo3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="english" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\english.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

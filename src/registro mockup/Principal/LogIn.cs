@@ -10,6 +10,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using registro_mockup.Idiomas;
+using System.Globalization;
+using System.Threading;
+using registro_mockup.Properties;
 
 namespace Litterium
 {
@@ -21,7 +25,17 @@ namespace Litterium
             InitializeComponent();
         }
 
-        
+        private void AplicarIdioma()
+        {
+            this.Text = LogIn.TituloVentana;
+            lblUsuario.Text = LogIn.lblUsuario;
+            lblTextoRegistrase.Text = LogIn.lblTextoRegistrase;
+            lblRegistrase.Text = LogIn.lblRegistrase;
+            lblMensajesError.Text = LogIn.lblMensajesError;
+            lblContrasenaOlvidada.Text = LogIn.lblContrasenaOlvidada;
+            lblContrasena.Text = LogIn.lblContrasena;
+            btnIogin.Text = LogIn.btnLogin;
+        }
 
         private bool ValidarDatos()
         {
@@ -47,7 +61,7 @@ namespace Litterium
             }
             return ok;
         }
-            private void pictureBox1_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
@@ -55,6 +69,8 @@ namespace Litterium
         private void FrmLogIn_Load(object sender, EventArgs e)
         {
             lblMensajesError.Text = "";
+            pcbIdioma.Image = Resources.espanol;
+            AplicarIdioma();
         }
 
         private void pcbLogo_Click(object sender, EventArgs e)
@@ -72,10 +88,10 @@ namespace Litterium
             }
             else
             {
-                
+
             }
             bDatos.CerrarConexion();
-           
+
 
 
         }
@@ -89,13 +105,13 @@ namespace Litterium
         {
             if (ValidarDatos())
             {
-                if(bDatos.AbrirConexion())
+                if (bDatos.AbrirConexion())
                 {
-                    if(Usuario.EncontrarUsuario(bDatos.Conexion,txtUsuario.Text))
+                    if (Usuario.EncontrarUsuario(bDatos.Conexion, txtUsuario.Text))
                     {
-                        if (Usuario.validarContrasenya(bDatos.Conexion,txtUsuario.Text, txtClave.Text))
+                        if (Usuario.validarContrasenya(bDatos.Conexion, txtUsuario.Text, txtClave.Text))
                         {
-                            if(Usuario.esAdmintrador(bDatos.Conexion,txtUsuario.Text)) 
+                            if (Usuario.esAdmintrador(bDatos.Conexion, txtUsuario.Text))
                             {
                                 MenuAdministrador admin = new MenuAdministrador();
                                 admin.Show();
@@ -110,12 +126,26 @@ namespace Litterium
                         }
                         else
                         {
-                            lblMensajesError.Text = "La contraseña no existe";
+                            if (Thread.CurrentThread.CurrentUICulture.Name == "es-ES")
+                            {
+                                lblMensajesError.Text = "La contraseña no existe";
+                            }
+                            else
+                            {
+                                lblMensajesError.Text = "Incorrect Password";
+                            }
                         }
                     }
                     else
                     {
-                        lblMensajesError.Text = "El usuario no existe";
+                        if (Thread.CurrentThread.CurrentUICulture.Name == "es-ES")
+                        {
+                            lblMensajesError.Text = "El usuario no existe";
+                        }
+                        else
+                        {
+                            lblMensajesError.Text = "User doesn't exist";
+                        }
                     }
                     bDatos.CerrarConexion();
                 }
@@ -132,6 +162,25 @@ namespace Litterium
             ContrasenyaOlvidada contra = new ContrasenyaOlvidada();
             contra.Show();
             this.Hide();
+        }
+
+        private void pcbIdioma_Click(object sender, EventArgs e)
+        {
+            string idiomaActual = Thread.CurrentThread.CurrentUICulture.Name;
+            string cultura = "";
+
+            if (idiomaActual == "es-ES")
+            {
+                cultura = "en-GB";
+                pcbIdioma.Image = Resources.english;
+            }
+            else if (idiomaActual == "en-GB")
+            {
+                cultura = "es-ES";
+                pcbIdioma.Image = Resources.espanol;
+            } 
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultura);
+            AplicarIdioma();
         }
     }
 }
