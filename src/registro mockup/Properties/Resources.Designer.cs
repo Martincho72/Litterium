@@ -123,6 +123,16 @@ namespace registro_mockup.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap imagen_2024_05_19_205006577_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("imagen_2024-05-19_205006577-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lecha {
             get {
                 object obj = ResourceManager.GetObject("lecha", resourceCulture);
@@ -286,6 +296,26 @@ namespace registro_mockup.Properties {
         internal static System.Drawing.Bitmap png_transparent_gold_paper_paper_paper_sheet_miscellaneous_ink_sunrise {
             get {
                 object obj = ResourceManager.GetObject("png-transparent-gold-paper-paper-paper-sheet-miscellaneous-ink-sunrise", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pregunta {
+            get {
+                object obj = ResourceManager.GetObject("pregunta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pregunta_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("pregunta-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
