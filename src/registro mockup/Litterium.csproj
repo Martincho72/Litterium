@@ -292,6 +292,9 @@
     <EmbeddedResource Include="Principal\ContrasenyaOlvidada.resx">
       <DependentUpon>ContrasenyaOlvidada.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Principal\CortoHistoriaPrincipal.resx">
+      <DependentUpon>CortoHistoriaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Principal\LibroPrincipal.resx">
       <DependentUpon>LibroPrincipal.cs</DependentUpon>
     </EmbeddedResource>

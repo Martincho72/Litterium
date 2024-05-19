@@ -26,5 +26,40 @@ namespace registro_mockup.Principal
         {
 
         }
+
+        private void grbLibroRecomendado1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void LibroPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblRecomendadosLibros_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblMejorvaloradosLibros_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox4_Enter_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox5_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
