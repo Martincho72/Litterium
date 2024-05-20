@@ -260,6 +260,7 @@
             this.Controls.Add(this.lblImporteTotal);
             this.Controls.Add(this.pnlInformacionCompra);
             this.Name = "Comprar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Comprar";
             this.pnlInformacionCompra.ResumeLayout(false);
             this.pnlInformacionCompra.PerformLayout();

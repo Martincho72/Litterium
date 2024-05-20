@@ -32,6 +32,7 @@ namespace registro_mockup.formularios_administrador
                 cmbCategoria.Text = l1.Categoria;
                 cmbValoracion.Text = l1.Valoracion.ToString();
                 pcbPortada.Image = l1.Portada;
+                txtPrecio.Text=l1.Precio.ToString();
             }
             else { }
             basedatos.CerrarConexion();
@@ -44,9 +45,11 @@ namespace registro_mockup.formularios_administrador
             if (basedatos.AbrirConexion())
             {
                
-                    double valoracion;
-                    Double.TryParse(cmbValoracion.Text, out valoracion);
-                    Libro l1 = new Libro(txtIsbn.Text, txtTitulo.Text, txtAutor.Text, cmbCategoria.Text, valoracion, pcbPortada.Image, txtSinopsis.Text);
+                double valoracion;
+                Double.TryParse(cmbValoracion.Text, out valoracion);
+                double precio;
+                Double.TryParse(txtPrecio.Text, out precio);
+                Libro l1 = new Libro(txtIsbn.Text, txtTitulo.Text, txtAutor.Text, cmbCategoria.Text, valoracion, pcbPortada.Image, txtSinopsis.Text,precio);
                     Libro.EditarLibro(basedatos.Conexion, l1);
                     this.Close();
                 

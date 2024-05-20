@@ -1,4 +1,5 @@
-﻿using System;
+﻿using registro_mockup.clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +15,7 @@ namespace registro_mockup.Principal
     {
         private Panel bordeizqBTN;
         private Form currentForm;
+        BDatos basedatos=new BDatos();
         public LibroPrincipal()
         {
             InitializeComponent();
@@ -76,8 +78,21 @@ namespace registro_mockup.Principal
 
         private void pcbRecomendado1_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new InformacionLibro());
-            OcultarPaneles();
+            if (basedatos.AbrirConexion())
+            {
+                List<Libro> lista = new List<Libro>();
+                lista = Libro.BuscarLibros(basedatos.Conexion, "El principito");
+
+                Libro libro = new Libro(lista[0].Isbn, lista[0].Titulo, lista[0].Autor, lista[0].Categoria, lista[0].Valoracion, lista[0].Portada, lista[0].Sinopsis, lista[0].Precio);
+
+                OpenChildForm(new InformacionLibro(libro));
+
+                OcultarPaneles();
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
         }
         private void OpenChildForm(Form childForm)
         {

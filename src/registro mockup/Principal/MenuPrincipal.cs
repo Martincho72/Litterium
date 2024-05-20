@@ -244,5 +244,15 @@ namespace registro_mockup
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBuscador_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
