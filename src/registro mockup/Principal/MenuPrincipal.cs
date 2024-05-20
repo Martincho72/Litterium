@@ -200,20 +200,7 @@ namespace registro_mockup
         {
             if (basedatos.AbrirConexion())
             {
-
-
-                if (cmbLibroCortohistoria.Text == "Libros")
-                {
-
-                }
-                else if (cmbLibroCortohistoria.Text == "Cortohistorias")
-                {
-                    OpenChildForm(new Busqueda(txtBuscador.Text,cmbLibroCortohistoria.Text));
-                }
-                else
-                {
-
-                }
+                OpenChildForm(new Busqueda(txtBuscador.Text, cmbLibroCortohistoria.Text));
             }
             else
             {
