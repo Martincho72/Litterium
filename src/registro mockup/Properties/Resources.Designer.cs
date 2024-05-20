@@ -73,9 +73,49 @@ namespace registro_mockup.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Alas_de_Sangre {
+            get {
+                object obj = ResourceManager.GetObject("Alas de Sangre", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap atras {
             get {
                 object obj = ResourceManager.GetObject("atras", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap el_caballero_astado {
+            get {
+                object obj = ResourceManager.GetObject("el caballero astado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap El_pollo_pepe {
+            get {
+                object obj = ResourceManager.GetObject("El pollo pepe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap El_principito {
+            get {
+                object obj = ResourceManager.GetObject("El principito", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -283,6 +323,16 @@ namespace registro_mockup.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Percy_Jackson {
+            get {
+                object obj = ResourceManager.GetObject("Percy Jackson", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap perfilDefecto {
             get {
                 object obj = ResourceManager.GetObject("perfilDefecto", resourceCulture);
@@ -316,6 +366,16 @@ namespace registro_mockup.Properties {
         internal static System.Drawing.Bitmap pregunta_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("pregunta-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Un_cuento_Perfecto {
+            get {
+                object obj = ResourceManager.GetObject("Un cuento Perfecto", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
