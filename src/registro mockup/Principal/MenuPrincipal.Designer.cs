@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.txtBuscardor = new System.Windows.Forms.TextBox();
+            this.cmbLibroCortohistoria = new System.Windows.Forms.ComboBox();
+            this.txtBuscador = new System.Windows.Forms.TextBox();
             this.btnBuscar = new FontAwesome.Sharp.IconButton();
             this.btnUser = new FontAwesome.Sharp.IconButton();
             this.btnPictureMaximizar = new System.Windows.Forms.PictureBox();
@@ -59,8 +59,8 @@
             // panelLogo
             // 
             this.panelLogo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panelLogo.Controls.Add(this.comboBox1);
-            this.panelLogo.Controls.Add(this.txtBuscardor);
+            this.panelLogo.Controls.Add(this.cmbLibroCortohistoria);
+            this.panelLogo.Controls.Add(this.txtBuscador);
             this.panelLogo.Controls.Add(this.btnBuscar);
             this.panelLogo.Controls.Add(this.btnUser);
             this.panelLogo.Controls.Add(this.btnPictureMaximizar);
@@ -71,37 +71,37 @@
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(1217, 111);
+            this.panelLogo.Size = new System.Drawing.Size(1462, 111);
             this.panelLogo.TabIndex = 1;
             this.panelLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLogo_Paint);
             // 
-            // comboBox1
+            // cmbLibroCortohistoria
             // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbLibroCortohistoria.BackColor = System.Drawing.SystemColors.Window;
+            this.cmbLibroCortohistoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLibroCortohistoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbLibroCortohistoria.FormattingEnabled = true;
+            this.cmbLibroCortohistoria.Items.AddRange(new object[] {
             "Libros",
             "Cortohistorias",
             "Todo"});
-            this.comboBox1.Location = new System.Drawing.Point(221, 34);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(228, 44);
-            this.comboBox1.TabIndex = 12;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cmbLibroCortohistoria.Location = new System.Drawing.Point(221, 34);
+            this.cmbLibroCortohistoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbLibroCortohistoria.Name = "cmbLibroCortohistoria";
+            this.cmbLibroCortohistoria.Size = new System.Drawing.Size(228, 44);
+            this.cmbLibroCortohistoria.TabIndex = 12;
+            this.cmbLibroCortohistoria.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // txtBuscardor
+            // txtBuscador
             // 
-            this.txtBuscardor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtBuscador.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtBuscardor.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscardor.Location = new System.Drawing.Point(476, 36);
-            this.txtBuscardor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtBuscardor.Name = "txtBuscardor";
-            this.txtBuscardor.Size = new System.Drawing.Size(393, 41);
-            this.txtBuscardor.TabIndex = 11;
+            this.txtBuscador.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscador.Location = new System.Drawing.Point(476, 36);
+            this.txtBuscador.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtBuscador.Name = "txtBuscador";
+            this.txtBuscador.Size = new System.Drawing.Size(638, 41);
+            this.txtBuscador.TabIndex = 11;
             // 
             // btnBuscar
             // 
@@ -111,12 +111,13 @@
             this.btnBuscar.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
             this.btnBuscar.IconColor = System.Drawing.Color.Black;
             this.btnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBuscar.Location = new System.Drawing.Point(892, 28);
+            this.btnBuscar.Location = new System.Drawing.Point(1137, 28);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(55, 54);
             this.btnBuscar.TabIndex = 10;
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnUser
             // 
@@ -126,7 +127,7 @@
             this.btnUser.IconChar = FontAwesome.Sharp.IconChar.User;
             this.btnUser.IconColor = System.Drawing.Color.Black;
             this.btnUser.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnUser.Location = new System.Drawing.Point(979, 27);
+            this.btnUser.Location = new System.Drawing.Point(1224, 27);
             this.btnUser.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnUser.Name = "btnUser";
             this.btnUser.Size = new System.Drawing.Size(81, 57);
@@ -138,7 +139,7 @@
             // 
             this.btnPictureMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPictureMaximizar.Image = global::registro_mockup.Properties.Resources.maximizar_tamano;
-            this.btnPictureMaximizar.Location = new System.Drawing.Point(1137, 12);
+            this.btnPictureMaximizar.Location = new System.Drawing.Point(1382, 12);
             this.btnPictureMaximizar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnPictureMaximizar.Name = "btnPictureMaximizar";
             this.btnPictureMaximizar.Size = new System.Drawing.Size(25, 25);
@@ -151,7 +152,7 @@
             // 
             this.btnPictureMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPictureMinimizar.Image = global::registro_mockup.Properties.Resources.menos;
-            this.btnPictureMinimizar.Location = new System.Drawing.Point(1092, 12);
+            this.btnPictureMinimizar.Location = new System.Drawing.Point(1337, 12);
             this.btnPictureMinimizar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnPictureMinimizar.Name = "btnPictureMinimizar";
             this.btnPictureMinimizar.Size = new System.Drawing.Size(25, 25);
@@ -164,7 +165,7 @@
             // 
             this.btnPictureCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPictureCerrar.Image = global::registro_mockup.Properties.Resources.x;
-            this.btnPictureCerrar.Location = new System.Drawing.Point(1180, 12);
+            this.btnPictureCerrar.Location = new System.Drawing.Point(1425, 12);
             this.btnPictureCerrar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnPictureCerrar.Name = "btnPictureCerrar";
             this.btnPictureCerrar.Size = new System.Drawing.Size(25, 25);
@@ -193,7 +194,7 @@
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(1217, 111);
+            this.panelMenu.Size = new System.Drawing.Size(1462, 111);
             this.panelMenu.TabIndex = 5;
             // 
             // tableLayoutPanel1
@@ -213,7 +214,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(223, 628);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(223, 657);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // iconButton10
@@ -227,11 +228,11 @@
             this.iconButton10.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.iconButton10.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton10.Location = new System.Drawing.Point(3, 472);
+            this.iconButton10.Location = new System.Drawing.Point(3, 493);
             this.iconButton10.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.iconButton10.Name = "iconButton10";
             this.iconButton10.Padding = new System.Windows.Forms.Padding(9, 0, 17, 0);
-            this.iconButton10.Size = new System.Drawing.Size(217, 155);
+            this.iconButton10.Size = new System.Drawing.Size(217, 163);
             this.iconButton10.TabIndex = 6;
             this.iconButton10.Text = "Idioma";
             this.iconButton10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -249,11 +250,11 @@
             this.btnCortohistorias.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnCortohistorias.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCortohistorias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCortohistorias.Location = new System.Drawing.Point(3, 315);
+            this.btnCortohistorias.Location = new System.Drawing.Point(3, 329);
             this.btnCortohistorias.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.btnCortohistorias.Name = "btnCortohistorias";
             this.btnCortohistorias.Padding = new System.Windows.Forms.Padding(9, 0, 17, 0);
-            this.btnCortohistorias.Size = new System.Drawing.Size(217, 155);
+            this.btnCortohistorias.Size = new System.Drawing.Size(217, 162);
             this.btnCortohistorias.TabIndex = 5;
             this.btnCortohistorias.Text = "Cortohistorias";
             this.btnCortohistorias.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -272,11 +273,11 @@
             this.btnLibros.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnLibros.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnLibros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLibros.Location = new System.Drawing.Point(3, 158);
+            this.btnLibros.Location = new System.Drawing.Point(3, 165);
             this.btnLibros.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.btnLibros.Name = "btnLibros";
             this.btnLibros.Padding = new System.Windows.Forms.Padding(9, 0, 17, 0);
-            this.btnLibros.Size = new System.Drawing.Size(217, 155);
+            this.btnLibros.Size = new System.Drawing.Size(217, 162);
             this.btnLibros.TabIndex = 4;
             this.btnLibros.Text = "Libros";
             this.btnLibros.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -299,7 +300,7 @@
             this.btnMiCarrito.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.btnMiCarrito.Name = "btnMiCarrito";
             this.btnMiCarrito.Padding = new System.Windows.Forms.Padding(9, 0, 17, 0);
-            this.btnMiCarrito.Size = new System.Drawing.Size(217, 155);
+            this.btnMiCarrito.Size = new System.Drawing.Size(217, 162);
             this.btnMiCarrito.TabIndex = 3;
             this.btnMiCarrito.Text = "Mi carrito";
             this.btnMiCarrito.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -317,7 +318,7 @@
             this.panelescritorio.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.panelescritorio.MinimumSize = new System.Drawing.Size(1556, 628);
             this.panelescritorio.Name = "panelescritorio";
-            this.panelescritorio.Size = new System.Drawing.Size(1556, 628);
+            this.panelescritorio.Size = new System.Drawing.Size(1556, 657);
             this.panelescritorio.TabIndex = 8;
             // 
             // PCBlogo
@@ -336,7 +337,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1217, 599);
+            this.ClientSize = new System.Drawing.Size(1462, 768);
             this.Controls.Add(this.panelescritorio);
             this.Controls.Add(this.panelMenu);
             this.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
@@ -375,7 +376,7 @@
         private System.Windows.Forms.PictureBox btnPictureMinimizar;
         private FontAwesome.Sharp.IconButton btnBuscar;
         private FontAwesome.Sharp.IconButton btnUser;
-        private System.Windows.Forms.TextBox txtBuscardor;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtBuscador;
+        private System.Windows.Forms.ComboBox cmbLibroCortohistoria;
     }
 }

@@ -1,4 +1,5 @@
 ﻿using FontAwesome.Sharp;
+using registro_mockup.clases;
 using registro_mockup.formularios_Usuario;
 using registro_mockup.Principal;
 using System;
@@ -20,6 +21,7 @@ namespace registro_mockup
        private IconButton actualBTN;
         private Panel bordeizqBTN;
         private Form currentForm;
+        BDatos basedatos = new BDatos();
         public MenuPrincipal()
         {
             InitializeComponent();
@@ -192,6 +194,32 @@ namespace registro_mockup
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+
+
+                if (cmbLibroCortohistoria.Text == "Libros")
+                {
+
+                }
+                else if (cmbLibroCortohistoria.Text == "Cortohistorias")
+                {
+                    OpenChildForm(new Busqueda(txtBuscador.Text));
+                }
+                else
+                {
+
+                }
+            }
+            else
+            {
+
+            }
+            basedatos.CerrarConexion();
         }
     }
 }
