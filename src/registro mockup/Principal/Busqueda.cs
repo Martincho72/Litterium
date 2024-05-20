@@ -1,4 +1,5 @@
-﻿using System;
+﻿using registro_mockup.clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +13,27 @@ namespace registro_mockup.Principal
 {
     public partial class Busqueda : Form
     {
-        public Busqueda(string txtbusqueda)
+        BDatos basedatos = new BDatos();
+        public Busqueda(string txtbusqueda, string tipo)
         {
             InitializeComponent();
+            lblBusqueda.Text = txtbusqueda;
+            lblTipo.Text = tipo;
         }
+        
+        private void Busqueda_Load(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
 
 
+                if (lblTipo.Text == "Cortohistorias")
+                {
+                    dgvResultadosBusqueda.DataSource = CortoHistoria.BuscarCortoHistoria(basedatos.Conexion, lblBusqueda.Text);
+                }
+            }
+            else { }
+            basedatos.CerrarConexion();
+        }
     }
 }
