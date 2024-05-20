@@ -26,7 +26,7 @@ namespace registro_mockup
             administrarUsuario.Size = new Size(7, 60);
             panelMenu.Controls.Add(administrarUsuario);
             this.Text = string.Empty;
-            this.ControlBox = true;
+            this.ControlBox = false;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             this.DoubleBuffered = false;
         }
@@ -107,6 +107,30 @@ namespace registro_mockup
         private struct RGBColors
         {
             public static Color color1 = Color.FromArgb(255, 255, 255);
+        }
+
+        private void btnPictureCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnPictureMaximizar_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                // Si el formulario está en estado normal, lo maximiza
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                // Si el formulario está maximizado, lo restaura al estado normal
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void btnPictureMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }
