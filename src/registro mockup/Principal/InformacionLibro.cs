@@ -22,6 +22,7 @@ namespace registro_mockup.Principal
             lblTituloLibro.Text="Titulo: " + l1.Titulo;
             txtSinopsis.Text=l1.Sinopsis;
             pcbPortadaLibro.Image=l1.Portada;
+            lblPrecioLibro.Text = "Precio: " + l1.Precio+"€";
         }
 
         private void label2_Click(object sender, EventArgs e)
