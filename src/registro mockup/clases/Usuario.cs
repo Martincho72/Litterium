@@ -8,6 +8,8 @@ using MySql.Data.MySqlClient;
 using System.Drawing.Imaging;
 using System.Drawing;
 using System.IO;
+using registro_mockup.Properties;
+
 namespace registro_mockup
 {
     internal class Usuario
@@ -78,7 +80,7 @@ namespace registro_mockup
             this.foto = foto;
         }
         //insertar DGV
-        public Usuario(int id, string usuario, string clave, bool esAdmin, string nombre, string correoElectronico, string direccion, int telefono, bool vetdado, bool baja,Image foto)
+        public Usuario(int id, string usuario, string clave, bool esAdmin, string nombre, string correoElectronico, string direccion, int telefono, bool vetdado, bool baja)
         {
             this.id = id;
             this.usuario = usuario;
@@ -90,7 +92,6 @@ namespace registro_mockup
             this.telefono = telefono;
             this.vetado = vetdado;
             this.baja = baja;
-            this.foto = foto;
         }
 
         public static bool EncontrarUsuario(MySqlConnection conexion, string usuario)
@@ -141,7 +142,7 @@ namespace registro_mockup
                     
                     // Crear el objeto Usuario y agregarlo a la lista
                     usua = new Usuario(id, usu, clave, esAdmin, nombre, correo,
-                        direccion, telefono, vetado, baja,foto);
+                        direccion, telefono, vetado, baja);
                 }
 
 
@@ -248,14 +249,14 @@ namespace registro_mockup
                     int telefono = reader.GetInt32(7);
                     bool vetado = reader.GetBoolean(8);
                     bool baja = reader.GetBoolean(9);
-
-                    byte[] img = (byte[])reader["imagen"];
-                    MemoryStream ms = new MemoryStream(img);
-                    Image foto = Image.FromStream(ms);
+  
+                        //byte[] img = (byte[])reader["imagen"];
+                        //MemoryStream ms = new MemoryStream(img);
+                        //Image foto = Image.FromStream(ms);
 
                     // Crear el objeto Usuario y agregarlo a la lista
                     Usuario usuario = new Usuario(id, usu, clave, esAdmin, nombre, correo,
-                        direccion, telefono, vetado, baja,foto);
+                        direccion, telefono, vetado, baja);
                     lista.Add(usuario);
                 }
 

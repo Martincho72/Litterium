@@ -36,6 +36,18 @@ namespace Litterium
             lblContrasenaOlvidada.Text = LogIn.lblContrasenaOlvidada;
             lblContrasena.Text = LogIn.lblContrasena;
             btnIogin.Text = LogIn.btnLogin;
+
+            string idiomaActual = Thread.CurrentThread.CurrentUICulture.Name;
+
+            if (idiomaActual == "es-ES")
+            {
+                pcbIdioma.Image = Resources.espanol;
+            }
+            else
+            {
+                pcbIdioma.Image = Resources.english;
+            }
+
         }
 
         private bool ValidarDatos()
@@ -70,8 +82,6 @@ namespace Litterium
         private void FrmLogIn_Load(object sender, EventArgs e)
         {
             lblMensajesError.Text = "";
-
-            pcbIdioma.Image = Resources.espanol;
             AplicarIdioma();
         }
 
