@@ -78,8 +78,7 @@
             // 
             // pcbIdioma
             // 
-            this.pcbIdioma.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pcbIdioma.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pcbIdioma.Image = global::registro_mockup.Properties.Resources.espanol;
             this.pcbIdioma.Location = new System.Drawing.Point(995, 27);
             this.pcbIdioma.Name = "pcbIdioma";
@@ -212,7 +211,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(167, 536);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(167, 527);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // btnUser
@@ -222,11 +221,11 @@
             this.btnUser.FlatAppearance.BorderSize = 0;
             this.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnUser.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.btnUser.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
             this.btnUser.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnUser.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUser.Location = new System.Drawing.Point(2, 403);
+            this.btnUser.Location = new System.Drawing.Point(2, 394);
             this.btnUser.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnUser.Name = "btnUser";
             this.btnUser.Padding = new System.Windows.Forms.Padding(7, 0, 13, 0);
@@ -249,11 +248,11 @@
             this.btnCortohistorias.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnCortohistorias.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCortohistorias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCortohistorias.Location = new System.Drawing.Point(2, 269);
+            this.btnCortohistorias.Location = new System.Drawing.Point(2, 263);
             this.btnCortohistorias.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnCortohistorias.Name = "btnCortohistorias";
             this.btnCortohistorias.Padding = new System.Windows.Forms.Padding(7, 0, 13, 0);
-            this.btnCortohistorias.Size = new System.Drawing.Size(163, 132);
+            this.btnCortohistorias.Size = new System.Drawing.Size(163, 129);
             this.btnCortohistorias.TabIndex = 5;
             this.btnCortohistorias.Text = "Cortohistorias";
             this.btnCortohistorias.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -272,11 +271,11 @@
             this.btnLibros.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnLibros.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnLibros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLibros.Location = new System.Drawing.Point(2, 135);
+            this.btnLibros.Location = new System.Drawing.Point(2, 132);
             this.btnLibros.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnLibros.Name = "btnLibros";
             this.btnLibros.Padding = new System.Windows.Forms.Padding(7, 0, 13, 0);
-            this.btnLibros.Size = new System.Drawing.Size(163, 132);
+            this.btnLibros.Size = new System.Drawing.Size(163, 129);
             this.btnLibros.TabIndex = 4;
             this.btnLibros.Text = "Libros";
             this.btnLibros.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -299,7 +298,7 @@
             this.btnMiCarrito.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnMiCarrito.Name = "btnMiCarrito";
             this.btnMiCarrito.Padding = new System.Windows.Forms.Padding(7, 0, 13, 0);
-            this.btnMiCarrito.Size = new System.Drawing.Size(163, 132);
+            this.btnMiCarrito.Size = new System.Drawing.Size(163, 129);
             this.btnMiCarrito.TabIndex = 3;
             this.btnMiCarrito.Text = "Mi carrito";
             this.btnMiCarrito.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -317,7 +316,7 @@
             this.panelescritorio.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.panelescritorio.MinimumSize = new System.Drawing.Size(1167, 510);
             this.panelescritorio.Name = "panelescritorio";
-            this.panelescritorio.Size = new System.Drawing.Size(1180, 536);
+            this.panelescritorio.Size = new System.Drawing.Size(1180, 527);
             this.panelescritorio.TabIndex = 8;
             this.panelescritorio.Paint += new System.Windows.Forms.PaintEventHandler(this.panelescritorio_Paint);
             // 
@@ -337,7 +336,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1180, 626);
+            this.ClientSize = new System.Drawing.Size(1180, 617);
             this.Controls.Add(this.panelescritorio);
             this.Controls.Add(this.panelMenu);
             this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
