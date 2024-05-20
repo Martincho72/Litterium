@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 using registro_mockup.formularios_administrador;
+using registro_mockup.Idiomas;
 
 namespace registro_mockup
 {
@@ -18,10 +18,12 @@ namespace registro_mockup
         private Form currentForm;
         private IconButton actualBTN;
         private Panel administrarUsuario;
+        private Form previousForm;
 
-        public MenuAdministrador()
+        public MenuAdministrador(Form form1)
         {
             InitializeComponent();
+            this.previousForm = form1;
             administrarUsuario = new Panel();
             administrarUsuario.Size = new Size(7, 60);
             panelMenu.Controls.Add(administrarUsuario);
@@ -131,6 +133,12 @@ namespace registro_mockup
         private void btnPictureMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnCS_Click(object sender, EventArgs e)
+        {
+            this.previousForm.Show();
+            this.Hide();
         }
     }
 }

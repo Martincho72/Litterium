@@ -23,6 +23,7 @@ namespace Litterium
         public FrmLogIn()
         {
             InitializeComponent();
+
         }
 
         private void AplicarIdioma()
@@ -69,6 +70,7 @@ namespace Litterium
         private void FrmLogIn_Load(object sender, EventArgs e)
         {
             lblMensajesError.Text = "";
+
             pcbIdioma.Image = Resources.espanol;
             AplicarIdioma();
         }
@@ -113,8 +115,10 @@ namespace Litterium
                         {
                             if (Usuario.esAdmintrador(bDatos.Conexion, txtUsuario.Text))
                             {
-                                MenuAdministrador admin = new MenuAdministrador();
+                                MenuAdministrador admin = new MenuAdministrador(this);
                                 admin.Show();
+                                txtUsuario.Text = "";
+                                txtClave.Text = "";
                                 this.Hide();
                             }
                             else
@@ -122,6 +126,7 @@ namespace Litterium
                                 MenuPrincipal menu = new MenuPrincipal();
                                 menu.Show();
                                 this.Hide();
+
                             }
                         }
                         else

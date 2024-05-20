@@ -1,4 +1,5 @@
-﻿using System;
+﻿using registro_mockup.clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace registro_mockup.formularios_administrador
 {
     public partial class AdministracionCortoHistoria : Form
     {
+        BDatos bDatos = new BDatos();
+
         public AdministracionCortoHistoria()
         {
             InitializeComponent();
@@ -30,5 +33,20 @@ namespace registro_mockup.formularios_administrador
             BuscarCortoHistoria edit = new BuscarCortoHistoria();
             edit.ShowDialog();
         }
-    }
+
+        private void AdministracionCortoHistoria_Load(object sender, EventArgs e)
+        {
+            CargaLibros();
+        }
+        private void CargaLibros()
+        {
+            if (bDatos.AbrirConexion())
+            {
+
+                dgvCortoHistoria.DataSource = CortoHistoria.BuscarCortoHistoria(bDatos.Conexion);
+            }
+            else { }
+            bDatos.CerrarConexion();
+        }
+}
 }
