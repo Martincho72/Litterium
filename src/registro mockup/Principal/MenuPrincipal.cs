@@ -1,17 +1,22 @@
 ﻿using FontAwesome.Sharp;
 using registro_mockup.clases;
 using registro_mockup.formularios_Usuario;
+using registro_mockup.Idiomas;
 using registro_mockup.Principal;
+using registro_mockup.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace registro_mockup
 {
@@ -185,11 +190,7 @@ namespace registro_mockup
 
         }
 
-        private void btnUser_Click(object sender, EventArgs e)
-        {
-            ActivaBTN(sender, RGBColors.color1);
-            OpenChildForm(new MenuUsuario());
-        }
+        
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -207,6 +208,41 @@ namespace registro_mockup
 
             }
             basedatos.CerrarConexion();
+        }
+
+        private void pcbIdioma_Click(object sender, EventArgs e)
+        {
+            string idiomaActual = Thread.CurrentThread.CurrentUICulture.Name;
+            string cultura = "";
+
+            if (idiomaActual == "es-ES")
+            {
+                cultura = "en-GB";
+                pcbIdioma.Image = Resources.english;
+            }
+            else if (idiomaActual == "en-GB")
+            {
+                cultura = "es-ES";
+                pcbIdioma.Image = Resources.espanol;
+            }
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultura);
+            AplicarIdioma();
+        }
+        private void AplicarIdioma()
+        {
+            this.Text = LogIn.TituloMenuPrincipal;
+           
+        }
+
+        private void btnUser_Click(object sender, EventArgs e)
+        {
+            ActivaBTN(sender, RGBColors.color1);
+            OpenChildForm(new MenuUsuario());
+        }
+
+        private void panelescritorio_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -117,8 +117,38 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btnCortohistorias" xml:space="preserve">
+    <value>Cortohistorias</value>
+  </data>
+  <data name="btnLibros" xml:space="preserve">
+    <value>Libros</value>
+  </data>
   <data name="btnLogin" xml:space="preserve">
     <value>Iniciar Sesión:</value>
+  </data>
+  <data name="btnMiCarrito" xml:space="preserve">
+    <value>Mi carrito</value>
+  </data>
+  <data name="btnPagar" xml:space="preserve">
+    <value>Comprar</value>
+  </data>
+  <data name="btnRegistrase" xml:space="preserve">
+    <value>Registrarse</value>
+  </data>
+  <data name="btnUser" xml:space="preserve">
+    <value>Mi perfil</value>
+  </data>
+  <data name="cmbCortohistoria" xml:space="preserve">
+    <value>Cortohistorias</value>
+  </data>
+  <data name="cmbLibro" xml:space="preserve">
+    <value>Libros</value>
+  </data>
+  <data name="cmbTodo" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+  <data name="lblAdministradores" xml:space="preserve">
+    <value>Administradores</value>
   </data>
   <data name="lblContrasena" xml:space="preserve">
     <value>Contraseña:</value>
@@ -126,19 +156,55 @@
   <data name="lblContrasenaOlvidada" xml:space="preserve">
     <value>¿Has olvidado tu contraseña?</value>
   </data>
+  <data name="lblCorreo" xml:space="preserve">
+    <value>Correo</value>
+  </data>
+  <data name="lblDatosDeUsuario" xml:space="preserve">
+    <value>Datos de Usuario</value>
+  </data>
+  <data name="lblDireccion" xml:space="preserve">
+    <value>Dirección</value>
+  </data>
+  <data name="lblImporteMiCarrito" xml:space="preserve">
+    <value>Importe Total : </value>
+  </data>
   <data name="lblMensajesError" xml:space="preserve">
     <value>Mensajes de Error</value>
+  </data>
+  <data name="lblNombre" xml:space="preserve">
+    <value>Nombre</value>
   </data>
   <data name="lblRegistrase" xml:space="preserve">
     <value>Regístrate</value>
   </data>
+  <data name="lblTelefono" xml:space="preserve">
+    <value>Teléfono</value>
+  </data>
   <data name="lblTextoRegistrase" xml:space="preserve">
     <value>¿No te has registrado aún?</value>
+  </data>
+  <data name="lblTituloVisulaizarCortohistoria" xml:space="preserve">
+    <value>Titulo : </value>
   </data>
   <data name="lblUsuario" xml:space="preserve">
     <value>Usuario:</value>
   </data>
-  <data name="TituloVentana" xml:space="preserve">
+  <data name="lblVisualizarCortohistoria" xml:space="preserve">
+    <value>Visualizar Cortohistoria de : </value>
+  </data>
+  <data name="TituloLogin" xml:space="preserve">
     <value>Iniciar Sesión</value>
+  </data>
+  <data name="TituloMenuPrincipal" xml:space="preserve">
+    <value>Menú Principal</value>
+  </data>
+  <data name="TituloMiCarrito" xml:space="preserve">
+    <value>Mi Carrito</value>
+  </data>
+  <data name="TituloRegistro" xml:space="preserve">
+    <value>Registro</value>
+  </data>
+  <data name="TituloVisualizarCortohistoria" xml:space="preserve">
+    <value>Visualizar Cortohistoria</value>
   </data>
 </root>
