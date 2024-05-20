@@ -76,7 +76,9 @@ namespace registro_mockup.formularios_administrador
                     {
                         double valoracion;
                         Double.TryParse(cmbValoracion.Text, out valoracion);
-                        Libro l1 = new Libro(txtIsbn.Text, txtTitulo.Text, txtAutor.Text, cmbCategoria.Text, valoracion,pcbPortada.Image,txtSinopsis.Text);
+                        double precio;
+                        Double.TryParse(txtPrecio.Text, out precio);
+                        Libro l1 = new Libro(txtIsbn.Text, txtTitulo.Text, txtAutor.Text, cmbCategoria.Text, valoracion,pcbPortada.Image,txtSinopsis.Text,precio);
                         resultado = l1.AgregarLibro(basedatos.Conexion, l1);
                         this.Close();
 

@@ -11,7 +11,7 @@ using MySql.Data.MySqlClient;
 
 namespace registro_mockup.clases
 {
-    internal class Libro
+    public  class Libro
     {
         string isbn;
         string titulo;
@@ -20,6 +20,7 @@ namespace registro_mockup.clases
         double valoracion;
         Image portada;
         string sinopsis;
+        double precio;
 
         public string Isbn { get { return isbn; } }
         public string Titulo { get { return titulo; } }
@@ -27,14 +28,14 @@ namespace registro_mockup.clases
         public string Categoria { get { return categoria; } }
         public double Valoracion { get { return valoracion; } }
         public Image Portada { get { return portada; } set { portada = value; } }
-
+        public double Precio { get { return precio; } }
         public string Sinopsis { get { return sinopsis; } }
 
         public Libro()
         {
             
         }
-        public Libro(string isbn, string titulo, string autor, string categoria, double valoracion,Image portada, string sinopsis)
+        public Libro(string isbn, string titulo, string autor, string categoria, double valoracion,Image portada, string sinopsis,double precio)
         {
             this.isbn = isbn;
             this.titulo = titulo;
@@ -43,6 +44,7 @@ namespace registro_mockup.clases
             this.valoracion = valoracion;
             this.portada = portada;
             this.sinopsis = sinopsis;
+            this.precio = precio;
         }
 
         public static List<Libro> BuscarLibros(MySqlConnection conexion)
@@ -66,14 +68,15 @@ namespace registro_mockup.clases
                     string autor = reader.GetString(2);
                     string categoria = reader.GetString(3);
                     double valoracion = reader.GetDouble(4);
-                    string sinopsis = reader.GetString(6);  
+                    string sinopsis = reader.GetString(6);
+                    double precio = reader.GetDouble(7);
 
                     byte[] img = (byte[])reader["imagen"];
                     MemoryStream ms = new MemoryStream(img);
                     Image foto = Image.FromStream(ms);
 
                     // Crear el objeto Usuario y agregarlo a la lista
-                    Libro libro = new Libro(isbn, titulo, autor, categoria, valoracion,foto,sinopsis);
+                    Libro libro = new Libro(isbn, titulo, autor, categoria, valoracion,foto,sinopsis,precio);
                     lista.Add(libro);
                 }
 
@@ -105,13 +108,13 @@ namespace registro_mockup.clases
                     string categoria = reader.GetString(3);
                     double valoracion = reader.GetDouble(4);
                     string sinopsis = reader.GetString(6);
-
+                    double precio = reader.GetDouble(7);    
                     byte[] img = (byte[])reader["imagen"];
                     MemoryStream ms = new MemoryStream(img);
                     Image foto = Image.FromStream(ms);
 
                     // Crear el objeto Usuario y agregarlo a la lista
-                    Libro libro = new Libro(isbn, titulo, autor, categoria, valoracion, foto, sinopsis);
+                    Libro libro = new Libro(isbn, titulo, autor, categoria, valoracion, foto, sinopsis, precio);
                     lista.Add(libro);
                 }
 
@@ -127,8 +130,8 @@ namespace registro_mockup.clases
             l1.Portada.Save(ms, ImageFormat.Png);
             byte[] imgArr = ms.ToArray();
 
-            string consulta = String.Format("INSERT INTO libro (isbn,titulo,autor,categoria,valoracion,imagen,sinopsis) " +
-                "VALUES " + "('{0}','{1}','{2}','{3}','{4}', @imagen, '{5}')", l1.Isbn, l1.Titulo,l1.Autor,l1.Categoria,l1.Valoracion,l1.Sinopsis);
+            string consulta = String.Format("INSERT INTO libro (isbn,titulo,autor,categoria,valoracion,imagen,sinopsis,precio) " +
+                "VALUES " + "('{0}','{1}','{2}','{3}','{4}', @imagen, '{5}','{6}')", l1.Isbn, l1.Titulo,l1.Autor,l1.Categoria,l1.Valoracion,l1.Sinopsis,l1.Precio);
 
             MySqlCommand comando = new MySqlCommand(consulta, conexion);
             comando.Parameters.AddWithValue("imagen", imgArr);
@@ -172,7 +175,7 @@ namespace registro_mockup.clases
             MemoryStream ms = new MemoryStream();
             l1.Portada.Save(ms, ImageFormat.Jpeg);
             byte[] imgArr = ms.ToArray();
-            string consulta = String.Format("UPDATE libro SET isbn = '{0}', titulo = '{1}', autor = '{2}', categoria = '{3}', valoracion = '{4}', imagen=@imagen , sinopsis = '{5}' " +
+            string consulta = String.Format("UPDATE libro SET isbn = '{0}', titulo = '{1}', autor = '{2}', categoria = '{3}', valoracion = '{4}', imagen=@imagen , sinopsis = '{5}' precio='{6}'  " +
                                             "WHERE isbn = '{0}'", l1.Isbn, l1.Titulo, l1.Autor, l1.Categoria, l1.Valoracion,l1.Sinopsis);
                                          
             MySqlCommand comando = new MySqlCommand(consulta, conexion);
@@ -200,12 +203,12 @@ namespace registro_mockup.clases
                     string categoria = reader.GetString(3);
                     double valoracion = reader.GetDouble(4);
                     string sinopsis = reader.GetString(6);  
-
+                    double precio = reader.GetDouble(7);
                     byte[] img = (byte[])reader["imagen"];
                     MemoryStream ms = new MemoryStream(img);
                     Image foto = Image.FromStream(ms);
 
-                    l1 =new Libro(codigo,titulo, autor,categoria, valoracion, foto,sinopsis);
+                    l1 =new Libro(codigo,titulo, autor,categoria, valoracion, foto,sinopsis, precio);
                 }
 
 
