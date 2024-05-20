@@ -38,5 +38,15 @@ namespace registro_mockup.Principal
             else { }
             basedatos.CerrarConexion();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvResultadosBusqueda_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
