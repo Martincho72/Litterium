@@ -23,6 +23,7 @@ namespace Litterium
         public FrmLogIn()
         {
             InitializeComponent();
+            this.ControlBox = false;
 
         }
 
