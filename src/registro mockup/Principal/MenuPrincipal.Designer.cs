@@ -86,7 +86,7 @@
             "Cortohistorias",
             "Todo"});
             this.cmbLibroCortohistoria.Location = new System.Drawing.Point(221, 34);
-            this.cmbLibroCortohistoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbLibroCortohistoria.Margin = new System.Windows.Forms.Padding(4);
             this.cmbLibroCortohistoria.Name = "cmbLibroCortohistoria";
             this.cmbLibroCortohistoria.Size = new System.Drawing.Size(228, 44);
             this.cmbLibroCortohistoria.TabIndex = 12;
@@ -343,6 +343,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.MinimumSize = new System.Drawing.Size(1214, 587);
             this.Name = "MenuPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuPrincipal";
             this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             this.panelLogo.ResumeLayout(false);

@@ -97,7 +97,7 @@ namespace registro_mockup.clases
         public static List<CortoHistoria> BuscarCortoHistoria(MySqlConnection conexion, string busqueda) //Metodo sobrecargado para busqueda
         {
             List<CortoHistoria> lista = new List<CortoHistoria>();
-            string consulta = string.Format("SELECT * from cortohistoria WHERE autor='{0}' OR titulo='{0}'",busqueda);
+            string consulta = string.Format("SELECT * from cortohistoria WHERE autor='{0}' OR titulo='{0}' OR editorial='{0}'",busqueda);
 
             // Creamos el objeto command al cual le pasamos la consulta y la conexión
             MySqlCommand comando = new MySqlCommand(consulta, conexion);
