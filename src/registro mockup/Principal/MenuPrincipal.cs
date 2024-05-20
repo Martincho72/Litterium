@@ -208,7 +208,7 @@ namespace registro_mockup
                 }
                 else if (cmbLibroCortohistoria.Text == "Cortohistorias")
                 {
-                    OpenChildForm(new Busqueda(txtBuscador.Text));
+                    OpenChildForm(new Busqueda(txtBuscador.Text,cmbLibroCortohistoria.Text));
                 }
                 else
                 {
