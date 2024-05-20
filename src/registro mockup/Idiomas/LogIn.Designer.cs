@@ -79,7 +79,7 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Iniciar Sesión:.
+        ///   Busca una cadena traducida similar a Iniciar Sesión.
         /// </summary>
         internal static string btnLogin {
             get {

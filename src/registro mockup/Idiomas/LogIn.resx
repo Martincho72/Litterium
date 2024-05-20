@@ -124,7 +124,7 @@
     <value>Libros</value>
   </data>
   <data name="btnLogin" xml:space="preserve">
-    <value>Iniciar Sesión:</value>
+    <value>Iniciar Sesión</value>
   </data>
   <data name="btnMiCarrito" xml:space="preserve">
     <value>Mi carrito</value>
