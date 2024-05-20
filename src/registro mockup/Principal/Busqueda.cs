@@ -12,9 +12,11 @@ namespace registro_mockup.Principal
 {
     public partial class Busqueda : Form
     {
-        public Busqueda()
+        public Busqueda(string txtbusqueda)
         {
             InitializeComponent();
         }
+
+
     }
 }

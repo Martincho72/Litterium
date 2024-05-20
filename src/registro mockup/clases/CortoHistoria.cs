@@ -94,6 +94,43 @@ namespace registro_mockup.clases
             return lista;
         }
 
+        public static List<CortoHistoria> BuscarCortoHistoria(MySqlConnection conexion, string busqueda) //Metodo sobrecargado para busqueda
+        {
+            List<CortoHistoria> lista = new List<CortoHistoria>();
+            string consulta = string.Format("SELECT * from cortohistoria WHERE autor='{0}' OR titulo='{0}'",busqueda);
+
+            // Creamos el objeto command al cual le pasamos la consulta y la conexión
+            MySqlCommand comando = new MySqlCommand(consulta, conexion);
+            // Ejecutamos el comando y recibimos en un objeto DataReader la lista de registros seleccionados.
+            // Recordemos que un objeto DataReader es una especie de tabla de datos virtual.
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            if (reader.HasRows)   // En caso que se hayan registros en el objeto reader
+            {
+                // Recorremos el reader (registro por registro) y cargamos la lista de empleados.
+                while (reader.Read())
+                {
+                    int id = reader.GetInt32(0);
+                    string titulo = reader.GetString(1);
+                    string autor = reader.GetString(2);
+                    DateTime fecha = reader.GetDateTime(3);
+                    string editorial = reader.GetString(4);
+                    bool continuable = reader.GetBoolean(5);
+                    bool finalizada = reader.GetBoolean(6);
+                    double valoracion = reader.GetDouble(7);
+                    int id_usuario = reader.GetInt32(8);
+
+                    // Crear el objeto Usuario y agregarlo a la lista
+                    CortoHistoria ch = new CortoHistoria(id, titulo, autor, fecha, editorial, continuable, finalizada, valoracion, id_usuario);
+                    lista.Add(ch);
+                }
+
+            }
+            // devolvemos la lista cargada con los usuarios.
+            reader.Close();
+            return lista;
+        }
+
         public static List<CortoHistoria> BuscarCortoHistoriaUsuario(MySqlConnection conexion,int id_usu) //Mis CortoHistorias Usuario
         {
             List<CortoHistoria> lista = new List<CortoHistoria>();
