@@ -61,5 +61,15 @@ namespace registro_mockup.Principal
         {
 
         }
+
+        private void pcbRecomendado5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gbxRecomendadosLibros1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

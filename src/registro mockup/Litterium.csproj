@@ -470,5 +470,23 @@
   <ItemGroup>
     <None Include="Resources\imagen_2024-05-19_205006577-removebg-preview.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\el caballero astado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\El principito.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alas de Sangre.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\El pollo pepe.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Percy Jackson.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Un cuento Perfecto.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
