@@ -28,7 +28,7 @@ namespace Litterium
 
         private void AplicarIdioma()
         {
-            this.Text = LogIn.TituloVentana;
+            this.Text = LogIn.TituloLogin;
             lblUsuario.Text = LogIn.lblUsuario;
             lblTextoRegistrase.Text = LogIn.lblTextoRegistrase;
             lblRegistrase.Text = LogIn.lblRegistrase;
@@ -186,6 +186,7 @@ namespace Litterium
             } 
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultura);
             AplicarIdioma();
+
         }
     }
 }

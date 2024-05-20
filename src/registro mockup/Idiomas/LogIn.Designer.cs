@@ -61,11 +61,101 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Cortohistorias.
+        /// </summary>
+        internal static string btnCortohistorias {
+            get {
+                return ResourceManager.GetString("btnCortohistorias", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Libros.
+        /// </summary>
+        internal static string btnLibros {
+            get {
+                return ResourceManager.GetString("btnLibros", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Iniciar Sesión:.
         /// </summary>
         internal static string btnLogin {
             get {
                 return ResourceManager.GetString("btnLogin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Mi carrito.
+        /// </summary>
+        internal static string btnMiCarrito {
+            get {
+                return ResourceManager.GetString("btnMiCarrito", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Comprar.
+        /// </summary>
+        internal static string btnPagar {
+            get {
+                return ResourceManager.GetString("btnPagar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Registrarse.
+        /// </summary>
+        internal static string btnRegistrase {
+            get {
+                return ResourceManager.GetString("btnRegistrase", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Mi perfil.
+        /// </summary>
+        internal static string btnUser {
+            get {
+                return ResourceManager.GetString("btnUser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cortohistorias.
+        /// </summary>
+        internal static string cmbCortohistoria {
+            get {
+                return ResourceManager.GetString("cmbCortohistoria", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Libros.
+        /// </summary>
+        internal static string cmbLibro {
+            get {
+                return ResourceManager.GetString("cmbLibro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Todos.
+        /// </summary>
+        internal static string cmbTodo {
+            get {
+                return ResourceManager.GetString("cmbTodo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Administradores.
+        /// </summary>
+        internal static string lblAdministradores {
+            get {
+                return ResourceManager.GetString("lblAdministradores", resourceCulture);
             }
         }
         
@@ -88,11 +178,56 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Correo.
+        /// </summary>
+        internal static string lblCorreo {
+            get {
+                return ResourceManager.GetString("lblCorreo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Datos de Usuario.
+        /// </summary>
+        internal static string lblDatosDeUsuario {
+            get {
+                return ResourceManager.GetString("lblDatosDeUsuario", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Dirección.
+        /// </summary>
+        internal static string lblDireccion {
+            get {
+                return ResourceManager.GetString("lblDireccion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Importe Total : .
+        /// </summary>
+        internal static string lblImporteMiCarrito {
+            get {
+                return ResourceManager.GetString("lblImporteMiCarrito", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Mensajes de Error.
         /// </summary>
         internal static string lblMensajesError {
             get {
                 return ResourceManager.GetString("lblMensajesError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Nombre.
+        /// </summary>
+        internal static string lblNombre {
+            get {
+                return ResourceManager.GetString("lblNombre", resourceCulture);
             }
         }
         
@@ -106,11 +241,29 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Teléfono.
+        /// </summary>
+        internal static string lblTelefono {
+            get {
+                return ResourceManager.GetString("lblTelefono", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a ¿No te has registrado aún?.
         /// </summary>
         internal static string lblTextoRegistrase {
             get {
                 return ResourceManager.GetString("lblTextoRegistrase", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Titulo : .
+        /// </summary>
+        internal static string lblTituloVisulaizarCortohistoria {
+            get {
+                return ResourceManager.GetString("lblTituloVisulaizarCortohistoria", resourceCulture);
             }
         }
         
@@ -124,11 +277,56 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Visualizar Cortohistoria de : .
+        /// </summary>
+        internal static string lblVisualizarCortohistoria {
+            get {
+                return ResourceManager.GetString("lblVisualizarCortohistoria", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Iniciar Sesión.
         /// </summary>
-        internal static string TituloVentana {
+        internal static string TituloLogin {
             get {
-                return ResourceManager.GetString("TituloVentana", resourceCulture);
+                return ResourceManager.GetString("TituloLogin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Menú Principal.
+        /// </summary>
+        internal static string TituloMenuPrincipal {
+            get {
+                return ResourceManager.GetString("TituloMenuPrincipal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Mi Carrito.
+        /// </summary>
+        internal static string TituloMiCarrito {
+            get {
+                return ResourceManager.GetString("TituloMiCarrito", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Registro.
+        /// </summary>
+        internal static string TituloRegistro {
+            get {
+                return ResourceManager.GetString("TituloRegistro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Visualizar Cortohistoria.
+        /// </summary>
+        internal static string TituloVisualizarCortohistoria {
+            get {
+                return ResourceManager.GetString("TituloVisualizarCortohistoria", resourceCulture);
             }
         }
     }
