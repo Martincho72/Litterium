@@ -28,39 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvResultadosBusqueda = new System.Windows.Forms.DataGridView();
-            this.lblResultadosBusqueda = new System.Windows.Forms.Label();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblBusqueda = new System.Windows.Forms.Label();
             this.lblTipo = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.dgvResultadosBusqueda = new System.Windows.Forms.DataGridView();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosBusqueda)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dgvResultadosBusqueda
-            // 
-            this.dgvResultadosBusqueda.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvResultadosBusqueda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvResultadosBusqueda.Location = new System.Drawing.Point(16, 95);
-            this.dgvResultadosBusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dgvResultadosBusqueda.Name = "dgvResultadosBusqueda";
-            this.dgvResultadosBusqueda.RowHeadersWidth = 51;
-            this.dgvResultadosBusqueda.Size = new System.Drawing.Size(1035, 444);
-            this.dgvResultadosBusqueda.TabIndex = 0;
-            // 
-            // lblResultadosBusqueda
-            // 
-            this.lblResultadosBusqueda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblResultadosBusqueda.AutoSize = true;
-            this.lblResultadosBusqueda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.lblResultadosBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultadosBusqueda.Location = new System.Drawing.Point(438, 22);
-            this.lblResultadosBusqueda.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblResultadosBusqueda.Name = "lblResultadosBusqueda";
-            this.lblResultadosBusqueda.Size = new System.Drawing.Size(218, 36);
-            this.lblResultadosBusqueda.TabIndex = 1;
-            this.lblResultadosBusqueda.Text = "RESULTADOS";
             // 
             // lblBusqueda
             // 
@@ -80,21 +60,101 @@
             this.lblTipo.Size = new System.Drawing.Size(44, 16);
             this.lblTipo.TabIndex = 3;
             this.lblTipo.Text = "label2";
+            this.lblTipo.Visible = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1171, 58);
+            this.panel1.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(218, 36);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "RESULTADOS";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.dgvResultadosBusqueda);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 58);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1171, 656);
+            this.panel2.TabIndex = 9;
+            // 
+            // dgvResultadosBusqueda
+            // 
+            this.dgvResultadosBusqueda.AllowUserToAddRows = false;
+            this.dgvResultadosBusqueda.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvResultadosBusqueda.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(199)))), ((int)(((byte)(168)))));
+            this.dgvResultadosBusqueda.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvResultadosBusqueda.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvResultadosBusqueda.ColumnHeadersHeight = 35;
+            this.dgvResultadosBusqueda.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvResultadosBusqueda.EnableHeadersVisualStyles = false;
+            this.dgvResultadosBusqueda.Location = new System.Drawing.Point(0, 0);
+            this.dgvResultadosBusqueda.Margin = new System.Windows.Forms.Padding(27, 160, 27, 25);
+            this.dgvResultadosBusqueda.Name = "dgvResultadosBusqueda";
+            this.dgvResultadosBusqueda.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(139)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvResultadosBusqueda.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvResultadosBusqueda.RowHeadersVisible = false;
+            this.dgvResultadosBusqueda.RowHeadersWidth = 50;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(139)))), ((int)(((byte)(45)))));
+            this.dgvResultadosBusqueda.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvResultadosBusqueda.RowTemplate.Height = 48;
+            this.dgvResultadosBusqueda.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dgvResultadosBusqueda.Size = new System.Drawing.Size(1171, 656);
+            this.dgvResultadosBusqueda.TabIndex = 8;
+            this.dgvResultadosBusqueda.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvResultadosBusqueda_CellDoubleClick);
             // 
             // Busqueda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(1171, 714);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblTipo);
             this.Controls.Add(this.lblBusqueda);
-            this.Controls.Add(this.lblResultadosBusqueda);
-            this.Controls.Add(this.dgvResultadosBusqueda);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Busqueda";
             this.Text = "Busqueda";
             this.Load += new System.EventHandler(this.Busqueda_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosBusqueda)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -102,10 +162,11 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dgvResultadosBusqueda;
-        private System.Windows.Forms.Label lblResultadosBusqueda;
         private System.Windows.Forms.Label lblBusqueda;
         private System.Windows.Forms.Label lblTipo;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.DataGridView dgvResultadosBusqueda;
     }
 }
