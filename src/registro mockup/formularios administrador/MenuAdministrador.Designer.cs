@@ -37,18 +37,19 @@
             this.btnAU = new FontAwesome.Sharp.IconButton();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.BTNinicio = new System.Windows.Forms.PictureBox();
             this.btnPictureMaximizar = new System.Windows.Forms.PictureBox();
+            this.BTNinicio = new System.Windows.Forms.PictureBox();
             this.btnPictureMinimizar = new System.Windows.Forms.PictureBox();
             this.btnPictureCerrar = new System.Windows.Forms.PictureBox();
+            this.btnCS = new FontAwesome.Sharp.IconButton();
             this.panelescritorio.SuspendLayout();
             this.pnlEscritorioAdmin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BTNinicio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPictureMaximizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BTNinicio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPictureMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPictureCerrar)).BeginInit();
             this.SuspendLayout();
@@ -59,20 +60,20 @@
             this.panelescritorio.Controls.Add(this.pnlEscritorioAdmin);
             this.panelescritorio.Controls.Add(this.tableLayoutPanel1);
             this.panelescritorio.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelescritorio.Location = new System.Drawing.Point(0, 110);
+            this.panelescritorio.Location = new System.Drawing.Point(0, 138);
             this.panelescritorio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelescritorio.Name = "panelescritorio";
-            this.panelescritorio.Size = new System.Drawing.Size(1281, 526);
+            this.panelescritorio.Size = new System.Drawing.Size(1441, 657);
             this.panelescritorio.TabIndex = 10;
             // 
             // pnlEscritorioAdmin
             // 
             this.pnlEscritorioAdmin.Controls.Add(this.pcbLogo);
             this.pnlEscritorioAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlEscritorioAdmin.Location = new System.Drawing.Point(341, 0);
+            this.pnlEscritorioAdmin.Location = new System.Drawing.Point(384, 0);
             this.pnlEscritorioAdmin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlEscritorioAdmin.Name = "pnlEscritorioAdmin";
-            this.pnlEscritorioAdmin.Size = new System.Drawing.Size(940, 526);
+            this.pnlEscritorioAdmin.Size = new System.Drawing.Size(1057, 657);
             this.pnlEscritorioAdmin.TabIndex = 2;
             // 
             // pcbLogo
@@ -82,7 +83,7 @@
             this.pcbLogo.Location = new System.Drawing.Point(0, 0);
             this.pcbLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbLogo.Name = "pcbLogo";
-            this.pcbLogo.Size = new System.Drawing.Size(940, 526);
+            this.pcbLogo.Size = new System.Drawing.Size(1057, 657);
             this.pcbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pcbLogo.TabIndex = 0;
             this.pcbLogo.TabStop = false;
@@ -103,9 +104,9 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(341, 526);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(384, 657);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // btnAC
@@ -120,11 +121,11 @@
             this.btnAC.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnAC.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAC.Location = new System.Drawing.Point(3, 352);
+            this.btnAC.Location = new System.Drawing.Point(3, 440);
             this.btnAC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAC.Name = "btnAC";
-            this.btnAC.Padding = new System.Windows.Forms.Padding(9, 0, 19, 0);
-            this.btnAC.Size = new System.Drawing.Size(335, 172);
+            this.btnAC.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
+            this.btnAC.Size = new System.Drawing.Size(378, 215);
             this.btnAC.TabIndex = 8;
             this.btnAC.Text = "Administracion CortoHistoria";
             this.btnAC.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -144,11 +145,11 @@
             this.btnAL.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnAL.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAL.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAL.Location = new System.Drawing.Point(3, 177);
+            this.btnAL.Location = new System.Drawing.Point(3, 221);
             this.btnAL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAL.Name = "btnAL";
-            this.btnAL.Padding = new System.Windows.Forms.Padding(9, 0, 19, 0);
-            this.btnAL.Size = new System.Drawing.Size(335, 171);
+            this.btnAL.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
+            this.btnAL.Size = new System.Drawing.Size(378, 215);
             this.btnAL.TabIndex = 7;
             this.btnAL.Text = "Administracion Libro";
             this.btnAL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -171,8 +172,8 @@
             this.btnAU.Location = new System.Drawing.Point(3, 2);
             this.btnAU.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAU.Name = "btnAU";
-            this.btnAU.Padding = new System.Windows.Forms.Padding(9, 0, 19, 0);
-            this.btnAU.Size = new System.Drawing.Size(335, 171);
+            this.btnAU.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
+            this.btnAU.Size = new System.Drawing.Size(378, 215);
             this.btnAU.TabIndex = 3;
             this.btnAU.Text = "Administracion Usuario";
             this.btnAU.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -188,12 +189,13 @@
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(1281, 110);
+            this.panelMenu.Size = new System.Drawing.Size(1441, 138);
             this.panelMenu.TabIndex = 9;
             // 
             // panelLogo
             // 
             this.panelLogo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panelLogo.Controls.Add(this.btnCS);
             this.panelLogo.Controls.Add(this.btnPictureMaximizar);
             this.panelLogo.Controls.Add(this.BTNinicio);
             this.panelLogo.Controls.Add(this.btnPictureMinimizar);
@@ -202,8 +204,21 @@
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(1281, 110);
+            this.panelLogo.Size = new System.Drawing.Size(1441, 138);
             this.panelLogo.TabIndex = 1;
+            // 
+            // btnPictureMaximizar
+            // 
+            this.btnPictureMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPictureMaximizar.Image = global::registro_mockup.Properties.Resources.maximizar_tamano;
+            this.btnPictureMaximizar.Location = new System.Drawing.Point(1360, 5);
+            this.btnPictureMaximizar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.btnPictureMaximizar.Name = "btnPictureMaximizar";
+            this.btnPictureMaximizar.Size = new System.Drawing.Size(28, 31);
+            this.btnPictureMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnPictureMaximizar.TabIndex = 13;
+            this.btnPictureMaximizar.TabStop = false;
+            this.btnPictureMaximizar.Click += new System.EventHandler(this.btnPictureMaximizar_Click);
             // 
             // BTNinicio
             // 
@@ -212,32 +227,19 @@
             this.BTNinicio.Location = new System.Drawing.Point(0, 0);
             this.BTNinicio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BTNinicio.Name = "BTNinicio";
-            this.BTNinicio.Size = new System.Drawing.Size(341, 110);
+            this.BTNinicio.Size = new System.Drawing.Size(384, 138);
             this.BTNinicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.BTNinicio.TabIndex = 1;
             this.BTNinicio.TabStop = false;
-            // 
-            // btnPictureMaximizar
-            // 
-            this.btnPictureMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPictureMaximizar.Image = global::registro_mockup.Properties.Resources.maximizar_tamano;
-            this.btnPictureMaximizar.Location = new System.Drawing.Point(1209, 4);
-            this.btnPictureMaximizar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnPictureMaximizar.Name = "btnPictureMaximizar";
-            this.btnPictureMaximizar.Size = new System.Drawing.Size(25, 25);
-            this.btnPictureMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnPictureMaximizar.TabIndex = 13;
-            this.btnPictureMaximizar.TabStop = false;
-            this.btnPictureMaximizar.Click += new System.EventHandler(this.btnPictureMaximizar_Click);
             // 
             // btnPictureMinimizar
             // 
             this.btnPictureMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPictureMinimizar.Image = global::registro_mockup.Properties.Resources.menos;
-            this.btnPictureMinimizar.Location = new System.Drawing.Point(1164, 4);
-            this.btnPictureMinimizar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnPictureMinimizar.Location = new System.Drawing.Point(1310, 5);
+            this.btnPictureMinimizar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnPictureMinimizar.Name = "btnPictureMinimizar";
-            this.btnPictureMinimizar.Size = new System.Drawing.Size(25, 25);
+            this.btnPictureMinimizar.Size = new System.Drawing.Size(28, 31);
             this.btnPictureMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnPictureMinimizar.TabIndex = 12;
             this.btnPictureMinimizar.TabStop = false;
@@ -247,20 +249,38 @@
             // 
             this.btnPictureCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPictureCerrar.Image = global::registro_mockup.Properties.Resources.x;
-            this.btnPictureCerrar.Location = new System.Drawing.Point(1252, 4);
-            this.btnPictureCerrar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnPictureCerrar.Location = new System.Drawing.Point(1408, 5);
+            this.btnPictureCerrar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnPictureCerrar.Name = "btnPictureCerrar";
-            this.btnPictureCerrar.Size = new System.Drawing.Size(25, 25);
+            this.btnPictureCerrar.Size = new System.Drawing.Size(28, 31);
             this.btnPictureCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnPictureCerrar.TabIndex = 11;
             this.btnPictureCerrar.TabStop = false;
             this.btnPictureCerrar.Click += new System.EventHandler(this.btnPictureCerrar_Click);
             // 
+            // btnCS
+            // 
+            this.btnCS.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnCS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnCS.IconChar = FontAwesome.Sharp.IconChar.Backward;
+            this.btnCS.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnCS.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCS.Location = new System.Drawing.Point(384, 0);
+            this.btnCS.Name = "btnCS";
+            this.btnCS.Size = new System.Drawing.Size(301, 138);
+            this.btnCS.TabIndex = 14;
+            this.btnCS.Text = "Cerrar Sesión";
+            this.btnCS.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnCS.UseVisualStyleBackColor = true;
+            this.btnCS.Click += new System.EventHandler(this.btnCS_Click);
+            // 
             // MenuAdministrador
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1281, 636);
+            this.ClientSize = new System.Drawing.Size(1441, 795);
             this.Controls.Add(this.panelescritorio);
             this.Controls.Add(this.panelMenu);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -274,8 +294,8 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.BTNinicio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPictureMaximizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BTNinicio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPictureMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPictureCerrar)).EndInit();
             this.ResumeLayout(false);
@@ -297,5 +317,6 @@
         private System.Windows.Forms.PictureBox btnPictureMaximizar;
         private System.Windows.Forms.PictureBox btnPictureMinimizar;
         private System.Windows.Forms.PictureBox btnPictureCerrar;
+        private FontAwesome.Sharp.IconButton btnCS;
     }
 }
