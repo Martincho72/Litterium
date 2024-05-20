@@ -2,9 +2,9 @@
 
 if (isset($_REQUEST['usuario']) && isset($_REQUEST['clave']) && isset($_REQUEST['nuevaClave'])) {
     mysqli_report(MYSQLI_REPORT_ERROR);
-    $servidor = "sql11.freesqldatabase.com";
-    $usuarioDB = "sql11706394";
-    $claveDB = "6KmvR2qIzk";
+    $servidor = "database-1.c2x0fjvt1inr.us-east-1.rds.amazonaws.com";
+    $usuarioDB = "admin";
+    $claveDB = "testtest";
 
     @$mysqli = new mysqli($servidor, $usuarioDB, $claveDB);
     if ($mysqli->connect_errno) {
@@ -12,7 +12,7 @@ if (isset($_REQUEST['usuario']) && isset($_REQUEST['clave']) && isset($_REQUEST[
         die("Program exit. Database access error.");
     }
 
-    $basedatos = "sql11706394";
+    $basedatos = "litterium";
     $mysqli->select_db($basedatos);
     $usuario = $_REQUEST['usuario'];
     $clave = $_REQUEST['clave'];
