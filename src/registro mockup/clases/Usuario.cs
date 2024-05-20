@@ -42,7 +42,7 @@ namespace registro_mockup
         public Usuario() { }
 
         //registrar cliente nuevo
-        public Usuario(string usuario, string clave, string nombre, string correoElectronico, string direccion, int telefono/*,Image fot*/)
+        public Usuario(string usuario, string clave, string nombre, string correoElectronico, string direccion, int telefono)
         {
             this.usuario = usuario;
             this.clave = clave;
@@ -50,7 +50,7 @@ namespace registro_mockup
             this.correoElectronico = correoElectronico;
             this.direccion = direccion;
             this.telefono = telefono;
-            //this.foto = foto;
+           
         }
 
         //agregar usuarios (ADMIN)
@@ -80,7 +80,7 @@ namespace registro_mockup
             this.foto = foto;
         }
         //insertar DGV
-        public Usuario(int id, string usuario, string clave, bool esAdmin, string nombre, string correoElectronico, string direccion, int telefono, bool vetdado, bool baja)
+        public Usuario(int id, string usuario, string clave, bool esAdmin, string nombre, string correoElectronico, string direccion, int telefono, bool vetdado, bool baja,Image foto)
         {
             this.id = id;
             this.usuario = usuario;
@@ -92,6 +92,7 @@ namespace registro_mockup
             this.telefono = telefono;
             this.vetado = vetdado;
             this.baja = baja;
+            this.foto = foto;
         }
 
         public static bool EncontrarUsuario(MySqlConnection conexion, string usuario)
@@ -139,10 +140,10 @@ namespace registro_mockup
                     byte[] img = (byte[])reader["imagen"];
                     MemoryStream ms = new MemoryStream(img);
                     Image foto = Image.FromStream(ms);
-                    
+
                     // Crear el objeto Usuario y agregarlo a la lista
                     usua = new Usuario(id, usu, clave, esAdmin, nombre, correo,
-                        direccion, telefono, vetado, baja);
+                        direccion, telefono, vetado, baja,foto);
                 }
 
 
@@ -249,14 +250,14 @@ namespace registro_mockup
                     int telefono = reader.GetInt32(7);
                     bool vetado = reader.GetBoolean(8);
                     bool baja = reader.GetBoolean(9);
-  
-                        //byte[] img = (byte[])reader["imagen"];
-                        //MemoryStream ms = new MemoryStream(img);
-                        //Image foto = Image.FromStream(ms);
+
+                    byte[] img = (byte[])reader["imagen"];
+                    MemoryStream ms = new MemoryStream(img);
+                    Image foto = Image.FromStream(ms);
 
                     // Crear el objeto Usuario y agregarlo a la lista
                     Usuario usuario = new Usuario(id, usu, clave, esAdmin, nombre, correo,
-                        direccion, telefono, vetado, baja);
+                        direccion, telefono, vetado, baja, foto);
                     lista.Add(usuario);
                 }
 

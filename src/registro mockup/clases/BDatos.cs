@@ -17,11 +17,11 @@ namespace registro_mockup
 
         public BDatos() { 
                 // Conexión Local
-                string server = "server=sql7.freesqldatabase.com;";
+                string server = "server=database-1.c2x0fjvt1inr.us-east-1.rds.amazonaws.com;";
                 string port = "port=3306;";
-                string database = "database=sql7707748;";
-                string usuario = "uid=sql7707748;";
-                string password = "pwd=pfAYYE6jhC;";
+                string database = "database=litterium;";
+                string usuario = "uid=admin;";
+                string password = "pwd=testtest;";
                 string convert = "Convert Zero Datetime=true;";
                 string connectionstring = server + port + database + usuario + password + convert;
 
