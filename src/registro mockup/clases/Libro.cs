@@ -77,6 +77,43 @@ namespace registro_mockup.clases
             reader.Close();
             return lista;
         }
+
+        public static List<Libro> BuscarLibros(MySqlConnection conexion, string busqueda)
+        {
+            List<Libro> lista = new List<Libro>();
+            string consulta = string.Format("SELECT * from libro WHERE autor='{0}' OR titulo='{0}' OR categoria='{0}' OR isbn='{0}'",busqueda);
+
+            // Creamos el objeto command al cual le pasamos la consulta y la conexión
+            MySqlCommand comando = new MySqlCommand(consulta, conexion);
+            // Ejecutamos el comando y recibimos en un objeto DataReader la lista de registros seleccionados.
+            // Recordemos que un objeto DataReader es una especie de tabla de datos virtual.
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            if (reader.HasRows)   // En caso que se hayan registros en el objeto reader
+            {
+                // Recorremos el reader (registro por registro) y cargamos la lista de empleados.
+                while (reader.Read())
+                {
+                    string isbn = reader.GetString(0);
+                    string titulo = reader.GetString(1);
+                    string autor = reader.GetString(2);
+                    string categoria = reader.GetString(3);
+                    double valoracion = reader.GetDouble(4);
+
+                    byte[] img = (byte[])reader["imagen"];
+                    MemoryStream ms = new MemoryStream(img);
+                    Image foto = Image.FromStream(ms);
+
+                    // Crear el objeto Usuario y agregarlo a la lista
+                    Libro libro = new Libro(isbn, titulo, autor, categoria, valoracion, foto);
+                    lista.Add(libro);
+                }
+
+            }
+            // devolvemos la lista cargada con los usuarios.
+            reader.Close();
+            return lista;
+        }
         public int AgregarLibro(MySqlConnection conexion, Libro l1)
         {
             int retorno;

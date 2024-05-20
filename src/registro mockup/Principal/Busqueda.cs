@@ -30,6 +30,9 @@ namespace registro_mockup.Principal
                 if (lblTipo.Text == "Cortohistorias")
                 {
                     dgvResultadosBusqueda.DataSource = CortoHistoria.BuscarCortoHistoria(basedatos.Conexion, lblBusqueda.Text);
+                }else if (lblTipo.Text == "Libros")
+                {
+                    dgvResultadosBusqueda.DataSource = Libro.BuscarLibros(basedatos.Conexion, lblBusqueda.Text);
                 }
             }
             else { }
