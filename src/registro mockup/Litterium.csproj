@@ -173,6 +173,12 @@
     <Compile Include="Principal\Busqueda.Designer.cs">
       <DependentUpon>Busqueda.cs</DependentUpon>
     </Compile>
+    <Compile Include="Principal\Comprar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\Comprar.Designer.cs">
+      <DependentUpon>Comprar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Principal\ContrasenyaOlvidada.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -264,6 +270,12 @@
       <DependentUpon>Registro.cs</DependentUpon>
     </Compile>
     <Compile Include="clases\Program.cs" />
+    <Compile Include="Principal\VisualizarCortohistoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\VisualizarCortohistoria.Designer.cs">
+      <DependentUpon>VisualizarCortohistoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="clases\Usuario.cs" />
     <EmbeddedResource Include="formularios administrador\AdministracionCortoHistoria.resx">
@@ -335,6 +347,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>LogIn.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Principal\Busqueda.resx">
+      <DependentUpon>Busqueda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\Comprar.resx">
+      <DependentUpon>Comprar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Principal\ContrasenyaOlvidada.resx">
       <DependentUpon>ContrasenyaOlvidada.cs</DependentUpon>
     </EmbeddedResource>
@@ -367,6 +385,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Principal\Registro.resx">
       <DependentUpon>Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\VisualizarCortohistoria.resx">
+      <DependentUpon>VisualizarCortohistoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

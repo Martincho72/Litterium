@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTitulo = new System.Windows.Forms.TextBox();
             this.lblCortohistoria = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCortohistoriaCrear = new System.Windows.Forms.TextBox();
             this.lblContadorPalabras = new System.Windows.Forms.Label();
             this.chbContinuarCortohistoria = new System.Windows.Forms.CheckBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnPictureSeguirHistoria = new System.Windows.Forms.PictureBox();
             this.btnSubirCortohistoria = new FontAwesome.Sharp.IconButton();
             this.btnBorradoresCortohistorias = new FontAwesome.Sharp.IconButton();
             this.btnBorrar = new FontAwesome.Sharp.IconButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPictureSeguirHistoria)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -51,14 +51,14 @@
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Titulo : ";
             // 
-            // textBox1
+            // txtTitulo
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(109, 8);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(561, 35);
-            this.textBox1.TabIndex = 1;
+            this.txtTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTitulo.Location = new System.Drawing.Point(109, 8);
+            this.txtTitulo.Name = "txtTitulo";
+            this.txtTitulo.Size = new System.Drawing.Size(561, 35);
+            this.txtTitulo.TabIndex = 1;
             // 
             // lblCortohistoria
             // 
@@ -70,15 +70,15 @@
             this.lblCortohistoria.TabIndex = 2;
             this.lblCortohistoria.Text = "Cortohistoria :";
             // 
-            // textBox2
+            // txtCortohistoriaCrear
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(17, 90);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(771, 288);
-            this.textBox2.TabIndex = 3;
+            this.txtCortohistoriaCrear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCortohistoriaCrear.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCortohistoriaCrear.Location = new System.Drawing.Point(17, 90);
+            this.txtCortohistoriaCrear.Multiline = true;
+            this.txtCortohistoriaCrear.Name = "txtCortohistoriaCrear";
+            this.txtCortohistoriaCrear.Size = new System.Drawing.Size(771, 288);
+            this.txtCortohistoriaCrear.TabIndex = 3;
             // 
             // lblContadorPalabras
             // 
@@ -101,16 +101,16 @@
             this.chbContinuarCortohistoria.UseVisualStyleBackColor = true;
             this.chbContinuarCortohistoria.CheckedChanged += new System.EventHandler(this.chbContinuarCortohistoria_CheckedChanged);
             // 
-            // pictureBox1
+            // btnPictureSeguirHistoria
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox1.Image = global::registro_mockup.Properties.Resources.pregunta_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(441, 432);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 20);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
+            this.btnPictureSeguirHistoria.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnPictureSeguirHistoria.Image = global::registro_mockup.Properties.Resources.pregunta_removebg_preview;
+            this.btnPictureSeguirHistoria.Location = new System.Drawing.Point(441, 432);
+            this.btnPictureSeguirHistoria.Name = "btnPictureSeguirHistoria";
+            this.btnPictureSeguirHistoria.Size = new System.Drawing.Size(25, 20);
+            this.btnPictureSeguirHistoria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnPictureSeguirHistoria.TabIndex = 6;
+            this.btnPictureSeguirHistoria.TabStop = false;
             // 
             // btnSubirCortohistoria
             // 
@@ -169,16 +169,16 @@
             this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.btnBorradoresCortohistorias);
             this.Controls.Add(this.btnSubirCortohistoria);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btnPictureSeguirHistoria);
             this.Controls.Add(this.chbContinuarCortohistoria);
             this.Controls.Add(this.lblContadorPalabras);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtCortohistoriaCrear);
             this.Controls.Add(this.lblCortohistoria);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTitulo);
             this.Controls.Add(this.lblTitulo);
             this.Name = "CrearCortohistoria";
             this.Text = "CrearCortohistoria";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPictureSeguirHistoria)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -187,12 +187,12 @@
         #endregion
 
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTitulo;
         private System.Windows.Forms.Label lblCortohistoria;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCortohistoriaCrear;
         private System.Windows.Forms.Label lblContadorPalabras;
         private System.Windows.Forms.CheckBox chbContinuarCortohistoria;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox btnPictureSeguirHistoria;
         private FontAwesome.Sharp.IconButton btnSubirCortohistoria;
         private FontAwesome.Sharp.IconButton btnBorradoresCortohistorias;
         private FontAwesome.Sharp.IconButton btnBorrar;
