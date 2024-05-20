@@ -12,6 +12,8 @@ namespace registro_mockup.Principal
 {
     public partial class LibroPrincipal : Form
     {
+        private Panel bordeizqBTN;
+        private Form currentForm;
         public LibroPrincipal()
         {
             InitializeComponent();
@@ -70,6 +72,36 @@ namespace registro_mockup.Principal
         private void gbxRecomendadosLibros1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void pcbRecomendado1_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new InformacionLibro());
+            OcultarPaneles();
+        }
+        private void OpenChildForm(Form childForm)
+        {
+            if (currentForm != null)
+            {
+                currentForm.Close();
+            }
+            currentForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panel1.Controls.Add(childForm);
+            panel1.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+        private void OcultarPaneles()
+        {
+            panel2.Visible = false;
+            panel3.Visible = false;
+            panel5.Visible = false;
+            panel6.Visible = false;
+            panel8.Visible = false;
+            tableLayoutPanel3.Visible = false;
         }
     }
 }
