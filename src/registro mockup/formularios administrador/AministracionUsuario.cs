@@ -14,6 +14,7 @@ namespace registro_mockup
     public partial class AministracionUsuario : Form
     {
         BDatos bDatos = new BDatos();
+        
         public AministracionUsuario()
         {
             InitializeComponent();

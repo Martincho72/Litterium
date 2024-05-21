@@ -106,7 +106,7 @@ namespace registro_mockup.formularios_administrador
 
         private void pcbLogo_Click(object sender, EventArgs e)
         {
-            MenuPrincipal form = new MenuPrincipal();
+            MenuAdministrador form = new MenuAdministrador();
             form.Hide();
             form.Show();
         }

@@ -17,9 +17,11 @@ namespace registro_mockup.formularios_Usuario
         private IconButton actualBTN;
         private Panel bordeizqBTN;
         private Form currentForm;
-        public MenuUsuario()
+        private string usuariomenu;
+        public MenuUsuario(string usuario)
         {
             InitializeComponent();
+            usuariomenu = usuario;
         }
 
         private void MenuUsuario_Load(object sender, EventArgs e)
@@ -59,7 +61,7 @@ namespace registro_mockup.formularios_Usuario
 
         private void btnMisBorradores_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Misborradores());
+            OpenChildForm(new Misborradores(usuariomenu));
         }
 
         private void btnMiHistorial_Click(object sender, EventArgs e)

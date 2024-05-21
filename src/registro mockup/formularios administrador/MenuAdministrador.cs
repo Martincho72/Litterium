@@ -32,6 +32,17 @@ namespace registro_mockup
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             this.DoubleBuffered = false;
         }
+        public MenuAdministrador()
+        {
+            InitializeComponent();
+            administrarUsuario = new Panel();
+            administrarUsuario.Size = new Size(7, 60);
+            panelMenu.Controls.Add(administrarUsuario);
+            this.Text = string.Empty;
+            this.ControlBox = false;
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            this.DoubleBuffered = false;
+        }
 
         private void MenuAdministrador_Load(object sender, EventArgs e)
         {

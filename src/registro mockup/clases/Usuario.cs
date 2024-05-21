@@ -94,6 +94,13 @@ namespace registro_mockup
             this.baja = baja;
             this.foto = foto;
         }
+        //Pillar ID
+        public Usuario(int id
+            )
+        {
+            this.id = id;
+
+        }
 
         public static bool EncontrarUsuario(MySqlConnection conexion, string usuario)
         {
@@ -294,6 +301,30 @@ namespace registro_mockup
 
             return retorno;
         }
-        
+        public static int ObtenerID(MySqlConnection conexion, string usuario)
+        {
+            int idusu = 0;
+            string consulta = "SELECT id FROM usuarios WHERE usuario = @usuario";
+
+            using (MySqlCommand comando = new MySqlCommand(consulta, conexion))
+            {
+                comando.Parameters.AddWithValue("@usuario", usuario);
+
+                using (MySqlDataReader reader = comando.ExecuteReader())
+                {
+                    if (reader.HasRows)
+                    {
+                        while (reader.Read())
+                        {
+                            idusu = reader.GetInt32(0);
+                        }
+                    }
+                }
+            }
+
+            return idusu;
+        }
+
+
     }
 }

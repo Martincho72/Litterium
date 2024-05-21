@@ -134,7 +134,7 @@ namespace Litterium
                             }
                             else
                             {
-                                MenuPrincipal menu = new MenuPrincipal();
+                                MenuPrincipal menu = new MenuPrincipal(txtUsuario.Text);
                                 menu.Show();
                                 this.Hide();
 

@@ -48,5 +48,6 @@ namespace registro_mockup.formularios_administrador
             else { }
             bDatos.CerrarConexion();
         }
-}
+
+    }
 }
