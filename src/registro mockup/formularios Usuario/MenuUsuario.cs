@@ -46,7 +46,7 @@ namespace registro_mockup.formularios_Usuario
 
         private void btnMiCuenta_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new MiCuenta(usuariomenu));
+            OpenChildForm(new MiCuenta(usuariomenu, this));
         }
 
         private void btnMisLibros_Click(object sender, EventArgs e)

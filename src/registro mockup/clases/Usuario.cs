@@ -94,6 +94,19 @@ namespace registro_mockup
             this.baja = baja;
             this.foto = foto;
         }
+
+
+        // Editar Mi Perfil
+        public Usuario(string usuario, string clave, string nombre, string correoElectronico, string direccion, int telefono,  Image foto)
+        {
+            this.usuario = usuario;
+            this.clave = clave;
+            this.nombre = nombre;
+            this.correoElectronico = correoElectronico;
+            this.direccion = direccion;
+            this.telefono = telefono;
+            this.foto = foto;
+        }
         //Pillar ID
         public Usuario(int id
             )
@@ -342,15 +355,15 @@ namespace registro_mockup
 
             return idusu;
         }
-        public static int EditarUsuarioPerfil(MySqlConnection conexion, Usuario us1)
+        public static int EditarUsuarioPerfil(MySqlConnection conexion, Usuario us1, string usuarioAntiguo)
         {
             int retorno;
             MemoryStream ms = new MemoryStream();
             us1.Foto.Save(ms, ImageFormat.Jpeg);
             byte[] imgArr = ms.ToArray();
-            string consulta = String.Format("UPDATE usuarios SET usuario = '{0}', contrasenya = '{1}', nombre = '{3}', correo = '{4}'," +
-                                            "direccion = '{5}', telefono = '{6}',imagen=@imagen WHERE usuario = '{0}'",
-                                         us1.usuario, us1.clave, us1.nombre, us1.correoElectronico, us1.direccion, us1.telefono,us1.foto);
+            string consulta = String.Format("UPDATE usuarios SET usuario = '{0}', contrasenya = '{1}', nombre = '{2}', correo = '{3}'," +
+                                            "direccion = '{4}', telefono = '{5}',imagen=@imagen WHERE usuario = '{6}'",
+                                         us1.usuario, us1.clave, us1.nombre, us1.correoElectronico, us1.direccion, us1.telefono, usuarioAntiguo);
 
             MySqlCommand comando = new MySqlCommand(consulta, conexion);
             comando.Parameters.AddWithValue("@imagen", imgArr);

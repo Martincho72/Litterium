@@ -195,7 +195,7 @@
             // pcbIdioma
             // 
             this.pcbIdioma.Image = global::registro_mockup.Properties.Resources.espanol;
-            this.pcbIdioma.Location = new System.Drawing.Point(16, 91);
+            this.pcbIdioma.Location = new System.Drawing.Point(24, 46);
             this.pcbIdioma.Name = "pcbIdioma";
             this.pcbIdioma.Size = new System.Drawing.Size(88, 45);
             this.pcbIdioma.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

@@ -48,7 +48,7 @@ namespace Litterium
             {
                 pcbIdioma.Image = Resources.english;
             }
-
+            lblMensajesError.Visible = false;
         }
 
         private bool ValidarDatos()
@@ -144,12 +144,13 @@ namespace Litterium
                         {
                             if (Thread.CurrentThread.CurrentUICulture.Name == "es-ES")
                             {
-                                lblMensajesError.Text = "La contraseña no existe";
+                                lblMensajesError.Text = "Contraseña incorrecta";
                             }
                             else
                             {
                                 lblMensajesError.Text = "Incorrect Password";
                             }
+                            lblMensajesError.Visible = true;
                         }
                     }
                     else
@@ -157,11 +158,13 @@ namespace Litterium
                         if (Thread.CurrentThread.CurrentUICulture.Name == "es-ES")
                         {
                             lblMensajesError.Text = "El usuario no existe";
+                            lblMensajesError.Visible = true;
                         }
                         else
                         {
                             lblMensajesError.Text = "User doesn't exist";
                         }
+                        lblMensajesError.Visible = true;
                     }
                     bDatos.CerrarConexion();
                 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using registro_mockup.Idiomas;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,18 +8,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using registro_mockup.Principal;
+using Litterium;
 
 namespace registro_mockup.formularios_Usuario
 {
     public partial class MiCuenta : Form
     {
         private string usuariomenu;
+        private Form previousForm;
         BDatos basedatos = new BDatos();
-        public MiCuenta(string usuario)
+        public MiCuenta(string usuario, Form previousForm)
 
         {
             usuariomenu = usuario;
             InitializeComponent();
+            this.previousForm = previousForm;
         }
 
         private void btnCargar_Click(object sender, EventArgs e)
@@ -39,14 +44,6 @@ namespace registro_mockup.formularios_Usuario
 
         private void MiCuenta_Load(object sender, EventArgs e)
         {
-            txtContraEditar.Visible = false;
-            txtCorreoEditar.Visible = false;
-            txtNombreEditar.Visible = false;
-            txtUsuarioEditar.Visible = false;
-            txtDireccionEditar.Visible = false;
-            txtTelefonoEditar.Visible = false;
-            btnConfirmarEdicion.Visible = false;
-
             if (basedatos.AbrirConexion())
             {
                 Usuario usuario = Usuario.EncontrarDatosUsuario(basedatos.Conexion, usuariomenu);
@@ -65,22 +62,40 @@ namespace registro_mockup.formularios_Usuario
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            txtContraEditar.Visible = true;
-            txtCorreoEditar.Visible = true;
-            txtNombreEditar.Visible = true;
-            txtUsuarioEditar.Visible = true;
-            txtDireccionEditar.Visible = true;
-            txtTelefonoEditar.Visible = true;
-            btnConfirmarEdicion.Visible = true;
+            if (txtNombre.Enabled == false)
+            {
+                txtUsuario.Enabled = true;
+                txtContra.Enabled = true;
+                txtCorreo.Enabled = true;
+                txtNombre.Enabled = true;
+                txtDireccion.Enabled = true;
+                txtTelefono.Enabled = true;
+                btnCargar.Visible = true;
+                btnConfirmarEdicion.Visible = true;
+            }
+            else
+            {
+                txtUsuario.Enabled = false;
+                txtContra.Enabled = false;
+                txtCorreo.Enabled = false;
+                txtNombre.Enabled = false;
+                txtDireccion.Enabled = false;
+                txtTelefono.Enabled = false;
+                btnCargar.Visible = false;
+                btnConfirmarEdicion.Visible = false;
+
+            }
         }
 
         private void btnConfirmarEdicion_Click(object sender, EventArgs e)
         {
             if (basedatos.AbrirConexion())
             {
-                Usuario usuario = new Usuario(txtUsuarioEditar.Text, txtContraEditar.Text, txtNombreEditar.Text, txtCorreoEditar.Text, txtDireccionEditar.Text, pcbPerfil.Image);
-                Usuario.EditarUsuarioPerfil(basedatos.Conexion, usuario);
-                this.Close();
+                Usuario usuario = new Usuario(txtUsuario.Text, txtContra.Text, txtNombre.Text, txtCorreo.Text, txtDireccion.Text, int.Parse(txtTelefono.Text), pcbPerfil.Image);
+                Usuario.EditarUsuarioPerfil(basedatos.Conexion, usuario, usuariomenu);
+                MessageBox.Show("Datos actualizados correctamente, vuelva a iniciar sesión");
+                Application.Restart();
+
             }
             else { }
             basedatos.CerrarConexion();
