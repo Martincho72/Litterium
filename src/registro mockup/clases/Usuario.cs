@@ -101,6 +101,15 @@ namespace registro_mockup
             this.id = id;
 
         }
+        public Usuario(string usuario,string contra, string nombre,string correo, string direccion, Image perfil)
+        {
+            this.usuario=usuario;
+            this.clave=contra;
+            this.nombre=nombre;
+            this.correoElectronico=correo;
+            this.direccion = direccion;
+            this.foto=perfil;
+        }
 
         public static bool EncontrarUsuario(MySqlConnection conexion, string usuario)
         {
@@ -324,7 +333,22 @@ namespace registro_mockup
 
             return idusu;
         }
+        public static int EditarUsuarioPerfil(MySqlConnection conexion, Usuario us1)
+        {
+            int retorno;
+            MemoryStream ms = new MemoryStream();
+            us1.Foto.Save(ms, ImageFormat.Jpeg);
+            byte[] imgArr = ms.ToArray();
+            string consulta = String.Format("UPDATE usuarios SET usuario = '{0}', contrasenya = '{1}', nombre = '{3}', correo = '{4}'," +
+                                            "direccion = '{5}', telefono = '{6}',imagen=@imagen WHERE usuario = '{0}'",
+                                         us1.usuario, us1.clave, us1.nombre, us1.correoElectronico, us1.direccion, us1.telefono,us1.foto);
 
+            MySqlCommand comando = new MySqlCommand(consulta, conexion);
+            comando.Parameters.AddWithValue("@imagen", imgArr);
+            retorno = comando.ExecuteNonQuery();
+
+            return retorno;
+        }
 
     }
 }

@@ -31,23 +31,17 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dtgvMiscortohistorias = new System.Windows.Forms.DataGridView();
-            this.Titulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreautor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechaAdqusicion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Importe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvMiscortohistorias)).BeginInit();
+            this.dgvBorradores = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBorradores)).BeginInit();
             this.SuspendLayout();
             // 
-            // dtgvMiscortohistorias
+            // dgvBorradores
             // 
-            this.dtgvMiscortohistorias.AllowUserToAddRows = false;
-            this.dtgvMiscortohistorias.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dtgvMiscortohistorias.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dtgvMiscortohistorias.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(199)))), ((int)(((byte)(168)))));
-            this.dtgvMiscortohistorias.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgvMiscortohistorias.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dtgvMiscortohistorias.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvBorradores.AllowUserToAddRows = false;
+            this.dgvBorradores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvBorradores.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(199)))), ((int)(((byte)(168)))));
+            this.dgvBorradores.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvBorradores.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -55,18 +49,14 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvMiscortohistorias.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgvMiscortohistorias.ColumnHeadersHeight = 35;
-            this.dtgvMiscortohistorias.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Titulo,
-            this.nombreautor,
-            this.FechaAdqusicion,
-            this.Importe});
-            this.dtgvMiscortohistorias.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtgvMiscortohistorias.EnableHeadersVisualStyles = false;
-            this.dtgvMiscortohistorias.Location = new System.Drawing.Point(0, 0);
-            this.dtgvMiscortohistorias.Name = "dtgvMiscortohistorias";
-            this.dtgvMiscortohistorias.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvBorradores.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvBorradores.ColumnHeadersHeight = 35;
+            this.dgvBorradores.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvBorradores.EnableHeadersVisualStyles = false;
+            this.dgvBorradores.Location = new System.Drawing.Point(0, 0);
+            this.dgvBorradores.Margin = new System.Windows.Forms.Padding(30, 200, 30, 31);
+            this.dgvBorradores.Name = "dgvBorradores";
+            this.dgvBorradores.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -74,64 +64,34 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(139)))), ((int)(((byte)(45)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvMiscortohistorias.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgvMiscortohistorias.RowHeadersWidth = 50;
+            this.dgvBorradores.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvBorradores.RowHeadersVisible = false;
+            this.dgvBorradores.RowHeadersWidth = 50;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(139)))), ((int)(((byte)(45)))));
-            this.dtgvMiscortohistorias.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dtgvMiscortohistorias.RowTemplate.Height = 48;
-            this.dtgvMiscortohistorias.Size = new System.Drawing.Size(800, 450);
-            this.dtgvMiscortohistorias.TabIndex = 2;
-            // 
-            // Titulo
-            // 
-            this.Titulo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Titulo.HeaderText = "Título";
-            this.Titulo.MinimumWidth = 8;
-            this.Titulo.Name = "Titulo";
-            // 
-            // nombreautor
-            // 
-            this.nombreautor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.nombreautor.HeaderText = "Autor";
-            this.nombreautor.MinimumWidth = 8;
-            this.nombreautor.Name = "nombreautor";
-            // 
-            // FechaAdqusicion
-            // 
-            this.FechaAdqusicion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.FechaAdqusicion.HeaderText = "Fecha de adquisición";
-            this.FechaAdqusicion.MinimumWidth = 8;
-            this.FechaAdqusicion.Name = "FechaAdqusicion";
-            // 
-            // Importe
-            // 
-            this.Importe.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Importe.HeaderText = "Importe";
-            this.Importe.MinimumWidth = 8;
-            this.Importe.Name = "Importe";
+            this.dgvBorradores.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvBorradores.RowTemplate.Height = 48;
+            this.dgvBorradores.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dgvBorradores.Size = new System.Drawing.Size(800, 450);
+            this.dgvBorradores.TabIndex = 8;
             // 
             // MisLibros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dtgvMiscortohistorias);
+            this.Controls.Add(this.dgvBorradores);
             this.Name = "MisLibros";
             this.Text = "MisLibros";
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvMiscortohistorias)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBorradores)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dtgvMiscortohistorias;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Titulo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombreautor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FechaAdqusicion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Importe;
+        private System.Windows.Forms.DataGridView dgvBorradores;
     }
 }
