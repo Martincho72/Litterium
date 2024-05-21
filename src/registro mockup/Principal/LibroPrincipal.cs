@@ -118,5 +118,81 @@ namespace registro_mockup.Principal
             panel8.Visible = false;
             tableLayoutPanel3.Visible = false;
         }
+
+        private void pcbRecomendado2_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+                List<Libro> lista = new List<Libro>();
+                lista = Libro.BuscarLibros(basedatos.Conexion, "Alas de Sangre");
+
+                Libro libro = new Libro(lista[0].Isbn, lista[0].Titulo, lista[0].Autor, lista[0].Categoria, lista[0].Valoracion, lista[0].Portada, lista[0].Sinopsis, lista[0].Precio);
+
+                OpenChildForm(new InformacionLibro(libro));
+
+                OcultarPaneles();
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
+        }
+
+        private void pcbRecomendado3_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+                List<Libro> lista = new List<Libro>();
+                lista = Libro.BuscarLibros(basedatos.Conexion, "La siesta del pollo Pepe");
+
+                Libro libro = new Libro(lista[0].Isbn, lista[0].Titulo, lista[0].Autor, lista[0].Categoria, lista[0].Valoracion, lista[0].Portada, lista[0].Sinopsis, lista[0].Precio);
+
+                OpenChildForm(new InformacionLibro(libro));
+
+                OcultarPaneles();
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
+        }
+
+        private void pcbRecomendado4_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+                List<Libro> lista = new List<Libro>();
+                lista = Libro.BuscarLibros(basedatos.Conexion, "Percy Jackson El ladron del Rayo");
+
+                Libro libro = new Libro(lista[0].Isbn, lista[0].Titulo, lista[0].Autor, lista[0].Categoria, lista[0].Valoracion, lista[0].Portada, lista[0].Sinopsis, lista[0].Precio);
+
+                OpenChildForm(new InformacionLibro(libro));
+
+                OcultarPaneles();
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
+        }
+
+        private void pcbRecomendado5_Click_1(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+                List<Libro> lista = new List<Libro>();
+                lista = Libro.BuscarLibros(basedatos.Conexion, "Un cuento perfecto");
+
+                Libro libro = new Libro(lista[0].Isbn, lista[0].Titulo, lista[0].Autor, lista[0].Categoria, lista[0].Valoracion, lista[0].Portada, lista[0].Sinopsis, lista[0].Precio);
+
+                OpenChildForm(new InformacionLibro(libro));
+
+                OcultarPaneles();
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
+        }
     }
 }
