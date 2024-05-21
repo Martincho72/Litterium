@@ -152,6 +152,7 @@
     <Compile Include="clases\CortoHistoria.cs" />
     <Compile Include="clases\Libro.cs" />
     <Compile Include="clases\Ejemplar.cs" />
+    <Compile Include="clases\Valoracion.cs" />
     <Compile Include="formularios administrador\AdministracionCortoHistoria.cs">
       <SubType>Form</SubType>
     </Compile>
