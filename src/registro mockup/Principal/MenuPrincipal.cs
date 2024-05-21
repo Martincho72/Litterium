@@ -26,9 +26,12 @@ namespace registro_mockup
        private IconButton actualBTN;
         private Panel bordeizqBTN;
         private Form currentForm;
+        private string usuariomenu;
+
         BDatos basedatos = new BDatos();
-        public MenuPrincipal()
+        public MenuPrincipal(string usuario)
         {
+            usuariomenu = usuario;
             InitializeComponent();
             bordeizqBTN = new Panel();
             bordeizqBTN.Size = new Size(7, 60);
@@ -237,7 +240,7 @@ namespace registro_mockup
         private void btnUser_Click(object sender, EventArgs e)
         {
             ActivaBTN(sender, RGBColors.color1);
-            OpenChildForm(new MenuUsuario());
+            OpenChildForm(new MenuUsuario(usuariomenu));
         }
 
         private void panelescritorio_Paint(object sender, PaintEventArgs e)

@@ -14,7 +14,7 @@ namespace registro_mockup.clases
         string titulo;
         string autor;
         DateTime fechaPublicacion;
-        string editorial;
+        string categoria;
         bool continuable;
         bool finalizada;
         double valoracion;
@@ -24,19 +24,19 @@ namespace registro_mockup.clases
         public string Titulo { get { return titulo; } }
         public string Autor { get { return autor; } }
         public DateTime FechaPublicacion { get { return fechaPublicacion; } }
-        public string Editorial { get { return editorial; } }
+        public string Categoria { get { return categoria; } }
         public bool Continuable { get { return continuable; } }
         public bool Finalizada { get { return finalizada; } }
         public double Valoracion { get { return valoracion; } }
         public int Id_usuario { get { return id_usuario; } }
 
-        public CortoHistoria(int id, string titulo, string autor, DateTime fechaPublicacion, string editorial, bool continuable, bool finalizada, double valoracion, int id_usuario)
+        public CortoHistoria(int id, string titulo, string autor, DateTime fechaPublicacion, string categoria, bool continuable, bool finalizada, double valoracion, int id_usuario)
         {
             this.id = id;
             this.titulo = titulo;
             this.autor = autor;
             this.fechaPublicacion = fechaPublicacion;
-            this.editorial = editorial;
+            this.categoria = categoria;
             this.continuable = continuable;
             this.finalizada = finalizada;
             this.valoracion = valoracion;
@@ -50,6 +50,16 @@ namespace registro_mockup.clases
             this.fechaPublicacion= fechaPublicacion;
             this.finalizada = finalizada;
             this.id_usuario= id_usuario;
+        }
+        public CortoHistoria(int id,string titulo, string autor, DateTime fechaPublicacion, string categoria, bool continuable, bool finalizada) //Constructor para Mis CortoHistorias de Usuario
+        {
+            this.id = id;
+            this.titulo = titulo;
+            this.autor = autor;
+            this.fechaPublicacion = fechaPublicacion;
+            this.categoria = categoria;
+            this.continuable = continuable;
+            this.finalizada = finalizada;
         }
 
         public CortoHistoria()
@@ -167,7 +177,7 @@ namespace registro_mockup.clases
         {
             int retorno;
             string consulta = String.Format("INSERT INTO cortohistoria (id,titulo,autor,fechaPublicacion,editorial,continuable,finalizada,valoracion,id_usuario) " +
-                "VALUES " + "('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}')", ch.Id, ch.Titulo, ch.Autor, ch.FechaPublicacion.ToString("yyyy-MM-dd"), ch.Editorial, ch.Continuable, ch.Finalizada, ch.Valoracion, ch.Id_usuario);
+                "VALUES " + "('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}')", ch.Id, ch.Titulo, ch.Autor, ch.FechaPublicacion.ToString("yyyy-MM-dd"), ch.Categoria, ch.Continuable, ch.Finalizada, ch.Valoracion, ch.Id_usuario);
 
             MySqlCommand comando = new MySqlCommand(consulta, conexion);
 
@@ -210,7 +220,7 @@ namespace registro_mockup.clases
         {
             int retorno;
             string consulta = String.Format("UPDATE cortohistoria SET id = '{0}', titulo = '{1}', autor = '{2}', fechaPublicacion = '{3}', editorial = '{4}', continuable = '{5}', finalizada = '{6}', valoracion = '{7}', id_usuario ='{8}'" +
-                                            "WHERE id = '{0}'", ch.Id, ch.Titulo, ch.Autor, ch.FechaPublicacion.ToString("yyyy-MM-dd"), ch.Editorial,ch.continuable,ch.finalizada,ch.Valoracion,ch.Id_usuario);
+                                            "WHERE id = '{0}'", ch.Id, ch.Titulo, ch.Autor, ch.FechaPublicacion.ToString("yyyy-MM-dd"), ch.Categoria,ch.continuable,ch.finalizada,ch.Valoracion,ch.Id_usuario);
 
             MySqlCommand comando = new MySqlCommand(consulta, conexion);
 
@@ -252,6 +262,41 @@ namespace registro_mockup.clases
             // devolvemos la lista cargada con los usuarios.
             reader.Close();
             return ch;
+        }
+        public static List<CortoHistoria> BuscarBorradores(MySqlConnection conexion,int idUsuario)
+        {
+            List<CortoHistoria> lista = new List<CortoHistoria>();
+            string consulta = string.Format("SELECT id, titulo, autor, fechaPublicacion, categoria, continuable, finalizada from cortohistoria where finalizada = 0 and id_usuario = {0}", idUsuario);
+
+            // Creamos el objeto command al cual le pasamos la consulta y la conexión
+            MySqlCommand comando = new MySqlCommand(consulta, conexion);
+            // Ejecutamos el comando y recibimos en un objeto DataReader la lista de registros seleccionados.
+            // Recordemos que un objeto DataReader es una especie de tabla de datos virtual.
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            if (reader.HasRows)   // En caso que se hayan registros en el objeto reader
+            {
+                // Recorremos el reader (registro por registro) y cargamos la lista de empleados.
+                while (reader.Read())
+                {
+                    int id = reader.GetInt32(0);
+                    string titulo = reader.GetString(1);
+                    string autor = reader.GetString(2);
+                    DateTime fecha = reader.GetDateTime(3);
+                    string categoria = reader.GetString(4);
+                    bool continuable = reader.GetBoolean(5);
+                    bool finalizada = reader.GetBoolean(6);
+             //       double valoracion = reader.GetDouble(7);
+
+                    // Crear el objeto Usuario y agregarlo a la lista
+                    CortoHistoria ch = new CortoHistoria(id, titulo, autor, fecha, categoria, continuable, finalizada);
+                    lista.Add(ch);
+                }
+
+            }
+            // devolvemos la lista cargada con los usuarios.
+            reader.Close();
+            return lista;
         }
 
     }

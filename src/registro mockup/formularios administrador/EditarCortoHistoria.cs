@@ -30,7 +30,7 @@ namespace registro_mockup.formularios_administrador
                 txtTitulo.Text = ch.Titulo;
                 txtAutor.Text = ch.Autor;
                 dtpFechaPublicacion.Value = ch.FechaPublicacion;
-                txtEditorial.Text = ch.Editorial;
+                txtEditorial.Text = ch.Categoria;
                 txtValoracion.Text = ch.Valoracion.ToString();
                 txtIdUsuario.Text = ch.Id_usuario.ToString();
                 chbContinuable.Checked = ch.Continuable;
