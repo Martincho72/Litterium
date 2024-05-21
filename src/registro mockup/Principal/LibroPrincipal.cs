@@ -15,7 +15,7 @@ namespace registro_mockup.Principal
     {
         private Panel bordeizqBTN;
         private Form currentForm;
-        BDatos basedatos=new BDatos();
+        BDatos basedatos = new BDatos();
         private string usuariomenu;
         public LibroPrincipal(string usuariomenu)
         {
@@ -82,12 +82,8 @@ namespace registro_mockup.Principal
         {
             if (basedatos.AbrirConexion())
             {
-                List<Libro> lista = new List<Libro>();
-                lista = Libro.BuscarLibros(basedatos.Conexion, "El principito");
 
-                Libro libro = new Libro(lista[0].Isbn, lista[0].Titulo, lista[0].Autor, lista[0].Categoria, lista[0].Valoracion, lista[0].Portada, lista[0].Sinopsis, lista[0].Precio);
-
-                OpenChildForm(new InformacionLibro(libro, usuariomenu));
+                OpenChildForm(new InformacionLibro("El principito", usuariomenu));
 
                 OcultarPaneles();
             }
@@ -125,12 +121,7 @@ namespace registro_mockup.Principal
         {
             if (basedatos.AbrirConexion())
             {
-                List<Libro> lista = new List<Libro>();
-                lista = Libro.BuscarLibros(basedatos.Conexion, "Alas de Sangre");
-
-                Libro libro = new Libro(lista[0].Isbn, lista[0].Titulo, lista[0].Autor, lista[0].Categoria, lista[0].Valoracion, lista[0].Portada, lista[0].Sinopsis, lista[0].Precio);
-
-                OpenChildForm(new InformacionLibro(libro, usuariomenu));
+                OpenChildForm(new InformacionLibro("Alas de Sangre", usuariomenu));
 
                 OcultarPaneles();
             }
@@ -144,12 +135,7 @@ namespace registro_mockup.Principal
         {
             if (basedatos.AbrirConexion())
             {
-                List<Libro> lista = new List<Libro>();
-                lista = Libro.BuscarLibros(basedatos.Conexion, "La siesta del pollo Pepe");
-
-                Libro libro = new Libro(lista[0].Isbn, lista[0].Titulo, lista[0].Autor, lista[0].Categoria, lista[0].Valoracion, lista[0].Portada, lista[0].Sinopsis, lista[0].Precio);
-
-                OpenChildForm(new InformacionLibro(libro, usuariomenu));
+                OpenChildForm(new InformacionLibro("La siesta del pollo Pepe", usuariomenu));
 
                 OcultarPaneles();
             }
@@ -163,12 +149,7 @@ namespace registro_mockup.Principal
         {
             if (basedatos.AbrirConexion())
             {
-                List<Libro> lista = new List<Libro>();
-                lista = Libro.BuscarLibros(basedatos.Conexion, "Percy Jackson El ladron del Rayo");
-
-                Libro libro = new Libro(lista[0].Isbn, lista[0].Titulo, lista[0].Autor, lista[0].Categoria, lista[0].Valoracion, lista[0].Portada, lista[0].Sinopsis, lista[0].Precio);
-
-                OpenChildForm(new InformacionLibro(libro, usuariomenu));
+                OpenChildForm(new InformacionLibro("Percy Jackson El ladron del Rayo", usuariomenu));
 
                 OcultarPaneles();
             }
@@ -182,12 +163,7 @@ namespace registro_mockup.Principal
         {
             if (basedatos.AbrirConexion())
             {
-                List<Libro> lista = new List<Libro>();
-                lista = Libro.BuscarLibros(basedatos.Conexion, "Un cuento perfecto");
-
-                Libro libro = new Libro(lista[0].Isbn, lista[0].Titulo, lista[0].Autor, lista[0].Categoria, lista[0].Valoracion, lista[0].Portada, lista[0].Sinopsis, lista[0].Precio);
-
-                OpenChildForm(new InformacionLibro(libro,usuariomenu));
+                OpenChildForm(new InformacionLibro("Un cuento perfecto", usuariomenu));
 
                 OcultarPaneles();
             }

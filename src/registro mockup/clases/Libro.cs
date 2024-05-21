@@ -11,7 +11,7 @@ using MySql.Data.MySqlClient;
 
 namespace registro_mockup.clases
 {
-    public  class Libro
+    class Libro
     {
         string isbn;
         string titulo;
@@ -209,6 +209,40 @@ namespace registro_mockup.clases
                     Image foto = Image.FromStream(ms);
 
                     l1 =new Libro(codigo,titulo, autor,categoria, valoracion, foto,sinopsis, precio);
+                }
+
+
+            }
+            // devolvemos la lista cargada con los usuarios.
+            reader.Close();
+            return l1;
+        }
+
+        public static Libro EncontrarDatosLibroTitulo(MySqlConnection conexion, string tituloLibro)
+        {
+            string consulta = string.Format("SELECT * FROM libro WHERE titulo = '{0}'", tituloLibro);
+
+            MySqlCommand comando = new MySqlCommand(consulta, conexion);
+            MySqlDataReader reader = comando.ExecuteReader();
+            Libro l1 = new Libro();
+            if (reader.HasRows)   // En caso que se hayan registros en el objeto reader
+            {
+                // Recorremos el reader (registro por registro) y cargamos la lista de empleados.
+                while (reader.Read())
+                {
+
+                    string codigo = reader.GetString(0);
+                    string titulo = reader.GetString(1);
+                    string autor = reader.GetString(2);
+                    string categoria = reader.GetString(3);
+                    double valoracion = reader.GetDouble(4);
+                    string sinopsis = reader.GetString(6);
+                    double precio = reader.GetDouble(7);
+                    byte[] img = (byte[])reader["imagen"];
+                    MemoryStream ms = new MemoryStream(img);
+                    Image foto = Image.FromStream(ms);
+
+                    l1 = new Libro(codigo, titulo, autor, categoria, valoracion, foto, sinopsis, precio);
                 }
 
 

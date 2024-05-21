@@ -13,22 +13,27 @@ namespace registro_mockup.Principal
 {
     public partial class InformacionLibro : Form
     {
-        private Libro libro;
         BDatos basedatos=new BDatos();
         private string usuariomenu;
         private string isbnLibro;
-        public InformacionLibro(Libro l1,string usuario)
+        private string titulo;
+        public InformacionLibro(string titul,string usuario)
         {
             InitializeComponent();
+            this.titulo = titul;
             usuariomenu = usuario;
-            isbnLibro = l1.Isbn;
-            libro = l1;
-            lblAutorLibro.Text = "Autor: " + l1.Autor;
-            lblTituloLibro.Text="Titulo: " + l1.Titulo;
-            lblValoracion.Text ="Valoracion: " + l1.Valoracion;
-            txtSinopsis.Text=l1.Sinopsis;
-            pcbPortadaLibro.Image=l1.Portada;
-            lblPrecioLibro.Text = "Precio: " + l1.Precio+"€";
+            if (basedatos.AbrirConexion())
+            {
+                Libro l1 = Libro.EncontrarDatosLibroTitulo(basedatos.Conexion, this.titulo);
+                isbnLibro = l1.Isbn;
+                lblAutorLibro.Text = "Autor: " + l1.Autor;
+                lblTituloLibro.Text = "Titulo: " + l1.Titulo;
+                lblValoracion.Text = "Valoracion: " + l1.Valoracion;
+                txtSinopsis.Text = l1.Sinopsis;
+                pcbPortadaLibro.Image = l1.Portada;
+                lblPrecioLibro.Text = "Precio: " + l1.Precio + "€";
+            }
+            basedatos.CerrarConexion();
         }
 
         private void label2_Click(object sender, EventArgs e)
