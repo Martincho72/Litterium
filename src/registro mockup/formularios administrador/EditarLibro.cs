@@ -33,6 +33,7 @@ namespace registro_mockup.formularios_administrador
                 cmbValoracion.Text = l1.Valoracion.ToString();
                 pcbPortada.Image = l1.Portada;
                 txtPrecio.Text=l1.Precio.ToString();
+                txtSinopsis.Text = l1.Sinopsis;
             }
             else { }
             basedatos.CerrarConexion();

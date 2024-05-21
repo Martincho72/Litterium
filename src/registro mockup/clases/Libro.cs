@@ -175,8 +175,8 @@ namespace registro_mockup.clases
             MemoryStream ms = new MemoryStream();
             l1.Portada.Save(ms, ImageFormat.Jpeg);
             byte[] imgArr = ms.ToArray();
-            string consulta = String.Format("UPDATE libro SET isbn = '{0}', titulo = '{1}', autor = '{2}', categoria = '{3}', valoracion = '{4}', imagen=@imagen , sinopsis = '{5}' precio='{6}'  " +
-                                            "WHERE isbn = '{0}'", l1.Isbn, l1.Titulo, l1.Autor, l1.Categoria, l1.Valoracion,l1.Sinopsis);
+            string consulta = String.Format("UPDATE libro SET isbn = '{0}', titulo = '{1}', autor = '{2}', categoria = '{3}', valoracion = '{4}', imagen=@imagen , sinopsis = '{5}', precio = '{6}'  " +
+                                            "WHERE isbn = '{0}'", l1.Isbn, l1.Titulo, l1.Autor, l1.Categoria, l1.Valoracion,l1.Sinopsis,l1.Precio);
                                          
             MySqlCommand comando = new MySqlCommand(consulta, conexion);
             comando.Parameters.AddWithValue("@imagen", imgArr);
