@@ -52,6 +52,9 @@
             this.txtSinopsis = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pcbPortadaLibro = new System.Windows.Forms.PictureBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmbValorar = new System.Windows.Forms.ComboBox();
+            this.btnValorar = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -64,6 +67,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbPortadaLibro)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -121,8 +125,8 @@
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 62.93532F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.06468F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.93284F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.06716F));
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel4, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -191,20 +195,24 @@
             // 
             // tableLayoutPanel4
             // 
-            this.tableLayoutPanel4.ColumnCount = 1;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27F));
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.18575F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.81425F));
+            this.tableLayoutPanel4.Controls.Add(this.btnValorar, 1, 1);
             this.tableLayoutPanel4.Controls.Add(this.iconButton2, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.iconButton1, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.groupBox1, 1, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(760, 4);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(282, 4);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(308, 115);
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.00001F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(786, 115);
             this.tableLayoutPanel4.TabIndex = 1;
+            this.tableLayoutPanel4.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel4_Paint);
             // 
             // iconButton2
             // 
@@ -218,7 +226,7 @@
             this.iconButton2.Location = new System.Drawing.Point(4, 61);
             this.iconButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(300, 50);
+            this.iconButton2.Size = new System.Drawing.Size(299, 50);
             this.iconButton2.TabIndex = 19;
             this.iconButton2.Text = "COMPRAR AHORA";
             this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -236,7 +244,7 @@
             this.iconButton1.Location = new System.Drawing.Point(4, 4);
             this.iconButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(300, 49);
+            this.iconButton1.Size = new System.Drawing.Size(299, 49);
             this.iconButton1.TabIndex = 18;
             this.iconButton1.Text = "AÑADIR AL CARRITO";
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -374,6 +382,51 @@
             this.pcbPortadaLibro.TabIndex = 15;
             this.pcbPortadaLibro.TabStop = false;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.cmbValorar);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(310, 3);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(473, 51);
+            this.groupBox1.TabIndex = 20;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Valorar Libro:";
+            // 
+            // cmbValorar
+            // 
+            this.cmbValorar.FormattingEnabled = true;
+            this.cmbValorar.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbValorar.Location = new System.Drawing.Point(140, 1);
+            this.cmbValorar.Name = "cmbValorar";
+            this.cmbValorar.Size = new System.Drawing.Size(121, 28);
+            this.cmbValorar.TabIndex = 0;
+            // 
+            // btnValorar
+            // 
+            this.btnValorar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnValorar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnValorar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnValorar.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckDollar;
+            this.btnValorar.IconColor = System.Drawing.Color.Black;
+            this.btnValorar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnValorar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnValorar.Location = new System.Drawing.Point(311, 61);
+            this.btnValorar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnValorar.Name = "btnValorar";
+            this.btnValorar.Size = new System.Drawing.Size(299, 50);
+            this.btnValorar.TabIndex = 21;
+            this.btnValorar.Text = "VALORAR";
+            this.btnValorar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnValorar.UseVisualStyleBackColor = false;
+            // 
             // InformacionLibro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -401,6 +454,7 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbPortadaLibro)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -431,5 +485,8 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Label label3;
+        private FontAwesome.Sharp.IconButton btnValorar;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ComboBox cmbValorar;
     }
 }

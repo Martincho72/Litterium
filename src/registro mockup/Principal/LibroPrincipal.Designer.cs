@@ -532,6 +532,7 @@
             this.pcbRecomendado4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbRecomendado4.TabIndex = 0;
             this.pcbRecomendado4.TabStop = false;
+            this.pcbRecomendado4.Click += new System.EventHandler(this.pcbRecomendado4_Click);
             // 
             // gbxRecomendadosLibros5
             // 
@@ -557,6 +558,7 @@
             this.pcbRecomendado5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbRecomendado5.TabIndex = 0;
             this.pcbRecomendado5.TabStop = false;
+            this.pcbRecomendado5.Click += new System.EventHandler(this.pcbRecomendado5_Click_1);
             // 
             // gbxRecomendadosLibros3
             // 
@@ -582,6 +584,7 @@
             this.pcbRecomendado3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbRecomendado3.TabIndex = 0;
             this.pcbRecomendado3.TabStop = false;
+            this.pcbRecomendado3.Click += new System.EventHandler(this.pcbRecomendado3_Click);
             // 
             // gbxRecomendadosLibros1
             // 
@@ -637,6 +640,7 @@
             this.pcbRecomendado2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbRecomendado2.TabIndex = 0;
             this.pcbRecomendado2.TabStop = false;
+            this.pcbRecomendado2.Click += new System.EventHandler(this.pcbRecomendado2_Click);
             // 
             // panel8
             // 
