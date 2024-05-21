@@ -12,8 +12,11 @@ namespace registro_mockup.formularios_Usuario
 {
     public partial class MisCortoHistorias : Form
     {
-        public MisCortoHistorias()
+        private string usuariomenu;
+
+        public MisCortoHistorias(string usuario)
         {
+            usuariomenu = usuario;
             InitializeComponent();
         }
 

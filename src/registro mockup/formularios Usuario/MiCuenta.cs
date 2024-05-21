@@ -12,8 +12,11 @@ namespace registro_mockup.formularios_Usuario
 {
     public partial class MiCuenta : Form
     {
-        public MiCuenta()
+        private string usuariomenu;
+        public MiCuenta(string usuario)
+
         {
+            usuariomenu = usuario;
             InitializeComponent();
         }
     }

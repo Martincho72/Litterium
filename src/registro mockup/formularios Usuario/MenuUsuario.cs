@@ -46,17 +46,17 @@ namespace registro_mockup.formularios_Usuario
 
         private void btnMiCuenta_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new MiCuenta());
+            OpenChildForm(new MiCuenta(usuariomenu));
         }
 
         private void btnMisLibros_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new MisLibros());
+            OpenChildForm(new MisLibros(usuariomenu));
         }
 
         private void btnMisCortohistorias_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new MisCortoHistorias());
+            OpenChildForm(new MisCortoHistorias(usuariomenu));
         }
 
         private void btnMisBorradores_Click(object sender, EventArgs e)
@@ -66,7 +66,7 @@ namespace registro_mockup.formularios_Usuario
 
         private void btnMiHistorial_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new HistorialCompras());
+            OpenChildForm(new HistorialCompras(usuariomenu));
         }
     }
 }

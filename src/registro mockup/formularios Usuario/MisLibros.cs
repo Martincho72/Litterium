@@ -11,9 +11,13 @@ using System.Windows.Forms;
 namespace registro_mockup.formularios_Usuario
 {
     public partial class MisLibros : Form
+
     {
-        public MisLibros()
+        private string usuariomenu;
+
+        public MisLibros(string usuario)
         {
+            usuariomenu = usuario;
             InitializeComponent();
         }
     }
