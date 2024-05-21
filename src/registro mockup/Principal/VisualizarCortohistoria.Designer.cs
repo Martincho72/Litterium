@@ -30,10 +30,9 @@
         {
             this.lblVisualizarCortohistoria = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.pnlCortohistoria = new System.Windows.Forms.Panel();
-            this.lblCortohistoria = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.PictureBox();
-            this.pnlCortohistoria.SuspendLayout();
+            this.txtVisualizarCortoHistoria = new System.Windows.Forms.TextBox();
+            this.btnContinuar = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,33 +57,13 @@
             this.lblTitulo.TabIndex = 1;
             this.lblTitulo.Text = "Titulo :";
             // 
-            // pnlCortohistoria
-            // 
-            this.pnlCortohistoria.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlCortohistoria.Controls.Add(this.lblCortohistoria);
-            this.pnlCortohistoria.Location = new System.Drawing.Point(11, 87);
-            this.pnlCortohistoria.Name = "pnlCortohistoria";
-            this.pnlCortohistoria.Size = new System.Drawing.Size(777, 279);
-            this.pnlCortohistoria.TabIndex = 2;
-            // 
-            // lblCortohistoria
-            // 
-            this.lblCortohistoria.AutoSize = true;
-            this.lblCortohistoria.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCortohistoria.Location = new System.Drawing.Point(3, 7);
-            this.lblCortohistoria.Name = "lblCortohistoria";
-            this.lblCortohistoria.Size = new System.Drawing.Size(24, 25);
-            this.lblCortohistoria.TabIndex = 2;
-            this.lblCortohistoria.Text = "...";
-            this.lblCortohistoria.Click += new System.EventHandler(this.label3_Click);
-            // 
             // btnSalir
             // 
             this.btnSalir.BackColor = System.Drawing.Color.Transparent;
             this.btnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalir.Image = global::registro_mockup.Properties.Resources.lecha;
-            this.btnSalir.Location = new System.Drawing.Point(11, 406);
+            this.btnSalir.Location = new System.Drawing.Point(16, 414);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(62, 33);
@@ -92,19 +71,45 @@
             this.btnSalir.TabIndex = 52;
             this.btnSalir.TabStop = false;
             // 
+            // txtVisualizarCortoHistoria
+            // 
+            this.txtVisualizarCortoHistoria.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.txtVisualizarCortoHistoria.Location = new System.Drawing.Point(16, 87);
+            this.txtVisualizarCortoHistoria.Multiline = true;
+            this.txtVisualizarCortoHistoria.Name = "txtVisualizarCortoHistoria";
+            this.txtVisualizarCortoHistoria.ReadOnly = true;
+            this.txtVisualizarCortoHistoria.Size = new System.Drawing.Size(772, 301);
+            this.txtVisualizarCortoHistoria.TabIndex = 53;
+            // 
+            // btnContinuar
+            // 
+            this.btnContinuar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnContinuar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnContinuar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnContinuar.IconChar = FontAwesome.Sharp.IconChar.PenToSquare;
+            this.btnContinuar.IconColor = System.Drawing.Color.Black;
+            this.btnContinuar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnContinuar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnContinuar.Location = new System.Drawing.Point(656, 406);
+            this.btnContinuar.Name = "btnContinuar";
+            this.btnContinuar.Size = new System.Drawing.Size(132, 41);
+            this.btnContinuar.TabIndex = 54;
+            this.btnContinuar.Text = "Continuar";
+            this.btnContinuar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnContinuar.UseVisualStyleBackColor = false;
+            // 
             // VisualizarCortohistoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnContinuar);
+            this.Controls.Add(this.txtVisualizarCortoHistoria);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.pnlCortohistoria);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.lblVisualizarCortohistoria);
             this.Name = "VisualizarCortohistoria";
-            this.pnlCortohistoria.ResumeLayout(false);
-            this.pnlCortohistoria.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -115,8 +120,8 @@
 
         private System.Windows.Forms.Label lblVisualizarCortohistoria;
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.Panel pnlCortohistoria;
-        private System.Windows.Forms.Label lblCortohistoria;
         private System.Windows.Forms.PictureBox btnSalir;
+        private System.Windows.Forms.TextBox txtVisualizarCortoHistoria;
+        private FontAwesome.Sharp.IconButton btnContinuar;
     }
 }
