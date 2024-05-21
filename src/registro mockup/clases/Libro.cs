@@ -217,5 +217,10 @@ namespace registro_mockup.clases
             reader.Close();
             return l1;
         }
+
+        public double importeTotal(double precio, int cantidad)
+        {
+            return precio * cantidad;
+        }
     }
 }

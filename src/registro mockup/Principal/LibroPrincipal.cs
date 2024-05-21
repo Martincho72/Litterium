@@ -16,9 +16,11 @@ namespace registro_mockup.Principal
         private Panel bordeizqBTN;
         private Form currentForm;
         BDatos basedatos=new BDatos();
-        public LibroPrincipal()
+        private string usuariomenu;
+        public LibroPrincipal(string usuariomenu)
         {
             InitializeComponent();
+            this.usuariomenu = usuariomenu;
         }
 
         private void groupBox4_Enter(object sender, EventArgs e)
@@ -85,7 +87,7 @@ namespace registro_mockup.Principal
 
                 Libro libro = new Libro(lista[0].Isbn, lista[0].Titulo, lista[0].Autor, lista[0].Categoria, lista[0].Valoracion, lista[0].Portada, lista[0].Sinopsis, lista[0].Precio);
 
-                OpenChildForm(new InformacionLibro(libro));
+                OpenChildForm(new InformacionLibro(libro, usuariomenu));
 
                 OcultarPaneles();
             }
@@ -128,7 +130,7 @@ namespace registro_mockup.Principal
 
                 Libro libro = new Libro(lista[0].Isbn, lista[0].Titulo, lista[0].Autor, lista[0].Categoria, lista[0].Valoracion, lista[0].Portada, lista[0].Sinopsis, lista[0].Precio);
 
-                OpenChildForm(new InformacionLibro(libro));
+                OpenChildForm(new InformacionLibro(libro, usuariomenu));
 
                 OcultarPaneles();
             }
@@ -147,7 +149,7 @@ namespace registro_mockup.Principal
 
                 Libro libro = new Libro(lista[0].Isbn, lista[0].Titulo, lista[0].Autor, lista[0].Categoria, lista[0].Valoracion, lista[0].Portada, lista[0].Sinopsis, lista[0].Precio);
 
-                OpenChildForm(new InformacionLibro(libro));
+                OpenChildForm(new InformacionLibro(libro, usuariomenu));
 
                 OcultarPaneles();
             }
@@ -166,7 +168,7 @@ namespace registro_mockup.Principal
 
                 Libro libro = new Libro(lista[0].Isbn, lista[0].Titulo, lista[0].Autor, lista[0].Categoria, lista[0].Valoracion, lista[0].Portada, lista[0].Sinopsis, lista[0].Precio);
 
-                OpenChildForm(new InformacionLibro(libro));
+                OpenChildForm(new InformacionLibro(libro, usuariomenu));
 
                 OcultarPaneles();
             }
@@ -185,7 +187,7 @@ namespace registro_mockup.Principal
 
                 Libro libro = new Libro(lista[0].Isbn, lista[0].Titulo, lista[0].Autor, lista[0].Categoria, lista[0].Valoracion, lista[0].Portada, lista[0].Sinopsis, lista[0].Precio);
 
-                OpenChildForm(new InformacionLibro(libro));
+                OpenChildForm(new InformacionLibro(libro,usuariomenu));
 
                 OcultarPaneles();
             }
