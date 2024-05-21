@@ -33,7 +33,7 @@
             this.lblError = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblMensajeEditarUsuario = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
@@ -110,7 +110,7 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.lblMensajeEditarUsuario);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(84, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
@@ -118,17 +118,17 @@
             this.panel2.Size = new System.Drawing.Size(394, 72);
             this.panel2.TabIndex = 2;
             // 
-            // label1
+            // lblMensajeEditarUsuario
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(67, 25);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Editar Usuario";
+            this.lblMensajeEditarUsuario.AutoSize = true;
+            this.lblMensajeEditarUsuario.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMensajeEditarUsuario.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblMensajeEditarUsuario.Location = new System.Drawing.Point(67, 25);
+            this.lblMensajeEditarUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMensajeEditarUsuario.Name = "lblMensajeEditarUsuario";
+            this.lblMensajeEditarUsuario.Size = new System.Drawing.Size(160, 24);
+            this.lblMensajeEditarUsuario.TabIndex = 0;
+            this.lblMensajeEditarUsuario.Text = "Editar Usuario";
             // 
             // pictureBox1
             // 
@@ -378,7 +378,7 @@
         private System.Windows.Forms.Label lblError;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblMensajeEditarUsuario;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.TextBox txtUsuario;
