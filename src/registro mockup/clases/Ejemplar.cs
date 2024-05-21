@@ -13,23 +13,23 @@ namespace registro_mockup
     internal class Ejemplar
     {
         int id;
-        DateTime fechaPublicacion;
+        DateTime fechaCompra;
         string editorial;
         decimal precioTotal;
         int id_usuario;
         string isbn_usuario;
 
         public int Id { get { return id; } }
-        public DateTime FechaPublicacion { get { return fechaPublicacion; } }
+        public DateTime FechaCompra { get { return fechaCompra; } }
         public string Editorial { get {  return editorial; } }
         public decimal PrecioTotal { get {  return precioTotal; } }
         public int Id_usuario { get {  return id_usuario; } }
         public string Isbn_usuario{ get {return isbn_usuario; } }
 
-        public Ejemplar(int id,DateTime fechaPublicacion,string editorial,decimal precioTotal,int id_usuario,string isbn_usuario)
+        public Ejemplar(int id,DateTime fechaCompra,string editorial,decimal precioTotal,int id_usuario,string isbn_usuario)
         {
             this.id = id;
-            this.fechaPublicacion = fechaPublicacion;
+            this.fechaCompra = fechaCompra;
             this.editorial = editorial;
             this.precioTotal = precioTotal;
             this.id_usuario = id_usuario;
@@ -53,7 +53,7 @@ namespace registro_mockup
                 while (reader.Read())
                 {
                     int id = reader.GetInt32(0);
-                    DateTime fechaPublicacion = reader.GetDateTime(1);
+                    DateTime fechaCompra = reader.GetDateTime(1);
                     string editorial = reader.GetString(2);
                     decimal precioTotal = reader.GetDecimal(3);
                     int id_usuario = reader.GetInt32(4);
@@ -64,7 +64,7 @@ namespace registro_mockup
                     //Image foto = Image.FromStream(ms);
 
                     // Crear el objeto Usuario y agregarlo a la lista
-                    Ejemplar ejemplar= new Ejemplar(id, fechaPublicacion, editorial, precioTotal, id_usuario,/* foto*/ isbn_usuario);
+                    Ejemplar ejemplar= new Ejemplar(id, fechaCompra, editorial, precioTotal, id_usuario,/* foto*/ isbn_usuario);
                     lista.Add(ejemplar);
                 }
 
@@ -91,7 +91,7 @@ namespace registro_mockup
                 while (reader.Read())
                 {
                     int id = reader.GetInt32(0);
-                    DateTime fechaPublicacion = reader.GetDateTime(1);
+                    DateTime fechaCompra = reader.GetDateTime(1);
                     string editorial = reader.GetString(2);
                     decimal precioTotal = reader.GetDecimal(3);
                     int id_usu= reader.GetInt32(4);
@@ -102,7 +102,7 @@ namespace registro_mockup
                     //Image foto = Image.FromStream(ms);
 
                     // Crear el objeto Usuario y agregarlo a la lista
-                    Ejemplar ejemplar = new Ejemplar(id, fechaPublicacion, editorial, precioTotal, id_usu,/* foto*/ isbn_usuario);
+                    Ejemplar ejemplar = new Ejemplar(id, fechaCompra, editorial, precioTotal, id_usu,/* foto*/ isbn_usuario);
                     lista.Add(ejemplar);
                 }
 
@@ -119,8 +119,8 @@ namespace registro_mockup
             //l1.Portada.Save(ms, ImageFormat.Png);
             //byte[] imgArr = ms.ToArray();
 
-            string consulta = String.Format("INSERT INTO libro (id,fechaPublicacion,editorial,precioTotal,id_usuario,isbn_usuario) " +
-                "VALUES " + "('{0}','{1}','{2}','{3}','{4}','{5}')", ej.Id, ej.fechaPublicacion, ej.Editorial, ej.PrecioTotal, ej.Id_usuario, ej.Isbn_usuario);
+            string consulta = String.Format("INSERT INTO libro (id,fechaCompra,editorial,precioTotal,id_usuario,isbn_usuario) " +
+                "VALUES " + "('{0}','{1}','{2}','{3}','{4}','{5}')", ej.Id, ej.fechaCompra, ej.Editorial, ej.PrecioTotal, ej.Id_usuario, ej.Isbn_usuario);
 
             MySqlCommand comando = new MySqlCommand(consulta, conexion);
             //comando.Parameters.AddWithValue("imagen", imgArr);
