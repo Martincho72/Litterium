@@ -287,13 +287,22 @@ namespace registro_mockup
 
         public static int EditarUsuario(MySqlConnection conexion, Usuario us1)
         {
+            int vetado;
+            int baja;
+            int adminsitrador;
+            if (us1.esAdmin) adminsitrador = 1;
+            else adminsitrador = 0;
+            if (us1.baja) baja = 1;
+            else baja = 0;
+            if (us1.vetado) vetado = 1;
+            else vetado = 0;
             int retorno;
             MemoryStream ms = new MemoryStream();
             us1.Foto.Save(ms, ImageFormat.Jpeg);
             byte[] imgArr = ms.ToArray();
             string consulta = String.Format("UPDATE usuarios SET usuario = '{0}', contrasenya = '{1}', esAdmin = '{2}', nombre = '{3}', correo = '{4}'," +
                                             "direccion = '{5}', telefono = '{6}', vetado = '{7}', baja = '{8}',imagen=@imagen WHERE usuario = '{0}'",
-                                         us1.usuario, us1.clave, us1.esAdmin, us1.nombre, us1.correoElectronico, us1.direccion, us1.telefono, us1.vetado, us1.baja);
+                                         us1.usuario, us1.clave, adminsitrador, us1.nombre, us1.correoElectronico, us1.direccion, us1.telefono, vetado, baja);
 
             MySqlCommand comando = new MySqlCommand(consulta, conexion);
             comando.Parameters.AddWithValue("@imagen", imgArr);

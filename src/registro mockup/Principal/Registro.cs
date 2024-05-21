@@ -74,7 +74,6 @@ namespace Litterium
         {
             FrmLogIn login = new FrmLogIn();
             login.Show();
-            this.Hide();
         }
 
         private void btnCrear_Click(object sender, EventArgs e)

@@ -48,11 +48,12 @@ namespace registro_mockup.formularios_administrador
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            if (basedatos.AbrirConexion()){
+            if (basedatos.AbrirConexion())
+            {
                 CortoHistoria corto = new CortoHistoria(int.Parse(txtId.Text), txtTitulo.Text, txtAutor.Text, dtpFechaPublicacion.Value, txtCategoria.Text, chbContinuable.Checked, chbFinalizada.Checked, double.Parse(txtValoracion.Text), int.Parse(txtIdUsuario.Text));
                 CortoHistoria.EditarCortoHistoria(basedatos.Conexion, corto);
                 this.Close();
-        }
+            }
             else { }
             basedatos.CerrarConexion();
         }

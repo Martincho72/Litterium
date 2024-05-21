@@ -22,16 +22,32 @@ namespace registro_mockup.formularios_administrador
 
         private void btnEliminarCH_Click(object sender, EventArgs e)
         {
-            EliminarCortoHistoria form = new EliminarCortoHistoria();
-            form.ShowDialog();
+            if (bDatos.AbrirConexion())
+            {
+                EliminarCortoHistoria form = new EliminarCortoHistoria();
+                form.ShowDialog();
+            }
+            else
+            {
 
-
+            }
+            bDatos.CerrarConexion();
+            CargaLibros();
         }
 
         private void btnEditarCH_Click(object sender, EventArgs e)
         {
-            BuscarCortoHistoria edit = new BuscarCortoHistoria();
-            edit.ShowDialog();
+            if (bDatos.AbrirConexion())
+            {
+                BuscarCortoHistoria edit = new BuscarCortoHistoria();
+                edit.ShowDialog();
+            }
+            else
+            {
+
+            }
+            bDatos.CerrarConexion();
+            CargaLibros();
         }
 
         private void AdministracionCortoHistoria_Load(object sender, EventArgs e)
