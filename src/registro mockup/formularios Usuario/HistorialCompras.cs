@@ -12,8 +12,11 @@ namespace registro_mockup.formularios_Usuario
 {
     public partial class HistorialCompras : Form
     {
-        public HistorialCompras()
+        private string usuariomenu;
+
+        public HistorialCompras(string usuario)
         {
+        usuariomenu = usuario;
             InitializeComponent();
         }
 
