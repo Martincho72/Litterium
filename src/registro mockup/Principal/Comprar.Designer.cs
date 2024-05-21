@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pnlInformacionCompra = new System.Windows.Forms.Panel();
-            this.lblInformacionCompra = new System.Windows.Forms.Label();
             this.lblImporteTotal = new System.Windows.Forms.Label();
             this.lblUbicacionEntrega = new System.Windows.Forms.Label();
             this.txtUbicacionEntrega = new System.Windows.Forms.TextBox();
@@ -46,29 +44,12 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSalir = new System.Windows.Forms.PictureBox();
-            this.pnlInformacionCompra.SuspendLayout();
+            this.txtInformacionCompra = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pnlInformacionCompra
-            // 
-            this.pnlInformacionCompra.Controls.Add(this.lblInformacionCompra);
-            this.pnlInformacionCompra.Location = new System.Drawing.Point(61, 74);
-            this.pnlInformacionCompra.Name = "pnlInformacionCompra";
-            this.pnlInformacionCompra.Size = new System.Drawing.Size(347, 136);
-            this.pnlInformacionCompra.TabIndex = 0;
-            // 
-            // lblInformacionCompra
-            // 
-            this.lblInformacionCompra.AutoSize = true;
-            this.lblInformacionCompra.Location = new System.Drawing.Point(3, 9);
-            this.lblInformacionCompra.Name = "lblInformacionCompra";
-            this.lblInformacionCompra.Size = new System.Drawing.Size(35, 13);
-            this.lblInformacionCompra.TabIndex = 2;
-            this.lblInformacionCompra.Text = "label2";
             // 
             // lblImporteTotal
             // 
@@ -239,12 +220,23 @@
             this.btnSalir.TabStop = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // txtInformacionCompra
+            // 
+            this.txtInformacionCompra.BackColor = System.Drawing.Color.White;
+            this.txtInformacionCompra.Location = new System.Drawing.Point(60, 74);
+            this.txtInformacionCompra.Multiline = true;
+            this.txtInformacionCompra.Name = "txtInformacionCompra";
+            this.txtInformacionCompra.ReadOnly = true;
+            this.txtInformacionCompra.Size = new System.Drawing.Size(348, 136);
+            this.txtInformacionCompra.TabIndex = 52;
+            // 
             // Comprar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(478, 482);
+            this.Controls.Add(this.txtInformacionCompra);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnPagar);
@@ -258,12 +250,9 @@
             this.Controls.Add(this.txtUbicacionEntrega);
             this.Controls.Add(this.lblUbicacionEntrega);
             this.Controls.Add(this.lblImporteTotal);
-            this.Controls.Add(this.pnlInformacionCompra);
             this.Name = "Comprar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Comprar";
-            this.pnlInformacionCompra.ResumeLayout(false);
-            this.pnlInformacionCompra.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -275,9 +264,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel pnlInformacionCompra;
-        private System.Windows.Forms.Label lblInformacionCompra;
         private System.Windows.Forms.Label lblImporteTotal;
         private System.Windows.Forms.Label lblUbicacionEntrega;
         private System.Windows.Forms.TextBox txtUbicacionEntrega;
@@ -294,5 +280,6 @@
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox btnSalir;
+        private System.Windows.Forms.TextBox txtInformacionCompra;
     }
 }
