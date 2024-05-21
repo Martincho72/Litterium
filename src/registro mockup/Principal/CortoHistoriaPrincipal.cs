@@ -31,5 +31,10 @@ namespace registro_mockup.Principal
         {
 
         }
+
+        private void grbRecomendadosCortohistorias5_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
