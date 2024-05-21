@@ -14,9 +14,12 @@ namespace registro_mockup.Principal
     public partial class InformacionLibro : Form
     {
         private Libro libro;
-        public InformacionLibro(Libro l1)
+        BDatos basedatos=new BDatos();
+        private string usuariomenu;
+        public InformacionLibro(Libro l1,string usuario)
         {
             InitializeComponent();
+            usuariomenu = usuario;
             libro = l1;
             lblAutorLibro.Text = "Autor: " + l1.Autor;
             lblTituloLibro.Text="Titulo: " + l1.Titulo;
@@ -40,13 +43,6 @@ namespace registro_mockup.Principal
 
         }
 
-        private void btnComprarAhora_Click(object sender, EventArgs e)
-        {
-            Comprar form = new Comprar();
-            form.ShowDialog();
-
-        }
-
         private void InformacionLibro_Load(object sender, EventArgs e)
         {
 
@@ -55,6 +51,34 @@ namespace registro_mockup.Principal
         private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            Comprar form = new Comprar();
+            form.ShowDialog();
+        }
+
+        private void btnValorar_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+
+            }
+            else
+            {
+
+            }
         }
     }
 }

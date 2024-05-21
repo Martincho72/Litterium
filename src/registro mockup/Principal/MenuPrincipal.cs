@@ -155,7 +155,7 @@ namespace registro_mockup
         private void iconButton8_Click(object sender, EventArgs e)
         {
             ActivaBTN(sender, RGBColors.color1);
-            OpenChildForm(new LibroPrincipal());
+            OpenChildForm(new LibroPrincipal(usuariomenu));
         }
 
         private void btnPictureCerrar_Click(object sender, EventArgs e)
