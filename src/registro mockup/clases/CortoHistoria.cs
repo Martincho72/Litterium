@@ -218,8 +218,9 @@ namespace registro_mockup.clases
 
         public static int EditarCortoHistoria(MySqlConnection conexion, CortoHistoria ch)
         {
+
             int retorno;
-            string consulta = String.Format("UPDATE cortohistoria SET id = '{0}', titulo = '{1}', autor = '{2}', fechaPublicacion = '{3}', editorial = '{4}', continuable = '{5}', finalizada = '{6}', valoracion = '{7}', id_usuario ='{8}'" +
+            string consulta = String.Format("UPDATE cortohistoria SET id = '{0}', titulo = '{1}', autor = '{2}', fechaPublicacion = '{3}', categoria = '{4}', continuable = '{5}', finalizada = '{6}', valoracion = '{7}', id_usuario ='{8}'" +
                                             "WHERE id = '{0}'", ch.Id, ch.Titulo, ch.Autor, ch.FechaPublicacion.ToString("yyyy-MM-dd"), ch.Categoria,ch.continuable,ch.finalizada,ch.Valoracion,ch.Id_usuario);
 
             MySqlCommand comando = new MySqlCommand(consulta, conexion);

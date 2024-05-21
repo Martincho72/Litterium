@@ -30,11 +30,11 @@ namespace registro_mockup.formularios_administrador
                 }
                 else
                 {
+                    
                     lblErrores.Text = "No existe el ID";
                 }
             }
 
-            else { }
             basedatos.CerrarConexion();
         }
 
