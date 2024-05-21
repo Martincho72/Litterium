@@ -40,20 +40,20 @@
             this.lblAutorLibro = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.btnValorar = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.btnComprarAhora = new FontAwesome.Sharp.IconButton();
+            this.btnAgreagarAlCarrito = new FontAwesome.Sharp.IconButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cmbValorar = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.rdbCopiaOnline = new System.Windows.Forms.RadioButton();
+            this.rdbCopiaFisica = new System.Windows.Forms.RadioButton();
+            this.lblEjemplares = new System.Windows.Forms.Label();
+            this.nupCantidad = new System.Windows.Forms.NumericUpDown();
             this.lblPrecioLibro = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtSinopsis = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblSinopsis = new System.Windows.Forms.Label();
             this.pcbPortadaLibro = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -65,7 +65,7 @@
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupCantidad)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbPortadaLibro)).BeginInit();
             this.SuspendLayout();
@@ -189,8 +189,8 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.18575F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.81425F));
             this.tableLayoutPanel4.Controls.Add(this.btnValorar, 1, 1);
-            this.tableLayoutPanel4.Controls.Add(this.iconButton2, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.iconButton1, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.btnComprarAhora, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.btnAgreagarAlCarrito, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.groupBox1, 1, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Right;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(203, 3);
@@ -208,7 +208,7 @@
             this.btnValorar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnValorar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnValorar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnValorar.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckDollar;
+            this.btnValorar.IconChar = FontAwesome.Sharp.IconChar.StarHalfAlt;
             this.btnValorar.IconColor = System.Drawing.Color.Black;
             this.btnValorar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnValorar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -221,40 +221,40 @@
             this.btnValorar.UseVisualStyleBackColor = false;
             this.btnValorar.Click += new System.EventHandler(this.btnValorar_Click);
             // 
-            // iconButton2
+            // btnComprarAhora
             // 
-            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.iconButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckDollar;
-            this.iconButton2.IconColor = System.Drawing.Color.Black;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton2.Location = new System.Drawing.Point(3, 49);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(215, 41);
-            this.iconButton2.TabIndex = 19;
-            this.iconButton2.Text = "COMPRAR AHORA";
-            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.UseVisualStyleBackColor = false;
-            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
+            this.btnComprarAhora.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnComprarAhora.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnComprarAhora.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnComprarAhora.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckDollar;
+            this.btnComprarAhora.IconColor = System.Drawing.Color.Black;
+            this.btnComprarAhora.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnComprarAhora.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnComprarAhora.Location = new System.Drawing.Point(3, 49);
+            this.btnComprarAhora.Name = "btnComprarAhora";
+            this.btnComprarAhora.Size = new System.Drawing.Size(215, 41);
+            this.btnComprarAhora.TabIndex = 19;
+            this.btnComprarAhora.Text = "COMPRAR AHORA";
+            this.btnComprarAhora.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnComprarAhora.UseVisualStyleBackColor = false;
+            this.btnComprarAhora.Click += new System.EventHandler(this.iconButton2_Click);
             // 
-            // iconButton1
+            // btnAgreagarAlCarrito
             // 
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.BasketShopping;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton1.Location = new System.Drawing.Point(3, 3);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(215, 40);
-            this.iconButton1.TabIndex = 18;
-            this.iconButton1.Text = "AÑADIR AL CARRITO";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.UseVisualStyleBackColor = false;
+            this.btnAgreagarAlCarrito.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnAgreagarAlCarrito.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAgreagarAlCarrito.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgreagarAlCarrito.IconChar = FontAwesome.Sharp.IconChar.BasketShopping;
+            this.btnAgreagarAlCarrito.IconColor = System.Drawing.Color.Black;
+            this.btnAgreagarAlCarrito.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAgreagarAlCarrito.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgreagarAlCarrito.Location = new System.Drawing.Point(3, 3);
+            this.btnAgreagarAlCarrito.Name = "btnAgreagarAlCarrito";
+            this.btnAgreagarAlCarrito.Size = new System.Drawing.Size(215, 40);
+            this.btnAgreagarAlCarrito.TabIndex = 18;
+            this.btnAgreagarAlCarrito.Text = "AÑADIR AL CARRITO";
+            this.btnAgreagarAlCarrito.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgreagarAlCarrito.UseVisualStyleBackColor = false;
             // 
             // groupBox1
             // 
@@ -306,58 +306,58 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.radioButton1);
-            this.panel5.Controls.Add(this.radioButton2);
-            this.panel5.Controls.Add(this.label2);
-            this.panel5.Controls.Add(this.numericUpDown1);
+            this.panel5.Controls.Add(this.rdbCopiaOnline);
+            this.panel5.Controls.Add(this.rdbCopiaFisica);
+            this.panel5.Controls.Add(this.lblEjemplares);
+            this.panel5.Controls.Add(this.nupCantidad);
             this.panel5.Controls.Add(this.lblPrecioLibro);
             this.panel5.Location = new System.Drawing.Point(503, 3);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(266, 189);
             this.panel5.TabIndex = 21;
             // 
-            // radioButton1
+            // rdbCopiaOnline
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(122, 138);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(112, 17);
-            this.radioButton1.TabIndex = 7;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "COPIA ONLINE";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.rdbCopiaOnline.AutoSize = true;
+            this.rdbCopiaOnline.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbCopiaOnline.Location = new System.Drawing.Point(122, 138);
+            this.rdbCopiaOnline.Name = "rdbCopiaOnline";
+            this.rdbCopiaOnline.Size = new System.Drawing.Size(112, 17);
+            this.rdbCopiaOnline.TabIndex = 7;
+            this.rdbCopiaOnline.TabStop = true;
+            this.rdbCopiaOnline.Text = "COPIA ONLINE";
+            this.rdbCopiaOnline.UseVisualStyleBackColor = true;
+            this.rdbCopiaOnline.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
-            // radioButton2
+            // rdbCopiaFisica
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(20, 138);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(105, 17);
-            this.radioButton2.TabIndex = 6;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "COPIA FISICA";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdbCopiaFisica.AutoSize = true;
+            this.rdbCopiaFisica.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbCopiaFisica.Location = new System.Drawing.Point(20, 138);
+            this.rdbCopiaFisica.Name = "rdbCopiaFisica";
+            this.rdbCopiaFisica.Size = new System.Drawing.Size(105, 17);
+            this.rdbCopiaFisica.TabIndex = 6;
+            this.rdbCopiaFisica.TabStop = true;
+            this.rdbCopiaFisica.Text = "COPIA FISICA";
+            this.rdbCopiaFisica.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // lblEjemplares
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(16, 106);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 20);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Ejemplares :";
+            this.lblEjemplares.AutoSize = true;
+            this.lblEjemplares.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEjemplares.Location = new System.Drawing.Point(16, 106);
+            this.lblEjemplares.Name = "lblEjemplares";
+            this.lblEjemplares.Size = new System.Drawing.Size(96, 20);
+            this.lblEjemplares.TabIndex = 5;
+            this.lblEjemplares.Text = "Ejemplares :";
             // 
-            // numericUpDown1
+            // nupCantidad
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(112, 108);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(99, 20);
-            this.numericUpDown1.TabIndex = 4;
-            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            this.nupCantidad.Location = new System.Drawing.Point(112, 108);
+            this.nupCantidad.Name = "nupCantidad";
+            this.nupCantidad.Size = new System.Drawing.Size(99, 20);
+            this.nupCantidad.TabIndex = 4;
+            this.nupCantidad.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // lblPrecioLibro
             // 
@@ -372,7 +372,7 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.txtSinopsis);
-            this.panel4.Controls.Add(this.label1);
+            this.panel4.Controls.Add(this.lblSinopsis);
             this.panel4.Location = new System.Drawing.Point(198, 3);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(299, 189);
@@ -380,24 +380,26 @@
             // 
             // txtSinopsis
             // 
+            this.txtSinopsis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.txtSinopsis.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSinopsis.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtSinopsis.Enabled = false;
             this.txtSinopsis.Location = new System.Drawing.Point(0, 24);
             this.txtSinopsis.Multiline = true;
             this.txtSinopsis.Name = "txtSinopsis";
+            this.txtSinopsis.ReadOnly = true;
             this.txtSinopsis.Size = new System.Drawing.Size(299, 165);
             this.txtSinopsis.TabIndex = 1;
             // 
-            // label1
+            // lblSinopsis
             // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Sinopsis";
+            this.lblSinopsis.AutoSize = true;
+            this.lblSinopsis.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblSinopsis.Font = new System.Drawing.Font("MS Reference Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSinopsis.Location = new System.Drawing.Point(0, 0);
+            this.lblSinopsis.Name = "lblSinopsis";
+            this.lblSinopsis.Size = new System.Drawing.Size(99, 24);
+            this.lblSinopsis.TabIndex = 0;
+            this.lblSinopsis.Text = "Sinopsis";
             // 
             // pcbPortadaLibro
             // 
@@ -432,7 +434,7 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupCantidad)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbPortadaLibro)).EndInit();
@@ -445,14 +447,14 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.RadioButton rdbCopiaOnline;
+        private System.Windows.Forms.RadioButton rdbCopiaFisica;
+        private System.Windows.Forms.Label lblEjemplares;
+        private System.Windows.Forms.NumericUpDown nupCantidad;
         private System.Windows.Forms.Label lblPrecioLibro;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox txtSinopsis;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblSinopsis;
         private System.Windows.Forms.PictureBox pcbPortadaLibro;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
@@ -461,8 +463,8 @@
         private System.Windows.Forms.Label lblValoracion;
         private System.Windows.Forms.Label lblAutorLibro;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton btnComprarAhora;
+        private FontAwesome.Sharp.IconButton btnAgreagarAlCarrito;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Label label3;

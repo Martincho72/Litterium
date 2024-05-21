@@ -16,15 +16,13 @@ namespace registro_mockup.Principal
         BDatos basedatos=new BDatos();
         private string usuariomenu;
         private string isbnLibro;
-        private string titulo;
-        public InformacionLibro(string titul,string usuario)
+        public InformacionLibro(string titulo,string usuario)
         {
             InitializeComponent();
-            this.titulo = titul;
             usuariomenu = usuario;
             if (basedatos.AbrirConexion())
             {
-                Libro l1 = Libro.EncontrarDatosLibroTitulo(basedatos.Conexion, this.titulo);
+                Libro l1 = Libro.EncontrarDatosLibroTitulo(basedatos.Conexion, titulo);
                 isbnLibro = l1.Isbn;
                 lblAutorLibro.Text = "Autor: " + l1.Autor;
                 lblTituloLibro.Text = "Titulo: " + l1.Titulo;
@@ -73,7 +71,7 @@ namespace registro_mockup.Principal
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
-            Comprar form = new Comprar();
+            Comprar form = new Comprar(isbnLibro, usuariomenu, (int)nupCantidad.Value);
             form.ShowDialog();
         }
 
