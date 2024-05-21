@@ -1,4 +1,5 @@
 ﻿using registro_mockup;
+using registro_mockup.Principal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,8 @@ namespace Litterium
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmLogIn());
+           
+          
         }
     }
 }

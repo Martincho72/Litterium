@@ -30,7 +30,7 @@ namespace registro_mockup.formularios_administrador
                 txtTitulo.Text = ch.Titulo;
                 txtAutor.Text = ch.Autor;
                 dtpFechaPublicacion.Value = ch.FechaPublicacion;
-                txtEditorial.Text = ch.Categoria;
+                txtCategoria.Text = ch.Categoria;
                 txtValoracion.Text = ch.Valoracion.ToString();
                 txtIdUsuario.Text = ch.Id_usuario.ToString();
                 chbContinuable.Checked = ch.Continuable;
@@ -38,11 +38,24 @@ namespace registro_mockup.formularios_administrador
             }
             else { }
             basedatos.CerrarConexion();
+
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+                CortoHistoria corto = new CortoHistoria(int.Parse(txtId.Text), txtTitulo.Text, txtAutor.Text, dtpFechaPublicacion.Value, txtCategoria.Text, chbContinuable.Checked, chbFinalizada.Checked, double.Parse(txtValoracion.Text), int.Parse(txtIdUsuario.Text));
+                CortoHistoria.EditarCortoHistoria(basedatos.Conexion, corto);
+                this.Close();
+            }
+            else { }
+            basedatos.CerrarConexion();
         }
     }
 }

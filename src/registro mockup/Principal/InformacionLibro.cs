@@ -14,12 +14,18 @@ namespace registro_mockup.Principal
     public partial class InformacionLibro : Form
     {
         private Libro libro;
-        public InformacionLibro(Libro l1)
+        BDatos basedatos=new BDatos();
+        private string usuariomenu;
+        private string isbnLibro;
+        public InformacionLibro(Libro l1,string usuario)
         {
             InitializeComponent();
+            usuariomenu = usuario;
+            isbnLibro = l1.Isbn;
             libro = l1;
             lblAutorLibro.Text = "Autor: " + l1.Autor;
             lblTituloLibro.Text="Titulo: " + l1.Titulo;
+            lblValoracion.Text ="Valoracion: " + l1.Valoracion;
             txtSinopsis.Text=l1.Sinopsis;
             pcbPortadaLibro.Image=l1.Portada;
             lblPrecioLibro.Text = "Precio: " + l1.Precio+"€";
@@ -40,21 +46,56 @@ namespace registro_mockup.Principal
 
         }
 
-        private void btnComprarAhora_Click(object sender, EventArgs e)
-        {
-            Comprar form = new Comprar();
-            form.ShowDialog();
-
-        }
-
         private void InformacionLibro_Load(object sender, EventArgs e)
         {
-
+            cmbValorar.SelectedIndex = 4;
         }
 
         private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            Comprar form = new Comprar();
+            form.ShowDialog();
+        }
+
+        private void btnValorar_Click(object sender, EventArgs e)
+        {
+            
+            if (basedatos.AbrirConexion())
+            {
+                Usuario usu = Usuario.EncontrarDatosUsuario(basedatos.Conexion, usuariomenu);
+
+                if (!Valoracion.EncontrarValoracion(basedatos.Conexion,usu.Id,isbnLibro ))
+                {
+                    Valoracion.insertarValoracion(basedatos.Conexion,isbnLibro,usu.Id, int.Parse(cmbValorar.Text));
+
+                }
+                else
+                {
+                    Valoracion.EditarValoracion(basedatos.Conexion,usu.Id, isbnLibro, int.Parse(cmbValorar.Text));
+                }
+                Libro l1 = Libro.EncontrarDatosLibro(basedatos.Conexion, isbnLibro);
+                lblValoracion.Text = "Valoracion: " + l1.Valoracion;
+            }
+            else
+            {
+
+            }
+            basedatos.CerrarConexion();
         }
     }
 }

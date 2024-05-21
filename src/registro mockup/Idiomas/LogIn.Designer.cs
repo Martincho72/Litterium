@@ -115,6 +115,15 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Editar.
+        /// </summary>
+        internal static string btnCargarEditarLibro {
+            get {
+                return ResourceManager.GetString("btnCargarEditarLibro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Cargar.
         /// </summary>
         internal static string btnCargarImagenEditarUsuario {
@@ -138,6 +147,15 @@ namespace registro_mockup.Idiomas {
         internal static string btnCortohistorias {
             get {
                 return ResourceManager.GetString("btnCortohistorias", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Editar.
+        /// </summary>
+        internal static string btnCrearEditarLibro {
+            get {
+                return ResourceManager.GetString("btnCrearEditarLibro", resourceCulture);
             }
         }
         
@@ -385,11 +403,29 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Autor:.
+        /// </summary>
+        internal static string lblAutorEditarLibro {
+            get {
+                return ResourceManager.GetString("lblAutorEditarLibro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a AUTOR : .
         /// </summary>
         internal static string lblAutorLibro {
             get {
                 return ResourceManager.GetString("lblAutorLibro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Categoría:.
+        /// </summary>
+        internal static string lblCategoriaEditarLibro {
+            get {
+                return ResourceManager.GetString("lblCategoriaEditarLibro", resourceCulture);
             }
         }
         
@@ -538,6 +574,15 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Error.
+        /// </summary>
+        internal static string lblErroresEditarLibro {
+            get {
+                return ResourceManager.GetString("lblErroresEditarLibro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Mensaje Error.
         /// </summary>
         internal static string lblErroresEliminarCortohistoria {
@@ -601,6 +646,24 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Max. Caracteres: 150.
+        /// </summary>
+        internal static string lblInfoSinopsisEditarLibro {
+            get {
+                return ResourceManager.GetString("lblInfoSinopsisEditarLibro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a ISBN:.
+        /// </summary>
+        internal static string lblISBNEditarLibro {
+            get {
+                return ResourceManager.GetString("lblISBNEditarLibro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a ISBN.
         /// </summary>
         internal static string lblIsbnEliminarLibro {
@@ -633,6 +696,15 @@ namespace registro_mockup.Idiomas {
         internal static string lblMejorvaloradosLibros {
             get {
                 return ResourceManager.GetString("lblMejorvaloradosLibros", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Editar Libro.
+        /// </summary>
+        internal static string lblMensajeEditarLibro {
+            get {
+                return ResourceManager.GetString("lblMensajeEditarLibro", resourceCulture);
             }
         }
         
@@ -709,6 +781,15 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Precio:.
+        /// </summary>
+        internal static string lblPrecioEditarLibro {
+            get {
+                return ResourceManager.GetString("lblPrecioEditarLibro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Recomendados por Litterium :.
         /// </summary>
         internal static string lblRecomendadosCortohistorias {
@@ -754,6 +835,15 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Sinopsis:.
+        /// </summary>
+        internal static string lblSinopsisEditarLibro {
+            get {
+                return ResourceManager.GetString("lblSinopsisEditarLibro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Teléfono.
         /// </summary>
         internal static string lblTelefono {
@@ -795,6 +885,15 @@ namespace registro_mockup.Idiomas {
         internal static string lblTituloCrearCortohistoria {
             get {
                 return ResourceManager.GetString("lblTituloCrearCortohistoria", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Titulo:.
+        /// </summary>
+        internal static string lblTituloEditarLibro {
+            get {
+                return ResourceManager.GetString("lblTituloEditarLibro", resourceCulture);
             }
         }
         
@@ -858,6 +957,15 @@ namespace registro_mockup.Idiomas {
         internal static string lblUsuarioEliminarUsuario {
             get {
                 return ResourceManager.GetString("lblUsuarioEliminarUsuario", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Valoración:.
+        /// </summary>
+        internal static string lblValoracionEditarLibro {
+            get {
+                return ResourceManager.GetString("lblValoracionEditarLibro", resourceCulture);
             }
         }
         
@@ -939,6 +1047,15 @@ namespace registro_mockup.Idiomas {
         internal static string TituloCrearCortohistoria {
             get {
                 return ResourceManager.GetString("TituloCrearCortohistoria", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Editar Libro.
+        /// </summary>
+        internal static string TituloEditarLibro {
+            get {
+                return ResourceManager.GetString("TituloEditarLibro", resourceCulture);
             }
         }
         

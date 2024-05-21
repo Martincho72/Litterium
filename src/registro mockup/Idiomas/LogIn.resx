@@ -135,6 +135,9 @@
   <data name="btnBorrar" xml:space="preserve">
     <value>Borrar</value>
   </data>
+  <data name="btnCargarEditarLibro" xml:space="preserve">
+    <value>Editar</value>
+  </data>
   <data name="btnCargarImagenEditarUsuario" xml:space="preserve">
     <value>Cargar</value>
   </data>
@@ -143,6 +146,9 @@
   </data>
   <data name="btnCortohistorias" xml:space="preserve">
     <value>Cortohistorias</value>
+  </data>
+  <data name="btnCrearEditarLibro" xml:space="preserve">
+    <value>Editar</value>
   </data>
   <data name="btnCS" xml:space="preserve">
     <value>Cerrar Sesión</value>
@@ -225,8 +231,14 @@
   <data name="lblAdministradores" xml:space="preserve">
     <value>Administradores</value>
   </data>
+  <data name="lblAutorEditarLibro" xml:space="preserve">
+    <value>Autor:</value>
+  </data>
   <data name="lblAutorLibro" xml:space="preserve">
     <value>AUTOR : </value>
+  </data>
+  <data name="lblCategoriaEditarLibro" xml:space="preserve">
+    <value>Categoría:</value>
   </data>
   <data name="lblCCV" xml:space="preserve">
     <value>CCV :</value>
@@ -276,6 +288,9 @@
   <data name="lblErrorEditarUsuario" xml:space="preserve">
     <value>Mensaje Error</value>
   </data>
+  <data name="lblErroresEditarLibro" xml:space="preserve">
+    <value>Error</value>
+  </data>
   <data name="lblErroresEliminarCortohistoria" xml:space="preserve">
     <value>Mensaje Error</value>
   </data>
@@ -297,6 +312,12 @@
   <data name="lblImporteTotal" xml:space="preserve">
     <value>Importe total : 0,00€</value>
   </data>
+  <data name="lblInfoSinopsisEditarLibro" xml:space="preserve">
+    <value>Max. Caracteres: 150</value>
+  </data>
+  <data name="lblISBNEditarLibro" xml:space="preserve">
+    <value>ISBN:</value>
+  </data>
   <data name="lblIsbnEliminarLibro" xml:space="preserve">
     <value>ISBN</value>
   </data>
@@ -308,6 +329,9 @@
   </data>
   <data name="lblMejorvaloradosLibros" xml:space="preserve">
     <value>Mejor valorados por los usuarios:</value>
+  </data>
+  <data name="lblMensajeEditarLibro" xml:space="preserve">
+    <value>Editar Libro</value>
   </data>
   <data name="lblMensajeEditarUsuario" xml:space="preserve">
     <value>Editar Usuario</value>
@@ -333,6 +357,9 @@
   <data name="lblNumeroTarjeta" xml:space="preserve">
     <value>Numero tarjeta :</value>
   </data>
+  <data name="lblPrecioEditarLibro" xml:space="preserve">
+    <value>Precio:</value>
+  </data>
   <data name="lblRecomendadosCortohistorias" xml:space="preserve">
     <value>Recomendados por Litterium :</value>
   </data>
@@ -348,6 +375,9 @@
   <data name="lblSinopsis" xml:space="preserve">
     <value>Sinopsis</value>
   </data>
+  <data name="lblSinopsisEditarLibro" xml:space="preserve">
+    <value>Sinopsis:</value>
+  </data>
   <data name="lblTelefono" xml:space="preserve">
     <value>Teléfono</value>
   </data>
@@ -362,6 +392,9 @@
   </data>
   <data name="lblTituloCrearCortohistoria" xml:space="preserve">
     <value>Titulo :</value>
+  </data>
+  <data name="lblTituloEditarLibro" xml:space="preserve">
+    <value>Titulo:</value>
   </data>
   <data name="lblTituloLibro" xml:space="preserve">
     <value>TITULO :</value>
@@ -383,6 +416,9 @@
   </data>
   <data name="lblUsuarioEliminarUsuario" xml:space="preserve">
     <value>Usuario</value>
+  </data>
+  <data name="lblValoracionEditarLibro" xml:space="preserve">
+    <value>Valoración:</value>
   </data>
   <data name="lblValoracionLibro" xml:space="preserve">
     <value>Valoración : </value>
@@ -410,6 +446,9 @@
   </data>
   <data name="TituloCrearCortohistoria" xml:space="preserve">
     <value>Crear Cortohistoria</value>
+  </data>
+  <data name="TituloEditarLibro" xml:space="preserve">
+    <value>Editar Libro</value>
   </data>
   <data name="TituloEditarUsuario" xml:space="preserve">
     <value>Editar Usuario</value>
