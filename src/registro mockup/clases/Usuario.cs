@@ -9,6 +9,7 @@ using System.Drawing.Imaging;
 using System.Drawing;
 using System.IO;
 using registro_mockup.Properties;
+using Org.BouncyCastle.Bcpg.OpenPgp;
 
 namespace registro_mockup
 {
@@ -335,12 +336,10 @@ namespace registro_mockup
         public static int ObtenerID(MySqlConnection conexion, string usuario)
         {
             int idusu = 0;
-            string consulta = "SELECT id FROM usuarios WHERE usuario = @usuario";
+            string consulta = string.Format("SELECT id FROM usuarios WHERE usuario = '{0}'",usuario);
 
             using (MySqlCommand comando = new MySqlCommand(consulta, conexion))
             {
-                comando.Parameters.AddWithValue("@usuario", usuario);
-
                 using (MySqlDataReader reader = comando.ExecuteReader())
                 {
                     if (reader.HasRows)

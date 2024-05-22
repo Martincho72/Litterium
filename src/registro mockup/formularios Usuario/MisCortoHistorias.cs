@@ -28,7 +28,8 @@ namespace registro_mockup.formularios_Usuario
                 if (bDatos.AbrirConexion())
                 {
                     int idUsuario = Usuario.ObtenerID(bDatos.Conexion, usuariomenu);
-                    dgvCortoHistorias.DataSource = CortoHistoria.BuscarCortoHistoriasUsuario(bDatos.Conexion, idUsuario);
+                
+                    dgvCortoHistorias.DataSource = CortoHistoria.BuscarCortoHistoriaUsuario(bDatos.Conexion, idUsuario);
                 }
             }
             finally
@@ -49,16 +50,17 @@ namespace registro_mockup.formularios_Usuario
 
                     if (estado)
                     {
-                        e.CellStyle.BackColor = Color.Red;
+                        e.CellStyle.BackColor = Color.DarkGreen;
                     }
                     else
                     {
-                        e.CellStyle.BackColor = Color.DarkGreen;
+                        e.CellStyle.BackColor = Color.Red;
 
                     }
                 }
             }
         }
+       
 
         private void MisCortoHistorias_Load_1(object sender, EventArgs e)
         {
