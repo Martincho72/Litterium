@@ -30,13 +30,18 @@ namespace registro_mockup.formularios_Usuario
                 if (bDatos.AbrirConexion())
                 {
                     int idUsuario = Usuario.ObtenerID(bDatos.Conexion, usuariomenu);
-                  //  dgvBorradores.DataSource = CortoHistoria.BuscarLibros(bDatos.Conexion, idUsuario);
+                    dgvLibros.DataSource = Ejemplar.BuscarEjemplaresOnline(bDatos.Conexion, idUsuario);
                 }
             }
             finally
             {
                 bDatos.CerrarConexion();
             }
+        }
+
+        private void MisLibros_Load(object sender, EventArgs e)
+        {
+            CargaLibros();
         }
     }
 
