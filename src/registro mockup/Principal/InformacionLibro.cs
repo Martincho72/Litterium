@@ -110,9 +110,9 @@ namespace registro_mockup.Principal
 
         private void btnComprarAhora_Click(object sender, EventArgs e)
         {
-            Comprar form = new Comprar(isbnLibro, usuariomenu, (int)nupCantidad.Value, rdbCopiaFisica.Checked);
+            LibroPrincipal menuP = new LibroPrincipal(usuariomenu);
+            Comprar form = new Comprar(isbnLibro, usuariomenu, (int)nupCantidad.Value, rdbCopiaFisica.Checked, menuP);
             form.ShowDialog();
-            this.Close();
         }
     }
 }

@@ -126,7 +126,6 @@ namespace registro_mockup.Principal
         {
             if (currentForm != null)
             {
-                currentForm.Close();
             }
             currentForm = childForm;
             childForm.TopLevel = false;
