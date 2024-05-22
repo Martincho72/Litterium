@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnAC" xml:space="preserve">
-    <value>Administracion CortoHistoria</value>
+    <value>Administración Cortohistoria</value>
   </data>
   <data name="btnAgregarLibroAdmin" xml:space="preserve">
     <value>Agregar Libro</value>
@@ -139,31 +139,31 @@
     <value>Borradores</value>
   </data>
   <data name="btnBorrar" xml:space="preserve">
-    <value>Borrar</value>
+    <value>Delete</value>
   </data>
   <data name="btnBuscarCortohistoria" xml:space="preserve">
-    <value>Buscar</value>
+    <value>Search</value>
   </data>
   <data name="btnBuscarLibro" xml:space="preserve">
-    <value>Buscar</value>
+    <value>Search</value>
   </data>
   <data name="btnBuscarUsuario" xml:space="preserve">
-    <value>Buscar</value>
+    <value>Search</value>
   </data>
   <data name="btnCargarAgregarLibro" xml:space="preserve">
-    <value>Cargar</value>
+    <value>Load</value>
   </data>
   <data name="btnCargarEditarLibro" xml:space="preserve">
-    <value>Editar</value>
+    <value>Edit</value>
   </data>
   <data name="btnCargarImagenEditarUsuario" xml:space="preserve">
-    <value>Cargar</value>
+    <value>Load</value>
   </data>
   <data name="btnCargarMiCuenta" xml:space="preserve">
-    <value>Cargar</value>
+    <value>Load</value>
   </data>
   <data name="btnComprarAhora" xml:space="preserve">
-    <value>COMPRAR AHORA</value>
+    <value>BUY NOW</value>
   </data>
   <data name="btnConfirmarEdicionMiCuenta" xml:space="preserve">
     <value>Confirmar Edición</value>
@@ -172,58 +172,58 @@
     <value>Cortohistorias</value>
   </data>
   <data name="btnCrearAgregarLibro" xml:space="preserve">
-    <value>Añadir</value>
+    <value>Add</value>
   </data>
   <data name="btnCrearAgregarUsuario" xml:space="preserve">
-    <value>Añadir</value>
+    <value>Add</value>
   </data>
   <data name="btnCrearEditarLibro" xml:space="preserve">
-    <value>Editar</value>
+    <value>Edit</value>
   </data>
   <data name="btnCS" xml:space="preserve">
     <value>Cerrar Sesión</value>
   </data>
   <data name="btnEditarCortohistoria" xml:space="preserve">
-    <value>Editar</value>
+    <value>Edit</value>
   </data>
   <data name="btnEditarCortohistoriaAdmin" xml:space="preserve">
     <value>Editar Cortohistoria</value>
   </data>
   <data name="btnEditarLibroAdmin" xml:space="preserve">
-    <value>Editar Libro</value>
+    <value>Edit Book</value>
   </data>
   <data name="btnEditarMiCuenta" xml:space="preserve">
-    <value>Editar</value>
+    <value>Edit</value>
   </data>
   <data name="btnEditarUsuario" xml:space="preserve">
-    <value>Editar</value>
+    <value>Edit</value>
   </data>
   <data name="btnEditarUsuarioAdmin" xml:space="preserve">
-    <value>Editar Usuario</value>
+    <value>Edit User</value>
   </data>
   <data name="btnEliminarCortohistoria" xml:space="preserve">
-    <value>Eliminar</value>
+    <value>Delete</value>
   </data>
   <data name="btnEliminarCortohistoriaAdmin" xml:space="preserve">
     <value>Eliminar Cortohistoria</value>
   </data>
   <data name="btnEliminarLibro" xml:space="preserve">
-    <value>Eliminar</value>
+    <value>Delete</value>
   </data>
   <data name="btnEliminarLibroAdmin" xml:space="preserve">
-    <value>Eliminar Libro</value>
+    <value>Delete Book</value>
   </data>
   <data name="btnEliminarUsuario" xml:space="preserve">
-    <value>Eliminar</value>
+    <value>Delete</value>
   </data>
   <data name="btnEliminarUsuarioAdmin" xml:space="preserve">
-    <value>Eliminar Usuario</value>
+    <value>Delete User</value>
   </data>
   <data name="btnLibros" xml:space="preserve">
-    <value>Libros</value>
+    <value>Books</value>
   </data>
   <data name="btnLogin" xml:space="preserve">
-    <value>Iniciar Sesión</value>
+    <value>Log In</value>
   </data>
   <data name="btnMiCarrito" xml:space="preserve">
     <value>Mi carrito</value>
