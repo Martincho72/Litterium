@@ -180,6 +180,15 @@ namespace registro_mockup.Idiomas {
         /// <summary>
         ///   Busca una cadena traducida similar a Cargar.
         /// </summary>
+        internal static string btnCargarImagenCortohistoria {
+            get {
+                return ResourceManager.GetString("btnCargarImagenCortohistoria", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cargar.
+        /// </summary>
         internal static string btnCargarImagenEditarUsuario {
             get {
                 return ResourceManager.GetString("btnCargarImagenEditarUsuario", resourceCulture);
@@ -489,6 +498,15 @@ namespace registro_mockup.Idiomas {
         internal static string btnUser {
             get {
                 return ResourceManager.GetString("btnUser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Ver como.
+        /// </summary>
+        internal static string btnVerComoPDF {
+            get {
+                return ResourceManager.GetString("btnVerComoPDF", resourceCulture);
             }
         }
         

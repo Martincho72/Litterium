@@ -156,6 +156,9 @@
   <data name="btnCargarEditarLibro" xml:space="preserve">
     <value>Editar</value>
   </data>
+  <data name="btnCargarImagenCortohistoria" xml:space="preserve">
+    <value>Cargar</value>
+  </data>
   <data name="btnCargarImagenEditarUsuario" xml:space="preserve">
     <value>Cargar</value>
   </data>
@@ -260,6 +263,9 @@
   </data>
   <data name="btnUser" xml:space="preserve">
     <value>Mi perfil</value>
+  </data>
+  <data name="btnVerComoPDF" xml:space="preserve">
+    <value>Ver como</value>
   </data>
   <data name="chbAdmin" xml:space="preserve">
     <value>Admin</value>

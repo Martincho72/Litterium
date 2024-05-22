@@ -40,6 +40,9 @@
             this.btnBorradoresCortohistorias = new FontAwesome.Sharp.IconButton();
             this.btnBorrar = new FontAwesome.Sharp.IconButton();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.btnVerPDF = new FontAwesome.Sharp.IconButton();
+            this.txtCategoria = new System.Windows.Forms.TextBox();
+            this.lblCategoria = new System.Windows.Forms.Label();
             this.pcbPortada = new System.Windows.Forms.PictureBox();
             this.btnCargarImagenCortohistoria = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.btnPictureSeguirHistoria)).BeginInit();
@@ -103,7 +106,7 @@
             // 
             this.chbContinuarCortohistoria.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.chbContinuarCortohistoria.AutoSize = true;
-            this.chbContinuarCortohistoria.Location = new System.Drawing.Point(510, 537);
+            this.chbContinuarCortohistoria.Location = new System.Drawing.Point(864, 537);
             this.chbContinuarCortohistoria.Margin = new System.Windows.Forms.Padding(4);
             this.chbContinuarCortohistoria.Name = "chbContinuarCortohistoria";
             this.chbContinuarCortohistoria.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
@@ -118,7 +121,7 @@
             this.btnPictureSeguirHistoria.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPictureSeguirHistoria.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPictureSeguirHistoria.Image = global::registro_mockup.Properties.Resources.pregunta_removebg_preview;
-            this.btnPictureSeguirHistoria.Location = new System.Drawing.Point(663, 532);
+            this.btnPictureSeguirHistoria.Location = new System.Drawing.Point(1017, 532);
             this.btnPictureSeguirHistoria.Margin = new System.Windows.Forms.Padding(4);
             this.btnPictureSeguirHistoria.Name = "btnPictureSeguirHistoria";
             this.btnPictureSeguirHistoria.Size = new System.Drawing.Size(33, 25);
@@ -187,39 +190,47 @@
             // 
             this.toolTip1.Popup += new System.Windows.Forms.PopupEventHandler(this.toolTip1_Popup);
             // 
-            // pcbPortada
+            // btnVerPDF
             // 
-            this.pcbPortada.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pcbPortada.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo34;
-            this.pcbPortada.Location = new System.Drawing.Point(967, 127);
-            this.pcbPortada.Margin = new System.Windows.Forms.Padding(4);
-            this.pcbPortada.Name = "pcbPortada";
-            this.pcbPortada.Size = new System.Drawing.Size(161, 151);
-            this.pcbPortada.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbPortada.TabIndex = 56;
-            this.pcbPortada.TabStop = false;
+            this.btnVerPDF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btnVerPDF.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnVerPDF.IconChar = FontAwesome.Sharp.IconChar.FilePdf;
+            this.btnVerPDF.IconColor = System.Drawing.Color.Black;
+            this.btnVerPDF.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnVerPDF.Location = new System.Drawing.Point(919, 11);
+            this.btnVerPDF.Name = "btnVerPDF";
+            this.btnVerPDF.Size = new System.Drawing.Size(103, 48);
+            this.btnVerPDF.TabIndex = 10;
+            this.btnVerPDF.Text = "Ver Como ";
+            this.btnVerPDF.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnVerPDF.UseVisualStyleBackColor = false;
+            this.btnVerPDF.Click += new System.EventHandler(this.btnVerPDF_Click);
             // 
-            // btnCargarImagenCortohistoria
+            // txtCategoria
             // 
-            this.btnCargarImagenCortohistoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnCargarImagenCortohistoria.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargarImagenCortohistoria.Location = new System.Drawing.Point(967, 284);
-            this.btnCargarImagenCortohistoria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCargarImagenCortohistoria.Name = "btnCargarImagenCortohistoria";
-            this.btnCargarImagenCortohistoria.Size = new System.Drawing.Size(161, 60);
-            this.btnCargarImagenCortohistoria.TabIndex = 70;
-            this.btnCargarImagenCortohistoria.Text = "Cargar";
-            this.btnCargarImagenCortohistoria.UseVisualStyleBackColor = false;
-            this.btnCargarImagenCortohistoria.Click += new System.EventHandler(this.btnCargarImagenCortohistoria_Click);
+            this.txtCategoria.Location = new System.Drawing.Point(643, 519);
+            this.txtCategoria.Name = "txtCategoria";
+            this.txtCategoria.Size = new System.Drawing.Size(100, 22);
+            this.txtCategoria.TabIndex = 11;
+            // 
+            // lblCategoria
+            // 
+            this.lblCategoria.AutoSize = true;
+            this.lblCategoria.Location = new System.Drawing.Point(656, 497);
+            this.lblCategoria.Name = "lblCategoria";
+            this.lblCategoria.Size = new System.Drawing.Size(69, 16);
+            this.lblCategoria.TabIndex = 12;
+            this.lblCategoria.Text = "Categoría:";
             // 
             // CrearCortohistoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1191, 623);
-            this.Controls.Add(this.btnCargarImagenCortohistoria);
-            this.Controls.Add(this.pcbPortada);
+            this.ClientSize = new System.Drawing.Size(1067, 567);
+            this.Controls.Add(this.lblCategoria);
+            this.Controls.Add(this.txtCategoria);
+            this.Controls.Add(this.btnVerPDF);
             this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.btnBorradoresCortohistorias);
             this.Controls.Add(this.btnSubirCortohistoria);
@@ -254,7 +265,8 @@
         private FontAwesome.Sharp.IconButton btnBorradoresCortohistorias;
         private FontAwesome.Sharp.IconButton btnBorrar;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.PictureBox pcbPortada;
-        private System.Windows.Forms.Button btnCargarImagenCortohistoria;
+        private FontAwesome.Sharp.IconButton btnVerPDF;
+        private System.Windows.Forms.TextBox txtCategoria;
+        private System.Windows.Forms.Label lblCategoria;
     }
 }

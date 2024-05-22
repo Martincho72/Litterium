@@ -21,12 +21,14 @@ namespace registro_mockup.Principal
 {
     public partial class CrearCortohistoria : Form
     {
-        public CrearCortohistoria()
+        BDatos basedatos = new BDatos();
+        string usarioMenu;
+        public CrearCortohistoria(string usuarioMenu)
         {
             InitializeComponent();
 
             toolTip1.SetToolTip(btnPictureSeguirHistoria, "Al activar esta funcion permites que el resto de ususarios puedan continuar la cortohistoria.");
-
+            this.usarioMenu = usuarioMenu;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -66,6 +68,11 @@ namespace registro_mockup.Principal
             return text;
         }
         private void btnSubirCortohistoria_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVerPDF_Click(object sender, EventArgs e)
         {
             // Obtener el texto del cuerpo y el título
             string cuerpo = EncodeText(txtCortohistoriaCrear.Text); // Codificar el texto antes de guardar
