@@ -45,7 +45,9 @@ namespace registro_mockup.clases
             this.finalizada = finalizada;
             this.id_usuario= id_usuario;
         }
-        public CortoHistoria(int id,string titulo, string autor, DateTime fechaPublicacion, string categoria, bool continuable, bool finalizada, double valoracion, int id_usuario, Image portada) //Constructor para Mis CortoHistorias de Usuario
+       
+
+        public CortoHistoria(int id,string titulo, string autor, DateTime fechaPublicacion, string categoria, bool continuable, bool finalizada, double valoracion, int id_usuario, Image portada) 
         {
             this.id = id;
             this.titulo = titulo;
@@ -168,7 +170,7 @@ namespace registro_mockup.clases
         public static List<CortoHistoria> BuscarCortoHistoriaUsuario(MySqlConnection conexion,int id_usu) //Mis CortoHistorias Usuario
         {
             List<CortoHistoria> lista = new List<CortoHistoria>();
-            string consulta = string.Format("SELECT titulo,autor,fechaPublicacion,finalizada,id_usuario from cortohistoria WHERE id_usuario='{0}'",id_usu);
+            string consulta = string.Format("SELECT id, titulo, autor, fechaPublicacion, categoria, continuable, finalizada, valoracion, imagen from cortohistoria where id_usuario = {0}", id_usu);
 
             // Creamos el objeto command al cual le pasamos la consulta y la conexión
             MySqlCommand comando = new MySqlCommand(consulta, conexion);
@@ -181,14 +183,19 @@ namespace registro_mockup.clases
                 // Recorremos el reader (registro por registro) y cargamos la lista de empleados.
                 while (reader.Read())
                 {
-                    string titulo = reader.GetString(0);
-                    string autor = reader.GetString(1);
-                    DateTime fecha = reader.GetDateTime(2);
-                    bool finalizada = reader.GetBoolean(3);
-                    int id_usuario = reader.GetInt32(4);
+                    int id = reader.GetInt32(0);
+                    string titulo = reader.GetString(1);
+                    string autor = reader.GetString(2);
+                    DateTime fecha = reader.GetDateTime(3);
+                    string categoria = reader.GetString(4);
+                    bool continuable = reader.GetBoolean(5);
+                    bool finalizada = reader.GetBoolean(6);
+                    double valoracion = reader.GetDouble(7);
+                    Image portada = null;
+
 
                     // Crear el objeto Usuario y agregarlo a la lista
-                    CortoHistoria ch = new CortoHistoria(titulo, autor, fecha,finalizada, id_usuario);
+                    CortoHistoria ch = new CortoHistoria(id, titulo, autor, fecha, categoria, continuable, finalizada,valoracion,id_usu, portada);
                     lista.Add(ch);
                 }
 
@@ -304,7 +311,7 @@ namespace registro_mockup.clases
         public static List<CortoHistoria> BuscarBorradores(MySqlConnection conexion,int idUsuario)
         {
             List<CortoHistoria> lista = new List<CortoHistoria>();
-            string consulta = string.Format("SELECT id, titulo, autor, fechaPublicacion, categoria, continuable, finalizada from cortohistoria where finalizada = 0 and id_usuario = {0}", idUsuario);
+            string consulta = string.Format("SELECT id, titulo, autor, fechaPublicacion, categoria, continuable, finalizada, valoracion, id_usuario, imagen from cortohistoria where finalizada = 0 and id_usuario = {0}", idUsuario);
 
             // Creamos el objeto command al cual le pasamos la consulta y la conexión
             MySqlCommand comando = new MySqlCommand(consulta, conexion);
@@ -324,10 +331,11 @@ namespace registro_mockup.clases
                     string categoria = reader.GetString(4);
                     bool continuable = reader.GetBoolean(5);
                     bool finalizada = reader.GetBoolean(6);
-             //       double valoracion = reader.GetDouble(7);
+                    double valoracion = reader.GetDouble(7);
+                    Image portada = null;
 
                     // Crear el objeto Usuario y agregarlo a la lista
-                    CortoHistoria ch = new CortoHistoria(id, titulo, autor, fecha, categoria, continuable, finalizada);
+                    CortoHistoria ch = new CortoHistoria(id, titulo, autor, fecha, categoria, continuable, finalizada, valoracion,idUsuario,portada);
                     lista.Add(ch);
                 }
 
@@ -336,7 +344,7 @@ namespace registro_mockup.clases
             reader.Close();
             return lista;
         }
-        public static List<CortoHistoria> BuscarCortoHistoriasUsuario(MySqlConnection conexion, int idUsuario)
+        /*public static List<CortoHistoria> BuscarCortoHistoriasUsuario(MySqlConnection conexion, int idUsuario)
         {
             List<CortoHistoria> lista = new List<CortoHistoria>();
             string consulta = string.Format("SELECT id, titulo, autor, fechaPublicacion, categoria, continuable, finalizada from cortohistoria where id_usuario = {0}", idUsuario);
@@ -370,7 +378,7 @@ namespace registro_mockup.clases
             // devolvemos la lista cargada con los usuarios.
             reader.Close();
             return lista;
-        }
+        }*/
        
     }
 }
