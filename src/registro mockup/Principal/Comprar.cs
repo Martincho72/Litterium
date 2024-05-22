@@ -18,9 +18,15 @@ namespace registro_mockup.Principal
         private string isbnLibro;
         private bool online=false;
         private Form previousForm;
-        public Comprar()
+        public Comprar(string usuario)
         {
             InitializeComponent();
+            usuariomenu = usuario;
+            foreach (Ejemplar ejemplar in carrito.MiCarrito)
+            {
+                
+               
+            }
         }
 
         public Comprar(string isbn, string usuario, int cantidad, bool fisico, Form form)

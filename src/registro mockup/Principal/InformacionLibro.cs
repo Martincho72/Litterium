@@ -117,7 +117,18 @@ namespace registro_mockup.Principal
 
         private void btnAgreagarAlCarrito_Click(object sender, EventArgs e)
         {
+            if (basedatos.AbrirConexion())
+            {
+                Libro l1 = Libro.EncontrarDatosLibro(basedatos.Conexion, isbnLibro);
+                Usuario us1 = Usuario.EncontrarDatosUsuario(basedatos.Conexion, usuariomenu);
+                double precio = l1.importeTotal(double.Parse(lblPrecioLibro.Text), (int)nupCantidad.Value);
+                bool online = true;
+                if (rdbCopiaFisica.Checked) { online = false; }
 
+                Ejemplar ej1 = new Ejemplar(DateTime.Now, (decimal)precio, online, us1.Id, isbnLibro);
+                carrito.agregarAlCarrito(ej1);
+            }
+            else { }
         }
     }
 }

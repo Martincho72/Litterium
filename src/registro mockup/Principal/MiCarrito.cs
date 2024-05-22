@@ -1,4 +1,5 @@
-﻿using System;
+﻿using registro_mockup.clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,19 @@ namespace registro_mockup.Principal
         public MiCarrito()
         {
             InitializeComponent();
+        }
+
+        private void MiCarrito_Load(object sender, EventArgs e)
+        {
+            dgvMiCarrito.DataSource = carrito.MiCarrito;
+        }
+
+        private void btnPagar_Click(object sender, EventArgs e)
+        {
+
+            Comprar form = new Comprar();
+            form.ShowDialog();
+            
         }
     }
 }

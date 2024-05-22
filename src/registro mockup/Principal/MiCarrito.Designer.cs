@@ -40,7 +40,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvMiCarrito.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMiCarrito.Location = new System.Drawing.Point(9, 10);
-            this.dgvMiCarrito.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvMiCarrito.Margin = new System.Windows.Forms.Padding(2);
             this.dgvMiCarrito.Name = "dgvMiCarrito";
             this.dgvMiCarrito.RowHeadersWidth = 51;
             this.dgvMiCarrito.RowTemplate.Height = 24;
@@ -70,13 +70,14 @@
             this.btnPagar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnPagar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPagar.Location = new System.Drawing.Point(9, 323);
-            this.btnPagar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPagar.Margin = new System.Windows.Forms.Padding(2);
             this.btnPagar.Name = "btnPagar";
             this.btnPagar.Size = new System.Drawing.Size(124, 33);
             this.btnPagar.TabIndex = 2;
             this.btnPagar.Text = "Comprar";
             this.btnPagar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPagar.UseVisualStyleBackColor = false;
+            this.btnPagar.Click += new System.EventHandler(this.btnPagar_Click);
             // 
             // MiCarrito
             // 
@@ -87,9 +88,10 @@
             this.Controls.Add(this.btnPagar);
             this.Controls.Add(this.lblImporteTotal);
             this.Controls.Add(this.dgvMiCarrito);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MiCarrito";
             this.Text = "MiCarrito";
+            this.Load += new System.EventHandler(this.MiCarrito_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMiCarrito)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
