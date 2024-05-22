@@ -17,16 +17,18 @@ namespace registro_mockup.Principal
         private string usuariomenu;
         private string isbnLibro;
         private bool online=false;
+        private Form previousForm;
         public Comprar()
         {
             InitializeComponent();
         }
 
-        public Comprar(string isbn, string usuario, int cantidad, bool fisico)
+        public Comprar(string isbn, string usuario, int cantidad, bool fisico, Form form)
         {
             InitializeComponent();
             usuariomenu = usuario;
             isbnLibro = isbn;
+            previousForm = form;
             if (basedatos.AbrirConexion())
             {
                 List<Libro> lista = Libro.BuscarLibros(basedatos.Conexion, isbnLibro);

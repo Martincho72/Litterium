@@ -190,10 +190,10 @@ namespace registro_mockup
                 {
                     int id = reader.GetInt32(0);
                     DateTime fechaCompra = reader.GetDateTime(1);
-                    bool esOnline = reader.GetBoolean(3);
-                    decimal precioTotal = reader.GetDecimal(4);
-                    int id_usu = reader.GetInt32(5);
-                    string isbn_usuario = reader.GetString(6);
+                    bool esOnline = reader.GetBoolean(2);
+                    decimal precioTotal = reader.GetDecimal(3);
+                    int id_usu = reader.GetInt32(4);
+                    string isbn_usuario = reader.GetString(5);
 
                     //byte[] img = (byte[])reader["imagen"];
                     //MemoryStream ms = new MemoryStream(img);
