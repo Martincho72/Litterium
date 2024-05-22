@@ -44,9 +44,11 @@
             this.panelUsuarios.Controls.Add(this.tlpBotones);
             this.panelUsuarios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelUsuarios.Location = new System.Drawing.Point(0, 0);
+            this.panelUsuarios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelUsuarios.Name = "panelUsuarios";
-            this.panelUsuarios.Size = new System.Drawing.Size(978, 639);
+            this.panelUsuarios.Size = new System.Drawing.Size(869, 511);
             this.panelUsuarios.TabIndex = 8;
+
             // 
             // tlpBotones
             // 
@@ -69,7 +71,7 @@
             this.tlpBotones.Name = "tlpBotones";
             this.tlpBotones.RowCount = 1;
             this.tlpBotones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpBotones.Size = new System.Drawing.Size(978, 125);
+            this.tlpBotones.Size = new System.Drawing.Size(869, 100);
             this.tlpBotones.TabIndex = 5;
             // 
             // btnMisBorradores
@@ -84,11 +86,11 @@
             this.btnMisBorradores.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnMisBorradores.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMisBorradores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMisBorradores.Location = new System.Drawing.Point(588, 2);
+            this.btnMisBorradores.Location = new System.Drawing.Point(522, 2);
             this.btnMisBorradores.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMisBorradores.Name = "btnMisBorradores";
-            this.btnMisBorradores.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
-            this.btnMisBorradores.Size = new System.Drawing.Size(189, 121);
+            this.btnMisBorradores.Padding = new System.Windows.Forms.Padding(9, 0, 19, 0);
+            this.btnMisBorradores.Size = new System.Drawing.Size(167, 96);
             this.btnMisBorradores.TabIndex = 8;
             this.btnMisBorradores.Text = "Mis Borradores";
             this.btnMisBorradores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -108,11 +110,11 @@
             this.btnMiHistorial.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnMiHistorial.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMiHistorial.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMiHistorial.Location = new System.Drawing.Point(783, 2);
+            this.btnMiHistorial.Location = new System.Drawing.Point(695, 2);
             this.btnMiHistorial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMiHistorial.Name = "btnMiHistorial";
-            this.btnMiHistorial.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
-            this.btnMiHistorial.Size = new System.Drawing.Size(192, 121);
+            this.btnMiHistorial.Padding = new System.Windows.Forms.Padding(9, 0, 19, 0);
+            this.btnMiHistorial.Size = new System.Drawing.Size(171, 96);
             this.btnMiHistorial.TabIndex = 7;
             this.btnMiHistorial.Text = "Mi Historial de compras";
             this.btnMiHistorial.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -132,11 +134,11 @@
             this.btnMisCortohistorias.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnMisCortohistorias.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMisCortohistorias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMisCortohistorias.Location = new System.Drawing.Point(393, 2);
+            this.btnMisCortohistorias.Location = new System.Drawing.Point(349, 2);
             this.btnMisCortohistorias.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMisCortohistorias.Name = "btnMisCortohistorias";
-            this.btnMisCortohistorias.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
-            this.btnMisCortohistorias.Size = new System.Drawing.Size(189, 121);
+            this.btnMisCortohistorias.Padding = new System.Windows.Forms.Padding(9, 0, 19, 0);
+            this.btnMisCortohistorias.Size = new System.Drawing.Size(167, 96);
             this.btnMisCortohistorias.TabIndex = 6;
             this.btnMisCortohistorias.Text = "Mis Cortohistorias";
             this.btnMisCortohistorias.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -159,8 +161,8 @@
             this.btnMiCuenta.Location = new System.Drawing.Point(3, 2);
             this.btnMiCuenta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMiCuenta.Name = "btnMiCuenta";
-            this.btnMiCuenta.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
-            this.btnMiCuenta.Size = new System.Drawing.Size(189, 121);
+            this.btnMiCuenta.Padding = new System.Windows.Forms.Padding(9, 0, 19, 0);
+            this.btnMiCuenta.Size = new System.Drawing.Size(167, 96);
             this.btnMiCuenta.TabIndex = 5;
             this.btnMiCuenta.Text = "Mi Cuenta";
             this.btnMiCuenta.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -179,11 +181,11 @@
             this.btnMisLibros.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnMisLibros.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMisLibros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMisLibros.Location = new System.Drawing.Point(198, 2);
+            this.btnMisLibros.Location = new System.Drawing.Point(176, 2);
             this.btnMisLibros.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMisLibros.Name = "btnMisLibros";
-            this.btnMisLibros.Padding = new System.Windows.Forms.Padding(10, 0, 21, 0);
-            this.btnMisLibros.Size = new System.Drawing.Size(189, 121);
+            this.btnMisLibros.Padding = new System.Windows.Forms.Padding(9, 0, 19, 0);
+            this.btnMisLibros.Size = new System.Drawing.Size(167, 96);
             this.btnMisLibros.TabIndex = 4;
             this.btnMisLibros.Text = "Mis Libros";
             this.btnMisLibros.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -193,11 +195,12 @@
             // 
             // MenuUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(978, 639);
+            this.ClientSize = new System.Drawing.Size(869, 511);
             this.Controls.Add(this.panelUsuarios);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MenuUsuario";
             this.Text = "MenuUsuario";
             this.Load += new System.EventHandler(this.MenuUsuario_Load);
