@@ -45,7 +45,35 @@ namespace registro_mockup.Principal
 
         private void LibroPrincipal_Load(object sender, EventArgs e)
         {
+            if (basedatos.AbrirConexion())
+            {
+                List<string> titulo = Valoracion.librosMasValorados(basedatos.Conexion);
+                grbValoradosLibros1.Text = titulo[0];
+                grbValoradosLibros2.Text = titulo[1];
+                grbValoradosLibros3.Text = titulo[2];
+                grbValoradosLibros4.Text = titulo[3];
+                grbValoradosLibros5.Text = titulo[4];
 
+                Libro portada1 = Libro.EncontrarDatosLibroTitulo(basedatos.Conexion, titulo[0]);
+                pcbValorado1.Image = portada1.Portada;
+
+                Libro portada2 = Libro.EncontrarDatosLibroTitulo(basedatos.Conexion, titulo[1]);
+                pcbValorado2.Image = portada2.Portada;
+
+                Libro portada3 = Libro.EncontrarDatosLibroTitulo(basedatos.Conexion, titulo[2]);
+                pcbValorado3.Image = portada3.Portada;
+
+                Libro portada4 = Libro.EncontrarDatosLibroTitulo(basedatos.Conexion, titulo[3]);
+                pcbValorado4.Image = portada4.Portada;
+
+                Libro portada5 = Libro.EncontrarDatosLibroTitulo(basedatos.Conexion, titulo[4]);
+                pcbValorado5.Image = portada5.Portada;
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
+            basedatos.CerrarConexion();
         }
 
         private void lblRecomendadosLibros_Click(object sender, EventArgs e)
@@ -164,6 +192,22 @@ namespace registro_mockup.Principal
             if (basedatos.AbrirConexion())
             {
                 OpenChildForm(new InformacionLibro("Un cuento perfecto", usuariomenu));
+
+                OcultarPaneles();
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
+        }
+
+        private void pcbValorado1_Click(object sender, EventArgs e)
+        {
+           
+            if (basedatos.AbrirConexion())
+            {
+                List<string> titulo = Valoracion.librosMasValorados(basedatos.Conexion);
+                OpenChildForm(new InformacionLibro(titulo[0], usuariomenu));
 
                 OcultarPaneles();
             }
