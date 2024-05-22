@@ -51,10 +51,13 @@
             this.lblIdUsuario = new System.Windows.Forms.Label();
             this.dtpFechaPublicacion = new System.Windows.Forms.DateTimePicker();
             this.btnSalir = new System.Windows.Forms.PictureBox();
+            this.btnCargar = new System.Windows.Forms.Button();
+            this.pcbPortada = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbPortada)).BeginInit();
             this.SuspendLayout();
             // 
             // chbContinuable
@@ -114,7 +117,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(451, 89);
+            this.panel1.Size = new System.Drawing.Size(714, 89);
             this.panel1.TabIndex = 65;
             // 
             // panel2
@@ -124,7 +127,7 @@
             this.panel2.Location = new System.Drawing.Point(112, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(339, 89);
+            this.panel2.Size = new System.Drawing.Size(602, 89);
             this.panel2.TabIndex = 2;
             // 
             // lblMensaje
@@ -301,12 +304,38 @@
             this.btnSalir.TabStop = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // btnCargar
+            // 
+            this.btnCargar.BackColor = System.Drawing.Color.Gold;
+            this.btnCargar.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCargar.Location = new System.Drawing.Point(453, 305);
+            this.btnCargar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCargar.Name = "btnCargar";
+            this.btnCargar.Size = new System.Drawing.Size(119, 60);
+            this.btnCargar.TabIndex = 76;
+            this.btnCargar.Text = "Cargar";
+            this.btnCargar.UseVisualStyleBackColor = false;
+            this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
+            // 
+            // pcbPortada
+            // 
+            this.pcbPortada.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pcbPortada.Location = new System.Drawing.Point(421, 129);
+            this.pcbPortada.Margin = new System.Windows.Forms.Padding(4);
+            this.pcbPortada.Name = "pcbPortada";
+            this.pcbPortada.Size = new System.Drawing.Size(165, 151);
+            this.pcbPortada.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbPortada.TabIndex = 75;
+            this.pcbPortada.TabStop = false;
+            // 
             // EditarCortoHistoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(451, 566);
+            this.ClientSize = new System.Drawing.Size(714, 566);
+            this.Controls.Add(this.btnCargar);
+            this.Controls.Add(this.pcbPortada);
             this.Controls.Add(this.dtpFechaPublicacion);
             this.Controls.Add(this.txtIdUsuario);
             this.Controls.Add(this.lblIdUsuario);
@@ -337,6 +366,7 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbPortada)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -367,5 +397,7 @@
         private System.Windows.Forms.TextBox txtIdUsuario;
         private System.Windows.Forms.Label lblIdUsuario;
         private System.Windows.Forms.DateTimePicker dtpFechaPublicacion;
+        private System.Windows.Forms.Button btnCargar;
+        private System.Windows.Forms.PictureBox pcbPortada;
     }
 }
