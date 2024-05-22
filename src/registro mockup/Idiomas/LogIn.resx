@@ -120,6 +120,12 @@
   <data name="btnAC" xml:space="preserve">
     <value>Administracion CortoHistoria</value>
   </data>
+  <data name="btnAgregarLibroAdmin" xml:space="preserve">
+    <value>Agregar Libro</value>
+  </data>
+  <data name="btnAgregarUsuarioAdmin" xml:space="preserve">
+    <value>Agregar Usuario</value>
+  </data>
   <data name="btnAL" xml:space="preserve">
     <value>Administracion Libro</value>
   </data>
@@ -135,17 +141,41 @@
   <data name="btnBorrar" xml:space="preserve">
     <value>Borrar</value>
   </data>
+  <data name="btnBuscarCortohistoria" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="btnBuscarLibro" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="btnBuscarUsuario" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="btnCargarAgregarLibro" xml:space="preserve">
+    <value>Cargar</value>
+  </data>
   <data name="btnCargarEditarLibro" xml:space="preserve">
     <value>Editar</value>
   </data>
   <data name="btnCargarImagenEditarUsuario" xml:space="preserve">
     <value>Cargar</value>
   </data>
+  <data name="btnCargarMiCuenta" xml:space="preserve">
+    <value>Cargar</value>
+  </data>
   <data name="btnComprarAhora" xml:space="preserve">
     <value>COMPRAR AHORA</value>
   </data>
+  <data name="btnConfirmarEdicionMiCuenta" xml:space="preserve">
+    <value>Confirmar Edición</value>
+  </data>
   <data name="btnCortohistorias" xml:space="preserve">
     <value>Cortohistorias</value>
+  </data>
+  <data name="btnCrearAgregarLibro" xml:space="preserve">
+    <value>Añadir</value>
+  </data>
+  <data name="btnCrearAgregarUsuario" xml:space="preserve">
+    <value>Añadir</value>
   </data>
   <data name="btnCrearEditarLibro" xml:space="preserve">
     <value>Editar</value>
@@ -153,17 +183,41 @@
   <data name="btnCS" xml:space="preserve">
     <value>Cerrar Sesión</value>
   </data>
+  <data name="btnEditarCortohistoria" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="btnEditarCortohistoriaAdmin" xml:space="preserve">
+    <value>Editar Cortohistoria</value>
+  </data>
+  <data name="btnEditarLibroAdmin" xml:space="preserve">
+    <value>Editar Libro</value>
+  </data>
+  <data name="btnEditarMiCuenta" xml:space="preserve">
+    <value>Editar</value>
+  </data>
   <data name="btnEditarUsuario" xml:space="preserve">
     <value>Editar</value>
+  </data>
+  <data name="btnEditarUsuarioAdmin" xml:space="preserve">
+    <value>Editar Usuario</value>
   </data>
   <data name="btnEliminarCortohistoria" xml:space="preserve">
     <value>Eliminar</value>
   </data>
+  <data name="btnEliminarCortohistoriaAdmin" xml:space="preserve">
+    <value>Eliminar Cortohistoria</value>
+  </data>
   <data name="btnEliminarLibro" xml:space="preserve">
     <value>Eliminar</value>
   </data>
+  <data name="btnEliminarLibroAdmin" xml:space="preserve">
+    <value>Eliminar Libro</value>
+  </data>
   <data name="btnEliminarUsuario" xml:space="preserve">
     <value>Eliminar</value>
+  </data>
+  <data name="btnEliminarUsuarioAdmin" xml:space="preserve">
+    <value>Eliminar Usuario</value>
   </data>
   <data name="btnLibros" xml:space="preserve">
     <value>Libros</value>
@@ -210,11 +264,20 @@
   <data name="chbAdmin" xml:space="preserve">
     <value>Admin</value>
   </data>
+  <data name="chbAdminAgregarUsuario" xml:space="preserve">
+    <value>Admin</value>
+  </data>
   <data name="chbBaja" xml:space="preserve">
     <value>Baja</value>
   </data>
+  <data name="chbContinuableEditarCortohistoria" xml:space="preserve">
+    <value>Continuable</value>
+  </data>
   <data name="chbContinuarCortohistoria" xml:space="preserve">
     <value>Seguir Historia</value>
+  </data>
+  <data name="chbFinalizadaEditarCortohistoria" xml:space="preserve">
+    <value>Finalizada</value>
   </data>
   <data name="chbVetado" xml:space="preserve">
     <value>Vetado</value>
@@ -231,11 +294,23 @@
   <data name="lblAdministradores" xml:space="preserve">
     <value>Administradores</value>
   </data>
+  <data name="lblAutorAgregarUsuario" xml:space="preserve">
+    <value>Autor:</value>
+  </data>
+  <data name="lblAutorEditarCortohistoria" xml:space="preserve">
+    <value>Autor:</value>
+  </data>
   <data name="lblAutorEditarLibro" xml:space="preserve">
     <value>Autor:</value>
   </data>
   <data name="lblAutorLibro" xml:space="preserve">
     <value>AUTOR : </value>
+  </data>
+  <data name="lblCategoriaAgregarUsuario" xml:space="preserve">
+    <value>Categoría:</value>
+  </data>
+  <data name="lblCategoriaEditarCortohistoria" xml:space="preserve">
+    <value>Categoría:</value>
   </data>
   <data name="lblCategoriaEditarLibro" xml:space="preserve">
     <value>Categoría:</value>
@@ -243,8 +318,14 @@
   <data name="lblCCV" xml:space="preserve">
     <value>CCV :</value>
   </data>
+  <data name="lblClaveAgregarUsuario" xml:space="preserve">
+    <value>Contraseña:</value>
+  </data>
   <data name="lblComentarios" xml:space="preserve">
     <value>Comentarios</value>
+  </data>
+  <data name="lblContraMiCuenta" xml:space="preserve">
+    <value>Contraseña:</value>
   </data>
   <data name="lblContrasena" xml:space="preserve">
     <value>Contraseña:</value>
@@ -257,6 +338,9 @@
   </data>
   <data name="lblCorreo" xml:space="preserve">
     <value>Correo</value>
+  </data>
+  <data name="lblCorreoAgregarUsuario" xml:space="preserve">
+    <value>Correo:</value>
   </data>
   <data name="lblCorreoContrasenyaOlvidada" xml:space="preserve">
     <value>Correo:</value>
@@ -279,13 +363,37 @@
   <data name="lblDireccion" xml:space="preserve">
     <value>Dirección</value>
   </data>
+  <data name="lblDireccionAgregarUsuario" xml:space="preserve">
+    <value>Dirección:</value>
+  </data>
   <data name="lblDireccionEditarUsuario" xml:space="preserve">
     <value>Dirección</value>
+  </data>
+  <data name="lblDireccionMiCuenta" xml:space="preserve">
+    <value>Dirección:</value>
   </data>
   <data name="lblEjemplaresLibro" xml:space="preserve">
     <value>Ejemplares :</value>
   </data>
+  <data name="lblErrorEditarCortohistoria" xml:space="preserve">
+    <value>Mensaje Error</value>
+  </data>
   <data name="lblErrorEditarUsuario" xml:space="preserve">
+    <value>Mensaje Error</value>
+  </data>
+  <data name="lblErroresAgregarLibro" xml:space="preserve">
+    <value>Mensaje Error</value>
+  </data>
+  <data name="lblErroresAgregarUsuario" xml:space="preserve">
+    <value>Mensaje Error</value>
+  </data>
+  <data name="lblErroresBuscarCortohistoria" xml:space="preserve">
+    <value>Mensaje Error</value>
+  </data>
+  <data name="lblErroresBuscarLibro" xml:space="preserve">
+    <value>Mensaje Error</value>
+  </data>
+  <data name="lblErroresBuscarUsuario" xml:space="preserve">
     <value>Mensaje Error</value>
   </data>
   <data name="lblErroresEditarLibro" xml:space="preserve">
@@ -303,8 +411,20 @@
   <data name="lblFechaCaducidad" xml:space="preserve">
     <value>Fecha de caducidad :</value>
   </data>
+  <data name="lblFechaPublicacionEditarCortohistoria" xml:space="preserve">
+    <value>Fecha Publicación:</value>
+  </data>
+  <data name="lblIdBuscarCortohistoria" xml:space="preserve">
+    <value>ID Cortohistoria:</value>
+  </data>
+  <data name="lblIdEditarCortohistoria" xml:space="preserve">
+    <value>Id:</value>
+  </data>
   <data name="lblIdEliminarCortohistoria" xml:space="preserve">
     <value>ID:</value>
+  </data>
+  <data name="lblIdUsuarioEditarCortohistoria" xml:space="preserve">
+    <value>Id Usuario:</value>
   </data>
   <data name="lblImporteMiCarrito" xml:space="preserve">
     <value>Importe Total : </value>
@@ -312,8 +432,17 @@
   <data name="lblImporteTotal" xml:space="preserve">
     <value>Importe total : 0,00€</value>
   </data>
+  <data name="lblInfoSinopsisAgregarLibro" xml:space="preserve">
+    <value>Max. Carácteres: 150</value>
+  </data>
   <data name="lblInfoSinopsisEditarLibro" xml:space="preserve">
     <value>Max. Caracteres: 150</value>
+  </data>
+  <data name="lblIsbnAgregarUsuario" xml:space="preserve">
+    <value>ISBN:</value>
+  </data>
+  <data name="lblIsbnBuscarLibro" xml:space="preserve">
+    <value>ISBN:</value>
   </data>
   <data name="lblISBNEditarLibro" xml:space="preserve">
     <value>ISBN:</value>
@@ -329,6 +458,24 @@
   </data>
   <data name="lblMejorvaloradosLibros" xml:space="preserve">
     <value>Mejor valorados por los usuarios:</value>
+  </data>
+  <data name="lblMensajeAgregarLibro" xml:space="preserve">
+    <value>Agregar Libro</value>
+  </data>
+  <data name="lblMensajeAgregarUsuario" xml:space="preserve">
+    <value>Agregar Usuario</value>
+  </data>
+  <data name="lblMensajeBuscarCortohistoria" xml:space="preserve">
+    <value>Buscar Cortohistoria</value>
+  </data>
+  <data name="lblMensajeBuscarLibro" xml:space="preserve">
+    <value>Buscar Libro</value>
+  </data>
+  <data name="lblMensajeBuscarUsuario" xml:space="preserve">
+    <value>Buscar Usuario</value>
+  </data>
+  <data name="lblMensajeEditarCortohistoria" xml:space="preserve">
+    <value>Editar Cortohistoria</value>
   </data>
   <data name="lblMensajeEditarLibro" xml:space="preserve">
     <value>Editar Libro</value>
@@ -351,11 +498,20 @@
   <data name="lblNombre" xml:space="preserve">
     <value>Nombre</value>
   </data>
+  <data name="lblNombreAgregarUsuario" xml:space="preserve">
+    <value>Nombre:</value>
+  </data>
   <data name="lblNombreEditarUsuario" xml:space="preserve">
     <value>Nombre</value>
   </data>
+  <data name="lblNombreMiCuenta" xml:space="preserve">
+    <value>Nombre:</value>
+  </data>
   <data name="lblNumeroTarjeta" xml:space="preserve">
     <value>Numero tarjeta :</value>
+  </data>
+  <data name="lblPrecioAgregarLibro" xml:space="preserve">
+    <value>Precio:</value>
   </data>
   <data name="lblPrecioEditarLibro" xml:space="preserve">
     <value>Precio:</value>
@@ -375,23 +531,38 @@
   <data name="lblSinopsis" xml:space="preserve">
     <value>Sinopsis</value>
   </data>
+  <data name="lblSinopsisAgregarLibro" xml:space="preserve">
+    <value>Sinopsis:</value>
+  </data>
   <data name="lblSinopsisEditarLibro" xml:space="preserve">
     <value>Sinopsis:</value>
   </data>
   <data name="lblTelefono" xml:space="preserve">
     <value>Teléfono</value>
   </data>
+  <data name="lblTelefonoAgregarUsuario" xml:space="preserve">
+    <value>Teléfono:</value>
+  </data>
   <data name="lblTelefonoEditarUsuario" xml:space="preserve">
     <value>Teléfono</value>
   </data>
+  <data name="lblTeléfonoMiCuenta" xml:space="preserve">
+    <value>Teléfono:</value>
+  </data>
   <data name="lblTextoRegistrase" xml:space="preserve">
     <value>¿No te has registrado aún?</value>
+  </data>
+  <data name="lblTituloAgregarUsuario" xml:space="preserve">
+    <value>Título:</value>
   </data>
   <data name="lblTituloComprar" xml:space="preserve">
     <value>Información de compra</value>
   </data>
   <data name="lblTituloCrearCortohistoria" xml:space="preserve">
     <value>Titulo :</value>
+  </data>
+  <data name="lblTituloEditarCortohistoria" xml:space="preserve">
+    <value>Título:</value>
   </data>
   <data name="lblTituloEditarLibro" xml:space="preserve">
     <value>Titulo:</value>
@@ -411,11 +582,26 @@
   <data name="lblUsuario" xml:space="preserve">
     <value>Usuario:</value>
   </data>
+  <data name="lblUsuarioAgegarUsuario" xml:space="preserve">
+    <value>Usuario:</value>
+  </data>
+  <data name="lblUsuarioBuscarUsuario" xml:space="preserve">
+    <value>Usuario:</value>
+  </data>
   <data name="lblUsuarioEditarUsuario" xml:space="preserve">
     <value>Usuario</value>
   </data>
   <data name="lblUsuarioEliminarUsuario" xml:space="preserve">
     <value>Usuario</value>
+  </data>
+  <data name="lblUsuarioMiCuenta" xml:space="preserve">
+    <value>Usuario:</value>
+  </data>
+  <data name="lblValoracionAgregarUsuario" xml:space="preserve">
+    <value>Valoración:</value>
+  </data>
+  <data name="lblValoracionEditarCortohistoria" xml:space="preserve">
+    <value>Valoración:</value>
   </data>
   <data name="lblValoracionEditarLibro" xml:space="preserve">
     <value>Valoración:</value>
@@ -432,6 +618,30 @@
   <data name="rbtCopiaOnline" xml:space="preserve">
     <value>COPIA ONLINE</value>
   </data>
+  <data name="TituloAdministracionCortohistoria" xml:space="preserve">
+    <value>Administración Cortohistoria</value>
+  </data>
+  <data name="TituloAdministracionLibro" xml:space="preserve">
+    <value>Administración Libro</value>
+  </data>
+  <data name="TituloAdministracionUsuario" xml:space="preserve">
+    <value>Administración Usuario</value>
+  </data>
+  <data name="TituloAgregarLibro" xml:space="preserve">
+    <value>Agregar Libro</value>
+  </data>
+  <data name="TituloAgregarUsuario" xml:space="preserve">
+    <value>Agregar Usuario</value>
+  </data>
+  <data name="TituloBuscarCortohistoria" xml:space="preserve">
+    <value>Buscar Cortohistoria</value>
+  </data>
+  <data name="TituloBuscarLibro" xml:space="preserve">
+    <value>Buscar Libro</value>
+  </data>
+  <data name="TituloBuscarUsuario" xml:space="preserve">
+    <value>Buscar Usuario</value>
+  </data>
   <data name="TituloBusqueda" xml:space="preserve">
     <value>Búsqueda</value>
   </data>
@@ -447,6 +657,9 @@
   <data name="TituloCrearCortohistoria" xml:space="preserve">
     <value>Crear Cortohistoria</value>
   </data>
+  <data name="TituloEditarCortohistoria" xml:space="preserve">
+    <value>Editar Cortohistoria</value>
+  </data>
   <data name="TituloEditarLibro" xml:space="preserve">
     <value>Editar Libro</value>
   </data>
@@ -461,6 +674,9 @@
   </data>
   <data name="TituloEliminarUsuario" xml:space="preserve">
     <value>Eliminar Usuario</value>
+  </data>
+  <data name="TituloHistorialComprar" xml:space="preserve">
+    <value>Historial Compras</value>
   </data>
   <data name="TituloInformacionLibro" xml:space="preserve">
     <value>Información Libro</value>
@@ -482,6 +698,9 @@
   </data>
   <data name="TituloMiCarrito" xml:space="preserve">
     <value>Mi Carrito</value>
+  </data>
+  <data name="TituloMiCuenta" xml:space="preserve">
+    <value>Mi Cuenta</value>
   </data>
   <data name="TituloMisBorradores" xml:space="preserve">
     <value>Mis Borradores</value>

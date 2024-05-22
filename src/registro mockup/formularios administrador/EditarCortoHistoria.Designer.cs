@@ -34,7 +34,7 @@
             this.lblError = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblMensaje = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtValoracion = new System.Windows.Forms.TextBox();
             this.txtCategoria = new System.Windows.Forms.TextBox();
@@ -119,7 +119,7 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.lblMensaje);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(112, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -127,16 +127,16 @@
             this.panel2.Size = new System.Drawing.Size(339, 89);
             this.panel2.TabIndex = 2;
             // 
-            // label1
+            // lblMensaje
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(17, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(259, 28);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Editar CortoHistoria";
+            this.lblMensaje.AutoSize = true;
+            this.lblMensaje.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMensaje.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblMensaje.Location = new System.Drawing.Point(17, 30);
+            this.lblMensaje.Name = "lblMensaje";
+            this.lblMensaje.Size = new System.Drawing.Size(259, 28);
+            this.lblMensaje.TabIndex = 0;
+            this.lblMensaje.Text = "Editar CortoHistoria";
             // 
             // pictureBox1
             // 
@@ -189,9 +189,9 @@
             this.lblFechaPublicacion.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFechaPublicacion.Location = new System.Drawing.Point(27, 260);
             this.lblFechaPublicacion.Name = "lblFechaPublicacion";
-            this.lblFechaPublicacion.Size = new System.Drawing.Size(140, 19);
+            this.lblFechaPublicacion.Size = new System.Drawing.Size(145, 19);
             this.lblFechaPublicacion.TabIndex = 59;
-            this.lblFechaPublicacion.Text = "FechaPublicacion:";
+            this.lblFechaPublicacion.Text = "Fecha Publicacion:";
             // 
             // lblValoracion
             // 
@@ -281,7 +281,7 @@
             // 
             this.dtpFechaPublicacion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFechaPublicacion.Location = new System.Drawing.Point(199, 254);
-            this.dtpFechaPublicacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpFechaPublicacion.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFechaPublicacion.Name = "dtpFechaPublicacion";
             this.dtpFechaPublicacion.Size = new System.Drawing.Size(157, 22);
             this.dtpFechaPublicacion.TabIndex = 74;
@@ -351,7 +351,7 @@
         private System.Windows.Forms.Label lblError;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblMensaje;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtValoracion;
         private System.Windows.Forms.TextBox txtCategoria;
