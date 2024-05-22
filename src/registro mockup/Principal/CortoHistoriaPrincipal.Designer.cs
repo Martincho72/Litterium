@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.tlpBotones = new System.Windows.Forms.TableLayoutPanel();
+            this.btnContinuarCortohistoria = new FontAwesome.Sharp.IconButton();
+            this.btnCrearCortohistoria = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.grbValoradosLibro4 = new System.Windows.Forms.GroupBox();
@@ -72,6 +75,7 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.lblRecomendadosLibros = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.tlpBotones.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.grbValoradosLibro4.SuspendLayout();
@@ -115,12 +119,80 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.tlpBotones);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 600);
+            this.panel1.Size = new System.Drawing.Size(996, 778);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // tlpBotones
+            // 
+            this.tlpBotones.BackColor = System.Drawing.Color.Gray;
+            this.tlpBotones.ColumnCount = 2;
+            this.tlpBotones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpBotones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpBotones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpBotones.Controls.Add(this.btnContinuarCortohistoria, 0, 0);
+            this.tlpBotones.Controls.Add(this.btnCrearCortohistoria, 0, 0);
+            this.tlpBotones.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tlpBotones.Location = new System.Drawing.Point(0, 0);
+            this.tlpBotones.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tlpBotones.Name = "tlpBotones";
+            this.tlpBotones.RowCount = 1;
+            this.tlpBotones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpBotones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 82F));
+            this.tlpBotones.Size = new System.Drawing.Size(996, 82);
+            this.tlpBotones.TabIndex = 5;
+            // 
+            // btnContinuarCortohistoria
+            // 
+            this.btnContinuarCortohistoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnContinuarCortohistoria.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnContinuarCortohistoria.FlatAppearance.BorderSize = 0;
+            this.btnContinuarCortohistoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnContinuarCortohistoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnContinuarCortohistoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnContinuarCortohistoria.IconChar = FontAwesome.Sharp.IconChar.FileEdit;
+            this.btnContinuarCortohistoria.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnContinuarCortohistoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnContinuarCortohistoria.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnContinuarCortohistoria.Location = new System.Drawing.Point(501, 2);
+            this.btnContinuarCortohistoria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnContinuarCortohistoria.Name = "btnContinuarCortohistoria";
+            this.btnContinuarCortohistoria.Padding = new System.Windows.Forms.Padding(9, 0, 19, 0);
+            this.btnContinuarCortohistoria.Size = new System.Drawing.Size(492, 78);
+            this.btnContinuarCortohistoria.TabIndex = 6;
+            this.btnContinuarCortohistoria.Text = "Cortohistorias que continuar";
+            this.btnContinuarCortohistoria.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnContinuarCortohistoria.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnContinuarCortohistoria.UseVisualStyleBackColor = false;
+            this.btnContinuarCortohistoria.Click += new System.EventHandler(this.btnContinuarCortohistoria_Click);
+            // 
+            // btnCrearCortohistoria
+            // 
+            this.btnCrearCortohistoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnCrearCortohistoria.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnCrearCortohistoria.FlatAppearance.BorderSize = 0;
+            this.btnCrearCortohistoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCrearCortohistoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrearCortohistoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnCrearCortohistoria.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.btnCrearCortohistoria.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnCrearCortohistoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCrearCortohistoria.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCrearCortohistoria.Location = new System.Drawing.Point(3, 2);
+            this.btnCrearCortohistoria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCrearCortohistoria.Name = "btnCrearCortohistoria";
+            this.btnCrearCortohistoria.Padding = new System.Windows.Forms.Padding(9, 0, 19, 0);
+            this.btnCrearCortohistoria.Size = new System.Drawing.Size(492, 78);
+            this.btnCrearCortohistoria.TabIndex = 5;
+            this.btnCrearCortohistoria.Text = "CrearCortohistoria";
+            this.btnCrearCortohistoria.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCrearCortohistoria.UseVisualStyleBackColor = false;
+            this.btnCrearCortohistoria.Click += new System.EventHandler(this.btnCrearCortohistoria_Click);
             // 
             // panel2
             // 
@@ -130,12 +202,11 @@
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel8);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Location = new System.Drawing.Point(0, 56);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 600);
+            this.panel2.Size = new System.Drawing.Size(996, 639);
             this.panel2.TabIndex = 1;
             // 
             // tableLayoutPanel3
@@ -152,24 +223,24 @@
             this.tableLayoutPanel3.Controls.Add(this.grbValoradosLibro1, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.grbValoradosLibro2, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 500);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 519);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 175F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 175F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(800, 175);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(996, 175);
             this.tableLayoutPanel3.TabIndex = 22;
             // 
             // grbValoradosLibro4
             // 
             this.grbValoradosLibro4.Controls.Add(this.pcbValoradoLibro4);
             this.grbValoradosLibro4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grbValoradosLibro4.Location = new System.Drawing.Point(483, 2);
+            this.grbValoradosLibro4.Location = new System.Drawing.Point(600, 2);
             this.grbValoradosLibro4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbValoradosLibro4.Name = "grbValoradosLibro4";
             this.grbValoradosLibro4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grbValoradosLibro4.Size = new System.Drawing.Size(154, 171);
+            this.grbValoradosLibro4.Size = new System.Drawing.Size(193, 171);
             this.grbValoradosLibro4.TabIndex = 9;
             this.grbValoradosLibro4.TabStop = false;
             this.grbValoradosLibro4.Text = "groupBox10";
@@ -181,7 +252,7 @@
             this.pcbValoradoLibro4.Location = new System.Drawing.Point(3, 23);
             this.pcbValoradoLibro4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbValoradoLibro4.Name = "pcbValoradoLibro4";
-            this.pcbValoradoLibro4.Size = new System.Drawing.Size(148, 146);
+            this.pcbValoradoLibro4.Size = new System.Drawing.Size(187, 146);
             this.pcbValoradoLibro4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbValoradoLibro4.TabIndex = 0;
             this.pcbValoradoLibro4.TabStop = false;
@@ -191,11 +262,11 @@
             // 
             this.grbValoradosLibro5.Controls.Add(this.pcbValoradoLibro5);
             this.grbValoradosLibro5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grbValoradosLibro5.Location = new System.Drawing.Point(643, 2);
+            this.grbValoradosLibro5.Location = new System.Drawing.Point(799, 2);
             this.grbValoradosLibro5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbValoradosLibro5.Name = "grbValoradosLibro5";
             this.grbValoradosLibro5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grbValoradosLibro5.Size = new System.Drawing.Size(154, 171);
+            this.grbValoradosLibro5.Size = new System.Drawing.Size(194, 171);
             this.grbValoradosLibro5.TabIndex = 8;
             this.grbValoradosLibro5.TabStop = false;
             this.grbValoradosLibro5.Text = "groupBox10";
@@ -208,7 +279,7 @@
             this.pcbValoradoLibro5.Location = new System.Drawing.Point(3, 23);
             this.pcbValoradoLibro5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbValoradoLibro5.Name = "pcbValoradoLibro5";
-            this.pcbValoradoLibro5.Size = new System.Drawing.Size(148, 146);
+            this.pcbValoradoLibro5.Size = new System.Drawing.Size(188, 146);
             this.pcbValoradoLibro5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbValoradoLibro5.TabIndex = 0;
             this.pcbValoradoLibro5.TabStop = false;
@@ -217,11 +288,11 @@
             // 
             this.grbValoradosLibro3.Controls.Add(this.pcbValoradoLibro3);
             this.grbValoradosLibro3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grbValoradosLibro3.Location = new System.Drawing.Point(323, 2);
+            this.grbValoradosLibro3.Location = new System.Drawing.Point(401, 2);
             this.grbValoradosLibro3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbValoradosLibro3.Name = "grbValoradosLibro3";
             this.grbValoradosLibro3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grbValoradosLibro3.Size = new System.Drawing.Size(154, 171);
+            this.grbValoradosLibro3.Size = new System.Drawing.Size(193, 171);
             this.grbValoradosLibro3.TabIndex = 7;
             this.grbValoradosLibro3.TabStop = false;
             this.grbValoradosLibro3.Text = "groupBox10";
@@ -234,7 +305,7 @@
             this.pcbValoradoLibro3.Location = new System.Drawing.Point(3, 23);
             this.pcbValoradoLibro3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbValoradoLibro3.Name = "pcbValoradoLibro3";
-            this.pcbValoradoLibro3.Size = new System.Drawing.Size(148, 146);
+            this.pcbValoradoLibro3.Size = new System.Drawing.Size(187, 146);
             this.pcbValoradoLibro3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbValoradoLibro3.TabIndex = 0;
             this.pcbValoradoLibro3.TabStop = false;
@@ -247,7 +318,7 @@
             this.grbValoradosLibro1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbValoradosLibro1.Name = "grbValoradosLibro1";
             this.grbValoradosLibro1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grbValoradosLibro1.Size = new System.Drawing.Size(154, 171);
+            this.grbValoradosLibro1.Size = new System.Drawing.Size(193, 171);
             this.grbValoradosLibro1.TabIndex = 6;
             this.grbValoradosLibro1.TabStop = false;
             this.grbValoradosLibro1.Text = "groupBox10";
@@ -259,7 +330,7 @@
             this.pcbValoradoLibro1.Location = new System.Drawing.Point(3, 23);
             this.pcbValoradoLibro1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbValoradoLibro1.Name = "pcbValoradoLibro1";
-            this.pcbValoradoLibro1.Size = new System.Drawing.Size(148, 146);
+            this.pcbValoradoLibro1.Size = new System.Drawing.Size(187, 146);
             this.pcbValoradoLibro1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbValoradoLibro1.TabIndex = 0;
             this.pcbValoradoLibro1.TabStop = false;
@@ -268,11 +339,11 @@
             // 
             this.grbValoradosLibro2.Controls.Add(this.pcbValoradoLibro2);
             this.grbValoradosLibro2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grbValoradosLibro2.Location = new System.Drawing.Point(163, 2);
+            this.grbValoradosLibro2.Location = new System.Drawing.Point(202, 2);
             this.grbValoradosLibro2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbValoradosLibro2.Name = "grbValoradosLibro2";
             this.grbValoradosLibro2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grbValoradosLibro2.Size = new System.Drawing.Size(154, 171);
+            this.grbValoradosLibro2.Size = new System.Drawing.Size(193, 171);
             this.grbValoradosLibro2.TabIndex = 5;
             this.grbValoradosLibro2.TabStop = false;
             this.grbValoradosLibro2.Text = "groupBox10";
@@ -284,7 +355,7 @@
             this.pcbValoradoLibro2.Location = new System.Drawing.Point(3, 23);
             this.pcbValoradoLibro2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbValoradoLibro2.Name = "pcbValoradoLibro2";
-            this.pcbValoradoLibro2.Size = new System.Drawing.Size(148, 146);
+            this.pcbValoradoLibro2.Size = new System.Drawing.Size(187, 146);
             this.pcbValoradoLibro2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbValoradoLibro2.TabIndex = 0;
             this.pcbValoradoLibro2.TabStop = false;
@@ -293,10 +364,10 @@
             // 
             this.panel6.Controls.Add(this.lblCortohistoriasEnLibros);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 453);
+            this.panel6.Location = new System.Drawing.Point(0, 472);
             this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(800, 47);
+            this.panel6.Size = new System.Drawing.Size(996, 47);
             this.panel6.TabIndex = 21;
             // 
             // lblCortohistoriasEnLibros
@@ -314,10 +385,10 @@
             // 
             this.panel5.Controls.Add(this.tableLayoutPanel2);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 256);
+            this.panel5.Location = new System.Drawing.Point(0, 275);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(800, 197);
+            this.panel5.Size = new System.Drawing.Size(996, 197);
             this.panel5.TabIndex = 20;
             // 
             // tableLayoutPanel2
@@ -340,18 +411,18 @@
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 197F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 197F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(800, 197);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(996, 197);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // grbValoradosCH4
             // 
             this.grbValoradosCH4.Controls.Add(this.pictureBox6);
             this.grbValoradosCH4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grbValoradosCH4.Location = new System.Drawing.Point(483, 2);
+            this.grbValoradosCH4.Location = new System.Drawing.Point(600, 2);
             this.grbValoradosCH4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbValoradosCH4.Name = "grbValoradosCH4";
             this.grbValoradosCH4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grbValoradosCH4.Size = new System.Drawing.Size(154, 193);
+            this.grbValoradosCH4.Size = new System.Drawing.Size(193, 193);
             this.grbValoradosCH4.TabIndex = 9;
             this.grbValoradosCH4.TabStop = false;
             this.grbValoradosCH4.Text = "groupBox10";
@@ -363,7 +434,7 @@
             this.pictureBox6.Location = new System.Drawing.Point(3, 23);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(148, 168);
+            this.pictureBox6.Size = new System.Drawing.Size(187, 168);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 0;
             this.pictureBox6.TabStop = false;
@@ -372,11 +443,11 @@
             // 
             this.grbValoradosCH5.Controls.Add(this.pictureBox7);
             this.grbValoradosCH5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grbValoradosCH5.Location = new System.Drawing.Point(643, 2);
+            this.grbValoradosCH5.Location = new System.Drawing.Point(799, 2);
             this.grbValoradosCH5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbValoradosCH5.Name = "grbValoradosCH5";
             this.grbValoradosCH5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grbValoradosCH5.Size = new System.Drawing.Size(154, 193);
+            this.grbValoradosCH5.Size = new System.Drawing.Size(194, 193);
             this.grbValoradosCH5.TabIndex = 8;
             this.grbValoradosCH5.TabStop = false;
             this.grbValoradosCH5.Text = "groupBox10";
@@ -388,7 +459,7 @@
             this.pictureBox7.Location = new System.Drawing.Point(3, 23);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(148, 168);
+            this.pictureBox7.Size = new System.Drawing.Size(188, 168);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 0;
             this.pictureBox7.TabStop = false;
@@ -397,11 +468,11 @@
             // 
             this.grbValoradosCH3.Controls.Add(this.pictureBox8);
             this.grbValoradosCH3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grbValoradosCH3.Location = new System.Drawing.Point(323, 2);
+            this.grbValoradosCH3.Location = new System.Drawing.Point(401, 2);
             this.grbValoradosCH3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbValoradosCH3.Name = "grbValoradosCH3";
             this.grbValoradosCH3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grbValoradosCH3.Size = new System.Drawing.Size(154, 193);
+            this.grbValoradosCH3.Size = new System.Drawing.Size(193, 193);
             this.grbValoradosCH3.TabIndex = 7;
             this.grbValoradosCH3.TabStop = false;
             this.grbValoradosCH3.Text = "groupBox10";
@@ -413,7 +484,7 @@
             this.pictureBox8.Location = new System.Drawing.Point(3, 23);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(148, 168);
+            this.pictureBox8.Size = new System.Drawing.Size(187, 168);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 0;
             this.pictureBox8.TabStop = false;
@@ -426,7 +497,7 @@
             this.grbValoradosCH1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbValoradosCH1.Name = "grbValoradosCH1";
             this.grbValoradosCH1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grbValoradosCH1.Size = new System.Drawing.Size(154, 193);
+            this.grbValoradosCH1.Size = new System.Drawing.Size(193, 193);
             this.grbValoradosCH1.TabIndex = 6;
             this.grbValoradosCH1.TabStop = false;
             this.grbValoradosCH1.Text = "groupBox10";
@@ -438,7 +509,7 @@
             this.pictureBox9.Location = new System.Drawing.Point(3, 23);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(148, 168);
+            this.pictureBox9.Size = new System.Drawing.Size(187, 168);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 0;
             this.pictureBox9.TabStop = false;
@@ -447,11 +518,11 @@
             // 
             this.grbValoradosCH2.Controls.Add(this.pictureBox10);
             this.grbValoradosCH2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grbValoradosCH2.Location = new System.Drawing.Point(163, 2);
+            this.grbValoradosCH2.Location = new System.Drawing.Point(202, 2);
             this.grbValoradosCH2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbValoradosCH2.Name = "grbValoradosCH2";
             this.grbValoradosCH2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grbValoradosCH2.Size = new System.Drawing.Size(154, 193);
+            this.grbValoradosCH2.Size = new System.Drawing.Size(193, 193);
             this.grbValoradosCH2.TabIndex = 5;
             this.grbValoradosCH2.TabStop = false;
             this.grbValoradosCH2.Text = "groupBox10";
@@ -463,7 +534,7 @@
             this.pictureBox10.Location = new System.Drawing.Point(3, 23);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(148, 168);
+            this.pictureBox10.Size = new System.Drawing.Size(187, 168);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 0;
             this.pictureBox10.TabStop = false;
@@ -472,10 +543,10 @@
             // 
             this.panel3.Controls.Add(this.lblMejorvaloradosLibros);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 220);
+            this.panel3.Location = new System.Drawing.Point(0, 239);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(800, 36);
+            this.panel3.Size = new System.Drawing.Size(996, 36);
             this.panel3.TabIndex = 19;
             // 
             // lblMejorvaloradosLibros
@@ -493,10 +564,10 @@
             // 
             this.panel4.Controls.Add(this.tableLayoutPanel1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 38);
+            this.panel4.Location = new System.Drawing.Point(0, 57);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(800, 182);
+            this.panel4.Size = new System.Drawing.Size(996, 182);
             this.panel4.TabIndex = 18;
             // 
             // tableLayoutPanel1
@@ -519,18 +590,18 @@
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 182F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 182F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 182);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(996, 182);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // gbxRecomendadosCH4
             // 
             this.gbxRecomendadosCH4.Controls.Add(this.pcbRecomendado4);
             this.gbxRecomendadosCH4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbxRecomendadosCH4.Location = new System.Drawing.Point(481, 2);
+            this.gbxRecomendadosCH4.Location = new System.Drawing.Point(599, 2);
             this.gbxRecomendadosCH4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbxRecomendadosCH4.Name = "gbxRecomendadosCH4";
             this.gbxRecomendadosCH4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbxRecomendadosCH4.Size = new System.Drawing.Size(154, 178);
+            this.gbxRecomendadosCH4.Size = new System.Drawing.Size(193, 178);
             this.gbxRecomendadosCH4.TabIndex = 9;
             this.gbxRecomendadosCH4.TabStop = false;
             this.gbxRecomendadosCH4.Text = "Percy Jackson";
@@ -542,7 +613,7 @@
             this.pcbRecomendado4.Location = new System.Drawing.Point(3, 23);
             this.pcbRecomendado4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbRecomendado4.Name = "pcbRecomendado4";
-            this.pcbRecomendado4.Size = new System.Drawing.Size(148, 153);
+            this.pcbRecomendado4.Size = new System.Drawing.Size(187, 153);
             this.pcbRecomendado4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbRecomendado4.TabIndex = 0;
             this.pcbRecomendado4.TabStop = false;
@@ -551,11 +622,11 @@
             // 
             this.gbxRecomendadosCH5.Controls.Add(this.pcbRecomendado5);
             this.gbxRecomendadosCH5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbxRecomendadosCH5.Location = new System.Drawing.Point(641, 2);
+            this.gbxRecomendadosCH5.Location = new System.Drawing.Point(798, 2);
             this.gbxRecomendadosCH5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbxRecomendadosCH5.Name = "gbxRecomendadosCH5";
             this.gbxRecomendadosCH5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbxRecomendadosCH5.Size = new System.Drawing.Size(156, 178);
+            this.gbxRecomendadosCH5.Size = new System.Drawing.Size(195, 178);
             this.gbxRecomendadosCH5.TabIndex = 8;
             this.gbxRecomendadosCH5.TabStop = false;
             this.gbxRecomendadosCH5.Text = "Un cuento Perfecto";
@@ -567,7 +638,7 @@
             this.pcbRecomendado5.Location = new System.Drawing.Point(3, 23);
             this.pcbRecomendado5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbRecomendado5.Name = "pcbRecomendado5";
-            this.pcbRecomendado5.Size = new System.Drawing.Size(150, 153);
+            this.pcbRecomendado5.Size = new System.Drawing.Size(189, 153);
             this.pcbRecomendado5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbRecomendado5.TabIndex = 0;
             this.pcbRecomendado5.TabStop = false;
@@ -576,11 +647,11 @@
             // 
             this.gbxRecomendadosCH3.Controls.Add(this.pcbRecomendado3);
             this.gbxRecomendadosCH3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbxRecomendadosCH3.Location = new System.Drawing.Point(324, 2);
+            this.gbxRecomendadosCH3.Location = new System.Drawing.Point(403, 2);
             this.gbxRecomendadosCH3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbxRecomendadosCH3.Name = "gbxRecomendadosCH3";
             this.gbxRecomendadosCH3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbxRecomendadosCH3.Size = new System.Drawing.Size(151, 178);
+            this.gbxRecomendadosCH3.Size = new System.Drawing.Size(190, 178);
             this.gbxRecomendadosCH3.TabIndex = 7;
             this.gbxRecomendadosCH3.TabStop = false;
             this.gbxRecomendadosCH3.Text = "El pollo Pepe";
@@ -592,7 +663,7 @@
             this.pcbRecomendado3.Location = new System.Drawing.Point(3, 23);
             this.pcbRecomendado3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbRecomendado3.Name = "pcbRecomendado3";
-            this.pcbRecomendado3.Size = new System.Drawing.Size(145, 153);
+            this.pcbRecomendado3.Size = new System.Drawing.Size(184, 153);
             this.pcbRecomendado3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbRecomendado3.TabIndex = 0;
             this.pcbRecomendado3.TabStop = false;
@@ -606,7 +677,7 @@
             this.gbxRecomendadosCH1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbxRecomendadosCH1.Name = "gbxRecomendadosCH1";
             this.gbxRecomendadosCH1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbxRecomendadosCH1.Size = new System.Drawing.Size(154, 178);
+            this.gbxRecomendadosCH1.Size = new System.Drawing.Size(193, 178);
             this.gbxRecomendadosCH1.TabIndex = 6;
             this.gbxRecomendadosCH1.TabStop = false;
             this.gbxRecomendadosCH1.Text = "El principito";
@@ -619,7 +690,7 @@
             this.pcbRecomendado1.Location = new System.Drawing.Point(3, 23);
             this.pcbRecomendado1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbRecomendado1.Name = "pcbRecomendado1";
-            this.pcbRecomendado1.Size = new System.Drawing.Size(148, 153);
+            this.pcbRecomendado1.Size = new System.Drawing.Size(187, 153);
             this.pcbRecomendado1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbRecomendado1.TabIndex = 0;
             this.pcbRecomendado1.TabStop = false;
@@ -629,11 +700,11 @@
             this.gbxRecomendadosCH2.Controls.Add(this.pcbRecomendado2);
             this.gbxRecomendadosCH2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gbxRecomendadosCH2.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbxRecomendadosCH2.Location = new System.Drawing.Point(163, 2);
+            this.gbxRecomendadosCH2.Location = new System.Drawing.Point(202, 2);
             this.gbxRecomendadosCH2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbxRecomendadosCH2.Name = "gbxRecomendadosCH2";
             this.gbxRecomendadosCH2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbxRecomendadosCH2.Size = new System.Drawing.Size(155, 178);
+            this.gbxRecomendadosCH2.Size = new System.Drawing.Size(195, 178);
             this.gbxRecomendadosCH2.TabIndex = 5;
             this.gbxRecomendadosCH2.TabStop = false;
             this.gbxRecomendadosCH2.Text = "Alas de Sangre";
@@ -645,7 +716,7 @@
             this.pcbRecomendado2.Location = new System.Drawing.Point(3, 23);
             this.pcbRecomendado2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbRecomendado2.Name = "pcbRecomendado2";
-            this.pcbRecomendado2.Size = new System.Drawing.Size(149, 153);
+            this.pcbRecomendado2.Size = new System.Drawing.Size(189, 153);
             this.pcbRecomendado2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbRecomendado2.TabIndex = 0;
             this.pcbRecomendado2.TabStop = false;
@@ -657,32 +728,34 @@
             this.panel8.Location = new System.Drawing.Point(0, 0);
             this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(800, 38);
+            this.panel8.Size = new System.Drawing.Size(996, 57);
             this.panel8.TabIndex = 17;
+            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
             // lblRecomendadosLibros
             // 
             this.lblRecomendadosLibros.AutoSize = true;
-            this.lblRecomendadosLibros.Dock = System.Windows.Forms.DockStyle.Left;
             this.lblRecomendadosLibros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRecomendadosLibros.Location = new System.Drawing.Point(0, 0);
+            this.lblRecomendadosLibros.Location = new System.Drawing.Point(0, 28);
             this.lblRecomendadosLibros.Name = "lblRecomendadosLibros";
             this.lblRecomendadosLibros.Size = new System.Drawing.Size(271, 25);
             this.lblRecomendadosLibros.TabIndex = 1;
             this.lblRecomendadosLibros.Text = "Recomendados por Litterium :";
+            this.lblRecomendadosLibros.Click += new System.EventHandler(this.lblRecomendadosLibros_Click);
             // 
             // CortoHistoriaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(800, 600);
+            this.ClientSize = new System.Drawing.Size(996, 778);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "CortoHistoriaPrincipal";
             this.Text = "CortoHistoriaPrincipal";
             this.Load += new System.EventHandler(this.CortoHistoriaPrincipal_Load);
             this.panel1.ResumeLayout(false);
+            this.tlpBotones.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.grbValoradosLibro4.ResumeLayout(false);
@@ -774,5 +847,8 @@
         private System.Windows.Forms.PictureBox pcbRecomendado2;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label lblRecomendadosLibros;
+        private System.Windows.Forms.TableLayoutPanel tlpBotones;
+        private FontAwesome.Sharp.IconButton btnContinuarCortohistoria;
+        private FontAwesome.Sharp.IconButton btnCrearCortohistoria;
     }
 }

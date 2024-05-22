@@ -156,6 +156,21 @@ namespace registro_mockup.Principal
             }
         }
 
+        private void btnCargarImagenCortohistoria_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog cargaImagen = new OpenFileDialog();
+            cargaImagen.InitialDirectory = "C:\\";
+            cargaImagen.Filter = "JPG (*.jpg)(*.jpeg)|*.jpg;*.jpeg|PNG (*.png)|*.png|GIF (*.gif)|*.gif";
+            if (cargaImagen.ShowDialog() == DialogResult.OK)
+            {
+                pcbPortada.ImageLocation = cargaImagen.FileName;
+                MessageBox.Show(cargaImagen.FileName);
+            }
+            else
+            {
+                MessageBox.Show("No se ha seleccionado imagen", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
     }
 }
 

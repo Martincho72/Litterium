@@ -40,7 +40,10 @@
             this.btnBorradoresCortohistorias = new FontAwesome.Sharp.IconButton();
             this.btnBorrar = new FontAwesome.Sharp.IconButton();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.pcbPortada = new System.Windows.Forms.PictureBox();
+            this.btnCargarImagenCortohistoria = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.btnPictureSeguirHistoria)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbPortada)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -184,12 +187,39 @@
             // 
             this.toolTip1.Popup += new System.Windows.Forms.PopupEventHandler(this.toolTip1_Popup);
             // 
+            // pcbPortada
+            // 
+            this.pcbPortada.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pcbPortada.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo34;
+            this.pcbPortada.Location = new System.Drawing.Point(967, 127);
+            this.pcbPortada.Margin = new System.Windows.Forms.Padding(4);
+            this.pcbPortada.Name = "pcbPortada";
+            this.pcbPortada.Size = new System.Drawing.Size(161, 151);
+            this.pcbPortada.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbPortada.TabIndex = 56;
+            this.pcbPortada.TabStop = false;
+            // 
+            // btnCargarImagenCortohistoria
+            // 
+            this.btnCargarImagenCortohistoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnCargarImagenCortohistoria.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCargarImagenCortohistoria.Location = new System.Drawing.Point(967, 284);
+            this.btnCargarImagenCortohistoria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCargarImagenCortohistoria.Name = "btnCargarImagenCortohistoria";
+            this.btnCargarImagenCortohistoria.Size = new System.Drawing.Size(161, 60);
+            this.btnCargarImagenCortohistoria.TabIndex = 70;
+            this.btnCargarImagenCortohistoria.Text = "Cargar";
+            this.btnCargarImagenCortohistoria.UseVisualStyleBackColor = false;
+            this.btnCargarImagenCortohistoria.Click += new System.EventHandler(this.btnCargarImagenCortohistoria_Click);
+            // 
             // CrearCortohistoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1067, 567);
+            this.ClientSize = new System.Drawing.Size(1191, 623);
+            this.Controls.Add(this.btnCargarImagenCortohistoria);
+            this.Controls.Add(this.pcbPortada);
             this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.btnBorradoresCortohistorias);
             this.Controls.Add(this.btnSubirCortohistoria);
@@ -205,6 +235,7 @@
             this.Text = "CrearCortohistoria";
             this.Load += new System.EventHandler(this.CrearCortohistoria_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btnPictureSeguirHistoria)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbPortada)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,5 +254,7 @@
         private FontAwesome.Sharp.IconButton btnBorradoresCortohistorias;
         private FontAwesome.Sharp.IconButton btnBorrar;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.PictureBox pcbPortada;
+        private System.Windows.Forms.Button btnCargarImagenCortohistoria;
     }
 }

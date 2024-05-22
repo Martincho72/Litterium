@@ -8,17 +8,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FontAwesome.Sharp;
+using registro_mockup.Principal;
 
 namespace registro_mockup.Principal
 {
     public partial class CortoHistoriaPrincipal : Form
     {
         BDatos basedatos=new BDatos();
+        private Form currentForm;
         public CortoHistoriaPrincipal()
         {
             InitializeComponent();
         }
-
+        private void OpenChildForm(Form childForm)
+        {
+            if (currentForm != null)
+            {
+                currentForm.Close();
+            }
+            currentForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panel1.Controls.Add(childForm);
+            panel1.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -83,6 +100,33 @@ namespace registro_mockup.Principal
         }
 
         private void grbCortohistoriasLibros5_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblRecomendadosLibros_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCrearCortohistoria_Click(object sender, EventArgs e)
+        {
+            CrearCortohistoria crearCortohistoria = new CrearCortohistoria();
+            // Mostrar Form2
+            crearCortohistoria.Show();
+        }
+
+        private void btnContinuarCortohistoria_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new ListaDeCortohistoriasContinuar());
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
