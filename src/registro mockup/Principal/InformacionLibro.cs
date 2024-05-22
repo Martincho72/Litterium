@@ -114,5 +114,10 @@ namespace registro_mockup.Principal
             Comprar form = new Comprar(isbnLibro, usuariomenu, (int)nupCantidad.Value, rdbCopiaFisica.Checked, menuP);
             form.ShowDialog();
         }
+
+        private void btnAgreagarAlCarrito_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
