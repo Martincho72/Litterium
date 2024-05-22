@@ -353,6 +353,7 @@
             this.pcbValorado4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbValorado4.TabIndex = 0;
             this.pcbValorado4.TabStop = false;
+            this.pcbValorado4.Click += new System.EventHandler(this.pcbValorado4_Click);
             // 
             // grbValoradosLibros5
             // 
@@ -378,6 +379,7 @@
             this.pcbValorado5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbValorado5.TabIndex = 0;
             this.pcbValorado5.TabStop = false;
+            this.pcbValorado5.Click += new System.EventHandler(this.pcbValorado5_Click);
             // 
             // grbValoradosLibros3
             // 
@@ -403,6 +405,7 @@
             this.pcbValorado3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbValorado3.TabIndex = 0;
             this.pcbValorado3.TabStop = false;
+            this.pcbValorado3.Click += new System.EventHandler(this.pcbValorado3_Click);
             // 
             // grbValoradosLibros1
             // 
@@ -454,6 +457,7 @@
             this.pcbValorado2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbValorado2.TabIndex = 0;
             this.pcbValorado2.TabStop = false;
+            this.pcbValorado2.Click += new System.EventHandler(this.pcbValorado2_Click);
             // 
             // panel3
             // 
