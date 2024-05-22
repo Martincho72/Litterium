@@ -45,8 +45,10 @@ namespace registro_mockup.Principal
 
         private void LibroPrincipal_Load(object sender, EventArgs e)
         {
+            MostrarPaneles();
             if (basedatos.AbrirConexion())
             {
+                
                 List<string> titulo = Valoracion.librosMasValorados(basedatos.Conexion);
                 grbValoradosLibros1.Text = titulo[0];
                 grbValoradosLibros2.Text = titulo[1];
@@ -143,6 +145,15 @@ namespace registro_mockup.Principal
             panel6.Visible = false;
             panel8.Visible = false;
             tableLayoutPanel3.Visible = false;
+        }
+        private void MostrarPaneles()
+        {
+            panel2.Visible = true;
+            panel3.Visible = true;
+            panel5.Visible = true;
+            panel6.Visible = true;
+            panel8.Visible = true;
+            tableLayoutPanel3.Visible = true;
         }
 
         private void pcbRecomendado2_Click(object sender, EventArgs e)
