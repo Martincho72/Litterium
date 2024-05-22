@@ -114,5 +114,24 @@ namespace registro_mockup.Principal
             Comprar form = new Comprar(isbnLibro, usuariomenu, (int)nupCantidad.Value, rdbCopiaFisica.Checked, menuP);
             form.ShowDialog();
         }
+
+        private void btnAgreagarAlCarrito_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+                int cantidad = (int)nupCantidad.Value;
+                Libro l1 = Libro.EncontrarDatosLibro(basedatos.Conexion, isbnLibro);
+                Usuario us1 = Usuario.EncontrarDatosUsuario(basedatos.Conexion, usuariomenu);
+                double precio = l1.importeTotal(l1.Precio, (int)nupCantidad.Value);
+                bool online = true;
+                if (rdbCopiaFisica.Checked) { online = false; }
+                l1.Cantidad=cantidad;
+                l1.Online=online;
+               
+                carrito.agregarAlCarrito(l1);
+            }
+            else { }
+            basedatos.CerrarConexion();
+        }
     }
 }

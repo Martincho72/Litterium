@@ -18,9 +18,19 @@ namespace registro_mockup.Principal
         private string isbnLibro;
         private bool online=false;
         private Form previousForm;
-        public Comprar()
+        public Comprar(string usuario)
         {
             InitializeComponent();
+            usuariomenu = usuario;
+            txtUsuario.Text = usuario;
+            if (basedatos.AbrirConexion())
+            {
+                foreach (Libro libro in carrito.MiCarrito)
+                {
+                    dgvResumen.Rows.Add(libro.Isbn, libro.Titulo, libro.Autor, libro.Categoria, libro.Valoracion, libro.Precio,libro.Cantidad,libro.Online);
+                }
+            }
+            basedatos.CerrarConexion();
         }
 
         public Comprar(string isbn, string usuario, int cantidad, bool fisico, Form form)
@@ -66,12 +76,14 @@ namespace registro_mockup.Principal
         {
             if (basedatos.AbrirConexion())
             {
-                decimal total;
-                Decimal.TryParse(txtTotal.Text, out total);
-                Libro l1 = Libro.EncontrarDatosLibro(basedatos.Conexion, isbnLibro);
-                Usuario us1 = Usuario.EncontrarDatosUsuario(basedatos.Conexion, usuariomenu);
-                Ejemplar ej1 = new Ejemplar(DateTime.Now,total,online,us1.Id, isbnLibro);
-                Ejemplar.AgregarEjemplar(basedatos.Conexion,ej1);
+                foreach (Libro l1 in carrito.MiCarrito)
+                {
+                    Usuario us1 = Usuario.EncontrarDatosUsuario(basedatos.Conexion, usuariomenu);
+                    Ejemplar ej1 = new Ejemplar(DateTime.Now,(decimal)l1.importeTotal(l1.Precio,l1.Cantidad), l1.Online, us1.Id, l1.Isbn);
+                    Ejemplar.AgregarEjemplar(basedatos.Conexion, ej1);
+                    
+                }
+                carrito.MiCarrito.Clear();
                 MessageBox.Show("Compra Realizada con exito!!");
                 this.Close();
             }
@@ -79,6 +91,7 @@ namespace registro_mockup.Principal
             {
 
             }
+            basedatos.CerrarConexion();
         }
 
         private void Comprar_Load(object sender, EventArgs e)
