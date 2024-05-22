@@ -263,9 +263,9 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(223, 2);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(341, 42);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
@@ -282,7 +282,7 @@
             "4",
             "5"});
             this.cmbValorar.Location = new System.Drawing.Point(105, 1);
-            this.cmbValorar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbValorar.Margin = new System.Windows.Forms.Padding(2);
             this.cmbValorar.Name = "cmbValorar";
             this.cmbValorar.Size = new System.Drawing.Size(92, 25);
             this.cmbValorar.TabIndex = 0;

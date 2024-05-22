@@ -8,14 +8,14 @@ namespace registro_mockup.clases
 {
     internal static class carrito
     {
-        static List<Ejemplar>  miCarrito = new List<Ejemplar>();
+        static List<Libro>  miCarrito = new List<Libro>();
 
-        public static List<Ejemplar> MiCarrito { get { return miCarrito; }}
+        public static List<Libro> MiCarrito { get { return miCarrito; }}
 
 
-        public static void agregarAlCarrito(Ejemplar ejemplar)
+        public static void agregarAlCarrito(Libro libro)
         {
-            miCarrito.Add(ejemplar);
+            miCarrito.Add(libro);
         }
 
 

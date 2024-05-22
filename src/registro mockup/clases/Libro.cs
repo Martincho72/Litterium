@@ -21,6 +21,8 @@ namespace registro_mockup.clases
         Image portada;
         string sinopsis;
         double precio;
+        int cantidad;
+        bool online;
 
         public string Isbn { get { return isbn; } }
         public string Titulo { get { return titulo; } }
@@ -29,8 +31,10 @@ namespace registro_mockup.clases
         public double Valoracion { get { return valoracion; } }
         public Image Portada { get { return portada; } set { portada = value; } }
         public double Precio { get { return precio; } }
-        public string Sinopsis { get { return sinopsis; } }
+        public string Sinopsis { get { return sinopsis; }  }
+        public int Cantidad { get { return cantidad; }set { cantidad = value; } }
 
+        public bool Online {  get { return online; } set { online = value; } }
         public Libro()
         {
             
@@ -46,6 +50,8 @@ namespace registro_mockup.clases
             this.sinopsis = sinopsis;
             this.precio = precio;
         }
+
+      
 
         public static List<Libro> BuscarLibros(MySqlConnection conexion)
         {

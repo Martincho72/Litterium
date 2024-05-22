@@ -143,7 +143,7 @@ namespace registro_mockup
         private void iconButton7_Click(object sender, EventArgs e)
         {
             ActivaBTN(sender, RGBColors.color1);
-            OpenChildForm(new MiCarrito());
+            OpenChildForm(new MiCarrito(usuariomenu));
 
         }
 

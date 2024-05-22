@@ -119,16 +119,19 @@ namespace registro_mockup.Principal
         {
             if (basedatos.AbrirConexion())
             {
+                int cantidad = (int)nupCantidad.Value;
                 Libro l1 = Libro.EncontrarDatosLibro(basedatos.Conexion, isbnLibro);
                 Usuario us1 = Usuario.EncontrarDatosUsuario(basedatos.Conexion, usuariomenu);
-                double precio = l1.importeTotal(double.Parse(lblPrecioLibro.Text), (int)nupCantidad.Value);
+                double precio = l1.importeTotal(l1.Precio, (int)nupCantidad.Value);
                 bool online = true;
                 if (rdbCopiaFisica.Checked) { online = false; }
-
-                Ejemplar ej1 = new Ejemplar(DateTime.Now, (decimal)precio, online, us1.Id, isbnLibro);
-                carrito.agregarAlCarrito(ej1);
+                l1.Cantidad=cantidad;
+                l1.Online=online;
+               
+                carrito.agregarAlCarrito(l1);
             }
             else { }
+            basedatos.CerrarConexion();
         }
     }
 }
