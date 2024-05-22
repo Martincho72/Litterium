@@ -216,5 +216,65 @@ namespace registro_mockup.Principal
                 MessageBox.Show("");
             }
         }
+
+        private void pcbValorado2_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+                List<string> titulo = Valoracion.librosMasValorados(basedatos.Conexion);
+                OpenChildForm(new InformacionLibro(titulo[1], usuariomenu));
+
+                OcultarPaneles();
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
+        }
+
+        private void pcbValorado3_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+                List<string> titulo = Valoracion.librosMasValorados(basedatos.Conexion);
+                OpenChildForm(new InformacionLibro(titulo[2], usuariomenu));
+
+                OcultarPaneles();
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
+        }
+
+        private void pcbValorado4_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+                List<string> titulo = Valoracion.librosMasValorados(basedatos.Conexion);
+                OpenChildForm(new InformacionLibro(titulo[3], usuariomenu));
+
+                OcultarPaneles();
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
+        }
+
+        private void pcbValorado5_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+                List<string> titulo = Valoracion.librosMasValorados(basedatos.Conexion);
+                OpenChildForm(new InformacionLibro(titulo[4], usuariomenu));
+
+                OcultarPaneles();
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
+        }
     }
 }
