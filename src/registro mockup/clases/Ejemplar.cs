@@ -16,7 +16,7 @@ namespace registro_mockup
         DateTime fechaCompra;
         decimal precioTotal;
         int id_usuario;
-        string isbn_usuario;
+        string isbn_libro;
         bool esOnline;
 
         public int Id { get { return id; } }
@@ -24,28 +24,28 @@ namespace registro_mockup
 
         public decimal PrecioTotal { get { return precioTotal; } }
         public int Id_usuario { get { return id_usuario; } }
-        public string Isbn_usuario { get { return isbn_usuario; } }
+        public string Isbn_libro { get { return isbn_libro; } }
 
         public bool EsOnline { get { return esOnline; } }
 
-        public Ejemplar( DateTime fechaCompra, decimal precioTotal, bool esOnline, int id_usuario, string isbn_usuario)
+        public Ejemplar( DateTime fechaCompra, decimal precioTotal, bool esOnline, int id_usuario, string isbn_libro)
         {
             this.fechaCompra = fechaCompra;
 
             this.precioTotal = precioTotal;
             this.esOnline = esOnline;
             this.id_usuario = id_usuario;
-            this.isbn_usuario = isbn_usuario;
+            this.isbn_libro = isbn_libro;
         }
 
-        public Ejemplar(int id,DateTime fechaCompra, decimal precioTotal, bool esOnline, int id_usuario, string isbn_usuario)
+        public Ejemplar(int id,DateTime fechaCompra, decimal precioTotal, bool esOnline, int id_usuario, string isbn_libro)
         {
             this.id = id;
             this.fechaCompra = fechaCompra;
             this.precioTotal = precioTotal;
             this.esOnline = esOnline;
             this.id_usuario = id_usuario;
-            this.isbn_usuario = isbn_usuario;
+            this.isbn_libro = isbn_libro;
         }
 
         public static List<Ejemplar> BuscarEjemplares(MySqlConnection conexion)
@@ -69,14 +69,14 @@ namespace registro_mockup
                     bool esOnline = reader.GetBoolean(3);
                     decimal precioTotal = reader.GetDecimal(4);
                     int id_usuario = reader.GetInt32(5);
-                    string isbn_usuario = reader.GetString(6);
+                    string isbn_libro = reader.GetString(6);
 
                     //byte[] img = (byte[])reader["imagen"];
                     //MemoryStream ms = new MemoryStream(img);
                     //Image foto = Image.FromStream(ms);
 
                     // Crear el objeto Usuario y agregarlo a la lista
-                    Ejemplar ejemplar = new Ejemplar(id, fechaCompra,  precioTotal, esOnline, id_usuario,/* foto*/ isbn_usuario);
+                    Ejemplar ejemplar = new Ejemplar(id, fechaCompra,  precioTotal, esOnline, id_usuario,/* foto*/ isbn_libro);
                     lista.Add(ejemplar);
                 }
 
@@ -107,14 +107,14 @@ namespace registro_mockup
                     bool esOnline = reader.GetBoolean(2);
                     decimal precioTotal = reader.GetDecimal(3);
                     int id_usu = reader.GetInt32(4);
-                    string isbn_usuario = reader.GetString(5);
+                    string isbn_libro = reader.GetString(5);
 
                     //byte[] img = (byte[])reader["imagen"];
                     //MemoryStream ms = new MemoryStream(img);
                     //Image foto = Image.FromStream(ms);
 
                     // Crear el objeto Usuario y agregarlo a la lista
-                    Ejemplar ejemplar = new Ejemplar(id, fechaCompra,  precioTotal, esOnline, id_usu,/* foto*/ isbn_usuario);
+                    Ejemplar ejemplar = new Ejemplar(id, fechaCompra,  precioTotal, esOnline, id_usu,/* foto*/ isbn_libro);
                     lista.Add(ejemplar);
                 }
 
@@ -133,7 +133,7 @@ namespace registro_mockup
             int online = 0;
             if (ej.EsOnline) online= 1;
             string consulta = String.Format("INSERT INTO ejemplar (fechaCompra,esOnline,precioTotal,id_usuario,isbn_libro) " +
-                "VALUES " + "('{0}','{1}','{2}','{3}','{4}')", ej.fechaCompra.ToString("yyyy-MM-dd"),online, ej.PrecioTotal, ej.Id_usuario, ej.Isbn_usuario);
+                "VALUES " + "('{0}','{1}','{2}','{3}','{4}')", ej.fechaCompra.ToString("yyyy-MM-dd"),online, ej.PrecioTotal, ej.Id_usuario, ej.Isbn_libro);
 
             MySqlCommand comando = new MySqlCommand(consulta, conexion);
             //comando.Parameters.AddWithValue("imagen", imgArr);
@@ -193,14 +193,14 @@ namespace registro_mockup
                     bool esOnline = reader.GetBoolean(2);
                     decimal precioTotal = reader.GetDecimal(3);
                     int id_usu = reader.GetInt32(4);
-                    string isbn_usuario = reader.GetString(5);
+                    string isbn_libro = reader.GetString(5);
 
                     //byte[] img = (byte[])reader["imagen"];
                     //MemoryStream ms = new MemoryStream(img);
                     //Image foto = Image.FromStream(ms);
 
                     // Crear el objeto Usuario y agregarlo a la lista
-                    Ejemplar ejemplar = new Ejemplar(id, fechaCompra,  precioTotal, esOnline, id_usu,/* foto*/ isbn_usuario);
+                    Ejemplar ejemplar = new Ejemplar(id, fechaCompra,  precioTotal, esOnline, id_usu,/* foto*/ isbn_libro);
                     lista.Add(ejemplar);
                 }
             }
