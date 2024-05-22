@@ -59,7 +59,7 @@
             this.txtTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTitulo.Location = new System.Drawing.Point(145, 10);
-            this.txtTitulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTitulo.Margin = new System.Windows.Forms.Padding(4);
             this.txtTitulo.Name = "txtTitulo";
             this.txtTitulo.Size = new System.Drawing.Size(747, 41);
             this.txtTitulo.TabIndex = 1;
@@ -80,10 +80,10 @@
             this.txtCortohistoriaCrear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCortohistoriaCrear.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCortohistoriaCrear.Location = new System.Drawing.Point(23, 111);
-            this.txtCortohistoriaCrear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCortohistoriaCrear.Margin = new System.Windows.Forms.Padding(4);
             this.txtCortohistoriaCrear.Multiline = true;
             this.txtCortohistoriaCrear.Name = "txtCortohistoriaCrear";
-            this.txtCortohistoriaCrear.Size = new System.Drawing.Size(1027, 354);
+            this.txtCortohistoriaCrear.Size = new System.Drawing.Size(1017, 354);
             this.txtCortohistoriaCrear.TabIndex = 3;
             // 
             // lblContadorPalabras
@@ -101,7 +101,7 @@
             this.chbContinuarCortohistoria.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.chbContinuarCortohistoria.AutoSize = true;
             this.chbContinuarCortohistoria.Location = new System.Drawing.Point(510, 537);
-            this.chbContinuarCortohistoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbContinuarCortohistoria.Margin = new System.Windows.Forms.Padding(4);
             this.chbContinuarCortohistoria.Name = "chbContinuarCortohistoria";
             this.chbContinuarCortohistoria.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.chbContinuarCortohistoria.Size = new System.Drawing.Size(122, 20);
@@ -116,7 +116,7 @@
             this.btnPictureSeguirHistoria.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPictureSeguirHistoria.Image = global::registro_mockup.Properties.Resources.pregunta_removebg_preview;
             this.btnPictureSeguirHistoria.Location = new System.Drawing.Point(663, 532);
-            this.btnPictureSeguirHistoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPictureSeguirHistoria.Margin = new System.Windows.Forms.Padding(4);
             this.btnPictureSeguirHistoria.Name = "btnPictureSeguirHistoria";
             this.btnPictureSeguirHistoria.Size = new System.Drawing.Size(33, 25);
             this.btnPictureSeguirHistoria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -134,7 +134,7 @@
             this.btnSubirCortohistoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSubirCortohistoria.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSubirCortohistoria.Location = new System.Drawing.Point(22, 473);
-            this.btnSubirCortohistoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSubirCortohistoria.Margin = new System.Windows.Forms.Padding(4);
             this.btnSubirCortohistoria.Name = "btnSubirCortohistoria";
             this.btnSubirCortohistoria.Size = new System.Drawing.Size(141, 84);
             this.btnSubirCortohistoria.TabIndex = 7;
@@ -153,7 +153,7 @@
             this.btnBorradoresCortohistorias.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnBorradoresCortohistorias.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBorradoresCortohistorias.Location = new System.Drawing.Point(171, 473);
-            this.btnBorradoresCortohistorias.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBorradoresCortohistorias.Margin = new System.Windows.Forms.Padding(4);
             this.btnBorradoresCortohistorias.Name = "btnBorradoresCortohistorias";
             this.btnBorradoresCortohistorias.Size = new System.Drawing.Size(182, 84);
             this.btnBorradoresCortohistorias.TabIndex = 8;
@@ -171,7 +171,7 @@
             this.btnBorrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnBorrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBorrar.Location = new System.Drawing.Point(361, 473);
-            this.btnBorrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBorrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(141, 84);
             this.btnBorrar.TabIndex = 9;
@@ -200,7 +200,7 @@
             this.Controls.Add(this.lblCortohistoria);
             this.Controls.Add(this.txtTitulo);
             this.Controls.Add(this.lblTitulo);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CrearCortohistoria";
             this.Text = "CrearCortohistoria";
             this.Load += new System.EventHandler(this.CrearCortohistoria_Load);
