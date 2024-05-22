@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +22,7 @@ namespace registro_mockup.clases
         bool finalizada;
         double valoracion;
         int id_usuario;
+        Image portada;
 
         public int Id { get { return id; } }
         public string Titulo { get { return titulo; } }
@@ -29,8 +33,19 @@ namespace registro_mockup.clases
         public bool Finalizada { get { return finalizada; } }
         public double Valoracion { get { return valoracion; } }
         public int Id_usuario { get { return id_usuario; } }
+        public Image Portada { get { return portada; } }
 
-        public CortoHistoria(int id, string titulo, string autor, DateTime fechaPublicacion, string categoria, bool continuable, bool finalizada, double valoracion, int id_usuario)
+        
+
+        public CortoHistoria(string titulo, string autor, DateTime fechaPublicacion,bool finalizada,int id_usuario) //Constructor para Mis CortoHistorias de Usuario
+        {
+            this.titulo= titulo;
+            this.autor= autor;
+            this.fechaPublicacion= fechaPublicacion;
+            this.finalizada = finalizada;
+            this.id_usuario= id_usuario;
+        }
+        public CortoHistoria(int id,string titulo, string autor, DateTime fechaPublicacion, string categoria, bool continuable, bool finalizada, double valoracion, int id_usuario, Image portada) //Constructor para Mis CortoHistorias de Usuario
         {
             this.id = id;
             this.titulo = titulo;
@@ -41,17 +56,10 @@ namespace registro_mockup.clases
             this.finalizada = finalizada;
             this.valoracion = valoracion;
             this.id_usuario = id_usuario;
+            this.portada = portada;
         }
 
-        public CortoHistoria(string titulo, string autor, DateTime fechaPublicacion,bool finalizada,int id_usuario) //Constructor para Mis CortoHistorias de Usuario
-        {
-            this.titulo= titulo;
-            this.autor= autor;
-            this.fechaPublicacion= fechaPublicacion;
-            this.finalizada = finalizada;
-            this.id_usuario= id_usuario;
-        }
-        public CortoHistoria(int id,string titulo, string autor, DateTime fechaPublicacion, string categoria, bool continuable, bool finalizada) //Constructor para Mis CortoHistorias de Usuario
+        public CortoHistoria(int id, string titulo, string autor, DateTime fechaPublicacion, string categoria, bool continuable, bool finalizada) //Constructor para Mis CortoHistorias de Usuario
         {
             this.id = id;
             this.titulo = titulo;
@@ -60,6 +68,7 @@ namespace registro_mockup.clases
             this.categoria = categoria;
             this.continuable = continuable;
             this.finalizada = finalizada;
+
         }
 
         public CortoHistoria()
@@ -101,8 +110,11 @@ namespace registro_mockup.clases
                     double valoracion = reader.GetDouble(7);
                     int id_usuario = reader.GetInt32(8);
 
+                    byte[] img = (byte[])reader["imagen"];
+                    MemoryStream ms = new MemoryStream(img);
+                    Image foto = Image.FromStream(ms);
                     // Crear el objeto Usuario y agregarlo a la lista
-                    CortoHistoria ch = new CortoHistoria(id, titulo, autor, fecha, editorial,continuable,finalizada,valoracion,id_usuario);
+                    CortoHistoria ch = new CortoHistoria(id, titulo, autor, fecha, editorial,continuable,finalizada,valoracion,id_usuario,foto);
                     lista.Add(ch);
                 }
 
@@ -138,8 +150,12 @@ namespace registro_mockup.clases
                     double valoracion = reader.GetDouble(7);
                     int id_usuario = reader.GetInt32(8);
 
+                    byte[] img = (byte[])reader["imagen"];
+                    MemoryStream ms = new MemoryStream(img);
+                    Image foto = Image.FromStream(ms);
+
                     // Crear el objeto Usuario y agregarlo a la lista
-                    CortoHistoria ch = new CortoHistoria(id, titulo, autor, fecha, editorial, continuable, finalizada, valoracion, id_usuario);
+                    CortoHistoria ch = new CortoHistoria(id, titulo, autor, fecha, editorial, continuable, finalizada, valoracion, id_usuario,foto);
                     lista.Add(ch);
                 }
 
@@ -232,13 +248,16 @@ namespace registro_mockup.clases
             else continuable = 0;
             if (ch.finalizada) finalizada = 1;
             else finalizada = 0;
-            
+
+            MemoryStream ms = new MemoryStream();
+            ch.Portada.Save(ms, ImageFormat.Png);
+            byte[] imgArr = ms.ToArray();
             int retorno;
-            string consulta = String.Format("UPDATE cortohistoria SET id = '{0}', titulo = '{1}', autor = '{2}', fechaPublicacion = '{3}', categoria = '{4}', continuable = '{5}', finalizada = '{6}', valoracion = '{7}', id_usuario ='{8}'" +
+            string consulta = String.Format("UPDATE cortohistoria SET id = '{0}', titulo = '{1}', autor = '{2}', fechaPublicacion = '{3}', categoria = '{4}', continuable = '{5}', finalizada = '{6}', valoracion = '{7}', id_usuario ='{8}' , imagen=@imagen " +
                                             "WHERE id = '{0}'", ch.Id, ch.Titulo, ch.Autor, ch.FechaPublicacion.ToString("yyyy-MM-dd"), ch.Categoria,continuable,finalizada,ch.Valoracion,ch.Id_usuario);
 
             MySqlCommand comando = new MySqlCommand(consulta, conexion);
-
+            comando.Parameters.AddWithValue("@imagen", imgArr);
             retorno = comando.ExecuteNonQuery();
 
             return retorno;
@@ -268,8 +287,12 @@ namespace registro_mockup.clases
                     double valoracion = reader.GetDouble(7);
                     int id_usuario = reader.GetInt32(8);
 
+                    byte[] img = (byte[])reader["imagen"];
+                    MemoryStream ms = new MemoryStream(img);
+                    Image foto = Image.FromStream(ms);
+
                     // Crear el objeto Usuario y agregarlo a la lista
-                    ch = new CortoHistoria(idch, titulo, autor, fecha, editorial, continuable, finalizada, valoracion, id_usuario);
+                    ch = new CortoHistoria(idch, titulo, autor, fecha, editorial, continuable, finalizada, valoracion, id_usuario, foto);
                 }
 
 

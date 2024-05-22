@@ -80,5 +80,10 @@ namespace registro_mockup.formularios_administrador
         {
             this.Close();
         }
+
+        private void pcbPortada_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

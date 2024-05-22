@@ -35,6 +35,8 @@ namespace registro_mockup.formularios_administrador
                 txtIdUsuario.Text = ch.Id_usuario.ToString();
                 chbContinuable.Checked = ch.Continuable;
                 chbFinalizada.Checked = ch.Finalizada;
+                pcbPortada.Image = ch.Portada;
+
             }
             else { }
             basedatos.CerrarConexion();
@@ -50,12 +52,28 @@ namespace registro_mockup.formularios_administrador
         {
             if (basedatos.AbrirConexion())
             {
-                CortoHistoria corto = new CortoHistoria(int.Parse(txtId.Text), txtTitulo.Text, txtAutor.Text, dtpFechaPublicacion.Value, txtCategoria.Text, chbContinuable.Checked, chbFinalizada.Checked, double.Parse(txtValoracion.Text), int.Parse(txtIdUsuario.Text));
+                CortoHistoria corto = new CortoHistoria(int.Parse(txtId.Text), txtTitulo.Text, txtAutor.Text, dtpFechaPublicacion.Value, txtCategoria.Text, chbContinuable.Checked, chbFinalizada.Checked, double.Parse(txtValoracion.Text), int.Parse(txtIdUsuario.Text), pcbPortada.Image);
                 CortoHistoria.EditarCortoHistoria(basedatos.Conexion, corto);
                 this.Close();
             }
             else { }
             basedatos.CerrarConexion();
+        }
+
+        private void btnCargar_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog cargaImagen = new OpenFileDialog();
+            cargaImagen.InitialDirectory = "C:\\";
+            cargaImagen.Filter = "JPG (*.jpg)(*.jpeg)|*.jpg;*.jpeg|PNG (*.png)|*.png|GIF (*.gif)|*.gif";
+            if (cargaImagen.ShowDialog() == DialogResult.OK)
+            {
+                pcbPortada.ImageLocation = cargaImagen.FileName;
+                MessageBox.Show(cargaImagen.FileName);
+            }
+            else
+            {
+                MessageBox.Show("No se ha seleccionado imagen", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
     }
 }
