@@ -31,6 +31,13 @@ namespace registro_mockup.Principal
             this.usarioMenu = usuarioMenu;
         }
 
+        public CrearCortohistoria()
+        {
+            InitializeComponent();
+
+            toolTip1.SetToolTip(btnPictureSeguirHistoria, "Al activar esta funcion permites que el resto de ususarios puedan continuar la cortohistoria.");
+        }
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -163,7 +170,7 @@ namespace registro_mockup.Principal
             }
         }
 
-        private void btnCargarImagenCortohistoria_Click(object sender, EventArgs e)
+        private void btnCargarImagenCortohistorias_Click(object sender, EventArgs e)
         {
             OpenFileDialog cargaImagen = new OpenFileDialog();
             cargaImagen.InitialDirectory = "C:\\";

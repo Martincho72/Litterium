@@ -44,7 +44,7 @@
             this.txtCategoria = new System.Windows.Forms.TextBox();
             this.lblCategoria = new System.Windows.Forms.Label();
             this.pcbPortada = new System.Windows.Forms.PictureBox();
-            this.btnCargarImagenCortohistoria = new System.Windows.Forms.Button();
+            this.btnCargarImagenCortohistorias = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.btnPictureSeguirHistoria)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbPortada)).BeginInit();
             this.SuspendLayout();
@@ -222,12 +222,37 @@
             this.lblCategoria.TabIndex = 12;
             this.lblCategoria.Text = "Categoría:";
             // 
+            // pcbPortada
+            // 
+            this.pcbPortada.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo3;
+            this.pcbPortada.Location = new System.Drawing.Point(953, 111);
+            this.pcbPortada.Name = "pcbPortada";
+            this.pcbPortada.Size = new System.Drawing.Size(109, 94);
+            this.pcbPortada.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbPortada.TabIndex = 14;
+            this.pcbPortada.TabStop = false;
+            // 
+            // btnCargarImagenCortohistorias
+            // 
+            this.btnCargarImagenCortohistorias.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnCargarImagenCortohistorias.IconColor = System.Drawing.Color.Black;
+            this.btnCargarImagenCortohistorias.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCargarImagenCortohistorias.Location = new System.Drawing.Point(947, 225);
+            this.btnCargarImagenCortohistorias.Name = "btnCargarImagenCortohistorias";
+            this.btnCargarImagenCortohistorias.Size = new System.Drawing.Size(75, 23);
+            this.btnCargarImagenCortohistorias.TabIndex = 13;
+            this.btnCargarImagenCortohistorias.Text = "iconButton1";
+            this.btnCargarImagenCortohistorias.UseVisualStyleBackColor = true;
+            this.btnCargarImagenCortohistorias.Click += new System.EventHandler(this.btnCargarImagenCortohistorias_Click);
+            // 
             // CrearCortohistoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1067, 567);
+            this.Controls.Add(this.pcbPortada);
+            this.Controls.Add(this.btnCargarImagenCortohistorias);
             this.Controls.Add(this.lblCategoria);
             this.Controls.Add(this.txtCategoria);
             this.Controls.Add(this.btnVerPDF);
@@ -268,5 +293,7 @@
         private FontAwesome.Sharp.IconButton btnVerPDF;
         private System.Windows.Forms.TextBox txtCategoria;
         private System.Windows.Forms.Label lblCategoria;
+        private System.Windows.Forms.PictureBox pcbPortada;
+        private FontAwesome.Sharp.IconButton btnCargarImagenCortohistorias;
     }
 }
