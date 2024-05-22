@@ -1,4 +1,5 @@
-﻿using System;
+﻿using registro_mockup.clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,33 +14,56 @@ namespace registro_mockup.formularios_Usuario
     public partial class MisCortoHistorias : Form
     {
         private string usuariomenu;
-
+        BDatos bDatos = new BDatos();
         public MisCortoHistorias(string usuario)
         {
             usuariomenu = usuario;
             InitializeComponent();
+
+        }
+        private void CargaCortoHistorias()
+        {
+            try
+            {
+                if (bDatos.AbrirConexion())
+                {
+                    int idUsuario = Usuario.ObtenerID(bDatos.Conexion, usuariomenu);
+                    dgvCortoHistorias.DataSource = CortoHistoria.BuscarCortoHistoriasUsuario(bDatos.Conexion, idUsuario);
+                }
+            }
+            finally
+            {
+                bDatos.CerrarConexion();
+            }
         }
 
-        private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        private void dgvCortoHistorias_CellFormatting_1(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            if (this.dtgvMiscortohistorias.Columns[e.ColumnIndex].Name == "estado")
+            if (this.dgvCortoHistorias.Columns[e.ColumnIndex].Name == "Finalizada")
             {
-                if (e.Value != null)
+                if (e.Value != null && e.Value is bool)
                 {
-                    string estadoValue = e.Value.ToString();
+                    bool estado = (bool)e.Value;
 
-                    if (estadoValue == "FINALIZADO")
+
+
+                    if (estado)
                     {
                         e.CellStyle.BackColor = Color.Red;
-                        e.CellStyle.ForeColor = Color.White;
                     }
-                    else if (estadoValue == "EN PROCESO")
+                    else
                     {
                         e.CellStyle.BackColor = Color.DarkGreen;
-                        e.CellStyle.ForeColor = Color.White;
+
                     }
                 }
             }
+        }
+
+        private void MisCortoHistorias_Load_1(object sender, EventArgs e)
+        {
+            CargaCortoHistorias();
+
         }
     }
 }
