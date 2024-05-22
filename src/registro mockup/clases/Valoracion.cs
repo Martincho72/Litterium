@@ -65,5 +65,31 @@ namespace registro_mockup.clases
 
             return retorno;
         }
+
+        public static List<string> librosMasValorados(MySqlConnection conexion) 
+        {
+            List<string> lista = new List<string>();
+            string consulta = string.Format("SELECT titulo FROM libro ORDER BY valoracion desc");
+
+            // Creamos el objeto command al cual le pasamos la consulta y la conexión
+            MySqlCommand comando = new MySqlCommand(consulta, conexion);
+            // Ejecutamos el comando y recibimos en un objeto DataReader la lista de registros seleccionados.
+            // Recordemos que un objeto DataReader es una especie de tabla de datos virtual.
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            if (reader.HasRows)   // En caso que se hayan registros en el objeto reader
+            {
+                // Recorremos el reader (registro por registro) y cargamos la lista de empleados.
+                while (reader.Read())
+                {                   
+                    string titulo = reader.GetString(0);
+                    lista.Add(titulo);
+                }
+
+            }
+            // devolvemos la lista cargada con los usuarios.
+            reader.Close();
+            return lista;
+        } 
     }
     }
