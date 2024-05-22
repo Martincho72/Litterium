@@ -71,7 +71,7 @@ namespace registro_mockup.Principal
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
-            Comprar form = new Comprar(isbnLibro, usuariomenu, (int)nupCantidad.Value);
+            Comprar form = new Comprar(isbnLibro, usuariomenu, (int)nupCantidad.Value, rdbCopiaFisica.Checked);
             form.ShowDialog();
         }
 
@@ -99,6 +99,17 @@ namespace registro_mockup.Principal
 
             }
             basedatos.CerrarConexion();
+        }
+
+        private void rdbCopiaOnline_Click(object sender, EventArgs e)
+        {
+            nupCantidad.Value = 1;
+            nupCantidad.Enabled = false;
+        }
+
+        private void rdbCopiaFisica_Click(object sender, EventArgs e)
+        {
+            nupCantidad.Enabled = true;
         }
     }
 }

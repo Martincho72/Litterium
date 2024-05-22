@@ -21,14 +21,22 @@ namespace registro_mockup.Principal
             InitializeComponent();
         }
 
-        public Comprar(string isbn, string usuario, int cantidad)
+        public Comprar(string isbn, string usuario, int cantidad, bool fisico)
         {
             InitializeComponent();
             if (basedatos.AbrirConexion())
             {
                 List<Libro> lista = Libro.BuscarLibros(basedatos.Conexion, isbn);
                 txtUsuario.Text = usuario;
-                dgvResumen.DataSource = lista;
+                foreach (Libro libro in lista)
+                {
+                    string tipo = "Online";
+                    if (fisico)
+                    {
+                        tipo = "Físico";
+                    }
+                    dgvResumen.Rows.Add(libro.Isbn, libro.Titulo, libro.Autor, libro.Categoria, libro.Valoracion, libro.Precio, cantidad, tipo);
+                }
                 lblImporteTotal.Text = "Total: " + lista[0].importeTotal(lista[0].Precio, cantidad) + "€";
             }
             else
