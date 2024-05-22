@@ -736,7 +736,7 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Correo.
+        ///   Busca una cadena traducida similar a Correo:.
         /// </summary>
         internal static string lblCorreo {
             get {
@@ -808,7 +808,7 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Dirección.
+        ///   Busca una cadena traducida similar a Dirección:.
         /// </summary>
         internal static string lblDireccion {
             get {
@@ -1213,7 +1213,7 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Nombre.
+        ///   Busca una cadena traducida similar a Nombre:.
         /// </summary>
         internal static string lblNombre {
             get {
@@ -1339,7 +1339,7 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Teléfono.
+        ///   Busca una cadena traducida similar a Teléfono:.
         /// </summary>
         internal static string lblTelefono {
             get {
@@ -1357,7 +1357,7 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Teléfono.
+        ///   Busca una cadena traducida similar a Teléfono:.
         /// </summary>
         internal static string lblTelefonoEditarUsuario {
             get {
@@ -1501,7 +1501,7 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Usuario.
+        ///   Busca una cadena traducida similar a Usuario:.
         /// </summary>
         internal static string lblUsuarioEliminarUsuario {
             get {

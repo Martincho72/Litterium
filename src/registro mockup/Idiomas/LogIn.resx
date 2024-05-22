@@ -343,7 +343,7 @@
     <value>Contraseña</value>
   </data>
   <data name="lblCorreo" xml:space="preserve">
-    <value>Correo</value>
+    <value>Correo:</value>
   </data>
   <data name="lblCorreoAgregarUsuario" xml:space="preserve">
     <value>Correo:</value>
@@ -367,7 +367,7 @@
     <value>Datos de Usuario</value>
   </data>
   <data name="lblDireccion" xml:space="preserve">
-    <value>Dirección</value>
+    <value>Dirección:</value>
   </data>
   <data name="lblDireccionAgregarUsuario" xml:space="preserve">
     <value>Dirección:</value>
@@ -502,7 +502,7 @@
     <value>Mensajes de Error</value>
   </data>
   <data name="lblNombre" xml:space="preserve">
-    <value>Nombre</value>
+    <value>Nombre:</value>
   </data>
   <data name="lblNombreAgregarUsuario" xml:space="preserve">
     <value>Nombre:</value>
@@ -544,13 +544,13 @@
     <value>Sinopsis:</value>
   </data>
   <data name="lblTelefono" xml:space="preserve">
-    <value>Teléfono</value>
+    <value>Teléfono:</value>
   </data>
   <data name="lblTelefonoAgregarUsuario" xml:space="preserve">
     <value>Teléfono:</value>
   </data>
   <data name="lblTelefonoEditarUsuario" xml:space="preserve">
-    <value>Teléfono</value>
+    <value>Teléfono:</value>
   </data>
   <data name="lblTeléfonoMiCuenta" xml:space="preserve">
     <value>Teléfono:</value>
@@ -598,7 +598,7 @@
     <value>Usuario</value>
   </data>
   <data name="lblUsuarioEliminarUsuario" xml:space="preserve">
-    <value>Usuario</value>
+    <value>Usuario:</value>
   </data>
   <data name="lblUsuarioMiCuenta" xml:space="preserve">
     <value>Usuario:</value>

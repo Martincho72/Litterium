@@ -128,7 +128,7 @@ namespace registro_mockup.Principal
                 l1.Cantidad=cantidad;
                 l1.Online=online;
                
-                carrito.agregarAlCarrito(l1);
+                Carrito.agregarAlCarrito(l1);
             }
             else { }
             basedatos.CerrarConexion();

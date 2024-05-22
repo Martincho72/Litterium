@@ -1,4 +1,5 @@
 ﻿using registro_mockup;
+using registro_mockup.Idiomas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -74,6 +75,7 @@ namespace Litterium
         {
             FrmLogIn login = new FrmLogIn();
             login.Show();
+            this.Close();
         }
 
         private void btnCrear_Click(object sender, EventArgs e)
@@ -110,7 +112,22 @@ namespace Litterium
 
         private void Registro_Load(object sender, EventArgs e)
         {
+            AplicarIdioma();
+        }
 
+        private void AplicarIdioma()
+        {
+            this.Text = LogIn.TituloRegistro;
+            lblAdministradores.Text = LogIn.lblAdministradores;
+            lblDatos.Text = LogIn.lblDatosDeUsuario;
+            lblNombre.Text = LogIn.lblNombre;
+            lblUsuario.Text = LogIn.lblUsuario;
+            lblDireccion.Text = LogIn.lblDireccion;
+            lblCorreo.Text = LogIn.lblCorreo;
+            lblTelefono.Text = LogIn.lblTelefono;
+            lblUsuario.Text = LogIn.lblUsuario;
+            lblContraseña.Text = LogIn.lblContrasena;
+            btnCrear.Text = LogIn.btnRegistrase;
         }
 
         private void Registro_Paint(object sender, PaintEventArgs e)

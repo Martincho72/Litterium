@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace registro_mockup.clases
 {
-    internal static class carrito
+    internal static class Carrito
     {
         static List<Libro>  miCarrito = new List<Libro>();
 

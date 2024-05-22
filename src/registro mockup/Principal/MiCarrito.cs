@@ -26,7 +26,7 @@ namespace registro_mockup.Principal
         {
             if (basedatos.AbrirConexion())
             {
-                foreach (Libro libro in carrito.MiCarrito)
+                foreach (Libro libro in Carrito.MiCarrito)
                 {
                     
                     dgvMiCarrito.Rows.Add(libro.Isbn, libro.Titulo, libro.Autor, libro.Categoria, libro.Valoracion, libro.Precio,libro.Cantidad,libro.Online);
