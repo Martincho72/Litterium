@@ -180,7 +180,7 @@ namespace registro_mockup.clases
         public static List<CortoHistoria> BuscarCortoHistoriaUsuario(MySqlConnection conexion,int id_usu) //Mis CortoHistorias Usuario
         {
             List<CortoHistoria> lista = new List<CortoHistoria>();
-            string consulta = string.Format("SELECT  titulo, autor, fechaPublicacion, categoria, continuable, finalizada, imagen from cortohistoria where id_usuario = {0}", id_usu);
+            string consulta = string.Format("SELECT  titulo, autor, fechaPublicacion, categoria, continuable, finalizada, imagen from cortohistoria where id_usuario = {0} and finalizada=1", id_usu);
 
             // Creamos el objeto command al cual le pasamos la consulta y la conexión
             MySqlCommand comando = new MySqlCommand(consulta, conexion);
