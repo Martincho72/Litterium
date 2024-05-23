@@ -16,8 +16,7 @@ using iText.Kernel.Font;
 using MySql.Data.MySqlClient;
 using iText.IO.Image;
 using iText.Layout.Properties;
-
-
+using registro_mockup.clases;
 
 namespace registro_mockup.Principal
 {
@@ -78,6 +77,17 @@ namespace registro_mockup.Principal
         }
         private void btnSubirCortohistoria_Click(object sender, EventArgs e)
         {
+            if (basedatos.AbrirConexion())
+            {
+                Usuario us1 = Usuario.EncontrarDatosUsuario(basedatos.Conexion, usarioMenu);
+                CortoHistoria ch = new CortoHistoria(txtTitulo.Text, txtAutor.Text, DateTime.Now, txtCategoria.Text, chbContinuarCortohistoria.Checked, true, 2, pcbPortada.Image, txtCortohistoriaCrear.Text);
+                ch.AgregarCortoHistoria(basedatos.Conexion, ch);
+            }
+            else 
+            {
+                MessageBox.Show("La sesion no se puede abrir");
+            }
+            basedatos.CerrarConexion();
 
         }
 
@@ -234,6 +244,21 @@ namespace registro_mockup.Principal
             {
                 MessageBox.Show("No se ha seleccionado imagen", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+        }
+
+        private void btnBorradoresCortohistorias_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+                Usuario us1 = Usuario.EncontrarDatosUsuario(basedatos.Conexion, usarioMenu);
+                CortoHistoria ch = new CortoHistoria(txtTitulo.Text, txtAutor.Text, DateTime.Now, txtCategoria.Text, chbContinuarCortohistoria.Checked, false, us1.Id, pcbPortada.Image, txtCortohistoriaCrear.Text);
+                ch.AgregarCortoHistoria(basedatos.Conexion, ch);
+            }
+            else
+            {
+                MessageBox.Show("La sesion no se puede abrir");
+            }
+            basedatos.CerrarConexion();
         }
     }
 }

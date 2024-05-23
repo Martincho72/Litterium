@@ -20,23 +20,24 @@ namespace registro_mockup.Principal
             lblBusqueda.Text = txtbusqueda;
             lblTipo.Text = tipo;
         }
-        
+
         private void Busqueda_Load(object sender, EventArgs e)
         {
-            if (basedatos.AbrirConexion())
-            {
+            //if (basedatos.AbrirConexion())
+            //{
 
 
-                if (lblTipo.Text == "Cortohistorias")
-                {
-                    dgvResultadosBusqueda.DataSource = CortoHistoria.BuscarCortoHistoria(basedatos.Conexion, lblBusqueda.Text);
-                }else if (lblTipo.Text == "Libros")
-                {
-                    dgvResultadosBusqueda.DataSource = Libro.BuscarLibros(basedatos.Conexion, lblBusqueda.Text);
-                }
-            }
-            else { }
-            basedatos.CerrarConexion();
+            //    if (lblTipo.Text == "Cortohistorias")
+            //    {
+            //        dgvResultadosBusqueda.DataSource = CortoHistoria.BuscarCortoHistoria(basedatos.Conexion, lblBusqueda.Text);
+            //    }
+            //    else if (lblTipo.Text == "Libros")
+            //    {
+            //        dgvResultadosBusqueda.DataSource = Libro.BuscarLibros(basedatos.Conexion, lblBusqueda.Text);
+            //    }
+            //}
+            //else { }
+            //basedatos.CerrarConexion();
         }
 
         private void label1_Click(object sender, EventArgs e)
