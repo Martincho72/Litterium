@@ -222,9 +222,6 @@ namespace registro_mockup
             basedatos.CerrarConexion();
         }
 
-
-        public event EventHandler IdiomaCambiado;
-
         private void pcbIdioma_Click(object sender, EventArgs e)
         {
             string idiomaActual = Thread.CurrentThread.CurrentUICulture.Name;
@@ -242,7 +239,6 @@ namespace registro_mockup
             }
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultura);
             AplicarIdioma();
-            IdiomaCambiado?.Invoke(this, EventArgs.Empty);
         }
         private void AplicarIdioma()
         {

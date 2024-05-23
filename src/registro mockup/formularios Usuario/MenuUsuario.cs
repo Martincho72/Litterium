@@ -23,15 +23,8 @@ namespace registro_mockup.formularios_Usuario
         {
             InitializeComponent();
             usuariomenu = usuario;
-            if (Application.OpenForms["MenuPrincipal"] is MenuPrincipal menuPrincipal)
-            {
-                menuPrincipal.IdiomaCambiado += MenuPrincipal_IdiomaCambiado;
-            }
         }
-        private void MenuPrincipal_IdiomaCambiado(object sender, EventArgs e)
-        {
-            AplicarIdioma();
-        }
+
         private void MenuUsuario_Load(object sender, EventArgs e)
         {
             AplicarIdioma();

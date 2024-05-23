@@ -20,7 +20,7 @@ namespace Litterium
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmLogIn());
            
-          
+
         }
     }
 }
