@@ -1,0 +1,12 @@
+CREATE TABLE if NOT EXISTS `libro` (
+	`isbn` VARCHAR(13) NOT NULL COLLATE 'utf8mb4_0900_ai_ci',
+	`titulo` VARCHAR(40) NOT NULL COLLATE 'utf8mb4_0900_ai_ci',
+	`autor` VARCHAR(40) NOT NULL COLLATE 'utf8mb4_0900_ai_ci',
+	`categoria` VARCHAR(40) NOT NULL COLLATE 'utf8mb4_0900_ai_ci',
+	`valoracion` DECIMAL(2,1) NULL DEFAULT NULL,
+	`imagen` LONGBLOB NULL DEFAULT NULL,
+	`sinopsis` VARCHAR(150) NOT NULL COLLATE 'utf8mb4_0900_ai_ci',
+	`precio` DOUBLE NOT NULL,
+	`pdf` LONGBLOB NULL DEFAULT NULL,
+	PRIMARY KEY (`isbn`) USING BTREE
+);

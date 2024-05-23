@@ -1,0 +1,11 @@
+CREATE TABLE if NOT EXISTS `Valoraciones` (
+	`isbnLibro` VARCHAR(13) NOT NULL COLLATE 'utf8mb4_0900_ai_ci',
+	`idUsuario` INT(10) NOT NULL,
+	`valoracion` INT(10) NOT NULL,
+	`idValoracion` INT(10) NOT NULL AUTO_INCREMENT,
+	PRIMARY KEY (`idValoracion`) USING BTREE,
+	INDEX `isbnLibro` (`isbnLibro`) USING BTREE,
+	INDEX `idUsuario` (`idUsuario`) USING BTREE,
+	CONSTRAINT `Valoraciones_ibfk_1` FOREIGN KEY (`isbnLibro`) REFERENCES `libro` (`isbn`) ON UPDATE NO ACTION ON DELETE NO ACTION,
+	CONSTRAINT `Valoraciones_ibfk_2` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`id`) ON UPDATE NO ACTION ON DELETE NO ACTION
+);

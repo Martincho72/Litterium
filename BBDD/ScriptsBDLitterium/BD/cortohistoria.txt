@@ -1,0 +1,15 @@
+CREATE TABLE if NOT EXISTS `cortohistoria` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`titulo` VARCHAR(40) NOT NULL COLLATE 'utf8mb4_0900_ai_ci',
+	`autor` VARCHAR(40) NOT NULL COLLATE 'utf8mb4_0900_ai_ci',
+	`fechaPublicacion` DATE NOT NULL,
+	`categoria` VARCHAR(40) NOT NULL COLLATE 'utf8mb4_0900_ai_ci',
+	`continuable` TINYINT(1) NOT NULL,
+	`finalizada` TINYINT(1) NOT NULL,
+	`id_usuario` INT(10) NULL DEFAULT NULL,
+	`imagen` LONGBLOB NULL DEFAULT NULL,
+	`texto` TEXT NULL DEFAULT NULL COLLATE 'utf8mb4_0900_ai_ci',
+	PRIMARY KEY (`id`) USING BTREE,
+	INDEX `id_usuario` (`id_usuario`) USING BTREE,
+	CONSTRAINT `cortohistoria_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`) ON UPDATE NO ACTION ON DELETE NO ACTION
+);

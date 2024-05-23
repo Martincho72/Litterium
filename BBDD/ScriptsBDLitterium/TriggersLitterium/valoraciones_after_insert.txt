@@ -1,0 +1,12 @@
+CREATE DEFINER=`admin`@`%` TRIGGER `Valoraciones_after_insert` AFTER INSERT ON `Valoraciones` FOR EACH ROW BEGIN
+    DECLARE nueva_valoracion DECIMAL(2, 1);
+
+    SELECT AVG(valoracion)
+    INTO nueva_valoracion
+    FROM Valoraciones
+    WHERE isbnLibro = NEW.isbnLibro;
+
+    UPDATE libro
+    SET valoracion = nueva_valoracion
+    WHERE isbn = NEW.isbnLibro;
+END

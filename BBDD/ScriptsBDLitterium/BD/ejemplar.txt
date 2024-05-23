@@ -1,0 +1,13 @@
+CREATE TABLE if NOT EXISTS `ejemplar` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`fechaCompra` DATE NOT NULL,
+	`esOnline` TINYINT(1) NOT NULL,
+	`precioTotal` DECIMAL(10,2) NOT NULL,
+	`id_usuario` INT(10) NOT NULL,
+	`isbn_libro` VARCHAR(13) NOT NULL COLLATE 'utf8mb4_0900_ai_ci',
+	PRIMARY KEY (`id`) USING BTREE,
+	INDEX `id_usuario` (`id_usuario`) USING BTREE,
+	INDEX `isbn_libro` (`isbn_libro`) USING BTREE,
+	CONSTRAINT `ejemplar_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`) ON UPDATE NO ACTION ON DELETE NO ACTION,
+	CONSTRAINT `ejemplar_ibfk_2` FOREIGN KEY (`isbn_libro`) REFERENCES `libro` (`isbn`) ON UPDATE NO ACTION ON DELETE NO ACTION
+);

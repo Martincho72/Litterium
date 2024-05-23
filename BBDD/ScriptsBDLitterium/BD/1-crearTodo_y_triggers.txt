@@ -1,0 +1,112 @@
+CREATE TABLE if NOT EXISTS `usuarios` (
+    `id` INT(10) NOT NULL AUTO_INCREMENT,
+    `usuario` VARCHAR(40) NOT NULL,
+    `contrasenya` VARCHAR(40) NOT NULL,
+    `esAdmin` TINYINT(1) NOT NULL,
+    `nombre` VARCHAR(40) NOT NULL,
+    `correo` VARCHAR(40) NOT NULL,
+    `direccion` VARCHAR(40) NOT NULL,
+    `telefono` INT(10) NOT NULL,
+    `vetado` TINYINT(1) NOT NULL,
+    `baja` TINYINT(1) NOT NULL,
+    `imagen` LONGBLOB NULL DEFAULT NULL,
+    PRIMARY KEY (`id`) USING BTREE
+);
+
+CREATE TABLE if NOT EXISTS `libro` (
+    `isbn` VARCHAR(13) NOT NULL,
+    `titulo` VARCHAR(40) NOT NULL,
+    `autor` VARCHAR(40) NOT NULL,
+    `categoria` VARCHAR(40) NOT NULL,
+    `valoracion` DECIMAL(2,1) NULL DEFAULT NULL,
+    `imagen` LONGBLOB NULL DEFAULT NULL,
+    `sinopsis` VARCHAR(150) NOT NULL,
+    `precio` DOUBLE NOT NULL,
+    `pdf` LONGBLOB NULL DEFAULT NULL,
+    PRIMARY KEY (`isbn`)
+);
+
+CREATE TABLE if NOT EXISTS `ejemplar` (
+    `id` INT(10) NOT NULL AUTO_INCREMENT,
+    `fechaCompra` DATE NOT NULL,
+    `esOnline` TINYINT(1) NOT NULL,
+    `precioTotal` DECIMAL(10,2) NOT NULL,
+    `id_usuario` INT(10) NOT NULL,
+    `isbn_libro` VARCHAR(13) NOT NULL,
+    PRIMARY KEY (`id`) USING BTREE,
+    INDEX `id_usuario` (`id_usuario`) USING BTREE,
+    INDEX `isbn_libro` (`isbn_libro`) USING BTREE,
+    CONSTRAINT `ejemplar_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`) ON UPDATE NO ACTION ON DELETE NO ACTION,
+    CONSTRAINT `ejemplar_ibfk_2` FOREIGN KEY (`isbn_libro`) REFERENCES `libro` (`isbn`) ON UPDATE NO ACTION ON DELETE NO ACTION
+);
+
+CREATE TABLE `cortohistoria` (
+    `id` INT(10) NOT NULL AUTO_INCREMENT,
+    `titulo` VARCHAR(40) NOT NULL,
+    `autor` VARCHAR(40) NOT NULL,
+    `fechaPublicacion` DATE NOT NULL,
+    `categoria` VARCHAR(40) NOT NULL,
+    `continuable` TINYINT(1) NOT NULL,
+    `finalizada` TINYINT(1) NOT NULL,
+    `id_usuario` INT(10) NULL DEFAULT NULL,
+    `imagen` LONGBLOB NULL DEFAULT NULL,
+    `texto` TEXT NULL DEFAULT NULL,
+    PRIMARY KEY (`id`) USING BTREE,
+    INDEX `id_usuario` (`id_usuario`) USING BTREE,
+    CONSTRAINT `cortohistoria_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`) ON UPDATE NO ACTION ON DELETE NO ACTION
+);
+
+CREATE TABLE `Valoraciones` (
+    `isbnLibro` VARCHAR(13) NOT NULL,
+    `idUsuario` INT(10) NOT NULL,
+    `valoracion` INT(10) NOT NULL,
+    `idValoracion` INT(10) NOT NULL AUTO_INCREMENT,
+    PRIMARY KEY (`idValoracion`) USING BTREE,
+    INDEX `isbnLibro` (`isbnLibro`) USING BTREE,
+    INDEX `idUsuario` (`idUsuario`) USING BTREE,
+    CONSTRAINT `Valoraciones_ibfk_1` FOREIGN KEY (`isbnLibro`) REFERENCES `libro` (`isbn`) ON UPDATE NO ACTION ON DELETE NO ACTION,
+    CONSTRAINT `Valoraciones_ibfk_2` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`id`) ON UPDATE NO ACTION ON DELETE NO ACTION
+);
+
+CREATE DEFINER=`admin`@`%` TRIGGER `Valoraciones_after_delete` AFTER DELETE ON `Valoraciones` FOR EACH ROW BEGIN
+    DECLARE nueva_valoracion DECIMAL(2, 1);
+
+    SELECT AVG(valoracion)
+    INTO nueva_valoracion
+    FROM Valoraciones
+    WHERE isbnLibro = OLD.isbnLibro;
+
+    IF nueva_valoracion IS NULL THEN
+        SET nueva_valoracion = 0.0;
+    END IF;
+
+    UPDATE libro
+    SET valoracion = nueva_valoracion
+    WHERE isbn = OLD.isbnLibro;
+END;
+
+CREATE DEFINER=`admin`@`%` TRIGGER `Valoraciones_after_insert` AFTER INSERT ON `Valoraciones` FOR EACH ROW BEGIN
+    DECLARE nueva_valoracion DECIMAL(2, 1);
+
+    SELECT AVG(valoracion)
+    INTO nueva_valoracion
+    FROM Valoraciones
+    WHERE isbnLibro = NEW.isbnLibro;
+
+    UPDATE libro
+    SET valoracion = nueva_valoracion
+    WHERE isbn = NEW.isbnLibro;
+END;
+
+CREATE DEFINER=`admin`@`%` TRIGGER `Valoraciones_after_update` AFTER UPDATE ON `Valoraciones` FOR EACH ROW BEGIN
+    DECLARE nueva_valoracion DECIMAL(2, 1);
+
+    SELECT AVG(valoracion)
+    INTO nueva_valoracion
+    FROM Valoraciones
+    WHERE isbnLibro = NEW.isbnLibro;
+
+    UPDATE libro
+    SET valoracion = nueva_valoracion
+    WHERE isbn = NEW.isbnLibro;
+END;

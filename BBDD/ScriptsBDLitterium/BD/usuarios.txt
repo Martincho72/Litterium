@@ -1,0 +1,14 @@
+CREATE TABLE if NOT EXISTS `usuarios` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`usuario` VARCHAR(40) NOT NULL COLLATE 'utf8mb3_general_ci',
+	`contrasenya` VARCHAR(40) NOT NULL COLLATE 'utf8mb3_general_ci',
+	`esAdmin` TINYINT(1) NOT NULL,
+	`nombre` VARCHAR(40) NOT NULL COLLATE 'utf8mb3_general_ci',
+	`correo` VARCHAR(40) NOT NULL COLLATE 'utf8mb3_general_ci',
+	`direccion` VARCHAR(40) NOT NULL COLLATE 'utf8mb3_general_ci',
+	`telefono` INT(10) NOT NULL,
+	`vetado` TINYINT(1) NOT NULL,
+	`baja` TINYINT(1) NOT NULL,
+	`imagen` LONGBLOB NULL DEFAULT NULL,
+	PRIMARY KEY (`id`) USING BTREE
+);
