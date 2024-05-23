@@ -78,7 +78,7 @@
             this.panel1.Controls.Add(this.tableLayoutPanel1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1029, 496);
             this.panel1.TabIndex = 0;
@@ -88,7 +88,7 @@
             this.panel3.Controls.Add(this.flowLayoutPanel2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 364);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1029, 123);
             this.panel3.TabIndex = 24;
@@ -98,7 +98,7 @@
             this.flowLayoutPanel2.Controls.Add(this.lblComentarios);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(1029, 123);
             this.flowLayoutPanel2.TabIndex = 14;
@@ -118,7 +118,7 @@
             this.panel2.Controls.Add(this.tableLayoutPanel2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 241);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1029, 123);
             this.panel2.TabIndex = 23;
@@ -132,7 +132,7 @@
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel4, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -148,7 +148,7 @@
             this.tableLayoutPanel3.Controls.Add(this.lblValoracion, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.lblAutorLibro, 0, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 4);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.44481F));
@@ -205,7 +205,7 @@
             this.tableLayoutPanel4.Controls.Add(this.gpbValorarLibro, 1, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Right;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(270, 4);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -225,7 +225,7 @@
             this.btnValorar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnValorar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnValorar.Location = new System.Drawing.Point(299, 61);
-            this.btnValorar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnValorar.Margin = new System.Windows.Forms.Padding(4);
             this.btnValorar.Name = "btnValorar";
             this.btnValorar.Size = new System.Drawing.Size(299, 50);
             this.btnValorar.TabIndex = 21;
@@ -244,7 +244,7 @@
             this.btnComprarAhora.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnComprarAhora.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnComprarAhora.Location = new System.Drawing.Point(4, 61);
-            this.btnComprarAhora.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnComprarAhora.Margin = new System.Windows.Forms.Padding(4);
             this.btnComprarAhora.Name = "btnComprarAhora";
             this.btnComprarAhora.Size = new System.Drawing.Size(287, 50);
             this.btnComprarAhora.TabIndex = 19;
@@ -263,7 +263,7 @@
             this.btnAgreagarAlCarrito.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAgreagarAlCarrito.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAgreagarAlCarrito.Location = new System.Drawing.Point(4, 4);
-            this.btnAgreagarAlCarrito.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgreagarAlCarrito.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgreagarAlCarrito.Name = "btnAgreagarAlCarrito";
             this.btnAgreagarAlCarrito.Size = new System.Drawing.Size(287, 49);
             this.btnAgreagarAlCarrito.TabIndex = 18;
@@ -313,7 +313,7 @@
             this.tableLayoutPanel1.Controls.Add(this.pcbPortadaLibro, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -329,7 +329,7 @@
             this.panel5.Controls.Add(this.nupCantidad);
             this.panel5.Controls.Add(this.lblPrecioLibro);
             this.panel5.Location = new System.Drawing.Point(671, 4);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(354, 233);
             this.panel5.TabIndex = 21;
@@ -339,7 +339,7 @@
             this.rdbCopiaOnline.AutoSize = true;
             this.rdbCopiaOnline.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbCopiaOnline.Location = new System.Drawing.Point(163, 170);
-            this.rdbCopiaOnline.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbCopiaOnline.Margin = new System.Windows.Forms.Padding(4);
             this.rdbCopiaOnline.Name = "rdbCopiaOnline";
             this.rdbCopiaOnline.Size = new System.Drawing.Size(137, 21);
             this.rdbCopiaOnline.TabIndex = 7;
@@ -354,7 +354,7 @@
             this.rdbCopiaFisica.Checked = true;
             this.rdbCopiaFisica.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbCopiaFisica.Location = new System.Drawing.Point(27, 170);
-            this.rdbCopiaFisica.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbCopiaFisica.Margin = new System.Windows.Forms.Padding(4);
             this.rdbCopiaFisica.Name = "rdbCopiaFisica";
             this.rdbCopiaFisica.Size = new System.Drawing.Size(127, 21);
             this.rdbCopiaFisica.TabIndex = 6;
@@ -377,7 +377,7 @@
             // nupCantidad
             // 
             this.nupCantidad.Location = new System.Drawing.Point(149, 133);
-            this.nupCantidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nupCantidad.Margin = new System.Windows.Forms.Padding(4);
             this.nupCantidad.Minimum = new decimal(new int[] {
             1,
             0,
@@ -409,7 +409,7 @@
             this.panel4.Controls.Add(this.txtSinopsis);
             this.panel4.Controls.Add(this.lblSinopsis);
             this.panel4.Location = new System.Drawing.Point(264, 4);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(399, 233);
             this.panel4.TabIndex = 20;
@@ -420,7 +420,7 @@
             this.txtSinopsis.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSinopsis.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtSinopsis.Location = new System.Drawing.Point(0, 29);
-            this.txtSinopsis.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSinopsis.Margin = new System.Windows.Forms.Padding(4);
             this.txtSinopsis.Multiline = true;
             this.txtSinopsis.Name = "txtSinopsis";
             this.txtSinopsis.ReadOnly = true;
@@ -443,7 +443,7 @@
             // 
             this.pcbPortadaLibro.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
             this.pcbPortadaLibro.Location = new System.Drawing.Point(4, 4);
-            this.pcbPortadaLibro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pcbPortadaLibro.Margin = new System.Windows.Forms.Padding(4);
             this.pcbPortadaLibro.Name = "pcbPortadaLibro";
             this.pcbPortadaLibro.Size = new System.Drawing.Size(252, 233);
             this.pcbPortadaLibro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -458,7 +458,7 @@
             this.ClientSize = new System.Drawing.Size(1029, 496);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "InformacionLibro";
             this.Text = "InformacionLibro";
             this.Load += new System.EventHandler(this.InformacionLibro_Load);

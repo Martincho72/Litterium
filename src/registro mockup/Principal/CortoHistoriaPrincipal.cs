@@ -132,5 +132,10 @@ namespace registro_mockup.Principal
         {
 
         }
+
+private void pcbRecomendado1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

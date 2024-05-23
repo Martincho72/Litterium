@@ -695,6 +695,7 @@
             this.pcbRecomendado1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbRecomendado1.TabIndex = 0;
             this.pcbRecomendado1.TabStop = false;
+            this.pcbRecomendado1.Click += new System.EventHandler(this.pcbRecomendado1_Click);
             // 
             // gbxRecomendadosCH2
             // 

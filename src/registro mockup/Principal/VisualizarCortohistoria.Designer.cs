@@ -78,7 +78,7 @@
             // 
             this.txtVisualizarCortoHistoria.BackColor = System.Drawing.Color.LightGoldenrodYellow;
             this.txtVisualizarCortoHistoria.Location = new System.Drawing.Point(21, 107);
-            this.txtVisualizarCortoHistoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtVisualizarCortoHistoria.Margin = new System.Windows.Forms.Padding(4);
             this.txtVisualizarCortoHistoria.Multiline = true;
             this.txtVisualizarCortoHistoria.Name = "txtVisualizarCortoHistoria";
             this.txtVisualizarCortoHistoria.ReadOnly = true;
@@ -95,7 +95,7 @@
             this.btnContinuar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnContinuar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnContinuar.Location = new System.Drawing.Point(875, 500);
-            this.btnContinuar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnContinuar.Margin = new System.Windows.Forms.Padding(4);
             this.btnContinuar.Name = "btnContinuar";
             this.btnContinuar.Size = new System.Drawing.Size(176, 50);
             this.btnContinuar.TabIndex = 54;
@@ -115,8 +115,9 @@
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.lblVisualizarCortohistoria);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "VisualizarCortohistoria";
+            this.Load += new System.EventHandler(this.VisualizarCortohistoria_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

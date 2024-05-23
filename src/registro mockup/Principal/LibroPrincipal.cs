@@ -296,5 +296,80 @@ namespace registro_mockup.Principal
                 MessageBox.Show("");
             }
         }
+
+        private void pcbCortoHistoria_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+                OpenChildForm(new VisualizarCortohistoria("La Caja de Musica", usuariomenu,18));
+
+                OcultarPaneles();
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
+            basedatos.CerrarConexion();
+        }
+
+        private void pcbCortoHistoria2_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+                OpenChildForm(new VisualizarCortohistoria("La Caja de Musica", usuariomenu, 16));
+
+                OcultarPaneles();
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
+            basedatos.CerrarConexion();
+        }
+
+        private void pcbCortoHistoria3_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+                OpenChildForm(new VisualizarCortohistoria("La Caja de Musica", usuariomenu, 17));
+
+                OcultarPaneles();
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
+            basedatos.CerrarConexion();
+        }
+
+        private void pcbCortoHistoria4_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+                OpenChildForm(new VisualizarCortohistoria("La Caja de Musica", usuariomenu, 19));
+
+                OcultarPaneles();
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
+            basedatos.CerrarConexion();
+        }
+
+        private void pcbCortoHistoria5_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+                OpenChildForm(new VisualizarCortohistoria("La Caja de Musica", usuariomenu, 20));
+
+                OcultarPaneles();
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
+            basedatos.CerrarConexion();
+        }
     }
 }

@@ -32,15 +32,15 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.grbCortohistoriasLibros4 = new System.Windows.Forms.GroupBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pcbCortoHistoria4 = new System.Windows.Forms.PictureBox();
             this.grbCortohistoriasLibros5 = new System.Windows.Forms.GroupBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pcbCortoHistoria5 = new System.Windows.Forms.PictureBox();
             this.grbCortohistoriasLibros3 = new System.Windows.Forms.GroupBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pcbCortoHistoria3 = new System.Windows.Forms.PictureBox();
             this.grbCortohistoriasLibros1 = new System.Windows.Forms.GroupBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pcbCortoHistoria = new System.Windows.Forms.PictureBox();
             this.grbCortohistoriasLibros2 = new System.Windows.Forms.GroupBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pcbCortoHistoria2 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.lblCortohistoriasEnLibros = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -74,15 +74,15 @@
             this.panel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.grbCortohistoriasLibros4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbCortoHistoria4)).BeginInit();
             this.grbCortohistoriasLibros5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbCortoHistoria5)).BeginInit();
             this.grbCortohistoriasLibros3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbCortoHistoria3)).BeginInit();
             this.grbCortohistoriasLibros1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbCortoHistoria)).BeginInit();
             this.grbCortohistoriasLibros2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbCortoHistoria2)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -143,7 +143,7 @@
             this.tableLayoutPanel3.Controls.Add(this.grbCortohistoriasLibros2, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 500);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 175F));
@@ -153,7 +153,7 @@
             // 
             // grbCortohistoriasLibros4
             // 
-            this.grbCortohistoriasLibros4.Controls.Add(this.pictureBox11);
+            this.grbCortohistoriasLibros4.Controls.Add(this.pcbCortoHistoria4);
             this.grbCortohistoriasLibros4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grbCortohistoriasLibros4.Location = new System.Drawing.Point(642, 2);
             this.grbCortohistoriasLibros4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -162,23 +162,24 @@
             this.grbCortohistoriasLibros4.Size = new System.Drawing.Size(207, 171);
             this.grbCortohistoriasLibros4.TabIndex = 9;
             this.grbCortohistoriasLibros4.TabStop = false;
-            this.grbCortohistoriasLibros4.Text = "groupBox10";
+            this.grbCortohistoriasLibros4.Text = "El Espejo Misterioso";
             // 
-            // pictureBox11
+            // pcbCortoHistoria4
             // 
-            this.pictureBox11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox11.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
-            this.pictureBox11.Location = new System.Drawing.Point(3, 23);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(201, 146);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 0;
-            this.pictureBox11.TabStop = false;
+            this.pcbCortoHistoria4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pcbCortoHistoria4.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
+            this.pcbCortoHistoria4.Location = new System.Drawing.Point(3, 23);
+            this.pcbCortoHistoria4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pcbCortoHistoria4.Name = "pcbCortoHistoria4";
+            this.pcbCortoHistoria4.Size = new System.Drawing.Size(201, 146);
+            this.pcbCortoHistoria4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbCortoHistoria4.TabIndex = 0;
+            this.pcbCortoHistoria4.TabStop = false;
+            this.pcbCortoHistoria4.Click += new System.EventHandler(this.pcbCortoHistoria4_Click);
             // 
             // grbCortohistoriasLibros5
             // 
-            this.grbCortohistoriasLibros5.Controls.Add(this.pictureBox12);
+            this.grbCortohistoriasLibros5.Controls.Add(this.pcbCortoHistoria5);
             this.grbCortohistoriasLibros5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grbCortohistoriasLibros5.Location = new System.Drawing.Point(855, 2);
             this.grbCortohistoriasLibros5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -187,23 +188,24 @@
             this.grbCortohistoriasLibros5.Size = new System.Drawing.Size(211, 171);
             this.grbCortohistoriasLibros5.TabIndex = 8;
             this.grbCortohistoriasLibros5.TabStop = false;
-            this.grbCortohistoriasLibros5.Text = "groupBox10";
+            this.grbCortohistoriasLibros5.Text = "El Libro Olvidado";
             // 
-            // pictureBox12
+            // pcbCortoHistoria5
             // 
-            this.pictureBox12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox12.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
-            this.pictureBox12.Location = new System.Drawing.Point(3, 23);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(205, 146);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 0;
-            this.pictureBox12.TabStop = false;
+            this.pcbCortoHistoria5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pcbCortoHistoria5.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
+            this.pcbCortoHistoria5.Location = new System.Drawing.Point(3, 23);
+            this.pcbCortoHistoria5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pcbCortoHistoria5.Name = "pcbCortoHistoria5";
+            this.pcbCortoHistoria5.Size = new System.Drawing.Size(205, 146);
+            this.pcbCortoHistoria5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbCortoHistoria5.TabIndex = 0;
+            this.pcbCortoHistoria5.TabStop = false;
+            this.pcbCortoHistoria5.Click += new System.EventHandler(this.pcbCortoHistoria5_Click);
             // 
             // grbCortohistoriasLibros3
             // 
-            this.grbCortohistoriasLibros3.Controls.Add(this.pictureBox13);
+            this.grbCortohistoriasLibros3.Controls.Add(this.pcbCortoHistoria3);
             this.grbCortohistoriasLibros3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grbCortohistoriasLibros3.Location = new System.Drawing.Point(429, 2);
             this.grbCortohistoriasLibros3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -212,23 +214,24 @@
             this.grbCortohistoriasLibros3.Size = new System.Drawing.Size(207, 171);
             this.grbCortohistoriasLibros3.TabIndex = 7;
             this.grbCortohistoriasLibros3.TabStop = false;
-            this.grbCortohistoriasLibros3.Text = "groupBox10";
+            this.grbCortohistoriasLibros3.Text = "El Cuaderno Mágico";
             // 
-            // pictureBox13
+            // pcbCortoHistoria3
             // 
-            this.pictureBox13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox13.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
-            this.pictureBox13.Location = new System.Drawing.Point(3, 23);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(201, 146);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox13.TabIndex = 0;
-            this.pictureBox13.TabStop = false;
+            this.pcbCortoHistoria3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pcbCortoHistoria3.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
+            this.pcbCortoHistoria3.Location = new System.Drawing.Point(3, 23);
+            this.pcbCortoHistoria3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pcbCortoHistoria3.Name = "pcbCortoHistoria3";
+            this.pcbCortoHistoria3.Size = new System.Drawing.Size(201, 146);
+            this.pcbCortoHistoria3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbCortoHistoria3.TabIndex = 0;
+            this.pcbCortoHistoria3.TabStop = false;
+            this.pcbCortoHistoria3.Click += new System.EventHandler(this.pcbCortoHistoria3_Click);
             // 
             // grbCortohistoriasLibros1
             // 
-            this.grbCortohistoriasLibros1.Controls.Add(this.pictureBox14);
+            this.grbCortohistoriasLibros1.Controls.Add(this.pcbCortoHistoria);
             this.grbCortohistoriasLibros1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grbCortohistoriasLibros1.Location = new System.Drawing.Point(3, 2);
             this.grbCortohistoriasLibros1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -237,23 +240,24 @@
             this.grbCortohistoriasLibros1.Size = new System.Drawing.Size(207, 171);
             this.grbCortohistoriasLibros1.TabIndex = 6;
             this.grbCortohistoriasLibros1.TabStop = false;
-            this.grbCortohistoriasLibros1.Text = "groupBox10";
+            this.grbCortohistoriasLibros1.Text = "La Caja de Musica";
             // 
-            // pictureBox14
+            // pcbCortoHistoria
             // 
-            this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox14.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
-            this.pictureBox14.Location = new System.Drawing.Point(3, 23);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(201, 146);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox14.TabIndex = 0;
-            this.pictureBox14.TabStop = false;
+            this.pcbCortoHistoria.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pcbCortoHistoria.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
+            this.pcbCortoHistoria.Location = new System.Drawing.Point(3, 23);
+            this.pcbCortoHistoria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pcbCortoHistoria.Name = "pcbCortoHistoria";
+            this.pcbCortoHistoria.Size = new System.Drawing.Size(201, 146);
+            this.pcbCortoHistoria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbCortoHistoria.TabIndex = 0;
+            this.pcbCortoHistoria.TabStop = false;
+            this.pcbCortoHistoria.Click += new System.EventHandler(this.pcbCortoHistoria_Click);
             // 
             // grbCortohistoriasLibros2
             // 
-            this.grbCortohistoriasLibros2.Controls.Add(this.pictureBox15);
+            this.grbCortohistoriasLibros2.Controls.Add(this.pcbCortoHistoria2);
             this.grbCortohistoriasLibros2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grbCortohistoriasLibros2.Location = new System.Drawing.Point(216, 2);
             this.grbCortohistoriasLibros2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -262,26 +266,27 @@
             this.grbCortohistoriasLibros2.Size = new System.Drawing.Size(207, 171);
             this.grbCortohistoriasLibros2.TabIndex = 5;
             this.grbCortohistoriasLibros2.TabStop = false;
-            this.grbCortohistoriasLibros2.Text = "groupBox10";
+            this.grbCortohistoriasLibros2.Text = " El Reloj Encantado";
             // 
-            // pictureBox15
+            // pcbCortoHistoria2
             // 
-            this.pictureBox15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox15.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
-            this.pictureBox15.Location = new System.Drawing.Point(3, 23);
-            this.pictureBox15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(201, 146);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox15.TabIndex = 0;
-            this.pictureBox15.TabStop = false;
+            this.pcbCortoHistoria2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pcbCortoHistoria2.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
+            this.pcbCortoHistoria2.Location = new System.Drawing.Point(3, 23);
+            this.pcbCortoHistoria2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pcbCortoHistoria2.Name = "pcbCortoHistoria2";
+            this.pcbCortoHistoria2.Size = new System.Drawing.Size(201, 146);
+            this.pcbCortoHistoria2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbCortoHistoria2.TabIndex = 0;
+            this.pcbCortoHistoria2.TabStop = false;
+            this.pcbCortoHistoria2.Click += new System.EventHandler(this.pcbCortoHistoria2_Click);
             // 
             // panel6
             // 
             this.panel6.Controls.Add(this.lblCortohistoriasEnLibros);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 453);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1069, 47);
             this.panel6.TabIndex = 21;
@@ -302,7 +307,7 @@
             this.panel5.Controls.Add(this.tableLayoutPanel2);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 256);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1069, 197);
             this.panel5.TabIndex = 20;
@@ -322,7 +327,7 @@
             this.tableLayoutPanel2.Controls.Add(this.grbValoradosLibros2, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 197F));
@@ -465,7 +470,7 @@
             this.panel3.Controls.Add(this.lblMejorvaloradosLibros);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 220);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1069, 36);
             this.panel3.TabIndex = 19;
@@ -486,7 +491,7 @@
             this.panel2.Controls.Add(this.tableLayoutPanel1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 38);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1069, 182);
             this.panel2.TabIndex = 18;
@@ -506,7 +511,7 @@
             this.tableLayoutPanel1.Controls.Add(this.gbxRecomendadosLibros2, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 182F));
@@ -653,7 +658,7 @@
             this.panel8.Controls.Add(this.lblRecomendadosLibros);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 0);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1069, 38);
             this.panel8.TabIndex = 17;
@@ -684,15 +689,15 @@
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.grbCortohistoriasLibros4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbCortoHistoria4)).EndInit();
             this.grbCortohistoriasLibros5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbCortoHistoria5)).EndInit();
             this.grbCortohistoriasLibros3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbCortoHistoria3)).EndInit();
             this.grbCortohistoriasLibros1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbCortoHistoria)).EndInit();
             this.grbCortohistoriasLibros2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbCortoHistoria2)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -732,15 +737,15 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.GroupBox grbCortohistoriasLibros4;
-        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pcbCortoHistoria4;
         private System.Windows.Forms.GroupBox grbCortohistoriasLibros5;
-        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox pcbCortoHistoria5;
         private System.Windows.Forms.GroupBox grbCortohistoriasLibros3;
-        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.PictureBox pcbCortoHistoria3;
         private System.Windows.Forms.GroupBox grbCortohistoriasLibros1;
-        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.PictureBox pcbCortoHistoria;
         private System.Windows.Forms.GroupBox grbCortohistoriasLibros2;
-        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.PictureBox pcbCortoHistoria2;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label lblCortohistoriasEnLibros;
         private System.Windows.Forms.Panel panel5;
