@@ -120,7 +120,7 @@ namespace registro_mockup.Principal
         {
             CrearCortohistoria crearCortohistoria = new CrearCortohistoria(usuarioMenu);
             // Mostrar Form2
-            crearCortohistoria.Show();
+            crearCortohistoria.ShowDialog();
         }
 
         private void btnContinuarCortohistoria_Click(object sender, EventArgs e)
