@@ -93,6 +93,16 @@ namespace registro_mockup.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap atrasB {
+            get {
+                object obj = ResourceManager.GetObject("atrasB", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap el_caballero_astado {
             get {
                 object obj = ResourceManager.GetObject("el caballero astado", resourceCulture);

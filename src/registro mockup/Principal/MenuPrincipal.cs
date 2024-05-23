@@ -17,7 +17,6 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace registro_mockup
 {
     public partial class MenuPrincipal : Form
@@ -33,6 +32,17 @@ namespace registro_mockup
         {
             usuariomenu = usuario;
             InitializeComponent();
+            string idiomaActual = Thread.CurrentThread.CurrentUICulture.Name;
+
+            if (idiomaActual == "es-ES")
+            {
+                pcbIdioma.Image = Resources.espanol;
+            }
+            else if (idiomaActual == "en-GB")
+            {
+                pcbIdioma.Image = Resources.english;
+            }
+            AplicarIdioma();
             bordeizqBTN = new Panel();
             bordeizqBTN.Size = new Size(7, 60);
             panelMenu.Controls.Add(bordeizqBTN);
@@ -190,7 +200,6 @@ namespace registro_mockup
 
         private void MenuPrincipal_Load(object sender, EventArgs e)
         {
-
         }
 
         
@@ -234,6 +243,10 @@ namespace registro_mockup
         private void AplicarIdioma()
         {
             this.Text = LogIn.TituloMenuPrincipal;
+            btnMiCarrito.Text = LogIn.btnMiCarrito;
+            btnLibros.Text = LogIn.btnLibros;
+            btnCortohistorias.Text = LogIn.btnCortohistorias;
+            btnUser.Text = LogIn.btnUser;
            
         }
 

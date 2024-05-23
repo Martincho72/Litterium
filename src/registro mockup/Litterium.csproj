@@ -590,5 +590,8 @@
   <ItemGroup>
     <None Include="Resources\Un cuento Perfecto.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atrasB.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

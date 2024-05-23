@@ -1,4 +1,5 @@
 ﻿using FontAwesome.Sharp;
+using registro_mockup.Idiomas;
 using registro_mockup.Principal;
 using System;
 using System.Collections.Generic;
@@ -26,8 +27,19 @@ namespace registro_mockup.formularios_Usuario
 
         private void MenuUsuario_Load(object sender, EventArgs e)
         {
-
+            AplicarIdioma();
         }
+
+        private void AplicarIdioma()
+        {
+            this.Text = LogIn.TituloMenuUsuario;
+            btnMiCuenta.Text = LogIn.btnMiCuenta;
+            btnMisLibros.Text = LogIn.btnMisLibros;
+            btnMisCortohistorias.Text = LogIn.btnMisCortohistorias;
+            btnMisBorradores.Text = LogIn.btnMisBorradores;
+            btnMiHistorial.Text = LogIn.btnMiHistorial;
+        }
+
         private void OpenChildForm(Form childForm)
         {
             if (currentForm != null)

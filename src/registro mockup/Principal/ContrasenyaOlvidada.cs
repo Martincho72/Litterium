@@ -12,6 +12,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using registro_mockup.clases;
+using registro_mockup.Idiomas;
+using Litterium;
 
 namespace registro_mockup.formularios_administrador
 {
@@ -48,6 +50,26 @@ namespace registro_mockup.formularios_administrador
                 }
             }
             dbatos.CerrarConexion();
+        }
+
+        private void AplicarIdioma()
+        {
+            this.Text = LogIn.TituloContrasenyaOlvidada;
+            lblTitulo.Text = LogIn.lblTituloRestablecerContrasenya;
+            lblCorreo.Text = LogIn.lblCorreoContrasenyaOlvidada;
+            btnRestablecer.Text = LogIn.btnRestablecerContrasenya;
+        }
+
+        private void ContrasenyaOlvidada_Load(object sender, EventArgs e)
+        {
+            AplicarIdioma();
+        }
+
+        private void pcbAtras_Click(object sender, EventArgs e)
+        {
+            FrmLogIn login = new FrmLogIn();
+            login.Show();
+            this.Close();
         }
     }
 }
