@@ -17,9 +17,11 @@ namespace registro_mockup.Principal
     {
         BDatos basedatos=new BDatos();
         private Form currentForm;
-        public CortoHistoriaPrincipal()
+        string usuarioMenu;
+        public CortoHistoriaPrincipal(string usuario)
         {
             InitializeComponent();
+            usuarioMenu = usuario;
         }
         private void OpenChildForm(Form childForm)
         {
@@ -116,7 +118,7 @@ namespace registro_mockup.Principal
 
         private void btnCrearCortohistoria_Click(object sender, EventArgs e)
         {
-            CrearCortohistoria crearCortohistoria = new CrearCortohistoria();
+            CrearCortohistoria crearCortohistoria = new CrearCortohistoria(usuarioMenu);
             // Mostrar Form2
             crearCortohistoria.Show();
         }
