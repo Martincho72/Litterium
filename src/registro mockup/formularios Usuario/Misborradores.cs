@@ -31,7 +31,7 @@ namespace registro_mockup
                         List<CortoHistoria> borradores = CortoHistoria.BuscarBorradores(bDatos.Conexion, idUsuario);
                     foreach (CortoHistoria cortoHistoria in borradores)
                     {
-                        dgvBorradores.Rows.Add(cortoHistoria.Titulo, cortoHistoria.Autor, cortoHistoria.FechaPublicacion.ToString("dd-MM-yyyy"), cortoHistoria.Categoria, cortoHistoria.Continuable, cortoHistoria.Finalizada, cortoHistoria.Portada);
+                        dgvBorradores.Rows.Add(cortoHistoria.Titulo, cortoHistoria.Autor, cortoHistoria.FechaPublicacion.ToString("dd/MM/yyyy"), cortoHistoria.Categoria, cortoHistoria.Continuable, cortoHistoria.Finalizada, cortoHistoria.Portada);
 
                     }
                 }
