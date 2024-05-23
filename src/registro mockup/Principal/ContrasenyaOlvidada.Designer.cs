@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ContrasenyaOlvidada));
             this.btnRestablecer = new System.Windows.Forms.Button();
             this.pcbLogo = new System.Windows.Forms.PictureBox();
             this.lblTitulo = new System.Windows.Forms.Label();
@@ -70,7 +71,7 @@
             this.lblTitulo.Font = new System.Drawing.Font("MS Reference Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.Location = new System.Drawing.Point(182, 283);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(271, 28);
+            this.lblTitulo.Size = new System.Drawing.Size(337, 34);
             this.lblTitulo.TabIndex = 29;
             this.lblTitulo.Text = "Restablecer Contraseña";
             // 
@@ -79,7 +80,7 @@
             this.txtCorreo.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCorreo.Location = new System.Drawing.Point(188, 372);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(396, 30);
+            this.txtCorreo.Size = new System.Drawing.Size(396, 35);
             this.txtCorreo.TabIndex = 28;
             // 
             // lblCorreo
@@ -89,7 +90,7 @@
             this.lblCorreo.Font = new System.Drawing.Font("MS Reference Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCorreo.Location = new System.Drawing.Point(58, 373);
             this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(101, 28);
+            this.lblCorreo.Size = new System.Drawing.Size(130, 35);
             this.lblCorreo.TabIndex = 27;
             this.lblCorreo.Text = "Correo:";
             // 
@@ -121,6 +122,7 @@
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.lblCorreo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ContrasenyaOlvidada";
             this.Text = "ContrasenyaOlvidada";

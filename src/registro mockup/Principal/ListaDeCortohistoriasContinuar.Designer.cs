@@ -31,6 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListaDeCortohistoriasContinuar));
             this.lblDobleClick = new System.Windows.Forms.Label();
             this.dgvListaContinuarCortohistorias = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaContinuarCortohistorias)).BeginInit();
@@ -97,6 +98,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dgvListaContinuarCortohistorias);
             this.Controls.Add(this.lblDobleClick);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ListaDeCortohistoriasContinuar";
             this.Text = "ListaDeCortohistoriasContinuar";
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaContinuarCortohistorias)).EndInit();
