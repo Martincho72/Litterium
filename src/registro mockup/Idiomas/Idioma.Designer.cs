@@ -529,6 +529,15 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Cambio de idioma.
+        /// </summary>
+        internal static string CaptionCambiarIdioma {
+            get {
+                return ResourceManager.GetString("CaptionCambiarIdioma", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Admin.
         /// </summary>
         internal static string chbAdmin {
@@ -615,6 +624,123 @@ namespace registro_mockup.Idiomas {
         internal static string cmbTodo {
             get {
                 return ResourceManager.GetString("cmbTodo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a No se ha podido abrir la conexion.
+        /// </summary>
+        internal static string ConexionFallida {
+            get {
+                return ResourceManager.GetString("ConexionFallida", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Hemos enviado un correo con la nueva Contraseña, esto puede tardar unos minutos..
+        /// </summary>
+        internal static string ConfirmacionNuevaContrasenya {
+            get {
+                return ResourceManager.GetString("ConfirmacionNuevaContrasenya", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Contraseña incorrecta.
+        /// </summary>
+        internal static string ContrasenyaIncorrectaLogin {
+            get {
+                return ResourceManager.GetString("ContrasenyaIncorrectaLogin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a El correo proporcionado no esta registrado.
+        /// </summary>
+        internal static string CorreoNoExiste {
+            get {
+                return ResourceManager.GetString("CorreoNoExiste", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Ingresa la contraseña.
+        /// </summary>
+        internal static string errorProviderContrasenyaLogIn {
+            get {
+                return ResourceManager.GetString("errorProviderContrasenyaLogIn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Ingresa la contraseña.
+        /// </summary>
+        internal static string errorProviderContrasenyaRegistro {
+            get {
+                return ResourceManager.GetString("errorProviderContrasenyaRegistro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Ingresa el correo.
+        /// </summary>
+        internal static string errorProviderCorreoRegistro {
+            get {
+                return ResourceManager.GetString("errorProviderCorreoRegistro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Ingresa la dirección.
+        /// </summary>
+        internal static string errorProviderDireccionRegistro {
+            get {
+                return ResourceManager.GetString("errorProviderDireccionRegistro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Ingresa el nombre.
+        /// </summary>
+        internal static string errorProviderNombreRegistro {
+            get {
+                return ResourceManager.GetString("errorProviderNombreRegistro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Ingresa  el teléfono.
+        /// </summary>
+        internal static string errorProviderTelefonoRegistro {
+            get {
+                return ResourceManager.GetString("errorProviderTelefonoRegistro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Ingresa el Usuario.
+        /// </summary>
+        internal static string errorProviderUsuarioLogIn {
+            get {
+                return ResourceManager.GetString("errorProviderUsuarioLogIn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Ingresa  el usuario.
+        /// </summary>
+        internal static string errorProviderUsuarioRegistro {
+            get {
+                return ResourceManager.GetString("errorProviderUsuarioRegistro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Faltan datos por introducir.
+        /// </summary>
+        internal static string FaltanDatos {
+            get {
+                return ResourceManager.GetString("FaltanDatos", resourceCulture);
             }
         }
         
@@ -1591,6 +1717,24 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a ¿Estás seguro que quieres cambiar de idioma? (Se le redirigirá al menú principal).
+        /// </summary>
+        internal static string MensajeCambiarIdioma {
+            get {
+                return ResourceManager.GetString("MensajeCambiarIdioma", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Para cambiar su contraseña haga click en este enlace:.
+        /// </summary>
+        internal static string ParaCambiarContrasenya {
+            get {
+                return ResourceManager.GetString("ParaCambiarContrasenya", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a COPIA FISICA.
         /// </summary>
         internal static string rbtCopiaFisica {
@@ -1902,6 +2046,33 @@ namespace registro_mockup.Idiomas {
         internal static string TituloVisualizarCortohistoria {
             get {
                 return ResourceManager.GetString("TituloVisualizarCortohistoria", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Tu nueva contraseña es: .
+        /// </summary>
+        internal static string TuNuevaContrasenya {
+            get {
+                return ResourceManager.GetString("TuNuevaContrasenya", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a El usuario no existe.
+        /// </summary>
+        internal static string UsuarioNoExisteLogin {
+            get {
+                return ResourceManager.GetString("UsuarioNoExisteLogin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a El usuario ya existe.
+        /// </summary>
+        internal static string UsuarioYaExisteRegistro {
+            get {
+                return ResourceManager.GetString("UsuarioYaExisteRegistro", resourceCulture);
             }
         }
     }

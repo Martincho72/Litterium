@@ -105,8 +105,6 @@ namespace registro_mockup
         }
 
 
-
-
         private void BTNinicio_Click(object sender, EventArgs e)
         {
             if (currentForm != null) { currentForm.Close(); }
@@ -228,19 +226,24 @@ namespace registro_mockup
             string idiomaActual = Thread.CurrentThread.CurrentUICulture.Name;
             string cultura = "";
 
-            if (idiomaActual == "es-ES")
+           DialogResult resultado = MessageBox.Show(Idioma.MensajeCambiarIdioma, Idioma.CaptionCambiarIdioma, MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (resultado == DialogResult.Yes)
             {
-                cultura = "en-GB";
-                pcbIdioma.Image = Resources.english;
+                if (idiomaActual == "es-ES")
+                {
+                    cultura = "en-GB";
+                    pcbIdioma.Image = Resources.english;
+
+                }
+                else if (idiomaActual == "en-GB")
+                {
+                    cultura = "es-ES";
+                    pcbIdioma.Image = Resources.espanol;
+                }
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultura);
+                if (currentForm != null) { currentForm.Close(); Reset(); }
+                AplicarIdioma();
             }
-            else if (idiomaActual == "en-GB")
-            {
-                cultura = "es-ES";
-                pcbIdioma.Image = Resources.espanol;
-            }
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultura);
-            if (currentForm != null) { OpenChildForm(currentForm);  }
-            AplicarIdioma();
         }
         private void AplicarIdioma()
         {
@@ -249,7 +252,6 @@ namespace registro_mockup
             btnLibros.Text = Idioma.btnLibros;
             btnCortohistorias.Text = Idioma.btnCortohistorias;
             btnUser.Text = Idioma.btnUser;
-
         }
 
         private void btnUser_Click(object sender, EventArgs e)

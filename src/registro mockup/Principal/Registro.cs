@@ -28,7 +28,7 @@ namespace Litterium
             if (txtNombre.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtNombre, "Ingresa el Nombre");
+                errorProvider1.SetError(txtNombre, Idioma.errorProviderNombreRegistro);
             }
             else
             {
@@ -37,7 +37,7 @@ namespace Litterium
             if (txtDireccion.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtDireccion, "Ingresa la Direccion");
+                errorProvider1.SetError(txtDireccion, Idioma.errorProviderDireccionRegistro);
             }
             else
             {
@@ -47,12 +47,12 @@ namespace Litterium
             if (txtCorreo.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtCorreo, "Ingresa el Correo");
+                errorProvider1.SetError(txtCorreo, Idioma.errorProviderCorreoRegistro);
             }
             if (txtTelefono.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtTelefono, "Ingresa el Telefono");
+                errorProvider1.SetError(txtTelefono, Idioma.errorProviderTelefonoRegistro);
             }
             else
             {
@@ -61,12 +61,12 @@ namespace Litterium
             if (txtUsuario.Text=="")
             {
                 ok=false;
-                errorProvider1.SetError(txtUsuario, "Ingresa el Usuario");
+                errorProvider1.SetError(txtUsuario, Idioma.errorProviderUsuarioRegistro);
             }
             if (txtContraseña.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtContraseña, "Ingresa la contraseña");
+                errorProvider1.SetError(txtContraseña, Idioma.errorProviderContrasenyaRegistro);
             }
             return ok;
         }
@@ -95,18 +95,18 @@ namespace Litterium
                     }
                     else
                     {
-                        MessageBox.Show("El usuario ya existe");
+                        MessageBox.Show(Idioma.UsuarioYaExisteRegistro);
                     }
                         basedatos.CerrarConexion();
                 }
                 else
                 {
-                    MessageBox.Show("No se ha podido abrir la conexion");
+                    MessageBox.Show(Idioma.ConexionFallida);
                 }
             }
             else
             {
-                MessageBox.Show("Faltan datos por introducir","Error",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+                MessageBox.Show(Idioma.FaltanDatos,"Error",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
             }
         }
 

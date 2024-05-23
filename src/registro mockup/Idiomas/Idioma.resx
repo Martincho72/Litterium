@@ -273,6 +273,9 @@
   <data name="btnVerComoPDF" xml:space="preserve">
     <value>Ver como</value>
   </data>
+  <data name="CaptionCambiarIdioma" xml:space="preserve">
+    <value>Cambio de idioma</value>
+  </data>
   <data name="chbAdmin" xml:space="preserve">
     <value>Admin</value>
   </data>
@@ -302,6 +305,45 @@
   </data>
   <data name="cmbTodo" xml:space="preserve">
     <value>Todos</value>
+  </data>
+  <data name="ConexionFallida" xml:space="preserve">
+    <value>No se ha podido abrir la conexion</value>
+  </data>
+  <data name="ConfirmacionNuevaContrasenya" xml:space="preserve">
+    <value>Hemos enviado un correo con la nueva Contraseña, esto puede tardar unos minutos.</value>
+  </data>
+  <data name="ContrasenyaIncorrectaLogin" xml:space="preserve">
+    <value>Contraseña incorrecta</value>
+  </data>
+  <data name="CorreoNoExiste" xml:space="preserve">
+    <value>El correo proporcionado no esta registrado</value>
+  </data>
+  <data name="errorProviderContrasenyaLogIn" xml:space="preserve">
+    <value>Ingresa la contraseña</value>
+  </data>
+  <data name="errorProviderContrasenyaRegistro" xml:space="preserve">
+    <value>Ingresa la contraseña</value>
+  </data>
+  <data name="errorProviderCorreoRegistro" xml:space="preserve">
+    <value>Ingresa el correo</value>
+  </data>
+  <data name="errorProviderDireccionRegistro" xml:space="preserve">
+    <value>Ingresa la dirección</value>
+  </data>
+  <data name="errorProviderNombreRegistro" xml:space="preserve">
+    <value>Ingresa el nombre</value>
+  </data>
+  <data name="errorProviderTelefonoRegistro" xml:space="preserve">
+    <value>Ingresa  el teléfono</value>
+  </data>
+  <data name="errorProviderUsuarioLogIn" xml:space="preserve">
+    <value>Ingresa el Usuario</value>
+  </data>
+  <data name="errorProviderUsuarioRegistro" xml:space="preserve">
+    <value>Ingresa  el usuario</value>
+  </data>
+  <data name="FaltanDatos" xml:space="preserve">
+    <value>Faltan datos por introducir</value>
   </data>
   <data name="gpbValorarLibro" xml:space="preserve">
     <value>Valorar</value>
@@ -627,6 +669,12 @@
   <data name="lblVisualizarCortohistoria" xml:space="preserve">
     <value>Visualizar Cortohistoria de : </value>
   </data>
+  <data name="MensajeCambiarIdioma" xml:space="preserve">
+    <value>¿Estás seguro que quieres cambiar de idioma? (Se le redirigirá al menú principal)</value>
+  </data>
+  <data name="ParaCambiarContrasenya" xml:space="preserve">
+    <value>Para cambiar su contraseña haga click en este enlace:</value>
+  </data>
   <data name="rbtCopiaFisica" xml:space="preserve">
     <value>COPIA FISICA</value>
   </data>
@@ -731,5 +779,14 @@
   </data>
   <data name="TituloVisualizarCortohistoria" xml:space="preserve">
     <value>Visualizar Cortohistoria</value>
+  </data>
+  <data name="TuNuevaContrasenya" xml:space="preserve">
+    <value>Tu nueva contraseña es: </value>
+  </data>
+  <data name="UsuarioNoExisteLogin" xml:space="preserve">
+    <value>El usuario no existe</value>
+  </data>
+  <data name="UsuarioYaExisteRegistro" xml:space="preserve">
+    <value>El usuario ya existe</value>
   </data>
 </root>

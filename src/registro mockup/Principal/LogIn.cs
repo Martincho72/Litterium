@@ -57,7 +57,7 @@ namespace Litterium
             if (txtUsuario.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtUsuario, "Ingresa el Usuario");
+                errorProvider1.SetError(txtUsuario, Idioma.errorProviderUsuarioLogIn);
             }
             else
             {
@@ -66,7 +66,7 @@ namespace Litterium
             if (txtClave.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtClave, "Ingresa la contraseña");
+                errorProvider1.SetError(txtClave, Idioma.errorProviderContrasenyaLogIn);
             }
             else
             {
@@ -128,8 +128,6 @@ namespace Litterium
                             {
                                 MenuAdministrador admin = new MenuAdministrador(this);
                                 admin.Show();
-                                txtUsuario.Text = "";
-                                txtClave.Text = "";
                                 this.Hide();
                             }
                             else
@@ -139,31 +137,18 @@ namespace Litterium
                                 this.Hide();
 
                             }
+                            txtUsuario.Text = "";
+                            txtClave.Text = "";
                         }
                         else
                         {
-                            if (Thread.CurrentThread.CurrentUICulture.Name == "es-ES")
-                            {
-                                lblMensajesError.Text = "Contraseña incorrecta";
-                            }
-                            else
-                            {
-                                lblMensajesError.Text = "Incorrect Password";
-                            }
+                            lblMensajesError.Text = Idioma.ContrasenyaIncorrectaLogin;
                             lblMensajesError.Visible = true;
                         }
                     }
                     else
                     {
-                        if (Thread.CurrentThread.CurrentUICulture.Name == "es-ES")
-                        {
-                            lblMensajesError.Text = "El usuario no existe";
-                            lblMensajesError.Visible = true;
-                        }
-                        else
-                        {
-                            lblMensajesError.Text = "User doesn't exist";
-                        }
+                        lblMensajesError.Text = Idioma.UsuarioNoExisteLogin;
                         lblMensajesError.Visible = true;
                     }
                     bDatos.CerrarConexion();
@@ -197,7 +182,7 @@ namespace Litterium
             {
                 cultura = "es-ES";
                 pcbIdioma.Image = Resources.espanol;
-            } 
+            }
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultura);
             AplicarIdioma();
 

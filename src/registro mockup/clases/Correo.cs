@@ -8,6 +8,7 @@ using System.Net;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using registro_mockup.Idiomas;
 
 namespace registro_mockup.clases
 {
@@ -71,7 +72,7 @@ namespace registro_mockup.clases
             correo.From = new MailAddress("ayudalitterium@outlook.com", "Litteriumsupport", System.Text.Encoding.UTF8);//Correo de salida
             correo.To.Add(destinatario);
             correo.Subject = "Restablecer Contraseña"; //Asunto
-            correo.Body = "<p>Tu nueva contraseña es: " + nuevacontrasena + "<br>Para cambiar su contraseña haga click en este enlace:<a href=" + enlace + ">" + enlace + "</a>"; //Mensaje del correo
+            correo.Body = "<p>"+Idioma.TuNuevaContrasenya + nuevacontrasena + "<br>"+Idioma.ParaCambiarContrasenya+"<a href=" + enlace + ">" + enlace + "</a>"; //Mensaje del correo
             correo.IsBodyHtml = true;
             correo.Priority = MailPriority.Normal;
             SmtpClient smtp = new SmtpClient();

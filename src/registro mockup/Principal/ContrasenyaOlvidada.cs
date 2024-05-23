@@ -38,13 +38,11 @@ namespace registro_mockup.formularios_administrador
                 {
                     Correo.enviarCorreo(enlace, nuevacontrasena, correo, txtCorreo.Text.Trim());
                     Correo.ActualizarContrasena(dbatos.Conexion, txtCorreo.Text.Trim(), nuevacontrasena);
-                    MessageBox.Show("Hemos enviado un correo con la nueva Contraseña, esto puede tardar unos minutos. ");
-
-
+                    MessageBox.Show(Idioma.ConfirmacionNuevaContrasenya);
                 }
                 else
                 {
-                    MessageBox.Show("El correo proporcionado no esta registrado");
+                    MessageBox.Show(Idioma.CorreoNoExiste);
                 }
             }
             dbatos.CerrarConexion();
