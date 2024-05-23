@@ -223,6 +223,15 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Continuar.
+        /// </summary>
+        internal static string btnContinuar {
+            get {
+                return ResourceManager.GetString("btnContinuar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Cortohistorias.
         /// </summary>
         internal static string btnCortohistorias {

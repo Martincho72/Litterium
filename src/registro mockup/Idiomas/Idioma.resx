@@ -171,6 +171,9 @@
   <data name="btnConfirmarEdicionMiCuenta" xml:space="preserve">
     <value>Confirmar Edición</value>
   </data>
+  <data name="btnContinuar" xml:space="preserve">
+    <value>Continuar</value>
+  </data>
   <data name="btnCortohistorias" xml:space="preserve">
     <value>Cortohistorias</value>
   </data>

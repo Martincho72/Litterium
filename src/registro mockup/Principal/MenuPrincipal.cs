@@ -22,7 +22,7 @@ namespace registro_mockup
     public partial class MenuPrincipal : Form
     {
 
-       private IconButton actualBTN;
+        private IconButton actualBTN;
         private Panel bordeizqBTN;
         private Form currentForm;
         private string usuariomenu;
@@ -109,6 +109,7 @@ namespace registro_mockup
 
         private void BTNinicio_Click(object sender, EventArgs e)
         {
+            if (currentForm != null) { currentForm.Close(); }
             Reset();
         }
         private void Reset()
@@ -202,7 +203,7 @@ namespace registro_mockup
         {
         }
 
-        
+
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -238,6 +239,7 @@ namespace registro_mockup
                 pcbIdioma.Image = Resources.espanol;
             }
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultura);
+            if (currentForm != null) { OpenChildForm(currentForm);  }
             AplicarIdioma();
         }
         private void AplicarIdioma()
@@ -247,7 +249,7 @@ namespace registro_mockup
             btnLibros.Text = Idioma.btnLibros;
             btnCortohistorias.Text = Idioma.btnCortohistorias;
             btnUser.Text = Idioma.btnUser;
-           
+
         }
 
         private void btnUser_Click(object sender, EventArgs e)
