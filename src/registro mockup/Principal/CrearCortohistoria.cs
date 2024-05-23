@@ -14,6 +14,8 @@ using iText.Layout.Element;
 using iText.IO.Font;
 using iText.Kernel.Font;
 using MySql.Data.MySqlClient;
+using iText.IO.Image;
+using iText.Layout.Properties;
 
 
 
@@ -81,9 +83,9 @@ namespace registro_mockup.Principal
 
         private void btnVerPDF_Click(object sender, EventArgs e)
         {
-            // Obtener el texto del cuerpo y el título
-            string cuerpo = EncodeText(txtCortohistoriaCrear.Text); // Codificar el texto antes de guardar
+            /*string cuerpo = EncodeText(txtCortohistoriaCrear.Text); // Codificar el texto antes de guardar
             string titulo = txtTitulo.Text;
+           
 
             // Combinar el título y el cuerpo
             string textoTotal = titulo + Environment.NewLine + cuerpo;
@@ -124,52 +126,100 @@ namespace registro_mockup.Principal
                 // Convertir el MemoryStream a un arreglo de bytes
                 byte[] pdfBytes = memoryStream.ToArray();
 
-                // Guardar el PDF en la base de datos
-                GuardarPDFEnBD(pdfBytes);
+                // Mostrar un cuadro de diálogo para que el usuario seleccione dónde guardar el archivo
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.Filter = "PDF files (*.pdf)|*.pdf";
+                saveFileDialog.Title = "Guardar PDF";
+                saveFileDialog.FileName = titulo + ".pdf"; // Nombre del archivo sugerido
 
-                MessageBox.Show("PDF guardado correctamente en la base de datos.");
-            }
-        }
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        // Guardar el archivo PDF en la ubicación seleccionada
+                        File.WriteAllBytes(saveFileDialog.FileName, pdfBytes);
+                        MessageBox.Show("PDF guardado correctamente en " + saveFileDialog.FileName);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error al guardar el archivo: " + ex.Message);
+                    }
+                }
 
-        private bool GuardarPDFEnBD(byte[] pdfBytes)
-        {
-            BDatos bd = new BDatos();
+            }*/
+            string cuerpo = EncodeText(txtCortohistoriaCrear.Text); // Codificar el texto antes de guardar
+            string titulo = txtTitulo.Text;
 
-            if (bd.AbrirConexion())
+            // Crear un MemoryStream para almacenar el PDF
+            using (MemoryStream memoryStream = new MemoryStream())
             {
                 try
                 {
-                    // Consulta SQL para insertar el PDF en la base de datos
-                    string query = "INSERT INTO TablaPDFs (PDFData) VALUES (@PDFData)";
-
-                    using (MySqlCommand command = new MySqlCommand(query, bd.Conexion))
+                    // Escribir en el PDF
+                    using (var writer = new PdfWriter(memoryStream))
                     {
-                        // Agregar el parámetro de bytes del PDF
-                        command.Parameters.AddWithValue("@PDFData", pdfBytes);
+                        using (var pdf = new PdfDocument(writer))
+                        {
+                            var document = new Document(pdf);
 
-                        // Ejecutar la consulta
-                        command.ExecuteNonQuery();
+                            // Agregar la imagen de portada si se ha seleccionado una
+                            if (!string.IsNullOrEmpty(pcbPortada.ImageLocation))
+                            {
+                                try
+                                {
+                                    iText.Layout.Element.Image pdfImage = new iText.Layout.Element.Image(ImageDataFactory.Create(pcbPortada.ImageLocation));
+
+                                    // Ajustar la imagen para que ocupe toda la página
+                                    pdfImage.SetAutoScale(true);
+                                    pdfImage.ScaleToFit(pdf.GetDefaultPageSize().GetWidth(), pdf.GetDefaultPageSize().GetHeight());
+
+                                    document.Add(pdfImage);
+                                    document.Add(new Paragraph(titulo).SetFontSize(20).SetTextAlignment(TextAlignment.CENTER));
+
+
+                                    // Agregar un salto de página
+                                    document.Add(new AreaBreak(AreaBreakType.NEXT_PAGE));
+                                }
+                                catch (Exception ex)
+                                {
+                                    MessageBox.Show("Error al agregar la imagen: " + ex.Message);
+                                }
+                            }
+
+                           
+
+                            // Dividir el texto en líneas y agregar cada línea como un párrafo separado
+                            foreach (var line in cuerpo.Split('\n'))
+                            {
+                                document.Add(new iText.Layout.Element.Paragraph(line).SetFontSize(8.25f));
+                            }
+                        }
                     }
 
-                    return true;
+                    // Convertir el MemoryStream a un arreglo de bytes
+                    byte[] pdfBytes = memoryStream.ToArray();
+
+                    // Mostrar un cuadro de diálogo para que el usuario seleccione dónde guardar el archivo
+                    SaveFileDialog saveFileDialog = new SaveFileDialog();
+                    saveFileDialog.Filter = "PDF files (*.pdf)|*.pdf";
+                    saveFileDialog.Title = "Guardar PDF";
+                    saveFileDialog.FileName = titulo + ".pdf"; // Nombre del archivo sugerido
+
+                    if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        // Guardar el archivo PDF en la ubicación seleccionada
+                        File.WriteAllBytes(saveFileDialog.FileName, pdfBytes);
+                        MessageBox.Show("PDF guardado correctamente en " + saveFileDialog.FileName);
+                    }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error al guardar el PDF en la base de datos: " + ex.Message);
-                    return false;
+                    MessageBox.Show("Error al generar el PDF: " + ex.Message);
                 }
-                finally
-                {
-                    bd.CerrarConexion();
-                }
-            }
-            else
-            {
-                MessageBox.Show("No se pudo abrir la conexión a la base de datos.");
-                return false;
             }
         }
 
+ 
         private void btnCargarImagenCortohistorias_Click(object sender, EventArgs e)
         {
             OpenFileDialog cargaImagen = new OpenFileDialog();
