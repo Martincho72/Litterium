@@ -23,8 +23,15 @@ namespace registro_mockup.formularios_Usuario
         {
             InitializeComponent();
             usuariomenu = usuario;
+            if (Application.OpenForms["MenuPrincipal"] is MenuPrincipal menuPrincipal)
+            {
+                menuPrincipal.IdiomaCambiado += MenuPrincipal_IdiomaCambiado;
+            }
         }
-
+        private void MenuPrincipal_IdiomaCambiado(object sender, EventArgs e)
+        {
+            AplicarIdioma();
+        }
         private void MenuUsuario_Load(object sender, EventArgs e)
         {
             AplicarIdioma();
@@ -32,12 +39,12 @@ namespace registro_mockup.formularios_Usuario
 
         private void AplicarIdioma()
         {
-            this.Text = LogIn.TituloMenuUsuario;
-            btnMiCuenta.Text = LogIn.btnMiCuenta;
-            btnMisLibros.Text = LogIn.btnMisLibros;
-            btnMisCortohistorias.Text = LogIn.btnMisCortohistorias;
-            btnMisBorradores.Text = LogIn.btnMisBorradores;
-            btnMiHistorial.Text = LogIn.btnMiHistorial;
+            this.Text = Idioma.TituloMenuUsuario;
+            btnMiCuenta.Text = Idioma.btnMiCuenta;
+            btnMisLibros.Text = Idioma.btnMisLibros;
+            btnMisCortohistorias.Text = Idioma.btnMisCortohistorias;
+            btnMisBorradores.Text = Idioma.btnMisBorradores;
+            btnMiHistorial.Text = Idioma.btnMiHistorial;
         }
 
         private void OpenChildForm(Form childForm)

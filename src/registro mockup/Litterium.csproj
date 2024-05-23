@@ -245,20 +245,15 @@
     <Compile Include="formularios Usuario\MisLibros.Designer.cs">
       <DependentUpon>MisLibros.cs</DependentUpon>
     </Compile>
-    <Compile Include="Idiomas\LogIn.EN-GB.Designer.cs">
-      <DependentUpon>LogIn.EN-GB.resx</DependentUpon>
+    <Compile Include="Idiomas\Idioma.EN-GB.Designer.cs">
+      <DependentUpon>Idioma.EN-GB.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Idiomas\Registro.Designer.cs">
-      <DependentUpon>Registro.resx</DependentUpon>
+    <Compile Include="Idiomas\Idioma.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="Idiomas\LogIn.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LogIn.resx</DependentUpon>
+      <DependentUpon>Idioma.resx</DependentUpon>
     </Compile>
     <Compile Include="Principal\Busqueda.cs">
       <SubType>Form</SubType>
@@ -434,17 +429,13 @@
     <EmbeddedResource Include="formularios Usuario\MisLibros.resx">
       <DependentUpon>MisLibros.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Idiomas\LogIn.EN-GB.resx">
+    <EmbeddedResource Include="Idiomas\Idioma.EN-GB.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>LogIn.EN-GB.Designer.cs</LastGenOutput>
+      <LastGenOutput>Idioma.EN-GB.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Idiomas\Registro.resx">
+    <EmbeddedResource Include="Idiomas\Idioma.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Registro.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Idiomas\LogIn.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>LogIn.Designer.cs</LastGenOutput>
+      <LastGenOutput>Idioma.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal\Busqueda.resx">
       <DependentUpon>Busqueda.cs</DependentUpon>

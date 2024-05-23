@@ -222,6 +222,9 @@ namespace registro_mockup
             basedatos.CerrarConexion();
         }
 
+
+        public event EventHandler IdiomaCambiado;
+
         private void pcbIdioma_Click(object sender, EventArgs e)
         {
             string idiomaActual = Thread.CurrentThread.CurrentUICulture.Name;
@@ -239,14 +242,15 @@ namespace registro_mockup
             }
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultura);
             AplicarIdioma();
+            IdiomaCambiado?.Invoke(this, EventArgs.Empty);
         }
         private void AplicarIdioma()
         {
-            this.Text = LogIn.TituloMenuPrincipal;
-            btnMiCarrito.Text = LogIn.btnMiCarrito;
-            btnLibros.Text = LogIn.btnLibros;
-            btnCortohistorias.Text = LogIn.btnCortohistorias;
-            btnUser.Text = LogIn.btnUser;
+            this.Text = Idioma.TituloMenuPrincipal;
+            btnMiCarrito.Text = Idioma.btnMiCarrito;
+            btnLibros.Text = Idioma.btnLibros;
+            btnCortohistorias.Text = Idioma.btnCortohistorias;
+            btnUser.Text = Idioma.btnUser;
            
         }
 

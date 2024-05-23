@@ -1,0 +1,726 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnAC" xml:space="preserve">
+    <value>Administracion CortoHistoria</value>
+  </data>
+  <data name="btnAgregarLibroAdmin" xml:space="preserve">
+    <value>Agregar Libro</value>
+  </data>
+  <data name="btnAgregarUsuarioAdmin" xml:space="preserve">
+    <value>Agregar Usuario</value>
+  </data>
+  <data name="btnAL" xml:space="preserve">
+    <value>Administracion Libro</value>
+  </data>
+  <data name="btnAU" xml:space="preserve">
+    <value>Administracion Usuario</value>
+  </data>
+  <data name="btnAñadirCarrito" xml:space="preserve">
+    <value>AÑADIR AL CARRITO</value>
+  </data>
+  <data name="btnBorradoresCortohistorias" xml:space="preserve">
+    <value>Borradores</value>
+  </data>
+  <data name="btnBorrar" xml:space="preserve">
+    <value>Borrar</value>
+  </data>
+  <data name="btnBuscarCortohistoria" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="btnBuscarLibro" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="btnBuscarUsuario" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="btnCargarAgregarLibro" xml:space="preserve">
+    <value>Cargar</value>
+  </data>
+  <data name="btnCargarEditarLibro" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="btnCargarImagenCortohistoria" xml:space="preserve">
+    <value>Cargar</value>
+  </data>
+  <data name="btnCargarImagenEditarUsuario" xml:space="preserve">
+    <value>Cargar</value>
+  </data>
+  <data name="btnCargarMiCuenta" xml:space="preserve">
+    <value>Cargar</value>
+  </data>
+  <data name="btnComprarAhora" xml:space="preserve">
+    <value>COMPRAR AHORA</value>
+  </data>
+  <data name="btnConfirmarEdicionMiCuenta" xml:space="preserve">
+    <value>Confirmar Edición</value>
+  </data>
+  <data name="btnCortohistorias" xml:space="preserve">
+    <value>Cortohistorias</value>
+  </data>
+  <data name="btnCrearAgregarLibro" xml:space="preserve">
+    <value>Añadir</value>
+  </data>
+  <data name="btnCrearAgregarUsuario" xml:space="preserve">
+    <value>Añadir</value>
+  </data>
+  <data name="btnCrearEditarLibro" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="btnCS" xml:space="preserve">
+    <value>Cerrar Sesión</value>
+  </data>
+  <data name="btnEditarCortohistoria" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="btnEditarCortohistoriaAdmin" xml:space="preserve">
+    <value>Editar Cortohistoria</value>
+  </data>
+  <data name="btnEditarLibroAdmin" xml:space="preserve">
+    <value>Editar Libro</value>
+  </data>
+  <data name="btnEditarMiCuenta" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="btnEditarUsuario" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="btnEditarUsuarioAdmin" xml:space="preserve">
+    <value>Editar Usuario</value>
+  </data>
+  <data name="btnEliminarCortohistoria" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="btnEliminarCortohistoriaAdmin" xml:space="preserve">
+    <value>Eliminar Cortohistoria</value>
+  </data>
+  <data name="btnEliminarLibro" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="btnEliminarLibroAdmin" xml:space="preserve">
+    <value>Eliminar Libro</value>
+  </data>
+  <data name="btnEliminarUsuario" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="btnEliminarUsuarioAdmin" xml:space="preserve">
+    <value>Eliminar Usuario</value>
+  </data>
+  <data name="btnLibros" xml:space="preserve">
+    <value>Libros</value>
+  </data>
+  <data name="btnLogin" xml:space="preserve">
+    <value>Iniciar Sesión</value>
+  </data>
+  <data name="btnMiCarrito" xml:space="preserve">
+    <value>Mi carrito</value>
+  </data>
+  <data name="btnMiCuenta" xml:space="preserve">
+    <value>Mi Cuenta</value>
+  </data>
+  <data name="btnMiHistorial" xml:space="preserve">
+    <value>Mi Historial de compras</value>
+  </data>
+  <data name="btnMisBorradores" xml:space="preserve">
+    <value>Mis Borradores</value>
+  </data>
+  <data name="btnMisCortohistorias" xml:space="preserve">
+    <value>Mis Cortohistorias</value>
+  </data>
+  <data name="btnMisLibros" xml:space="preserve">
+    <value>Mis Libros</value>
+  </data>
+  <data name="btnPagar" xml:space="preserve">
+    <value>Comprar</value>
+  </data>
+  <data name="btnPagarComprar" xml:space="preserve">
+    <value>Pagar</value>
+  </data>
+  <data name="btnRegistrase" xml:space="preserve">
+    <value>Registrarse</value>
+  </data>
+  <data name="btnRestablecerContrasenya" xml:space="preserve">
+    <value>Restablecer</value>
+  </data>
+  <data name="btnSubirCortohistoria" xml:space="preserve">
+    <value>Subir</value>
+  </data>
+  <data name="btnUser" xml:space="preserve">
+    <value>Mi perfil</value>
+  </data>
+  <data name="btnVerComoPDF" xml:space="preserve">
+    <value>Ver como</value>
+  </data>
+  <data name="chbAdmin" xml:space="preserve">
+    <value>Admin</value>
+  </data>
+  <data name="chbAdminAgregarUsuario" xml:space="preserve">
+    <value>Admin</value>
+  </data>
+  <data name="chbBaja" xml:space="preserve">
+    <value>Baja</value>
+  </data>
+  <data name="chbContinuableEditarCortohistoria" xml:space="preserve">
+    <value>Continuable</value>
+  </data>
+  <data name="chbContinuarCortohistoria" xml:space="preserve">
+    <value>Seguir Historia</value>
+  </data>
+  <data name="chbFinalizadaEditarCortohistoria" xml:space="preserve">
+    <value>Finalizada</value>
+  </data>
+  <data name="chbVetado" xml:space="preserve">
+    <value>Vetado</value>
+  </data>
+  <data name="cmbCortohistoria" xml:space="preserve">
+    <value>Cortohistorias</value>
+  </data>
+  <data name="cmbLibro" xml:space="preserve">
+    <value>Libros</value>
+  </data>
+  <data name="cmbTodo" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+  <data name="lblAdministradores" xml:space="preserve">
+    <value>Administradores</value>
+  </data>
+  <data name="lblAutorAgregarUsuario" xml:space="preserve">
+    <value>Autor:</value>
+  </data>
+  <data name="lblAutorEditarCortohistoria" xml:space="preserve">
+    <value>Autor:</value>
+  </data>
+  <data name="lblAutorEditarLibro" xml:space="preserve">
+    <value>Autor:</value>
+  </data>
+  <data name="lblAutorLibro" xml:space="preserve">
+    <value>AUTOR : </value>
+  </data>
+  <data name="lblCategoriaAgregarUsuario" xml:space="preserve">
+    <value>Categoría:</value>
+  </data>
+  <data name="lblCategoriaEditarCortohistoria" xml:space="preserve">
+    <value>Categoría:</value>
+  </data>
+  <data name="lblCategoriaEditarLibro" xml:space="preserve">
+    <value>Categoría:</value>
+  </data>
+  <data name="lblCCV" xml:space="preserve">
+    <value>CCV :</value>
+  </data>
+  <data name="lblClaveAgregarUsuario" xml:space="preserve">
+    <value>Contraseña:</value>
+  </data>
+  <data name="lblComentarios" xml:space="preserve">
+    <value>Comentarios</value>
+  </data>
+  <data name="lblContraMiCuenta" xml:space="preserve">
+    <value>Contraseña:</value>
+  </data>
+  <data name="lblContrasena" xml:space="preserve">
+    <value>Contraseña:</value>
+  </data>
+  <data name="lblContrasenaOlvidada" xml:space="preserve">
+    <value>¿Has olvidado tu contraseña?</value>
+  </data>
+  <data name="lblContrasenyaEditarUsuario" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="lblCorreo" xml:space="preserve">
+    <value>Correo:</value>
+  </data>
+  <data name="lblCorreoAgregarUsuario" xml:space="preserve">
+    <value>Correo:</value>
+  </data>
+  <data name="lblCorreoContrasenyaOlvidada" xml:space="preserve">
+    <value>Correo:</value>
+  </data>
+  <data name="lblCorreoEditarUsuario" xml:space="preserve">
+    <value>Correo</value>
+  </data>
+  <data name="lblCortohistoriaCrearCortohistoria" xml:space="preserve">
+    <value>Cortohistoria :</value>
+  </data>
+  <data name="lblCortohistoriasEnLibros" xml:space="preserve">
+    <value>Algunas Cortohistorias</value>
+  </data>
+  <data name="lblDatosDeTarjeta" xml:space="preserve">
+    <value>Datos de tarjeta :</value>
+  </data>
+  <data name="lblDatosDeUsuario" xml:space="preserve">
+    <value>Datos de Usuario</value>
+  </data>
+  <data name="lblDireccion" xml:space="preserve">
+    <value>Dirección:</value>
+  </data>
+  <data name="lblDireccionAgregarUsuario" xml:space="preserve">
+    <value>Dirección:</value>
+  </data>
+  <data name="lblDireccionEditarUsuario" xml:space="preserve">
+    <value>Dirección</value>
+  </data>
+  <data name="lblDireccionMiCuenta" xml:space="preserve">
+    <value>Dirección:</value>
+  </data>
+  <data name="lblEjemplaresLibro" xml:space="preserve">
+    <value>Ejemplares :</value>
+  </data>
+  <data name="lblErrorEditarCortohistoria" xml:space="preserve">
+    <value>Mensaje Error</value>
+  </data>
+  <data name="lblErrorEditarUsuario" xml:space="preserve">
+    <value>Mensaje Error</value>
+  </data>
+  <data name="lblErroresAgregarLibro" xml:space="preserve">
+    <value>Mensaje Error</value>
+  </data>
+  <data name="lblErroresAgregarUsuario" xml:space="preserve">
+    <value>Mensaje Error</value>
+  </data>
+  <data name="lblErroresBuscarCortohistoria" xml:space="preserve">
+    <value>Mensaje Error</value>
+  </data>
+  <data name="lblErroresBuscarLibro" xml:space="preserve">
+    <value>Mensaje Error</value>
+  </data>
+  <data name="lblErroresBuscarUsuario" xml:space="preserve">
+    <value>Mensaje Error</value>
+  </data>
+  <data name="lblErroresEditarLibro" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="lblErroresEliminarCortohistoria" xml:space="preserve">
+    <value>Mensaje Error</value>
+  </data>
+  <data name="lblErroresEliminarLibro" xml:space="preserve">
+    <value>Mensaje Error</value>
+  </data>
+  <data name="lblErroresEliminarUsuario" xml:space="preserve">
+    <value>Mensaje Error</value>
+  </data>
+  <data name="lblFechaCaducidad" xml:space="preserve">
+    <value>Fecha de caducidad :</value>
+  </data>
+  <data name="lblFechaPublicacionEditarCortohistoria" xml:space="preserve">
+    <value>Fecha Publicación:</value>
+  </data>
+  <data name="lblIdBuscarCortohistoria" xml:space="preserve">
+    <value>ID Cortohistoria:</value>
+  </data>
+  <data name="lblIdEditarCortohistoria" xml:space="preserve">
+    <value>Id:</value>
+  </data>
+  <data name="lblIdEliminarCortohistoria" xml:space="preserve">
+    <value>ID:</value>
+  </data>
+  <data name="lblIdUsuarioEditarCortohistoria" xml:space="preserve">
+    <value>Id Usuario:</value>
+  </data>
+  <data name="lblImporteMiCarrito" xml:space="preserve">
+    <value>Importe Total : </value>
+  </data>
+  <data name="lblImporteTotal" xml:space="preserve">
+    <value>Importe total : 0,00€</value>
+  </data>
+  <data name="lblInfoSinopsisAgregarLibro" xml:space="preserve">
+    <value>Max. Carácteres: 150</value>
+  </data>
+  <data name="lblInfoSinopsisEditarLibro" xml:space="preserve">
+    <value>Max. Caracteres: 150</value>
+  </data>
+  <data name="lblIsbnAgregarUsuario" xml:space="preserve">
+    <value>ISBN:</value>
+  </data>
+  <data name="lblIsbnBuscarLibro" xml:space="preserve">
+    <value>ISBN:</value>
+  </data>
+  <data name="lblISBNEditarLibro" xml:space="preserve">
+    <value>ISBN:</value>
+  </data>
+  <data name="lblIsbnEliminarLibro" xml:space="preserve">
+    <value>ISBN</value>
+  </data>
+  <data name="lblLibrosEnCortohistorias" xml:space="preserve">
+    <value>Algunos libros :</value>
+  </data>
+  <data name="lblMejorValoradosCortoHistoria" xml:space="preserve">
+    <value>Mejor valorados por los usuarios :</value>
+  </data>
+  <data name="lblMejorvaloradosLibros" xml:space="preserve">
+    <value>Mejor valorados por los usuarios:</value>
+  </data>
+  <data name="lblMensajeAgregarLibro" xml:space="preserve">
+    <value>Agregar Libro</value>
+  </data>
+  <data name="lblMensajeAgregarUsuario" xml:space="preserve">
+    <value>Agregar Usuario</value>
+  </data>
+  <data name="lblMensajeBuscarCortohistoria" xml:space="preserve">
+    <value>Buscar Cortohistoria</value>
+  </data>
+  <data name="lblMensajeBuscarLibro" xml:space="preserve">
+    <value>Buscar Libro</value>
+  </data>
+  <data name="lblMensajeBuscarUsuario" xml:space="preserve">
+    <value>Buscar Usuario</value>
+  </data>
+  <data name="lblMensajeEditarCortohistoria" xml:space="preserve">
+    <value>Editar Cortohistoria</value>
+  </data>
+  <data name="lblMensajeEditarLibro" xml:space="preserve">
+    <value>Editar Libro</value>
+  </data>
+  <data name="lblMensajeEditarUsuario" xml:space="preserve">
+    <value>Editar Usuario</value>
+  </data>
+  <data name="lblMensajeEliminarCortohistoria" xml:space="preserve">
+    <value>Eliminar Cortohistoria</value>
+  </data>
+  <data name="lblMensajeEliminarLibro" xml:space="preserve">
+    <value>Eliminar Libro</value>
+  </data>
+  <data name="lblMensajeEliminarUsuario" xml:space="preserve">
+    <value>Eliminar Usuario</value>
+  </data>
+  <data name="lblMensajesError" xml:space="preserve">
+    <value>Mensajes de Error</value>
+  </data>
+  <data name="lblNombre" xml:space="preserve">
+    <value>Nombre:</value>
+  </data>
+  <data name="lblNombreAgregarUsuario" xml:space="preserve">
+    <value>Nombre:</value>
+  </data>
+  <data name="lblNombreEditarUsuario" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="lblNombreMiCuenta" xml:space="preserve">
+    <value>Nombre:</value>
+  </data>
+  <data name="lblNumeroTarjeta" xml:space="preserve">
+    <value>Numero tarjeta :</value>
+  </data>
+  <data name="lblPrecioAgregarLibro" xml:space="preserve">
+    <value>Precio:</value>
+  </data>
+  <data name="lblPrecioEditarLibro" xml:space="preserve">
+    <value>Precio:</value>
+  </data>
+  <data name="lblRecomendadosCortohistorias" xml:space="preserve">
+    <value>Recomendados por Litterium :</value>
+  </data>
+  <data name="lblRecomendadosLitterium" xml:space="preserve">
+    <value>Recomendados por Litterium:</value>
+  </data>
+  <data name="lblRegistrase" xml:space="preserve">
+    <value>Regístrate</value>
+  </data>
+  <data name="lblResultadosBusqueda" xml:space="preserve">
+    <value>RESULTADOS</value>
+  </data>
+  <data name="lblSinopsis" xml:space="preserve">
+    <value>Sinopsis</value>
+  </data>
+  <data name="lblSinopsisAgregarLibro" xml:space="preserve">
+    <value>Sinopsis:</value>
+  </data>
+  <data name="lblSinopsisEditarLibro" xml:space="preserve">
+    <value>Sinopsis:</value>
+  </data>
+  <data name="lblTelefono" xml:space="preserve">
+    <value>Teléfono:</value>
+  </data>
+  <data name="lblTelefonoAgregarUsuario" xml:space="preserve">
+    <value>Teléfono:</value>
+  </data>
+  <data name="lblTelefonoEditarUsuario" xml:space="preserve">
+    <value>Teléfono:</value>
+  </data>
+  <data name="lblTeléfonoMiCuenta" xml:space="preserve">
+    <value>Teléfono:</value>
+  </data>
+  <data name="lblTextoRegistrase" xml:space="preserve">
+    <value>¿No te has registrado aún?</value>
+  </data>
+  <data name="lblTituloAgregarUsuario" xml:space="preserve">
+    <value>Título:</value>
+  </data>
+  <data name="lblTituloComprar" xml:space="preserve">
+    <value>Información de compra</value>
+  </data>
+  <data name="lblTituloCrearCortohistoria" xml:space="preserve">
+    <value>Titulo :</value>
+  </data>
+  <data name="lblTituloEditarCortohistoria" xml:space="preserve">
+    <value>Título:</value>
+  </data>
+  <data name="lblTituloEditarLibro" xml:space="preserve">
+    <value>Titulo:</value>
+  </data>
+  <data name="lblTituloLibro" xml:space="preserve">
+    <value>TITULO :</value>
+  </data>
+  <data name="lblTituloRestablecerContrasenya" xml:space="preserve">
+    <value>Restablecer Contraseña</value>
+  </data>
+  <data name="lblTituloVisulaizarCortohistoria" xml:space="preserve">
+    <value>Titulo : </value>
+  </data>
+  <data name="lblUbicacionEntrega" xml:space="preserve">
+    <value>Ubicacion de la entrega :</value>
+  </data>
+  <data name="lblUsuario" xml:space="preserve">
+    <value>Usuario:</value>
+  </data>
+  <data name="lblUsuarioAgegarUsuario" xml:space="preserve">
+    <value>Usuario:</value>
+  </data>
+  <data name="lblUsuarioBuscarUsuario" xml:space="preserve">
+    <value>Usuario:</value>
+  </data>
+  <data name="lblUsuarioEditarUsuario" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="lblUsuarioEliminarUsuario" xml:space="preserve">
+    <value>Usuario:</value>
+  </data>
+  <data name="lblUsuarioMiCuenta" xml:space="preserve">
+    <value>Usuario:</value>
+  </data>
+  <data name="lblValoracionAgregarUsuario" xml:space="preserve">
+    <value>Valoración:</value>
+  </data>
+  <data name="lblValoracionEditarCortohistoria" xml:space="preserve">
+    <value>Valoración:</value>
+  </data>
+  <data name="lblValoracionEditarLibro" xml:space="preserve">
+    <value>Valoración:</value>
+  </data>
+  <data name="lblValoracionLibro" xml:space="preserve">
+    <value>Valoración : </value>
+  </data>
+  <data name="lblVisualizarCortohistoria" xml:space="preserve">
+    <value>Visualizar Cortohistoria de : </value>
+  </data>
+  <data name="rbtCopiaFisica" xml:space="preserve">
+    <value>COPIA FISICA</value>
+  </data>
+  <data name="rbtCopiaOnline" xml:space="preserve">
+    <value>COPIA ONLINE</value>
+  </data>
+  <data name="TituloAdministracionCortohistoria" xml:space="preserve">
+    <value>Administración Cortohistoria</value>
+  </data>
+  <data name="TituloAdministracionLibro" xml:space="preserve">
+    <value>Administración Libro</value>
+  </data>
+  <data name="TituloAdministracionUsuario" xml:space="preserve">
+    <value>Administración Usuario</value>
+  </data>
+  <data name="TituloAgregarLibro" xml:space="preserve">
+    <value>Agregar Libro</value>
+  </data>
+  <data name="TituloAgregarUsuario" xml:space="preserve">
+    <value>Agregar Usuario</value>
+  </data>
+  <data name="TituloBuscarCortohistoria" xml:space="preserve">
+    <value>Buscar Cortohistoria</value>
+  </data>
+  <data name="TituloBuscarLibro" xml:space="preserve">
+    <value>Buscar Libro</value>
+  </data>
+  <data name="TituloBuscarUsuario" xml:space="preserve">
+    <value>Buscar Usuario</value>
+  </data>
+  <data name="TituloBusqueda" xml:space="preserve">
+    <value>Búsqueda</value>
+  </data>
+  <data name="TituloComprar" xml:space="preserve">
+    <value>Comprar</value>
+  </data>
+  <data name="TituloContrasenyaOlvidada" xml:space="preserve">
+    <value>Contraseña olvidada</value>
+  </data>
+  <data name="TituloCortohistoriaPrincipal" xml:space="preserve">
+    <value>Cortohistoria Principal</value>
+  </data>
+  <data name="TituloCrearCortohistoria" xml:space="preserve">
+    <value>Crear Cortohistoria</value>
+  </data>
+  <data name="TituloEditarCortohistoria" xml:space="preserve">
+    <value>Editar Cortohistoria</value>
+  </data>
+  <data name="TituloEditarLibro" xml:space="preserve">
+    <value>Editar Libro</value>
+  </data>
+  <data name="TituloEditarUsuario" xml:space="preserve">
+    <value>Editar Usuario</value>
+  </data>
+  <data name="TituloEliminarCortohistoria" xml:space="preserve">
+    <value>Eliminar Cortohistoria</value>
+  </data>
+  <data name="TituloEliminarLibro" xml:space="preserve">
+    <value>Eliminar Libro</value>
+  </data>
+  <data name="TituloEliminarUsuario" xml:space="preserve">
+    <value>Eliminar Usuario</value>
+  </data>
+  <data name="TituloHistorialComprar" xml:space="preserve">
+    <value>Historial Compras</value>
+  </data>
+  <data name="TituloInformacionLibro" xml:space="preserve">
+    <value>Información Libro</value>
+  </data>
+  <data name="TituloLibroPrincipal" xml:space="preserve">
+    <value>Principal Libros</value>
+  </data>
+  <data name="TituloLogin" xml:space="preserve">
+    <value>Iniciar Sesión</value>
+  </data>
+  <data name="TituloMenuAdministrador" xml:space="preserve">
+    <value>Menú Administrador</value>
+  </data>
+  <data name="TituloMenuPrincipal" xml:space="preserve">
+    <value>Menú Principal</value>
+  </data>
+  <data name="TituloMenuUsuario" xml:space="preserve">
+    <value>Menú Usuario</value>
+  </data>
+  <data name="TituloMiCarrito" xml:space="preserve">
+    <value>Mi Carrito</value>
+  </data>
+  <data name="TituloMiCuenta" xml:space="preserve">
+    <value>Mi Cuenta</value>
+  </data>
+  <data name="TituloMisBorradores" xml:space="preserve">
+    <value>Mis Borradores</value>
+  </data>
+  <data name="TituloMisCortohistorias" xml:space="preserve">
+    <value>Mis Cortohistorias</value>
+  </data>
+  <data name="TituloMisLibros" xml:space="preserve">
+    <value>Mis Libros</value>
+  </data>
+  <data name="TituloRegistro" xml:space="preserve">
+    <value>Registro</value>
+  </data>
+  <data name="TituloVisualizarCortohistoria" xml:space="preserve">
+    <value>Visualizar Cortohistoria</value>
+  </data>
+</root>

@@ -36,14 +36,12 @@ namespace registro_mockup.formularios_administrador
 
                 if (Correo.validarCorreo(dbatos.Conexion, txtCorreo.Text.Trim()))
                 {
-                    Correo.enviarCorreo(enlace, nuevacontrasena,correo, txtCorreo.Text.Trim());
+                    Correo.enviarCorreo(enlace, nuevacontrasena, correo, txtCorreo.Text.Trim());
                     Correo.ActualizarContrasena(dbatos.Conexion, txtCorreo.Text.Trim(), nuevacontrasena);
                     MessageBox.Show("Hemos enviado un correo con la nueva Contraseña, esto puede tardar unos minutos. ");
 
 
                 }
-
-
                 else
                 {
                     MessageBox.Show("El correo proporcionado no esta registrado");
@@ -54,10 +52,10 @@ namespace registro_mockup.formularios_administrador
 
         private void AplicarIdioma()
         {
-            this.Text = LogIn.TituloContrasenyaOlvidada;
-            lblTitulo.Text = LogIn.lblTituloRestablecerContrasenya;
-            lblCorreo.Text = LogIn.lblCorreoContrasenyaOlvidada;
-            btnRestablecer.Text = LogIn.btnRestablecerContrasenya;
+            this.Text = Idioma.TituloContrasenyaOlvidada;
+            lblTitulo.Text = Idioma.lblTituloRestablecerContrasenya;
+            lblCorreo.Text = Idioma.lblCorreoContrasenyaOlvidada;
+            btnRestablecer.Text = Idioma.btnRestablecerContrasenya;
         }
 
         private void ContrasenyaOlvidada_Load(object sender, EventArgs e)

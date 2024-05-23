@@ -117,17 +117,17 @@ namespace Litterium
 
         private void AplicarIdioma()
         {
-            this.Text = LogIn.TituloRegistro;
-            lblAdministradores.Text = LogIn.lblAdministradores;
-            lblDatos.Text = LogIn.lblDatosDeUsuario;
-            lblNombre.Text = LogIn.lblNombre;
-            lblUsuario.Text = LogIn.lblUsuario;
-            lblDireccion.Text = LogIn.lblDireccion;
-            lblCorreo.Text = LogIn.lblCorreo;
-            lblTelefono.Text = LogIn.lblTelefono;
-            lblUsuario.Text = LogIn.lblUsuario;
-            lblContraseña.Text = LogIn.lblContrasena;
-            btnCrear.Text = LogIn.btnRegistrase;
+            this.Text = Idioma.TituloRegistro;
+            lblAdministradores.Text = Idioma.lblAdministradores;
+            lblDatos.Text = Idioma.lblDatosDeUsuario;
+            lblNombre.Text = Idioma.lblNombre;
+            lblUsuario.Text = Idioma.lblUsuario;
+            lblDireccion.Text = Idioma.lblDireccion;
+            lblCorreo.Text = Idioma.lblCorreo;
+            lblTelefono.Text = Idioma.lblTelefono;
+            lblUsuario.Text = Idioma.lblUsuario;
+            lblContraseña.Text = Idioma.lblContrasena;
+            btnCrear.Text = Idioma.btnRegistrase;
         }
 
         private void Registro_Paint(object sender, PaintEventArgs e)

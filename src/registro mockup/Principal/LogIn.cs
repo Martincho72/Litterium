@@ -29,14 +29,14 @@ namespace Litterium
 
         private void AplicarIdioma()
         {
-            this.Text = LogIn.TituloLogin;
-            lblUsuario.Text = LogIn.lblUsuario;
-            lblTextoRegistrase.Text = LogIn.lblTextoRegistrase;
-            lblRegistrase.Text = LogIn.lblRegistrase;
-            lblMensajesError.Text = LogIn.lblMensajesError;
-            lblContrasenaOlvidada.Text = LogIn.lblContrasenaOlvidada;
-            lblContrasena.Text = LogIn.lblContrasena;
-            btnIogin.Text = LogIn.btnLogin;
+            this.Text = Idioma.TituloLogin;
+            lblUsuario.Text = Idioma.lblUsuario;
+            lblTextoRegistrase.Text = Idioma.lblTextoRegistrase;
+            lblRegistrase.Text = Idioma.lblRegistrase;
+            lblMensajesError.Text = Idioma.lblMensajesError;
+            lblContrasenaOlvidada.Text = Idioma.lblContrasenaOlvidada;
+            lblContrasena.Text = Idioma.lblContrasena;
+            btnIogin.Text = Idioma.btnLogin;
 
             string idiomaActual = Thread.CurrentThread.CurrentUICulture.Name;
 
