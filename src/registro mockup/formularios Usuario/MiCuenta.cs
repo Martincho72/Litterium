@@ -57,7 +57,22 @@ namespace registro_mockup.formularios_Usuario
             }
             else { }
             basedatos.CerrarConexion();
+            AplicarIdioma();
 
+        }
+
+        private void AplicarIdioma()
+        {
+            this.Text = Idioma.TituloMiCuenta;
+            lblUsuario.Text = Idioma.lblUsuarioMiCuenta;
+            lblContra.Text = Idioma.lblContraMiCuenta;
+            lblNombre.Text = Idioma.lblNombreMiCuenta;
+            lblTelefono.Text = Idioma.lblTelefono;
+            lblDireccion.Text = Idioma.lblDireccionMiCuenta;
+            lblCorreo.Text = Idioma.lblCorreo;
+            btnEditar.Text = Idioma.btnEditarMiCuenta;
+            btnConfirmarEdicion.Text = Idioma.btnConfirmarEdicionMiCuenta;
+            btnCargar.Text = Idioma.btnCargarMiCuenta;
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
