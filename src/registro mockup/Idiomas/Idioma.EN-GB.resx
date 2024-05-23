@@ -264,6 +264,9 @@
   <data name="btnUser" xml:space="preserve">
     <value>My Profile</value>
   </data>
+  <data name="btnValorar" xml:space="preserve">
+    <value>EVALUATE</value>
+  </data>
   <data name="btnVerComoPDF" xml:space="preserve">
     <value>See as</value>
   </data>
@@ -296,6 +299,9 @@
   </data>
   <data name="cmbTodo" xml:space="preserve">
     <value>All</value>
+  </data>
+  <data name="gpbValorarLibro" xml:space="preserve">
+    <value>Evaluate Book</value>
   </data>
   <data name="lblAdministradores" xml:space="preserve">
     <value>Administrators</value>
@@ -436,7 +442,7 @@
     <value>Total Amount: </value>
   </data>
   <data name="lblImporteTotal" xml:space="preserve">
-    <value>Total Amountl : 0,00€</value>
+    <value>Total Amount : 0,00€</value>
   </data>
   <data name="lblInfoSinopsisAgregarLibro" xml:space="preserve">
     <value>Max. Characters150</value>

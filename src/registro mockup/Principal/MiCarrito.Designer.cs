@@ -110,7 +110,7 @@
             this.Cantidad,
             this.Tipo});
             this.dgvMiCarrito.EnableHeadersVisualStyles = false;
-            this.dgvMiCarrito.Location = new System.Drawing.Point(39, 38);
+            this.dgvMiCarrito.Location = new System.Drawing.Point(15, 38);
             this.dgvMiCarrito.Margin = new System.Windows.Forms.Padding(20, 130, 20, 20);
             this.dgvMiCarrito.Name = "dgvMiCarrito";
             this.dgvMiCarrito.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -131,7 +131,7 @@
             this.dgvMiCarrito.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvMiCarrito.RowTemplate.Height = 48;
             this.dgvMiCarrito.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dgvMiCarrito.Size = new System.Drawing.Size(504, 136);
+            this.dgvMiCarrito.Size = new System.Drawing.Size(576, 136);
             this.dgvMiCarrito.TabIndex = 56;
             // 
             // ISBN

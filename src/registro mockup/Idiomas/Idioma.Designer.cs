@@ -502,6 +502,15 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a VALORAR.
+        /// </summary>
+        internal static string btnValorar {
+            get {
+                return ResourceManager.GetString("btnValorar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Ver como.
         /// </summary>
         internal static string btnVerComoPDF {
@@ -597,6 +606,15 @@ namespace registro_mockup.Idiomas {
         internal static string cmbTodo {
             get {
                 return ResourceManager.GetString("cmbTodo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Valorar.
+        /// </summary>
+        internal static string gpbValorarLibro {
+            get {
+                return ResourceManager.GetString("gpbValorarLibro", resourceCulture);
             }
         }
         

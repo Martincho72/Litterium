@@ -31,7 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblComentarios = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -42,7 +42,7 @@
             this.btnValorar = new FontAwesome.Sharp.IconButton();
             this.btnComprarAhora = new FontAwesome.Sharp.IconButton();
             this.btnAgreagarAlCarrito = new FontAwesome.Sharp.IconButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gpbValorarLibro = new System.Windows.Forms.GroupBox();
             this.cmbValorar = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -62,7 +62,7 @@
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.gpbValorarLibro.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nupCantidad)).BeginInit();
@@ -92,21 +92,21 @@
             // 
             // flowLayoutPanel2
             // 
-            this.flowLayoutPanel2.Controls.Add(this.label3);
+            this.flowLayoutPanel2.Controls.Add(this.lblComentarios);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(772, 100);
             this.flowLayoutPanel2.TabIndex = 14;
             // 
-            // label3
+            // lblComentarios
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Comentarios";
+            this.lblComentarios.AutoSize = true;
+            this.lblComentarios.Location = new System.Drawing.Point(3, 0);
+            this.lblComentarios.Name = "lblComentarios";
+            this.lblComentarios.Size = new System.Drawing.Size(65, 13);
+            this.lblComentarios.TabIndex = 0;
+            this.lblComentarios.Text = "Comentarios";
             // 
             // panel2
             // 
@@ -191,7 +191,7 @@
             this.tableLayoutPanel4.Controls.Add(this.btnValorar, 1, 1);
             this.tableLayoutPanel4.Controls.Add(this.btnComprarAhora, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.btnAgreagarAlCarrito, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.groupBox1, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.gpbValorarLibro, 1, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Right;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(203, 3);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -257,19 +257,19 @@
             this.btnAgreagarAlCarrito.UseVisualStyleBackColor = false;
             this.btnAgreagarAlCarrito.Click += new System.EventHandler(this.btnAgreagarAlCarrito_Click);
             // 
-            // groupBox1
+            // gpbValorarLibro
             // 
-            this.groupBox1.Controls.Add(this.cmbValorar);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(223, 2);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(341, 42);
-            this.groupBox1.TabIndex = 20;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Valorar Libro:";
+            this.gpbValorarLibro.Controls.Add(this.cmbValorar);
+            this.gpbValorarLibro.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gpbValorarLibro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpbValorarLibro.Location = new System.Drawing.Point(223, 2);
+            this.gpbValorarLibro.Margin = new System.Windows.Forms.Padding(2);
+            this.gpbValorarLibro.Name = "gpbValorarLibro";
+            this.gpbValorarLibro.Padding = new System.Windows.Forms.Padding(2);
+            this.gpbValorarLibro.Size = new System.Drawing.Size(341, 42);
+            this.gpbValorarLibro.TabIndex = 20;
+            this.gpbValorarLibro.TabStop = false;
+            this.gpbValorarLibro.Text = "Valorar Libro:";
             // 
             // cmbValorar
             // 
@@ -282,7 +282,7 @@
             "4",
             "5"});
             this.cmbValorar.Location = new System.Drawing.Point(105, 1);
-            this.cmbValorar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbValorar.Margin = new System.Windows.Forms.Padding(2);
             this.cmbValorar.Name = "cmbValorar";
             this.cmbValorar.Size = new System.Drawing.Size(92, 25);
             this.cmbValorar.TabIndex = 0;
@@ -410,7 +410,7 @@
             this.lblSinopsis.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSinopsis.Location = new System.Drawing.Point(0, 0);
             this.lblSinopsis.Name = "lblSinopsis";
-            this.lblSinopsis.Size = new System.Drawing.Size(120, 29);
+            this.lblSinopsis.Size = new System.Drawing.Size(89, 24);
             this.lblSinopsis.TabIndex = 0;
             this.lblSinopsis.Text = "Sinopsis";
             // 
@@ -443,7 +443,7 @@
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
+            this.gpbValorarLibro.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -480,9 +480,9 @@
         private FontAwesome.Sharp.IconButton btnAgreagarAlCarrito;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblComentarios;
         private FontAwesome.Sharp.IconButton btnValorar;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gpbValorarLibro;
         private System.Windows.Forms.ComboBox cmbValorar;
     }
 }

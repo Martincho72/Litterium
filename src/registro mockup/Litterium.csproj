@@ -436,6 +436,7 @@
     <EmbeddedResource Include="Idiomas\Idioma.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Idioma.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal\Busqueda.resx">
       <DependentUpon>Busqueda.cs</DependentUpon>

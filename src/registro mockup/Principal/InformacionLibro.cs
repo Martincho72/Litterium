@@ -1,4 +1,5 @@
 ﻿using registro_mockup.clases;
+using registro_mockup.Idiomas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -6,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -20,19 +22,22 @@ namespace registro_mockup.Principal
         {
             InitializeComponent();
             usuariomenu = usuario;
+            AplicarIdioma();
             if (basedatos.AbrirConexion())
             {
                 Libro l1 = Libro.EncontrarDatosLibroTitulo(basedatos.Conexion, titulo);
                 isbnLibro = l1.Isbn;
-                lblAutorLibro.Text = "Autor: " + l1.Autor;
-                lblTituloLibro.Text = "Titulo: " + l1.Titulo;
-                lblValoracion.Text = "Valoracion: " + l1.Valoracion;
+                lblAutorLibro.Text +=  l1.Autor;
+                lblTituloLibro.Text += l1.Titulo;
+                lblValoracion.Text += l1.Valoracion;
                 txtSinopsis.Text = l1.Sinopsis;
                 pcbPortadaLibro.Image = l1.Portada;
-                lblPrecioLibro.Text = "Precio: " + l1.Precio + "€";
+                lblPrecioLibro.Text += l1.Precio + "€";
             }
             basedatos.CerrarConexion();
         }
+
+
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -52,6 +57,25 @@ namespace registro_mockup.Principal
         private void InformacionLibro_Load(object sender, EventArgs e)
         {
             cmbValorar.SelectedIndex = 4;
+        }
+
+        private void AplicarIdioma()
+        {
+            this.Text = Idioma.TituloInformacionLibro;
+            lblAutorLibro.Text = Idioma.lblAutorEditarLibro;
+            lblTituloLibro.Text = Idioma.lblTituloEditarLibro;
+            lblValoracion.Text = Idioma.lblValoracionLibro;
+            btnAgreagarAlCarrito.Text = Idioma.btnAñadirCarrito;
+            btnComprarAhora.Text = Idioma.btnComprarAhora;
+            btnValorar.Text = Idioma.btnValorar;
+            lblValoracion.Text = Idioma.lblValoracionLibro;
+            lblPrecioLibro.Text = Idioma.lblPrecioAgregarLibro;
+            lblComentarios.Text = Idioma.lblComentarios;
+            lblSinopsis.Text = Idioma.lblSinopsis;
+            lblEjemplares.Text = Idioma.lblEjemplaresLibro;
+            rdbCopiaFisica.Text = Idioma.rbtCopiaFisica;
+            rdbCopiaOnline.Text = Idioma.rbtCopiaOnline;
+            gpbValorarLibro.Text = Idioma.gpbValorarLibro;
         }
 
         private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
@@ -127,8 +151,29 @@ namespace registro_mockup.Principal
                 if (rdbCopiaFisica.Checked) { online = false; }
                 l1.Cantidad=cantidad;
                 l1.Online=online;
-               
-                Carrito.agregarAlCarrito(l1);
+
+                bool encontrado = false;
+                foreach (Libro libro in Carrito.MiCarrito)
+                {
+                    if (libro.Isbn == l1.Isbn)
+                    {
+                        libro.Cantidad += l1.Cantidad;
+                        encontrado = true;
+                    }
+                }
+                if (!encontrado)
+                {
+                    Carrito.agregarAlCarrito(l1);
+                }
+                string idiomaActual = Thread.CurrentThread.CurrentUICulture.Name;
+                if (idiomaActual == "es-ES")
+                {
+                    MessageBox.Show("Artículo añadido al carrito correctamente");
+                }
+                else
+                {
+                    MessageBox.Show("Item Added to Cart Successfully");
+                }
             }
             else { }
             basedatos.CerrarConexion();

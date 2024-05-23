@@ -1,4 +1,5 @@
 ﻿using registro_mockup.clases;
+using registro_mockup.Idiomas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -43,8 +44,17 @@ namespace registro_mockup.Principal
 
         }
 
+        private void AplicarIdioma()
+        {
+            this.Text = Idioma.TituloLibroPrincipal;
+            lblRecomendadosLibros.Text = Idioma.lblRecomendadosLitterium;
+            lblMejorvaloradosLibros.Text = Idioma.lblMejorvaloradosLibros;
+            lblCortohistoriasEnLibros.Text = Idioma.lblCortohistoriasEnLibros;
+        }
+
         private void LibroPrincipal_Load(object sender, EventArgs e)
         {
+            AplicarIdioma();
             MostrarPaneles();
             if (basedatos.AbrirConexion())
             {
