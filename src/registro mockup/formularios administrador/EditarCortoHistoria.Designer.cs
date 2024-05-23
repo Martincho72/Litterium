@@ -37,12 +37,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblMensaje = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtValoracion = new System.Windows.Forms.TextBox();
             this.txtCategoria = new System.Windows.Forms.TextBox();
             this.txtAutor = new System.Windows.Forms.TextBox();
             this.txtTitulo = new System.Windows.Forms.TextBox();
             this.lblFechaPublicacion = new System.Windows.Forms.Label();
-            this.lblValoracion = new System.Windows.Forms.Label();
             this.lblCategoria = new System.Windows.Forms.Label();
             this.lblAutor = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
@@ -54,6 +52,8 @@
             this.btnSalir = new System.Windows.Forms.PictureBox();
             this.btnCargar = new System.Windows.Forms.Button();
             this.pcbPortada = new System.Windows.Forms.PictureBox();
+            this.txtTexto = new System.Windows.Forms.TextBox();
+            this.lblContenido = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -65,7 +65,7 @@
             // 
             this.chbContinuable.AutoSize = true;
             this.chbContinuable.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chbContinuable.Location = new System.Drawing.Point(199, 463);
+            this.chbContinuable.Location = new System.Drawing.Point(199, 425);
             this.chbContinuable.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chbContinuable.Name = "chbContinuable";
             this.chbContinuable.Size = new System.Drawing.Size(139, 27);
@@ -77,7 +77,7 @@
             // 
             this.chbFinalizada.AutoSize = true;
             this.chbFinalizada.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chbFinalizada.Location = new System.Drawing.Point(205, 430);
+            this.chbFinalizada.Location = new System.Drawing.Point(205, 392);
             this.chbFinalizada.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chbFinalizada.Name = "chbFinalizada";
             this.chbFinalizada.Size = new System.Drawing.Size(121, 27);
@@ -89,7 +89,7 @@
             // 
             this.btnEditar.BackColor = System.Drawing.Color.Gold;
             this.btnEditar.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.Location = new System.Drawing.Point(220, 496);
+            this.btnEditar.Location = new System.Drawing.Point(205, 497);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(119, 60);
@@ -118,7 +118,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(714, 89);
+            this.panel1.Size = new System.Drawing.Size(889, 89);
             this.panel1.TabIndex = 65;
             // 
             // panel2
@@ -128,7 +128,7 @@
             this.panel2.Location = new System.Drawing.Point(112, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(602, 89);
+            this.panel2.Size = new System.Drawing.Size(777, 89);
             this.panel2.TabIndex = 2;
             // 
             // lblMensaje
@@ -153,14 +153,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // txtValoracion
-            // 
-            this.txtValoracion.Location = new System.Drawing.Point(199, 350);
-            this.txtValoracion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtValoracion.Name = "txtValoracion";
-            this.txtValoracion.Size = new System.Drawing.Size(157, 22);
-            this.txtValoracion.TabIndex = 64;
             // 
             // txtCategoria
             // 
@@ -196,17 +188,6 @@
             this.lblFechaPublicacion.Size = new System.Drawing.Size(145, 19);
             this.lblFechaPublicacion.TabIndex = 59;
             this.lblFechaPublicacion.Text = "Fecha Publicacion:";
-            // 
-            // lblValoracion
-            // 
-            this.lblValoracion.AutoSize = true;
-            this.lblValoracion.BackColor = System.Drawing.Color.Transparent;
-            this.lblValoracion.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValoracion.Location = new System.Drawing.Point(72, 350);
-            this.lblValoracion.Name = "lblValoracion";
-            this.lblValoracion.Size = new System.Drawing.Size(93, 19);
-            this.lblValoracion.TabIndex = 58;
-            this.lblValoracion.Text = "Valoracion:";
             // 
             // lblCategoria
             // 
@@ -264,7 +245,7 @@
             // 
             // txtIdUsuario
             // 
-            this.txtIdUsuario.Location = new System.Drawing.Point(199, 393);
+            this.txtIdUsuario.Location = new System.Drawing.Point(199, 355);
             this.txtIdUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtIdUsuario.Name = "txtIdUsuario";
             this.txtIdUsuario.Size = new System.Drawing.Size(157, 22);
@@ -275,7 +256,7 @@
             this.lblIdUsuario.AutoSize = true;
             this.lblIdUsuario.BackColor = System.Drawing.Color.Transparent;
             this.lblIdUsuario.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIdUsuario.Location = new System.Drawing.Point(72, 393);
+            this.lblIdUsuario.Location = new System.Drawing.Point(72, 355);
             this.lblIdUsuario.Name = "lblIdUsuario";
             this.lblIdUsuario.Size = new System.Drawing.Size(86, 19);
             this.lblIdUsuario.TabIndex = 72;
@@ -309,7 +290,7 @@
             // 
             this.btnCargar.BackColor = System.Drawing.Color.Gold;
             this.btnCargar.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargar.Location = new System.Drawing.Point(453, 305);
+            this.btnCargar.Location = new System.Drawing.Point(731, 305);
             this.btnCargar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(119, 60);
@@ -321,7 +302,7 @@
             // pcbPortada
             // 
             this.pcbPortada.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pcbPortada.Location = new System.Drawing.Point(421, 129);
+            this.pcbPortada.Location = new System.Drawing.Point(699, 129);
             this.pcbPortada.Margin = new System.Windows.Forms.Padding(4);
             this.pcbPortada.Name = "pcbPortada";
             this.pcbPortada.Size = new System.Drawing.Size(165, 151);
@@ -329,12 +310,35 @@
             this.pcbPortada.TabIndex = 75;
             this.pcbPortada.TabStop = false;
             // 
+            // txtTexto
+            // 
+            this.txtTexto.Location = new System.Drawing.Point(387, 129);
+            this.txtTexto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTexto.Multiline = true;
+            this.txtTexto.Name = "txtTexto";
+            this.txtTexto.ReadOnly = true;
+            this.txtTexto.Size = new System.Drawing.Size(277, 428);
+            this.txtTexto.TabIndex = 77;
+            // 
+            // lblContenido
+            // 
+            this.lblContenido.AutoSize = true;
+            this.lblContenido.BackColor = System.Drawing.Color.Transparent;
+            this.lblContenido.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContenido.Location = new System.Drawing.Point(383, 108);
+            this.lblContenido.Name = "lblContenido";
+            this.lblContenido.Size = new System.Drawing.Size(85, 19);
+            this.lblContenido.TabIndex = 78;
+            this.lblContenido.Text = "Contenido";
+            // 
             // EditarCortoHistoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(714, 566);
+            this.ClientSize = new System.Drawing.Size(889, 566);
+            this.Controls.Add(this.lblContenido);
+            this.Controls.Add(this.txtTexto);
             this.Controls.Add(this.btnCargar);
             this.Controls.Add(this.pcbPortada);
             this.Controls.Add(this.dtpFechaPublicacion);
@@ -346,12 +350,10 @@
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.txtValoracion);
             this.Controls.Add(this.txtCategoria);
             this.Controls.Add(this.txtAutor);
             this.Controls.Add(this.txtTitulo);
             this.Controls.Add(this.lblFechaPublicacion);
-            this.Controls.Add(this.lblValoracion);
             this.Controls.Add(this.lblCategoria);
             this.Controls.Add(this.lblAutor);
             this.Controls.Add(this.lblTitulo);
@@ -385,12 +387,10 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblMensaje;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txtValoracion;
         private System.Windows.Forms.TextBox txtCategoria;
         private System.Windows.Forms.TextBox txtAutor;
         private System.Windows.Forms.TextBox txtTitulo;
         private System.Windows.Forms.Label lblFechaPublicacion;
-        private System.Windows.Forms.Label lblValoracion;
         private System.Windows.Forms.Label lblCategoria;
         private System.Windows.Forms.Label lblAutor;
         private System.Windows.Forms.Label lblTitulo;
@@ -401,5 +401,7 @@
         private System.Windows.Forms.DateTimePicker dtpFechaPublicacion;
         private System.Windows.Forms.Button btnCargar;
         private System.Windows.Forms.PictureBox pcbPortada;
+        private System.Windows.Forms.TextBox txtTexto;
+        private System.Windows.Forms.Label lblContenido;
     }
 }

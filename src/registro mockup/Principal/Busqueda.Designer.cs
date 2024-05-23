@@ -152,7 +152,7 @@
             this.Controls.Add(this.lblTipo);
             this.Controls.Add(this.lblBusqueda);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Busqueda";
             this.Text = "Busqueda";
             this.Load += new System.EventHandler(this.Busqueda_Load);

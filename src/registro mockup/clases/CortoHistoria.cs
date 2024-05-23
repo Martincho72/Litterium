@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using Mysqlx.Cursor;
 
 
 namespace registro_mockup.clases
@@ -20,9 +21,9 @@ namespace registro_mockup.clases
         string categoria;
         bool continuable;
         bool finalizada;
-        double valoracion;
         int id_usuario;
         Image portada;
+        string texto;
 
         public int Id { get { return id; } }
         public string Titulo { get { return titulo; } }
@@ -31,9 +32,9 @@ namespace registro_mockup.clases
         public string Categoria { get { return categoria; } }
         public bool Continuable { get { return continuable; } }
         public bool Finalizada { get { return finalizada; } }
-        public double Valoracion { get { return valoracion; } }
         public int Id_usuario { get { return id_usuario; } }
         public Image Portada { get { return portada; } }
+        public string Texto {  get { return texto; } }
 
         
 
@@ -45,9 +46,32 @@ namespace registro_mockup.clases
             this.finalizada = finalizada;
             this.id_usuario= id_usuario;
         }
-       
+        //Ver mis cortohiatori
+        public CortoHistoria(string titulo,string autor,DateTime fecha,string categoria,bool continuable,bool finalizada,Image foto)
+        {
+            this.titulo = titulo;
+            this.autor = autor;
+            this.fechaPublicacion = fecha;
+            this.categoria = categoria;
+            this.continuable = continuable;
+            this.finalizada = finalizada;
+            this.portada = foto;
+        }
+        //Usuario agrega cortohistoria
+        public CortoHistoria(string titulo, string autor, DateTime fechaPublicacion, string categoria,bool continuable,bool finalizada, int id_usuario,Image portada,string texto) 
+        {
+            this.titulo = titulo;
+            this.autor = autor;
+            this.fechaPublicacion = fechaPublicacion;
+            this.categoria = categoria;
+            this.continuable = continuable;
+            this.finalizada = finalizada;
+            this.id_usuario = id_usuario;
+            this.portada = portada;
+            this.texto = texto;
+        }
 
-        public CortoHistoria(int id,string titulo, string autor, DateTime fechaPublicacion, string categoria, bool continuable, bool finalizada, double valoracion, int id_usuario, Image portada) 
+        public CortoHistoria(int id,string titulo, string autor, DateTime fechaPublicacion, string categoria, bool continuable, bool finalizada, int id_usuario, Image portada,string texto) 
         {
             this.id = id;
             this.titulo = titulo;
@@ -56,9 +80,10 @@ namespace registro_mockup.clases
             this.categoria = categoria;
             this.continuable = continuable;
             this.finalizada = finalizada;
-            this.valoracion = valoracion;
             this.id_usuario = id_usuario;
             this.portada = portada;
+            this.texto = texto;
+                
         }
 
         public CortoHistoria(int id, string titulo, string autor, DateTime fechaPublicacion, string categoria, bool continuable, bool finalizada) //Constructor para Mis CortoHistorias de Usuario
@@ -106,17 +131,17 @@ namespace registro_mockup.clases
                     string titulo = reader.GetString(1);
                     string autor = reader.GetString(2);
                     DateTime fecha = reader.GetDateTime(3);
-                    string editorial = reader.GetString(4);
+                    string categoria = reader.GetString(4);
                     bool continuable = reader.GetBoolean(5);
                     bool finalizada = reader.GetBoolean(6);
-                    double valoracion = reader.GetDouble(7);
-                    int id_usuario = reader.GetInt32(8);
+                    int id_usuario = reader.GetInt32(7);
+                    string texto=reader.GetString(9);
 
                     byte[] img = (byte[])reader["imagen"];
                     MemoryStream ms = new MemoryStream(img);
                     Image foto = Image.FromStream(ms);
                     // Crear el objeto Usuario y agregarlo a la lista
-                    CortoHistoria ch = new CortoHistoria(id, titulo, autor, fecha, editorial,continuable,finalizada,valoracion,id_usuario,foto);
+                    CortoHistoria ch = new CortoHistoria(id, titulo, autor, fecha,categoria,continuable,finalizada,id_usuario,foto,texto);
                     lista.Add(ch);
                 }
 
@@ -126,51 +151,48 @@ namespace registro_mockup.clases
             return lista;
         }
 
-        public static List<CortoHistoria> BuscarCortoHistoria(MySqlConnection conexion, string busqueda) //Metodo sobrecargado para busqueda
-        {
-            List<CortoHistoria> lista = new List<CortoHistoria>();
-            string consulta = string.Format("SELECT * from cortohistoria WHERE autor='{0}' OR titulo='{0}' OR categoria='{0}'",busqueda);
+        //public static List<CortoHistoria> BuscarCortoHistoria(MySqlConnection conexion, string busqueda) //Metodo sobrecargado para busqueda
+        //{
+        //    List<CortoHistoria> lista = new List<CortoHistoria>();
+        //    string consulta = string.Format("SELECT * from cortohistoria WHERE autor='{0}' OR titulo='{0}' OR categoria='{0}'",busqueda);
 
-            // Creamos el objeto command al cual le pasamos la consulta y la conexión
-            MySqlCommand comando = new MySqlCommand(consulta, conexion);
-            // Ejecutamos el comando y recibimos en un objeto DataReader la lista de registros seleccionados.
-            // Recordemos que un objeto DataReader es una especie de tabla de datos virtual.
-            MySqlDataReader reader = comando.ExecuteReader();
+        //    // Creamos el objeto command al cual le pasamos la consulta y la conexión
+        //    MySqlCommand comando = new MySqlCommand(consulta, conexion);
+        //    // Ejecutamos el comando y recibimos en un objeto DataReader la lista de registros seleccionados.
+        //    // Recordemos que un objeto DataReader es una especie de tabla de datos virtual.
+        //    MySqlDataReader reader = comando.ExecuteReader();
 
-            if (reader.HasRows)   // En caso que se hayan registros en el objeto reader
-            {
-                // Recorremos el reader (registro por registro) y cargamos la lista de empleados.
-                while (reader.Read())
-                {
-                    int id = reader.GetInt32(0);
-                    string titulo = reader.GetString(1);
-                    string autor = reader.GetString(2);
-                    DateTime fecha = reader.GetDateTime(3);
-                    string editorial = reader.GetString(4);
-                    bool continuable = reader.GetBoolean(5);
-                    bool finalizada = reader.GetBoolean(6);
-                    double valoracion = reader.GetDouble(7);
-                    int id_usuario = reader.GetInt32(8);
+        //    if (reader.HasRows)   // En caso que se hayan registros en el objeto reader
+        //    {
+        //        // Recorremos el reader (registro por registro) y cargamos la lista de empleados.
+        //        while (reader.Read())
+        //        {
+        //            string titulo = reader.GetString(1);
+        //            string autor = reader.GetString(2);
+        //            DateTime fecha = reader.GetDateTime(3);
+        //            bool continuable = reader.GetBoolean(5);
+        //            bool finalizada = reader.GetBoolean(6);
+        //            int id_usuario = reader.GetInt32(8);
 
-                    byte[] img = (byte[])reader["imagen"];
-                    MemoryStream ms = new MemoryStream(img);
-                    Image foto = Image.FromStream(ms);
+        //            byte[] img = (byte[])reader["imagen"];
+        //            MemoryStream ms = new MemoryStream(img);
+        //            Image foto = Image.FromStream(ms);
 
-                    // Crear el objeto Usuario y agregarlo a la lista
-                    CortoHistoria ch = new CortoHistoria(id, titulo, autor, fecha, editorial, continuable, finalizada, valoracion, id_usuario,foto);
-                    lista.Add(ch);
-                }
+        //            // Crear el objeto Usuario y agregarlo a la lista
+        //            CortoHistoria ch = new CortoHistoria(titulo, autor, fecha, continuable, finalizada, id_usuario,foto);
+        //            lista.Add(ch);
+        //        }
 
-            }
-            // devolvemos la lista cargada con los usuarios.
-            reader.Close();
-            return lista;
-        }
+        //    }
+        //    // devolvemos la lista cargada con los usuarios.
+        //    reader.Close();
+        //    return lista;
+        //}
 
         public static List<CortoHistoria> BuscarCortoHistoriaUsuario(MySqlConnection conexion,int id_usu) //Mis CortoHistorias Usuario
         {
             List<CortoHistoria> lista = new List<CortoHistoria>();
-            string consulta = string.Format("SELECT id, titulo, autor, fechaPublicacion, categoria, continuable, finalizada, valoracion, imagen from cortohistoria where id_usuario = {0}", id_usu);
+            string consulta = string.Format("SELECT  titulo, autor, fechaPublicacion, categoria, continuable, finalizada, imagen from cortohistoria where id_usuario = {0}", id_usu);
 
             // Creamos el objeto command al cual le pasamos la consulta y la conexión
             MySqlCommand comando = new MySqlCommand(consulta, conexion);
@@ -183,19 +205,20 @@ namespace registro_mockup.clases
                 // Recorremos el reader (registro por registro) y cargamos la lista de empleados.
                 while (reader.Read())
                 {
-                    int id = reader.GetInt32(0);
-                    string titulo = reader.GetString(1);
-                    string autor = reader.GetString(2);
-                    DateTime fecha = reader.GetDateTime(3);
-                    string categoria = reader.GetString(4);
-                    bool continuable = reader.GetBoolean(5);
-                    bool finalizada = reader.GetBoolean(6);
-                    double valoracion = reader.GetDouble(7);
-                    Image portada = null;
+                    string titulo = reader.GetString(0);
+                    string autor = reader.GetString(1);
+                    DateTime fecha = reader.GetDateTime(2);
+                    string categoria = reader.GetString(3);
+                    bool continuable = reader.GetBoolean(4);
+                    bool finalizada = reader.GetBoolean(5);
+                    byte[] img = (byte[])reader["imagen"];
+                    MemoryStream ms = new MemoryStream(img);
+                    Image foto = Image.FromStream(ms); ;
+
 
 
                     // Crear el objeto Usuario y agregarlo a la lista
-                    CortoHistoria ch = new CortoHistoria(id, titulo, autor, fecha, categoria, continuable, finalizada,valoracion,id_usu, portada);
+                    CortoHistoria ch = new CortoHistoria(titulo,autor, fecha, categoria, continuable, finalizada,foto);
                     lista.Add(ch);
                 }
 
@@ -207,11 +230,15 @@ namespace registro_mockup.clases
         public int AgregarCortoHistoria(MySqlConnection conexion, CortoHistoria ch)
         {
             int retorno;
-            string consulta = String.Format("INSERT INTO cortohistoria (id,titulo,autor,fechaPublicacion,editorial,continuable,finalizada,valoracion,id_usuario) " +
-                "VALUES " + "('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}')", ch.Id, ch.Titulo, ch.Autor, ch.FechaPublicacion.ToString("yyyy-MM-dd"), ch.Categoria, ch.Continuable, ch.Finalizada, ch.Valoracion, ch.Id_usuario);
+            MemoryStream ms = new MemoryStream();
+            ch.Portada.Save(ms, ImageFormat.Png);
+            byte[] imgArr = ms.ToArray();
+            string consulta = String.Format("INSERT INTO cortohistoria (titulo,autor,fechaPublicacion,categoria,continuable,finalizada,id_usuario,imagen,texto) " +
+                "VALUES " + "('{0}','{1}','{2}','{3}','{4}','{5}','{6}',@imagen,'{7}')", ch.Titulo, ch.Autor, ch.FechaPublicacion.ToString("yyyy-MM-dd"), 
+                ch.Categoria, ch.Continuable, ch.Finalizada,ch.Id_usuario,ch.Texto);
 
             MySqlCommand comando = new MySqlCommand(consulta, conexion);
-
+            comando.Parameters.AddWithValue("imagen", imgArr);
             retorno = comando.ExecuteNonQuery();
 
             return retorno;
@@ -249,19 +276,17 @@ namespace registro_mockup.clases
 
         public static int EditarCortoHistoria(MySqlConnection conexion, CortoHistoria ch)
         {
-            int continuable;
-            int finalizada;
+            int continuable=0;
+            int finalizada=0;
             if (ch.continuable) continuable = 1;
-            else continuable = 0;
             if (ch.finalizada) finalizada = 1;
-            else finalizada = 0;
 
             MemoryStream ms = new MemoryStream();
             ch.Portada.Save(ms, ImageFormat.Png);
             byte[] imgArr = ms.ToArray();
             int retorno;
-            string consulta = String.Format("UPDATE cortohistoria SET id = '{0}', titulo = '{1}', autor = '{2}', fechaPublicacion = '{3}', categoria = '{4}', continuable = '{5}', finalizada = '{6}', valoracion = '{7}', id_usuario ='{8}' , imagen=@imagen " +
-                                            "WHERE id = '{0}'", ch.Id, ch.Titulo, ch.Autor, ch.FechaPublicacion.ToString("yyyy-MM-dd"), ch.Categoria,continuable,finalizada,ch.Valoracion,ch.Id_usuario);
+            string consulta = String.Format("UPDATE cortohistoria SET  titulo = '{0}', autor = '{1}', fechaPublicacion = '{2}', categoria = '{3}', continuable = '{4}', finalizada = '{5}', id_usuario ='{6}' , imagen=@imagen, texto='{7}' " +
+                                            "WHERE id = '{8}'",  ch.Titulo, ch.Autor, ch.FechaPublicacion.ToString("yyyy-MM-dd"), ch.Categoria,continuable,finalizada,ch.Id_usuario,ch.Texto,ch.Id);
 
             MySqlCommand comando = new MySqlCommand(consulta, conexion);
             comando.Parameters.AddWithValue("@imagen", imgArr);
@@ -288,18 +313,18 @@ namespace registro_mockup.clases
                     string titulo = reader.GetString(1);
                     string autor = reader.GetString(2);
                     DateTime fecha = reader.GetDateTime(3);
-                    string editorial = reader.GetString(4);
+                    string categoria = reader.GetString(4);
                     bool continuable = reader.GetBoolean(5);
                     bool finalizada = reader.GetBoolean(6);
-                    double valoracion = reader.GetDouble(7);
-                    int id_usuario = reader.GetInt32(8);
+                    int id_usuario = reader.GetInt32(7);
+                    string texto = reader.GetString(9);
 
                     byte[] img = (byte[])reader["imagen"];
                     MemoryStream ms = new MemoryStream(img);
                     Image foto = Image.FromStream(ms);
 
                     // Crear el objeto Usuario y agregarlo a la lista
-                    ch = new CortoHistoria(idch, titulo, autor, fecha, editorial, continuable, finalizada, valoracion, id_usuario, foto);
+                    ch = new CortoHistoria(idch, titulo, autor, fecha,categoria, continuable, finalizada, id_usuario, foto,texto);
                 }
 
 
@@ -331,11 +356,13 @@ namespace registro_mockup.clases
                     string categoria = reader.GetString(4);
                     bool continuable = reader.GetBoolean(5);
                     bool finalizada = reader.GetBoolean(6);
-                    double valoracion = reader.GetDouble(7);
-                    Image portada = null;
+                    byte[] img = (byte[])reader["imagen"];
+                    MemoryStream ms = new MemoryStream(img);
+                    Image foto = Image.FromStream(ms);
+                    string texto=reader.GetString(8);
 
                     // Crear el objeto Usuario y agregarlo a la lista
-                    CortoHistoria ch = new CortoHistoria(id, titulo, autor, fecha, categoria, continuable, finalizada, valoracion,idUsuario,portada);
+                    CortoHistoria ch = new CortoHistoria(id, titulo, autor, fecha, categoria, continuable, finalizada,idUsuario,foto,texto);
                     lista.Add(ch);
                 }
 
