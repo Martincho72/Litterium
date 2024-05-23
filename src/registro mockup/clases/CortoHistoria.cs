@@ -24,6 +24,9 @@ namespace registro_mockup.clases
         int id_usuario;
         Image portada;
         string texto;
+        private DateTime fecha;
+        private int idUsuario;
+        private Image foto;
 
         public int Id { get { return id; } }
         public string Titulo { get { return titulo; } }
@@ -38,14 +41,6 @@ namespace registro_mockup.clases
 
         
 
-        public CortoHistoria(string titulo, string autor, DateTime fechaPublicacion,bool finalizada,int id_usuario) //Constructor para Mis CortoHistorias de Usuario
-        {
-            this.titulo= titulo;
-            this.autor= autor;
-            this.fechaPublicacion= fechaPublicacion;
-            this.finalizada = finalizada;
-            this.id_usuario= id_usuario;
-        }
         //Ver mis cortohiatori
         public CortoHistoria(string titulo,string autor,DateTime fecha,string categoria,bool continuable,bool finalizada,Image foto)
         {
@@ -86,31 +81,24 @@ namespace registro_mockup.clases
                 
         }
 
-        public CortoHistoria(int id, string titulo, string autor, DateTime fechaPublicacion, string categoria, bool continuable, bool finalizada) //Constructor para Mis CortoHistorias de Usuario
-        {
-            this.id = id;
-            this.titulo = titulo;
-            this.autor = autor;
-            this.fechaPublicacion = fechaPublicacion;
-            this.categoria = categoria;
-            this.continuable = continuable;
-            this.finalizada = finalizada;
-
-        }
-
         public CortoHistoria()
         {
             
         }
-        public CortoHistoria(int id, string titulo, string autor, DateTime fechaPublicacion, string categoria, bool continuable)
+     
+
+        public CortoHistoria(string titulo, string autor, DateTime fecha, string categoria, bool continuable, bool finalizada, int idUsuario, Image foto)
         {
-            this.id = id;
             this.titulo = titulo;
             this.autor = autor;
-            this.fechaPublicacion = fechaPublicacion;
+            this.fecha = fecha;
             this.categoria = categoria;
             this.continuable = continuable;
+            this.finalizada = finalizada;
+            this.idUsuario = idUsuario;
+            this.foto = foto;
         }
+
         public static List<CortoHistoria> BuscarCortoHistoria(MySqlConnection conexion)
         {
             List<CortoHistoria> lista = new List<CortoHistoria>();
@@ -229,13 +217,17 @@ namespace registro_mockup.clases
         }
         public int AgregarCortoHistoria(MySqlConnection conexion, CortoHistoria ch)
         {
+            int continuable = 0;
+            int finalizada = 0;
+            if (ch.continuable) continuable = 1;
+            if (ch.finalizada) finalizada = 1;
             int retorno;
             MemoryStream ms = new MemoryStream();
             ch.Portada.Save(ms, ImageFormat.Png);
             byte[] imgArr = ms.ToArray();
             string consulta = String.Format("INSERT INTO cortohistoria (titulo,autor,fechaPublicacion,categoria,continuable,finalizada,id_usuario,imagen,texto) " +
                 "VALUES " + "('{0}','{1}','{2}','{3}','{4}','{5}','{6}',@imagen,'{7}')", ch.Titulo, ch.Autor, ch.FechaPublicacion.ToString("yyyy-MM-dd"), 
-                ch.Categoria, ch.Continuable, ch.Finalizada,ch.Id_usuario,ch.Texto);
+                ch.Categoria, continuable, finalizada,ch.Id_usuario,ch.Texto);
 
             MySqlCommand comando = new MySqlCommand(consulta, conexion);
             comando.Parameters.AddWithValue("imagen", imgArr);
@@ -336,7 +328,7 @@ namespace registro_mockup.clases
         public static List<CortoHistoria> BuscarBorradores(MySqlConnection conexion,int idUsuario)
         {
             List<CortoHistoria> lista = new List<CortoHistoria>();
-            string consulta = string.Format("SELECT id, titulo, autor, fechaPublicacion, categoria, continuable, finalizada, valoracion, id_usuario, imagen from cortohistoria where finalizada = 0 and id_usuario = {0}", idUsuario);
+            string consulta = string.Format("SELECT titulo, autor, fechaPublicacion, categoria, continuable, finalizada, imagen from cortohistoria where finalizada = 0 and id_usuario = {0}", idUsuario);
 
             // Creamos el objeto command al cual le pasamos la consulta y la conexión
             MySqlCommand comando = new MySqlCommand(consulta, conexion);
@@ -349,20 +341,18 @@ namespace registro_mockup.clases
                 // Recorremos el reader (registro por registro) y cargamos la lista de empleados.
                 while (reader.Read())
                 {
-                    int id = reader.GetInt32(0);
-                    string titulo = reader.GetString(1);
-                    string autor = reader.GetString(2);
-                    DateTime fecha = reader.GetDateTime(3);
-                    string categoria = reader.GetString(4);
-                    bool continuable = reader.GetBoolean(5);
-                    bool finalizada = reader.GetBoolean(6);
+                    string titulo = reader.GetString(0);
+                    string autor = reader.GetString(1);
+                    DateTime fecha = reader.GetDateTime(2);
+                    string categoria = reader.GetString(3);
+                    bool continuable = reader.GetBoolean(4);
+                    bool finalizada = reader.GetBoolean(5);
                     byte[] img = (byte[])reader["imagen"];
                     MemoryStream ms = new MemoryStream(img);
                     Image foto = Image.FromStream(ms);
-                    string texto=reader.GetString(8);
 
                     // Crear el objeto Usuario y agregarlo a la lista
-                    CortoHistoria ch = new CortoHistoria(id, titulo, autor, fecha, categoria, continuable, finalizada,idUsuario,foto,texto);
+                    CortoHistoria ch = new CortoHistoria(titulo, autor, fecha, categoria, continuable, finalizada,idUsuario,foto);
                     lista.Add(ch);
                 }
 

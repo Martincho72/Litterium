@@ -80,7 +80,7 @@ namespace registro_mockup.Principal
             if (basedatos.AbrirConexion())
             {
                 Usuario us1 = Usuario.EncontrarDatosUsuario(basedatos.Conexion, usarioMenu);
-                CortoHistoria ch = new CortoHistoria(txtTitulo.Text, txtAutor.Text, DateTime.Now, txtCategoria.Text, chbContinuarCortohistoria.Checked, true, 2, pcbPortada.Image, txtCortohistoriaCrear.Text);
+                CortoHistoria ch = new CortoHistoria(txtTitulo.Text, txtAutor.Text, DateTime.Now, txtCategoria.Text, chbContinuarCortohistoria.Checked, true, us1.Id, pcbPortada.Image, txtCortohistoriaCrear.Text);
                 ch.AgregarCortoHistoria(basedatos.Conexion, ch);
             }
             else 

@@ -195,7 +195,7 @@ namespace registro_mockup
         private void btnCortohistorias_Click(object sender, EventArgs e)
         {
             ActivaBTN(sender, RGBColors.color1);
-            OpenChildForm(new CortoHistoriaPrincipal());
+            OpenChildForm(new CortoHistoriaPrincipal(usuariomenu));
         }
 
         private void MenuPrincipal_Load(object sender, EventArgs e)

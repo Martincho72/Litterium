@@ -28,8 +28,13 @@ namespace registro_mockup
                     if (bDatos.AbrirConexion())
                     {
                         int idUsuario = Usuario.ObtenerID(bDatos.Conexion, usuariomenu);
-                        dgvBorradores.DataSource = CortoHistoria.BuscarBorradores(bDatos.Conexion, idUsuario);
+                        List<CortoHistoria> borradores = CortoHistoria.BuscarBorradores(bDatos.Conexion, idUsuario);
+                    foreach (CortoHistoria cortoHistoria in borradores)
+                    {
+                        dgvBorradores.Rows.Add(cortoHistoria.Titulo, cortoHistoria.Autor, cortoHistoria.FechaPublicacion.ToString("dd-MM-yyyy"), cortoHistoria.Categoria, cortoHistoria.Continuable, cortoHistoria.Finalizada, cortoHistoria.Portada);
+
                     }
+                }
                 }
                 finally
                 {

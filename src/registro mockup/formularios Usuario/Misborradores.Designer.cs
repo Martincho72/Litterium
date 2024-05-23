@@ -33,6 +33,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Misborradores));
             this.dgvBorradores = new System.Windows.Forms.DataGridView();
+            this.Titulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Autor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaPublicacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Continuable = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Finalizada = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Foto = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBorradores)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,6 +59,14 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvBorradores.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvBorradores.ColumnHeadersHeight = 35;
+            this.dgvBorradores.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Titulo,
+            this.Autor,
+            this.FechaPublicacion,
+            this.Categoria,
+            this.Continuable,
+            this.Finalizada,
+            this.Foto});
             this.dgvBorradores.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvBorradores.EnableHeadersVisualStyles = false;
             this.dgvBorradores.Location = new System.Drawing.Point(0, 0);
@@ -78,6 +93,61 @@
             this.dgvBorradores.Size = new System.Drawing.Size(1340, 678);
             this.dgvBorradores.TabIndex = 7;
             // 
+            // Titulo
+            // 
+            this.Titulo.HeaderText = "Titulo";
+            this.Titulo.MinimumWidth = 6;
+            this.Titulo.Name = "Titulo";
+            this.Titulo.ReadOnly = true;
+            // 
+            // Autor
+            // 
+            this.Autor.HeaderText = "Autor";
+            this.Autor.MinimumWidth = 6;
+            this.Autor.Name = "Autor";
+            this.Autor.ReadOnly = true;
+            // 
+            // FechaPublicacion
+            // 
+            this.FechaPublicacion.HeaderText = "Fecha Publicacion";
+            this.FechaPublicacion.MinimumWidth = 6;
+            this.FechaPublicacion.Name = "FechaPublicacion";
+            this.FechaPublicacion.ReadOnly = true;
+            // 
+            // Categoria
+            // 
+            this.Categoria.HeaderText = "Categoria";
+            this.Categoria.MinimumWidth = 6;
+            this.Categoria.Name = "Categoria";
+            this.Categoria.ReadOnly = true;
+            // 
+            // Continuable
+            // 
+            this.Continuable.HeaderText = "Continuable";
+            this.Continuable.MinimumWidth = 6;
+            this.Continuable.Name = "Continuable";
+            this.Continuable.ReadOnly = true;
+            this.Continuable.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Continuable.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // Finalizada
+            // 
+            this.Finalizada.HeaderText = "Finalizada";
+            this.Finalizada.MinimumWidth = 6;
+            this.Finalizada.Name = "Finalizada";
+            this.Finalizada.ReadOnly = true;
+            this.Finalizada.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Finalizada.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // Foto
+            // 
+            this.Foto.HeaderText = "Foto";
+            this.Foto.MinimumWidth = 6;
+            this.Foto.Name = "Foto";
+            this.Foto.ReadOnly = true;
+            this.Foto.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Foto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
             // Misborradores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -98,5 +168,12 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvBorradores;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Titulo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Autor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FechaPublicacion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Categoria;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Continuable;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Finalizada;
+        private System.Windows.Forms.DataGridViewImageColumn Foto;
     }
 }

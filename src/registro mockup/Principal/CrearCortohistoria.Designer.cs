@@ -244,23 +244,23 @@
             this.btnCargarImagenCortohistorias.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnCargarImagenCortohistorias.IconColor = System.Drawing.Color.Black;
             this.btnCargarImagenCortohistorias.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCargarImagenCortohistorias.Location = new System.Drawing.Point(947, 225);
+            this.btnCargarImagenCortohistorias.Location = new System.Drawing.Point(938, 221);
             this.btnCargarImagenCortohistorias.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCargarImagenCortohistorias.Name = "btnCargarImagenCortohistorias";
-            this.btnCargarImagenCortohistorias.Size = new System.Drawing.Size(75, 23);
+            this.btnCargarImagenCortohistorias.Size = new System.Drawing.Size(94, 38);
             this.btnCargarImagenCortohistorias.TabIndex = 13;
-            this.btnCargarImagenCortohistorias.Text = "iconButton1";
+            this.btnCargarImagenCortohistorias.Text = "Cargar";
             this.btnCargarImagenCortohistorias.UseVisualStyleBackColor = true;
             this.btnCargarImagenCortohistorias.Click += new System.EventHandler(this.btnCargarImagenCortohistorias_Click);
             // 
             // lblAutor
             // 
             this.lblAutor.AutoSize = true;
-            this.lblAutor.Location = new System.Drawing.Point(717, 492);
+            this.lblAutor.Location = new System.Drawing.Point(735, 498);
             this.lblAutor.Name = "lblAutor";
-            this.lblAutor.Size = new System.Drawing.Size(69, 16);
+            this.lblAutor.Size = new System.Drawing.Size(41, 16);
             this.lblAutor.TabIndex = 16;
-            this.lblAutor.Text = "Categoría:";
+            this.lblAutor.Text = "Autor:";
             // 
             // txtAutor
             // 
