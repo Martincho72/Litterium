@@ -38,6 +38,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MiCarrito));
             this.lblImporteTotal = new System.Windows.Forms.Label();
             this.btnPagar = new FontAwesome.Sharp.IconButton();
             this.dgvMiCarrito = new System.Windows.Forms.DataGridView();
@@ -58,10 +59,9 @@
             this.lblImporteTotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.lblImporteTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblImporteTotal.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblImporteTotal.Location = new System.Drawing.Point(10, 266);
-            this.lblImporteTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblImporteTotal.Location = new System.Drawing.Point(13, 327);
             this.lblImporteTotal.Name = "lblImporteTotal";
-            this.lblImporteTotal.Size = new System.Drawing.Size(151, 26);
+            this.lblImporteTotal.Size = new System.Drawing.Size(195, 32);
             this.lblImporteTotal.TabIndex = 1;
             this.lblImporteTotal.Text = "Importe Total :";
             // 
@@ -74,10 +74,10 @@
             this.btnPagar.IconColor = System.Drawing.Color.Black;
             this.btnPagar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnPagar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPagar.Location = new System.Drawing.Point(9, 323);
-            this.btnPagar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPagar.Location = new System.Drawing.Point(12, 398);
+            this.btnPagar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPagar.Name = "btnPagar";
-            this.btnPagar.Size = new System.Drawing.Size(124, 33);
+            this.btnPagar.Size = new System.Drawing.Size(165, 41);
             this.btnPagar.TabIndex = 2;
             this.btnPagar.Text = "Comprar";
             this.btnPagar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -110,8 +110,8 @@
             this.Cantidad,
             this.Tipo});
             this.dgvMiCarrito.EnableHeadersVisualStyles = false;
-            this.dgvMiCarrito.Location = new System.Drawing.Point(15, 38);
-            this.dgvMiCarrito.Margin = new System.Windows.Forms.Padding(20, 130, 20, 20);
+            this.dgvMiCarrito.Location = new System.Drawing.Point(20, 47);
+            this.dgvMiCarrito.Margin = new System.Windows.Forms.Padding(27, 160, 27, 25);
             this.dgvMiCarrito.Name = "dgvMiCarrito";
             this.dgvMiCarrito.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -131,7 +131,7 @@
             this.dgvMiCarrito.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvMiCarrito.RowTemplate.Height = 48;
             this.dgvMiCarrito.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dgvMiCarrito.Size = new System.Drawing.Size(576, 136);
+            this.dgvMiCarrito.Size = new System.Drawing.Size(768, 167);
             this.dgvMiCarrito.TabIndex = 56;
             // 
             // ISBN
@@ -144,7 +144,7 @@
             this.ISBN.MinimumWidth = 6;
             this.ISBN.Name = "ISBN";
             this.ISBN.ReadOnly = true;
-            this.ISBN.Width = 56;
+            this.ISBN.Width = 67;
             // 
             // Titulo
             // 
@@ -156,7 +156,7 @@
             this.Titulo.MinimumWidth = 6;
             this.Titulo.Name = "Titulo";
             this.Titulo.ReadOnly = true;
-            this.Titulo.Width = 57;
+            this.Titulo.Width = 71;
             // 
             // Autor
             // 
@@ -168,7 +168,7 @@
             this.Autor.MinimumWidth = 6;
             this.Autor.Name = "Autor";
             this.Autor.ReadOnly = true;
-            this.Autor.Width = 56;
+            this.Autor.Width = 70;
             // 
             // Categoria
             // 
@@ -180,7 +180,7 @@
             this.Categoria.MinimumWidth = 6;
             this.Categoria.Name = "Categoria";
             this.Categoria.ReadOnly = true;
-            this.Categoria.Width = 76;
+            this.Categoria.Width = 97;
             // 
             // Valoracion
             // 
@@ -192,7 +192,7 @@
             this.Valoracion.MinimumWidth = 6;
             this.Valoracion.Name = "Valoracion";
             this.Valoracion.ReadOnly = true;
-            this.Valoracion.Width = 81;
+            this.Valoracion.Width = 103;
             // 
             // Precio
             // 
@@ -204,11 +204,12 @@
             this.Precio.MinimumWidth = 6;
             this.Precio.Name = "Precio";
             this.Precio.ReadOnly = true;
-            this.Precio.Width = 61;
+            this.Precio.Width = 76;
             // 
             // Cantidad
             // 
             this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.MinimumWidth = 6;
             this.Cantidad.Name = "Cantidad";
             // 
             // Tipo
@@ -220,18 +221,19 @@
             this.Tipo.MinimumWidth = 6;
             this.Tipo.Name = "Tipo";
             this.Tipo.ReadOnly = true;
-            this.Tipo.Width = 52;
+            this.Tipo.Width = 64;
             // 
             // MiCarrito
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dgvMiCarrito);
             this.Controls.Add(this.btnPagar);
             this.Controls.Add(this.lblImporteTotal);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MiCarrito";
             this.Text = "MiCarrito";
             this.Load += new System.EventHandler(this.MiCarrito_Load);

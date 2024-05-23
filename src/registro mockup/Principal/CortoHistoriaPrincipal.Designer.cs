@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CortoHistoriaPrincipal));
             this.panel1 = new System.Windows.Forms.Panel();
             this.tlpBotones = new System.Windows.Forms.TableLayoutPanel();
             this.btnContinuarCortohistoria = new FontAwesome.Sharp.IconButton();
@@ -750,6 +751,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(996, 778);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "CortoHistoriaPrincipal";
             this.Text = "CortoHistoriaPrincipal";

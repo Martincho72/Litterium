@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditarLibro));
             this.cmbCategoria = new System.Windows.Forms.ComboBox();
             this.cmbValoracion = new System.Windows.Forms.ComboBox();
             this.lblErrores = new System.Windows.Forms.Label();
@@ -258,7 +259,7 @@
             // 
             this.pcbPortada.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pcbPortada.Location = new System.Drawing.Point(413, 155);
-            this.pcbPortada.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pcbPortada.Margin = new System.Windows.Forms.Padding(4);
             this.pcbPortada.Name = "pcbPortada";
             this.pcbPortada.Size = new System.Drawing.Size(165, 151);
             this.pcbPortada.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -357,6 +358,7 @@
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.txtIsbn);
             this.Controls.Add(this.lblIsbn);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "EditarLibro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

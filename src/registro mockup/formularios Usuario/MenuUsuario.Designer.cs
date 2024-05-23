@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuUsuario));
             this.panelUsuarios = new System.Windows.Forms.Panel();
             this.tlpBotones = new System.Windows.Forms.TableLayoutPanel();
             this.btnMisBorradores = new FontAwesome.Sharp.IconButton();
@@ -48,7 +49,6 @@
             this.panelUsuarios.Name = "panelUsuarios";
             this.panelUsuarios.Size = new System.Drawing.Size(869, 511);
             this.panelUsuarios.TabIndex = 8;
-
             // 
             // tlpBotones
             // 
@@ -200,6 +200,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(869, 511);
             this.Controls.Add(this.panelUsuarios);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MenuUsuario";
             this.Text = "MenuUsuario";

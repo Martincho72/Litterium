@@ -31,6 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Misborradores));
             this.dgvBorradores = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBorradores)).BeginInit();
             this.SuspendLayout();
@@ -54,7 +55,7 @@
             this.dgvBorradores.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvBorradores.EnableHeadersVisualStyles = false;
             this.dgvBorradores.Location = new System.Drawing.Point(0, 0);
-            this.dgvBorradores.Margin = new System.Windows.Forms.Padding(30, 200, 30, 31);
+            this.dgvBorradores.Margin = new System.Windows.Forms.Padding(27, 160, 27, 25);
             this.dgvBorradores.Name = "dgvBorradores";
             this.dgvBorradores.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -74,16 +75,18 @@
             this.dgvBorradores.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvBorradores.RowTemplate.Height = 48;
             this.dgvBorradores.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dgvBorradores.Size = new System.Drawing.Size(1507, 847);
+            this.dgvBorradores.Size = new System.Drawing.Size(1340, 678);
             this.dgvBorradores.TabIndex = 7;
             // 
             // Misborradores
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1507, 847);
+            this.ClientSize = new System.Drawing.Size(1340, 678);
             this.Controls.Add(this.dgvBorradores);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Misborradores";
             this.Text = "Misborradores";
             this.Load += new System.EventHandler(this.Misborradores_Load);

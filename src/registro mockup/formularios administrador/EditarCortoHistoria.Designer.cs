@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditarCortoHistoria));
             this.chbContinuable = new System.Windows.Forms.CheckBox();
             this.chbFinalizada = new System.Windows.Forms.CheckBox();
             this.btnEditar = new System.Windows.Forms.Button();
@@ -356,6 +357,7 @@
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.lblNombre);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "EditarCortoHistoria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registro));
             this.lblNombre = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblDireccion = new System.Windows.Forms.Label();
@@ -64,7 +65,7 @@
             this.lblNombre.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.Location = new System.Drawing.Point(479, 190);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(56, 16);
+            this.lblNombre.Size = new System.Drawing.Size(69, 19);
             this.lblNombre.TabIndex = 0;
             this.lblNombre.Text = "Nombre";
             // 
@@ -83,7 +84,7 @@
             this.lblDireccion.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDireccion.Location = new System.Drawing.Point(479, 234);
             this.lblDireccion.Name = "lblDireccion";
-            this.lblDireccion.Size = new System.Drawing.Size(62, 16);
+            this.lblDireccion.Size = new System.Drawing.Size(74, 19);
             this.lblDireccion.TabIndex = 2;
             this.lblDireccion.Text = "Dirrecion";
             // 
@@ -94,7 +95,7 @@
             this.lblCorreo.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCorreo.Location = new System.Drawing.Point(479, 278);
             this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(50, 16);
+            this.lblCorreo.Size = new System.Drawing.Size(61, 19);
             this.lblCorreo.TabIndex = 3;
             this.lblCorreo.Text = "Correo";
             // 
@@ -105,7 +106,7 @@
             this.lblUsuario.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.Location = new System.Drawing.Point(479, 366);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(55, 16);
+            this.lblUsuario.Size = new System.Drawing.Size(65, 19);
             this.lblUsuario.TabIndex = 4;
             this.lblUsuario.Text = "Usuario";
             // 
@@ -116,7 +117,7 @@
             this.lblContraseña.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContraseña.Location = new System.Drawing.Point(479, 410);
             this.lblContraseña.Name = "lblContraseña";
-            this.lblContraseña.Size = new System.Drawing.Size(81, 16);
+            this.lblContraseña.Size = new System.Drawing.Size(95, 19);
             this.lblContraseña.TabIndex = 5;
             this.lblContraseña.Text = "Contraseña";
             // 
@@ -127,7 +128,7 @@
             this.lblTelefono.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefono.Location = new System.Drawing.Point(479, 322);
             this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(61, 16);
+            this.lblTelefono.Size = new System.Drawing.Size(73, 19);
             this.lblTelefono.TabIndex = 7;
             this.lblTelefono.Text = "Telefono";
             // 
@@ -204,7 +205,7 @@
             this.lblAdministradores.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdministradores.Location = new System.Drawing.Point(221, 231);
             this.lblAdministradores.Name = "lblAdministradores";
-            this.lblAdministradores.Size = new System.Drawing.Size(157, 20);
+            this.lblAdministradores.Size = new System.Drawing.Size(191, 26);
             this.lblAdministradores.TabIndex = 26;
             this.lblAdministradores.Text = "Administradores";
             // 
@@ -215,7 +216,7 @@
             this.lblJavi.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJavi.Location = new System.Drawing.Point(241, 272);
             this.lblJavi.Name = "lblJavi";
-            this.lblJavi.Size = new System.Drawing.Size(90, 18);
+            this.lblJavi.Size = new System.Drawing.Size(112, 22);
             this.lblJavi.TabIndex = 27;
             this.lblJavi.Text = "Javi Armero";
             // 
@@ -226,7 +227,7 @@
             this.lblVictor.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVictor.Location = new System.Drawing.Point(233, 366);
             this.lblVictor.Name = "lblVictor";
-            this.lblVictor.Size = new System.Drawing.Size(105, 18);
+            this.lblVictor.Size = new System.Drawing.Size(132, 22);
             this.lblVictor.TabIndex = 28;
             this.lblVictor.Text = "Victor Bermell";
             // 
@@ -237,7 +238,7 @@
             this.lblGabriel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGabriel.Location = new System.Drawing.Point(219, 414);
             this.lblGabriel.Name = "lblGabriel";
-            this.lblGabriel.Size = new System.Drawing.Size(124, 18);
+            this.lblGabriel.Size = new System.Drawing.Size(154, 22);
             this.lblGabriel.TabIndex = 30;
             this.lblGabriel.Text = "Gabriel Carmona";
             // 
@@ -248,7 +249,7 @@
             this.lblMartin.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMartin.Location = new System.Drawing.Point(217, 319);
             this.lblMartin.Name = "lblMartin";
-            this.lblMartin.Size = new System.Drawing.Size(130, 18);
+            this.lblMartin.Size = new System.Drawing.Size(162, 22);
             this.lblMartin.TabIndex = 29;
             this.lblMartin.Text = "Martin Barrachina";
             this.lblMartin.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -260,7 +261,7 @@
             this.lblAdrian.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdrian.Location = new System.Drawing.Point(239, 460);
             this.lblAdrian.Name = "lblAdrian";
-            this.lblAdrian.Size = new System.Drawing.Size(94, 18);
+            this.lblAdrian.Size = new System.Drawing.Size(116, 22);
             this.lblAdrian.TabIndex = 31;
             this.lblAdrian.Text = "Adrian Soler";
             this.lblAdrian.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -287,7 +288,7 @@
             this.lblDatos.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDatos.Location = new System.Drawing.Point(521, 137);
             this.lblDatos.Name = "lblDatos";
-            this.lblDatos.Size = new System.Drawing.Size(167, 20);
+            this.lblDatos.Size = new System.Drawing.Size(200, 26);
             this.lblDatos.TabIndex = 33;
             this.lblDatos.Text = "Datos de Usuario";
             // 
@@ -325,6 +326,7 @@
             this.Controls.Add(this.lblDireccion);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblNombre);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Registro";
             this.ShowIcon = false;
