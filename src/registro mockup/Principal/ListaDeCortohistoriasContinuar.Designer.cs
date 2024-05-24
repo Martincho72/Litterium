@@ -44,8 +44,9 @@
             this.lblDobleClick.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblDobleClick.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDobleClick.Location = new System.Drawing.Point(0, 0);
+            this.lblDobleClick.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDobleClick.Name = "lblDobleClick";
-            this.lblDobleClick.Size = new System.Drawing.Size(362, 22);
+            this.lblDobleClick.Size = new System.Drawing.Size(297, 18);
             this.lblDobleClick.TabIndex = 1;
             this.lblDobleClick.Text = "Selecione cual quiere continuar( doble click)";
             // 
@@ -66,8 +67,8 @@
             this.dgvListaContinuarCortohistorias.ColumnHeadersHeight = 35;
             this.dgvListaContinuarCortohistorias.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvListaContinuarCortohistorias.EnableHeadersVisualStyles = false;
-            this.dgvListaContinuarCortohistorias.Location = new System.Drawing.Point(0, 22);
-            this.dgvListaContinuarCortohistorias.Margin = new System.Windows.Forms.Padding(27, 160, 27, 25);
+            this.dgvListaContinuarCortohistorias.Location = new System.Drawing.Point(0, 18);
+            this.dgvListaContinuarCortohistorias.Margin = new System.Windows.Forms.Padding(20, 130, 20, 20);
             this.dgvListaContinuarCortohistorias.Name = "dgvListaContinuarCortohistorias";
             this.dgvListaContinuarCortohistorias.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -87,18 +88,19 @@
             this.dgvListaContinuarCortohistorias.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvListaContinuarCortohistorias.RowTemplate.Height = 48;
             this.dgvListaContinuarCortohistorias.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dgvListaContinuarCortohistorias.Size = new System.Drawing.Size(800, 428);
+            this.dgvListaContinuarCortohistorias.Size = new System.Drawing.Size(600, 348);
             this.dgvListaContinuarCortohistorias.TabIndex = 9;
             // 
             // ListaDeCortohistoriasContinuar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.dgvListaContinuarCortohistorias);
             this.Controls.Add(this.lblDobleClick);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ListaDeCortohistoriasContinuar";
             this.Text = "ListaDeCortohistoriasContinuar";
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaContinuarCortohistorias)).EndInit();

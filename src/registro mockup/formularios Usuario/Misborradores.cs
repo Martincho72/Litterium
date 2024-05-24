@@ -23,24 +23,24 @@ namespace registro_mockup
         }
             private void CargaBorradores()
             {
-                try
+            try
+            {
+                if (bDatos.AbrirConexion())
                 {
-                    if (bDatos.AbrirConexion())
-                    {
-                        int idUsuario = Usuario.ObtenerID(bDatos.Conexion, usuariomenu);
-                        List<CortoHistoria> borradores = CortoHistoria.BuscarBorradores(bDatos.Conexion, idUsuario);
-                    foreach (CortoHistoria cortoHistoria in borradores)
-                    {
-                        dgvBorradores.Rows.Add(cortoHistoria.Titulo, cortoHistoria.Autor, cortoHistoria.FechaPublicacion.ToString("dd/MM/yyyy"), cortoHistoria.Categoria, cortoHistoria.Continuable, cortoHistoria.Finalizada, cortoHistoria.Portada);
 
+                    int idUsuario = Usuario.ObtenerID(bDatos.Conexion, usuariomenu);
+                    List<CortoHistoria> cortoHistorias = CortoHistoria.BuscarBorradores(bDatos.Conexion, idUsuario);
+                    foreach (CortoHistoria ch in cortoHistorias)
+                    {
+                        dgvBorradores.Rows.Add(ch.Titulo, ch.Autor, ch.FechaPublicacion.ToString("dd/MM/yyyy"), ch.Categoria, ch.Continuable, ch.Portada);
                     }
                 }
-                }
-                finally
-                {
-                    bDatos.CerrarConexion();
-                }
             }
+            finally
+            {
+                bDatos.CerrarConexion();
+            }
+        }
         
 
         private void Misborradores_Load(object sender, EventArgs e)
