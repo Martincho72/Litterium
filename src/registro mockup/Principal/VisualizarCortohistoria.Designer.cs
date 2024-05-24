@@ -99,6 +99,7 @@
             // 
             this.txtVisualizarCortoHistoria.BackColor = System.Drawing.Color.LightGoldenrodYellow;
             this.txtVisualizarCortoHistoria.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtVisualizarCortoHistoria.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVisualizarCortoHistoria.Location = new System.Drawing.Point(0, 0);
             this.txtVisualizarCortoHistoria.Margin = new System.Windows.Forms.Padding(4);
             this.txtVisualizarCortoHistoria.Multiline = true;

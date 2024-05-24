@@ -174,5 +174,100 @@ private void pcbRecomendado1_Click(object sender, EventArgs e)
             lblCortoHistoriasRecientes.Text = Idioma.lblCortohistoriasRecientes;
             lblLibrosEnCortohistorias.Text = Idioma.lblLibrosEnCortohistorias;
         }
+
+        private void OcultarPaneles()
+        {
+            panel2.Visible = false;
+            panel3.Visible = false;
+            panel5.Visible = false;
+            panel6.Visible = false;
+            panel8.Visible = false;
+            tableLayoutPanel3.Visible = false;
+        }
+
+        private void pcbReciente1_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+                List<string> cortoHistorias = CortoHistoria.EncontrarCortoHistoriasRecientes(basedatos.Conexion);
+                CortoHistoria ch1 = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, cortoHistorias[0]);
+                OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch1.Id));
+
+                OcultarPaneles();
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
+            basedatos.CerrarConexion();
+        }
+
+        private void pcbReciente2_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+                List<string> cortoHistorias = CortoHistoria.EncontrarCortoHistoriasRecientes(basedatos.Conexion);
+                CortoHistoria ch2 = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, cortoHistorias[1]);
+                OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch2.Id));
+
+                OcultarPaneles();
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
+            basedatos.CerrarConexion();
+        }
+
+        private void pcbReciente3_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+                List<string> cortoHistorias = CortoHistoria.EncontrarCortoHistoriasRecientes(basedatos.Conexion);
+                CortoHistoria ch3 = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, cortoHistorias[2]);
+                OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch3.Id));
+
+                OcultarPaneles();
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
+            basedatos.CerrarConexion();
+        }
+
+        private void pcbReciente4_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+                List<string> cortoHistorias = CortoHistoria.EncontrarCortoHistoriasRecientes(basedatos.Conexion);
+                CortoHistoria ch4 = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, cortoHistorias[3]);
+                OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch4.Id));
+
+                OcultarPaneles();
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
+            basedatos.CerrarConexion();
+        }
+
+        private void pcbReciente5_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+                List<string> cortoHistorias = CortoHistoria.EncontrarCortoHistoriasRecientes(basedatos.Conexion);
+                CortoHistoria ch5 = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, cortoHistorias[4]);
+                OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch5.Id));
+
+                OcultarPaneles();
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
+            basedatos.CerrarConexion();
+        }
     }
 }

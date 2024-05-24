@@ -16,7 +16,7 @@ namespace registro_mockup.Principal
     {
         BDatos basedatos = new BDatos();
         string us;
-        public VisualizarCortohistoria(string titulo,string usuario ,int id)
+        public VisualizarCortohistoria(string usuario ,int id)
         {
             us = usuario;
             InitializeComponent();
