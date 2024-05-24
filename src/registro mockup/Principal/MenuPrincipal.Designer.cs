@@ -342,6 +342,7 @@
             this.ClientSize = new System.Drawing.Size(1589, 901);
             this.Controls.Add(this.panelescritorio);
             this.Controls.Add(this.panelMenu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.MinimumSize = new System.Drawing.Size(1213, 584);
