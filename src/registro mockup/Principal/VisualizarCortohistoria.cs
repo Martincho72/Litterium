@@ -24,6 +24,7 @@ namespace registro_mockup.Principal
             if (basedatos.AbrirConexion())
             {
                 CortoHistoria ch = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, id);
+                lblTitulo.Text += ch.Titulo;
                 txtVisualizarCortoHistoria.Text = ch.Texto;
                 lblVisualizarCortohistoria.Text += ch.Autor;
 
