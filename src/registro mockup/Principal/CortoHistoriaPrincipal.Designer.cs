@@ -666,7 +666,7 @@
             this.lblCortohistoriasEnLibros.Name = "lblCortohistoriasEnLibros";
             this.lblCortohistoriasEnLibros.Size = new System.Drawing.Size(158, 20);
             this.lblCortohistoriasEnLibros.TabIndex = 1;
-            this.lblCortohistoriasEnLibros.Text = "Libros mas valoradas";
+            this.lblCortohistoriasEnLibros.Text = "Libros mas valorados";
             // 
             // panel6
             // 

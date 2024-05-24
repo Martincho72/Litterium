@@ -87,14 +87,13 @@ namespace registro_mockup.clases
         }
      
 
-        public CortoHistoria(string titulo, string autor, DateTime fecha, string categoria, bool continuable, bool finalizada, int idUsuario, Image foto)
+        public CortoHistoria(string titulo, string autor, DateTime fecha, string categoria, bool continuable, int idUsuario, Image foto)
         {
             this.titulo = titulo;
             this.autor = autor;
             this.fecha = fecha;
             this.categoria = categoria;
             this.continuable = continuable;
-            this.finalizada = finalizada;
             this.idUsuario = idUsuario;
             this.foto = foto;
         }
@@ -325,10 +324,10 @@ namespace registro_mockup.clases
             reader.Close();
             return ch;
         }
-        public static List<CortoHistoria> BuscarBorradores(MySqlConnection conexion,int idUsuario)
+        public static List<CortoHistoria> BuscarBorradores(MySqlConnection conexion,int id_usu)
         {
             List<CortoHistoria> lista = new List<CortoHistoria>();
-            string consulta = string.Format("SELECT titulo, autor, fechaPublicacion, categoria, continuable, finalizada, imagen from cortohistoria where finalizada = 0 and id_usuario = {0}", idUsuario);
+            string consulta = string.Format("SELECT  titulo, autor, fechaPublicacion, categoria, continuable, finalizada, imagen from cortohistoria where id_usuario = {0} and finalizada =0", id_usu);
 
             // Creamos el objeto command al cual le pasamos la consulta y la conexión
             MySqlCommand comando = new MySqlCommand(consulta, conexion);
@@ -349,10 +348,12 @@ namespace registro_mockup.clases
                     bool finalizada = reader.GetBoolean(5);
                     byte[] img = (byte[])reader["imagen"];
                     MemoryStream ms = new MemoryStream(img);
-                    Image foto = Image.FromStream(ms);
+                    Image foto = Image.FromStream(ms); ;
+
+
 
                     // Crear el objeto Usuario y agregarlo a la lista
-                    CortoHistoria ch = new CortoHistoria(titulo, autor, fecha, categoria, continuable, finalizada,idUsuario,foto);
+                    CortoHistoria ch = new CortoHistoria(titulo, autor, fecha, categoria, continuable, finalizada, foto);
                     lista.Add(ch);
                 }
 

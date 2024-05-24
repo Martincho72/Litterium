@@ -27,9 +27,13 @@ namespace registro_mockup.formularios_Usuario
             {
                 if (bDatos.AbrirConexion())
                 {
+                    
                     int idUsuario = Usuario.ObtenerID(bDatos.Conexion, usuariomenu);
-                
-                    dgvCortoHistorias.DataSource = CortoHistoria.BuscarCortoHistoriaUsuario(bDatos.Conexion, idUsuario);
+                    List<CortoHistoria> cortoHistorias = CortoHistoria.BuscarCortoHistoriaUsuario(bDatos.Conexion, idUsuario);
+                    foreach (CortoHistoria ch in cortoHistorias)
+                    {
+                        dgvCortoHistorias.Rows.Add(ch.Titulo,ch.Autor,ch.FechaPublicacion.ToString("dd/MM/yyyy"),ch.Categoria,ch.Continuable,ch.Finalizada,ch.Portada);
+                    }
                 }
             }
             finally

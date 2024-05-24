@@ -33,6 +33,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MisCortoHistorias));
             this.dgvCortoHistorias = new System.Windows.Forms.DataGridView();
+            this.Titulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Autor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaPublicacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Catagoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Continuable = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Finalizada = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Imagen = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCortoHistorias)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,10 +59,18 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvCortoHistorias.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvCortoHistorias.ColumnHeadersHeight = 35;
+            this.dgvCortoHistorias.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Titulo,
+            this.Autor,
+            this.FechaPublicacion,
+            this.Catagoria,
+            this.Continuable,
+            this.Finalizada,
+            this.Imagen});
             this.dgvCortoHistorias.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvCortoHistorias.EnableHeadersVisualStyles = false;
             this.dgvCortoHistorias.Location = new System.Drawing.Point(0, 0);
-            this.dgvCortoHistorias.Margin = new System.Windows.Forms.Padding(27, 160, 27, 25);
+            this.dgvCortoHistorias.Margin = new System.Windows.Forms.Padding(20, 130, 20, 20);
             this.dgvCortoHistorias.Name = "dgvCortoHistorias";
             this.dgvCortoHistorias.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -75,18 +90,67 @@
             this.dgvCortoHistorias.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvCortoHistorias.RowTemplate.Height = 48;
             this.dgvCortoHistorias.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dgvCortoHistorias.Size = new System.Drawing.Size(711, 360);
+            this.dgvCortoHistorias.Size = new System.Drawing.Size(533, 292);
             this.dgvCortoHistorias.TabIndex = 8;
             this.dgvCortoHistorias.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvCortoHistorias_CellFormatting_1);
             // 
+            // Titulo
+            // 
+            this.Titulo.HeaderText = "Titulo";
+            this.Titulo.Name = "Titulo";
+            this.Titulo.ReadOnly = true;
+            // 
+            // Autor
+            // 
+            this.Autor.HeaderText = "Autor";
+            this.Autor.Name = "Autor";
+            this.Autor.ReadOnly = true;
+            // 
+            // FechaPublicacion
+            // 
+            this.FechaPublicacion.HeaderText = "Fecha Publicacion";
+            this.FechaPublicacion.Name = "FechaPublicacion";
+            this.FechaPublicacion.ReadOnly = true;
+            // 
+            // Catagoria
+            // 
+            this.Catagoria.HeaderText = "Categoria";
+            this.Catagoria.Name = "Catagoria";
+            this.Catagoria.ReadOnly = true;
+            // 
+            // Continuable
+            // 
+            this.Continuable.HeaderText = "Continuable";
+            this.Continuable.Name = "Continuable";
+            this.Continuable.ReadOnly = true;
+            this.Continuable.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Continuable.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // Finalizada
+            // 
+            this.Finalizada.HeaderText = "Finalizada";
+            this.Finalizada.Name = "Finalizada";
+            this.Finalizada.ReadOnly = true;
+            this.Finalizada.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Finalizada.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // Imagen
+            // 
+            this.Imagen.HeaderText = "Imagen";
+            this.Imagen.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Imagen.Name = "Imagen";
+            this.Imagen.ReadOnly = true;
+            this.Imagen.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Imagen.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
             // MisCortoHistorias
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(711, 360);
+            this.ClientSize = new System.Drawing.Size(533, 292);
             this.Controls.Add(this.dgvCortoHistorias);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MisCortoHistorias";
             this.Text = "MisCortoHistorias";
             this.Load += new System.EventHandler(this.MisCortoHistorias_Load_1);
@@ -98,5 +162,12 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvCortoHistorias;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Titulo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Autor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FechaPublicacion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Catagoria;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Continuable;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Finalizada;
+        private System.Windows.Forms.DataGridViewImageColumn Imagen;
     }
 }
