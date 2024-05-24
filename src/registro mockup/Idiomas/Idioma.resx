@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AbrirSesionError" xml:space="preserve">
+    <value>La sesión no se puede abrir</value>
+  </data>
   <data name="AsuntoCorreo" xml:space="preserve">
     <value>Restablecer Contraseña</value>
   </data>
@@ -189,6 +192,9 @@
   <data name="btnCrearAgregarUsuario" xml:space="preserve">
     <value>Añadir</value>
   </data>
+  <data name="btnCrearCortohistoria" xml:space="preserve">
+    <value>Crear Cortohistoria</value>
+  </data>
   <data name="btnCrearEditarLibro" xml:space="preserve">
     <value>Editar</value>
   </data>
@@ -200,6 +206,9 @@
   </data>
   <data name="btnEditarCortohistoriaAdmin" xml:space="preserve">
     <value>Editar Cortohistoria</value>
+  </data>
+  <data name="btnEditarCortohistorias" xml:space="preserve">
+    <value>Cortohistorias que continuar</value>
   </data>
   <data name="btnEditarLibroAdmin" xml:space="preserve">
     <value>Editar Libro</value>
@@ -324,6 +333,12 @@
   <data name="CorreoNoExiste" xml:space="preserve">
     <value>El correo proporcionado no esta registrado</value>
   </data>
+  <data name="ErrorAgregarImagen" xml:space="preserve">
+    <value>Error al agregar la imagen: </value>
+  </data>
+  <data name="ErrorGenerarPDF" xml:space="preserve">
+    <value>Error al generar el PDF: </value>
+  </data>
   <data name="errorProviderAutor" xml:space="preserve">
     <value>Ingresa el Autor</value>
   </data>
@@ -432,6 +447,9 @@
   <data name="lblCortohistoriasEnLibros" xml:space="preserve">
     <value>Algunas Cortohistorias</value>
   </data>
+  <data name="lblCortohistoriasRecientes" xml:space="preserve">
+    <value>CortoHistorias mas Recientes</value>
+  </data>
   <data name="lblDatosDeTarjeta" xml:space="preserve">
     <value>Datos de tarjeta :</value>
   </data>
@@ -449,6 +467,9 @@
   </data>
   <data name="lblDireccionMiCuenta" xml:space="preserve">
     <value>Dirección:</value>
+  </data>
+  <data name="lblDobleClickSeleccionarCH" xml:space="preserve">
+    <value>Selecione cual quiere continuar( doble click)</value>
   </data>
   <data name="lblEjemplaresLibro" xml:space="preserve">
     <value>Ejemplares :</value>
@@ -508,7 +529,7 @@
     <value>Importe Total : </value>
   </data>
   <data name="lblImporteTotal" xml:space="preserve">
-    <value>Importe total : 0,00€</value>
+    <value>Importe total : </value>
   </data>
   <data name="lblInfoSinopsisAgregarLibro" xml:space="preserve">
     <value>Max. Carácteres: 150</value>
@@ -705,6 +726,9 @@
   <data name="NoExisteUsuario" xml:space="preserve">
     <value>El usuario no existe</value>
   </data>
+  <data name="ObjetoAlCarrito" xml:space="preserve">
+    <value>Artículo añadido al carrito correctamente</value>
+  </data>
   <data name="ParaCambiarContrasenya" xml:space="preserve">
     <value>Para cambiar su contraseña haga click en este enlace:</value>
   </data>
@@ -713,6 +737,9 @@
   </data>
   <data name="rbtCopiaOnline" xml:space="preserve">
     <value>COPIA ONLINE</value>
+  </data>
+  <data name="SeguirCortoHistoriaToolTip" xml:space="preserve">
+    <value>Al activar esta funcion permites que el resto de ususarios puedan continuar la cortohistoria.</value>
   </data>
   <data name="TituloAdministracionCortohistoria" xml:space="preserve">
     <value>Administración Cortohistoria</value>
@@ -779,6 +806,9 @@
   </data>
   <data name="TituloLibroPrincipal" xml:space="preserve">
     <value>Principal Libros</value>
+  </data>
+  <data name="TituloListaCortohistoriasContinuar" xml:space="preserve">
+    <value>Lista Cortohistorias Continuar</value>
   </data>
   <data name="TituloLogin" xml:space="preserve">
     <value>Iniciar Sesión</value>

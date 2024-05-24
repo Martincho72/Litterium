@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 using registro_mockup.Principal;
+using registro_mockup.Idiomas;
 
 namespace registro_mockup.Principal
 {
@@ -60,6 +61,7 @@ namespace registro_mockup.Principal
 
         private void CortoHistoriaPrincipal_Load(object sender, EventArgs e)
         {
+            AplicarIdioma();
             if (basedatos.AbrirConexion())
             {
                 List<string> titulo = Valoracion.librosMasValorados(basedatos.Conexion);
@@ -136,6 +138,15 @@ namespace registro_mockup.Principal
 private void pcbRecomendado1_Click(object sender, EventArgs e)
         {
             
+        }
+        private void AplicarIdioma()
+        {
+            this.Text = Idioma.TituloCortohistoriaPrincipal;
+            btnCrearCortohistoria.Text = Idioma.btnCrearCortohistoria;
+            btnContinuarCortohistoria.Text = Idioma.btnEditarCortohistoria;
+            lblRecomendadosCH.Text = Idioma.lblRecomendadosLitterium;
+            lblCortoHistoriasRecientes.Text = Idioma.lblCortohistoriasRecientes;
+            lblLibrosEnCortohistorias.Text = Idioma.lblLibrosEnCortohistorias;
         }
     }
 }

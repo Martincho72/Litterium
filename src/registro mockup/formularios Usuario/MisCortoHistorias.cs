@@ -1,4 +1,5 @@
 ﻿using registro_mockup.clases;
+using registro_mockup.Idiomas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -70,6 +71,11 @@ namespace registro_mockup.formularios_Usuario
         {
             CargaCortoHistorias();
 
+        }
+
+        private void AplicarIdioma()
+        {
+            this.Text = Idioma.TituloMisCortohistorias;
         }
     }
 }

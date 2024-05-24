@@ -54,7 +54,7 @@ namespace registro_mockup.Principal
                     }
                     dgvResumen.Rows.Add(libro.Isbn, libro.Titulo, libro.Autor, libro.Categoria, libro.Valoracion, libro.Precio, cantidad, tipo);
                 }
-                txtTotal.Text = lista[0].importeTotal(lista[0].Precio, cantidad).ToString();
+                txtTotal.Text = lista[0].importeTotal(lista[0].Precio, cantidad).ToString() + "€";
             }
             else
             {

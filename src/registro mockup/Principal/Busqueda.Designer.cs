@@ -35,7 +35,7 @@
             this.lblBusqueda = new System.Windows.Forms.Label();
             this.lblTipo = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblResultados = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dgvResultadosBusqueda = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
@@ -46,9 +46,10 @@
             // lblBusqueda
             // 
             this.lblBusqueda.AutoSize = true;
-            this.lblBusqueda.Location = new System.Drawing.Point(13, 42);
+            this.lblBusqueda.Location = new System.Drawing.Point(10, 34);
+            this.lblBusqueda.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBusqueda.Name = "lblBusqueda";
-            this.lblBusqueda.Size = new System.Drawing.Size(44, 16);
+            this.lblBusqueda.Size = new System.Drawing.Size(35, 13);
             this.lblBusqueda.TabIndex = 2;
             this.lblBusqueda.Text = "label1";
             this.lblBusqueda.Visible = false;
@@ -56,9 +57,10 @@
             // lblTipo
             // 
             this.lblTipo.AutoSize = true;
-            this.lblTipo.Location = new System.Drawing.Point(72, 42);
+            this.lblTipo.Location = new System.Drawing.Point(54, 34);
+            this.lblTipo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(44, 16);
+            this.lblTipo.Size = new System.Drawing.Size(35, 13);
             this.lblTipo.TabIndex = 3;
             this.lblTipo.Text = "label2";
             this.lblTipo.Visible = false;
@@ -67,36 +69,35 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblResultados);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1171, 59);
+            this.panel1.Size = new System.Drawing.Size(878, 48);
             this.panel1.TabIndex = 8;
             // 
-            // label1
+            // lblResultados
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(218, 36);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "RESULTADOS";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lblResultados.AutoSize = true;
+            this.lblResultados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.lblResultados.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lblResultados.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultados.Location = new System.Drawing.Point(0, 0);
+            this.lblResultados.Name = "lblResultados";
+            this.lblResultados.Size = new System.Drawing.Size(175, 29);
+            this.lblResultados.TabIndex = 2;
+            this.lblResultados.Text = "RESULTADOS";
+            this.lblResultados.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.dgvResultadosBusqueda);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 59);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(0, 48);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1171, 655);
+            this.panel2.Size = new System.Drawing.Size(878, 532);
             this.panel2.TabIndex = 9;
             // 
             // dgvResultadosBusqueda
@@ -117,7 +118,7 @@
             this.dgvResultadosBusqueda.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvResultadosBusqueda.EnableHeadersVisualStyles = false;
             this.dgvResultadosBusqueda.Location = new System.Drawing.Point(0, 0);
-            this.dgvResultadosBusqueda.Margin = new System.Windows.Forms.Padding(27, 160, 27, 25);
+            this.dgvResultadosBusqueda.Margin = new System.Windows.Forms.Padding(20, 130, 20, 20);
             this.dgvResultadosBusqueda.Name = "dgvResultadosBusqueda";
             this.dgvResultadosBusqueda.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -137,22 +138,21 @@
             this.dgvResultadosBusqueda.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvResultadosBusqueda.RowTemplate.Height = 48;
             this.dgvResultadosBusqueda.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dgvResultadosBusqueda.Size = new System.Drawing.Size(1171, 655);
+            this.dgvResultadosBusqueda.Size = new System.Drawing.Size(878, 532);
             this.dgvResultadosBusqueda.TabIndex = 8;
             this.dgvResultadosBusqueda.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvResultadosBusqueda_CellDoubleClick);
             // 
             // Busqueda
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1171, 714);
+            this.ClientSize = new System.Drawing.Size(878, 580);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblTipo);
             this.Controls.Add(this.lblBusqueda);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Busqueda";
             this.Text = "Busqueda";
             this.Load += new System.EventHandler(this.Busqueda_Load);
@@ -169,7 +169,7 @@
         private System.Windows.Forms.Label lblBusqueda;
         private System.Windows.Forms.Label lblTipo;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblResultados;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView dgvResultadosBusqueda;
     }

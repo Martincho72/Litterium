@@ -100,9 +100,10 @@
             this.Controls.Add(this.dgvListaContinuarCortohistorias);
             this.Controls.Add(this.lblDobleClick);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ListaDeCortohistoriasContinuar";
             this.Text = "ListaDeCortohistoriasContinuar";
+            this.Load += new System.EventHandler(this.ListaDeCortohistoriasContinuar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaContinuarCortohistorias)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

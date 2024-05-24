@@ -17,6 +17,7 @@ using MySql.Data.MySqlClient;
 using iText.IO.Image;
 using iText.Layout.Properties;
 using registro_mockup.clases;
+using registro_mockup.Idiomas;
 
 namespace registro_mockup.Principal
 {
@@ -28,7 +29,7 @@ namespace registro_mockup.Principal
         {
             InitializeComponent();
 
-            toolTip1.SetToolTip(btnPictureSeguirHistoria, "Al activar esta funcion permites que el resto de ususarios puedan continuar la cortohistoria.");
+            toolTip1.SetToolTip(btnPictureSeguirHistoria, Idioma.SeguirCortoHistoriaToolTip);
             this.usarioMenu = usuarioMenu;
         }
 
@@ -36,7 +37,7 @@ namespace registro_mockup.Principal
         {
             InitializeComponent();
 
-            toolTip1.SetToolTip(btnPictureSeguirHistoria, "Al activar esta funcion permites que el resto de ususarios puedan continuar la cortohistoria.");
+            toolTip1.SetToolTip(btnPictureSeguirHistoria, Idioma.SeguirCortoHistoriaToolTip);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -66,7 +67,7 @@ namespace registro_mockup.Principal
 
         private void CrearCortohistoria_Load(object sender, EventArgs e)
         {
-
+            AplicarIdioma();
         }
         // Codificar el texto antes de guardar
         private string EncodeText(string text)
@@ -85,7 +86,7 @@ namespace registro_mockup.Principal
             }
             else 
             {
-                MessageBox.Show("La sesion no se puede abrir");
+                MessageBox.Show(Idioma.AbrirSesionError);
             }
             basedatos.CerrarConexion();
 
@@ -192,7 +193,7 @@ namespace registro_mockup.Principal
                                 }
                                 catch (Exception ex)
                                 {
-                                    MessageBox.Show("Error al agregar la imagen: " + ex.Message);
+                                    MessageBox.Show(Idioma.ErrorAgregarImagen + ex.Message);
                                 }
                             }
 
@@ -224,7 +225,7 @@ namespace registro_mockup.Principal
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error al generar el PDF: " + ex.Message);
+                    MessageBox.Show(Idioma.ErrorGenerarPDF + ex.Message);
                 }
             }
         }
@@ -242,7 +243,7 @@ namespace registro_mockup.Principal
             }
             else
             {
-                MessageBox.Show("No se ha seleccionado imagen", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show(Idioma.ImagenNoSeleccionada, Idioma.Aviso, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
@@ -256,9 +257,25 @@ namespace registro_mockup.Principal
             }
             else
             {
-                MessageBox.Show("La sesion no se puede abrir");
+                MessageBox.Show(Idioma.AbrirSesionError);
             }
             basedatos.CerrarConexion();
+        }
+
+        private void AplicarIdioma()
+        {
+            this.Text = Idioma.TituloCrearCortohistoria;
+            lblTitulo.Text = Idioma.lblTituloCrearCortohistoria;
+            lblCortohistoria.Text = Idioma.lblCortohistoriaCrearCortohistoria;
+            btnVerPDF.Text = Idioma.btnVerComoPDF;
+            btnCargarImagenCortohistorias.Text = Idioma.btnCargarImagenCortohistoria;
+            btnSubirCortohistoria.Text = Idioma.btnSubirCortohistoria;
+            btnBorradoresCortohistorias.Text = Idioma.btnBorradoresCortohistorias;
+            btnBorrar.Text = Idioma.btnBorrar;
+            lblCategoria.Text = Idioma.lblCategoriaEditarLibro;
+            lblAutor.Text = Idioma.lblAutorEditarLibro;
+            chbContinuarCortohistoria.Text = Idioma.chbContinuarCortohistoria;
+
         }
     }
 }

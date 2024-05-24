@@ -1,4 +1,5 @@
-﻿using System;
+﻿using registro_mockup.Idiomas;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,5 +17,19 @@ namespace registro_mockup.Principal
         {
             InitializeComponent();
         }
+
+        private void ListaDeCortohistoriasContinuar_Load(object sender, EventArgs e)
+        {
+            AplicarIdioma();
+        }
+
+        private void AplicarIdioma()
+        {
+            this.Text = Idioma.TituloListaCortohistoriasContinuar;
+            lblDobleClick.Text = Idioma.lblDobleClickSeleccionarCH;
+        }
     }
+
+
+
 }

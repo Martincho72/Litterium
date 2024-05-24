@@ -1,4 +1,5 @@
 ﻿using registro_mockup.clases;
+using registro_mockup.Idiomas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,7 +14,7 @@ namespace registro_mockup.formularios_Usuario
 {
     public partial class MisLibros : Form
 
-        
+
     {
         private string usuariomenu;
         BDatos bDatos = new BDatos();
@@ -41,7 +42,13 @@ namespace registro_mockup.formularios_Usuario
 
         private void MisLibros_Load(object sender, EventArgs e)
         {
+            AplicarIdioma();
             CargaLibros();
+        }
+
+        private void AplicarIdioma()
+        {
+            this.Text = Idioma.TituloMisLibros;
         }
     }
 

@@ -61,6 +61,15 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a La sesión no se puede abrir.
+        /// </summary>
+        internal static string AbrirSesionError {
+            get {
+                return ResourceManager.GetString("AbrirSesionError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Restablecer Contraseña.
         /// </summary>
         internal static string AsuntoCorreo {
@@ -277,6 +286,15 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Crear Cortohistoria.
+        /// </summary>
+        internal static string btnCrearCortohistoria {
+            get {
+                return ResourceManager.GetString("btnCrearCortohistoria", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Editar.
         /// </summary>
         internal static string btnCrearEditarLibro {
@@ -309,6 +327,15 @@ namespace registro_mockup.Idiomas {
         internal static string btnEditarCortohistoriaAdmin {
             get {
                 return ResourceManager.GetString("btnEditarCortohistoriaAdmin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cortohistorias que continuar.
+        /// </summary>
+        internal static string btnEditarCortohistorias {
+            get {
+                return ResourceManager.GetString("btnEditarCortohistorias", resourceCulture);
             }
         }
         
@@ -682,6 +709,24 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Error al agregar la imagen: .
+        /// </summary>
+        internal static string ErrorAgregarImagen {
+            get {
+                return ResourceManager.GetString("ErrorAgregarImagen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Error al generar el PDF: .
+        /// </summary>
+        internal static string ErrorGenerarPDF {
+            get {
+                return ResourceManager.GetString("ErrorGenerarPDF", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Ingresa el Autor.
         /// </summary>
         internal static string errorProviderAutor {
@@ -1006,6 +1051,15 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a CortoHistorias mas Recientes.
+        /// </summary>
+        internal static string lblCortohistoriasRecientes {
+            get {
+                return ResourceManager.GetString("lblCortohistoriasRecientes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Datos de tarjeta :.
         /// </summary>
         internal static string lblDatosDeTarjeta {
@@ -1056,6 +1110,15 @@ namespace registro_mockup.Idiomas {
         internal static string lblDireccionMiCuenta {
             get {
                 return ResourceManager.GetString("lblDireccionMiCuenta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Selecione cual quiere continuar( doble click).
+        /// </summary>
+        internal static string lblDobleClickSeleccionarCH {
+            get {
+                return ResourceManager.GetString("lblDobleClickSeleccionarCH", resourceCulture);
             }
         }
         
@@ -1231,7 +1294,7 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Importe total : 0,00€.
+        ///   Busca una cadena traducida similar a Importe total : .
         /// </summary>
         internal static string lblImporteTotal {
             get {
@@ -1825,6 +1888,15 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Artículo añadido al carrito correctamente.
+        /// </summary>
+        internal static string ObjetoAlCarrito {
+            get {
+                return ResourceManager.GetString("ObjetoAlCarrito", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Para cambiar su contraseña haga click en este enlace:.
         /// </summary>
         internal static string ParaCambiarContrasenya {
@@ -1848,6 +1920,15 @@ namespace registro_mockup.Idiomas {
         internal static string rbtCopiaOnline {
             get {
                 return ResourceManager.GetString("rbtCopiaOnline", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Al activar esta funcion permites que el resto de ususarios puedan continuar la cortohistoria..
+        /// </summary>
+        internal static string SeguirCortoHistoriaToolTip {
+            get {
+                return ResourceManager.GetString("SeguirCortoHistoriaToolTip", resourceCulture);
             }
         }
         
@@ -2046,6 +2127,15 @@ namespace registro_mockup.Idiomas {
         internal static string TituloLibroPrincipal {
             get {
                 return ResourceManager.GetString("TituloLibroPrincipal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Lista Cortohistorias Continuar.
+        /// </summary>
+        internal static string TituloListaCortohistoriasContinuar {
+            get {
+                return ResourceManager.GetString("TituloListaCortohistoriasContinuar", resourceCulture);
             }
         }
         

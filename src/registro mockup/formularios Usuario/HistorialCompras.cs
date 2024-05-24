@@ -1,4 +1,5 @@
 ﻿using registro_mockup.clases;
+using registro_mockup.Idiomas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -37,11 +38,15 @@ namespace registro_mockup.formularios_Usuario
             }
         }
 
-
-
         private void HistorialCompras_Load_1(object sender, EventArgs e)
         {
             CargaCompras();
+            AplicarIdioma();
+        }
+
+        private void AplicarIdioma()
+        {
+            this.Text = Idioma.TituloHistorialComprar;
         }
     }
 }

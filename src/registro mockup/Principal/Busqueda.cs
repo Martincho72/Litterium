@@ -1,4 +1,5 @@
 ﻿using registro_mockup.clases;
+using registro_mockup.Idiomas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,6 +24,7 @@ namespace registro_mockup.Principal
 
         private void Busqueda_Load(object sender, EventArgs e)
         {
+            AplicarIdioma();
             //if (basedatos.AbrirConexion())
             //{
 
@@ -48,6 +50,12 @@ namespace registro_mockup.Principal
         private void dgvResultadosBusqueda_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void AplicarIdioma()
+        {
+            this.Text = Idioma.TituloBusqueda;
+            lblResultados.Text = Idioma.lblResultadosBusqueda;
         }
     }
 }

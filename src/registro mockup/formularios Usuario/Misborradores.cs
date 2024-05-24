@@ -1,4 +1,5 @@
 ﻿using registro_mockup.clases;
+using registro_mockup.Idiomas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -45,7 +46,13 @@ namespace registro_mockup
 
         private void Misborradores_Load(object sender, EventArgs e)
         {
+            AplicarIdioma();
             CargaBorradores();
+        }
+
+        private void AplicarIdioma()
+        {
+            this.Text = Idioma.TituloMisBorradores;
         }
     }
 }

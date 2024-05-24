@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AbrirSesionError" xml:space="preserve">
+    <value>The session cannot be opened.</value>
+  </data>
   <data name="AsuntoCorreo" xml:space="preserve">
     <value>Reset Password</value>
   </data>
@@ -189,6 +192,9 @@
   <data name="btnCrearAgregarUsuario" xml:space="preserve">
     <value>Add</value>
   </data>
+  <data name="btnCrearCortohistoria" xml:space="preserve">
+    <value>Create Short Story</value>
+  </data>
   <data name="btnCrearEditarLibro" xml:space="preserve">
     <value>Edit</value>
   </data>
@@ -200,6 +206,9 @@
   </data>
   <data name="btnEditarCortohistoriaAdmin" xml:space="preserve">
     <value>Edit Short Story</value>
+  </data>
+  <data name="btnEditarCortohistorias" xml:space="preserve">
+    <value>Short Stories to Continue</value>
   </data>
   <data name="btnEditarLibroAdmin" xml:space="preserve">
     <value>Edit Book</value>
@@ -324,6 +333,12 @@
   <data name="CorreoNoExiste" xml:space="preserve">
     <value>The provided email is not registered.</value>
   </data>
+  <data name="ErrorAgregarImagen" xml:space="preserve">
+    <value>Error adding the image: </value>
+  </data>
+  <data name="ErrorGenerarPDF" xml:space="preserve">
+    <value>Error generating the PDF: </value>
+  </data>
   <data name="errorProviderAutor" xml:space="preserve">
     <value>Insert the author</value>
   </data>
@@ -432,6 +447,9 @@
   <data name="lblCortohistoriasEnLibros" xml:space="preserve">
     <value>Some Short Stories</value>
   </data>
+  <data name="lblCortohistoriasRecientes" xml:space="preserve">
+    <value>Most Recent Short Stories</value>
+  </data>
   <data name="lblDatosDeTarjeta" xml:space="preserve">
     <value>Credit card details:</value>
   </data>
@@ -449,6 +467,9 @@
   </data>
   <data name="lblDireccionMiCuenta" xml:space="preserve">
     <value>Address:</value>
+  </data>
+  <data name="lblDobleClickSeleccionarCH" xml:space="preserve">
+    <value>Select which one you want to continue (double click)</value>
   </data>
   <data name="lblEjemplaresLibro" xml:space="preserve">
     <value>Book Copy :</value>
@@ -508,7 +529,7 @@
     <value>Total Amount: </value>
   </data>
   <data name="lblImporteTotal" xml:space="preserve">
-    <value>Total Amount : 0,00€</value>
+    <value>Total Amount : </value>
   </data>
   <data name="lblInfoSinopsisAgregarLibro" xml:space="preserve">
     <value>Max. Characters: 150</value>
@@ -705,6 +726,9 @@
   <data name="NoExisteUsuario" xml:space="preserve">
     <value>user ID does not exist</value>
   </data>
+  <data name="ObjetoAlCarrito" xml:space="preserve">
+    <value>Item Added to Cart Successfully</value>
+  </data>
   <data name="ParaCambiarContrasenya" xml:space="preserve">
     <value>To change your password, click on this link:</value>
   </data>
@@ -713,6 +737,9 @@
   </data>
   <data name="rbtCopiaOnline" xml:space="preserve">
     <value>ONLINE COPY</value>
+  </data>
+  <data name="SeguirCortoHistoriaToolTip" xml:space="preserve">
+    <value>By activating this function, you allow other users to continue the short story.</value>
   </data>
   <data name="String1" xml:space="preserve">
     <value>View Short Story</value>
@@ -782,6 +809,9 @@
   </data>
   <data name="TituloLibroPrincipal" xml:space="preserve">
     <value>Books - Main</value>
+  </data>
+  <data name="TituloListaCortohistoriasContinuar" xml:space="preserve">
+    <value>Short Stories List Continue</value>
   </data>
   <data name="TituloLogin" xml:space="preserve">
     <value>Log In</value>

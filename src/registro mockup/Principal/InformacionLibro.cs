@@ -15,10 +15,10 @@ namespace registro_mockup.Principal
 {
     public partial class InformacionLibro : Form
     {
-        BDatos basedatos=new BDatos();
+        BDatos basedatos = new BDatos();
         private string usuariomenu;
         private string isbnLibro;
-        public InformacionLibro(string titulo,string usuario)
+        public InformacionLibro(string titulo, string usuario)
         {
             InitializeComponent();
             usuariomenu = usuario;
@@ -27,7 +27,7 @@ namespace registro_mockup.Principal
             {
                 Libro l1 = Libro.EncontrarDatosLibroTitulo(basedatos.Conexion, titulo);
                 isbnLibro = l1.Isbn;
-                lblAutorLibro.Text +=  l1.Autor;
+                lblAutorLibro.Text += l1.Autor;
                 lblTituloLibro.Text += l1.Titulo;
                 lblValoracion.Text += l1.Valoracion;
                 txtSinopsis.Text = l1.Sinopsis;
@@ -41,7 +41,7 @@ namespace registro_mockup.Principal
 
         private void label2_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -93,26 +93,26 @@ namespace registro_mockup.Principal
 
         }
 
-       
+
 
         private void btnValorar_Click(object sender, EventArgs e)
         {
-            
+
             if (basedatos.AbrirConexion())
             {
                 Usuario usu = Usuario.EncontrarDatosUsuario(basedatos.Conexion, usuariomenu);
 
-                if (!Valoracion.EncontrarValoracion(basedatos.Conexion,usu.Id,isbnLibro ))
+                if (!Valoracion.EncontrarValoracion(basedatos.Conexion, usu.Id, isbnLibro))
                 {
-                    Valoracion.insertarValoracion(basedatos.Conexion,isbnLibro,usu.Id, int.Parse(cmbValorar.Text));
+                    Valoracion.insertarValoracion(basedatos.Conexion, isbnLibro, usu.Id, int.Parse(cmbValorar.Text));
 
                 }
                 else
                 {
-                    Valoracion.EditarValoracion(basedatos.Conexion,usu.Id, isbnLibro, int.Parse(cmbValorar.Text));
+                    Valoracion.EditarValoracion(basedatos.Conexion, usu.Id, isbnLibro, int.Parse(cmbValorar.Text));
                 }
                 Libro l1 = Libro.EncontrarDatosLibro(basedatos.Conexion, isbnLibro);
-                lblValoracion.Text = "Valoracion: " + l1.Valoracion;
+                lblValoracion.Text += l1.Valoracion;
             }
             else
             {
@@ -149,8 +149,8 @@ namespace registro_mockup.Principal
                 double precio = l1.importeTotal(l1.Precio, (int)nupCantidad.Value);
                 bool online = true;
                 if (rdbCopiaFisica.Checked) { online = false; }
-                l1.Cantidad=cantidad;
-                l1.Online=online;
+                l1.Cantidad = cantidad;
+                l1.Online = online;
 
                 bool encontrado = false;
                 foreach (Libro libro in Carrito.MiCarrito)
@@ -165,15 +165,7 @@ namespace registro_mockup.Principal
                 {
                     Carrito.agregarAlCarrito(l1);
                 }
-                string idiomaActual = Thread.CurrentThread.CurrentUICulture.Name;
-                if (idiomaActual == "es-ES")
-                {
-                    MessageBox.Show("Artículo añadido al carrito correctamente");
-                }
-                else
-                {
-                    MessageBox.Show("Item Added to Cart Successfully");
-                }
+                MessageBox.Show(Idioma.ObjetoAlCarrito);
             }
             else { }
             basedatos.CerrarConexion();

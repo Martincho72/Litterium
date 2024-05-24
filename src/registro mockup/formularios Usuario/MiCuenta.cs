@@ -73,6 +73,7 @@ namespace registro_mockup.formularios_Usuario
             btnEditar.Text = Idioma.btnEditarMiCuenta;
             btnConfirmarEdicion.Text = Idioma.btnConfirmarEdicionMiCuenta;
             btnCargar.Text = Idioma.btnCargarMiCuenta;
+            btnCerrar.Text = Idioma.btnCS;
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
@@ -114,6 +115,11 @@ namespace registro_mockup.formularios_Usuario
             }
             else { }
             basedatos.CerrarConexion();
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
         }
     }
 }
