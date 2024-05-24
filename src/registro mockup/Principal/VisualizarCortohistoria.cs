@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static iText.StyledXmlParser.Jsoup.Select.Evaluator;
 
 namespace registro_mockup.Principal
 {
@@ -16,8 +17,10 @@ namespace registro_mockup.Principal
     {
         BDatos basedatos = new BDatos();
         string us;
-        public VisualizarCortohistoria(string usuario ,int id)
+        int id;
+        public VisualizarCortohistoria(string titulo,string usuario ,int id)
         {
+            this.id = id;
             us = usuario;
             InitializeComponent();
             AplicarIdioma();
@@ -48,6 +51,19 @@ namespace registro_mockup.Principal
 
         private void VisualizarCortohistoria_Load(object sender, EventArgs e)
         {
+        }
+
+        private void btnContinuar_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+                CortoHistoria ch = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, id);
+                CrearCortohistoria crear = new CrearCortohistoria(ch.Id, us);
+                crear.Show();
+            }
+            else {}
+            basedatos.CerrarConexion();
+            
         }
     }
 }

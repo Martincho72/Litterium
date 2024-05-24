@@ -135,6 +135,7 @@
             this.btnContinuar.Text = "Continuar";
             this.btnContinuar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnContinuar.UseVisualStyleBackColor = false;
+            this.btnContinuar.Click += new System.EventHandler(this.btnContinuar_Click);
             // 
             // VisualizarCortohistoria
             // 

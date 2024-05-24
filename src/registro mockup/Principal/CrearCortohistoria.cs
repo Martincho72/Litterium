@@ -25,12 +25,36 @@ namespace registro_mockup.Principal
     {
         BDatos basedatos = new BDatos();
         string usarioMenu;
+        int id = 0;
+        int longitud = 0;
         public CrearCortohistoria(string usuarioMenu)
         {
             InitializeComponent();
 
             toolTip1.SetToolTip(btnPictureSeguirHistoria, Idioma.SeguirCortoHistoriaToolTip);
             this.usarioMenu = usuarioMenu;
+        }
+
+        public CrearCortohistoria(int idCortohistoria, string usuarioMenu)
+        {
+            InitializeComponent();
+            id = idCortohistoria;
+            this.usarioMenu = usuarioMenu;
+            if (basedatos.AbrirConexion())
+            {
+                CortoHistoria ch = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, id);
+                txtTitulo.Text = ch.Titulo;
+                txtCortohistoriaCrear.Text = ch.Texto;
+                txtCategoria.Text = ch.Categoria;
+                txtAutor.Text = ch.Autor;
+                txtTitulo.ReadOnly = true;
+                txtCategoria.ReadOnly = true;
+                txtAutor.ReadOnly = true;
+                pcbPortada.Image = ch.Portada;
+                btnCargarImagenCortohistorias.Enabled = false;
+                longitud = ch.Texto.Length;
+            }
+            basedatos.CerrarConexion();
         }
 
         public CrearCortohistoria()
@@ -84,7 +108,7 @@ namespace registro_mockup.Principal
                 CortoHistoria ch = new CortoHistoria(txtTitulo.Text, txtAutor.Text, DateTime.Now, txtCategoria.Text, chbContinuarCortohistoria.Checked, true, us1.Id, pcbPortada.Image, txtCortohistoriaCrear.Text);
                 ch.AgregarCortoHistoria(basedatos.Conexion, ch);
             }
-            else 
+            else
             {
                 MessageBox.Show(Idioma.AbrirSesionError);
             }
@@ -197,7 +221,7 @@ namespace registro_mockup.Principal
                                 }
                             }
 
-                           
+
 
                             // Dividir el texto en líneas y agregar cada línea como un párrafo separado
                             foreach (var line in cuerpo.Split('\n'))
@@ -230,7 +254,7 @@ namespace registro_mockup.Principal
             }
         }
 
- 
+
         private void btnCargarImagenCortohistorias_Click(object sender, EventArgs e)
         {
             OpenFileDialog cargaImagen = new OpenFileDialog();
@@ -249,17 +273,38 @@ namespace registro_mockup.Principal
 
         private void btnBorradoresCortohistorias_Click(object sender, EventArgs e)
         {
+
             if (basedatos.AbrirConexion())
             {
-                Usuario us1 = Usuario.EncontrarDatosUsuario(basedatos.Conexion, usarioMenu);
-                CortoHistoria ch = new CortoHistoria(txtTitulo.Text, txtAutor.Text, DateTime.Now, txtCategoria.Text, chbContinuarCortohistoria.Checked, false, us1.Id, pcbPortada.Image, txtCortohistoriaCrear.Text);
-                ch.AgregarCortoHistoria(basedatos.Conexion, ch);
+                int id_usuario = Usuario.ObtenerID(basedatos.Conexion, usarioMenu);
+                if (id == 0)
+                {
+                    CortoHistoria ch = new CortoHistoria(txtTitulo.Text, txtAutor.Text, DateTime.Now, txtCategoria.Text, chbContinuarCortohistoria.Checked, false, id_usuario, pcbPortada.Image, txtCortohistoriaCrear.Text);
+                    ch.AgregarCortoHistoria(basedatos.Conexion, ch);
+                }
+                else
+                {
+                    CortoHistoria cortoHistoria = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, id);
+                    if (id_usuario == cortoHistoria.Id_usuario)
+                    {
+                        // update
+                        CortoHistoria.EditarCortoHistoria(basedatos.Conexion, cortoHistoria);
+                    }
+                    else
+                    {
+                        // borrador de la cortohistoria de otro usuario
+                        CortoHistoria ch = new CortoHistoria(txtTitulo.Text, txtAutor.Text, DateTime.Now, txtCategoria.Text, chbContinuarCortohistoria.Checked, false, id_usuario, pcbPortada.Image, txtCortohistoriaCrear.Text);
+                        ch.AgregarCortoHistoria(basedatos.Conexion, ch);
+                    }
+                }
             }
             else
             {
                 MessageBox.Show(Idioma.AbrirSesionError);
             }
+
             basedatos.CerrarConexion();
+
         }
 
         private void AplicarIdioma()
@@ -276,6 +321,23 @@ namespace registro_mockup.Principal
             lblAutor.Text = Idioma.lblAutorEditarLibro;
             chbContinuarCortohistoria.Text = Idioma.chbContinuarCortohistoria;
 
+        }
+
+        private void txtCortohistoriaCrear_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+        }
+
+        private void txtCortohistoriaCrear_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            int inicioSeleccion = txtCortohistoriaCrear.SelectionStart;
+            if (inicioSeleccion <= longitud)
+            {
+                e.Handled = true;
+                txtCortohistoriaCrear.Text += " ";
+                txtCortohistoriaCrear.SelectionStart = longitud + 1;
+            }
+            else { e.Handled = false; }
         }
     }
 }
