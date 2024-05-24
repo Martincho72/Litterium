@@ -371,5 +371,43 @@ namespace registro_mockup
             return retorno;
         }
 
+        public static bool comprobarBaja(MySqlConnection conexion,string usuario)
+        {
+            string consulta = string.Format("SELECT usuario FROM usuarios WHERE usuario = '{0}' and baja=1", usuario);
+
+            MySqlCommand comando = new MySqlCommand(consulta, conexion);
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                reader.Close();
+                return true;
+            }
+            else
+            {
+                reader.Close();
+                return false;
+            }
+        }
+
+        public static bool comprobarVetado(MySqlConnection conexion, string usuario)
+        {
+            string consulta = string.Format("SELECT usuario FROM usuarios WHERE usuario = '{0}' and vetado=1", usuario);
+
+            MySqlCommand comando = new MySqlCommand(consulta, conexion);
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                reader.Close();
+                return true;
+            }
+            else
+            {
+                reader.Close();
+                return false;
+            }
+        }
+
     }
 }
