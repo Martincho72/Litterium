@@ -126,15 +126,29 @@ namespace Litterium
                         {
                             if (Usuario.esAdmintrador(bDatos.Conexion, txtUsuario.Text))
                             {
-                                MenuAdministrador admin = new MenuAdministrador(this);
-                                admin.Show();
-                                this.Hide();
+                                if (!Usuario.comprobarBaja(bDatos.Conexion, txtUsuario.Text))
+                                {
+                                    MenuAdministrador admin = new MenuAdministrador(this);
+                                    admin.Show();
+                                    this.Hide();
+                                }
+                                else
+                                {
+                                    MessageBox.Show("El administrador esta de baja");
+                                }
                             }
                             else
                             {
-                                MenuPrincipal menu = new MenuPrincipal(txtUsuario.Text);
-                                menu.Show();
-                                this.Hide();
+                                if (!Usuario.comprobarVetado(bDatos.Conexion, txtUsuario.Text))
+                                {
+                                    MenuPrincipal menu = new MenuPrincipal(txtUsuario.Text);
+                                    menu.Show();
+                                    this.Hide();
+                                }
+                                else
+                                {
+                                    MessageBox.Show("El usuario esta vetado");
+                                }
 
                             }
                             txtUsuario.Text = "";
