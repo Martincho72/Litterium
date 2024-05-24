@@ -31,11 +31,23 @@ namespace registro_mockup.Principal
 
                 if (lblTipo.Text == "Cortohistorias")
                 {
-                    dgvResultadosBusqueda.DataSource = CortoHistoria.BuscarCortoHistoria(basedatos.Conexion, lblBusqueda.Text);
+                    dgvResultadosLibro.Visible = false;
+                    dgvResultadosCh.Visible= true;
+                    List<CortoHistoria> ch = CortoHistoria.BuscarCortoHistoria(basedatos.Conexion, lblBusqueda.Text);
+                    foreach (CortoHistoria corto in ch)
+                    {
+                        dgvResultadosCh.Rows.Add(corto.Titulo, corto.Autor, corto.FechaPublicacion.ToString("dd-MM-yyyy"), corto.Categoria, corto.Continuable, corto.Finalizada,corto.Portada);
+                    }
                 }
                 else
                 {
-                    dgvResultadosBusqueda.DataSource = Libro.BuscarLibros(basedatos.Conexion, lblBusqueda.Text);
+                    dgvResultadosLibro.Visible = true;
+                    dgvResultadosCh.Visible = false;
+                    List<Libro> libros = Libro.BuscarLibrosBusqueda(basedatos.Conexion,lblBusqueda.Text);
+                    foreach (Libro l1 in libros)
+                    {
+                        dgvResultadosLibro.Rows.Add(l1.Isbn,l1.Titulo,l1.Autor,l1.Categoria,l1.Precio,l1.Portada);
+                    }
                 }
             }
             basedatos.CerrarConexion();

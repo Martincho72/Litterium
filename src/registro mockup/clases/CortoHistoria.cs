@@ -119,6 +119,18 @@ namespace registro_mockup.clases
             this.foto = foto;
         }
 
+        public CortoHistoria(string titulo, string autor, DateTime fecha, string categoria, bool continuable, bool finalizada, int id_usuario, Image foto)
+        {
+            this.titulo = titulo;
+            this.autor = autor;
+            this.fecha = fecha;
+            this.categoria = categoria;
+            this.continuable = continuable;
+            this.finalizada = finalizada;
+            this.id_usuario = id_usuario;
+            this.foto = foto;
+        }
+
         public static List<CortoHistoria> BuscarCortoHistoria(MySqlConnection conexion)
         {
             List<CortoHistoria> lista = new List<CortoHistoria>();
@@ -162,7 +174,7 @@ namespace registro_mockup.clases
         public static List<CortoHistoria> BuscarCortoHistoria(MySqlConnection conexion, string busqueda) //Metodo sobrecargado para busqueda
         {
             List<CortoHistoria> lista = new List<CortoHistoria>();
-            string consulta = string.Format("SELECT * FROM cortohistoria WHERE autor LIKE '{0}%' OR titulo LIKE '{0}%' OR categoria LIKE '{0}%'", busqueda);
+            string consulta = string.Format("SELECT titulo,autor,fechaPublicacion,categoria,continuable,finalizada,imagen FROM cortohistoria WHERE autor LIKE '{0}%' OR titulo LIKE '{0}%' OR categoria LIKE '{0}%'", busqueda);
 
             // Creamos el objeto command al cual le pasamos la consulta y la conexión
             MySqlCommand comando = new MySqlCommand(consulta, conexion);
@@ -175,19 +187,19 @@ namespace registro_mockup.clases
                 // Recorremos el reader (registro por registro) y cargamos la lista de empleados.
                 while (reader.Read())
                 {
-                    string titulo = reader.GetString(1);
-                    string autor = reader.GetString(2);
-                    DateTime fecha = reader.GetDateTime(3);
-                    bool continuable = reader.GetBoolean(5);
-                    bool finalizada = reader.GetBoolean(6);
-                    int id_usuario = reader.GetInt32(8);
+                    string titulo = reader.GetString(0);
+                    string autor = reader.GetString(1);
+                    DateTime fecha = reader.GetDateTime(2);
+                    string categoria = reader.GetString(3); 
+                    bool continuable = reader.GetBoolean(4);
+                    bool finalizada = reader.GetBoolean(5);
 
                     byte[] img = (byte[])reader["imagen"];
                     MemoryStream ms = new MemoryStream(img);
                     Image foto = Image.FromStream(ms);
 
                     // Crear el objeto Usuario y agregarlo a la lista
-                    CortoHistoria ch = new CortoHistoria(titulo, autor, fecha, continuable, finalizada, id_usuario, foto);
+                    CortoHistoria ch = new CortoHistoria(titulo, autor, fecha, categoria,continuable, finalizada, foto);
                     lista.Add(ch);
                 }
 
