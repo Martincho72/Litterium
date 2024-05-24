@@ -18,7 +18,7 @@ namespace registro_mockup.Principal
         BDatos basedatos = new BDatos();
         string us;
         int id;
-        public VisualizarCortohistoria(string titulo,string usuario ,int id)
+        public VisualizarCortohistoria(string usuario ,int id)
         {
             this.id = id;
             us = usuario;
