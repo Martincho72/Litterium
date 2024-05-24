@@ -286,6 +286,25 @@ namespace registro_mockup.clases
             }
         }
 
+        public static bool EncontrarCortohistoriaNombre(MySqlConnection conexion, string titulo)
+        {
+            string consulta = string.Format("SELECT titulo FROM cortohistoria WHERE titulo = '{0}'", titulo);
+
+            MySqlCommand comando = new MySqlCommand(consulta, conexion);
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                reader.Close();
+                return true;
+            }
+            else
+            {
+                reader.Close();
+                return false;
+            }
+        }
+
         public static int EditarCortoHistoria(MySqlConnection conexion, CortoHistoria ch)
         {
             int continuable=0;

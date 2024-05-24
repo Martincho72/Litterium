@@ -30,6 +30,11 @@ namespace registro_mockup.Principal
                 lblTitulo.Text += ch.Titulo;
                 txtVisualizarCortoHistoria.Text = ch.Texto;
                 lblVisualizarCortohistoria.Text += ch.Autor;
+                int id_usu = Usuario.ObtenerID(basedatos.Conexion, us);
+                if (!ch.Continuable || id_usu == ch.Id_usuario)
+                {
+                    btnContinuar.Visible = false;
+                }
 
             }
             basedatos.CerrarConexion();

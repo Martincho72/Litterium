@@ -26,12 +26,10 @@ namespace registro_mockup.Principal
         BDatos basedatos = new BDatos();
         string usarioMenu;
         int id = 0;
-        int longitud = 0;
+        int longitud = -1;
         public CrearCortohistoria(string usuarioMenu)
         {
             InitializeComponent();
-
-            toolTip1.SetToolTip(btnPictureSeguirHistoria, Idioma.SeguirCortoHistoriaToolTip);
             this.usarioMenu = usuarioMenu;
         }
 
@@ -42,17 +40,24 @@ namespace registro_mockup.Principal
             this.usarioMenu = usuarioMenu;
             if (basedatos.AbrirConexion())
             {
+                int id_usu = Usuario.ObtenerID(basedatos.Conexion, usuarioMenu);
                 CortoHistoria ch = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, id);
                 txtTitulo.Text = ch.Titulo;
                 txtCortohistoriaCrear.Text = ch.Texto;
                 txtCategoria.Text = ch.Categoria;
                 txtAutor.Text = ch.Autor;
-                txtTitulo.ReadOnly = true;
-                txtCategoria.ReadOnly = true;
-                txtAutor.ReadOnly = true;
-                pcbPortada.Image = ch.Portada;
-                btnCargarImagenCortohistorias.Enabled = false;
-                longitud = ch.Texto.Length;
+                if (ch.Id_usuario != id_usu)
+                {
+                    btnBorradoresCortohistorias.Visible = false;
+                    txtTitulo.ReadOnly = true;
+                    txtCategoria.ReadOnly = true;
+                    txtAutor.ReadOnly = true;
+                    pcbPortada.Image = ch.Portada;
+                    btnCargarImagenCortohistorias.Enabled = false;
+                    longitud = ch.Texto.Length;
+                    chbContinuarCortohistoria.Visible = false;
+                    btnBorrar.Visible = false;
+                }
             }
             basedatos.CerrarConexion();
         }
@@ -60,8 +65,6 @@ namespace registro_mockup.Principal
         public CrearCortohistoria()
         {
             InitializeComponent();
-
-            toolTip1.SetToolTip(btnPictureSeguirHistoria, Idioma.SeguirCortoHistoriaToolTip);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -92,6 +95,7 @@ namespace registro_mockup.Principal
         private void CrearCortohistoria_Load(object sender, EventArgs e)
         {
             AplicarIdioma();
+            toolTip1.SetToolTip(btnPictureSeguirHistoria, Idioma.SeguirCortoHistoriaToolTip);
         }
         // Codificar el texto antes de guardar
         private string EncodeText(string text)
@@ -290,12 +294,6 @@ namespace registro_mockup.Principal
                         // update
                         CortoHistoria.EditarCortoHistoria(basedatos.Conexion, cortoHistoria);
                     }
-                    else
-                    {
-                        // borrador de la cortohistoria de otro usuario
-                        CortoHistoria ch = new CortoHistoria(txtTitulo.Text, txtAutor.Text, DateTime.Now, txtCategoria.Text, chbContinuarCortohistoria.Checked, false, id_usuario, pcbPortada.Image, txtCortohistoriaCrear.Text);
-                        ch.AgregarCortoHistoria(basedatos.Conexion, ch);
-                    }
                 }
             }
             else
@@ -325,7 +323,7 @@ namespace registro_mockup.Principal
 
         private void txtCortohistoriaCrear_KeyPress(object sender, KeyPressEventArgs e)
         {
-            
+
         }
 
         private void txtCortohistoriaCrear_KeyPress_1(object sender, KeyPressEventArgs e)
