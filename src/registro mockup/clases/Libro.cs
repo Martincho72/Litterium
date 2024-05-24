@@ -95,7 +95,7 @@ namespace registro_mockup.clases
         public static List<Libro> BuscarLibros(MySqlConnection conexion, string busqueda)
         {
             List<Libro> lista = new List<Libro>();
-            string consulta = string.Format("SELECT * from libro WHERE autor='{0}' OR titulo='{0}' OR categoria='{0}' OR isbn='{0}'",busqueda);
+            string consulta = string.Format("SELECT * FROM libro WHERE autor LIKE '{0}%' OR titulo LIKE '{0}%' OR categoria LIKE '{0}%' OR isbn LIKE '{0}%'", busqueda);
 
             // Creamos el objeto command al cual le pasamos la consulta y la conexión
             MySqlCommand comando = new MySqlCommand(consulta, conexion);

@@ -85,8 +85,7 @@
             this.cmbLibroCortohistoria.FormattingEnabled = true;
             this.cmbLibroCortohistoria.Items.AddRange(new object[] {
             "Libros",
-            "Cortohistorias",
-            "Todo"});
+            "Cortohistorias"});
             this.cmbLibroCortohistoria.Location = new System.Drawing.Point(166, 28);
             this.cmbLibroCortohistoria.Name = "cmbLibroCortohistoria";
             this.cmbLibroCortohistoria.Size = new System.Drawing.Size(172, 37);

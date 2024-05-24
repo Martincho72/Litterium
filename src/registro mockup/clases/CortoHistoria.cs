@@ -52,6 +52,18 @@ namespace registro_mockup.clases
             this.finalizada = finalizada;
             this.portada = foto;
         }
+
+        public CortoHistoria(string titulo, string autor, DateTime fecha, bool continuable, bool finalizada, int id_usuario, Image foto)
+        {
+            this.titulo = titulo;
+            this.autor = autor;
+            this.fecha = fecha;
+            this.continuable = continuable;
+            this.finalizada = finalizada;
+            this.idUsuario = id_usuario;
+            this.portada = foto;
+
+        }
         //Usuario agrega cortohistoria
         public CortoHistoria(string titulo, string autor, DateTime fechaPublicacion, string categoria,bool continuable,bool finalizada, int id_usuario,Image portada,string texto) 
         {
@@ -138,43 +150,43 @@ namespace registro_mockup.clases
             return lista;
         }
 
-        //public static List<CortoHistoria> BuscarCortoHistoria(MySqlConnection conexion, string busqueda) //Metodo sobrecargado para busqueda
-        //{
-        //    List<CortoHistoria> lista = new List<CortoHistoria>();
-        //    string consulta = string.Format("SELECT * from cortohistoria WHERE autor='{0}' OR titulo='{0}' OR categoria='{0}'",busqueda);
+        public static List<CortoHistoria> BuscarCortoHistoria(MySqlConnection conexion, string busqueda) //Metodo sobrecargado para busqueda
+        {
+            List<CortoHistoria> lista = new List<CortoHistoria>();
+            string consulta = string.Format("SELECT * FROM cortohistoria WHERE autor LIKE '{0}%' OR titulo LIKE '{0}%' OR categoria LIKE '{0}%'", busqueda);
 
-        //    // Creamos el objeto command al cual le pasamos la consulta y la conexión
-        //    MySqlCommand comando = new MySqlCommand(consulta, conexion);
-        //    // Ejecutamos el comando y recibimos en un objeto DataReader la lista de registros seleccionados.
-        //    // Recordemos que un objeto DataReader es una especie de tabla de datos virtual.
-        //    MySqlDataReader reader = comando.ExecuteReader();
+            // Creamos el objeto command al cual le pasamos la consulta y la conexión
+            MySqlCommand comando = new MySqlCommand(consulta, conexion);
+            // Ejecutamos el comando y recibimos en un objeto DataReader la lista de registros seleccionados.
+            // Recordemos que un objeto DataReader es una especie de tabla de datos virtual.
+            MySqlDataReader reader = comando.ExecuteReader();
 
-        //    if (reader.HasRows)   // En caso que se hayan registros en el objeto reader
-        //    {
-        //        // Recorremos el reader (registro por registro) y cargamos la lista de empleados.
-        //        while (reader.Read())
-        //        {
-        //            string titulo = reader.GetString(1);
-        //            string autor = reader.GetString(2);
-        //            DateTime fecha = reader.GetDateTime(3);
-        //            bool continuable = reader.GetBoolean(5);
-        //            bool finalizada = reader.GetBoolean(6);
-        //            int id_usuario = reader.GetInt32(8);
+            if (reader.HasRows)   // En caso que se hayan registros en el objeto reader
+            {
+                // Recorremos el reader (registro por registro) y cargamos la lista de empleados.
+                while (reader.Read())
+                {
+                    string titulo = reader.GetString(1);
+                    string autor = reader.GetString(2);
+                    DateTime fecha = reader.GetDateTime(3);
+                    bool continuable = reader.GetBoolean(5);
+                    bool finalizada = reader.GetBoolean(6);
+                    int id_usuario = reader.GetInt32(8);
 
-        //            byte[] img = (byte[])reader["imagen"];
-        //            MemoryStream ms = new MemoryStream(img);
-        //            Image foto = Image.FromStream(ms);
+                    byte[] img = (byte[])reader["imagen"];
+                    MemoryStream ms = new MemoryStream(img);
+                    Image foto = Image.FromStream(ms);
 
-        //            // Crear el objeto Usuario y agregarlo a la lista
-        //            CortoHistoria ch = new CortoHistoria(titulo, autor, fecha, continuable, finalizada, id_usuario,foto);
-        //            lista.Add(ch);
-        //        }
+                    // Crear el objeto Usuario y agregarlo a la lista
+                    CortoHistoria ch = new CortoHistoria(titulo, autor, fecha, continuable, finalizada, id_usuario, foto);
+                    lista.Add(ch);
+                }
 
-        //    }
-        //    // devolvemos la lista cargada con los usuarios.
-        //    reader.Close();
-        //    return lista;
-        //}
+            }
+            // devolvemos la lista cargada con los usuarios.
+            reader.Close();
+            return lista;
+        }
 
         public static List<CortoHistoria> BuscarCortoHistoriaUsuario(MySqlConnection conexion,int id_usu) //Mis CortoHistorias Usuario
         {

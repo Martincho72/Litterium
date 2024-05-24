@@ -32,6 +32,7 @@ namespace registro_mockup
         {
             usuariomenu = usuario;
             InitializeComponent();
+
             string idiomaActual = Thread.CurrentThread.CurrentUICulture.Name;
 
             if (idiomaActual == "es-ES")
@@ -247,6 +248,9 @@ namespace registro_mockup
         }
         private void AplicarIdioma()
         {
+            cmbLibroCortohistoria.Items[0] = Idioma.cmbLibro;
+            cmbLibroCortohistoria.Items[1] = Idioma.cmbCortohistoria;
+            cmbLibroCortohistoria.SelectedIndex = 0;
             this.Text = Idioma.TituloMenuPrincipal;
             btnMiCarrito.Text = Idioma.btnMiCarrito;
             btnLibros.Text = Idioma.btnLibros;
