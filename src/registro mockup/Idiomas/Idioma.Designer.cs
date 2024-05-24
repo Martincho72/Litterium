@@ -61,6 +61,24 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Restablecer Contraseña.
+        /// </summary>
+        internal static string AsuntoCorreo {
+            get {
+                return ResourceManager.GetString("AsuntoCorreo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Aviso.
+        /// </summary>
+        internal static string Aviso {
+            get {
+                return ResourceManager.GetString("Aviso", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Administracion CortoHistoria.
         /// </summary>
         internal static string btnAC {
@@ -664,6 +682,15 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Ingresa el Autor.
+        /// </summary>
+        internal static string errorProviderAutor {
+            get {
+                return ResourceManager.GetString("errorProviderAutor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Ingresa la contraseña.
         /// </summary>
         internal static string errorProviderContrasenyaLogIn {
@@ -700,6 +727,24 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Ingresa el Id.
+        /// </summary>
+        internal static string errorProviderID {
+            get {
+                return ResourceManager.GetString("errorProviderID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Ingresa el Isbn.
+        /// </summary>
+        internal static string errorProviderIsbn {
+            get {
+                return ResourceManager.GetString("errorProviderIsbn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Ingresa el nombre.
         /// </summary>
         internal static string errorProviderNombreRegistro {
@@ -714,6 +759,15 @@ namespace registro_mockup.Idiomas {
         internal static string errorProviderTelefonoRegistro {
             get {
                 return ResourceManager.GetString("errorProviderTelefonoRegistro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Ingresa la Titulo.
+        /// </summary>
+        internal static string errorProviderTitulo {
+            get {
+                return ResourceManager.GetString("errorProviderTitulo", resourceCulture);
             }
         }
         
@@ -754,6 +808,15 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a No se ha seleccionado imagen.
+        /// </summary>
+        internal static string ImagenNoSeleccionada {
+            get {
+                return ResourceManager.GetString("ImagenNoSeleccionada", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Administradores.
         /// </summary>
         internal static string lblAdministradores {
@@ -765,9 +828,9 @@ namespace registro_mockup.Idiomas {
         /// <summary>
         ///   Busca una cadena traducida similar a Autor:.
         /// </summary>
-        internal static string lblAutorAgregarUsuario {
+        internal static string lblAutorAgregarLibro {
             get {
-                return ResourceManager.GetString("lblAutorAgregarUsuario", resourceCulture);
+                return ResourceManager.GetString("lblAutorAgregarLibro", resourceCulture);
             }
         }
         
@@ -801,9 +864,9 @@ namespace registro_mockup.Idiomas {
         /// <summary>
         ///   Busca una cadena traducida similar a Categoría:.
         /// </summary>
-        internal static string lblCategoriaAgregarUsuario {
+        internal static string lblCategoriaAgregarLibro {
             get {
-                return ResourceManager.GetString("lblCategoriaAgregarUsuario", resourceCulture);
+                return ResourceManager.GetString("lblCategoriaAgregarLibro", resourceCulture);
             }
         }
         
@@ -1197,9 +1260,9 @@ namespace registro_mockup.Idiomas {
         /// <summary>
         ///   Busca una cadena traducida similar a ISBN:.
         /// </summary>
-        internal static string lblIsbnAgregarUsuario {
+        internal static string lblIsbnAgregarLibro {
             get {
-                return ResourceManager.GetString("lblIsbnAgregarUsuario", resourceCulture);
+                return ResourceManager.GetString("lblIsbnAgregarLibro", resourceCulture);
             }
         }
         
@@ -1539,9 +1602,9 @@ namespace registro_mockup.Idiomas {
         /// <summary>
         ///   Busca una cadena traducida similar a Título:.
         /// </summary>
-        internal static string lblTituloAgregarUsuario {
+        internal static string lblTituloAgregarLibro {
             get {
-                return ResourceManager.GetString("lblTituloAgregarUsuario", resourceCulture);
+                return ResourceManager.GetString("lblTituloAgregarLibro", resourceCulture);
             }
         }
         
@@ -1674,9 +1737,9 @@ namespace registro_mockup.Idiomas {
         /// <summary>
         ///   Busca una cadena traducida similar a Valoración:.
         /// </summary>
-        internal static string lblValoracionAgregarUsuario {
+        internal static string lblValoracionAgregarLibro {
             get {
-                return ResourceManager.GetString("lblValoracionAgregarUsuario", resourceCulture);
+                return ResourceManager.GetString("lblValoracionAgregarLibro", resourceCulture);
             }
         }
         
@@ -1717,11 +1780,47 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a El libro ya existe.
+        /// </summary>
+        internal static string LibroYaExiste {
+            get {
+                return ResourceManager.GetString("LibroYaExiste", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a ¿Estás seguro que quieres cambiar de idioma? (Se le redirigirá al menú principal).
         /// </summary>
         internal static string MensajeCambiarIdioma {
             get {
                 return ResourceManager.GetString("MensajeCambiarIdioma", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a No existe el ID.
+        /// </summary>
+        internal static string NoExisteID {
+            get {
+                return ResourceManager.GetString("NoExisteID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a El ISBN no existe.
+        /// </summary>
+        internal static string NoExisteISBN {
+            get {
+                return ResourceManager.GetString("NoExisteISBN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a El usuario no existe.
+        /// </summary>
+        internal static string NoExisteUsuario {
+            get {
+                return ResourceManager.GetString("NoExisteUsuario", resourceCulture);
             }
         }
         

@@ -1,4 +1,5 @@
 ﻿using registro_mockup.clases;
+using registro_mockup.Idiomas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,6 +23,7 @@ namespace registro_mockup.formularios_administrador
 
         private void EditarLibro_Load(object sender, EventArgs e)
         {
+            AplicarIdioma();
             lblErrores.Text = "";
             if (basedatos.AbrirConexion())
             {
@@ -39,7 +41,22 @@ namespace registro_mockup.formularios_administrador
             basedatos.CerrarConexion();
 
         }
-        
+
+        private void AplicarIdioma()
+        {
+            this.Text = Idioma.TituloEditarLibro;
+            lblMensaje.Text = Idioma.lblMensajeEditarLibro;
+            lblIsbn.Text = Idioma.lblISBNEditarLibro;
+            lblTitulo.Text = Idioma.btnBuscarLibro;
+            lblAutor.Text = Idioma.lblAutorEditarLibro;
+            lblCategoria.Text = Idioma.lblCategoriaEditarLibro;
+            lblValoracion.Text = Idioma.lblValoracionEditarLibro;
+            lblPrecio.Text = Idioma.lblPrecioEditarLibro;
+            lblSinopsis.Text = Idioma.lblSinopsisEditarLibro;
+            lblInfoSinopsis.Text = Idioma.lblInfoSinopsisEditarLibro;
+            btnCargar.Text = Idioma.btnCargarEditarLibro;
+            btnCrear.Text = Idioma.btnCrearEditarLibro;
+        }
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
@@ -53,8 +70,6 @@ namespace registro_mockup.formularios_administrador
                 Libro l1 = new Libro(txtIsbn.Text, txtTitulo.Text, txtAutor.Text, cmbCategoria.Text, valoracion, pcbPortada.Image, txtSinopsis.Text,precio);
                     Libro.EditarLibro(basedatos.Conexion, l1);
                     this.Close();
-                
-                
             }
             else { }
             basedatos.CerrarConexion();
@@ -72,7 +87,7 @@ namespace registro_mockup.formularios_administrador
             }
             else
             {
-                MessageBox.Show("No se ha seleccionado imagen", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show(Idioma.ImagenNoSeleccionada, Idioma.Aviso, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 

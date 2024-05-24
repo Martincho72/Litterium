@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AsuntoCorreo" xml:space="preserve">
+    <value>Restablecer Contraseña</value>
+  </data>
+  <data name="Aviso" xml:space="preserve">
+    <value>Aviso</value>
+  </data>
   <data name="btnAC" xml:space="preserve">
     <value>Administracion CortoHistoria</value>
   </data>
@@ -318,6 +324,9 @@
   <data name="CorreoNoExiste" xml:space="preserve">
     <value>El correo proporcionado no esta registrado</value>
   </data>
+  <data name="errorProviderAutor" xml:space="preserve">
+    <value>Ingresa el Autor</value>
+  </data>
   <data name="errorProviderContrasenyaLogIn" xml:space="preserve">
     <value>Ingresa la contraseña</value>
   </data>
@@ -330,11 +339,20 @@
   <data name="errorProviderDireccionRegistro" xml:space="preserve">
     <value>Ingresa la dirección</value>
   </data>
+  <data name="errorProviderID" xml:space="preserve">
+    <value>Ingresa el Id</value>
+  </data>
+  <data name="errorProviderIsbn" xml:space="preserve">
+    <value>Ingresa el Isbn</value>
+  </data>
   <data name="errorProviderNombreRegistro" xml:space="preserve">
     <value>Ingresa el nombre</value>
   </data>
   <data name="errorProviderTelefonoRegistro" xml:space="preserve">
     <value>Ingresa  el teléfono</value>
+  </data>
+  <data name="errorProviderTitulo" xml:space="preserve">
+    <value>Ingresa la Titulo</value>
   </data>
   <data name="errorProviderUsuarioLogIn" xml:space="preserve">
     <value>Ingresa el Usuario</value>
@@ -348,10 +366,13 @@
   <data name="gpbValorarLibro" xml:space="preserve">
     <value>Valorar</value>
   </data>
+  <data name="ImagenNoSeleccionada" xml:space="preserve">
+    <value>No se ha seleccionado imagen</value>
+  </data>
   <data name="lblAdministradores" xml:space="preserve">
     <value>Administradores</value>
   </data>
-  <data name="lblAutorAgregarUsuario" xml:space="preserve">
+  <data name="lblAutorAgregarLibro" xml:space="preserve">
     <value>Autor:</value>
   </data>
   <data name="lblAutorEditarCortohistoria" xml:space="preserve">
@@ -363,7 +384,7 @@
   <data name="lblAutorLibro" xml:space="preserve">
     <value>AUTOR : </value>
   </data>
-  <data name="lblCategoriaAgregarUsuario" xml:space="preserve">
+  <data name="lblCategoriaAgregarLibro" xml:space="preserve">
     <value>Categoría:</value>
   </data>
   <data name="lblCategoriaEditarCortohistoria" xml:space="preserve">
@@ -495,7 +516,7 @@
   <data name="lblInfoSinopsisEditarLibro" xml:space="preserve">
     <value>Max. Caracteres: 150</value>
   </data>
-  <data name="lblIsbnAgregarUsuario" xml:space="preserve">
+  <data name="lblIsbnAgregarLibro" xml:space="preserve">
     <value>ISBN:</value>
   </data>
   <data name="lblIsbnBuscarLibro" xml:space="preserve">
@@ -609,7 +630,7 @@
   <data name="lblTextoRegistrase" xml:space="preserve">
     <value>¿No te has registrado aún?</value>
   </data>
-  <data name="lblTituloAgregarUsuario" xml:space="preserve">
+  <data name="lblTituloAgregarLibro" xml:space="preserve">
     <value>Título:</value>
   </data>
   <data name="lblTituloComprar" xml:space="preserve">
@@ -654,7 +675,7 @@
   <data name="lblUsuarioMiCuenta" xml:space="preserve">
     <value>Usuario:</value>
   </data>
-  <data name="lblValoracionAgregarUsuario" xml:space="preserve">
+  <data name="lblValoracionAgregarLibro" xml:space="preserve">
     <value>Valoración:</value>
   </data>
   <data name="lblValoracionEditarCortohistoria" xml:space="preserve">
@@ -669,8 +690,20 @@
   <data name="lblVisualizarCortohistoria" xml:space="preserve">
     <value>Visualizar Cortohistoria de : </value>
   </data>
+  <data name="LibroYaExiste" xml:space="preserve">
+    <value>El libro ya existe</value>
+  </data>
   <data name="MensajeCambiarIdioma" xml:space="preserve">
     <value>¿Estás seguro que quieres cambiar de idioma? (Se le redirigirá al menú principal)</value>
+  </data>
+  <data name="NoExisteID" xml:space="preserve">
+    <value>No existe el ID</value>
+  </data>
+  <data name="NoExisteISBN" xml:space="preserve">
+    <value>El ISBN no existe</value>
+  </data>
+  <data name="NoExisteUsuario" xml:space="preserve">
+    <value>El usuario no existe</value>
   </data>
   <data name="ParaCambiarContrasenya" xml:space="preserve">
     <value>Para cambiar su contraseña haga click en este enlace:</value>

@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using registro_mockup.Idiomas;
+using Org.BouncyCastle.Asn1.Ocsp;
 
 namespace registro_mockup.formularios_administrador
 {
@@ -25,7 +27,7 @@ namespace registro_mockup.formularios_administrador
             if (txtIsbn.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtIsbn, "Ingresa el ISBN");
+                errorProvider1.SetError(txtIsbn, Idioma.errorProviderIsbn);
             }
             else
             {
@@ -35,6 +37,7 @@ namespace registro_mockup.formularios_administrador
         }
         private void EliminarLibro_Load(object sender, EventArgs e)
         {
+            AplicarIdioma();
             lblErrores.Text = "";
         }
 
@@ -55,19 +58,27 @@ namespace registro_mockup.formularios_administrador
                     }
                     else
                     {
-                        lblErrores.Text = "El ISBN no existe";
+                        lblErrores.Text = Idioma.NoExisteID;
                     }
                     basedatos.CerrarConexion();
                 }
                 else
                 {
-                    MessageBox.Show("No se ha podido abrir la conexion");
+                    MessageBox.Show(Idioma.ConexionFallida);
                 }
             }
             else
             {
-                MessageBox.Show("Faltan datos por introducir", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show(Idioma.FaltanDatos, "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+        }
+
+        private void AplicarIdioma()
+        {
+            this.Text = Idioma.TituloEliminarLibro;
+            lblMensaje.Text = Idioma.lblMensajeEliminarLibro;
+            lblIsbn.Text = Idioma.lblIsbnEliminarLibro;
+            btnEliminar.Text = Idioma.btnEliminarLibro;
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

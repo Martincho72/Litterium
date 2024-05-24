@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using registro_mockup.Idiomas;
 
 namespace registro_mockup.formularios_administrador
 {
@@ -26,7 +27,7 @@ namespace registro_mockup.formularios_administrador
             if (txtId.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtId, "Ingresa el Id");
+                errorProvider1.SetError(txtId, Idioma.errorProviderID);
             }
             else
             {
@@ -50,24 +51,33 @@ namespace registro_mockup.formularios_administrador
                     }
                     else
                     {
-                        lblErrores.Text = "El ID no existe";
+                        lblErrores.Text = Idioma.NoExisteID;
                     }
                     basedatos.CerrarConexion();
                 }
                 else
                 {
-                    MessageBox.Show("No se ha podido abrir la conexion");
+                    MessageBox.Show(Idioma.ConexionFallida);
                 }
             }
             else
             {
-                MessageBox.Show("Faltan datos por introducir", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show(Idioma.ImagenNoSeleccionada, Idioma.Aviso, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
         private void EliminarCortoHistoria_Load(object sender, EventArgs e)
         {
+            AplicarIdioma();
             lblErrores.Text = "";
+        }
+
+        private void AplicarIdioma()
+        {
+            this.Text = Idioma.TituloEliminarCortohistoria;
+            lblMensaje.Text = Idioma.lblMensajeEliminarCortohistoria;
+            lblId.Text = Idioma.lblIdEliminarCortohistoria;
+            btnEliminar.Text = Idioma.btnEliminarCortohistoria;
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

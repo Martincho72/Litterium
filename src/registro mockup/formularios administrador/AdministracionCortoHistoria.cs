@@ -1,4 +1,5 @@
 ﻿using registro_mockup.clases;
+using registro_mockup.Idiomas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -53,7 +54,16 @@ namespace registro_mockup.formularios_administrador
         private void AdministracionCortoHistoria_Load(object sender, EventArgs e)
         {
             CargaLibros();
+            AplicarIdioma();
         }
+
+        private void AplicarIdioma()
+        {
+            this.Text = Idioma.TituloAdministracionCortohistoria;
+            btnEliminarCH.Text = Idioma.btnEliminarCortohistoria;
+            btnEditarCH.Text = Idioma.btnEditarCortohistoria;
+        }
+
         private void CargaLibros()
         {
             if (bDatos.AbrirConexion())

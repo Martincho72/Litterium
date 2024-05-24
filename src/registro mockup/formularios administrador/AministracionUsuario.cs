@@ -1,4 +1,5 @@
 ﻿using registro_mockup.formularios_administrador;
+using registro_mockup.Idiomas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,6 +34,7 @@ namespace registro_mockup
         private void AministracionUsuario_Load(object sender, EventArgs e)
         {
             CargaUsuarios();
+            AplicarIdioma();
         }
 
         private void btnAgregarUsuario_Click(object sender, EventArgs e)
@@ -58,6 +60,15 @@ namespace registro_mockup
             form.ShowDialog();
 
             CargaUsuarios();
+        }
+
+        private void AplicarIdioma()
+        {
+            this.Text = Idioma.TituloAdministracionUsuario;
+            btnAgregarUsuario.Text = Idioma.btnAgregarUsuarioAdmin;
+            btnEditarUsuario.Text = Idioma.btnEditarUsuario;
+            btnEliminarUsuario.Text = Idioma.btnEliminarUsuario;
+
         }
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using registro_mockup.Idiomas;
 
 namespace registro_mockup.formularios_administrador
 {
@@ -23,7 +24,7 @@ namespace registro_mockup.formularios_administrador
             if (txtNombre.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtNombre, "Ingresa el Nombre");
+                errorProvider1.SetError(txtNombre, Idioma.errorProviderNombreRegistro);
             }
             else
             {
@@ -32,7 +33,7 @@ namespace registro_mockup.formularios_administrador
             if (txtDireccion.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtDireccion, "Ingresa la Direccion");
+                errorProvider1.SetError(txtDireccion, Idioma.errorProviderDireccionRegistro);
             }
             else
             {
@@ -42,12 +43,12 @@ namespace registro_mockup.formularios_administrador
             if (txtCorreo.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtCorreo, "Ingresa el Correo");
+                errorProvider1.SetError(txtCorreo, Idioma.errorProviderCorreoRegistro);
             }
             if (txtTelefono.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtTelefono, "Ingresa el Telefono");
+                errorProvider1.SetError(txtTelefono, Idioma.errorProviderTelefonoRegistro);
             }
             else
             {
@@ -56,12 +57,12 @@ namespace registro_mockup.formularios_administrador
             if (txtUsuario.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtUsuario, "Ingresa el Usuario");
+                errorProvider1.SetError(txtUsuario, Idioma.errorProviderUsuarioRegistro);
             }
             if (txtContraseña.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtContraseña, "Ingresa la contraseña");
+                errorProvider1.SetError(txtContraseña, Idioma.errorProviderContrasenyaRegistro);
             }
             return ok;
         }
@@ -89,18 +90,18 @@ namespace registro_mockup.formularios_administrador
                     }
                     else
                     {
-                        lblErrores.Text = "El usuario ya existe";
+                        lblErrores.Text = Idioma.UsuarioYaExisteRegistro;
                     }
                     basedatos.CerrarConexion();
                 }
                 else
                 {
-                    MessageBox.Show("No se ha podido abrir la conexion");
+                    MessageBox.Show(Idioma.ConexionFallida);
                 }
             }
             else
             {
-                MessageBox.Show("Faltan datos por introducir", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show(Idioma.FaltanDatos, "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
@@ -114,6 +115,22 @@ namespace registro_mockup.formularios_administrador
         private void AgregarUsuario_Load(object sender, EventArgs e)
         {
             lblErrores.Text = "";
+            AplicarIdioma();
+        }
+
+        private void AplicarIdioma()
+        {
+            this.Text = Idioma.TituloAgregarUsuario;
+            lblMensaje.Text = Idioma.lblMensajeAgregarUsuario;
+            lblNombre.Text = Idioma.lblNombreAgregarUsuario;
+            lblDireccion.Text = Idioma.lblDireccionAgregarUsuario;
+            lblCorreo.Text = Idioma.lblCorreoAgregarUsuario;
+            lblTelefono.Text = Idioma.lblTelefonoAgregarUsuario;
+            lblUsuario.Text = Idioma.lblUsuarioAgegarUsuario;
+            lblContraseña.Text = Idioma.lblContrasena;
+            chbAdmin.Text = Idioma.chbAdminAgregarUsuario;
+            btnCrear.Text = Idioma.btnCrearAgregarUsuario;
+
         }
     }
 }

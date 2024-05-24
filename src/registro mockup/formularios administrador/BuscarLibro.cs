@@ -1,4 +1,6 @@
-﻿using registro_mockup.clases;
+﻿using Org.BouncyCastle.Asn1.Ocsp;
+using registro_mockup.clases;
+using registro_mockup.Idiomas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,7 +32,7 @@ namespace registro_mockup.formularios_administrador
                 }
                 else
                 {
-                    lblErrores.Text = "El ISBN no existe";
+                    lblErrores.Text = Idioma.NoExisteISBN;
                 }
             }
 
@@ -46,8 +48,16 @@ namespace registro_mockup.formularios_administrador
         private void BuscarLibro_Load(object sender, EventArgs e)
         {
             lblErrores.Text = "";
+            AplicarIdioma();
         }
 
+        private void AplicarIdioma()
+        {
+            this.Text = Idioma.TituloBuscarLibro;
+            lblMensaje.Text = Idioma.lblMensajeBuscarLibro;
+            lblIsbn.Text = Idioma.lblIsbnBuscarLibro;
+            btnBuscar.Text = Idioma.btnBuscarLibro;
+        }
         private void btnSalir_Click_1(object sender, EventArgs e)
         {
             this.Close();

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Org.BouncyCastle.Asn1.Ocsp;
+using registro_mockup.Idiomas;
 
 namespace registro_mockup.formularios_administrador
 {
@@ -24,7 +26,7 @@ namespace registro_mockup.formularios_administrador
             if (txtUsuario.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtUsuario, "Ingresa el Usuario");
+                errorProvider1.SetError(txtUsuario, Idioma.errorProviderAutor);
             }
             else
             {
@@ -48,19 +50,27 @@ namespace registro_mockup.formularios_administrador
                     }
                     else
                     {
-                        lblErrores.Text = "El Usuario no existe";
+                        lblErrores.Text = Idioma.NoExisteUsuario;
                     }
                     basedatos.CerrarConexion();
                 }
                 else
                 {
-                    MessageBox.Show("No se ha podido abrir la conexion");
+                    MessageBox.Show(Idioma.ConexionFallida);
                 }
             }
             else
             {
-                MessageBox.Show("Faltan datos por introducir", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show(Idioma.FaltanDatos, "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+        }
+
+        private void AplicarIdioma()
+        {
+            this.Text = Idioma.TituloEliminarUsuario;
+            lblMensaje.Text = Idioma.lblMensajeEliminarUsuario;
+            lblUsuario.Text = Idioma.lblUsuarioEliminarUsuario;
+            btnEliminar.Text = Idioma.btnEliminarUsuario;
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -70,6 +80,7 @@ namespace registro_mockup.formularios_administrador
 
         private void EliminarUsuario_Load(object sender, EventArgs e)
         {
+            AplicarIdioma();
             lblErrores.Text = "";
         }
     }

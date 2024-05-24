@@ -1,4 +1,5 @@
 ﻿using registro_mockup.clases;
+using registro_mockup.Idiomas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,6 +24,7 @@ namespace registro_mockup.formularios_administrador
         private void EditarCortoHistoria_Load(object sender, EventArgs e)
         {
             lblError.Text = "";
+            AplicarIdioma();
             if (basedatos.AbrirConexion())
             {
                 CortoHistoria ch = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, int.Parse(txtId.Text));
@@ -41,6 +43,23 @@ namespace registro_mockup.formularios_administrador
             basedatos.CerrarConexion();
 
         }
+
+        private void AplicarIdioma()
+        {
+            this.Text = Idioma.TituloEditarCortohistoria;
+            lblMensaje.Text = Idioma.lblTituloEditarCortohistoria;
+            lblId.Text = Idioma.lblIdEditarCortohistoria;
+            lblTitulo.Text = Idioma.lblTituloEditarCortohistoria;
+            lblAutor.Text = Idioma.lblAutorEditarCortohistoria;
+            lblFechaPublicacion.Text = Idioma.lblFechaPublicacionEditarCortohistoria;
+            lblCategoria.Text = Idioma.lblCategoriaEditarCortohistoria;
+            lblIdUsuario.Text = Idioma.lblIdUsuarioEditarCortohistoria;
+            chbFinalizada.Text = Idioma.chbFinalizadaEditarCortohistoria;
+            chbContinuable.Text = Idioma.chbContinuableEditarCortohistoria;
+            btnCargar.Text = Idioma.btnCargarImagenCortohistoria;
+            btnEditar.Text = Idioma.btnEditarCortohistoria;
+        }
+
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
@@ -71,7 +90,7 @@ namespace registro_mockup.formularios_administrador
             }
             else
             {
-                MessageBox.Show("No se ha seleccionado imagen", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show(Idioma.ImagenNoSeleccionada, Idioma.Aviso, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
     }

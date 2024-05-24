@@ -1,4 +1,5 @@
 ﻿using registro_mockup.clases;
+using registro_mockup.Idiomas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -31,15 +32,24 @@ namespace registro_mockup.formularios_administrador
                 else
                 {
                     
-                    lblErrores.Text = "No existe el ID";
+                    lblErrores.Text = Idioma.NoExisteID;
                 }
             }
 
             basedatos.CerrarConexion();
         }
 
+        private void AplicarIdioma()
+        {
+            this.Text = Idioma.TituloBuscarCortohistoria;
+            lblMensaje.Text = Idioma.lblMensajeBuscarCortohistoria;
+            lblId.Text = Idioma.lblIdBuscarCortohistoria;
+            btnBuscar.Text = Idioma.btnBuscarCortohistoria;
+        }
+
         private void BuscarCortoHistoria_Load(object sender, EventArgs e)
         {
+            AplicarIdioma();
             lblErrores.Text = "";
         }
 

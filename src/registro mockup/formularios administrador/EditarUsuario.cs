@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using registro_mockup.Idiomas;
 
 namespace registro_mockup.formularios_administrador
 {
@@ -39,6 +40,7 @@ namespace registro_mockup.formularios_administrador
 
         private void EditarUsuario_Load(object sender, EventArgs e)
         {
+            AplicarIdioma();
             lblError.Text = "";
 
             if (basedatos.AbrirConexion())
@@ -56,8 +58,18 @@ namespace registro_mockup.formularios_administrador
             }
             else { }
             basedatos.CerrarConexion();
-
-
+        }
+        private void AplicarIdioma()
+        {
+            this.Text = Idioma.TituloEditarUsuario;
+            lblNombre.Text = Idioma.lblNombreEditarUsuario;
+            lblDireccion.Text = Idioma.lblDireccionEditarUsuario;
+            lblCorreo.Text = Idioma.lblCorreoEditarUsuario;
+            lblTelefono.Text = Idioma.lblTelefonoEditarUsuario;
+            lblUsuario.Text = Idioma.lblUsuarioEditarUsuario;
+            lblContraseña.Text = Idioma.lblContrasenyaEditarUsuario;
+            lblMensajeEditarUsuario.Text = Idioma.lblMensajeEditarUsuario;
+            
         }
 
         private void lblNombre_Click(object sender, EventArgs e)
@@ -78,7 +90,7 @@ namespace registro_mockup.formularios_administrador
             }
             else
             {
-                MessageBox.Show("No se ha seleccionado imagen", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show(Idioma.ImagenNoSeleccionada, Idioma.Aviso, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
     }

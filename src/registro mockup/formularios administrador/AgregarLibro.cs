@@ -1,4 +1,5 @@
 ﻿using registro_mockup.clases;
+using registro_mockup.Idiomas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,7 +26,7 @@ namespace registro_mockup.formularios_administrador
             if (txtIsbn.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtIsbn, "Ingresa el Isbn");
+                errorProvider1.SetError(txtIsbn, Idioma.errorProviderIsbn);
             }
             else
             {
@@ -34,7 +35,7 @@ namespace registro_mockup.formularios_administrador
             if (txtTitulo.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtTitulo, "Ingresa la Titulo");
+                errorProvider1.SetError(txtTitulo, Idioma.errorProviderTitulo);
             }
             else
             {
@@ -44,7 +45,7 @@ namespace registro_mockup.formularios_administrador
             if (txtAutor.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtAutor, "Ingresa el Autor");
+                errorProvider1.SetError(txtAutor, Idioma.errorProviderAutor);
             }
             else
             {
@@ -63,6 +64,23 @@ namespace registro_mockup.formularios_administrador
         private void AgregarLibro_Load(object sender, EventArgs e)
         {
             lblErrores.Text = "";
+            AplicarIdioma();
+        }
+
+        private void AplicarIdioma()
+        {
+            this.Text = Idioma.TituloAgregarLibro;
+            lblMensaje.Text = Idioma.lblMensajeAgregarLibro;
+            lblTitulo.Text = Idioma.lblTituloAgregarLibro;
+            lblAutor.Text = Idioma.lblAutorAgregarLibro;
+            lblCategoria.Text = Idioma.lblCategoriaAgregarLibro;
+            lblValoracion.Text = Idioma.lblValoracionAgregarLibro;
+            lblPrecio.Text = Idioma.lblPrecioAgregarLibro;
+            lblSinopsis.Text = Idioma.lblSinopsisAgregarLibro;
+            lblInfoSinopsis.Text = Idioma.lblInfoSinopsisAgregarLibro;
+            btnCargar.Text = Idioma.btnCargarAgregarLibro;
+            btnCrear.Text = Idioma.btnCrearAgregarLibro;
+
         }
 
         private void btnCrear_Click(object sender, EventArgs e)
@@ -85,18 +103,18 @@ namespace registro_mockup.formularios_administrador
                     }
                     else
                     {
-                        lblErrores.Text = "El libro ya existe";
+                        lblErrores.Text = Idioma.LibroYaExiste;
                     }
                     basedatos.CerrarConexion();
                 }
                 else
                 {
-                    MessageBox.Show("No se ha podido abrir la conexion");
+                    MessageBox.Show(Idioma.ConexionFallida);
                 }
             }
             else
             {
-                MessageBox.Show("Faltan datos por introducir", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show(Idioma.FaltanDatos, "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
@@ -172,7 +190,7 @@ namespace registro_mockup.formularios_administrador
             }
             else
             {
-                MessageBox.Show("No se ha seleccionado imagen", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show(Idioma.ImagenNoSeleccionada, Idioma.Aviso, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
     }

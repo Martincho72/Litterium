@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AsuntoCorreo" xml:space="preserve">
+    <value>Reset Password</value>
+  </data>
+  <data name="Aviso" xml:space="preserve">
+    <value>Alert</value>
+  </data>
   <data name="btnAC" xml:space="preserve">
     <value>Short Story Management</value>
   </data>
@@ -318,29 +324,41 @@
   <data name="CorreoNoExiste" xml:space="preserve">
     <value>The provided email is not registered.</value>
   </data>
+  <data name="errorProviderAutor" xml:space="preserve">
+    <value>Insert the author</value>
+  </data>
   <data name="errorProviderContrasenyaLogIn" xml:space="preserve">
-    <value>Insert your password</value>
+    <value>Insert password</value>
   </data>
   <data name="errorProviderContrasenyaRegistro" xml:space="preserve">
-    <value>Insert your password</value>
+    <value>Insert password</value>
   </data>
   <data name="errorProviderCorreoRegistro" xml:space="preserve">
-    <value>Insert your email</value>
+    <value>Insert email</value>
   </data>
   <data name="errorProviderDireccionRegistro" xml:space="preserve">
-    <value>Insert your address</value>
+    <value>Insert address</value>
+  </data>
+  <data name="errorProviderID" xml:space="preserve">
+    <value>Insert ID</value>
+  </data>
+  <data name="errorProviderIsbn" xml:space="preserve">
+    <value>Insert the Isbn</value>
   </data>
   <data name="errorProviderNombreRegistro" xml:space="preserve">
-    <value>Insert your name</value>
+    <value>Insert name</value>
   </data>
   <data name="errorProviderTelefonoRegistro" xml:space="preserve">
-    <value>Insert your phone number</value>
+    <value>Insert phone number</value>
+  </data>
+  <data name="errorProviderTitulo" xml:space="preserve">
+    <value>Insert the tittle</value>
   </data>
   <data name="errorProviderUsuarioLogIn" xml:space="preserve">
-    <value>Insert your user</value>
+    <value>Insert user</value>
   </data>
   <data name="errorProviderUsuarioRegistro" xml:space="preserve">
-    <value>Insert your user</value>
+    <value>Insert user</value>
   </data>
   <data name="FaltanDatos" xml:space="preserve">
     <value>Some data is missing</value>
@@ -348,10 +366,13 @@
   <data name="gpbValorarLibro" xml:space="preserve">
     <value>Evaluate Book</value>
   </data>
+  <data name="ImagenNoSeleccionada" xml:space="preserve">
+    <value>No image has been selected.</value>
+  </data>
   <data name="lblAdministradores" xml:space="preserve">
     <value>Administrators</value>
   </data>
-  <data name="lblAutorAgregarUsuario" xml:space="preserve">
+  <data name="lblAutorAgregarLibro" xml:space="preserve">
     <value>Author:</value>
   </data>
   <data name="lblAutorEditarCortohistoria" xml:space="preserve">
@@ -363,7 +384,7 @@
   <data name="lblAutorLibro" xml:space="preserve">
     <value>AUTHOR : </value>
   </data>
-  <data name="lblCategoriaAgregarUsuario" xml:space="preserve">
+  <data name="lblCategoriaAgregarLibro" xml:space="preserve">
     <value>Category:</value>
   </data>
   <data name="lblCategoriaEditarCortohistoria" xml:space="preserve">
@@ -490,12 +511,12 @@
     <value>Total Amount : 0,00€</value>
   </data>
   <data name="lblInfoSinopsisAgregarLibro" xml:space="preserve">
-    <value>Max. Characters150</value>
+    <value>Max. Characters: 150</value>
   </data>
   <data name="lblInfoSinopsisEditarLibro" xml:space="preserve">
-    <value>Max. Characters150</value>
+    <value>Max. Characters: 150</value>
   </data>
-  <data name="lblIsbnAgregarUsuario" xml:space="preserve">
+  <data name="lblIsbnAgregarLibro" xml:space="preserve">
     <value>ISBN:</value>
   </data>
   <data name="lblIsbnBuscarLibro" xml:space="preserve">
@@ -609,7 +630,7 @@
   <data name="lblTextoRegistrase" xml:space="preserve">
     <value>Haven't registered yet?</value>
   </data>
-  <data name="lblTituloAgregarUsuario" xml:space="preserve">
+  <data name="lblTituloAgregarLibro" xml:space="preserve">
     <value>Title:</value>
   </data>
   <data name="lblTituloComprar" xml:space="preserve">
@@ -654,7 +675,7 @@
   <data name="lblUsuarioMiCuenta" xml:space="preserve">
     <value>User:</value>
   </data>
-  <data name="lblValoracionAgregarUsuario" xml:space="preserve">
+  <data name="lblValoracionAgregarLibro" xml:space="preserve">
     <value>Rating:</value>
   </data>
   <data name="lblValoracionEditarCortohistoria" xml:space="preserve">
@@ -669,8 +690,20 @@
   <data name="lblVisualizarCortohistoria" xml:space="preserve">
     <value>View Short Story of : </value>
   </data>
+  <data name="LibroYaExiste" xml:space="preserve">
+    <value>The book already exists.</value>
+  </data>
   <data name="MensajeCambiarIdioma" xml:space="preserve">
     <value>Are you sure you want to change the language? (You will be redirected to the main menu)</value>
+  </data>
+  <data name="NoExisteID" xml:space="preserve">
+    <value>ID does not exist</value>
+  </data>
+  <data name="NoExisteISBN" xml:space="preserve">
+    <value>ISBN does not exist</value>
+  </data>
+  <data name="NoExisteUsuario" xml:space="preserve">
+    <value>user ID does not exist</value>
   </data>
   <data name="ParaCambiarContrasenya" xml:space="preserve">
     <value>To change your password, click on this link:</value>

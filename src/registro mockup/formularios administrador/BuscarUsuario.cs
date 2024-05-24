@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using registro_mockup.Idiomas;
 namespace registro_mockup.formularios_administrador
 {
     public partial class BuscarUsuario : Form
@@ -29,7 +29,7 @@ namespace registro_mockup.formularios_administrador
                 }
                 else
                 {
-                    lblErrores.Text = "El usuario no existe";
+                    lblErrores.Text = Idioma.NoExisteUsuario;
                 }
             }
 
@@ -45,6 +45,15 @@ namespace registro_mockup.formularios_administrador
         private void BuscarUsuario_Load(object sender, EventArgs e)
         {
             lblErrores.Text = "";
+            AplicarIdioma();
+        }
+
+        private void AplicarIdioma()
+        {
+            this.Text = Idioma.TituloBuscarUsuario;
+            lblMensaje.Text = Idioma.lblMensajeBuscarUsuario;
+            lblUsuario.Text = Idioma.lblUsuarioBuscarUsuario;
+            btnBuscar.Text = Idioma.btnBuscarUsuario;
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)

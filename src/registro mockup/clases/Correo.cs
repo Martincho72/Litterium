@@ -71,7 +71,7 @@ namespace registro_mockup.clases
         {
             correo.From = new MailAddress("ayudalitterium@outlook.com", "Litteriumsupport", System.Text.Encoding.UTF8);//Correo de salida
             correo.To.Add(destinatario);
-            correo.Subject = "Restablecer Contraseña"; //Asunto
+            correo.Subject = Idioma.AsuntoCorreo; //Asunto
             correo.Body = "<p>"+Idioma.TuNuevaContrasenya + nuevacontrasena + "<br>"+Idioma.ParaCambiarContrasenya+"<a href=" + enlace + ">" + enlace + "</a>"; //Mensaje del correo
             correo.IsBodyHtml = true;
             correo.Priority = MailPriority.Normal;

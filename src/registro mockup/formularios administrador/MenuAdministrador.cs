@@ -3,13 +3,17 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
+using Org.BouncyCastle.Asn1.Ocsp;
 using registro_mockup.formularios_administrador;
 using registro_mockup.Idiomas;
+using registro_mockup.Properties;
 
 namespace registro_mockup
 {
@@ -23,6 +27,16 @@ namespace registro_mockup
         public MenuAdministrador(Form form1)
         {
             InitializeComponent();
+            string idiomaActual = Thread.CurrentThread.CurrentUICulture.Name;
+
+            if (idiomaActual == "es-ES")
+            {
+                pcbIdioma.Image = Resources.espanol;
+            }
+            else if (idiomaActual == "en-GB")
+            {
+                pcbIdioma.Image = Resources.english;
+            }
             this.previousForm = form1;
             administrarUsuario = new Panel();
             administrarUsuario.Size = new Size(7, 60);
@@ -35,6 +49,16 @@ namespace registro_mockup
         public MenuAdministrador()
         {
             InitializeComponent();
+            string idiomaActual = Thread.CurrentThread.CurrentUICulture.Name;
+
+            if (idiomaActual == "es-ES")
+            {
+                pcbIdioma.Image = Resources.espanol;
+            }
+            else if (idiomaActual == "en-GB")
+            {
+                pcbIdioma.Image = Resources.english;
+            }
             administrarUsuario = new Panel();
             administrarUsuario.Size = new Size(7, 60);
             panelMenu.Controls.Add(administrarUsuario);
@@ -46,7 +70,7 @@ namespace registro_mockup
 
         private void MenuAdministrador_Load(object sender, EventArgs e)
         {
-
+            AplicarIdioma();
         }
         private void OpenChildForm(Form childForm)
         {
@@ -140,6 +164,14 @@ namespace registro_mockup
                 this.WindowState = FormWindowState.Normal;
             }
         }
+        private void AplicarIdioma()
+        {
+            this.Text = Idioma.TituloMenuAdministrador;
+            btnCS.Text = Idioma.btnCS;
+            btnAU.Text = Idioma.btnAU;
+            btnAL.Text = Idioma.btnAL;
+            btnAC.Text = Idioma.btnAC;
+        }
 
         private void btnPictureMinimizar_Click(object sender, EventArgs e)
         {
@@ -150,6 +182,31 @@ namespace registro_mockup
         {
             this.previousForm.Show();
             this.Hide();
+        }
+
+        private void pcbIdioma_Click(object sender, EventArgs e)
+        {
+            string idiomaActual = Thread.CurrentThread.CurrentUICulture.Name;
+            string cultura = "";
+
+            DialogResult resultado = MessageBox.Show(Idioma.MensajeCambiarIdioma, Idioma.CaptionCambiarIdioma, MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (resultado == DialogResult.Yes)
+            {
+                if (idiomaActual == "es-ES")
+                {
+                    cultura = "en-GB";
+                    pcbIdioma.Image = Resources.english;
+
+                }
+                else if (idiomaActual == "en-GB")
+                {
+                    cultura = "es-ES";
+                    pcbIdioma.Image = Resources.espanol;
+                }
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultura);
+                if (currentForm != null) { currentForm.Close();}
+                AplicarIdioma();
+            }
         }
     }
 }
