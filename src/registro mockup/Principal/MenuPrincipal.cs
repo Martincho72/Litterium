@@ -70,7 +70,6 @@ namespace registro_mockup
                 actualBTN.IconColor = color;
                 actualBTN.TextImageRelation = TextImageRelation.TextBeforeImage;
                 actualBTN.ImageAlign = ContentAlignment.MiddleRight;
-                bordeizqBTN.BackColor = color;
                 bordeizqBTN.Location = new Point(0, actualBTN.Location.Y);
                 bordeizqBTN.BringToFront();
 
