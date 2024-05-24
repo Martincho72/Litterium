@@ -161,9 +161,20 @@ namespace registro_mockup.Principal
 
         }
 
-private void pcbRecomendado1_Click(object sender, EventArgs e)
+        private void pcbRecomendado1_Click(object sender, EventArgs e)
         {
-            
+            if (basedatos.AbrirConexion())
+            {
+                CortoHistoria ch1 = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, "El Reloj Encantado");
+                OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch1.Id));
+
+                OcultarPaneles();
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
+            basedatos.CerrarConexion();
         }
         private void AplicarIdioma()
         {
@@ -259,6 +270,70 @@ private void pcbRecomendado1_Click(object sender, EventArgs e)
             {
                 List<string> cortoHistorias = CortoHistoria.EncontrarCortoHistoriasRecientes(basedatos.Conexion);
                 CortoHistoria ch5 = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, cortoHistorias[4]);
+                OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch5.Id));
+
+                OcultarPaneles();
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
+            basedatos.CerrarConexion();
+        }
+
+        private void pcbRecomendado2_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+                CortoHistoria ch2 = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, "El Cuaderno Mágico");
+                OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch2.Id));
+
+                OcultarPaneles();
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
+            basedatos.CerrarConexion();
+        }
+
+        private void pcbRecomendado3_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+                CortoHistoria ch3 = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, "La Caja de Música");
+                OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch3.Id));
+
+                OcultarPaneles();
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
+            basedatos.CerrarConexion();
+        }
+
+        private void pcbRecomendado4_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+                CortoHistoria ch4 = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, "El Espejo Misterioso");
+                OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch4.Id));
+
+                OcultarPaneles();
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
+            basedatos.CerrarConexion();
+        }
+
+        private void pcbRecomendado5_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+                CortoHistoria ch5 = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, "El Libro Olvidado");
                 OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch5.Id));
 
                 OcultarPaneles();

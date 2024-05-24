@@ -65,7 +65,6 @@
             // 
             // txtTitulo
             // 
-            this.txtTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTitulo.Location = new System.Drawing.Point(145, 10);
             this.txtTitulo.Margin = new System.Windows.Forms.Padding(4);
@@ -86,7 +85,6 @@
             // 
             // txtCortohistoriaCrear
             // 
-            this.txtCortohistoriaCrear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCortohistoriaCrear.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCortohistoriaCrear.Location = new System.Drawing.Point(23, 111);
             this.txtCortohistoriaCrear.Margin = new System.Windows.Forms.Padding(4);

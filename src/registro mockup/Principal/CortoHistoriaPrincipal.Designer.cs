@@ -613,12 +613,12 @@
             this.gbxRecomendadosCH4.Size = new System.Drawing.Size(193, 178);
             this.gbxRecomendadosCH4.TabIndex = 9;
             this.gbxRecomendadosCH4.TabStop = false;
-            this.gbxRecomendadosCH4.Text = "Percy Jackson";
+            this.gbxRecomendadosCH4.Text = "El Espejo Misterioso";
             // 
             // pcbRecomendado4
             // 
             this.pcbRecomendado4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pcbRecomendado4.Image = global::registro_mockup.Properties.Resources.Percy_Jackson;
+            this.pcbRecomendado4.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
             this.pcbRecomendado4.Location = new System.Drawing.Point(3, 23);
             this.pcbRecomendado4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbRecomendado4.Name = "pcbRecomendado4";
@@ -626,6 +626,7 @@
             this.pcbRecomendado4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbRecomendado4.TabIndex = 0;
             this.pcbRecomendado4.TabStop = false;
+            this.pcbRecomendado4.Click += new System.EventHandler(this.pcbRecomendado4_Click);
             // 
             // gbxRecomendadosCH5
             // 
@@ -638,12 +639,12 @@
             this.gbxRecomendadosCH5.Size = new System.Drawing.Size(195, 178);
             this.gbxRecomendadosCH5.TabIndex = 8;
             this.gbxRecomendadosCH5.TabStop = false;
-            this.gbxRecomendadosCH5.Text = "Un cuento Perfecto";
+            this.gbxRecomendadosCH5.Text = "El libro olvidado";
             // 
             // pcbRecomendado5
             // 
             this.pcbRecomendado5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pcbRecomendado5.Image = global::registro_mockup.Properties.Resources.Un_cuento_Perfecto;
+            this.pcbRecomendado5.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
             this.pcbRecomendado5.Location = new System.Drawing.Point(3, 23);
             this.pcbRecomendado5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbRecomendado5.Name = "pcbRecomendado5";
@@ -651,6 +652,7 @@
             this.pcbRecomendado5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbRecomendado5.TabIndex = 0;
             this.pcbRecomendado5.TabStop = false;
+            this.pcbRecomendado5.Click += new System.EventHandler(this.pcbRecomendado5_Click);
             // 
             // gbxRecomendadosCH3
             // 
@@ -663,12 +665,12 @@
             this.gbxRecomendadosCH3.Size = new System.Drawing.Size(190, 178);
             this.gbxRecomendadosCH3.TabIndex = 7;
             this.gbxRecomendadosCH3.TabStop = false;
-            this.gbxRecomendadosCH3.Text = "El pollo Pepe";
+            this.gbxRecomendadosCH3.Text = "La Caja de Musica";
             // 
             // pcbRecomendado3
             // 
             this.pcbRecomendado3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pcbRecomendado3.Image = global::registro_mockup.Properties.Resources.El_pollo_pepe;
+            this.pcbRecomendado3.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
             this.pcbRecomendado3.Location = new System.Drawing.Point(3, 23);
             this.pcbRecomendado3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbRecomendado3.Name = "pcbRecomendado3";
@@ -676,6 +678,7 @@
             this.pcbRecomendado3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbRecomendado3.TabIndex = 0;
             this.pcbRecomendado3.TabStop = false;
+            this.pcbRecomendado3.Click += new System.EventHandler(this.pcbRecomendado3_Click);
             // 
             // gbxRecomendadosCH1
             // 
@@ -689,13 +692,13 @@
             this.gbxRecomendadosCH1.Size = new System.Drawing.Size(193, 178);
             this.gbxRecomendadosCH1.TabIndex = 6;
             this.gbxRecomendadosCH1.TabStop = false;
-            this.gbxRecomendadosCH1.Text = "El principito";
+            this.gbxRecomendadosCH1.Text = "El Reloj encantado";
             this.gbxRecomendadosCH1.UseCompatibleTextRendering = true;
             // 
             // pcbRecomendado1
             // 
             this.pcbRecomendado1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pcbRecomendado1.Image = global::registro_mockup.Properties.Resources.El_principito;
+            this.pcbRecomendado1.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo3;
             this.pcbRecomendado1.Location = new System.Drawing.Point(3, 23);
             this.pcbRecomendado1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbRecomendado1.Name = "pcbRecomendado1";
@@ -717,12 +720,12 @@
             this.gbxRecomendadosCH2.Size = new System.Drawing.Size(195, 178);
             this.gbxRecomendadosCH2.TabIndex = 5;
             this.gbxRecomendadosCH2.TabStop = false;
-            this.gbxRecomendadosCH2.Text = "Alas de Sangre";
+            this.gbxRecomendadosCH2.Text = "El Cuaderno Magico";
             // 
             // pcbRecomendado2
             // 
             this.pcbRecomendado2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pcbRecomendado2.Image = global::registro_mockup.Properties.Resources.Alas_de_Sangre;
+            this.pcbRecomendado2.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
             this.pcbRecomendado2.Location = new System.Drawing.Point(3, 23);
             this.pcbRecomendado2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcbRecomendado2.Name = "pcbRecomendado2";
@@ -730,6 +733,7 @@
             this.pcbRecomendado2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbRecomendado2.TabIndex = 0;
             this.pcbRecomendado2.TabStop = false;
+            this.pcbRecomendado2.Click += new System.EventHandler(this.pcbRecomendado2_Click);
             // 
             // panel8
             // 
