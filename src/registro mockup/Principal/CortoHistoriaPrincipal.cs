@@ -85,12 +85,38 @@ namespace registro_mockup.Principal
 
                 Libro portada5 = Libro.EncontrarDatosLibroTitulo(basedatos.Conexion, titulo[4]);
                 pcbValoradoLibro5.Image = portada5.Portada;
+
+
+                List<string> cortoHistorias = CortoHistoria.EncontrarCortoHistoriasRecientes(basedatos.Conexion);
+
+                grbValoradosCH1.Text = cortoHistorias[0];
+                grbValoradosCH2.Text = cortoHistorias[1];
+                grbValoradosCH3.Text = cortoHistorias[2];
+                grbValoradosCH4.Text = cortoHistorias[3];
+                grbValoradosCH5.Text = cortoHistorias[4];
+
+                CortoHistoria ch1 = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, cortoHistorias[0]);
+                pcbReciente1.Image = ch1.Portada;
+
+                CortoHistoria ch2 = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, cortoHistorias[1]);
+                pcbReciente2.Image = ch2.Portada;
+
+                CortoHistoria ch3 = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, cortoHistorias[2]);
+                pcbReciente3.Image = ch3.Portada;
+
+                CortoHistoria ch4 = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, cortoHistorias[3]);
+                pcbReciente4.Image = ch4.Portada;
+
+                CortoHistoria ch5 = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, cortoHistorias[4]);
+                pcbReciente5.Image = ch5.Portada;
             }
             else
             {
                 MessageBox.Show("");
             }
             basedatos.CerrarConexion();
+
+
         }
 
         private void pictureBox11_Click(object sender, EventArgs e)
