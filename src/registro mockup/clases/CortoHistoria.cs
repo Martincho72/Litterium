@@ -110,6 +110,15 @@ namespace registro_mockup.clases
             this.foto = foto;
         }
 
+        public CortoHistoria(string titulo, string autor, DateTime fechaPublicacion, string categoria, Image foto)
+        {
+            this.titulo = titulo;
+            this.autor = autor;
+            this.fechaPublicacion = fechaPublicacion;
+            this.categoria = categoria;
+            this.foto = foto;
+        }
+
         public static List<CortoHistoria> BuscarCortoHistoria(MySqlConnection conexion)
         {
             List<CortoHistoria> lista = new List<CortoHistoria>();
@@ -336,6 +345,44 @@ namespace registro_mockup.clases
             reader.Close();
             return ch;
         }
+
+        public static CortoHistoria EncontrarDatosCortoHistoria(MySqlConnection conexion, string tituloch)
+        {
+            string consulta = string.Format("SELECT * FROM cortohistoria WHERE titulo = '{0}'", tituloch);
+
+            MySqlCommand comando = new MySqlCommand(consulta, conexion);
+            MySqlDataReader reader = comando.ExecuteReader();
+            CortoHistoria ch = new CortoHistoria();
+            if (reader.HasRows)   // En caso que se hayan registros en el objeto reader
+            {
+                // Recorremos el reader (registro por registro) y cargamos la lista de empleados.
+                while (reader.Read())
+                {
+
+                    int idch = reader.GetInt32(0);
+                    string titulo = reader.GetString(1);
+                    string autor = reader.GetString(2);
+                    DateTime fecha = reader.GetDateTime(3);
+                    string categoria = reader.GetString(4);
+                    bool continuable = reader.GetBoolean(5);
+                    bool finalizada = reader.GetBoolean(6);
+                    int id_usuario = reader.GetInt32(7);
+                    string texto = reader.GetString(9);
+
+                    byte[] img = (byte[])reader["imagen"];
+                    MemoryStream ms = new MemoryStream(img);
+                    Image foto = Image.FromStream(ms);
+
+                    // Crear el objeto Usuario y agregarlo a la lista
+                    ch = new CortoHistoria(idch, titulo, autor, fecha, categoria, continuable, finalizada, id_usuario, foto, texto);
+                }
+
+
+            }
+            // devolvemos la lista cargada con los usuarios.
+            reader.Close();
+            return ch;
+        }
         public static List<CortoHistoria> BuscarBorradores(MySqlConnection conexion,int id_usu)
         {
             List<CortoHistoria> lista = new List<CortoHistoria>();
@@ -367,6 +414,33 @@ namespace registro_mockup.clases
                     // Crear el objeto Usuario y agregarlo a la lista
                     CortoHistoria ch = new CortoHistoria(titulo, autor, fecha, categoria, continuable, finalizada, foto);
                     lista.Add(ch);
+                }
+
+            }
+            // devolvemos la lista cargada con los usuarios.
+            reader.Close();
+            return lista;
+        }
+
+
+        public static List<string> EncontrarCortoHistoriasRecientes(MySqlConnection conexion)
+        {
+            List<string> lista = new List<string>();
+            string consulta = string.Format("SELECT titulo FROM cortohistoria ORDER BY id desc");
+
+            // Creamos el objeto command al cual le pasamos la consulta y la conexión
+            MySqlCommand comando = new MySqlCommand(consulta, conexion);
+            // Ejecutamos el comando y recibimos en un objeto DataReader la lista de registros seleccionados.
+            // Recordemos que un objeto DataReader es una especie de tabla de datos virtual.
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            if (reader.HasRows)   // En caso que se hayan registros en el objeto reader
+            {
+                // Recorremos el reader (registro por registro) y cargamos la lista de empleados.
+                while (reader.Read())
+                {
+                    string titulo = reader.GetString(0);
+                    lista.Add(titulo);
                 }
 
             }
@@ -409,6 +483,6 @@ namespace registro_mockup.clases
             reader.Close();
             return lista;
         }*/
-       
+
     }
 }
