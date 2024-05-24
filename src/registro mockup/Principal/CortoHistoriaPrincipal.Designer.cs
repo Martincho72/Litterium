@@ -442,6 +442,7 @@
             this.pcbReciente4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbReciente4.TabIndex = 0;
             this.pcbReciente4.TabStop = false;
+            this.pcbReciente4.Click += new System.EventHandler(this.pcbReciente4_Click);
             // 
             // grbValoradosCH5
             // 
@@ -467,6 +468,7 @@
             this.pcbReciente5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbReciente5.TabIndex = 0;
             this.pcbReciente5.TabStop = false;
+            this.pcbReciente5.Click += new System.EventHandler(this.pcbReciente5_Click);
             // 
             // grbValoradosCH3
             // 
@@ -492,6 +494,7 @@
             this.pcbReciente3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbReciente3.TabIndex = 0;
             this.pcbReciente3.TabStop = false;
+            this.pcbReciente3.Click += new System.EventHandler(this.pcbReciente3_Click);
             // 
             // grbValoradosCH1
             // 
@@ -517,6 +520,7 @@
             this.pcbReciente1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbReciente1.TabIndex = 0;
             this.pcbReciente1.TabStop = false;
+            this.pcbReciente1.Click += new System.EventHandler(this.pcbReciente1_Click);
             // 
             // grbValoradosCH2
             // 
@@ -542,6 +546,7 @@
             this.pcbReciente2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbReciente2.TabIndex = 0;
             this.pcbReciente2.TabStop = false;
+            this.pcbReciente2.Click += new System.EventHandler(this.pcbReciente2_Click);
             // 
             // panel3
             // 
