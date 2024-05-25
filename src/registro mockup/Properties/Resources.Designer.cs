@@ -183,6 +183,36 @@ namespace registro_mockup.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Imagen_de_WhatsApp_2024_05_25_a_las_17_15_14_c36a9dc2 {
+            get {
+                object obj = ResourceManager.GetObject("Imagen de WhatsApp 2024-05-25 a las 17.15.14_c36a9dc2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Imagen_de_WhatsApp_2024_05_25_a_las_17_15_14_c36a9dc2_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Imagen_de_WhatsApp_2024-05-25_a_las_17.15.14_c36a9dc2-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Imagen_de_WhatsApp_2024_05_25_a_las_17_151 {
+            get {
+                object obj = ResourceManager.GetObject("Imagen_de_WhatsApp_2024-05-25_a_las_17.151", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lecha {
             get {
                 object obj = ResourceManager.GetObject("lecha", resourceCulture);

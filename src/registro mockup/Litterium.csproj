@@ -586,5 +586,14 @@
   <ItemGroup>
     <None Include="Resources\atrasB.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen de WhatsApp 2024-05-25 a las 17.15.14_c36a9dc2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen_de_WhatsApp_2024-05-25_a_las_17.15.14_c36a9dc2-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen_de_WhatsApp_2024-05-25_a_las_17.15.14_c36a9dc2-removebg-preview1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
