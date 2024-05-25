@@ -51,7 +51,15 @@ namespace registro_mockup.clases
             this.precio = precio;
         }
 
-      
+        public Libro(string isbn, string titulo, string autor, string categoria, Image foto, double precio)
+        {
+            this.isbn = isbn;
+            this.titulo = titulo;
+            this.autor = autor;
+            this.categoria = categoria;
+            this.precio = precio;
+            this.portada = foto;
+        }
 
         public static List<Libro> BuscarLibros(MySqlConnection conexion)
         {
@@ -121,6 +129,44 @@ namespace registro_mockup.clases
 
                     // Crear el objeto Usuario y agregarlo a la lista
                     Libro libro = new Libro(isbn, titulo, autor, categoria, valoracion, foto, sinopsis, precio);
+                    lista.Add(libro);
+                }
+
+            }
+            // devolvemos la lista cargada con los usuarios.
+            reader.Close();
+            return lista;
+        }
+
+        public static List<Libro> BuscarLibrosBusqueda(MySqlConnection conexion, string busqueda)
+        {
+            List<Libro> lista = new List<Libro>();
+            string consulta = string.Format("SELECT isbn,titulo,autor,categoria,imagen,precio FROM libro WHERE autor LIKE '{0}%' OR titulo LIKE '{0}%' OR categoria LIKE '{0}%' OR isbn LIKE '{0}%'", busqueda);
+
+            // Creamos el objeto command al cual le pasamos la consulta y la conexión
+            MySqlCommand comando = new MySqlCommand(consulta, conexion);
+            // Ejecutamos el comando y recibimos en un objeto DataReader la lista de registros seleccionados.
+            // Recordemos que un objeto DataReader es una especie de tabla de datos virtual.
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            if (reader.HasRows)   // En caso que se hayan registros en el objeto reader
+            {
+                // Recorremos el reader (registro por registro) y cargamos la lista de empleados.
+                while (reader.Read())
+                {
+                    string isbn = reader.GetString(0);
+                    string titulo = reader.GetString(1);
+                    string autor = reader.GetString(2);
+                    string categoria = reader.GetString(3);
+                    double precio = reader.GetDouble(5);
+                    byte[] img = (byte[])reader["imagen"];
+                    MemoryStream ms = new MemoryStream(img);
+                    Image foto = Image.FromStream(ms);
+                    
+                    
+
+                    // Crear el objeto Usuario y agregarlo a la lista
+                    Libro libro = new Libro(isbn, titulo, autor, categoria, foto, precio);
                     lista.Add(libro);
                 }
 
