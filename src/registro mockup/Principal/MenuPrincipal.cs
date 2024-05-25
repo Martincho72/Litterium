@@ -212,7 +212,7 @@ namespace registro_mockup
         {
             if (basedatos.AbrirConexion())
             {
-                OpenChildForm(new Busqueda(txtBuscador.Text, cmbLibroCortohistoria.Text));
+                OpenChildForm(new Busqueda(txtBuscador.Text, cmbLibroCortohistoria.Text,usuariomenu));
             }
             else
             {

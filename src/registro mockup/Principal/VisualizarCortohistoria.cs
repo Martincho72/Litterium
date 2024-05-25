@@ -64,7 +64,7 @@ namespace registro_mockup.Principal
             {
                 CortoHistoria ch = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, id);
                 CrearCortohistoria crear = new CrearCortohistoria(ch.Id, us);
-                crear.Show();
+                crear.ShowDialog();
             }
             else {}
             basedatos.CerrarConexion();
