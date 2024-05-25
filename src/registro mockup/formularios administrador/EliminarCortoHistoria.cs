@@ -57,7 +57,7 @@ namespace registro_mockup.formularios_administrador
                 }
                 else
                 {
-                    MessageBox.Show(Idioma.ConexionFallida);
+                    MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else

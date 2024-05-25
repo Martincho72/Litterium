@@ -56,8 +56,10 @@ namespace registro_mockup.formularios_administrador
                     MessageBox.Show("Faltan datos por introducir!");
                 }
             }
-
-            else { }
+            else 
+            {
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             basedatos.CerrarConexion();
         }
 

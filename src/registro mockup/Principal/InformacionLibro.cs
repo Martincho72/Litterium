@@ -34,6 +34,10 @@ namespace registro_mockup.Principal
                 pcbPortadaLibro.Image = l1.Portada;
                 lblPrecioLibro.Text += l1.Precio + "€";
             }
+            else
+            {
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             basedatos.CerrarConexion();
         }
 
@@ -116,7 +120,7 @@ namespace registro_mockup.Principal
             }
             else
             {
-
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
         }
@@ -167,7 +171,10 @@ namespace registro_mockup.Principal
                 }
                 MessageBox.Show(Idioma.ObjetoAlCarrito);
             }
-            else { }
+            else 
+            {
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             basedatos.CerrarConexion();
         }
 

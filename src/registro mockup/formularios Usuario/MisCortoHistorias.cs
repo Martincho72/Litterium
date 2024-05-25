@@ -36,6 +36,10 @@ namespace registro_mockup.formularios_Usuario
                         dgvCortoHistorias.Rows.Add(ch.Titulo,ch.Autor,ch.FechaPublicacion.ToString("dd/MM/yyyy"),ch.Categoria,ch.Continuable,ch.Finalizada,ch.Portada);
                     }
                 }
+                else
+                {
+                    MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             finally
             {

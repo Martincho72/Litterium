@@ -37,7 +37,10 @@ namespace registro_mockup.formularios_administrador
                 txtPrecio.Text=l1.Precio.ToString();
                 txtSinopsis.Text = l1.Sinopsis;
             }
-            else { }
+            else 
+            {
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             basedatos.CerrarConexion();
 
         }
@@ -71,7 +74,10 @@ namespace registro_mockup.formularios_administrador
                     Libro.EditarLibro(basedatos.Conexion, l1);
                     this.Close();
             }
-            else { }
+            else 
+            {
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             basedatos.CerrarConexion();
         }
 

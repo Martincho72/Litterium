@@ -32,6 +32,10 @@ namespace registro_mockup.Principal
                     dgvResumen.Rows.Add(libro.Isbn, libro.Titulo, libro.Autor, libro.Categoria, libro.Valoracion, libro.Precio, libro.Cantidad, libro.Online);
                 }
             }
+            else
+            {
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             basedatos.CerrarConexion();
         }
 
@@ -58,7 +62,7 @@ namespace registro_mockup.Principal
             }
             else
             {
-
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
             if (!fisico) online = true;
@@ -99,7 +103,7 @@ namespace registro_mockup.Principal
             }
             else
             {
-
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
         }

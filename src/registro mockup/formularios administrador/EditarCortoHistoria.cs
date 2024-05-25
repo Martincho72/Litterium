@@ -39,7 +39,10 @@ namespace registro_mockup.formularios_administrador
                 pcbPortada.Image = ch.Portada;
                 txtTexto.Text = ch.Texto;
             }
-            else { }
+            else 
+            {
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             basedatos.CerrarConexion();
 
         }
@@ -74,7 +77,10 @@ namespace registro_mockup.formularios_administrador
                 CortoHistoria.EditarCortoHistoria(basedatos.Conexion, corto);
                 this.Close();
             }
-            else { }
+            else 
+            {
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             basedatos.CerrarConexion();
         }
 

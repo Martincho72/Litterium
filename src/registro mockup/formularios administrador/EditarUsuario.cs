@@ -34,7 +34,10 @@ namespace registro_mockup.formularios_administrador
             Usuario.EditarUsuario(basedatos.Conexion, usuario);
             this.Close();
             }
-            else { }
+            else 
+            {
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             basedatos.CerrarConexion();
         }
 
@@ -56,7 +59,10 @@ namespace registro_mockup.formularios_administrador
                 chbVetado.Checked = usuario.Vetado;
                 pcbImagen.Image = usuario.Foto;
             }
-            else { }
+            else 
+            {
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             basedatos.CerrarConexion();
         }
         private void AplicarIdioma()
