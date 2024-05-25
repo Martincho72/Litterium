@@ -18,8 +18,10 @@ namespace registro_mockup.Principal
         BDatos basedatos = new BDatos();
         string us;
         int id;
-        public VisualizarCortohistoria(string usuario ,int id)
+        string formularioanterior;
+        public VisualizarCortohistoria(string usuario ,int id, string anteriorFormulario)
         {
+            formularioanterior = anteriorFormulario;
             this.id = id;
             us = usuario;
             InitializeComponent();
@@ -34,6 +36,14 @@ namespace registro_mockup.Principal
                 if (!ch.Continuable || id_usu == ch.Id_usuario)
                 {
                     btnContinuar.Visible = false;
+                }
+                if (formularioanterior == "ChPrincipal")
+                {
+                    btnSalir.Visible = false;
+                }
+                else
+                {
+                    btnSalir.Visible = true;
                 }
 
             }
@@ -76,6 +86,11 @@ namespace registro_mockup.Principal
             }
             basedatos.CerrarConexion();
             
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

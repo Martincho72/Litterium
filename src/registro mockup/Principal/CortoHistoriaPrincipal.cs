@@ -166,7 +166,7 @@ namespace registro_mockup.Principal
             if (basedatos.AbrirConexion())
             {
                 CortoHistoria ch1 = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, "El Reloj Encantado");
-                OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch1.Id));
+                OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch1.Id, "ChPrincipal"));
 
                 OcultarPaneles();
             }
@@ -202,7 +202,7 @@ namespace registro_mockup.Principal
             {
                 List<string> cortoHistorias = CortoHistoria.EncontrarCortoHistoriasRecientes(basedatos.Conexion);
                 CortoHistoria ch1 = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, cortoHistorias[0]);
-                OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch1.Id));
+                OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch1.Id, "ChPrincipal"));
 
                 OcultarPaneles();
             }
@@ -219,7 +219,7 @@ namespace registro_mockup.Principal
             {
                 List<string> cortoHistorias = CortoHistoria.EncontrarCortoHistoriasRecientes(basedatos.Conexion);
                 CortoHistoria ch2 = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, cortoHistorias[1]);
-                OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch2.Id));
+                OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch2.Id, "ChPrincipal"));
 
                 OcultarPaneles();
             }
@@ -236,7 +236,7 @@ namespace registro_mockup.Principal
             {
                 List<string> cortoHistorias = CortoHistoria.EncontrarCortoHistoriasRecientes(basedatos.Conexion);
                 CortoHistoria ch3 = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, cortoHistorias[2]);
-                OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch3.Id));
+                OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch3.Id, "ChPrincipal"));
 
                 OcultarPaneles();
             }
@@ -253,7 +253,7 @@ namespace registro_mockup.Principal
             {
                 List<string> cortoHistorias = CortoHistoria.EncontrarCortoHistoriasRecientes(basedatos.Conexion);
                 CortoHistoria ch4 = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, cortoHistorias[3]);
-                OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch4.Id));
+                OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch4.Id, "ChPrincipal"));
 
                 OcultarPaneles();
             }
@@ -270,7 +270,7 @@ namespace registro_mockup.Principal
             {
                 List<string> cortoHistorias = CortoHistoria.EncontrarCortoHistoriasRecientes(basedatos.Conexion);
                 CortoHistoria ch5 = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, cortoHistorias[4]);
-                OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch5.Id));
+                OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch5.Id, "ChPrincipal"));
 
                 OcultarPaneles();
             }
@@ -286,7 +286,7 @@ namespace registro_mockup.Principal
             if (basedatos.AbrirConexion())
             {
                 CortoHistoria ch2 = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, "El Cuaderno Mágico");
-                OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch2.Id));
+                OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch2.Id, "ChPrincipal"));
 
                 OcultarPaneles();
             }
@@ -302,7 +302,7 @@ namespace registro_mockup.Principal
             if (basedatos.AbrirConexion())
             {
                 CortoHistoria ch3 = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, "La Caja de Música");
-                OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch3.Id));
+                OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch3.Id, "ChPrincipal"));
 
                 OcultarPaneles();
             }
@@ -318,7 +318,7 @@ namespace registro_mockup.Principal
             if (basedatos.AbrirConexion())
             {
                 CortoHistoria ch4 = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, "El Espejo Misterioso");
-                OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch4.Id));
+                OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch4.Id, "ChPrincipal"));
 
                 OcultarPaneles();
             }
@@ -334,7 +334,7 @@ namespace registro_mockup.Principal
             if (basedatos.AbrirConexion())
             {
                 CortoHistoria ch5 = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, "El Libro Olvidado");
-                OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch5.Id));
+                OpenChildForm(new VisualizarCortohistoria(usuarioMenu, ch5.Id, "ChPrincipal"));
 
                 OcultarPaneles();
             }

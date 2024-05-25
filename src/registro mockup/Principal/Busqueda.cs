@@ -93,7 +93,7 @@ namespace registro_mockup.Principal
             if (basedatos.AbrirConexion())
             {
                 CortoHistoria ch = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, dgvResultadosCh.Rows[indice].Cells[0].Value.ToString());
-                VisualizarCortohistoria vs = new VisualizarCortohistoria(usuariomenu, ch.Id);
+                VisualizarCortohistoria vs = new VisualizarCortohistoria(usuariomenu, ch.Id, "Busqueda");
                 vs.ShowDialog();
             }
             else 

@@ -301,7 +301,7 @@ namespace registro_mockup.Principal
         {
             if (basedatos.AbrirConexion())
             {
-                OpenChildForm(new VisualizarCortohistoria(usuariomenu,18));
+                OpenChildForm(new VisualizarCortohistoria(usuariomenu,18, "ChPrincipal"));
 
                 OcultarPaneles();
             }
@@ -316,7 +316,7 @@ namespace registro_mockup.Principal
         {
             if (basedatos.AbrirConexion())
             {
-                OpenChildForm(new VisualizarCortohistoria(usuariomenu, 16));
+                OpenChildForm(new VisualizarCortohistoria(usuariomenu, 16, "ChPrincipal"));
 
                 OcultarPaneles();
             }
@@ -331,7 +331,7 @@ namespace registro_mockup.Principal
         {
             if (basedatos.AbrirConexion())
             {
-                OpenChildForm(new VisualizarCortohistoria(usuariomenu, 17));
+                OpenChildForm(new VisualizarCortohistoria(usuariomenu, 17, "ChPrincipal"));
 
                 OcultarPaneles();
             }
@@ -346,7 +346,7 @@ namespace registro_mockup.Principal
         {
             if (basedatos.AbrirConexion())
             {
-                OpenChildForm(new VisualizarCortohistoria(usuariomenu, 19));
+                OpenChildForm(new VisualizarCortohistoria(usuariomenu, 19, "ChPrincipal"));
 
                 OcultarPaneles();
             }
@@ -361,7 +361,7 @@ namespace registro_mockup.Principal
         {
             if (basedatos.AbrirConexion())
             {
-                OpenChildForm(new VisualizarCortohistoria(usuariomenu, 20));
+                OpenChildForm(new VisualizarCortohistoria(usuariomenu, 20, "ChPrincipal"));
 
                 OcultarPaneles();
             }

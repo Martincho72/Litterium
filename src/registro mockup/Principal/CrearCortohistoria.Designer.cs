@@ -82,7 +82,7 @@
             // 
             // txtCortohistoriaCrear
             // 
-            this.txtCortohistoriaCrear.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCortohistoriaCrear.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCortohistoriaCrear.Location = new System.Drawing.Point(17, 90);
             this.txtCortohistoriaCrear.Multiline = true;
             this.txtCortohistoriaCrear.Name = "txtCortohistoriaCrear";
