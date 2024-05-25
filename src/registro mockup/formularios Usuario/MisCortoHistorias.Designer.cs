@@ -92,6 +92,7 @@
             this.dgvCortoHistorias.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgvCortoHistorias.Size = new System.Drawing.Size(533, 292);
             this.dgvCortoHistorias.TabIndex = 8;
+            this.dgvCortoHistorias.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCortoHistorias_CellDoubleClick);
             this.dgvCortoHistorias.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvCortoHistorias_CellFormatting_1);
             // 
             // Titulo
@@ -150,7 +151,7 @@
             this.ClientSize = new System.Drawing.Size(533, 292);
             this.Controls.Add(this.dgvCortoHistorias);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MisCortoHistorias";
             this.Text = "MisCortoHistorias";
             this.Load += new System.EventHandler(this.MisCortoHistorias_Load_1);
