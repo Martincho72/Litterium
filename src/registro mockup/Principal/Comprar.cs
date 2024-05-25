@@ -23,14 +23,18 @@ namespace registro_mockup.Principal
         public Comprar(string usuario)
         {
             InitializeComponent();
+            AplicarIdioma();
             usuariomenu = usuario;
             txtUsuario.Text = usuario;
             if (basedatos.AbrirConexion())
             {
+                double total = 0;
                 foreach (Libro libro in Carrito.MiCarrito)
                 {
                     dgvResumen.Rows.Add(libro.Isbn, libro.Titulo, libro.Autor, libro.Categoria, libro.Valoracion, libro.Precio, libro.Cantidad, libro.Online);
+                    total += libro.importeTotal(libro.Precio, libro.Cantidad);
                 }
+                lblImporteTotal.Text += total.ToString() + "€";
             }
             else
             {
@@ -42,6 +46,7 @@ namespace registro_mockup.Principal
         public Comprar(string isbn, string usuario, int cantidad, bool fisico, Form form)
         {
             InitializeComponent();
+            AplicarIdioma();
             usuariomenu = usuario;
             isbnLibro = isbn;
             previousForm = form;
@@ -51,21 +56,15 @@ namespace registro_mockup.Principal
                 txtUsuario.Text = usuario;
                 foreach (Libro libro in lista)
                 {
-                    string tipo = "Online";
-                    if (fisico)
-                    {
-                        tipo = "Físico";
-                    }
-                    dgvResumen.Rows.Add(libro.Isbn, libro.Titulo, libro.Autor, libro.Categoria, libro.Valoracion, libro.Precio, cantidad, tipo);
+                    dgvResumen.Rows.Add(libro.Isbn, libro.Titulo, libro.Autor, libro.Categoria, libro.Valoracion, libro.Precio, cantidad, libro.Online);
                 }
-                txtTotal.Text = lista[0].importeTotal(lista[0].Precio, cantidad).ToString() + "€";
+                lblImporteTotal.Text += lista[0].importeTotal(lista[0].Precio, cantidad).ToString() + "€";
             }
             else
             {
                 MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
-            if (!fisico) online = true;
         }
 
         private void lblMensaje_Click(object sender, EventArgs e)
@@ -124,7 +123,7 @@ namespace registro_mockup.Principal
 
         private void Comprar_Load(object sender, EventArgs e)
         {
-            AplicarIdioma();
+            
         }
     }
 }
