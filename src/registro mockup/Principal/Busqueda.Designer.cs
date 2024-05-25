@@ -28,20 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Busqueda));
             this.lblBusqueda = new System.Windows.Forms.Label();
             this.lblTipo = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblResultados = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dgvResultadosCh = new System.Windows.Forms.DataGridView();
             this.dgvResultadosLibro = new System.Windows.Forms.DataGridView();
+            this.isbn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.titulolibro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.autorLibro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoriaLibro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.imagenPortada = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dgvResultadosCh = new System.Windows.Forms.DataGridView();
             this.titulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.autor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaPublicacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,16 +55,10 @@
             this.continuable = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.finalizada = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.imagen = new System.Windows.Forms.DataGridViewImageColumn();
-            this.isbn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.titulolibro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.autorLibro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoriaLibro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.imagenPortada = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosCh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosLibro)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosCh)).BeginInit();
             this.SuspendLayout();
             // 
             // lblBusqueda
@@ -119,6 +119,94 @@
             this.panel2.Size = new System.Drawing.Size(878, 532);
             this.panel2.TabIndex = 9;
             // 
+            // dgvResultadosLibro
+            // 
+            this.dgvResultadosLibro.AllowUserToAddRows = false;
+            this.dgvResultadosLibro.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvResultadosLibro.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(199)))), ((int)(((byte)(168)))));
+            this.dgvResultadosLibro.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvResultadosLibro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvResultadosLibro.ColumnHeadersHeight = 35;
+            this.dgvResultadosLibro.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.isbn,
+            this.titulolibro,
+            this.autorLibro,
+            this.categoriaLibro,
+            this.precio,
+            this.imagenPortada});
+            this.dgvResultadosLibro.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvResultadosLibro.EnableHeadersVisualStyles = false;
+            this.dgvResultadosLibro.Location = new System.Drawing.Point(0, 0);
+            this.dgvResultadosLibro.Margin = new System.Windows.Forms.Padding(20, 130, 20, 20);
+            this.dgvResultadosLibro.Name = "dgvResultadosLibro";
+            this.dgvResultadosLibro.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(139)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvResultadosLibro.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvResultadosLibro.RowHeadersVisible = false;
+            this.dgvResultadosLibro.RowHeadersWidth = 50;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(139)))), ((int)(((byte)(45)))));
+            this.dgvResultadosLibro.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvResultadosLibro.RowTemplate.Height = 48;
+            this.dgvResultadosLibro.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dgvResultadosLibro.Size = new System.Drawing.Size(878, 532);
+            this.dgvResultadosLibro.TabIndex = 9;
+            this.dgvResultadosLibro.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvResultadosLibro_CellDoubleClick);
+            // 
+            // isbn
+            // 
+            this.isbn.HeaderText = "Isbn";
+            this.isbn.Name = "isbn";
+            this.isbn.ReadOnly = true;
+            // 
+            // titulolibro
+            // 
+            this.titulolibro.HeaderText = "Titulo";
+            this.titulolibro.Name = "titulolibro";
+            this.titulolibro.ReadOnly = true;
+            // 
+            // autorLibro
+            // 
+            this.autorLibro.HeaderText = "Autor";
+            this.autorLibro.Name = "autorLibro";
+            this.autorLibro.ReadOnly = true;
+            // 
+            // categoriaLibro
+            // 
+            this.categoriaLibro.HeaderText = "Categoria";
+            this.categoriaLibro.Name = "categoriaLibro";
+            this.categoriaLibro.ReadOnly = true;
+            // 
+            // precio
+            // 
+            this.precio.HeaderText = "Precio";
+            this.precio.Name = "precio";
+            this.precio.ReadOnly = true;
+            // 
+            // imagenPortada
+            // 
+            this.imagenPortada.HeaderText = "Imagen";
+            this.imagenPortada.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.imagenPortada.Name = "imagenPortada";
+            this.imagenPortada.ReadOnly = true;
+            this.imagenPortada.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.imagenPortada.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
             // dgvResultadosCh
             // 
             this.dgvResultadosCh.AllowUserToAddRows = false;
@@ -167,55 +255,7 @@
             this.dgvResultadosCh.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgvResultadosCh.Size = new System.Drawing.Size(878, 532);
             this.dgvResultadosCh.TabIndex = 8;
-            this.dgvResultadosCh.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvResultadosBusqueda_CellDoubleClick);
-            // 
-            // dgvResultadosLibro
-            // 
-            this.dgvResultadosLibro.AllowUserToAddRows = false;
-            this.dgvResultadosLibro.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvResultadosLibro.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(199)))), ((int)(((byte)(168)))));
-            this.dgvResultadosLibro.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvResultadosLibro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvResultadosLibro.ColumnHeadersHeight = 35;
-            this.dgvResultadosLibro.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.isbn,
-            this.titulolibro,
-            this.autorLibro,
-            this.categoriaLibro,
-            this.precio,
-            this.imagenPortada});
-            this.dgvResultadosLibro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvResultadosLibro.EnableHeadersVisualStyles = false;
-            this.dgvResultadosLibro.Location = new System.Drawing.Point(0, 0);
-            this.dgvResultadosLibro.Margin = new System.Windows.Forms.Padding(20, 130, 20, 20);
-            this.dgvResultadosLibro.Name = "dgvResultadosLibro";
-            this.dgvResultadosLibro.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(139)))), ((int)(((byte)(45)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvResultadosLibro.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvResultadosLibro.RowHeadersVisible = false;
-            this.dgvResultadosLibro.RowHeadersWidth = 50;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(139)))), ((int)(((byte)(45)))));
-            this.dgvResultadosLibro.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvResultadosLibro.RowTemplate.Height = 48;
-            this.dgvResultadosLibro.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dgvResultadosLibro.Size = new System.Drawing.Size(878, 532);
-            this.dgvResultadosLibro.TabIndex = 9;
+            this.dgvResultadosCh.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvResultadosCh_CellDoubleClick);
             // 
             // titulo
             // 
@@ -266,45 +306,6 @@
             this.imagen.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.imagen.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
-            // isbn
-            // 
-            this.isbn.HeaderText = "Isbn";
-            this.isbn.Name = "isbn";
-            this.isbn.ReadOnly = true;
-            // 
-            // titulolibro
-            // 
-            this.titulolibro.HeaderText = "Titulo";
-            this.titulolibro.Name = "titulolibro";
-            this.titulolibro.ReadOnly = true;
-            // 
-            // autorLibro
-            // 
-            this.autorLibro.HeaderText = "Autor";
-            this.autorLibro.Name = "autorLibro";
-            this.autorLibro.ReadOnly = true;
-            // 
-            // categoriaLibro
-            // 
-            this.categoriaLibro.HeaderText = "Categoria";
-            this.categoriaLibro.Name = "categoriaLibro";
-            this.categoriaLibro.ReadOnly = true;
-            // 
-            // precio
-            // 
-            this.precio.HeaderText = "Precio";
-            this.precio.Name = "precio";
-            this.precio.ReadOnly = true;
-            // 
-            // imagenPortada
-            // 
-            this.imagenPortada.HeaderText = "Imagen";
-            this.imagenPortada.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.imagenPortada.Name = "imagenPortada";
-            this.imagenPortada.ReadOnly = true;
-            this.imagenPortada.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.imagenPortada.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
             // Busqueda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -322,8 +323,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosCh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosLibro)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultadosCh)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

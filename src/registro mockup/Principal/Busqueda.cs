@@ -15,11 +15,14 @@ namespace registro_mockup.Principal
     public partial class Busqueda : Form
     {
         BDatos basedatos = new BDatos();
-        public Busqueda(string txtbusqueda, string tipo)
+        private Form currentForm;
+        private string usuariomenu;
+        public Busqueda(string txtbusqueda, string tipo, string usuario)
         {
             InitializeComponent();
             lblBusqueda.Text = txtbusqueda;
             lblTipo.Text = tipo;
+            usuariomenu = usuario;
         }
 
         private void Busqueda_Load(object sender, EventArgs e)
@@ -58,15 +61,41 @@ namespace registro_mockup.Principal
 
         }
 
-        private void dgvResultadosBusqueda_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void AplicarIdioma()
         {
             this.Text = Idioma.TituloBusqueda;
             lblResultados.Text = Idioma.lblResultadosBusqueda;
         }
+
+        private void dgvResultadosLibro_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int indice = e.RowIndex;
+            if (basedatos.AbrirConexion())
+            {
+                Libro libro = Libro.EncontrarDatosLibro(basedatos.Conexion, dgvResultadosLibro.Rows[indice].Cells[0].Value.ToString());
+                InformacionLibro l = new InformacionLibro(libro.Titulo, usuariomenu);
+                l.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
+            basedatos.CerrarConexion();
+        }
+
+        private void dgvResultadosCh_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int indice = e.RowIndex;
+            if (basedatos.AbrirConexion())
+            {
+                CortoHistoria ch = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, dgvResultadosCh.Rows[indice].Cells[0].Value.ToString());
+                VisualizarCortohistoria vs = new VisualizarCortohistoria(usuariomenu, ch.Id);
+                vs.ShowDialog();
+            }
+            else { }
+            basedatos.CerrarConexion();
+        }
+
+       
     }
 }

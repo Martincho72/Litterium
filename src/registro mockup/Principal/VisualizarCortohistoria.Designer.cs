@@ -48,8 +48,9 @@
             this.panel1.Controls.Add(this.lblVisualizarCortohistoria);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1067, 35);
+            this.panel1.Size = new System.Drawing.Size(800, 28);
             this.panel1.TabIndex = 58;
             // 
             // lblVisualizarCortohistoria
@@ -59,9 +60,8 @@
             this.lblVisualizarCortohistoria.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblVisualizarCortohistoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVisualizarCortohistoria.Location = new System.Drawing.Point(0, 0);
-            this.lblVisualizarCortohistoria.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblVisualizarCortohistoria.Name = "lblVisualizarCortohistoria";
-            this.lblVisualizarCortohistoria.Size = new System.Drawing.Size(566, 29);
+            this.lblVisualizarCortohistoria.Size = new System.Drawing.Size(453, 24);
             this.lblVisualizarCortohistoria.TabIndex = 56;
             this.lblVisualizarCortohistoria.Text = "VISUALIZAR CORTOHISTORIA DE :                           ";
             // 
@@ -69,9 +69,10 @@
             // 
             this.panel2.Controls.Add(this.lblTitulo);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 35);
+            this.panel2.Location = new System.Drawing.Point(0, 28);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1067, 35);
+            this.panel2.Size = new System.Drawing.Size(800, 28);
             this.panel2.TabIndex = 59;
             // 
             // lblTitulo
@@ -80,9 +81,8 @@
             this.lblTitulo.Dock = System.Windows.Forms.DockStyle.Left;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.Location = new System.Drawing.Point(0, 0);
-            this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(71, 25);
+            this.lblTitulo.Size = new System.Drawing.Size(55, 20);
             this.lblTitulo.TabIndex = 57;
             this.lblTitulo.Text = "Titulo :";
             // 
@@ -90,9 +90,10 @@
             // 
             this.panel3.Controls.Add(this.txtVisualizarCortoHistoria);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 70);
+            this.panel3.Location = new System.Drawing.Point(0, 56);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1067, 423);
+            this.panel3.Size = new System.Drawing.Size(800, 344);
             this.panel3.TabIndex = 60;
             // 
             // txtVisualizarCortoHistoria
@@ -101,20 +102,20 @@
             this.txtVisualizarCortoHistoria.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtVisualizarCortoHistoria.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVisualizarCortoHistoria.Location = new System.Drawing.Point(0, 0);
-            this.txtVisualizarCortoHistoria.Margin = new System.Windows.Forms.Padding(4);
             this.txtVisualizarCortoHistoria.Multiline = true;
             this.txtVisualizarCortoHistoria.Name = "txtVisualizarCortoHistoria";
             this.txtVisualizarCortoHistoria.ReadOnly = true;
-            this.txtVisualizarCortoHistoria.Size = new System.Drawing.Size(1067, 423);
+            this.txtVisualizarCortoHistoria.Size = new System.Drawing.Size(800, 344);
             this.txtVisualizarCortoHistoria.TabIndex = 58;
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.btnContinuar);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 493);
+            this.panel4.Location = new System.Drawing.Point(0, 400);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1067, 100);
+            this.panel4.Size = new System.Drawing.Size(800, 81);
             this.panel4.TabIndex = 61;
             // 
             // btnContinuar
@@ -127,10 +128,9 @@
             this.btnContinuar.IconColor = System.Drawing.Color.Black;
             this.btnContinuar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnContinuar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnContinuar.Location = new System.Drawing.Point(891, 0);
-            this.btnContinuar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnContinuar.Location = new System.Drawing.Point(668, 0);
             this.btnContinuar.Name = "btnContinuar";
-            this.btnContinuar.Size = new System.Drawing.Size(176, 100);
+            this.btnContinuar.Size = new System.Drawing.Size(132, 81);
             this.btnContinuar.TabIndex = 55;
             this.btnContinuar.Text = "Continuar";
             this.btnContinuar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -139,16 +139,15 @@
             // 
             // VisualizarCortohistoria
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1067, 657);
+            this.ClientSize = new System.Drawing.Size(800, 534);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "VisualizarCortohistoria";
             this.Load += new System.EventHandler(this.VisualizarCortohistoria_Load);
             this.panel1.ResumeLayout(false);
