@@ -20,29 +20,45 @@ namespace registro_mockup.formularios_administrador
         {
             InitializeComponent();
         }
+        private bool ValidarDatos()
+        {
+            bool ok = true;
+            if (txtIsbn.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtIsbn, Idioma.errorProviderIsbn);
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }
+            return ok;
+        }
 
-        private void btnBuscar_Click(object sender, EventArgs e)
+            private void btnBuscar_Click(object sender, EventArgs e)
         {
             if (basedatos.AbrirConexion())
             {
-                if (Libro.EncontrarLibro(basedatos.Conexion, txtIsbn.Text))
+                if (ValidarDatos())
                 {
-                    EditarLibro form = new EditarLibro(txtIsbn.Text);
-                    form.ShowDialog();
+                    if (Libro.EncontrarLibro(basedatos.Conexion, txtIsbn.Text))
+                    {
+                        EditarLibro form = new EditarLibro(txtIsbn.Text);
+                        form.ShowDialog();
+                    }
+                    else
+                    {
+                        lblErrores.Text = Idioma.NoExisteISBN;
+                    }
                 }
                 else
                 {
-                    lblErrores.Text = Idioma.NoExisteISBN;
+                    MessageBox.Show("Faltan datos por introducir!");
                 }
             }
 
             else { }
             basedatos.CerrarConexion();
-        }
-
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void BuscarLibro_Load(object sender, EventArgs e)
@@ -62,5 +78,7 @@ namespace registro_mockup.formularios_administrador
         {
             this.Close();
         }
+
+
     }
 }

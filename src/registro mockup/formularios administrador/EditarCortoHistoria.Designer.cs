@@ -66,7 +66,7 @@
             this.chbContinuable.AutoSize = true;
             this.chbContinuable.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chbContinuable.Location = new System.Drawing.Point(149, 345);
-            this.chbContinuable.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chbContinuable.Margin = new System.Windows.Forms.Padding(2);
             this.chbContinuable.Name = "chbContinuable";
             this.chbContinuable.Size = new System.Drawing.Size(115, 23);
             this.chbContinuable.TabIndex = 71;
@@ -78,7 +78,7 @@
             this.chbFinalizada.AutoSize = true;
             this.chbFinalizada.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chbFinalizada.Location = new System.Drawing.Point(154, 318);
-            this.chbFinalizada.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chbFinalizada.Margin = new System.Windows.Forms.Padding(2);
             this.chbFinalizada.Name = "chbFinalizada";
             this.chbFinalizada.Size = new System.Drawing.Size(100, 23);
             this.chbFinalizada.TabIndex = 68;
@@ -90,7 +90,7 @@
             this.btnEditar.BackColor = System.Drawing.Color.Gold;
             this.btnEditar.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.Location = new System.Drawing.Point(154, 404);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(89, 49);
             this.btnEditar.TabIndex = 67;
@@ -117,7 +117,7 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(667, 72);
             this.panel1.TabIndex = 65;
@@ -127,7 +127,7 @@
             this.panel2.Controls.Add(this.lblMensaje);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(84, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(583, 72);
             this.panel2.TabIndex = 2;
@@ -149,7 +149,7 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox1.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo312;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(84, 72);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -159,7 +159,8 @@
             // txtCategoria
             // 
             this.txtCategoria.Location = new System.Drawing.Point(149, 248);
-            this.txtCategoria.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCategoria.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCategoria.MaxLength = 40;
             this.txtCategoria.Name = "txtCategoria";
             this.txtCategoria.Size = new System.Drawing.Size(119, 20);
             this.txtCategoria.TabIndex = 63;
@@ -167,7 +168,8 @@
             // txtAutor
             // 
             this.txtAutor.Location = new System.Drawing.Point(149, 173);
-            this.txtAutor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAutor.Margin = new System.Windows.Forms.Padding(2);
+            this.txtAutor.MaxLength = 40;
             this.txtAutor.Name = "txtAutor";
             this.txtAutor.Size = new System.Drawing.Size(119, 20);
             this.txtAutor.TabIndex = 61;
@@ -175,7 +177,8 @@
             // txtTitulo
             // 
             this.txtTitulo.Location = new System.Drawing.Point(149, 140);
-            this.txtTitulo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTitulo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTitulo.MaxLength = 40;
             this.txtTitulo.Name = "txtTitulo";
             this.txtTitulo.Size = new System.Drawing.Size(119, 20);
             this.txtTitulo.TabIndex = 60;
@@ -232,7 +235,7 @@
             // 
             this.txtId.Enabled = false;
             this.txtId.Location = new System.Drawing.Point(149, 105);
-            this.txtId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtId.Margin = new System.Windows.Forms.Padding(2);
             this.txtId.Name = "txtId";
             this.txtId.ReadOnly = true;
             this.txtId.Size = new System.Drawing.Size(119, 20);
@@ -253,7 +256,8 @@
             // txtIdUsuario
             // 
             this.txtIdUsuario.Location = new System.Drawing.Point(149, 288);
-            this.txtIdUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIdUsuario.Margin = new System.Windows.Forms.Padding(2);
+            this.txtIdUsuario.MaxLength = 5;
             this.txtIdUsuario.Name = "txtIdUsuario";
             this.txtIdUsuario.Size = new System.Drawing.Size(119, 20);
             this.txtIdUsuario.TabIndex = 73;
@@ -285,7 +289,7 @@
             this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalir.Image = global::registro_mockup.Properties.Resources.lecha;
             this.btnSalir.Location = new System.Drawing.Point(22, 419);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(62, 33);
             this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -298,7 +302,7 @@
             this.btnCargar.BackColor = System.Drawing.Color.Gold;
             this.btnCargar.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCargar.Location = new System.Drawing.Point(548, 248);
-            this.btnCargar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCargar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(89, 49);
             this.btnCargar.TabIndex = 76;
@@ -318,8 +322,8 @@
             // 
             // txtTexto
             // 
-            this.txtTexto.Location = new System.Drawing.Point(290, 105);
-            this.txtTexto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTexto.Location = new System.Drawing.Point(290, 104);
+            this.txtTexto.Margin = new System.Windows.Forms.Padding(2);
             this.txtTexto.Multiline = true;
             this.txtTexto.Name = "txtTexto";
             this.txtTexto.ReadOnly = true;
@@ -367,7 +371,7 @@
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.lblId);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "EditarCortoHistoria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditarCortoHistoria";

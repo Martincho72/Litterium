@@ -74,14 +74,13 @@
             this.lblErrores.Size = new System.Drawing.Size(62, 17);
             this.lblErrores.TabIndex = 51;
             this.lblErrores.Text = "lblError";
-            this.lblErrores.Click += new System.EventHandler(this.lblErrores_Click);
             // 
             // btnCrear
             // 
             this.btnCrear.BackColor = System.Drawing.Color.Gold;
             this.btnCrear.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrear.Location = new System.Drawing.Point(136, 480);
-            this.btnCrear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCrear.Margin = new System.Windows.Forms.Padding(2);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(89, 49);
             this.btnCrear.TabIndex = 48;
@@ -96,18 +95,17 @@
             this.panel1.Controls.Add(this.pcbLogo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(438, 72);
             this.panel1.TabIndex = 47;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.lblMensaje);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(84, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(354, 72);
             this.panel2.TabIndex = 2;
@@ -129,30 +127,31 @@
             this.pcbLogo.Dock = System.Windows.Forms.DockStyle.Left;
             this.pcbLogo.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo312;
             this.pcbLogo.Location = new System.Drawing.Point(0, 0);
-            this.pcbLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pcbLogo.Margin = new System.Windows.Forms.Padding(2);
             this.pcbLogo.Name = "pcbLogo";
             this.pcbLogo.Size = new System.Drawing.Size(84, 72);
             this.pcbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbLogo.TabIndex = 1;
             this.pcbLogo.TabStop = false;
+            this.pcbLogo.Click += new System.EventHandler(this.pcbLogo_Click);
             // 
             // txtAutor
             // 
             this.txtAutor.Location = new System.Drawing.Point(133, 187);
-            this.txtAutor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAutor.Margin = new System.Windows.Forms.Padding(2);
+            this.txtAutor.MaxLength = 40;
             this.txtAutor.Name = "txtAutor";
             this.txtAutor.Size = new System.Drawing.Size(119, 20);
             this.txtAutor.TabIndex = 43;
-            this.txtAutor.TextChanged += new System.EventHandler(this.txtAutor_TextChanged);
             // 
             // txtTitulo
             // 
             this.txtTitulo.Location = new System.Drawing.Point(133, 154);
-            this.txtTitulo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTitulo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTitulo.MaxLength = 40;
             this.txtTitulo.Name = "txtTitulo";
             this.txtTitulo.Size = new System.Drawing.Size(119, 20);
             this.txtTitulo.TabIndex = 42;
-            this.txtTitulo.TextChanged += new System.EventHandler(this.txtTitulo_TextChanged);
             // 
             // lblCategoria
             // 
@@ -165,7 +164,6 @@
             this.lblCategoria.Size = new System.Drawing.Size(69, 16);
             this.lblCategoria.TabIndex = 41;
             this.lblCategoria.Text = "Categoria";
-            this.lblCategoria.Click += new System.EventHandler(this.lblCategoria_Click);
             // 
             // lblValoracion
             // 
@@ -178,7 +176,6 @@
             this.lblValoracion.Size = new System.Drawing.Size(77, 16);
             this.lblValoracion.TabIndex = 39;
             this.lblValoracion.Text = "Valoracion:";
-            this.lblValoracion.Click += new System.EventHandler(this.lblValoracion_Click);
             // 
             // lblAutor
             // 
@@ -191,7 +188,6 @@
             this.lblAutor.Size = new System.Drawing.Size(41, 16);
             this.lblAutor.TabIndex = 38;
             this.lblAutor.Text = "Autor";
-            this.lblAutor.Click += new System.EventHandler(this.lblAutor_Click);
             // 
             // lblTitulo
             // 
@@ -204,16 +200,15 @@
             this.lblTitulo.Size = new System.Drawing.Size(41, 16);
             this.lblTitulo.TabIndex = 37;
             this.lblTitulo.Text = "Titulo";
-            this.lblTitulo.Click += new System.EventHandler(this.lblTitulo_Click);
             // 
             // txtIsbn
             // 
             this.txtIsbn.Location = new System.Drawing.Point(133, 119);
-            this.txtIsbn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIsbn.Margin = new System.Windows.Forms.Padding(2);
+            this.txtIsbn.MaxLength = 13;
             this.txtIsbn.Name = "txtIsbn";
             this.txtIsbn.Size = new System.Drawing.Size(119, 20);
             this.txtIsbn.TabIndex = 36;
-            this.txtIsbn.TextChanged += new System.EventHandler(this.txtIsbn_TextChanged);
             // 
             // lblIsbn
             // 
@@ -226,7 +221,6 @@
             this.lblIsbn.Size = new System.Drawing.Size(37, 16);
             this.lblIsbn.TabIndex = 35;
             this.lblIsbn.Text = "ISBN";
-            this.lblIsbn.Click += new System.EventHandler(this.lblNombre_Click);
             // 
             // errorProvider1
             // 
@@ -242,11 +236,10 @@
             "4",
             "5"});
             this.cmbValoracion.Location = new System.Drawing.Point(133, 262);
-            this.cmbValoracion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbValoracion.Margin = new System.Windows.Forms.Padding(2);
             this.cmbValoracion.Name = "cmbValoracion";
             this.cmbValoracion.Size = new System.Drawing.Size(119, 21);
             this.cmbValoracion.TabIndex = 52;
-            this.cmbValoracion.SelectedIndexChanged += new System.EventHandler(this.cmbValoracion_SelectedIndexChanged);
             // 
             // cmbCategoria
             // 
@@ -260,11 +253,10 @@
             "Infantil",
             "Otro"});
             this.cmbCategoria.Location = new System.Drawing.Point(133, 222);
-            this.cmbCategoria.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbCategoria.Margin = new System.Windows.Forms.Padding(2);
             this.cmbCategoria.Name = "cmbCategoria";
             this.cmbCategoria.Size = new System.Drawing.Size(119, 21);
             this.cmbCategoria.TabIndex = 53;
-            this.cmbCategoria.SelectedIndexChanged += new System.EventHandler(this.cmbCategoria_SelectedIndexChanged);
             // 
             // pcbPortada
             // 
@@ -284,7 +276,7 @@
             this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalir.Image = global::registro_mockup.Properties.Resources.lecha;
             this.btnSalir.Location = new System.Drawing.Point(11, 483);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(62, 33);
             this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -297,7 +289,7 @@
             this.btnCargar.BackColor = System.Drawing.Color.Gold;
             this.btnCargar.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCargar.Location = new System.Drawing.Point(323, 247);
-            this.btnCargar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCargar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(89, 49);
             this.btnCargar.TabIndex = 55;
@@ -308,7 +300,7 @@
             // txtSinopsis
             // 
             this.txtSinopsis.Location = new System.Drawing.Point(130, 371);
-            this.txtSinopsis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSinopsis.Margin = new System.Windows.Forms.Padding(2);
             this.txtSinopsis.MaxLength = 150;
             this.txtSinopsis.Multiline = true;
             this.txtSinopsis.Name = "txtSinopsis";
@@ -342,7 +334,7 @@
             // txtPrecio
             // 
             this.txtPrecio.Location = new System.Drawing.Point(133, 308);
-            this.txtPrecio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(119, 20);
             this.txtPrecio.TabIndex = 60;
@@ -387,7 +379,7 @@
             this.Controls.Add(this.txtIsbn);
             this.Controls.Add(this.lblIsbn);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AgregarLibro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AgregarLibro";

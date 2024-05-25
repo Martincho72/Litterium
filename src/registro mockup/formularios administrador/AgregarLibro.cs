@@ -56,10 +56,6 @@ namespace registro_mockup.formularios_administrador
 
             return ok;
         }
-        private void lblNombre_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void AgregarLibro_Load(object sender, EventArgs e)
         {
@@ -118,61 +114,6 @@ namespace registro_mockup.formularios_administrador
             }
         }
 
-        private void cmbValoracion_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblErrores_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmbCategoria_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void txtAutor_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtTitulo_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblCategoria_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblValoracion_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblAutor_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblTitulo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtIsbn_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -192,6 +133,11 @@ namespace registro_mockup.formularios_administrador
             {
                 MessageBox.Show(Idioma.ImagenNoSeleccionada, Idioma.Aviso, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+        }
+
+        private void pcbLogo_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
