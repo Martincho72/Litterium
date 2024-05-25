@@ -29,184 +29,37 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MiCarrito));
             this.panelMiCarrito = new System.Windows.Forms.Panel();
-            this.dgvMiCarrito = new System.Windows.Forms.DataGridView();
-            this.ISBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Titulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Autor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Valoracion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelImporteTotal = new System.Windows.Forms.Panel();
             this.lblImporteTotal = new System.Windows.Forms.Label();
             this.panelComprar = new System.Windows.Forms.Panel();
             this.btnPagar = new FontAwesome.Sharp.IconButton();
+            this.dgvMiCarrito = new System.Windows.Forms.DataGridView();
+            this.Isbn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.titulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.autor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Catagoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valoracion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.online = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.panelMiCarrito.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMiCarrito)).BeginInit();
             this.panelImporteTotal.SuspendLayout();
             this.panelComprar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMiCarrito)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMiCarrito
             // 
             this.panelMiCarrito.Controls.Add(this.dgvMiCarrito);
-            this.panelMiCarrito.Location = new System.Drawing.Point(12, 12);
+            this.panelMiCarrito.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelMiCarrito.Location = new System.Drawing.Point(0, 0);
             this.panelMiCarrito.Name = "panelMiCarrito";
-            this.panelMiCarrito.Size = new System.Drawing.Size(554, 250);
+            this.panelMiCarrito.Size = new System.Drawing.Size(600, 250);
             this.panelMiCarrito.TabIndex = 57;
-            // 
-            // dgvMiCarrito
-            // 
-            this.dgvMiCarrito.AllowUserToAddRows = false;
-            this.dgvMiCarrito.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvMiCarrito.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dgvMiCarrito.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(199)))), ((int)(((byte)(168)))));
-            this.dgvMiCarrito.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvMiCarrito.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMiCarrito.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvMiCarrito.ColumnHeadersHeight = 35;
-            this.dgvMiCarrito.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ISBN,
-            this.Titulo,
-            this.Autor,
-            this.Categoria,
-            this.Valoracion,
-            this.Precio,
-            this.Cantidad,
-            this.Tipo});
-            this.dgvMiCarrito.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvMiCarrito.EnableHeadersVisualStyles = false;
-            this.dgvMiCarrito.Location = new System.Drawing.Point(0, 0);
-            this.dgvMiCarrito.Margin = new System.Windows.Forms.Padding(20, 130, 20, 20);
-            this.dgvMiCarrito.Name = "dgvMiCarrito";
-            this.dgvMiCarrito.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(139)))), ((int)(((byte)(45)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMiCarrito.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            this.dgvMiCarrito.RowHeadersVisible = false;
-            this.dgvMiCarrito.RowHeadersWidth = 50;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(139)))), ((int)(((byte)(45)))));
-            this.dgvMiCarrito.RowsDefaultCellStyle = dataGridViewCellStyle10;
-            this.dgvMiCarrito.RowTemplate.Height = 48;
-            this.dgvMiCarrito.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dgvMiCarrito.Size = new System.Drawing.Size(554, 250);
-            this.dgvMiCarrito.TabIndex = 57;
-            // 
-            // ISBN
-            // 
-            this.ISBN.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.ISBN.DefaultCellStyle = dataGridViewCellStyle2;
-            this.ISBN.FillWeight = 71.0593F;
-            this.ISBN.HeaderText = "ISBN";
-            this.ISBN.MinimumWidth = 6;
-            this.ISBN.Name = "ISBN";
-            this.ISBN.ReadOnly = true;
-            this.ISBN.Width = 56;
-            // 
-            // Titulo
-            // 
-            this.Titulo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Titulo.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Titulo.FillWeight = 149.7326F;
-            this.Titulo.HeaderText = "Titulo";
-            this.Titulo.MinimumWidth = 6;
-            this.Titulo.Name = "Titulo";
-            this.Titulo.ReadOnly = true;
-            this.Titulo.Width = 57;
-            // 
-            // Autor
-            // 
-            this.Autor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Autor.DefaultCellStyle = dataGridViewCellStyle4;
-            this.Autor.FillWeight = 89.11546F;
-            this.Autor.HeaderText = "Autor";
-            this.Autor.MinimumWidth = 6;
-            this.Autor.Name = "Autor";
-            this.Autor.ReadOnly = true;
-            this.Autor.Width = 56;
-            // 
-            // Categoria
-            // 
-            this.Categoria.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Categoria.DefaultCellStyle = dataGridViewCellStyle5;
-            this.Categoria.FillWeight = 165.2784F;
-            this.Categoria.HeaderText = "Categoria";
-            this.Categoria.MinimumWidth = 6;
-            this.Categoria.Name = "Categoria";
-            this.Categoria.ReadOnly = true;
-            this.Categoria.Width = 76;
-            // 
-            // Valoracion
-            // 
-            this.Valoracion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Valoracion.DefaultCellStyle = dataGridViewCellStyle6;
-            this.Valoracion.FillWeight = 89.72969F;
-            this.Valoracion.HeaderText = "Valoracion";
-            this.Valoracion.MinimumWidth = 6;
-            this.Valoracion.Name = "Valoracion";
-            this.Valoracion.ReadOnly = true;
-            this.Valoracion.Width = 81;
-            // 
-            // Precio
-            // 
-            this.Precio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Precio.DefaultCellStyle = dataGridViewCellStyle7;
-            this.Precio.FillWeight = 76.10735F;
-            this.Precio.HeaderText = "Precio";
-            this.Precio.MinimumWidth = 6;
-            this.Precio.Name = "Precio";
-            this.Precio.ReadOnly = true;
-            this.Precio.Width = 61;
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.MinimumWidth = 6;
-            this.Cantidad.Name = "Cantidad";
-            // 
-            // Tipo
-            // 
-            this.Tipo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Tipo.DefaultCellStyle = dataGridViewCellStyle8;
-            this.Tipo.HeaderText = "Tipo";
-            this.Tipo.MinimumWidth = 6;
-            this.Tipo.Name = "Tipo";
-            this.Tipo.ReadOnly = true;
-            this.Tipo.Width = 52;
             // 
             // panelImporteTotal
             // 
@@ -249,7 +102,7 @@
             this.btnPagar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnPagar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPagar.Location = new System.Drawing.Point(0, 0);
-            this.btnPagar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPagar.Margin = new System.Windows.Forms.Padding(2);
             this.btnPagar.Name = "btnPagar";
             this.btnPagar.Size = new System.Drawing.Size(153, 26);
             this.btnPagar.TabIndex = 3;
@@ -257,6 +110,114 @@
             this.btnPagar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPagar.UseVisualStyleBackColor = false;
             this.btnPagar.Click += new System.EventHandler(this.btnPagar_Click_1);
+            // 
+            // dgvMiCarrito
+            // 
+            this.dgvMiCarrito.AllowUserToAddRows = false;
+            this.dgvMiCarrito.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvMiCarrito.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(199)))), ((int)(((byte)(168)))));
+            this.dgvMiCarrito.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvMiCarrito.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMiCarrito.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvMiCarrito.ColumnHeadersHeight = 35;
+            this.dgvMiCarrito.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Isbn,
+            this.titulo,
+            this.autor,
+            this.Catagoria,
+            this.valoracion,
+            this.precio,
+            this.cantidad,
+            this.online});
+            this.dgvMiCarrito.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvMiCarrito.EnableHeadersVisualStyles = false;
+            this.dgvMiCarrito.Location = new System.Drawing.Point(0, 0);
+            this.dgvMiCarrito.Margin = new System.Windows.Forms.Padding(20, 130, 20, 20);
+            this.dgvMiCarrito.Name = "dgvMiCarrito";
+            this.dgvMiCarrito.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(139)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMiCarrito.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvMiCarrito.RowHeadersVisible = false;
+            this.dgvMiCarrito.RowHeadersWidth = 50;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(139)))), ((int)(((byte)(45)))));
+            this.dgvMiCarrito.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvMiCarrito.RowTemplate.Height = 48;
+            this.dgvMiCarrito.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dgvMiCarrito.Size = new System.Drawing.Size(600, 250);
+            this.dgvMiCarrito.TabIndex = 10;
+            // 
+            // Isbn
+            // 
+            this.Isbn.HeaderText = "ISBN";
+            this.Isbn.MinimumWidth = 6;
+            this.Isbn.Name = "Isbn";
+            this.Isbn.ReadOnly = true;
+            // 
+            // titulo
+            // 
+            this.titulo.HeaderText = "Titulo";
+            this.titulo.MinimumWidth = 6;
+            this.titulo.Name = "titulo";
+            this.titulo.ReadOnly = true;
+            // 
+            // autor
+            // 
+            this.autor.HeaderText = "Autor";
+            this.autor.MinimumWidth = 6;
+            this.autor.Name = "autor";
+            this.autor.ReadOnly = true;
+            // 
+            // Catagoria
+            // 
+            this.Catagoria.HeaderText = "Categoria";
+            this.Catagoria.MinimumWidth = 6;
+            this.Catagoria.Name = "Catagoria";
+            this.Catagoria.ReadOnly = true;
+            // 
+            // valoracion
+            // 
+            this.valoracion.HeaderText = "Valoracion";
+            this.valoracion.MinimumWidth = 6;
+            this.valoracion.Name = "valoracion";
+            this.valoracion.ReadOnly = true;
+            this.valoracion.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // precio
+            // 
+            this.precio.HeaderText = "Precio";
+            this.precio.Name = "precio";
+            this.precio.ReadOnly = true;
+            // 
+            // cantidad
+            // 
+            this.cantidad.HeaderText = "Cantidad";
+            this.cantidad.Name = "cantidad";
+            this.cantidad.ReadOnly = true;
+            // 
+            // online
+            // 
+            this.online.HeaderText = "Online";
+            this.online.MinimumWidth = 6;
+            this.online.Name = "online";
+            this.online.ReadOnly = true;
+            this.online.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.online.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // MiCarrito
             // 
@@ -273,28 +234,28 @@
             this.Text = "MiCarrito";
             this.Load += new System.EventHandler(this.MiCarrito_Load);
             this.panelMiCarrito.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMiCarrito)).EndInit();
             this.panelImporteTotal.ResumeLayout(false);
             this.panelImporteTotal.PerformLayout();
             this.panelComprar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMiCarrito)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Panel panelMiCarrito;
-        private System.Windows.Forms.DataGridView dgvMiCarrito;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ISBN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Titulo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Autor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Categoria;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Valoracion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
         private System.Windows.Forms.Panel panelImporteTotal;
         private System.Windows.Forms.Panel panelComprar;
         private FontAwesome.Sharp.IconButton btnPagar;
         private System.Windows.Forms.Label lblImporteTotal;
+        private System.Windows.Forms.DataGridView dgvMiCarrito;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Isbn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn titulo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn autor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Catagoria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn valoracion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn precio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cantidad;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn online;
     }
 }
