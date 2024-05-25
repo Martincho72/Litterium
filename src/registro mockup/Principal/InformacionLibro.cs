@@ -112,7 +112,7 @@ namespace registro_mockup.Principal
                     Valoracion.EditarValoracion(basedatos.Conexion, usu.Id, isbnLibro, int.Parse(cmbValorar.Text));
                 }
                 Libro l1 = Libro.EncontrarDatosLibro(basedatos.Conexion, isbnLibro);
-                lblValoracion.Text += l1.Valoracion;
+                lblValoracion.Text = "Valoracion: " +l1.Valoracion;
             }
             else
             {
@@ -170,5 +170,6 @@ namespace registro_mockup.Principal
             else { }
             basedatos.CerrarConexion();
         }
+
     }
 }

@@ -93,5 +93,7 @@ namespace registro_mockup.formularios_administrador
                 MessageBox.Show(Idioma.ImagenNoSeleccionada, Idioma.Aviso, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
+
+
     }
 }
