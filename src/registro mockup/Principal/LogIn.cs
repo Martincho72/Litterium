@@ -101,7 +101,7 @@ namespace Litterium
             }
             else
             {
-
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             bDatos.CerrarConexion();
 
@@ -165,8 +165,12 @@ namespace Litterium
                         lblMensajesError.Text = Idioma.UsuarioNoExisteLogin;
                         lblMensajesError.Visible = true;
                     }
-                    bDatos.CerrarConexion();
                 }
+                else
+                {
+                    MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                bDatos.CerrarConexion();
             }
         }
 

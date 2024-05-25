@@ -55,7 +55,10 @@ namespace registro_mockup.formularios_Usuario
                 txtContra.Text = usuario.Clave;
                 pcbPerfil.Image = usuario.Foto;
             }
-            else { }
+            else 
+            {
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             basedatos.CerrarConexion();
             AplicarIdioma();
 
@@ -113,7 +116,10 @@ namespace registro_mockup.formularios_Usuario
                 Application.Restart();
 
             }
-            else { }
+            else 
+            {
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             basedatos.CerrarConexion();
         }
 

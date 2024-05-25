@@ -27,7 +27,10 @@ namespace registro_mockup
             {
                 dgvUsuarios.DataSource = Usuario.BuscarUsuarios(bDatos.Conexion);
             }
-            else { }
+            else 
+            {
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             bDatos.CerrarConexion();
         }
 

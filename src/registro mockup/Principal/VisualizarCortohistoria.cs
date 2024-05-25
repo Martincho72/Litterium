@@ -37,6 +37,10 @@ namespace registro_mockup.Principal
                 }
 
             }
+            else
+            {
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             basedatos.CerrarConexion();
         }
 
@@ -66,7 +70,10 @@ namespace registro_mockup.Principal
                 CrearCortohistoria crear = new CrearCortohistoria(ch.Id, us);
                 crear.ShowDialog();
             }
-            else {}
+            else 
+            {
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             basedatos.CerrarConexion();
             
         }

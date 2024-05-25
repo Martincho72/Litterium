@@ -33,6 +33,10 @@ namespace registro_mockup.formularios_Usuario
                     int idUsuario = Usuario.ObtenerID(bDatos.Conexion, usuariomenu);
                     dgvLibros.DataSource = Ejemplar.BuscarEjemplaresOnline(bDatos.Conexion, idUsuario);
                 }
+                else
+                {
+                    MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             finally
             {

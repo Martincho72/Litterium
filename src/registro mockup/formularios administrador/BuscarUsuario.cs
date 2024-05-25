@@ -32,8 +32,10 @@ namespace registro_mockup.formularios_administrador
                     lblErrores.Text = Idioma.NoExisteUsuario;
                 }
             }
-
-            else { }
+            else 
+            {
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             basedatos.CerrarConexion();
         }
 

@@ -46,7 +46,10 @@ namespace registro_mockup.formularios_administrador
                 
                 dgvLibro.DataSource = Libro.BuscarLibros(bDatos.Conexion);
             }
-            else { }
+            else 
+            {
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             bDatos.CerrarConexion();
         }
 

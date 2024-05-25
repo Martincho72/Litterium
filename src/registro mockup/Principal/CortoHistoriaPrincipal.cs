@@ -112,7 +112,7 @@ namespace registro_mockup.Principal
             }
             else
             {
-                MessageBox.Show("");
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
 
@@ -172,7 +172,7 @@ namespace registro_mockup.Principal
             }
             else
             {
-                MessageBox.Show("");
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
         }
@@ -208,7 +208,7 @@ namespace registro_mockup.Principal
             }
             else
             {
-                MessageBox.Show("");
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
         }
@@ -225,7 +225,7 @@ namespace registro_mockup.Principal
             }
             else
             {
-                MessageBox.Show("");
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
         }
@@ -242,7 +242,7 @@ namespace registro_mockup.Principal
             }
             else
             {
-                MessageBox.Show("");
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
         }
@@ -259,7 +259,7 @@ namespace registro_mockup.Principal
             }
             else
             {
-                MessageBox.Show("");
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
         }
@@ -276,7 +276,7 @@ namespace registro_mockup.Principal
             }
             else
             {
-                MessageBox.Show("");
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
         }
@@ -292,7 +292,7 @@ namespace registro_mockup.Principal
             }
             else
             {
-                MessageBox.Show("");
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
         }
@@ -308,7 +308,7 @@ namespace registro_mockup.Principal
             }
             else
             {
-                MessageBox.Show("");
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
         }
@@ -324,7 +324,7 @@ namespace registro_mockup.Principal
             }
             else
             {
-                MessageBox.Show("");
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
         }
@@ -340,7 +340,7 @@ namespace registro_mockup.Principal
             }
             else
             {
-                MessageBox.Show("");
+                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
         }
