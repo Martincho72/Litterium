@@ -16,7 +16,7 @@ namespace registro_mockup.formularios_administrador
     public partial class EditarLibro : Form
     {
         BDatos basedatos=new BDatos();
-        private byte[] libroPdfBytes;
+        private byte[] libroPdfBytes = null;
 
         public EditarLibro(string isbn)
         {
@@ -50,6 +50,13 @@ namespace registro_mockup.formularios_administrador
 
         private void AplicarIdioma()
         {
+            cmbCategoria.Items[0] = Idioma.CategoriaMiedo;
+            cmbCategoria.Items[1] = Idioma.CategoriaDrama;
+            cmbCategoria.Items[2] = Idioma.CategoriaRomance;
+            cmbCategoria.Items[3] = Idioma.CategoriaAventura;
+            cmbCategoria.Items[4] = Idioma.CategoriaAccion;
+            cmbCategoria.Items[5] = Idioma.CategoriaInfantil;
+            cmbCategoria.Items[6] = Idioma.CategoriaOtro;
             this.Text = Idioma.TituloEditarLibro;
             lblMensaje.Text = Idioma.lblMensajeEditarLibro;
             lblIsbn.Text = Idioma.lblISBNEditarLibro;

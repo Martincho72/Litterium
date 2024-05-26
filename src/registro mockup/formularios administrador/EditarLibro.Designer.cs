@@ -71,7 +71,8 @@
             "Romance",
             "Aventura",
             "Accion",
-            "Infantil"});
+            "Infantil",
+            "Otro"});
             this.cmbCategoria.Location = new System.Drawing.Point(130, 247);
             this.cmbCategoria.Margin = new System.Windows.Forms.Padding(2);
             this.cmbCategoria.Name = "cmbCategoria";

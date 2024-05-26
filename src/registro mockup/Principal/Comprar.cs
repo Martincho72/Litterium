@@ -38,7 +38,7 @@ namespace registro_mockup.Principal
             }
             else
             {
-                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
         }
@@ -62,7 +62,7 @@ namespace registro_mockup.Principal
             }
             else
             {
-                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
         }
@@ -91,21 +91,15 @@ namespace registro_mockup.Principal
 
                     }
                     Carrito.MiCarrito.Clear();
-                    string idiomaActual = Thread.CurrentThread.CurrentUICulture.Name;
-                    if (idiomaActual == "es-ES")
-                    {
-                        MessageBox.Show("Compra Realizada con exito!!");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Purchase Completed Successfully!!");
-                    }
+
+                    MessageBox.Show(Idioma.compraRealizada, "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                     this.Close();
                 }
             }
             else
             {
-                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
         }
@@ -135,7 +129,7 @@ namespace registro_mockup.Principal
             if (txtCCV.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtCCV, "Introduce el Codigo de Seguridad de tu Tarjeta");
+                errorProvider1.SetError(txtCCV, Idioma.errorProviderCCV);
             }
             else
             {
@@ -146,7 +140,7 @@ namespace registro_mockup.Principal
             if (txtNumeroTarjeta.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtNumeroTarjeta, "Introduce el numero de la tarjeta");
+                errorProvider1.SetError(txtNumeroTarjeta, Idioma.errorProviderNumeroTarjeta);
             }
             else
             {
@@ -157,7 +151,7 @@ namespace registro_mockup.Principal
             if (txtUbicacionEntrega.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtUbicacionEntrega, "Introduce la direccion de facturacion");
+                errorProvider1.SetError(txtUbicacionEntrega, Idioma.errorProviderUbicacionEntrega);
             }
             else
             {

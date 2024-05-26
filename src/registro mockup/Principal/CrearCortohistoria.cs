@@ -61,7 +61,7 @@ namespace registro_mockup.Principal
             }
             else
             {
-                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
         }
@@ -117,12 +117,12 @@ namespace registro_mockup.Principal
                     Usuario us1 = Usuario.EncontrarDatosUsuario(basedatos.Conexion, usarioMenu);
                     CortoHistoria ch = new CortoHistoria(txtTitulo.Text, txtAutor.Text, DateTime.Now, cmbCategoria.Text, chbContinuarCortohistoria.Checked, true, us1.Id, pcbPortada.Image, txtCortohistoriaCrear.Text);
                     ch.AgregarCortoHistoria(basedatos.Conexion, ch);
-                    MessageBox.Show("CortoHistoria subida con exito","CortoHistoria Subida",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(Idioma.CHSubidaConExito,Idioma.InfoCHSubida,MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             else
             {
-                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
 
@@ -156,7 +156,7 @@ namespace registro_mockup.Principal
             if (cmbCategoria.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(cmbCategoria, "Debes de poner una categoria");
+                errorProvider1.SetError(cmbCategoria, Idioma.errorProviderSeleccionarCategoria);
             }
             else
             {
@@ -167,7 +167,7 @@ namespace registro_mockup.Principal
             if (txtCortohistoriaCrear.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtCortohistoriaCrear, "Debes introducir algo de texto en la CortoHistoria");
+                errorProvider1.SetError(txtCortohistoriaCrear, Idioma.errorProviderTextoCH);
             }
             else
             {
@@ -283,7 +283,7 @@ namespace registro_mockup.Principal
                     {
                         CortoHistoria ch = new CortoHistoria(txtTitulo.Text, txtAutor.Text, DateTime.Now, cmbCategoria.Text, chbContinuarCortohistoria.Checked, false, id_usuario, pcbPortada.Image, txtCortohistoriaCrear.Text);
                         ch.AgregarCortoHistoria(basedatos.Conexion, ch);
-                        MessageBox.Show("CortoHistoria guarado como borrador con exito", "CortoHistoria Guardada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show(Idioma.CHBorradorConExito, Idioma.InfoCHSubida, MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
@@ -292,7 +292,7 @@ namespace registro_mockup.Principal
                         {
                             // update
                             CortoHistoria.EditarCortoHistoria(basedatos.Conexion, cortoHistoria);
-                            MessageBox.Show("CortoHistoria Actualizada con exito", "CortoHistoria Actualizada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show(Idioma.CHActualizadaConExito, Idioma.InfoCHSubida, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                     }
                 }
@@ -300,7 +300,7 @@ namespace registro_mockup.Principal
             else
             {
                 //MessageBox.Show(Idioma.AbrirSesionError);
-                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             basedatos.CerrarConexion();
@@ -309,6 +309,13 @@ namespace registro_mockup.Principal
 
         private void AplicarIdioma()
         {
+            cmbCategoria.Items[0] = Idioma.CategoriaMiedo;
+            cmbCategoria.Items[1] = Idioma.CategoriaDrama;
+            cmbCategoria.Items[2] = Idioma.CategoriaRomance;
+            cmbCategoria.Items[3] = Idioma.CategoriaAventura;
+            cmbCategoria.Items[4] = Idioma.CategoriaAccion;
+            cmbCategoria.Items[5] = Idioma.CategoriaInfantil;
+            cmbCategoria.Items[6] = Idioma.CategoriaOtro;
             this.Text = Idioma.TituloCrearCortohistoria;
             lblTitulo.Text = Idioma.lblTituloCrearCortohistoria;
             lblCortohistoria.Text = Idioma.lblCortohistoriaCrearCortohistoria;

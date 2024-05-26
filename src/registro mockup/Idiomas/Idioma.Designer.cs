@@ -583,6 +583,78 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Accion.
+        /// </summary>
+        internal static string CategoriaAccion {
+            get {
+                return ResourceManager.GetString("CategoriaAccion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Aventura.
+        /// </summary>
+        internal static string CategoriaAventura {
+            get {
+                return ResourceManager.GetString("CategoriaAventura", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Drama.
+        /// </summary>
+        internal static string CategoriaDrama {
+            get {
+                return ResourceManager.GetString("CategoriaDrama", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Infantil.
+        /// </summary>
+        internal static string CategoriaInfantil {
+            get {
+                return ResourceManager.GetString("CategoriaInfantil", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Miedo.
+        /// </summary>
+        internal static string CategoriaMiedo {
+            get {
+                return ResourceManager.GetString("CategoriaMiedo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Otro.
+        /// </summary>
+        internal static string CategoriaOtro {
+            get {
+                return ResourceManager.GetString("CategoriaOtro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Romance.
+        /// </summary>
+        internal static string CategoriaRomance {
+            get {
+                return ResourceManager.GetString("CategoriaRomance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a CortoHistoria Actualizada con exito.
+        /// </summary>
+        internal static string CHActualizadaConExito {
+            get {
+                return ResourceManager.GetString("CHActualizadaConExito", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Admin.
         /// </summary>
         internal static string chbAdmin {
@@ -637,11 +709,29 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a CortoHistoria guarado como borrador con exito.
+        /// </summary>
+        internal static string CHBorradorConExito {
+            get {
+                return ResourceManager.GetString("CHBorradorConExito", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Vetado.
         /// </summary>
         internal static string chbVetado {
             get {
                 return ResourceManager.GetString("chbVetado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a CortoHistoria subida con exito.
+        /// </summary>
+        internal static string CHSubidaConExito {
+            get {
+                return ResourceManager.GetString("CHSubidaConExito", resourceCulture);
             }
         }
         
@@ -669,6 +759,15 @@ namespace registro_mockup.Idiomas {
         internal static string cmbTodo {
             get {
                 return ResourceManager.GetString("cmbTodo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a ¡Compra Realizada con exito!.
+        /// </summary>
+        internal static string compraRealizada {
+            get {
+                return ResourceManager.GetString("compraRealizada", resourceCulture);
             }
         }
         
@@ -745,6 +844,15 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Introduce el Código de Seguridad de tu Tarjeta.
+        /// </summary>
+        internal static string errorProviderCCV {
+            get {
+                return ResourceManager.GetString("errorProviderCCV", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Ingresa la contraseña.
         /// </summary>
         internal static string errorProviderContrasenyaLogIn {
@@ -808,6 +916,24 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Introduce el número de la tarjeta.
+        /// </summary>
+        internal static string errorProviderNumeroTarjeta {
+            get {
+                return ResourceManager.GetString("errorProviderNumeroTarjeta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Debes de poner una categoría.
+        /// </summary>
+        internal static string errorProviderSeleccionarCategoria {
+            get {
+                return ResourceManager.GetString("errorProviderSeleccionarCategoria", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Ingresa  el teléfono.
         /// </summary>
         internal static string errorProviderTelefonoRegistro {
@@ -817,11 +943,29 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Debes introducir algo de texto en la CortoHistoria.
+        /// </summary>
+        internal static string errorProviderTextoCH {
+            get {
+                return ResourceManager.GetString("errorProviderTextoCH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Ingresa la Titulo.
         /// </summary>
         internal static string errorProviderTitulo {
             get {
                 return ResourceManager.GetString("errorProviderTitulo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Introduce la dirección de facturacion.
+        /// </summary>
+        internal static string errorProviderUbicacionEntrega {
+            get {
+                return ResourceManager.GetString("errorProviderUbicacionEntrega", resourceCulture);
             }
         }
         
@@ -867,6 +1011,42 @@ namespace registro_mockup.Idiomas {
         internal static string ImagenNoSeleccionada {
             get {
                 return ResourceManager.GetString("ImagenNoSeleccionada", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Carrito Vacio.
+        /// </summary>
+        internal static string InfoCarrito {
+            get {
+                return ResourceManager.GetString("InfoCarrito", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a CortoHistoria Actualizada.
+        /// </summary>
+        internal static string InfoCHActualizada {
+            get {
+                return ResourceManager.GetString("InfoCHActualizada", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a CortoHistoria Guardada.
+        /// </summary>
+        internal static string InfoCHBorrador {
+            get {
+                return ResourceManager.GetString("InfoCHBorrador", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a CortoHistoria Subida.
+        /// </summary>
+        internal static string InfoCHSubida {
+            get {
+                return ResourceManager.GetString("InfoCHSubida", resourceCulture);
             }
         }
         
@@ -1866,6 +2046,15 @@ namespace registro_mockup.Idiomas {
         internal static string MensajeCambiarIdioma {
             get {
                 return ResourceManager.GetString("MensajeCambiarIdioma", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a El Carrito esta vacío debes introducir al menos un libro que quieras comprar.
+        /// </summary>
+        internal static string MensajeCarritoVacio {
+            get {
+                return ResourceManager.GetString("MensajeCarritoVacio", resourceCulture);
             }
         }
         

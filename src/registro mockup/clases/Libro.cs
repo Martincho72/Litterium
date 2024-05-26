@@ -300,11 +300,16 @@ namespace registro_mockup.clases
                     double valoracion = reader.GetDouble(4);
                     string sinopsis = reader.GetString(6);
                     double precio = reader.GetDouble(7);
+                    byte[] pdf = null;
+                    if (reader["pdf"] != DBNull.Value)
+                    {
+                        pdf = (byte[])reader["pdf"];
+                    }
                     byte[] img = (byte[])reader["imagen"];
                     MemoryStream ms = new MemoryStream(img);
                     Image foto = Image.FromStream(ms);
 
-                    l1 = new Libro(codigo, titulo, autor, categoria, valoracion, foto, sinopsis, precio, null);
+                    l1 = new Libro(codigo, titulo, autor, categoria, valoracion, foto, sinopsis, precio, pdf);
                 }
 
 

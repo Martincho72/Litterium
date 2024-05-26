@@ -33,6 +33,10 @@ namespace registro_mockup.Principal
                 txtSinopsis.Text = l1.Sinopsis;
                 pcbPortadaLibro.Image = l1.Portada;
                 lblPrecioLibro.Text += l1.Precio + "€";
+                if(l1.Pdf == null || l1.Pdf.Length < 3)
+                {
+                    rdbCopiaOnline.Enabled = false;
+                }
             }
             else
             {
@@ -116,7 +120,7 @@ namespace registro_mockup.Principal
                     Valoracion.EditarValoracion(basedatos.Conexion, usu.Id, isbnLibro, int.Parse(cmbValorar.Text));
                 }
                 Libro l1 = Libro.EncontrarDatosLibro(basedatos.Conexion, isbnLibro);
-                lblValoracion.Text += l1.Valoracion;
+                lblValoracion.Text = Idioma.lblValoracionLibro + l1.Valoracion;
             }
             else
             {

@@ -291,6 +291,30 @@
   <data name="CaptionCambiarIdioma" xml:space="preserve">
     <value>Cambio de idioma</value>
   </data>
+  <data name="CategoriaAccion" xml:space="preserve">
+    <value>Accion</value>
+  </data>
+  <data name="CategoriaAventura" xml:space="preserve">
+    <value>Aventura</value>
+  </data>
+  <data name="CategoriaDrama" xml:space="preserve">
+    <value>Drama</value>
+  </data>
+  <data name="CategoriaInfantil" xml:space="preserve">
+    <value>Infantil</value>
+  </data>
+  <data name="CategoriaMiedo" xml:space="preserve">
+    <value>Miedo</value>
+  </data>
+  <data name="CategoriaOtro" xml:space="preserve">
+    <value>Otro</value>
+  </data>
+  <data name="CategoriaRomance" xml:space="preserve">
+    <value>Romance</value>
+  </data>
+  <data name="CHActualizadaConExito" xml:space="preserve">
+    <value>CortoHistoria Actualizada con exito</value>
+  </data>
   <data name="chbAdmin" xml:space="preserve">
     <value>Admin</value>
   </data>
@@ -309,8 +333,14 @@
   <data name="chbFinalizadaEditarCortohistoria" xml:space="preserve">
     <value>Finalizada</value>
   </data>
+  <data name="CHBorradorConExito" xml:space="preserve">
+    <value>CortoHistoria guarado como borrador con exito</value>
+  </data>
   <data name="chbVetado" xml:space="preserve">
     <value>Vetado</value>
+  </data>
+  <data name="CHSubidaConExito" xml:space="preserve">
+    <value>CortoHistoria subida con exito</value>
   </data>
   <data name="cmbCortohistoria" xml:space="preserve">
     <value>Cortohistorias</value>
@@ -320,6 +350,9 @@
   </data>
   <data name="cmbTodo" xml:space="preserve">
     <value>Todos</value>
+  </data>
+  <data name="compraRealizada" xml:space="preserve">
+    <value>¡Compra Realizada con exito!</value>
   </data>
   <data name="ConexionFallida" xml:space="preserve">
     <value>No se ha podido abrir la conexion</value>
@@ -345,6 +378,9 @@
   <data name="errorProviderAutor" xml:space="preserve">
     <value>Ingresa el Autor</value>
   </data>
+  <data name="errorProviderCCV" xml:space="preserve">
+    <value>Introduce el Código de Seguridad de tu Tarjeta</value>
+  </data>
   <data name="errorProviderContrasenyaLogIn" xml:space="preserve">
     <value>Ingresa la contraseña</value>
   </data>
@@ -366,11 +402,23 @@
   <data name="errorProviderNombreRegistro" xml:space="preserve">
     <value>Ingresa el nombre</value>
   </data>
+  <data name="errorProviderNumeroTarjeta" xml:space="preserve">
+    <value>Introduce el número de la tarjeta</value>
+  </data>
+  <data name="errorProviderSeleccionarCategoria" xml:space="preserve">
+    <value>Debes de poner una categoría</value>
+  </data>
   <data name="errorProviderTelefonoRegistro" xml:space="preserve">
     <value>Ingresa  el teléfono</value>
   </data>
+  <data name="errorProviderTextoCH" xml:space="preserve">
+    <value>Debes introducir algo de texto en la CortoHistoria</value>
+  </data>
   <data name="errorProviderTitulo" xml:space="preserve">
     <value>Ingresa la Titulo</value>
+  </data>
+  <data name="errorProviderUbicacionEntrega" xml:space="preserve">
+    <value>Introduce la dirección de facturacion</value>
   </data>
   <data name="errorProviderUsuarioLogIn" xml:space="preserve">
     <value>Ingresa el Usuario</value>
@@ -386,6 +434,18 @@
   </data>
   <data name="ImagenNoSeleccionada" xml:space="preserve">
     <value>No se ha seleccionado imagen</value>
+  </data>
+  <data name="InfoCarrito" xml:space="preserve">
+    <value>Carrito Vacio</value>
+  </data>
+  <data name="InfoCHActualizada" xml:space="preserve">
+    <value>CortoHistoria Actualizada</value>
+  </data>
+  <data name="InfoCHBorrador" xml:space="preserve">
+    <value>CortoHistoria Guardada</value>
+  </data>
+  <data name="InfoCHSubida" xml:space="preserve">
+    <value>CortoHistoria Subida</value>
   </data>
   <data name="lblAdministradores" xml:space="preserve">
     <value>Administradores</value>
@@ -719,6 +779,9 @@
   </data>
   <data name="MensajeCambiarIdioma" xml:space="preserve">
     <value>¿Estás seguro que quieres cambiar de idioma? (Se le redirigirá al menú principal)</value>
+  </data>
+  <data name="MensajeCarritoVacio" xml:space="preserve">
+    <value>El Carrito esta vacío debes introducir al menos un libro que quieras comprar</value>
   </data>
   <data name="NoExisteID" xml:space="preserve">
     <value>No existe el ID</value>
