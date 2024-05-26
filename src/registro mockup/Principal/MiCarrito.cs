@@ -53,8 +53,15 @@ namespace registro_mockup.Principal
 
         private void btnPagar_Click_1(object sender, EventArgs e)
         {
-            Comprar form = new Comprar(usuario);
-            form.ShowDialog();
+            if (dgvMiCarrito.Rows.Count>=1)
+            {
+                Comprar form = new Comprar(usuario);
+                form.ShowDialog();
+            } else
+            {
+                MessageBox.Show("El Carrito esta vacio debes introducir al menos un libro que quieras comprar","Carrito Vacio",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+            
         }
     }
 }

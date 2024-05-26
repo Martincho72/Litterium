@@ -37,7 +37,6 @@
             this.lblContadorPalabras = new System.Windows.Forms.Label();
             this.chbContinuarCortohistoria = new System.Windows.Forms.CheckBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.txtCategoria = new System.Windows.Forms.TextBox();
             this.lblCategoria = new System.Windows.Forms.Label();
             this.lblAutor = new System.Windows.Forms.Label();
             this.txtAutor = new System.Windows.Forms.TextBox();
@@ -48,8 +47,11 @@
             this.btnBorradoresCortohistorias = new FontAwesome.Sharp.IconButton();
             this.btnSubirCortohistoria = new FontAwesome.Sharp.IconButton();
             this.btnPictureSeguirHistoria = new System.Windows.Forms.PictureBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.cmbCategoria = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pcbPortada)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPictureSeguirHistoria)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -102,7 +104,7 @@
             // chbContinuarCortohistoria
             // 
             this.chbContinuarCortohistoria.AutoSize = true;
-            this.chbContinuarCortohistoria.Location = new System.Drawing.Point(648, 435);
+            this.chbContinuarCortohistoria.Location = new System.Drawing.Point(541, 384);
             this.chbContinuarCortohistoria.Name = "chbContinuarCortohistoria";
             this.chbContinuarCortohistoria.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
             this.chbContinuarCortohistoria.Size = new System.Drawing.Size(98, 17);
@@ -115,18 +117,10 @@
             // 
             this.toolTip1.Popup += new System.Windows.Forms.PopupEventHandler(this.toolTip1_Popup);
             // 
-            // txtCategoria
-            // 
-            this.txtCategoria.Location = new System.Drawing.Point(471, 402);
-            this.txtCategoria.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtCategoria.Name = "txtCategoria";
-            this.txtCategoria.Size = new System.Drawing.Size(76, 20);
-            this.txtCategoria.TabIndex = 11;
-            // 
             // lblCategoria
             // 
             this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Location = new System.Drawing.Point(410, 407);
+            this.lblCategoria.Location = new System.Drawing.Point(708, 277);
             this.lblCategoria.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCategoria.Name = "lblCategoria";
             this.lblCategoria.Size = new System.Drawing.Size(57, 13);
@@ -136,7 +130,7 @@
             // lblAutor
             // 
             this.lblAutor.AutoSize = true;
-            this.lblAutor.Location = new System.Drawing.Point(551, 407);
+            this.lblAutor.Location = new System.Drawing.Point(721, 224);
             this.lblAutor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAutor.Name = "lblAutor";
             this.lblAutor.Size = new System.Drawing.Size(35, 13);
@@ -145,8 +139,8 @@
             // 
             // txtAutor
             // 
-            this.txtAutor.Location = new System.Drawing.Point(590, 402);
-            this.txtAutor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAutor.Location = new System.Drawing.Point(699, 243);
+            this.txtAutor.Margin = new System.Windows.Forms.Padding(2);
             this.txtAutor.Name = "txtAutor";
             this.txtAutor.Size = new System.Drawing.Size(76, 20);
             this.txtAutor.TabIndex = 15;
@@ -251,7 +245,7 @@
             // 
             this.btnPictureSeguirHistoria.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPictureSeguirHistoria.Image = global::registro_mockup.Properties.Resources.pregunta_removebg_preview;
-            this.btnPictureSeguirHistoria.Location = new System.Drawing.Point(763, 432);
+            this.btnPictureSeguirHistoria.Location = new System.Drawing.Point(645, 381);
             this.btnPictureSeguirHistoria.Name = "btnPictureSeguirHistoria";
             this.btnPictureSeguirHistoria.Size = new System.Drawing.Size(25, 20);
             this.btnPictureSeguirHistoria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -259,18 +253,39 @@
             this.btnPictureSeguirHistoria.TabStop = false;
             this.btnPictureSeguirHistoria.Click += new System.EventHandler(this.btnPictureSeguirHistoria_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // cmbCategoria
+            // 
+            this.cmbCategoria.FormattingEnabled = true;
+            this.cmbCategoria.Items.AddRange(new object[] {
+            "Miedo",
+            "Drama",
+            "Romance",
+            "Aventura",
+            "Accion",
+            "Infantil",
+            "Otro"});
+            this.cmbCategoria.Location = new System.Drawing.Point(700, 301);
+            this.cmbCategoria.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbCategoria.Name = "cmbCategoria";
+            this.cmbCategoria.Size = new System.Drawing.Size(73, 21);
+            this.cmbCategoria.TabIndex = 54;
+            // 
             // CrearCortohistoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 461);
+            this.Controls.Add(this.cmbCategoria);
             this.Controls.Add(this.lblAutor);
             this.Controls.Add(this.txtAutor);
             this.Controls.Add(this.pcbPortada);
             this.Controls.Add(this.btnCargarImagenCortohistorias);
             this.Controls.Add(this.lblCategoria);
-            this.Controls.Add(this.txtCategoria);
             this.Controls.Add(this.btnVerPDF);
             this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.btnBorradoresCortohistorias);
@@ -289,6 +304,7 @@
             this.Load += new System.EventHandler(this.CrearCortohistoria_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcbPortada)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPictureSeguirHistoria)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -308,11 +324,12 @@
         private FontAwesome.Sharp.IconButton btnBorrar;
         private System.Windows.Forms.ToolTip toolTip1;
         private FontAwesome.Sharp.IconButton btnVerPDF;
-        private System.Windows.Forms.TextBox txtCategoria;
         private System.Windows.Forms.Label lblCategoria;
         private System.Windows.Forms.PictureBox pcbPortada;
         private FontAwesome.Sharp.IconButton btnCargarImagenCortohistorias;
         private System.Windows.Forms.Label lblAutor;
         private System.Windows.Forms.TextBox txtAutor;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ComboBox cmbCategoria;
     }
 }

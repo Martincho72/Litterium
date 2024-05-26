@@ -1114,7 +1114,7 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Selecione cual quiere continuar( doble click).
+        ///   Busca una cadena traducida similar a Seleccione cual quiere continuar( doble click).
         /// </summary>
         internal static string lblDobleClickSeleccionarCH {
             get {
@@ -1924,7 +1924,7 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Al activar esta funcion permites que el resto de ususarios puedan continuar la cortohistoria..
+        ///   Busca una cadena traducida similar a Al activar esta funcion permites que el resto de usuarios puedan continuar la cortohistoria..
         /// </summary>
         internal static string SeguirCortoHistoriaToolTip {
             get {
