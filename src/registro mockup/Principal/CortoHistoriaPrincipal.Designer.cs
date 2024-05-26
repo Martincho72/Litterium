@@ -31,91 +31,91 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CortoHistoriaPrincipal));
             this.panel1 = new System.Windows.Forms.Panel();
             this.tlpBotones = new System.Windows.Forms.TableLayoutPanel();
-            this.btnContinuarCortohistoria = new FontAwesome.Sharp.IconButton();
-            this.btnCrearCortohistoria = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.grbValoradosLibro4 = new System.Windows.Forms.GroupBox();
-            this.pcbValoradoLibro4 = new System.Windows.Forms.PictureBox();
             this.grbValoradosLibro5 = new System.Windows.Forms.GroupBox();
-            this.pcbValoradoLibro5 = new System.Windows.Forms.PictureBox();
             this.grbValoradosLibro3 = new System.Windows.Forms.GroupBox();
-            this.pcbValoradoLibro3 = new System.Windows.Forms.PictureBox();
             this.grbValoradosLibro1 = new System.Windows.Forms.GroupBox();
-            this.pcbValoradoLibro1 = new System.Windows.Forms.PictureBox();
             this.grbValoradosLibro2 = new System.Windows.Forms.GroupBox();
-            this.pcbValoradoLibro2 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.lblLibrosEnCortohistorias = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.grbValoradosCH4 = new System.Windows.Forms.GroupBox();
-            this.pcbReciente4 = new System.Windows.Forms.PictureBox();
             this.grbValoradosCH5 = new System.Windows.Forms.GroupBox();
-            this.pcbReciente5 = new System.Windows.Forms.PictureBox();
             this.grbValoradosCH3 = new System.Windows.Forms.GroupBox();
-            this.pcbReciente3 = new System.Windows.Forms.PictureBox();
             this.grbValoradosCH1 = new System.Windows.Forms.GroupBox();
-            this.pcbReciente1 = new System.Windows.Forms.PictureBox();
             this.grbValoradosCH2 = new System.Windows.Forms.GroupBox();
-            this.pcbReciente2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblCortoHistoriasRecientes = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.gbxRecomendadosCH4 = new System.Windows.Forms.GroupBox();
-            this.pcbRecomendado4 = new System.Windows.Forms.PictureBox();
             this.gbxRecomendadosCH5 = new System.Windows.Forms.GroupBox();
-            this.pcbRecomendado5 = new System.Windows.Forms.PictureBox();
             this.gbxRecomendadosCH3 = new System.Windows.Forms.GroupBox();
-            this.pcbRecomendado3 = new System.Windows.Forms.PictureBox();
             this.gbxRecomendadosCH1 = new System.Windows.Forms.GroupBox();
-            this.pcbRecomendado1 = new System.Windows.Forms.PictureBox();
             this.gbxRecomendadosCH2 = new System.Windows.Forms.GroupBox();
-            this.pcbRecomendado2 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.lblRecomendadosCH = new System.Windows.Forms.Label();
+            this.btnContinuarCortohistoria = new FontAwesome.Sharp.IconButton();
+            this.btnCrearCortohistoria = new FontAwesome.Sharp.IconButton();
+            this.pcbValoradoLibro4 = new System.Windows.Forms.PictureBox();
+            this.pcbValoradoLibro5 = new System.Windows.Forms.PictureBox();
+            this.pcbValoradoLibro3 = new System.Windows.Forms.PictureBox();
+            this.pcbValoradoLibro1 = new System.Windows.Forms.PictureBox();
+            this.pcbValoradoLibro2 = new System.Windows.Forms.PictureBox();
+            this.pcbReciente4 = new System.Windows.Forms.PictureBox();
+            this.pcbReciente5 = new System.Windows.Forms.PictureBox();
+            this.pcbReciente3 = new System.Windows.Forms.PictureBox();
+            this.pcbReciente1 = new System.Windows.Forms.PictureBox();
+            this.pcbReciente2 = new System.Windows.Forms.PictureBox();
+            this.pcbRecomendado4 = new System.Windows.Forms.PictureBox();
+            this.pcbRecomendado5 = new System.Windows.Forms.PictureBox();
+            this.pcbRecomendado3 = new System.Windows.Forms.PictureBox();
+            this.pcbRecomendado1 = new System.Windows.Forms.PictureBox();
+            this.pcbRecomendado2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.tlpBotones.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.grbValoradosLibro4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbValoradoLibro4)).BeginInit();
             this.grbValoradosLibro5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbValoradoLibro5)).BeginInit();
             this.grbValoradosLibro3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbValoradoLibro3)).BeginInit();
             this.grbValoradosLibro1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbValoradoLibro1)).BeginInit();
             this.grbValoradosLibro2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbValoradoLibro2)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.grbValoradosCH4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbReciente4)).BeginInit();
             this.grbValoradosCH5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbReciente5)).BeginInit();
             this.grbValoradosCH3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbReciente3)).BeginInit();
             this.grbValoradosCH1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbReciente1)).BeginInit();
             this.grbValoradosCH2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbReciente2)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.gbxRecomendadosCH4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbRecomendado4)).BeginInit();
             this.gbxRecomendadosCH5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbRecomendado5)).BeginInit();
             this.gbxRecomendadosCH3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbRecomendado3)).BeginInit();
             this.gbxRecomendadosCH1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbRecomendado1)).BeginInit();
             this.gbxRecomendadosCH2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbRecomendado2)).BeginInit();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbValoradoLibro4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbValoradoLibro5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbValoradoLibro3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbValoradoLibro1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbValoradoLibro2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbReciente4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbReciente5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbReciente3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbReciente1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbReciente2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbRecomendado4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbRecomendado5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbRecomendado3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbRecomendado1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbRecomendado2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -149,53 +149,6 @@
             this.tlpBotones.Size = new System.Drawing.Size(747, 67);
             this.tlpBotones.TabIndex = 5;
             // 
-            // btnContinuarCortohistoria
-            // 
-            this.btnContinuarCortohistoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnContinuarCortohistoria.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnContinuarCortohistoria.FlatAppearance.BorderSize = 0;
-            this.btnContinuarCortohistoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnContinuarCortohistoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnContinuarCortohistoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnContinuarCortohistoria.IconChar = FontAwesome.Sharp.IconChar.FileEdit;
-            this.btnContinuarCortohistoria.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnContinuarCortohistoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnContinuarCortohistoria.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnContinuarCortohistoria.Location = new System.Drawing.Point(375, 2);
-            this.btnContinuarCortohistoria.Margin = new System.Windows.Forms.Padding(2);
-            this.btnContinuarCortohistoria.Name = "btnContinuarCortohistoria";
-            this.btnContinuarCortohistoria.Padding = new System.Windows.Forms.Padding(7, 0, 14, 0);
-            this.btnContinuarCortohistoria.Size = new System.Drawing.Size(370, 63);
-            this.btnContinuarCortohistoria.TabIndex = 6;
-            this.btnContinuarCortohistoria.Text = "Cortohistorias que continuar";
-            this.btnContinuarCortohistoria.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnContinuarCortohistoria.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnContinuarCortohistoria.UseVisualStyleBackColor = false;
-            this.btnContinuarCortohistoria.Click += new System.EventHandler(this.btnContinuarCortohistoria_Click);
-            // 
-            // btnCrearCortohistoria
-            // 
-            this.btnCrearCortohistoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnCrearCortohistoria.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnCrearCortohistoria.FlatAppearance.BorderSize = 0;
-            this.btnCrearCortohistoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCrearCortohistoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCrearCortohistoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnCrearCortohistoria.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.btnCrearCortohistoria.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnCrearCortohistoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCrearCortohistoria.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCrearCortohistoria.Location = new System.Drawing.Point(2, 2);
-            this.btnCrearCortohistoria.Margin = new System.Windows.Forms.Padding(2);
-            this.btnCrearCortohistoria.Name = "btnCrearCortohistoria";
-            this.btnCrearCortohistoria.Padding = new System.Windows.Forms.Padding(7, 0, 14, 0);
-            this.btnCrearCortohistoria.Size = new System.Drawing.Size(369, 63);
-            this.btnCrearCortohistoria.TabIndex = 5;
-            this.btnCrearCortohistoria.Text = "CrearCortohistoria";
-            this.btnCrearCortohistoria.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCrearCortohistoria.UseVisualStyleBackColor = false;
-            this.btnCrearCortohistoria.Click += new System.EventHandler(this.btnCrearCortohistoria_Click);
-            // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -206,7 +159,7 @@
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel8);
-            this.panel2.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(0, 69);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
@@ -248,19 +201,6 @@
             this.grbValoradosLibro4.TabStop = false;
             this.grbValoradosLibro4.Text = "groupBox10";
             // 
-            // pcbValoradoLibro4
-            // 
-            this.pcbValoradoLibro4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pcbValoradoLibro4.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
-            this.pcbValoradoLibro4.Location = new System.Drawing.Point(2, 19);
-            this.pcbValoradoLibro4.Margin = new System.Windows.Forms.Padding(2);
-            this.pcbValoradoLibro4.Name = "pcbValoradoLibro4";
-            this.pcbValoradoLibro4.Size = new System.Drawing.Size(141, 117);
-            this.pcbValoradoLibro4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbValoradoLibro4.TabIndex = 0;
-            this.pcbValoradoLibro4.TabStop = false;
-            this.pcbValoradoLibro4.Click += new System.EventHandler(this.pictureBox11_Click);
-            // 
             // grbValoradosLibro5
             // 
             this.grbValoradosLibro5.Controls.Add(this.pcbValoradoLibro5);
@@ -274,19 +214,6 @@
             this.grbValoradosLibro5.TabStop = false;
             this.grbValoradosLibro5.Text = "groupBox10";
             this.grbValoradosLibro5.Enter += new System.EventHandler(this.grbCortohistoriasLibros5_Enter);
-            // 
-            // pcbValoradoLibro5
-            // 
-            this.pcbValoradoLibro5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pcbValoradoLibro5.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
-            this.pcbValoradoLibro5.Location = new System.Drawing.Point(2, 19);
-            this.pcbValoradoLibro5.Margin = new System.Windows.Forms.Padding(2);
-            this.pcbValoradoLibro5.Name = "pcbValoradoLibro5";
-            this.pcbValoradoLibro5.Size = new System.Drawing.Size(143, 117);
-            this.pcbValoradoLibro5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbValoradoLibro5.TabIndex = 0;
-            this.pcbValoradoLibro5.TabStop = false;
-            this.pcbValoradoLibro5.Click += new System.EventHandler(this.pcbValoradoLibro5_Click);
             // 
             // grbValoradosLibro3
             // 
@@ -302,19 +229,6 @@
             this.grbValoradosLibro3.Text = "groupBox10";
             this.grbValoradosLibro3.Enter += new System.EventHandler(this.grbCortohistoriasLibros3_Enter);
             // 
-            // pcbValoradoLibro3
-            // 
-            this.pcbValoradoLibro3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pcbValoradoLibro3.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
-            this.pcbValoradoLibro3.Location = new System.Drawing.Point(2, 19);
-            this.pcbValoradoLibro3.Margin = new System.Windows.Forms.Padding(2);
-            this.pcbValoradoLibro3.Name = "pcbValoradoLibro3";
-            this.pcbValoradoLibro3.Size = new System.Drawing.Size(141, 117);
-            this.pcbValoradoLibro3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbValoradoLibro3.TabIndex = 0;
-            this.pcbValoradoLibro3.TabStop = false;
-            this.pcbValoradoLibro3.Click += new System.EventHandler(this.pcbValoradoLibro3_Click);
-            // 
             // grbValoradosLibro1
             // 
             this.grbValoradosLibro1.Controls.Add(this.pcbValoradoLibro1);
@@ -328,19 +242,6 @@
             this.grbValoradosLibro1.TabStop = false;
             this.grbValoradosLibro1.Text = "groupBox10";
             // 
-            // pcbValoradoLibro1
-            // 
-            this.pcbValoradoLibro1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pcbValoradoLibro1.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
-            this.pcbValoradoLibro1.Location = new System.Drawing.Point(2, 19);
-            this.pcbValoradoLibro1.Margin = new System.Windows.Forms.Padding(2);
-            this.pcbValoradoLibro1.Name = "pcbValoradoLibro1";
-            this.pcbValoradoLibro1.Size = new System.Drawing.Size(141, 117);
-            this.pcbValoradoLibro1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbValoradoLibro1.TabIndex = 0;
-            this.pcbValoradoLibro1.TabStop = false;
-            this.pcbValoradoLibro1.Click += new System.EventHandler(this.pcbValoradoLibro1_Click);
-            // 
             // grbValoradosLibro2
             // 
             this.grbValoradosLibro2.Controls.Add(this.pcbValoradoLibro2);
@@ -353,19 +254,6 @@
             this.grbValoradosLibro2.TabIndex = 5;
             this.grbValoradosLibro2.TabStop = false;
             this.grbValoradosLibro2.Text = "groupBox10";
-            // 
-            // pcbValoradoLibro2
-            // 
-            this.pcbValoradoLibro2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pcbValoradoLibro2.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
-            this.pcbValoradoLibro2.Location = new System.Drawing.Point(2, 19);
-            this.pcbValoradoLibro2.Margin = new System.Windows.Forms.Padding(2);
-            this.pcbValoradoLibro2.Name = "pcbValoradoLibro2";
-            this.pcbValoradoLibro2.Size = new System.Drawing.Size(141, 117);
-            this.pcbValoradoLibro2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbValoradoLibro2.TabIndex = 0;
-            this.pcbValoradoLibro2.TabStop = false;
-            this.pcbValoradoLibro2.Click += new System.EventHandler(this.pcbValoradoLibro2_Click);
             // 
             // panel6
             // 
@@ -432,19 +320,6 @@
             this.grbValoradosCH4.TabStop = false;
             this.grbValoradosCH4.Text = "groupBox10";
             // 
-            // pcbReciente4
-            // 
-            this.pcbReciente4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pcbReciente4.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
-            this.pcbReciente4.Location = new System.Drawing.Point(2, 19);
-            this.pcbReciente4.Margin = new System.Windows.Forms.Padding(2);
-            this.pcbReciente4.Name = "pcbReciente4";
-            this.pcbReciente4.Size = new System.Drawing.Size(141, 135);
-            this.pcbReciente4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbReciente4.TabIndex = 0;
-            this.pcbReciente4.TabStop = false;
-            this.pcbReciente4.Click += new System.EventHandler(this.pcbReciente4_Click);
-            // 
             // grbValoradosCH5
             // 
             this.grbValoradosCH5.Controls.Add(this.pcbReciente5);
@@ -457,19 +332,6 @@
             this.grbValoradosCH5.TabIndex = 8;
             this.grbValoradosCH5.TabStop = false;
             this.grbValoradosCH5.Text = "groupBox10";
-            // 
-            // pcbReciente5
-            // 
-            this.pcbReciente5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pcbReciente5.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
-            this.pcbReciente5.Location = new System.Drawing.Point(2, 19);
-            this.pcbReciente5.Margin = new System.Windows.Forms.Padding(2);
-            this.pcbReciente5.Name = "pcbReciente5";
-            this.pcbReciente5.Size = new System.Drawing.Size(143, 135);
-            this.pcbReciente5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbReciente5.TabIndex = 0;
-            this.pcbReciente5.TabStop = false;
-            this.pcbReciente5.Click += new System.EventHandler(this.pcbReciente5_Click);
             // 
             // grbValoradosCH3
             // 
@@ -484,19 +346,6 @@
             this.grbValoradosCH3.TabStop = false;
             this.grbValoradosCH3.Text = "groupBox10";
             // 
-            // pcbReciente3
-            // 
-            this.pcbReciente3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pcbReciente3.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
-            this.pcbReciente3.Location = new System.Drawing.Point(2, 19);
-            this.pcbReciente3.Margin = new System.Windows.Forms.Padding(2);
-            this.pcbReciente3.Name = "pcbReciente3";
-            this.pcbReciente3.Size = new System.Drawing.Size(141, 135);
-            this.pcbReciente3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbReciente3.TabIndex = 0;
-            this.pcbReciente3.TabStop = false;
-            this.pcbReciente3.Click += new System.EventHandler(this.pcbReciente3_Click);
-            // 
             // grbValoradosCH1
             // 
             this.grbValoradosCH1.Controls.Add(this.pcbReciente1);
@@ -510,19 +359,6 @@
             this.grbValoradosCH1.TabStop = false;
             this.grbValoradosCH1.Text = "groupBox10";
             // 
-            // pcbReciente1
-            // 
-            this.pcbReciente1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pcbReciente1.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
-            this.pcbReciente1.Location = new System.Drawing.Point(2, 19);
-            this.pcbReciente1.Margin = new System.Windows.Forms.Padding(2);
-            this.pcbReciente1.Name = "pcbReciente1";
-            this.pcbReciente1.Size = new System.Drawing.Size(141, 135);
-            this.pcbReciente1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbReciente1.TabIndex = 0;
-            this.pcbReciente1.TabStop = false;
-            this.pcbReciente1.Click += new System.EventHandler(this.pcbReciente1_Click);
-            // 
             // grbValoradosCH2
             // 
             this.grbValoradosCH2.Controls.Add(this.pcbReciente2);
@@ -535,19 +371,6 @@
             this.grbValoradosCH2.TabIndex = 5;
             this.grbValoradosCH2.TabStop = false;
             this.grbValoradosCH2.Text = "groupBox10";
-            // 
-            // pcbReciente2
-            // 
-            this.pcbReciente2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pcbReciente2.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
-            this.pcbReciente2.Location = new System.Drawing.Point(2, 19);
-            this.pcbReciente2.Margin = new System.Windows.Forms.Padding(2);
-            this.pcbReciente2.Name = "pcbReciente2";
-            this.pcbReciente2.Size = new System.Drawing.Size(141, 135);
-            this.pcbReciente2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbReciente2.TabIndex = 0;
-            this.pcbReciente2.TabStop = false;
-            this.pcbReciente2.Click += new System.EventHandler(this.pcbReciente2_Click);
             // 
             // panel3
             // 
@@ -614,19 +437,6 @@
             this.gbxRecomendadosCH4.TabStop = false;
             this.gbxRecomendadosCH4.Text = "El Espejo Misterioso";
             // 
-            // pcbRecomendado4
-            // 
-            this.pcbRecomendado4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pcbRecomendado4.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
-            this.pcbRecomendado4.Location = new System.Drawing.Point(2, 19);
-            this.pcbRecomendado4.Margin = new System.Windows.Forms.Padding(2);
-            this.pcbRecomendado4.Name = "pcbRecomendado4";
-            this.pcbRecomendado4.Size = new System.Drawing.Size(141, 123);
-            this.pcbRecomendado4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbRecomendado4.TabIndex = 0;
-            this.pcbRecomendado4.TabStop = false;
-            this.pcbRecomendado4.Click += new System.EventHandler(this.pcbRecomendado4_Click);
-            // 
             // gbxRecomendadosCH5
             // 
             this.gbxRecomendadosCH5.Controls.Add(this.pcbRecomendado5);
@@ -639,19 +449,6 @@
             this.gbxRecomendadosCH5.TabIndex = 8;
             this.gbxRecomendadosCH5.TabStop = false;
             this.gbxRecomendadosCH5.Text = "El libro olvidado";
-            // 
-            // pcbRecomendado5
-            // 
-            this.pcbRecomendado5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pcbRecomendado5.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
-            this.pcbRecomendado5.Location = new System.Drawing.Point(2, 19);
-            this.pcbRecomendado5.Margin = new System.Windows.Forms.Padding(2);
-            this.pcbRecomendado5.Name = "pcbRecomendado5";
-            this.pcbRecomendado5.Size = new System.Drawing.Size(143, 123);
-            this.pcbRecomendado5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbRecomendado5.TabIndex = 0;
-            this.pcbRecomendado5.TabStop = false;
-            this.pcbRecomendado5.Click += new System.EventHandler(this.pcbRecomendado5_Click);
             // 
             // gbxRecomendadosCH3
             // 
@@ -666,24 +463,11 @@
             this.gbxRecomendadosCH3.TabStop = false;
             this.gbxRecomendadosCH3.Text = "La Caja de Musica";
             // 
-            // pcbRecomendado3
-            // 
-            this.pcbRecomendado3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pcbRecomendado3.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
-            this.pcbRecomendado3.Location = new System.Drawing.Point(2, 19);
-            this.pcbRecomendado3.Margin = new System.Windows.Forms.Padding(2);
-            this.pcbRecomendado3.Name = "pcbRecomendado3";
-            this.pcbRecomendado3.Size = new System.Drawing.Size(139, 123);
-            this.pcbRecomendado3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbRecomendado3.TabIndex = 0;
-            this.pcbRecomendado3.TabStop = false;
-            this.pcbRecomendado3.Click += new System.EventHandler(this.pcbRecomendado3_Click);
-            // 
             // gbxRecomendadosCH1
             // 
             this.gbxRecomendadosCH1.Controls.Add(this.pcbRecomendado1);
             this.gbxRecomendadosCH1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbxRecomendadosCH1.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbxRecomendadosCH1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbxRecomendadosCH1.Location = new System.Drawing.Point(2, 2);
             this.gbxRecomendadosCH1.Margin = new System.Windows.Forms.Padding(2);
             this.gbxRecomendadosCH1.Name = "gbxRecomendadosCH1";
@@ -694,24 +478,11 @@
             this.gbxRecomendadosCH1.Text = "El Reloj encantado";
             this.gbxRecomendadosCH1.UseCompatibleTextRendering = true;
             // 
-            // pcbRecomendado1
-            // 
-            this.pcbRecomendado1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pcbRecomendado1.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo3;
-            this.pcbRecomendado1.Location = new System.Drawing.Point(2, 19);
-            this.pcbRecomendado1.Margin = new System.Windows.Forms.Padding(2);
-            this.pcbRecomendado1.Name = "pcbRecomendado1";
-            this.pcbRecomendado1.Size = new System.Drawing.Size(141, 123);
-            this.pcbRecomendado1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbRecomendado1.TabIndex = 0;
-            this.pcbRecomendado1.TabStop = false;
-            this.pcbRecomendado1.Click += new System.EventHandler(this.pcbRecomendado1_Click);
-            // 
             // gbxRecomendadosCH2
             // 
             this.gbxRecomendadosCH2.Controls.Add(this.pcbRecomendado2);
             this.gbxRecomendadosCH2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbxRecomendadosCH2.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbxRecomendadosCH2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbxRecomendadosCH2.Location = new System.Drawing.Point(151, 2);
             this.gbxRecomendadosCH2.Margin = new System.Windows.Forms.Padding(2);
             this.gbxRecomendadosCH2.Name = "gbxRecomendadosCH2";
@@ -720,19 +491,6 @@
             this.gbxRecomendadosCH2.TabIndex = 5;
             this.gbxRecomendadosCH2.TabStop = false;
             this.gbxRecomendadosCH2.Text = "El Cuaderno Magico";
-            // 
-            // pcbRecomendado2
-            // 
-            this.pcbRecomendado2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pcbRecomendado2.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
-            this.pcbRecomendado2.Location = new System.Drawing.Point(2, 19);
-            this.pcbRecomendado2.Margin = new System.Windows.Forms.Padding(2);
-            this.pcbRecomendado2.Name = "pcbRecomendado2";
-            this.pcbRecomendado2.Size = new System.Drawing.Size(143, 123);
-            this.pcbRecomendado2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbRecomendado2.TabIndex = 0;
-            this.pcbRecomendado2.TabStop = false;
-            this.pcbRecomendado2.Click += new System.EventHandler(this.pcbRecomendado2_Click);
             // 
             // panel8
             // 
@@ -756,6 +514,248 @@
             this.lblRecomendadosCH.Text = "Recomendados por Litterium :";
             this.lblRecomendadosCH.Click += new System.EventHandler(this.lblRecomendadosLibros_Click);
             // 
+            // btnContinuarCortohistoria
+            // 
+            this.btnContinuarCortohistoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnContinuarCortohistoria.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnContinuarCortohistoria.FlatAppearance.BorderSize = 0;
+            this.btnContinuarCortohistoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnContinuarCortohistoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnContinuarCortohistoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnContinuarCortohistoria.IconChar = FontAwesome.Sharp.IconChar.FileEdit;
+            this.btnContinuarCortohistoria.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnContinuarCortohistoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnContinuarCortohistoria.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnContinuarCortohistoria.Location = new System.Drawing.Point(375, 2);
+            this.btnContinuarCortohistoria.Margin = new System.Windows.Forms.Padding(2);
+            this.btnContinuarCortohistoria.Name = "btnContinuarCortohistoria";
+            this.btnContinuarCortohistoria.Padding = new System.Windows.Forms.Padding(7, 0, 14, 0);
+            this.btnContinuarCortohistoria.Size = new System.Drawing.Size(370, 63);
+            this.btnContinuarCortohistoria.TabIndex = 6;
+            this.btnContinuarCortohistoria.Text = "Cortohistorias que continuar";
+            this.btnContinuarCortohistoria.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnContinuarCortohistoria.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnContinuarCortohistoria.UseVisualStyleBackColor = false;
+            this.btnContinuarCortohistoria.Click += new System.EventHandler(this.btnContinuarCortohistoria_Click);
+            // 
+            // btnCrearCortohistoria
+            // 
+            this.btnCrearCortohistoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnCrearCortohistoria.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnCrearCortohistoria.FlatAppearance.BorderSize = 0;
+            this.btnCrearCortohistoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCrearCortohistoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrearCortohistoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnCrearCortohistoria.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.btnCrearCortohistoria.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnCrearCortohistoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCrearCortohistoria.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCrearCortohistoria.Location = new System.Drawing.Point(2, 2);
+            this.btnCrearCortohistoria.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCrearCortohistoria.Name = "btnCrearCortohistoria";
+            this.btnCrearCortohistoria.Padding = new System.Windows.Forms.Padding(7, 0, 14, 0);
+            this.btnCrearCortohistoria.Size = new System.Drawing.Size(369, 63);
+            this.btnCrearCortohistoria.TabIndex = 5;
+            this.btnCrearCortohistoria.Text = "CrearCortohistoria";
+            this.btnCrearCortohistoria.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCrearCortohistoria.UseVisualStyleBackColor = false;
+            this.btnCrearCortohistoria.Click += new System.EventHandler(this.btnCrearCortohistoria_Click);
+            // 
+            // pcbValoradoLibro4
+            // 
+            this.pcbValoradoLibro4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pcbValoradoLibro4.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
+            this.pcbValoradoLibro4.Location = new System.Drawing.Point(2, 18);
+            this.pcbValoradoLibro4.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbValoradoLibro4.Name = "pcbValoradoLibro4";
+            this.pcbValoradoLibro4.Size = new System.Drawing.Size(141, 118);
+            this.pcbValoradoLibro4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbValoradoLibro4.TabIndex = 0;
+            this.pcbValoradoLibro4.TabStop = false;
+            this.pcbValoradoLibro4.Click += new System.EventHandler(this.pictureBox11_Click);
+            // 
+            // pcbValoradoLibro5
+            // 
+            this.pcbValoradoLibro5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pcbValoradoLibro5.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
+            this.pcbValoradoLibro5.Location = new System.Drawing.Point(2, 18);
+            this.pcbValoradoLibro5.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbValoradoLibro5.Name = "pcbValoradoLibro5";
+            this.pcbValoradoLibro5.Size = new System.Drawing.Size(143, 118);
+            this.pcbValoradoLibro5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbValoradoLibro5.TabIndex = 0;
+            this.pcbValoradoLibro5.TabStop = false;
+            this.pcbValoradoLibro5.Click += new System.EventHandler(this.pcbValoradoLibro5_Click);
+            // 
+            // pcbValoradoLibro3
+            // 
+            this.pcbValoradoLibro3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pcbValoradoLibro3.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
+            this.pcbValoradoLibro3.Location = new System.Drawing.Point(2, 18);
+            this.pcbValoradoLibro3.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbValoradoLibro3.Name = "pcbValoradoLibro3";
+            this.pcbValoradoLibro3.Size = new System.Drawing.Size(141, 118);
+            this.pcbValoradoLibro3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbValoradoLibro3.TabIndex = 0;
+            this.pcbValoradoLibro3.TabStop = false;
+            this.pcbValoradoLibro3.Click += new System.EventHandler(this.pcbValoradoLibro3_Click);
+            // 
+            // pcbValoradoLibro1
+            // 
+            this.pcbValoradoLibro1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pcbValoradoLibro1.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
+            this.pcbValoradoLibro1.Location = new System.Drawing.Point(2, 18);
+            this.pcbValoradoLibro1.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbValoradoLibro1.Name = "pcbValoradoLibro1";
+            this.pcbValoradoLibro1.Size = new System.Drawing.Size(141, 118);
+            this.pcbValoradoLibro1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbValoradoLibro1.TabIndex = 0;
+            this.pcbValoradoLibro1.TabStop = false;
+            this.pcbValoradoLibro1.Click += new System.EventHandler(this.pcbValoradoLibro1_Click);
+            // 
+            // pcbValoradoLibro2
+            // 
+            this.pcbValoradoLibro2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pcbValoradoLibro2.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
+            this.pcbValoradoLibro2.Location = new System.Drawing.Point(2, 18);
+            this.pcbValoradoLibro2.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbValoradoLibro2.Name = "pcbValoradoLibro2";
+            this.pcbValoradoLibro2.Size = new System.Drawing.Size(141, 118);
+            this.pcbValoradoLibro2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbValoradoLibro2.TabIndex = 0;
+            this.pcbValoradoLibro2.TabStop = false;
+            this.pcbValoradoLibro2.Click += new System.EventHandler(this.pcbValoradoLibro2_Click);
+            // 
+            // pcbReciente4
+            // 
+            this.pcbReciente4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pcbReciente4.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
+            this.pcbReciente4.Location = new System.Drawing.Point(2, 18);
+            this.pcbReciente4.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbReciente4.Name = "pcbReciente4";
+            this.pcbReciente4.Size = new System.Drawing.Size(141, 136);
+            this.pcbReciente4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbReciente4.TabIndex = 0;
+            this.pcbReciente4.TabStop = false;
+            this.pcbReciente4.Click += new System.EventHandler(this.pcbReciente4_Click);
+            // 
+            // pcbReciente5
+            // 
+            this.pcbReciente5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pcbReciente5.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
+            this.pcbReciente5.Location = new System.Drawing.Point(2, 18);
+            this.pcbReciente5.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbReciente5.Name = "pcbReciente5";
+            this.pcbReciente5.Size = new System.Drawing.Size(143, 136);
+            this.pcbReciente5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbReciente5.TabIndex = 0;
+            this.pcbReciente5.TabStop = false;
+            this.pcbReciente5.Click += new System.EventHandler(this.pcbReciente5_Click);
+            // 
+            // pcbReciente3
+            // 
+            this.pcbReciente3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pcbReciente3.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
+            this.pcbReciente3.Location = new System.Drawing.Point(2, 18);
+            this.pcbReciente3.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbReciente3.Name = "pcbReciente3";
+            this.pcbReciente3.Size = new System.Drawing.Size(141, 136);
+            this.pcbReciente3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbReciente3.TabIndex = 0;
+            this.pcbReciente3.TabStop = false;
+            this.pcbReciente3.Click += new System.EventHandler(this.pcbReciente3_Click);
+            // 
+            // pcbReciente1
+            // 
+            this.pcbReciente1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pcbReciente1.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
+            this.pcbReciente1.Location = new System.Drawing.Point(2, 18);
+            this.pcbReciente1.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbReciente1.Name = "pcbReciente1";
+            this.pcbReciente1.Size = new System.Drawing.Size(141, 136);
+            this.pcbReciente1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbReciente1.TabIndex = 0;
+            this.pcbReciente1.TabStop = false;
+            this.pcbReciente1.Click += new System.EventHandler(this.pcbReciente1_Click);
+            // 
+            // pcbReciente2
+            // 
+            this.pcbReciente2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pcbReciente2.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
+            this.pcbReciente2.Location = new System.Drawing.Point(2, 18);
+            this.pcbReciente2.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbReciente2.Name = "pcbReciente2";
+            this.pcbReciente2.Size = new System.Drawing.Size(141, 136);
+            this.pcbReciente2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbReciente2.TabIndex = 0;
+            this.pcbReciente2.TabStop = false;
+            this.pcbReciente2.Click += new System.EventHandler(this.pcbReciente2_Click);
+            // 
+            // pcbRecomendado4
+            // 
+            this.pcbRecomendado4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pcbRecomendado4.Image = global::registro_mockup.Properties.Resources.unnamed;
+            this.pcbRecomendado4.Location = new System.Drawing.Point(2, 18);
+            this.pcbRecomendado4.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbRecomendado4.Name = "pcbRecomendado4";
+            this.pcbRecomendado4.Size = new System.Drawing.Size(141, 124);
+            this.pcbRecomendado4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbRecomendado4.TabIndex = 0;
+            this.pcbRecomendado4.TabStop = false;
+            this.pcbRecomendado4.Click += new System.EventHandler(this.pcbRecomendado4_Click);
+            // 
+            // pcbRecomendado5
+            // 
+            this.pcbRecomendado5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pcbRecomendado5.Image = global::registro_mockup.Properties.Resources.descarga;
+            this.pcbRecomendado5.Location = new System.Drawing.Point(2, 18);
+            this.pcbRecomendado5.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbRecomendado5.Name = "pcbRecomendado5";
+            this.pcbRecomendado5.Size = new System.Drawing.Size(143, 124);
+            this.pcbRecomendado5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbRecomendado5.TabIndex = 0;
+            this.pcbRecomendado5.TabStop = false;
+            this.pcbRecomendado5.Click += new System.EventHandler(this.pcbRecomendado5_Click);
+            // 
+            // pcbRecomendado3
+            // 
+            this.pcbRecomendado3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pcbRecomendado3.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo31;
+            this.pcbRecomendado3.Location = new System.Drawing.Point(2, 18);
+            this.pcbRecomendado3.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbRecomendado3.Name = "pcbRecomendado3";
+            this.pcbRecomendado3.Size = new System.Drawing.Size(139, 124);
+            this.pcbRecomendado3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbRecomendado3.TabIndex = 0;
+            this.pcbRecomendado3.TabStop = false;
+            this.pcbRecomendado3.Click += new System.EventHandler(this.pcbRecomendado3_Click);
+            // 
+            // pcbRecomendado1
+            // 
+            this.pcbRecomendado1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pcbRecomendado1.Image = global::registro_mockup.Properties.Resources.descarga__2_;
+            this.pcbRecomendado1.Location = new System.Drawing.Point(2, 18);
+            this.pcbRecomendado1.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbRecomendado1.Name = "pcbRecomendado1";
+            this.pcbRecomendado1.Size = new System.Drawing.Size(141, 124);
+            this.pcbRecomendado1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbRecomendado1.TabIndex = 0;
+            this.pcbRecomendado1.TabStop = false;
+            this.pcbRecomendado1.Click += new System.EventHandler(this.pcbRecomendado1_Click);
+            // 
+            // pcbRecomendado2
+            // 
+            this.pcbRecomendado2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pcbRecomendado2.Image = global::registro_mockup.Properties.Resources.images;
+            this.pcbRecomendado2.Location = new System.Drawing.Point(2, 18);
+            this.pcbRecomendado2.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbRecomendado2.Name = "pcbRecomendado2";
+            this.pcbRecomendado2.Size = new System.Drawing.Size(143, 124);
+            this.pcbRecomendado2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbRecomendado2.TabIndex = 0;
+            this.pcbRecomendado2.TabStop = false;
+            this.pcbRecomendado2.Click += new System.EventHandler(this.pcbRecomendado2_Click);
+            // 
             // CortoHistoriaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -773,45 +773,45 @@
             this.panel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.grbValoradosLibro4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pcbValoradoLibro4)).EndInit();
             this.grbValoradosLibro5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pcbValoradoLibro5)).EndInit();
             this.grbValoradosLibro3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pcbValoradoLibro3)).EndInit();
             this.grbValoradosLibro1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pcbValoradoLibro1)).EndInit();
             this.grbValoradosLibro2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pcbValoradoLibro2)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.grbValoradosCH4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pcbReciente4)).EndInit();
             this.grbValoradosCH5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pcbReciente5)).EndInit();
             this.grbValoradosCH3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pcbReciente3)).EndInit();
             this.grbValoradosCH1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pcbReciente1)).EndInit();
             this.grbValoradosCH2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pcbReciente2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.gbxRecomendadosCH4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pcbRecomendado4)).EndInit();
             this.gbxRecomendadosCH5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pcbRecomendado5)).EndInit();
             this.gbxRecomendadosCH3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pcbRecomendado3)).EndInit();
             this.gbxRecomendadosCH1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pcbRecomendado1)).EndInit();
             this.gbxRecomendadosCH2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pcbRecomendado2)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbValoradoLibro4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbValoradoLibro5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbValoradoLibro3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbValoradoLibro1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbValoradoLibro2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbReciente4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbReciente5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbReciente3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbReciente1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbReciente2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbRecomendado4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbRecomendado5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbRecomendado3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbRecomendado1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbRecomendado2)).EndInit();
             this.ResumeLayout(false);
 
         }
