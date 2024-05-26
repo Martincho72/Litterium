@@ -91,6 +91,7 @@ namespace Litterium
                         int telefono = Convert.ToInt32(txtTelefono.Text);
                         Usuario us1 = new Usuario(txtUsuario.Text, txtContraseña.Text, txtNombre.Text, txtCorreo.Text, txtDireccion.Text, telefono);
                         resultado = us1.AgregarUsuario(basedatos.Conexion, us1);
+                        MessageBox.Show(Idioma.RegistroConExito, Idioma.InfoRegistroConExito, MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     }
                     else

@@ -1096,6 +1096,15 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Registro.
+        /// </summary>
+        internal static string InfoRegistroConExito {
+            get {
+                return ResourceManager.GetString("InfoRegistroConExito", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Administradores.
         /// </summary>
         internal static string lblAdministradores {
@@ -2190,6 +2199,15 @@ namespace registro_mockup.Idiomas {
         internal static string rbtCopiaOnline {
             get {
                 return ResourceManager.GetString("rbtCopiaOnline", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Registro con éxito.
+        /// </summary>
+        internal static string RegistroConExito {
+            get {
+                return ResourceManager.GetString("RegistroConExito", resourceCulture);
             }
         }
         

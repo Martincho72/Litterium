@@ -462,6 +462,9 @@
   <data name="InfoGuardarPdf" xml:space="preserve">
     <value>Guardar PDF</value>
   </data>
+  <data name="InfoRegistroConExito" xml:space="preserve">
+    <value>Registro</value>
+  </data>
   <data name="lblAdministradores" xml:space="preserve">
     <value>Administradores</value>
   </data>
@@ -827,6 +830,9 @@
   </data>
   <data name="rbtCopiaOnline" xml:space="preserve">
     <value>COPIA ONLINE</value>
+  </data>
+  <data name="RegistroConExito" xml:space="preserve">
+    <value>Registro con éxito</value>
   </data>
   <data name="SeguirCortoHistoriaToolTip" xml:space="preserve">
     <value>Al activar esta funcion permites que el resto de usuarios puedan continuar la cortohistoria.</value>

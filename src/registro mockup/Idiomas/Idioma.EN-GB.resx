@@ -462,6 +462,9 @@
   <data name="InfoGuardarPdf" xml:space="preserve">
     <value>Save PDF</value>
   </data>
+  <data name="InfoRegistroConExito" xml:space="preserve">
+    <value>Sign In</value>
+  </data>
   <data name="lblAdministradores" xml:space="preserve">
     <value>Administrators</value>
   </data>
@@ -827,6 +830,9 @@
   </data>
   <data name="rbtCopiaOnline" xml:space="preserve">
     <value>ONLINE COPY</value>
+  </data>
+  <data name="RegistroConExito" xml:space="preserve">
+    <value>Sign In Successfuly.</value>
   </data>
   <data name="SeguirCortoHistoriaToolTip" xml:space="preserve">
     <value>By activating this function, you allow other users to continue the short story.</value>

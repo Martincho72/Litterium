@@ -87,7 +87,7 @@
             this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCerrar.Location = new System.Drawing.Point(297, 421);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(155, 46);
+            this.btnCerrar.Size = new System.Drawing.Size(208, 46);
             this.btnCerrar.TabIndex = 100;
             this.btnCerrar.Text = "Cerrar Sesión";
             this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
