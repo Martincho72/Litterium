@@ -120,6 +120,9 @@
   <data name="AbrirSesionError" xml:space="preserve">
     <value>The session cannot be opened.</value>
   </data>
+  <data name="AlertaMiCarrito" xml:space="preserve">
+    <value>Are you sure you want to remove the item from the cart?</value>
+  </data>
   <data name="AsuntoCorreo" xml:space="preserve">
     <value>Reset Password</value>
   </data>
@@ -360,6 +363,9 @@
   <data name="ConfirmacionNuevaContrasenya" xml:space="preserve">
     <value>We have sent an email with the new password. This may take a few minutes.</value>
   </data>
+  <data name="ConfirmarEdicionMiCuenta" xml:space="preserve">
+    <value>Data updated successfully, please log in again.</value>
+  </data>
   <data name="ContinuarCH" xml:space="preserve">
     <value>Short stories to continue</value>
   </data>
@@ -446,6 +452,12 @@
   </data>
   <data name="InfoCHSubida" xml:space="preserve">
     <value>Short Story Uploaded</value>
+  </data>
+  <data name="InfoConfirmarEdicionMiCuenta" xml:space="preserve">
+    <value>Data Updated</value>
+  </data>
+  <data name="InfoCorreoNoExiste" xml:space="preserve">
+    <value>The provided email does not exist</value>
   </data>
   <data name="InfoGuardarPdf" xml:space="preserve">
     <value>Save PDF</value>
@@ -797,6 +809,9 @@
   </data>
   <data name="ObjetoAlCarrito" xml:space="preserve">
     <value>Item Added to Cart Successfully</value>
+  </data>
+  <data name="ObjetoNoAgregado" xml:space="preserve">
+    <value>You cannot purchase more than 1 copy online.</value>
   </data>
   <data name="ParaCambiarContrasenya" xml:space="preserve">
     <value>To change your password, click on this link:</value>

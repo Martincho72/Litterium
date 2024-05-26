@@ -112,7 +112,7 @@ namespace registro_mockup.formularios_Usuario
             {
                 Usuario usuario = new Usuario(txtUsuario.Text, txtContra.Text, txtNombre.Text, txtCorreo.Text, txtDireccion.Text, int.Parse(txtTelefono.Text), pcbPerfil.Image);
                 Usuario.EditarUsuarioPerfil(basedatos.Conexion, usuario, usuariomenu);
-                MessageBox.Show("Datos actualizados correctamente, vuelva a iniciar sesión","Datos Actualizados",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show(Idioma.ConfirmarEdicionMiCuenta,Idioma.InfoConfirmarEdicionMiCuenta,MessageBoxButtons.OK,MessageBoxIcon.Information);
                 Application.Restart();
 
             }

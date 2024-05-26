@@ -111,6 +111,7 @@
             this.dgvMiCarrito.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgvMiCarrito.Size = new System.Drawing.Size(600, 250);
             this.dgvMiCarrito.TabIndex = 10;
+            this.dgvMiCarrito.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMiCarrito_CellDoubleClick);
             // 
             // Isbn
             // 

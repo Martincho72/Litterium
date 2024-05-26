@@ -70,6 +70,15 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a ¿Está seguro que quiere borrar el artículo del carrito?.
+        /// </summary>
+        internal static string AlertaMiCarrito {
+            get {
+                return ResourceManager.GetString("AlertaMiCarrito", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Restablecer Contraseña.
         /// </summary>
         internal static string AsuntoCorreo {
@@ -790,6 +799,15 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Datos actualizados correctamente, vuelva a iniciar sesión.
+        /// </summary>
+        internal static string ConfirmarEdicionMiCuenta {
+            get {
+                return ResourceManager.GetString("ConfirmarEdicionMiCuenta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Cortohistorias que continuar.
         /// </summary>
         internal static string ContinuarCH {
@@ -1047,6 +1065,24 @@ namespace registro_mockup.Idiomas {
         internal static string InfoCHSubida {
             get {
                 return ResourceManager.GetString("InfoCHSubida", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Datos Actualizados.
+        /// </summary>
+        internal static string InfoConfirmarEdicionMiCuenta {
+            get {
+                return ResourceManager.GetString("InfoConfirmarEdicionMiCuenta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Correo proporcionado erróneo.
+        /// </summary>
+        internal static string InfoCorreoNoExiste {
+            get {
+                return ResourceManager.GetString("InfoCorreoNoExiste", resourceCulture);
             }
         }
         
@@ -2100,6 +2136,15 @@ namespace registro_mockup.Idiomas {
         internal static string ObjetoAlCarrito {
             get {
                 return ResourceManager.GetString("ObjetoAlCarrito", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a No puede comprar más de 1 copia online.
+        /// </summary>
+        internal static string ObjetoNoAgregado {
+            get {
+                return ResourceManager.GetString("ObjetoNoAgregado", resourceCulture);
             }
         }
         

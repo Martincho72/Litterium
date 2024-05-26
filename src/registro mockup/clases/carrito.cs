@@ -18,6 +18,11 @@ namespace registro_mockup.clases
             miCarrito.Add(libro);
         }
 
+        public static void borrarDelCarrito(int indice)
+        {
+            miCarrito.RemoveAt(indice);
+        }
+
 
     }
 }

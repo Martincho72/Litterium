@@ -147,6 +147,7 @@
             // txtNumeroTarjeta
             // 
             this.txtNumeroTarjeta.Location = new System.Drawing.Point(232, 389);
+            this.txtNumeroTarjeta.MaxLength = 16;
             this.txtNumeroTarjeta.Name = "txtNumeroTarjeta";
             this.txtNumeroTarjeta.Size = new System.Drawing.Size(200, 20);
             this.txtNumeroTarjeta.TabIndex = 10;
@@ -154,6 +155,7 @@
             // txtCCV
             // 
             this.txtCCV.Location = new System.Drawing.Point(224, 421);
+            this.txtCCV.MaxLength = 3;
             this.txtCCV.Name = "txtCCV";
             this.txtCCV.Size = new System.Drawing.Size(76, 20);
             this.txtCCV.TabIndex = 11;

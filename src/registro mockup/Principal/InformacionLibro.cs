@@ -161,20 +161,32 @@ namespace registro_mockup.Principal
                 l1.Online = online;
 
                 bool encontrado = false;
+                bool repetido = true;
                 foreach (Libro libro in Carrito.MiCarrito)
                 {
-                    if (libro.Isbn == l1.Isbn)
+                    if (libro.Isbn == l1.Isbn && libro.Online == l1.Online)
                     {
-                        libro.Cantidad += l1.Cantidad;
                         encontrado = true;
+                        if (libro.Online == true)
+                        {
+                            repetido = false;
+                            MessageBox.Show(Idioma.ObjetoNoAgregado, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        else
+                        {
+                            libro.Cantidad += l1.Cantidad;
+                        }
                     }
                 }
                 if (!encontrado)
                 {
                     Carrito.agregarAlCarrito(l1);
                 }
-                MessageBox.Show(Idioma.ObjetoAlCarrito, "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+                if (repetido)
+                {
+                    MessageBox.Show(Idioma.ObjetoAlCarrito, "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            } 
             else 
             {
                 MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

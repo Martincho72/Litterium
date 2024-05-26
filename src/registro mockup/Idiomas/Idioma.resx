@@ -120,6 +120,9 @@
   <data name="AbrirSesionError" xml:space="preserve">
     <value>La sesión no se puede abrir</value>
   </data>
+  <data name="AlertaMiCarrito" xml:space="preserve">
+    <value>¿Está seguro que quiere borrar el artículo del carrito?</value>
+  </data>
   <data name="AsuntoCorreo" xml:space="preserve">
     <value>Restablecer Contraseña</value>
   </data>
@@ -360,6 +363,9 @@
   <data name="ConfirmacionNuevaContrasenya" xml:space="preserve">
     <value>Hemos enviado un correo con la nueva Contraseña, esto puede tardar unos minutos.</value>
   </data>
+  <data name="ConfirmarEdicionMiCuenta" xml:space="preserve">
+    <value>Datos actualizados correctamente, vuelva a iniciar sesión</value>
+  </data>
   <data name="ContinuarCH" xml:space="preserve">
     <value>Cortohistorias que continuar</value>
   </data>
@@ -446,6 +452,12 @@
   </data>
   <data name="InfoCHSubida" xml:space="preserve">
     <value>CortoHistoria Subida</value>
+  </data>
+  <data name="InfoConfirmarEdicionMiCuenta" xml:space="preserve">
+    <value>Datos Actualizados</value>
+  </data>
+  <data name="InfoCorreoNoExiste" xml:space="preserve">
+    <value>Correo proporcionado erróneo</value>
   </data>
   <data name="InfoGuardarPdf" xml:space="preserve">
     <value>Guardar PDF</value>
@@ -797,6 +809,9 @@
   </data>
   <data name="ObjetoAlCarrito" xml:space="preserve">
     <value>Artículo añadido al carrito correctamente</value>
+  </data>
+  <data name="ObjetoNoAgregado" xml:space="preserve">
+    <value>No puede comprar más de 1 copia online</value>
   </data>
   <data name="ParaCambiarContrasenya" xml:space="preserve">
     <value>Para cambiar su contraseña haga click en este enlace:</value>

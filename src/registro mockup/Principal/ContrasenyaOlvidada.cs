@@ -42,7 +42,7 @@ namespace registro_mockup.formularios_administrador
                 }
                 else
                 {
-                    MessageBox.Show(Idioma.CorreoNoExiste,"Correo proporcionado erroneo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                    MessageBox.Show(Idioma.CorreoNoExiste,Idioma.InfoCorreoNoExiste,MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 }
             }
             else
