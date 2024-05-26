@@ -36,10 +36,10 @@ namespace registro_mockup.formularios_Usuario
                 pcbPerfil.ImageLocation = cargaImagen.FileName;
                 MessageBox.Show(cargaImagen.FileName);
             }
-            else
-            {
-                MessageBox.Show("No se ha seleccionado imagen", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
+            //else
+            //{
+            //    MessageBox.Show("No se ha seleccionado imagen", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            //}
         }
 
         private void MiCuenta_Load(object sender, EventArgs e)
@@ -57,7 +57,7 @@ namespace registro_mockup.formularios_Usuario
             }
             else 
             {
-                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
             AplicarIdioma();
@@ -112,13 +112,13 @@ namespace registro_mockup.formularios_Usuario
             {
                 Usuario usuario = new Usuario(txtUsuario.Text, txtContra.Text, txtNombre.Text, txtCorreo.Text, txtDireccion.Text, int.Parse(txtTelefono.Text), pcbPerfil.Image);
                 Usuario.EditarUsuarioPerfil(basedatos.Conexion, usuario, usuariomenu);
-                MessageBox.Show("Datos actualizados correctamente, vuelva a iniciar sesión");
+                MessageBox.Show("Datos actualizados correctamente, vuelva a iniciar sesión","Datos Actualizados",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 Application.Restart();
 
             }
             else 
             {
-                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
         }

@@ -33,7 +33,7 @@ namespace registro_mockup.formularios_Usuario
                 }
                 else
                 {
-                    MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             finally

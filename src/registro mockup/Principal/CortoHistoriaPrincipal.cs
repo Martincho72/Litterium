@@ -112,7 +112,7 @@ namespace registro_mockup.Principal
             }
             else
             {
-                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
 
@@ -121,7 +121,17 @@ namespace registro_mockup.Principal
 
         private void pictureBox11_Click(object sender, EventArgs e)
         {
+            if (basedatos.AbrirConexion())
+            {
+                List<string> titulo = Valoracion.librosMasValorados(basedatos.Conexion);
+                OpenChildForm(new InformacionLibro(titulo[3], usuarioMenu));
 
+                OcultarPaneles();
+            }
+            else
+            {
+                MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void grbCortohistoriasLibros3_Enter(object sender, EventArgs e)
@@ -172,7 +182,7 @@ namespace registro_mockup.Principal
             }
             else
             {
-                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
         }
@@ -208,7 +218,7 @@ namespace registro_mockup.Principal
             }
             else
             {
-                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
         }
@@ -225,7 +235,7 @@ namespace registro_mockup.Principal
             }
             else
             {
-                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
         }
@@ -242,7 +252,7 @@ namespace registro_mockup.Principal
             }
             else
             {
-                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
         }
@@ -259,7 +269,7 @@ namespace registro_mockup.Principal
             }
             else
             {
-                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
         }
@@ -276,7 +286,7 @@ namespace registro_mockup.Principal
             }
             else
             {
-                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
         }
@@ -292,7 +302,7 @@ namespace registro_mockup.Principal
             }
             else
             {
-                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
         }
@@ -308,7 +318,7 @@ namespace registro_mockup.Principal
             }
             else
             {
-                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
         }
@@ -324,7 +334,7 @@ namespace registro_mockup.Principal
             }
             else
             {
-                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
         }
@@ -340,9 +350,69 @@ namespace registro_mockup.Principal
             }
             else
             {
-                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
+        }
+
+        private void pcbValoradoLibro1_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+                List<string> titulo = Valoracion.librosMasValorados(basedatos.Conexion);
+                OpenChildForm(new InformacionLibro(titulo[0], usuarioMenu));
+
+                OcultarPaneles();
+            }
+            else
+            {
+                MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void pcbValoradoLibro2_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+                List<string> titulo = Valoracion.librosMasValorados(basedatos.Conexion);
+                OpenChildForm(new InformacionLibro(titulo[1], usuarioMenu));
+
+                OcultarPaneles();
+            }
+            else
+            {
+                MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void pcbValoradoLibro3_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+                List<string> titulo = Valoracion.librosMasValorados(basedatos.Conexion);
+                OpenChildForm(new InformacionLibro(titulo[2], usuarioMenu));
+
+                OcultarPaneles();
+            }
+            else
+            {
+                MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void pcbValoradoLibro5_Click(object sender, EventArgs e)
+        {
+            if (basedatos.AbrirConexion())
+            {
+                List<string> titulo = Valoracion.librosMasValorados(basedatos.Conexion);
+                OpenChildForm(new InformacionLibro(titulo[4], usuarioMenu));
+
+                OcultarPaneles();
+            }
+            else
+            {
+                MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
