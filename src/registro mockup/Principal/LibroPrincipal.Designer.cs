@@ -171,7 +171,7 @@
             this.pcbCortoHistoria4.Margin = new System.Windows.Forms.Padding(2);
             this.pcbCortoHistoria4.Name = "pcbCortoHistoria4";
             this.pcbCortoHistoria4.Size = new System.Drawing.Size(152, 117);
-            this.pcbCortoHistoria4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbCortoHistoria4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbCortoHistoria4.TabIndex = 0;
             this.pcbCortoHistoria4.TabStop = false;
             this.pcbCortoHistoria4.Click += new System.EventHandler(this.pcbCortoHistoria4_Click);
@@ -197,7 +197,7 @@
             this.pcbCortoHistoria5.Margin = new System.Windows.Forms.Padding(2);
             this.pcbCortoHistoria5.Name = "pcbCortoHistoria5";
             this.pcbCortoHistoria5.Size = new System.Drawing.Size(154, 117);
-            this.pcbCortoHistoria5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbCortoHistoria5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbCortoHistoria5.TabIndex = 0;
             this.pcbCortoHistoria5.TabStop = false;
             this.pcbCortoHistoria5.Click += new System.EventHandler(this.pcbCortoHistoria5_Click);
@@ -223,7 +223,7 @@
             this.pcbCortoHistoria3.Margin = new System.Windows.Forms.Padding(2);
             this.pcbCortoHistoria3.Name = "pcbCortoHistoria3";
             this.pcbCortoHistoria3.Size = new System.Drawing.Size(152, 117);
-            this.pcbCortoHistoria3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbCortoHistoria3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbCortoHistoria3.TabIndex = 0;
             this.pcbCortoHistoria3.TabStop = false;
             this.pcbCortoHistoria3.Click += new System.EventHandler(this.pcbCortoHistoria3_Click);
@@ -249,7 +249,7 @@
             this.pcbCortoHistoria.Margin = new System.Windows.Forms.Padding(2);
             this.pcbCortoHistoria.Name = "pcbCortoHistoria";
             this.pcbCortoHistoria.Size = new System.Drawing.Size(152, 117);
-            this.pcbCortoHistoria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbCortoHistoria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbCortoHistoria.TabIndex = 0;
             this.pcbCortoHistoria.TabStop = false;
             this.pcbCortoHistoria.Click += new System.EventHandler(this.pcbCortoHistoria_Click);
@@ -275,7 +275,7 @@
             this.pcbCortoHistoria2.Margin = new System.Windows.Forms.Padding(2);
             this.pcbCortoHistoria2.Name = "pcbCortoHistoria2";
             this.pcbCortoHistoria2.Size = new System.Drawing.Size(152, 117);
-            this.pcbCortoHistoria2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbCortoHistoria2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbCortoHistoria2.TabIndex = 0;
             this.pcbCortoHistoria2.TabStop = false;
             this.pcbCortoHistoria2.Click += new System.EventHandler(this.pcbCortoHistoria2_Click);
