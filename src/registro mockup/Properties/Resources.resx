@@ -124,11 +124,17 @@
   <data name="el caballero astado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\el caballero astado.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="como_escribir_un_libro_de_fantasia_toma_nota_47621_orig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\como_escribir_un_libro_de_fantasia_toma_nota_47621_orig.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="litteriumSinFondo311" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\litteriumSinFondo31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="descarga (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\descarga (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="descarga (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\descarga (2)1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="El principito" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\El principito.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -180,6 +186,9 @@
   </data>
   <data name="logo-removebg-preview2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="descarga" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\descarga.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="atras" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\atras.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,10 +244,13 @@
   <data name="logo-removebg-preview1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo-removebg-preview1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="unnamed1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unnamed1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Imagen_de_WhatsApp_2024-05-25_a_las_17.151" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Imagen_de_WhatsApp_2024-05-25_a_las_17.15.14_c36a9dc2-removebg-preview1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="descarga" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\descarga.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="descarga1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\descarga1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -607,5 +607,17 @@
   <ItemGroup>
     <None Include="Resources\descarga.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %282%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\como_escribir_un_libro_de_fantasia_toma_nota_47621_orig.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
