@@ -44,13 +44,13 @@ namespace registro_mockup.Principal
                 CortoHistoria ch = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, id);
                 txtTitulo.Text = ch.Titulo;
                 txtCortohistoriaCrear.Text = ch.Texto;
-                txtCategoria.Text = ch.Categoria;
+                cmbCategoria.Text = ch.Categoria;
                 txtAutor.Text = ch.Autor;
                 if (ch.Id_usuario != id_usu)
                 {
                     btnBorradoresCortohistorias.Visible = false;
                     txtTitulo.ReadOnly = true;
-                    txtCategoria.ReadOnly = true;
+                    cmbCategoria.Enabled = true;
                     txtAutor.ReadOnly = true;
                     pcbPortada.Image = ch.Portada;
                     btnCargarImagenCortohistorias.Enabled = false;
@@ -112,9 +112,13 @@ namespace registro_mockup.Principal
         {
             if (basedatos.AbrirConexion())
             {
-                Usuario us1 = Usuario.EncontrarDatosUsuario(basedatos.Conexion, usarioMenu);
-                CortoHistoria ch = new CortoHistoria(txtTitulo.Text, txtAutor.Text, DateTime.Now, txtCategoria.Text, chbContinuarCortohistoria.Checked, true, us1.Id, pcbPortada.Image, txtCortohistoriaCrear.Text);
-                ch.AgregarCortoHistoria(basedatos.Conexion, ch);
+                if (ValidarDatos())
+                {
+                    Usuario us1 = Usuario.EncontrarDatosUsuario(basedatos.Conexion, usarioMenu);
+                    CortoHistoria ch = new CortoHistoria(txtTitulo.Text, txtAutor.Text, DateTime.Now, cmbCategoria.Text, chbContinuarCortohistoria.Checked, true, us1.Id, pcbPortada.Image, txtCortohistoriaCrear.Text);
+                    ch.AgregarCortoHistoria(basedatos.Conexion, ch);
+                    MessageBox.Show("CortoHistoria subida con exito","CortoHistoria Subida",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             else
             {
@@ -122,6 +126,58 @@ namespace registro_mockup.Principal
             }
             basedatos.CerrarConexion();
 
+        }
+
+        private bool ValidarDatos()
+        {
+            bool ok = true;
+            if (txtTitulo.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtTitulo, Idioma.errorProviderTitulo);
+            }
+            else
+            {
+                errorProvider1.Clear();
+
+            }
+
+            if (txtAutor.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtAutor, Idioma.errorProviderAutor);
+            }
+            else
+            {
+                errorProvider1.Clear();
+
+            }
+
+            if (cmbCategoria.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(cmbCategoria, "Debes de poner una categoria");
+            }
+            else
+            {
+                errorProvider1.Clear();
+
+            }
+
+            if (txtCortohistoriaCrear.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtCortohistoriaCrear, "Debes introducir algo de texto en la CortoHistoria");
+            }
+            else
+            {
+                errorProvider1.Clear();
+
+            }
+
+
+
+            return ok;
         }
 
         private void btnVerPDF_Click(object sender, EventArgs e)
@@ -284,19 +340,24 @@ namespace registro_mockup.Principal
 
             if (basedatos.AbrirConexion())
             {
-                int id_usuario = Usuario.ObtenerID(basedatos.Conexion, usarioMenu);
-                if (id == 0)
+                if (ValidarDatos())
                 {
-                    CortoHistoria ch = new CortoHistoria(txtTitulo.Text, txtAutor.Text, DateTime.Now, txtCategoria.Text, chbContinuarCortohistoria.Checked, false, id_usuario, pcbPortada.Image, txtCortohistoriaCrear.Text);
-                    ch.AgregarCortoHistoria(basedatos.Conexion, ch);
-                }
-                else
-                {
-                    CortoHistoria cortoHistoria = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, id);
-                    if (id_usuario == cortoHistoria.Id_usuario)
+                    int id_usuario = Usuario.ObtenerID(basedatos.Conexion, usarioMenu);
+                    if (id == 0)
                     {
-                        // update
-                        CortoHistoria.EditarCortoHistoria(basedatos.Conexion, cortoHistoria);
+                        CortoHistoria ch = new CortoHistoria(txtTitulo.Text, txtAutor.Text, DateTime.Now, cmbCategoria.Text, chbContinuarCortohistoria.Checked, false, id_usuario, pcbPortada.Image, txtCortohistoriaCrear.Text);
+                        ch.AgregarCortoHistoria(basedatos.Conexion, ch);
+                        MessageBox.Show("CortoHistoria guarado como borrador con exito", "CortoHistoria Guardada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        CortoHistoria cortoHistoria = CortoHistoria.EncontrarDatosCortoHistoria(basedatos.Conexion, id);
+                        if (id_usuario == cortoHistoria.Id_usuario)
+                        {
+                            // update
+                            CortoHistoria.EditarCortoHistoria(basedatos.Conexion, cortoHistoria);
+                            MessageBox.Show("CortoHistoria Actualizada con exito", "CortoHistoria Actualizada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
                     }
                 }
             }
@@ -342,6 +403,8 @@ namespace registro_mockup.Principal
             }
             else { e.Handled = false; }
         }
+
+
     }
 }
 

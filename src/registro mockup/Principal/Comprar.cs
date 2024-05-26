@@ -81,24 +81,27 @@ namespace registro_mockup.Principal
         {
             if (basedatos.AbrirConexion())
             {
-                foreach (Libro l1 in Carrito.MiCarrito)
+                if (ValidarDatos())
                 {
-                    Usuario us1 = Usuario.EncontrarDatosUsuario(basedatos.Conexion, usuariomenu);
-                    Ejemplar ej1 = new Ejemplar(DateTime.Now, (decimal)l1.importeTotal(l1.Precio, l1.Cantidad), l1.Online, us1.Id, l1.Isbn);
-                    Ejemplar.AgregarEjemplar(basedatos.Conexion, ej1);
+                    foreach (Libro l1 in Carrito.MiCarrito)
+                    {
+                        Usuario us1 = Usuario.EncontrarDatosUsuario(basedatos.Conexion, usuariomenu);
+                        Ejemplar ej1 = new Ejemplar(DateTime.Now, (decimal)l1.importeTotal(l1.Precio, l1.Cantidad), l1.Online, us1.Id, l1.Isbn);
+                        Ejemplar.AgregarEjemplar(basedatos.Conexion, ej1);
 
+                    }
+                    Carrito.MiCarrito.Clear();
+                    string idiomaActual = Thread.CurrentThread.CurrentUICulture.Name;
+                    if (idiomaActual == "es-ES")
+                    {
+                        MessageBox.Show("Compra Realizada con exito!!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Purchase Completed Successfully!!");
+                    }
+                    this.Close();
                 }
-                Carrito.MiCarrito.Clear();
-                string idiomaActual = Thread.CurrentThread.CurrentUICulture.Name;
-                if (idiomaActual == "es-ES")
-                {
-                    MessageBox.Show("Compra Realizada con exito!!");
-                }
-                else
-                {
-                    MessageBox.Show("Purchase Completed Successfully!!");
-                }
-                this.Close();
             }
             else
             {
@@ -123,7 +126,46 @@ namespace registro_mockup.Principal
 
         private void Comprar_Load(object sender, EventArgs e)
         {
-            
+            dtpFechaCaducidad.MinDate = DateTime.Today;
+        }
+
+        private bool ValidarDatos()
+        {
+            bool ok = true;
+            if (txtCCV.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtCCV, "Introduce el Codigo de Seguridad de tu Tarjeta");
+            }
+            else
+            {
+                errorProvider1.Clear();
+
+            }
+
+            if (txtNumeroTarjeta.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtNumeroTarjeta, "Introduce el numero de la tarjeta");
+            }
+            else
+            {
+                errorProvider1.Clear();
+
+            }
+
+            if (txtUbicacionEntrega.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtUbicacionEntrega, "Introduce la direccion de facturacion");
+            }
+            else
+            {
+                errorProvider1.Clear();
+
+            }
+
+            return ok;
         }
     }
 }

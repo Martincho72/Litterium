@@ -37,7 +37,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblMensaje = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtCategoria = new System.Windows.Forms.TextBox();
             this.txtAutor = new System.Windows.Forms.TextBox();
             this.txtTitulo = new System.Windows.Forms.TextBox();
             this.lblFechaPublicacion = new System.Windows.Forms.Label();
@@ -54,6 +53,7 @@
             this.pcbPortada = new System.Windows.Forms.PictureBox();
             this.txtTexto = new System.Windows.Forms.TextBox();
             this.lblContenido = new System.Windows.Forms.Label();
+            this.cmbCategoria = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -155,15 +155,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // txtCategoria
-            // 
-            this.txtCategoria.Location = new System.Drawing.Point(149, 248);
-            this.txtCategoria.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCategoria.MaxLength = 40;
-            this.txtCategoria.Name = "txtCategoria";
-            this.txtCategoria.Size = new System.Drawing.Size(119, 20);
-            this.txtCategoria.TabIndex = 63;
             // 
             // txtAutor
             // 
@@ -342,12 +333,30 @@
             this.lblContenido.TabIndex = 78;
             this.lblContenido.Text = "Contenido";
             // 
+            // cmbCategoria
+            // 
+            this.cmbCategoria.FormattingEnabled = true;
+            this.cmbCategoria.Items.AddRange(new object[] {
+            "Miedo",
+            "Drama",
+            "Romance",
+            "Aventura",
+            "Accion",
+            "Infantil",
+            "Otro"});
+            this.cmbCategoria.Location = new System.Drawing.Point(149, 247);
+            this.cmbCategoria.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbCategoria.Name = "cmbCategoria";
+            this.cmbCategoria.Size = new System.Drawing.Size(119, 21);
+            this.cmbCategoria.TabIndex = 79;
+            // 
             // EditarCortoHistoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(667, 460);
+            this.Controls.Add(this.cmbCategoria);
             this.Controls.Add(this.lblContenido);
             this.Controls.Add(this.txtTexto);
             this.Controls.Add(this.btnCargar);
@@ -361,7 +370,6 @@
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.txtCategoria);
             this.Controls.Add(this.txtAutor);
             this.Controls.Add(this.txtTitulo);
             this.Controls.Add(this.lblFechaPublicacion);
@@ -398,7 +406,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblMensaje;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txtCategoria;
         private System.Windows.Forms.TextBox txtAutor;
         private System.Windows.Forms.TextBox txtTitulo;
         private System.Windows.Forms.Label lblFechaPublicacion;
@@ -414,5 +421,6 @@
         private System.Windows.Forms.PictureBox pcbPortada;
         private System.Windows.Forms.TextBox txtTexto;
         private System.Windows.Forms.Label lblContenido;
+        private System.Windows.Forms.ComboBox cmbCategoria;
     }
 }

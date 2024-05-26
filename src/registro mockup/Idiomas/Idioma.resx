@@ -469,7 +469,7 @@
     <value>Dirección:</value>
   </data>
   <data name="lblDobleClickSeleccionarCH" xml:space="preserve">
-    <value>Selecione cual quiere continuar( doble click)</value>
+    <value>Seleccione cual quiere continuar( doble click)</value>
   </data>
   <data name="lblEjemplaresLibro" xml:space="preserve">
     <value>Ejemplares :</value>
@@ -739,7 +739,7 @@
     <value>COPIA ONLINE</value>
   </data>
   <data name="SeguirCortoHistoriaToolTip" xml:space="preserve">
-    <value>Al activar esta funcion permites que el resto de ususarios puedan continuar la cortohistoria.</value>
+    <value>Al activar esta funcion permites que el resto de usuarios puedan continuar la cortohistoria.</value>
   </data>
   <data name="TituloAdministracionCortohistoria" xml:space="preserve">
     <value>Administración Cortohistoria</value>

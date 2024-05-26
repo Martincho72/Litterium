@@ -32,7 +32,7 @@ namespace registro_mockup.formularios_administrador
                 txtTitulo.Text = ch.Titulo;
                 txtAutor.Text = ch.Autor;
                 dtpFechaPublicacion.Value = ch.FechaPublicacion;
-                txtCategoria.Text = ch.Categoria;
+                cmbCategoria.Text = ch.Categoria;
                 txtIdUsuario.Text = ch.Id_usuario.ToString();
                 chbContinuable.Checked = ch.Continuable;
                 chbFinalizada.Checked = ch.Finalizada;
@@ -73,7 +73,7 @@ namespace registro_mockup.formularios_administrador
         {
             if (basedatos.AbrirConexion())
             {
-                CortoHistoria corto = new CortoHistoria(int.Parse(txtId.Text), txtTitulo.Text, txtAutor.Text, dtpFechaPublicacion.Value, txtCategoria.Text, chbContinuable.Checked, chbFinalizada.Checked, int.Parse(txtIdUsuario.Text), pcbPortada.Image,txtTexto.Text);
+                CortoHistoria corto = new CortoHistoria(int.Parse(txtId.Text), txtTitulo.Text, txtAutor.Text, dtpFechaPublicacion.Value, cmbCategoria.Text, chbContinuable.Checked, chbFinalizada.Checked, int.Parse(txtIdUsuario.Text), pcbPortada.Image,txtTexto.Text);
                 CortoHistoria.EditarCortoHistoria(basedatos.Conexion, corto);
                 this.Close();
             }

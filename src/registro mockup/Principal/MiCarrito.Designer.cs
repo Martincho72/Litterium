@@ -33,10 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MiCarrito));
             this.panelMiCarrito = new System.Windows.Forms.Panel();
-            this.panelImporteTotal = new System.Windows.Forms.Panel();
-            this.lblImporteTotal = new System.Windows.Forms.Label();
-            this.panelComprar = new System.Windows.Forms.Panel();
-            this.btnPagar = new FontAwesome.Sharp.IconButton();
             this.dgvMiCarrito = new System.Windows.Forms.DataGridView();
             this.Isbn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.titulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,10 +42,14 @@
             this.precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.online = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.panelImporteTotal = new System.Windows.Forms.Panel();
+            this.lblImporteTotal = new System.Windows.Forms.Label();
+            this.panelComprar = new System.Windows.Forms.Panel();
+            this.btnPagar = new FontAwesome.Sharp.IconButton();
             this.panelMiCarrito.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMiCarrito)).BeginInit();
             this.panelImporteTotal.SuspendLayout();
             this.panelComprar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMiCarrito)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMiCarrito
@@ -60,56 +60,6 @@
             this.panelMiCarrito.Name = "panelMiCarrito";
             this.panelMiCarrito.Size = new System.Drawing.Size(600, 250);
             this.panelMiCarrito.TabIndex = 57;
-            // 
-            // panelImporteTotal
-            // 
-            this.panelImporteTotal.Controls.Add(this.lblImporteTotal);
-            this.panelImporteTotal.Location = new System.Drawing.Point(12, 268);
-            this.panelImporteTotal.Name = "panelImporteTotal";
-            this.panelImporteTotal.Size = new System.Drawing.Size(318, 28);
-            this.panelImporteTotal.TabIndex = 58;
-            // 
-            // lblImporteTotal
-            // 
-            this.lblImporteTotal.AutoSize = true;
-            this.lblImporteTotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.lblImporteTotal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblImporteTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblImporteTotal.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblImporteTotal.Location = new System.Drawing.Point(0, 0);
-            this.lblImporteTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblImporteTotal.Name = "lblImporteTotal";
-            this.lblImporteTotal.Size = new System.Drawing.Size(151, 26);
-            this.lblImporteTotal.TabIndex = 5;
-            this.lblImporteTotal.Text = "Importe Total :";
-            // 
-            // panelComprar
-            // 
-            this.panelComprar.Controls.Add(this.btnPagar);
-            this.panelComprar.Location = new System.Drawing.Point(12, 328);
-            this.panelComprar.Name = "panelComprar";
-            this.panelComprar.Size = new System.Drawing.Size(153, 26);
-            this.panelComprar.TabIndex = 59;
-            // 
-            // btnPagar
-            // 
-            this.btnPagar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnPagar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnPagar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPagar.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckDollar;
-            this.btnPagar.IconColor = System.Drawing.Color.Black;
-            this.btnPagar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnPagar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPagar.Location = new System.Drawing.Point(0, 0);
-            this.btnPagar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnPagar.Name = "btnPagar";
-            this.btnPagar.Size = new System.Drawing.Size(153, 26);
-            this.btnPagar.TabIndex = 3;
-            this.btnPagar.Text = "Comprar";
-            this.btnPagar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPagar.UseVisualStyleBackColor = false;
-            this.btnPagar.Click += new System.EventHandler(this.btnPagar_Click_1);
             // 
             // dgvMiCarrito
             // 
@@ -219,6 +169,56 @@
             this.online.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.online.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
+            // panelImporteTotal
+            // 
+            this.panelImporteTotal.Controls.Add(this.lblImporteTotal);
+            this.panelImporteTotal.Location = new System.Drawing.Point(12, 268);
+            this.panelImporteTotal.Name = "panelImporteTotal";
+            this.panelImporteTotal.Size = new System.Drawing.Size(318, 28);
+            this.panelImporteTotal.TabIndex = 58;
+            // 
+            // lblImporteTotal
+            // 
+            this.lblImporteTotal.AutoSize = true;
+            this.lblImporteTotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.lblImporteTotal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblImporteTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblImporteTotal.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblImporteTotal.Location = new System.Drawing.Point(0, 0);
+            this.lblImporteTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblImporteTotal.Name = "lblImporteTotal";
+            this.lblImporteTotal.Size = new System.Drawing.Size(151, 26);
+            this.lblImporteTotal.TabIndex = 5;
+            this.lblImporteTotal.Text = "Importe Total :";
+            // 
+            // panelComprar
+            // 
+            this.panelComprar.Controls.Add(this.btnPagar);
+            this.panelComprar.Location = new System.Drawing.Point(12, 328);
+            this.panelComprar.Name = "panelComprar";
+            this.panelComprar.Size = new System.Drawing.Size(153, 26);
+            this.panelComprar.TabIndex = 59;
+            // 
+            // btnPagar
+            // 
+            this.btnPagar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnPagar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnPagar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPagar.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckDollar;
+            this.btnPagar.IconColor = System.Drawing.Color.Black;
+            this.btnPagar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnPagar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPagar.Location = new System.Drawing.Point(0, 0);
+            this.btnPagar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPagar.Name = "btnPagar";
+            this.btnPagar.Size = new System.Drawing.Size(153, 26);
+            this.btnPagar.TabIndex = 3;
+            this.btnPagar.Text = "Comprar";
+            this.btnPagar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPagar.UseVisualStyleBackColor = false;
+            this.btnPagar.Click += new System.EventHandler(this.btnPagar_Click_1);
+            // 
             // MiCarrito
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -229,15 +229,15 @@
             this.Controls.Add(this.panelImporteTotal);
             this.Controls.Add(this.panelMiCarrito);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MiCarrito";
             this.Text = "MiCarrito";
             this.Load += new System.EventHandler(this.MiCarrito_Load);
             this.panelMiCarrito.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMiCarrito)).EndInit();
             this.panelImporteTotal.ResumeLayout(false);
             this.panelImporteTotal.PerformLayout();
             this.panelComprar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMiCarrito)).EndInit();
             this.ResumeLayout(false);
 
         }
