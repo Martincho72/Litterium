@@ -327,6 +327,9 @@
   <data name="ConfirmacionNuevaContrasenya" xml:space="preserve">
     <value>We have sent an email with the new password. This may take a few minutes.</value>
   </data>
+  <data name="ContinuarCH" xml:space="preserve">
+    <value>Short stories to continue</value>
+  </data>
   <data name="ContrasenyaIncorrectaLogin" xml:space="preserve">
     <value>Incorrect Password</value>
   </data>

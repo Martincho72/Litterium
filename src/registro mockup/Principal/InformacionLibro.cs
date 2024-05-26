@@ -36,7 +36,7 @@ namespace registro_mockup.Principal
             }
             else
             {
-                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
         }
@@ -116,11 +116,11 @@ namespace registro_mockup.Principal
                     Valoracion.EditarValoracion(basedatos.Conexion, usu.Id, isbnLibro, int.Parse(cmbValorar.Text));
                 }
                 Libro l1 = Libro.EncontrarDatosLibro(basedatos.Conexion, isbnLibro);
-                lblValoracion.Text = "Valoracion: " +l1.Valoracion;
+                lblValoracion.Text += l1.Valoracion;
             }
             else
             {
-                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
         }
@@ -169,11 +169,11 @@ namespace registro_mockup.Principal
                 {
                     Carrito.agregarAlCarrito(l1);
                 }
-                MessageBox.Show(Idioma.ObjetoAlCarrito);
+                MessageBox.Show(Idioma.ObjetoAlCarrito, "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else 
             {
-                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             basedatos.CerrarConexion();
         }

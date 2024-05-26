@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,8 @@ namespace registro_mockup.formularios_administrador
     public partial class EditarLibro : Form
     {
         BDatos basedatos=new BDatos();
+        private byte[] libroPdfBytes;
+
         public EditarLibro(string isbn)
         {
             InitializeComponent();
@@ -50,7 +53,7 @@ namespace registro_mockup.formularios_administrador
             this.Text = Idioma.TituloEditarLibro;
             lblMensaje.Text = Idioma.lblMensajeEditarLibro;
             lblIsbn.Text = Idioma.lblISBNEditarLibro;
-            lblTitulo.Text = Idioma.btnBuscarLibro;
+            lblTitulo.Text = Idioma.lblTituloEditarLibro;
             lblAutor.Text = Idioma.lblAutorEditarLibro;
             lblCategoria.Text = Idioma.lblCategoriaEditarLibro;
             lblValoracion.Text = Idioma.lblValoracionEditarLibro;
@@ -70,7 +73,7 @@ namespace registro_mockup.formularios_administrador
                 Double.TryParse(cmbValoracion.Text, out valoracion);
                 double precio;
                 Double.TryParse(txtPrecio.Text, out precio);
-                Libro l1 = new Libro(txtIsbn.Text, txtTitulo.Text, txtAutor.Text, cmbCategoria.Text, valoracion, pcbPortada.Image, txtSinopsis.Text,precio);
+                Libro l1 = new Libro(txtIsbn.Text, txtTitulo.Text, txtAutor.Text, cmbCategoria.Text, valoracion, pcbPortada.Image, txtSinopsis.Text,precio, libroPdfBytes);
                     Libro.EditarLibro(basedatos.Conexion, l1);
                     this.Close();
             }
@@ -82,7 +85,7 @@ namespace registro_mockup.formularios_administrador
         }
 
         private void btnCargar_Click(object sender, EventArgs e)
-        {
+        { 
             OpenFileDialog cargaImagen = new OpenFileDialog();
             cargaImagen.InitialDirectory = "C:\\";
             cargaImagen.Filter = "JPG (*.jpg)(*.jpeg)|*.jpg;*.jpeg|PNG (*.png)|*.png|GIF (*.gif)|*.gif";
@@ -105,6 +108,20 @@ namespace registro_mockup.formularios_administrador
         private void pcbPortada_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnPDF_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "PDF files (*.pdf)|*.pdf|All files (*.*)|*.*";
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string pdfPath = openFileDialog.FileName;
+                byte[] pdfBytes = File.ReadAllBytes(pdfPath);
+
+                // Guardar el PDF en una variable de clase o pasarlo directamente al constructor del libro
+                libroPdfBytes = pdfBytes; // Asumimos que tienes una variable de clase llamada libroPdfBytes
+            }
         }
     }
 }

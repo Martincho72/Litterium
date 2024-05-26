@@ -34,6 +34,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListaDeCortohistoriasContinuar));
             this.lblDobleClick = new System.Windows.Forms.Label();
             this.dgvListaContinuarCortohistorias = new System.Windows.Forms.DataGridView();
+            this.Titulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Autor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Imagen = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaContinuarCortohistorias)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,6 +70,12 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvListaContinuarCortohistorias.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvListaContinuarCortohistorias.ColumnHeadersHeight = 35;
+            this.dgvListaContinuarCortohistorias.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Titulo,
+            this.Autor,
+            this.Fecha,
+            this.Categoria,
+            this.Imagen});
             this.dgvListaContinuarCortohistorias.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvListaContinuarCortohistorias.EnableHeadersVisualStyles = false;
             this.dgvListaContinuarCortohistorias.Location = new System.Drawing.Point(0, 18);
@@ -90,6 +101,40 @@
             this.dgvListaContinuarCortohistorias.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgvListaContinuarCortohistorias.Size = new System.Drawing.Size(600, 348);
             this.dgvListaContinuarCortohistorias.TabIndex = 9;
+            this.dgvListaContinuarCortohistorias.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListaContinuarCortohistorias_CellDoubleClick);
+            // 
+            // Titulo
+            // 
+            this.Titulo.HeaderText = "Titulo";
+            this.Titulo.Name = "Titulo";
+            this.Titulo.ReadOnly = true;
+            // 
+            // Autor
+            // 
+            this.Autor.HeaderText = "Autor";
+            this.Autor.Name = "Autor";
+            this.Autor.ReadOnly = true;
+            // 
+            // Fecha
+            // 
+            this.Fecha.HeaderText = "Fecha Publicacion";
+            this.Fecha.Name = "Fecha";
+            this.Fecha.ReadOnly = true;
+            // 
+            // Categoria
+            // 
+            this.Categoria.HeaderText = "Categoria";
+            this.Categoria.Name = "Categoria";
+            this.Categoria.ReadOnly = true;
+            // 
+            // Imagen
+            // 
+            this.Imagen.HeaderText = "Imagen";
+            this.Imagen.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Imagen.Name = "Imagen";
+            this.Imagen.ReadOnly = true;
+            this.Imagen.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Imagen.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // ListaDeCortohistoriasContinuar
             // 
@@ -113,5 +158,10 @@
         #endregion
         private System.Windows.Forms.Label lblDobleClick;
         private System.Windows.Forms.DataGridView dgvListaContinuarCortohistorias;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Titulo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Autor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Categoria;
+        private System.Windows.Forms.DataGridViewImageColumn Imagen;
     }
 }

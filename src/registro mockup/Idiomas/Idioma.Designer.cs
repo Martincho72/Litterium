@@ -691,6 +691,15 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Cortohistorias que continuar.
+        /// </summary>
+        internal static string ContinuarCH {
+            get {
+                return ResourceManager.GetString("ContinuarCH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Contraseña incorrecta.
         /// </summary>
         internal static string ContrasenyaIncorrectaLogin {

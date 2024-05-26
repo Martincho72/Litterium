@@ -153,7 +153,7 @@ namespace registro_mockup.Principal
 
         private void btnContinuarCortohistoria_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new ListaDeCortohistoriasContinuar());
+            OpenChildForm(new ListaDeCortohistoriasContinuar(usuarioMenu));
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -180,7 +180,7 @@ namespace registro_mockup.Principal
         {
             this.Text = Idioma.TituloCortohistoriaPrincipal;
             btnCrearCortohistoria.Text = Idioma.btnCrearCortohistoria;
-            btnContinuarCortohistoria.Text = Idioma.btnEditarCortohistoria;
+            btnContinuarCortohistoria.Text = Idioma.ContinuarCH;
             lblRecomendadosCH.Text = Idioma.lblRecomendadosLitterium;
             lblCortoHistoriasRecientes.Text = Idioma.lblCortohistoriasRecientes;
             lblLibrosEnCortohistorias.Text = Idioma.lblLibrosEnCortohistorias;

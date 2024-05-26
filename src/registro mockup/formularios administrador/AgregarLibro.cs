@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,7 @@ namespace registro_mockup.formularios_administrador
     public partial class AgregarLibro : Form
     {
         BDatos basedatos = new BDatos();
+        private byte[] libroPdfBytes;
         public AgregarLibro()
         {
             InitializeComponent();
@@ -92,7 +94,7 @@ namespace registro_mockup.formularios_administrador
                         Double.TryParse(cmbValoracion.Text, out valoracion);
                         double precio;
                         Double.TryParse(txtPrecio.Text, out precio);
-                        Libro l1 = new Libro(txtIsbn.Text, txtTitulo.Text, txtAutor.Text, cmbCategoria.Text, valoracion,pcbPortada.Image,txtSinopsis.Text,precio);
+                        Libro l1 = new Libro(txtIsbn.Text, txtTitulo.Text, txtAutor.Text, cmbCategoria.Text, valoracion,pcbPortada.Image,txtSinopsis.Text,precio, libroPdfBytes);
                         resultado = l1.AgregarLibro(basedatos.Conexion, l1);
                         this.Close();
 
@@ -138,6 +140,20 @@ namespace registro_mockup.formularios_administrador
         private void pcbLogo_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnPDF_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "PDF files (*.pdf)|*.pdf|All files (*.*)|*.*";
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string pdfPath = openFileDialog.FileName;
+                byte[] pdfBytes = File.ReadAllBytes(pdfPath);
+
+                // Guardar el PDF en una variable de clase o pasarlo directamente al constructor del libro
+                libroPdfBytes = pdfBytes; // Asumimos que tienes una variable de clase llamada libroPdfBytes
+            }
         }
     }
 }

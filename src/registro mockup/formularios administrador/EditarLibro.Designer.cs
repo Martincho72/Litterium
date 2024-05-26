@@ -53,6 +53,7 @@
             this.lblSinopsis = new System.Windows.Forms.Label();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.lblPrecio = new System.Windows.Forms.Label();
+            this.btnPDF = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).BeginInit();
@@ -62,6 +63,7 @@
             // 
             // cmbCategoria
             // 
+            this.cmbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCategoria.FormattingEnabled = true;
             this.cmbCategoria.Items.AddRange(new object[] {
             "Miedo",
@@ -71,7 +73,7 @@
             "Accion",
             "Infantil"});
             this.cmbCategoria.Location = new System.Drawing.Point(130, 247);
-            this.cmbCategoria.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbCategoria.Margin = new System.Windows.Forms.Padding(2);
             this.cmbCategoria.Name = "cmbCategoria";
             this.cmbCategoria.Size = new System.Drawing.Size(119, 21);
             this.cmbCategoria.TabIndex = 67;
@@ -86,7 +88,7 @@
             "4",
             "5"});
             this.cmbValoracion.Location = new System.Drawing.Point(130, 287);
-            this.cmbValoracion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbValoracion.Margin = new System.Windows.Forms.Padding(2);
             this.cmbValoracion.Name = "cmbValoracion";
             this.cmbValoracion.Size = new System.Drawing.Size(119, 21);
             this.cmbValoracion.TabIndex = 66;
@@ -108,7 +110,7 @@
             this.btnCrear.BackColor = System.Drawing.Color.Gold;
             this.btnCrear.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrear.Location = new System.Drawing.Point(133, 533);
-            this.btnCrear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCrear.Margin = new System.Windows.Forms.Padding(2);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(89, 49);
             this.btnCrear.TabIndex = 63;
@@ -123,7 +125,7 @@
             this.panel1.Controls.Add(this.pcbLogo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(446, 72);
             this.panel1.TabIndex = 62;
@@ -133,7 +135,7 @@
             this.panel2.Controls.Add(this.lblMensaje);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(84, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(362, 72);
             this.panel2.TabIndex = 2;
@@ -155,7 +157,7 @@
             this.pcbLogo.Dock = System.Windows.Forms.DockStyle.Left;
             this.pcbLogo.Image = global::registro_mockup.Properties.Resources.litteriumSinFondo312;
             this.pcbLogo.Location = new System.Drawing.Point(0, 0);
-            this.pcbLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pcbLogo.Margin = new System.Windows.Forms.Padding(2);
             this.pcbLogo.Name = "pcbLogo";
             this.pcbLogo.Size = new System.Drawing.Size(84, 72);
             this.pcbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -165,7 +167,7 @@
             // txtAutor
             // 
             this.txtAutor.Location = new System.Drawing.Point(130, 212);
-            this.txtAutor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAutor.Margin = new System.Windows.Forms.Padding(2);
             this.txtAutor.MaxLength = 40;
             this.txtAutor.Name = "txtAutor";
             this.txtAutor.Size = new System.Drawing.Size(119, 20);
@@ -174,7 +176,7 @@
             // txtTitulo
             // 
             this.txtTitulo.Location = new System.Drawing.Point(133, 173);
-            this.txtTitulo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTitulo.Margin = new System.Windows.Forms.Padding(2);
             this.txtTitulo.MaxLength = 40;
             this.txtTitulo.Name = "txtTitulo";
             this.txtTitulo.Size = new System.Drawing.Size(119, 20);
@@ -232,7 +234,7 @@
             // 
             this.txtIsbn.Enabled = false;
             this.txtIsbn.Location = new System.Drawing.Point(133, 126);
-            this.txtIsbn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIsbn.Margin = new System.Windows.Forms.Padding(2);
             this.txtIsbn.MaxLength = 13;
             this.txtIsbn.Name = "txtIsbn";
             this.txtIsbn.Size = new System.Drawing.Size(119, 20);
@@ -257,7 +259,7 @@
             this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalir.Image = global::registro_mockup.Properties.Resources.lecha;
             this.btnSalir.Location = new System.Drawing.Point(14, 541);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(62, 33);
             this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -281,7 +283,7 @@
             this.btnCargar.BackColor = System.Drawing.Color.Gold;
             this.btnCargar.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCargar.Location = new System.Drawing.Point(334, 269);
-            this.btnCargar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCargar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(89, 49);
             this.btnCargar.TabIndex = 69;
@@ -304,7 +306,7 @@
             // txtSinopsis
             // 
             this.txtSinopsis.Location = new System.Drawing.Point(130, 403);
-            this.txtSinopsis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSinopsis.Margin = new System.Windows.Forms.Padding(2);
             this.txtSinopsis.MaxLength = 150;
             this.txtSinopsis.Multiline = true;
             this.txtSinopsis.Name = "txtSinopsis";
@@ -326,7 +328,7 @@
             // txtPrecio
             // 
             this.txtPrecio.Location = new System.Drawing.Point(133, 331);
-            this.txtPrecio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(119, 20);
             this.txtPrecio.TabIndex = 74;
@@ -343,12 +345,26 @@
             this.lblPrecio.TabIndex = 73;
             this.lblPrecio.Text = "Precio:";
             // 
+            // btnPDF
+            // 
+            this.btnPDF.BackColor = System.Drawing.Color.Gold;
+            this.btnPDF.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPDF.Location = new System.Drawing.Point(305, 333);
+            this.btnPDF.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPDF.Name = "btnPDF";
+            this.btnPDF.Size = new System.Drawing.Size(109, 49);
+            this.btnPDF.TabIndex = 75;
+            this.btnPDF.Text = "Añadir PDF";
+            this.btnPDF.UseVisualStyleBackColor = false;
+            this.btnPDF.Click += new System.EventHandler(this.btnPDF_Click);
+            // 
             // EditarLibro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(446, 603);
+            this.Controls.Add(this.btnPDF);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.lblPrecio);
             this.Controls.Add(this.lblInfoSinopsis);
@@ -371,7 +387,7 @@
             this.Controls.Add(this.txtIsbn);
             this.Controls.Add(this.lblIsbn);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "EditarLibro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditarLibro";
@@ -413,5 +429,6 @@
         private System.Windows.Forms.Label lblSinopsis;
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.Label lblPrecio;
+        private System.Windows.Forms.Button btnPDF;
     }
 }

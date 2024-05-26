@@ -40,6 +40,9 @@
             this.lblValoracion = new System.Windows.Forms.Label();
             this.lblAutorLibro = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnValorar = new FontAwesome.Sharp.IconButton();
+            this.btnComprarAhora = new FontAwesome.Sharp.IconButton();
+            this.btnAgreagarAlCarrito = new FontAwesome.Sharp.IconButton();
             this.gpbValorarLibro = new System.Windows.Forms.GroupBox();
             this.cmbValorar = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -52,9 +55,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtSinopsis = new System.Windows.Forms.TextBox();
             this.lblSinopsis = new System.Windows.Forms.Label();
-            this.btnValorar = new FontAwesome.Sharp.IconButton();
-            this.btnComprarAhora = new FontAwesome.Sharp.IconButton();
-            this.btnAgreagarAlCarrito = new FontAwesome.Sharp.IconButton();
             this.pcbPortadaLibro = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -204,6 +204,60 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(566, 94);
             this.tableLayoutPanel4.TabIndex = 1;
             this.tableLayoutPanel4.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel4_Paint);
+            // 
+            // btnValorar
+            // 
+            this.btnValorar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnValorar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnValorar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnValorar.IconChar = FontAwesome.Sharp.IconChar.StarHalfAlt;
+            this.btnValorar.IconColor = System.Drawing.Color.Black;
+            this.btnValorar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnValorar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnValorar.Location = new System.Drawing.Point(224, 49);
+            this.btnValorar.Name = "btnValorar";
+            this.btnValorar.Size = new System.Drawing.Size(224, 41);
+            this.btnValorar.TabIndex = 21;
+            this.btnValorar.Text = "VALORAR";
+            this.btnValorar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnValorar.UseVisualStyleBackColor = false;
+            this.btnValorar.Click += new System.EventHandler(this.btnValorar_Click);
+            // 
+            // btnComprarAhora
+            // 
+            this.btnComprarAhora.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnComprarAhora.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnComprarAhora.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnComprarAhora.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckDollar;
+            this.btnComprarAhora.IconColor = System.Drawing.Color.Black;
+            this.btnComprarAhora.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnComprarAhora.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnComprarAhora.Location = new System.Drawing.Point(3, 49);
+            this.btnComprarAhora.Name = "btnComprarAhora";
+            this.btnComprarAhora.Size = new System.Drawing.Size(215, 41);
+            this.btnComprarAhora.TabIndex = 19;
+            this.btnComprarAhora.Text = "COMPRAR AHORA";
+            this.btnComprarAhora.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnComprarAhora.UseVisualStyleBackColor = false;
+            this.btnComprarAhora.Click += new System.EventHandler(this.btnComprarAhora_Click);
+            // 
+            // btnAgreagarAlCarrito
+            // 
+            this.btnAgreagarAlCarrito.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnAgreagarAlCarrito.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAgreagarAlCarrito.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgreagarAlCarrito.IconChar = FontAwesome.Sharp.IconChar.BasketShopping;
+            this.btnAgreagarAlCarrito.IconColor = System.Drawing.Color.Black;
+            this.btnAgreagarAlCarrito.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAgreagarAlCarrito.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgreagarAlCarrito.Location = new System.Drawing.Point(3, 3);
+            this.btnAgreagarAlCarrito.Name = "btnAgreagarAlCarrito";
+            this.btnAgreagarAlCarrito.Size = new System.Drawing.Size(215, 40);
+            this.btnAgreagarAlCarrito.TabIndex = 18;
+            this.btnAgreagarAlCarrito.Text = "AÑADIR AL CARRITO";
+            this.btnAgreagarAlCarrito.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgreagarAlCarrito.UseVisualStyleBackColor = false;
+            this.btnAgreagarAlCarrito.Click += new System.EventHandler(this.btnAgreagarAlCarrito_Click);
             // 
             // gpbValorarLibro
             // 
@@ -361,60 +415,6 @@
             this.lblSinopsis.Size = new System.Drawing.Size(89, 24);
             this.lblSinopsis.TabIndex = 0;
             this.lblSinopsis.Text = "Sinopsis";
-            // 
-            // btnValorar
-            // 
-            this.btnValorar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnValorar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnValorar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnValorar.IconChar = FontAwesome.Sharp.IconChar.StarHalfAlt;
-            this.btnValorar.IconColor = System.Drawing.Color.Black;
-            this.btnValorar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnValorar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnValorar.Location = new System.Drawing.Point(224, 49);
-            this.btnValorar.Name = "btnValorar";
-            this.btnValorar.Size = new System.Drawing.Size(224, 41);
-            this.btnValorar.TabIndex = 21;
-            this.btnValorar.Text = "VALORAR";
-            this.btnValorar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnValorar.UseVisualStyleBackColor = false;
-            this.btnValorar.Click += new System.EventHandler(this.btnValorar_Click);
-            // 
-            // btnComprarAhora
-            // 
-            this.btnComprarAhora.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnComprarAhora.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnComprarAhora.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnComprarAhora.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckDollar;
-            this.btnComprarAhora.IconColor = System.Drawing.Color.Black;
-            this.btnComprarAhora.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnComprarAhora.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnComprarAhora.Location = new System.Drawing.Point(3, 49);
-            this.btnComprarAhora.Name = "btnComprarAhora";
-            this.btnComprarAhora.Size = new System.Drawing.Size(215, 41);
-            this.btnComprarAhora.TabIndex = 19;
-            this.btnComprarAhora.Text = "COMPRAR AHORA";
-            this.btnComprarAhora.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnComprarAhora.UseVisualStyleBackColor = false;
-            this.btnComprarAhora.Click += new System.EventHandler(this.btnComprarAhora_Click);
-            // 
-            // btnAgreagarAlCarrito
-            // 
-            this.btnAgreagarAlCarrito.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnAgreagarAlCarrito.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAgreagarAlCarrito.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgreagarAlCarrito.IconChar = FontAwesome.Sharp.IconChar.BasketShopping;
-            this.btnAgreagarAlCarrito.IconColor = System.Drawing.Color.Black;
-            this.btnAgreagarAlCarrito.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnAgreagarAlCarrito.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAgreagarAlCarrito.Location = new System.Drawing.Point(3, 3);
-            this.btnAgreagarAlCarrito.Name = "btnAgreagarAlCarrito";
-            this.btnAgreagarAlCarrito.Size = new System.Drawing.Size(215, 40);
-            this.btnAgreagarAlCarrito.TabIndex = 18;
-            this.btnAgreagarAlCarrito.Text = "AÑADIR AL CARRITO";
-            this.btnAgreagarAlCarrito.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgreagarAlCarrito.UseVisualStyleBackColor = false;
-            this.btnAgreagarAlCarrito.Click += new System.EventHandler(this.btnAgreagarAlCarrito_Click);
             // 
             // pcbPortadaLibro
             // 

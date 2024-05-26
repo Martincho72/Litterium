@@ -204,6 +204,7 @@ namespace registro_mockup
                     lista.Add(ejemplar);
                 }
             }
+            reader.Close();
             return lista;
 
         }

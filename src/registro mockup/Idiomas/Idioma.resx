@@ -327,6 +327,9 @@
   <data name="ConfirmacionNuevaContrasenya" xml:space="preserve">
     <value>Hemos enviado un correo con la nueva Contraseña, esto puede tardar unos minutos.</value>
   </data>
+  <data name="ContinuarCH" xml:space="preserve">
+    <value>Cortohistorias que continuar</value>
+  </data>
   <data name="ContrasenyaIncorrectaLogin" xml:space="preserve">
     <value>Contraseña incorrecta</value>
   </data>
