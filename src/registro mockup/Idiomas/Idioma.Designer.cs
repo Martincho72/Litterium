@@ -1051,6 +1051,15 @@ namespace registro_mockup.Idiomas {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Guardar PDF.
+        /// </summary>
+        internal static string InfoGuardarPdf {
+            get {
+                return ResourceManager.GetString("InfoGuardarPdf", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Administradores.
         /// </summary>
         internal static string lblAdministradores {
@@ -2100,6 +2109,24 @@ namespace registro_mockup.Idiomas {
         internal static string ParaCambiarContrasenya {
             get {
                 return ResourceManager.GetString("ParaCambiarContrasenya", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a PDF guardado exitosamente..
+        /// </summary>
+        internal static string PdfGuardadoCorrectamente {
+            get {
+                return ResourceManager.GetString("PdfGuardadoCorrectamente", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a No se encontró el PDF para este libro..
+        /// </summary>
+        internal static string PdfNoEncontrado {
+            get {
+                return ResourceManager.GetString("PdfNoEncontrado", resourceCulture);
             }
         }
         

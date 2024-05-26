@@ -37,12 +37,12 @@ namespace registro_mockup.formularios_Usuario
                     foreach (Ejemplar ej in lista)
                     {
                         Libro libro = Libro.EncontrarDatosLibro(bDatos.Conexion, ej.Isbn_libro);
-                        dgvLibros.Rows.Add(libro.Titulo, libro.Autor, libro.Categoria, ej.FechaCompra, libro.Portada);
+                        dgvLibros.Rows.Add(libro.Titulo, libro.Autor, libro.Categoria, ej.FechaCompra.ToString("dd/MM/yyyy"), libro.Portada);
                     }
                 }
                 else
                 {
-                    MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             finally
@@ -69,8 +69,8 @@ namespace registro_mockup.formularios_Usuario
             {
                 try
                 {
-                    string isbn = dgvLibros.Rows[indice].Cells[4].Value.ToString(); // Asumiendo que la ISBN está en la primera columna
-                    Libro libro = Libro.EncontrarDatosLibro(bDatos.Conexion, isbn);
+                    string titulo = dgvLibros.Rows[indice].Cells[0].Value.ToString(); // Asumiendo que la ISBN está en la primera columna
+                    Libro libro = Libro.EncontrarDatosLibroTitulo(bDatos.Conexion, titulo);
 
                     if (libro != null && libro.Pdf != null)
                     {
@@ -81,12 +81,12 @@ namespace registro_mockup.formularios_Usuario
                         if (saveFileDialog.ShowDialog() == DialogResult.OK)
                         {
                             File.WriteAllBytes(saveFileDialog.FileName, libro.Pdf);
-                            MessageBox.Show("PDF guardado exitosamente.", "Guardar PDF", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show(Idioma.PdfGuardadoCorrectamente, Idioma.InfoGuardarPdf, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                     }
                     else
                     {
-                        MessageBox.Show("No se encontró el PDF para este libro.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(Idioma.PdfNoEncontrado, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 finally
@@ -96,7 +96,7 @@ namespace registro_mockup.formularios_Usuario
             }
             else
             {
-                MessageBox.Show(Idioma.ConexionFallida, "Error Conexion BD", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Idioma.ConexionFallida, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

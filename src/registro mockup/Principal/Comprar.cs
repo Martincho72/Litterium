@@ -19,6 +19,7 @@ namespace registro_mockup.Principal
         private string usuariomenu;
         private string isbnLibro;
         private bool online = false;
+        private bool comprarAhora = false;
         private Form previousForm;
         public Comprar(string usuario)
         {
@@ -47,18 +48,26 @@ namespace registro_mockup.Principal
         {
             InitializeComponent();
             AplicarIdioma();
+            comprarAhora = true;
             usuariomenu = usuario;
             isbnLibro = isbn;
             previousForm = form;
             if (basedatos.AbrirConexion())
             {
-                List<Libro> lista = Libro.BuscarLibros(basedatos.Conexion, isbnLibro);
+                Libro libro = Libro.EncontrarDatosLibro(basedatos.Conexion, isbnLibro);
                 txtUsuario.Text = usuario;
-                foreach (Libro libro in lista)
+
+                if (fisico)
                 {
-                    dgvResumen.Rows.Add(libro.Isbn, libro.Titulo, libro.Autor, libro.Categoria, libro.Valoracion, libro.Precio, cantidad, libro.Online);
+                    libro.Online = false;
                 }
-                lblImporteTotal.Text += lista[0].importeTotal(lista[0].Precio, cantidad).ToString() + "€";
+                else
+                {
+                    libro.Online = true;
+                }
+                libro.Cantidad = cantidad;
+                dgvResumen.Rows.Add(libro.Isbn, libro.Titulo, libro.Autor, libro.Categoria, libro.Valoracion, libro.Precio, libro.Cantidad, libro.Online);
+                lblImporteTotal.Text += libro.importeTotal(libro.Precio, cantidad).ToString() + "€";
             }
             else
             {
@@ -83,15 +92,35 @@ namespace registro_mockup.Principal
             {
                 if (ValidarDatos())
                 {
-                    foreach (Libro l1 in Carrito.MiCarrito)
+                    if (!comprarAhora)
                     {
-                        Usuario us1 = Usuario.EncontrarDatosUsuario(basedatos.Conexion, usuariomenu);
-                        Ejemplar ej1 = new Ejemplar(DateTime.Now, (decimal)l1.importeTotal(l1.Precio, l1.Cantidad), l1.Online, us1.Id, l1.Isbn);
-                        Ejemplar.AgregarEjemplar(basedatos.Conexion, ej1);
+                        foreach (Libro l1 in Carrito.MiCarrito)
+                        {
+                            Usuario us1 = Usuario.EncontrarDatosUsuario(basedatos.Conexion, usuariomenu);
+                            Ejemplar ej1 = new Ejemplar(DateTime.Now, (decimal)l1.importeTotal(l1.Precio, l1.Cantidad), l1.Online, us1.Id, l1.Isbn);
+                            Ejemplar.AgregarEjemplar(basedatos.Conexion, ej1);
 
+                        }
+                        Carrito.MiCarrito.Clear();
                     }
-                    Carrito.MiCarrito.Clear();
+                    else
+                    {
+                        Libro libro = new Libro();
+                        DataGridViewRow filaSeleccionada = dgvResumen.Rows[0];
 
+                        // Asignar los valores de la fila a las propiedades del objeto libro
+                        libro.Isbn = filaSeleccionada.Cells["ISBN"].Value.ToString();
+                        libro.Titulo = filaSeleccionada.Cells["Titulo"].Value.ToString();
+                        libro.Autor = filaSeleccionada.Cells["Autor"].Value.ToString();
+                        libro.Categoria = filaSeleccionada.Cells["Categoria"].Value.ToString();
+                        libro.Valoracion = Convert.ToInt32(filaSeleccionada.Cells["Valoracion"].Value);
+                        libro.Precio = Convert.ToDouble(filaSeleccionada.Cells["Precio"].Value);
+                        libro.Cantidad = Convert.ToInt32(filaSeleccionada.Cells["Cantidad"].Value);
+                        libro.Online = Convert.ToBoolean(filaSeleccionada.Cells["Tipo"].Value);
+                        Usuario us1 = Usuario.EncontrarDatosUsuario(basedatos.Conexion, usuariomenu);
+                        Ejemplar ej1 = new Ejemplar(DateTime.Now, (decimal)libro.importeTotal(libro.Precio, libro.Cantidad), libro.Online, us1.Id, libro.Isbn);
+                        Ejemplar.AgregarEjemplar(basedatos.Conexion, ej1);
+                    }
                     MessageBox.Show(Idioma.compraRealizada, "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     this.Close();

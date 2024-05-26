@@ -26,13 +26,13 @@ namespace registro_mockup.clases
         byte[] pdf;
 
 
-        public string Isbn { get { return isbn; } }
-        public string Titulo { get { return titulo; } }
-        public string Autor { get { return autor; } }
-        public string Categoria { get { return categoria; } }
-        public double Valoracion { get { return valoracion; } }
+        public string Isbn { get { return isbn; } set { isbn = value; } }
+        public string Titulo { get { return titulo; } set { titulo = value; } }
+        public string Autor { get { return autor; } set { autor = value; } }
+        public string Categoria { get { return categoria; } set { categoria = value; } }
+        public double Valoracion { get { return valoracion; } set { valoracion = value; } }
         public Image Portada { get { return portada; } set { portada = value; } }
-        public double Precio { get { return precio; } }
+        public double Precio { get { return precio; } set { precio = value; } }
         public string Sinopsis { get { return sinopsis; }  }
         public int Cantidad { get { return cantidad; }set { cantidad = value; } }
 
@@ -188,10 +188,18 @@ namespace registro_mockup.clases
             byte[] imgArr = ms.ToArray();
 
             string consulta = String.Format("INSERT INTO libro (isbn,titulo,autor,categoria,valoracion,imagen,sinopsis,precio, pdf) " +
-                "VALUES " + "('{0}','{1}','{2}','{3}','{4}', @imagen, '{5}','{6}', '{7}')", l1.Isbn, l1.Titulo,l1.Autor,l1.Categoria,l1.Valoracion,l1.Sinopsis,l1.Precio, l1.Pdf);
+                "VALUES " + "('{0}','{1}','{2}','{3}','{4}', @imagen, '{5}','{6}', @pdf)", l1.Isbn, l1.Titulo,l1.Autor,l1.Categoria,l1.Valoracion,l1.Sinopsis,l1.Precio);
 
             MySqlCommand comando = new MySqlCommand(consulta, conexion);
             comando.Parameters.AddWithValue("imagen", imgArr);
+            if (l1.Pdf != null)
+            {
+                comando.Parameters.AddWithValue("@pdf", l1.Pdf);
+            }
+            else
+            {
+                comando.Parameters.AddWithValue("@pdf", DBNull.Value);
+            }
             retorno = comando.ExecuteNonQuery();
 
             return retorno;
@@ -232,15 +240,27 @@ namespace registro_mockup.clases
             MemoryStream ms = new MemoryStream();
             l1.Portada.Save(ms, ImageFormat.Jpeg);
             byte[] imgArr = ms.ToArray();
-            string consulta = String.Format("UPDATE libro SET isbn = '{0}', titulo = '{1}', autor = '{2}', categoria = '{3}', valoracion = '{4}', imagen=@imagen , sinopsis = '{5}', precio = '{6}', pdf = '{7}'  " +
-                                            "WHERE isbn = '{0}'", l1.Isbn, l1.Titulo, l1.Autor, l1.Categoria, l1.Valoracion,l1.Sinopsis,l1.Precio, l1.Pdf);
-                                         
+            string consulta = String.Format("UPDATE libro SET isbn = '{0}', titulo = '{1}', autor = '{2}', categoria = '{3}', valoracion = '{4}', imagen=@imagen , sinopsis = '{5}', precio = '{6}', pdf=@pdf " +
+                                            "WHERE isbn = '{0}'", l1.Isbn, l1.Titulo, l1.Autor, l1.Categoria, l1.Valoracion, l1.Sinopsis, l1.Precio);
+
             MySqlCommand comando = new MySqlCommand(consulta, conexion);
             comando.Parameters.AddWithValue("@imagen", imgArr);
+
+            // Asignamos el valor del campo pdf solo si no es nulo
+            if (l1.Pdf != null)
+            {
+                comando.Parameters.AddWithValue("@pdf", l1.Pdf);
+            }
+            else
+            {
+                comando.Parameters.AddWithValue("@pdf", DBNull.Value);
+            }
+
             retorno = comando.ExecuteNonQuery();
 
             return retorno;
         }
+
         public static Libro EncontrarDatosLibro(MySqlConnection conexion, string isbn)
         {
             string consulta = string.Format("SELECT * FROM libro WHERE isbn = '{0}'", isbn);
@@ -263,10 +283,11 @@ namespace registro_mockup.clases
                     double precio = reader.GetDouble(7);
                     byte[] img = (byte[])reader["imagen"];
                     byte[] pdf = null;
-                    if (reader["pdf"] != DBNull.Value)
+                    if (!reader.IsDBNull(reader.GetOrdinal("pdf")))
                     {
                         pdf = (byte[])reader["pdf"];
                     }
+
                     MemoryStream ms = new MemoryStream(img);
                     Image foto = Image.FromStream(ms);
 

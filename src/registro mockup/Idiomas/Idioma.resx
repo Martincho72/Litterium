@@ -447,6 +447,9 @@
   <data name="InfoCHSubida" xml:space="preserve">
     <value>CortoHistoria Subida</value>
   </data>
+  <data name="InfoGuardarPdf" xml:space="preserve">
+    <value>Guardar PDF</value>
+  </data>
   <data name="lblAdministradores" xml:space="preserve">
     <value>Administradores</value>
   </data>
@@ -797,6 +800,12 @@
   </data>
   <data name="ParaCambiarContrasenya" xml:space="preserve">
     <value>Para cambiar su contraseña haga click en este enlace:</value>
+  </data>
+  <data name="PdfGuardadoCorrectamente" xml:space="preserve">
+    <value>PDF guardado exitosamente.</value>
+  </data>
+  <data name="PdfNoEncontrado" xml:space="preserve">
+    <value>No se encontró el PDF para este libro.</value>
   </data>
   <data name="rbtCopiaFisica" xml:space="preserve">
     <value>COPIA FISICA</value>
